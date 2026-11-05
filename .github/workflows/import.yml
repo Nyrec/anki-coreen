@@ -1,0 +1,30 @@
+name: Import Anki
+on:
+  push:
+    paths: ["inbox/**"]
+  workflow_dispatch:
+  schedule:
+    - cron: "37 4 * * *"
+permissions:
+  contents: write
+concurrency: import
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install anki
+      - run: python import_cards.py
+        env:
+          ANKIWEB_USER: ${{ secrets.ANKIWEB_USER }}
+          ANKIWEB_PASS: ${{ secrets.ANKIWEB_PASS }}
+          UPLOAD: ${{ vars.UPLOAD }}
+      - name: Ranger les fichiers traités
+        run: |
+          git config user.name "anki-coreen"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A . ':!__pycache__'
+          git diff --cached --quiet || (git commit -m "Fichiers importés [skip ci]" && git push)
