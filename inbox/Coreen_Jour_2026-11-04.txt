@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+데우다	to heat up, to warm up<br><i>réchauffer, faire chauffer</i>	도시락을 전자레인지에 데웠어요.<br>I heated up my lunch box in the microwave.<br><i>J'ai réchauffé ma boîte-repas au micro-ondes.</i>	[deuda] Takes 을/를: 국을 데우다, with 에 for the device. Conjugates 데워요. Opposite process: 식다 = to cool down (intransitive).	quotidien::2026-11-04 동사 niveau::B1
+흔하다	to be common, ordinary<br><i>courant, fréquent, commun</i>	한국에서 김 씨는 아주 흔한 성이에요.<br>In Korea, Kim is a very common surname.<br><i>En Corée, Kim est un nom de famille très courant.</i>	[heunhada] Adverb 흔히 = commonly, often. Opposite: 드물다 = rare. 흔하지 않다 is a soft way to say 'unusual'.	quotidien::2026-11-04 형용사 niveau::B1
+제대로	properly, the right way<br><i>correctement, comme il faut</i>	어제 잠을 제대로 못 잤어요.<br>I couldn't sleep properly yesterday.<br><i>Je n'ai pas bien dormi hier.</i>	[jedaero] Very often with 못 or 안: 제대로 못 하다 = can't do it properly. Also: 제대로 된 N = a decent, real N (제대로 된 밥 = a proper meal).	quotidien::2026-11-04 부사 niveau::B1
+습관	habit<br><i>habitude</i>	아침에 물을 마시는 습관이 생겼어요.<br>I got into the habit of drinking water in the morning.<br><i>J'ai pris l'habitude de boire de l'eau le matin.</i>	[seupgwan] Hanja 習慣. Pronounced [습꽌]. 습관이 생기다 = a habit forms, 습관을 고치다 = to fix a habit. 버릇 = similar, but more for personal quirks and bad habits.	quotidien::2026-11-04 명사 niveau::B1
+밤을 새우다	to stay up all night<br><i>passer une nuit blanche, veiller toute la nuit</i>	보고서 때문에 어제 밤을 새웠어요.<br>I stayed up all night yesterday because of the report.<br><i>J'ai passé une nuit blanche hier à cause du rapport.</i>	[bameul saeuda] 새우다 is used almost only with 밤. Conjugates 새워요, 새웠어요. Related: 밤새 = all night long (adverb). Don't confuse with 새우 = shrimp.	quotidien::2026-11-04 표현 niveau::B1

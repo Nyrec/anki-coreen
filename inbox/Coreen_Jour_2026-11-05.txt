@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+잠그다	to lock<br><i>fermer à clé, verrouiller</i>	나갈 때 문을 꼭 잠가 주세요.<br>Please make sure to lock the door when you leave.<br><i>Fermez bien la porte à clé en sortant, s'il vous plaît.</i>	[jamgeuda] ㅡ-irregular: 잠가요, 잠갔어요 (not 잠그어요). Takes 을/를. Passive 잠기다 = to be locked (문이 잠겼어요).	quotidien::2026-11-05 동사 niveau::B1
+창피하다	to be embarrassed, embarrassing<br><i>avoir honte, être gêné</i>	사람들 앞에서 넘어져서 너무 창피했어요.<br>I fell in front of people, and it was so embarrassing.<br><i>Je suis tombé devant tout le monde, j'avais trop honte.</i>	[changpihada] Stronger than 민망하다 or 쑥스럽다: real loss of face, often in public. Common exclamation: 아, 창피해! Related: 창피를 당하다 = to be humiliated.	quotidien::2026-11-05 형용사 niveau::B1
+결국	in the end, eventually<br><i>finalement, au bout du compte</i>	한참 고민했지만 결국 안 샀어요.<br>I thought about it for a long time, but in the end I didn't buy it.<br><i>J'ai longtemps hésité, mais finalement je ne l'ai pas acheté.</i>	[gyeolguk] Hanja 結局. Neutral or negative outcome, often after a struggle; compare 드디어 = at long last, for something awaited. Also 결국에는.	quotidien::2026-11-05 부사 niveau::B1
+할인	discount<br><i>réduction, remise</i>	이 카드로 10% 할인을 받을 수 있어요.<br>You can get a 10% discount with this card.<br><i>Avec cette carte, on peut avoir 10 % de réduction.</i>	[harin] Hanja 割引. Pronounced [하린]. 할인하다 = to give a discount, 할인받다 = to get one. Useful: 학생 할인, 할인 쿠폰.	quotidien::2026-11-05 명사 niveau::A2
+눈에 띄다	to stand out, to catch the eye<br><i>se remarquer, attirer le regard</i>	빨간색 코트는 눈에 잘 띄어요.<br>A red coat really stands out.<br><i>Un manteau rouge se remarque facilement.</i>	[nune ttuida] 띄다 is the contraction of 뜨이다; the subject takes 이/가. Adverbial 눈에 띄게 = noticeably (실력이 눈에 띄게 늘었어요).	quotidien::2026-11-05 표현 niveau::B1
