@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+배웅하다	to see someone off<br><i>raccompagner, accompagner quelqu'un au départ</i>	친구를 공항까지 배웅했어요.<br>I saw my friend off at the airport.<br><i>J'ai raccompagné mon ami jusqu'à l'aéroport.</i>	[baeunghada] Opposite of 마중하다 (to go meet someone arriving). Takes an object: 누구를 배웅하다; often with -까지 for the place.	quotidien::2026-11-07 동사 niveau::B1
+분리수거	recycling, separate waste collection<br><i>tri sélectif (des déchets)</i>	우리 아파트는 수요일에 분리수거를 해요.<br>Our apartment complex does recycling on Wednesdays.<br><i>Dans notre immeuble, on fait le tri sélectif le mercredi.</i>	[bullisugeo] Hanja 分離收去: 분리 (separation) + 수거 (collection). Used with 하다: 분리수거하다. Pronounced [불리수거] due to ㄹ assimilation.	quotidien::2026-11-07 명사 niveau::B1
+담당하다	to be in charge of<br><i>être chargé de, s'occuper de</i>	저는 이 프로젝트를 담당하고 있어요.<br>I'm in charge of this project.<br><i>Je suis chargé de ce projet.</i>	[damdanghada] Hanja 擔當. Related nouns: 담당자 (person in charge), 담당 (charge). Common at work: 담당자가 누구예요? = Who's in charge?	quotidien::2026-11-07 동사 niveau::B1
+훨씬	much more, far (more)<br><i>beaucoup plus, bien plus</i>	지하철이 버스보다 훨씬 빨라요.<br>The subway is much faster than the bus.<br><i>Le métro est bien plus rapide que le bus.</i>	[hwolssin] Intensifies comparisons, typically with -보다 (than) and 더: 훨씬 더 좋아요. Not used without a comparison.	quotidien::2026-11-07 부사 niveau::A2
+안심이 되다	to feel relieved, to be reassured<br><i>être rassuré, se sentir soulagé</i>	무사히 도착했다니까 안심이 돼요.<br>I'm relieved to hear you arrived safely.<br><i>Je suis rassuré de savoir que tu es bien arrivé.</i>	[ansimi doeda] Hanja 安心 (peaceful heart). Also 안심하다 (to be at ease) and 안심하세요 (don't worry). Contrast with 걱정되다.	quotidien::2026-11-07 표현 niveau::B1

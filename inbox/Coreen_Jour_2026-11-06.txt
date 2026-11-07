@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+설득하다	to persuade, to convince<br><i>persuader, convaincre</i>	부모님을 설득하는 데 시간이 좀 걸렸어요.<br>It took a while to convince my parents.<br><i>Ça m'a pris un peu de temps pour convaincre mes parents.</i>	[seoldeukada] Hanja 說得. Takes 을/를 on the person: 친구를 설득하다. Pronounced [설드카다]. Related: 설득력 [설등녁] = persuasiveness, 설득력이 있다.	quotidien::2026-11-06 동사 niveau::B1
+드물다	to be rare, uncommon<br><i>rare, peu fréquent</i>	요즘은 현금을 쓰는 사람이 드물어요.<br>These days, few people use cash.<br><i>De nos jours, les gens qui paient en liquide sont rares.</i>	[deumulda] ㄹ-irregular: 드문 일 = a rare thing (not 드물은). Opposite of 흔하다. Adverb 드물게 = rarely; 보기 드물다 = hard to come by.	quotidien::2026-11-06 형용사 niveau::B1
+살짝	slightly, lightly; discreetly<br><i>légèrement, un peu ; discrètement</i>	창문을 살짝 열어 주세요.<br>Please open the window slightly.<br><i>Ouvrez un peu la fenêtre, s'il vous plaît.</i>	[saljjak] Very common in speech for a small degree (살짝 추워요) or a light touch. Also means on the quiet: 살짝 나가다 = to slip out. Close to 조금, but softer.	quotidien::2026-11-06 부사 niveau::B1
+수수료	fee, commission, service charge<br><i>frais, commission</i>	다른 은행 ATM을 쓰면 수수료가 붙어요.<br>There's a fee if you use another bank's ATM.<br><i>Si on utilise le distributeur d'une autre banque, il y a des frais.</i>	[susuryo] Hanja 手數料. Used for banks, transfers, cancellations, agents. Verbs: 수수료가 붙다/들다, 수수료를 내다. Useful: 취소 수수료 = cancellation fee.	quotidien::2026-11-06 명사 niveau::B1
+눈이 높다	to have high standards, to be picky<br><i>être exigeant, avoir des goûts difficiles</i>	친구가 눈이 높아서 마음에 드는 집을 못 찾았어요.<br>My friend has high standards, so he couldn't find a place he liked.<br><i>Mon ami est exigeant, alors il n'a pas trouvé d'appartement qui lui plaise.</i>	[nuni nopda] Literally 'the eyes are high'. Used for taste in partners, houses, products. Opposite: 눈이 낮다. 눈을 낮추다 = to lower one's standards.	quotidien::2026-11-06 표현 niveau::B1
