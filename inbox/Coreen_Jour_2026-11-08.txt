@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+여전히	still, as before<br><i>toujours, comme avant, encore</i>	그 식당은 여전히 맛있어요.<br>That restaurant is still delicious.<br><i>Ce restaurant est toujours aussi bon.</i>	[yeojeonhi] Hanja 如前 ('as before'). Stresses that something hasn't changed; more emphatic than 아직, which mainly means 'not yet / still (so far)'.	quotidien::2026-11-08 부사 niveau::B1
+고생하다	to have a hard time, to go through hardship<br><i>souffrir, galérer, se donner du mal</i>	이사하느라 많이 고생했어요.<br>I had a really hard time with the move.<br><i>J'ai beaucoup galéré avec le déménagement.</i>	[gosaenghada] Hanja 苦生. Very common set phrase: 고생하셨습니다 / 고생 많으셨어요 = 'thanks for your hard work' (close to 수고하셨습니다). Often used with -느라(고) for the cause.	quotidien::2026-11-08 동사 niveau::A2
+지저분하다	messy, dirty, untidy<br><i>sale, en désordre, mal rangé</i>	제 방이 좀 지저분해요.<br>My room is a bit messy.<br><i>Ma chambre est un peu en désordre.</i>	[jijeobunhada] Covers both 'dirty' and 'cluttered'. Opposite: 깨끗하다. Compare 더럽다, which is stronger and means truly dirty/filthy.	quotidien::2026-11-08 형용사 niveau::B1
+방향	direction<br><i>direction, sens</i>	강남역은 어느 방향으로 가야 돼요?<br>Which direction should I go for Gangnam Station?<br><i>Dans quelle direction dois-je aller pour la station Gangnam ?</i>	[banghyang] Hanja 方向. Used with (으)로: 이 방향으로 가세요. In the subway you'll see '시청 방향' = 'towards City Hall'. Related: 방향치 = someone with no sense of direction.	quotidien::2026-11-08 명사 niveau::A2
+시간 가는 줄 모르다	to lose track of time<br><i>ne pas voir le temps passer</i>	친구랑 얘기하다가 시간 가는 줄 몰랐어요.<br>I lost track of time while talking with my friend.<br><i>En discutant avec mon ami, je n'ai pas vu le temps passer.</i>	[sigan ganeun jul moreuda] Built on V-는 줄 모르다 ('not realize that V is happening'). Usually in the past: 시간 가는 줄 몰랐어요. Often follows -다가 or -느라(고).	quotidien::2026-11-08 표현 niveau::B1
