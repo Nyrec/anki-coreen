@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+털어놓다	to open up, to confide<br><i>se confier, avouer (ce qu'on a sur le cœur)</i>	친구한테 고민을 다 털어놓았어요.<br>I told my friend all my worries.<br><i>J'ai confié tous mes soucis à mon ami.</i>	[teoreonota] From 털다 (to shake off) + 놓다 (to put down). Usually N을/를 털어놓다: 비밀을, 고민을, 속마음을 털어놓다.	quotidien::2026-11-09 동사 niveau::B1
+느긋하다	relaxed, unhurried<br><i>détendu, sans se presser</i>	주말에는 느긋하게 아침을 먹어요.<br>On weekends I have a leisurely breakfast.<br><i>Le week-end, je prends mon petit-déjeuner tranquillement.</i>	[neugeuthada] Often used as the adverb 느긋하게. Opposite feeling: 조급하다 (impatient). 마음이 느긋하다 = to be calm, not worried.	quotidien::2026-11-09 형용사 niveau::B1
+문득	suddenly (of a thought), it occurred to me<br><i>soudain (une pensée qui surgit), tout à coup</i>	길을 걷다가 문득 옛날 생각이 났어요.<br>While walking, I suddenly remembered the old days.<br><i>En marchant, j'ai soudain repensé au passé.</i>	[mundeuk] Mostly with thoughts/feelings: 문득 생각이 나다, 문득 깨닫다. Unlike 갑자기, it is not used for sudden physical events.	quotidien::2026-11-09 부사 niveau::B1
+일교차	daily temperature range (day/night difference)<br><i>écart de température entre le jour et la nuit</i>	요즘 일교차가 커서 감기 조심하세요.<br>The temperature swings a lot these days, so watch out for colds.<br><i>Ces jours-ci l'écart de température est grand, faites attention au rhume.</i>	[ilgyocha] Hanja 日較差 (day + compare + difference). Typical collocation: 일교차가 크다. Very common in autumn weather forecasts.	quotidien::2026-11-09 명사 niveau::B1
+한눈을 팔다	to look away, to get distracted<br><i>regarder ailleurs, être distrait</i>	운전할 때 한눈을 팔면 위험해요.<br>It's dangerous to look away while driving.<br><i>C'est dangereux d'être distrait quand on conduit.</i>	[hannuneul palda] Here 팔다 does not mean 'to sell' but 'to turn (one's attention) elsewhere'. Also means to lose focus on one's work or studies.	quotidien::2026-11-09 표현 niveau::B1
