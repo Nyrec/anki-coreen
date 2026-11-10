@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+결제하다	to pay, to make a payment<br><i>payer, régler (un achat)</i>	카드로 결제해도 돼요?<br>Can I pay by card?<br><i>Je peux payer par carte ?</i>	[gyeoljehada] Hanja 決濟. Used with 카드로/현금으로 결제하다. Related nouns: 결제 (payment), 계산 (paying the bill at a restaurant).	quotidien::2026-11-10 동사 niveau::B1
+어쨌든	anyway, in any case<br><i>en tout cas, de toute façon</i>	어쨌든 내일 다시 연락할게요.<br>Anyway, I'll contact you again tomorrow.<br><i>En tout cas, je te recontacte demain.</i>	[eojjaetdeun] Contraction of 어찌하였든. Used to wrap up or change topic; close to 아무튼. Compare 어차피 (= it's inevitable anyway).	quotidien::2026-11-10 부사 niveau::B1
+나른하다	to feel drowsy, languid, sluggish<br><i>être mou, alangui, avoir un coup de barre</i>	점심을 먹고 나니까 너무 나른해요.<br>After lunch I feel really sluggish.<br><i>Après le déjeuner, j'ai un gros coup de barre.</i>	[nareunhada] Describes a pleasant or tired heaviness of the body (after eating, in spring sun). Set phrase: 봄이라 나른하다. Regular 하다 adjective.	quotidien::2026-11-10 형용사 niveau::B1
+몸살이 나다	to ache all over, to come down with fatigue-related aches<br><i>avoir des courbatures, être patraque (de fatigue)</i>	요즘 야근을 많이 해서 몸살이 났어요.<br>I've been working late a lot, so I'm aching all over.<br><i>J'ai fait beaucoup d'heures sup ces temps-ci, je suis tout courbaturé.</i>	[momsari nada] 몸살 = body aches with chills from exhaustion, not a specific illness. Also 몸살 기운이 있다 (to feel it coming on).	quotidien::2026-11-10 표현 niveau::B1
+대신	instead (of), in place of<br><i>à la place (de), en échange</i>	커피 대신 차를 마실게요.<br>I'll have tea instead of coffee.<br><i>Je vais prendre du thé à la place du café.</i>	[daesin] Hanja 代身. Pattern: N 대신 (instead of N), V-는 대신 (in exchange for / instead of doing). Ex: 제가 대신 갈게요.	quotidien::2026-11-10 명사 niveau::A2

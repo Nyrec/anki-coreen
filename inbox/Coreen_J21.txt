@@ -1,0 +1,26 @@
+#separator:tab
+#html:true
+#tags column:5
+#deck column:6
+인사부	HR department	한국에서 돌아왔을 때 인사부에서 메시지를 받았어요.<br>When I came back from Korea, I got a message from HR.	Hanja 人事部. Also 인사팀.	cours::J21 회화 명사 niveau::A2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+휴가를 내다	to take time off	이번 주에 휴가를 3일만 냈어요.<br>I only took three days off this week.	내다 = to submit/take. Also 휴가를 쓰다 (use leave days).	cours::J21 회화 표현 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+공휴일	public holiday	수요일이 공휴일이라서 일을 별로 안 할 거예요.<br>Wednesday is a public holiday, so I won't work much.	Hanja 公休日.	cours::J21 회화 명사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+눈치 보이다	to feel awkward doing something because of others' reactions	휴가를 쓰고 싶어도 눈치 보여서 못 써요.<br>Even if I want time off, I feel uneasy taking it.	Passive of 눈치를 보다 (to read the room).	cours::J21 회화 표현 niveau::B2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+호기심이 많다	to be very curious	저는 호기심이 많아서 여러 가지를 하고 싶어요.<br>I'm curious, so I want to try many things.	호기심 = curiosity (Hanja 好奇心). Also 호기심이 생기다.	cours::J21 회화 표현 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+쇼핑몰	shopping mall / online store	무신사라는 온라인 쇼핑몰이 인기가 많아요.<br>An online store called Musinsa is very popular.	Covers both physical malls and websites; 온라인 쇼핑몰 for sites.	cours::J21 회화 명사 niveau::A2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+품질	quality (of a product)	품질이 안 좋아요.<br>The quality isn't good.	Hanja 品質. Also 퀄리티 (loanword, more casual).	cours::J21 회화 명사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+고정관념	stereotype, fixed idea	직원들이 불친절하다는 고정관념이 있어요.<br>There's a stereotype that the staff are unfriendly.	Hanja 固定觀念. 고정관념을 깨다 = to break a stereotype.	cours::J21 회화 명사 niveau::B2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+직원	employee, staff member	직원들이 일할 때 부담이 적어요.<br>Employees are under less pressure at work.	Hanja 職員. Compare 회사원 (office worker).	cours::J21 회화 명사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+구독하다	to subscribe	선생님이 제 유튜브를 구독해 달라고 했어요.<br>The teacher asked me to subscribe to her YouTube.	Hanja 購讀. Noun 구독 / 구독자.	cours::J21 회화 동사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+체감온도	apparent (felt) temperature	체감온도가 13도예요.<br>It feels like 13 degrees.	Hanja 體感溫度. 체감 = felt by the body.	cours::J21 회화 명사 niveau::B2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+실내 ↔ 야외	indoors ↔ outdoors	프랑스에서는 실내도 추워요.<br>In France it's cold even indoors.	Hanja 室內 / 野外. Pair 실내/실외 also exists.	cours::J21 회화 명사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+뭐든지	anything, whatever	프랑스 사람들은 뭐든지 천천히 하는 걸 좋아해요.<br>French people like doing everything slowly.	Same pattern: 누구든지, 언제든지, 어디든지.	cours::J21 회화 부사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+오랫동안	for a long time	오랫동안 프랑스어로만 얘기했어요.<br>We spoke only in French for a long time.	오래 (long) + 동안 (during).	cours::J21 회화 부사 niveau::A2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+낫다	to be better; to recover	빠르고 친절한 게 더 나아요.<br>Fast and friendly is better.	ㅅ-irregular: 나아요, 나은. Don't confuse with 낮다 (low).	cours::J21 회화 형용사 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+N배	N times (as much)	휴가가 3배예요.<br>It's three times as much vacation.	Hanja 倍. 두 배, 세 배.	cours::J21 회화 명사 niveau::A2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+매년	every year	매년 휴가를 다 써야 돼요.<br>You have to use all your leave every year.	Hanja 每年. Same as 해마다.	cours::J21 회화 부사 niveau::A2	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+-(으)라고 하다	to say/tell (someone) to do (reported command)	선생님이 다음 주에 복습을 많이 하라고 했어요.<br>The teacher told me to review a lot next week.	Verb stem + -(으)라고 하다; negative: -지 말라고 하다.	cours::J21 회화 문법 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+-아/어 달라고 하다	to ask (someone) to do for me (reported request)	선생님이 크레이프를 만들어 달라고 했어요.<br>The teacher asked me to make crêpes.	From -아/어 주세요 → -아/어 달라고 하다.	cours::J21 회화 문법 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+-자고 하다	to suggest doing together (reported suggestion)	선생님이 같이 카페에 가자고 했어요.<br>The teacher suggested we go to a café together.	From -(으)ㅂ시다/-자 → -자고 하다.	cours::J21 회화 문법 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+-(느)냐고 하다	to ask whether/what (reported question)	어디에서 샀냐고 했어요.<br>She asked where I bought it.	Verbs: -냐고; adjectives: -(으)냐고; past: -았/었냐고.	cours::J21 회화 문법 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
+-ㄴ/는다고 하다	to say that... (reported statement)	오늘 저녁에 치킨을 먹는다고 했어요.<br>She said she's having chicken tonight.	Verb: -ㄴ/는다고; adj: -다고; past: -았/었다고; noun: -(이)라고.	cours::J21 회화 문법 niveau::B1	Coréen::Jihyeon::J21 · Free talk (간접화법, 휴가·직장 문화).
