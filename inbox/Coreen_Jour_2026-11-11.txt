@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+마주치다	to run into, to bump into (someone)<br><i>croiser (quelqu'un par hasard), tomber sur</i>	어제 지하철에서 옛날 친구를 마주쳤어요.<br>Yesterday I ran into an old friend on the subway.<br><i>Hier, j'ai croisé un vieil ami dans le métro.</i>	[majuchida] Takes 을/를 or 와/과 (친구와 마주치다). Common set phrase: 눈이 마주치다 = to make eye contact.	quotidien::2026-11-11 동사 niveau::B1
+아무튼	anyway, in any case<br><i>en tout cas, bref, enfin bon</i>	아무튼 내일 다시 이야기해요.<br>Anyway, let's talk about it again tomorrow.<br><i>En tout cas, on en reparle demain.</i>	[amuteun] Used to wrap up or move past a topic; close synonym of 어쨌든, a bit more conversational. Fuller form: 아무튼지.	quotidien::2026-11-11 부사 niveau::B1
+대부분	most, the majority<br><i>la plupart, la majorité</i>	우리 회사 직원들은 대부분 지하철로 출근해요.<br>Most of the employees at our company commute by subway.<br><i>La plupart des employés de notre entreprise vont au travail en métro.</i>	[daebubun] Hanja 大部分. Works as a noun (대부분의 사람들) or as an adverb before the verb. Opposite: 일부 (a part, some).	quotidien::2026-11-11 명사 niveau::A2
+겁이 나다	to be scared, to get frightened<br><i>avoir peur, prendre peur</i>	처음 혼자 운전할 때 겁이 많이 났어요.<br>The first time I drove alone, I was really scared.<br><i>La première fois que j'ai conduit seul, j'avais très peur.</i>	[geobi nada] 겁 (怯) = fear, apprehension. Related: 겁이 많다 = to be timid, 겁을 주다 = to scare someone. Nuance vs 무섭다: more about one's own nervousness.	quotidien::2026-11-11 표현 niveau::B1
+참고하다	to refer to, to use as a reference<br><i>se référer à, s'appuyer sur, consulter</i>	이 자료를 참고해서 보고서를 써 주세요.<br>Please write the report using this material as a reference.<br><i>Rédigez le rapport en vous appuyant sur ce document, s'il vous plaît.</i>	[chamgohada] Hanja 參考. Takes 을/를. 참고로 = 'for reference / FYI', very frequent at work and in emails.	quotidien::2026-11-11 동사 niveau::B1
