@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+낭비하다	to waste<br><i>gaspiller</i>	시간을 너무 낭비한 것 같아요.<br>I feel like I wasted too much time.<br><i>J'ai l'impression d'avoir trop perdu de temps.</i>	[nangbihada] Takes 을/를: 돈을/시간을/에너지를 낭비하다. Hanja 浪費; noun 낭비 ('waste'), e.g. 시간 낭비예요 = 'It's a waste of time.'	quotidien::2026-11-12 동사 niveau::B1
+제때	on time, at the right time<br><i>à temps, au bon moment</i>	밥을 제때 먹어야 건강해요.<br>You have to eat at the proper times to stay healthy.<br><i>Il faut manger à heures régulières pour être en bonne santé.</i>	[jettae] Used without particle as an adverb, or with 에 (제때에). Common with deadlines: 보고서를 제때 제출하다. Pronounced [제때].	quotidien::2026-11-12 부사 niveau::B1
+갈등	conflict, tension<br><i>conflit, tension</i>	팀원들 사이에 갈등이 생겼어요.<br>A conflict arose between the team members.<br><i>Un conflit est apparu entre les membres de l'équipe.</i>	[galdeung] Hanja 葛藤 (arrowroot + wisteria vines tangling). Common collocations: 갈등이 생기다, 갈등을 해결하다, 세대 갈등 (generational conflict).	quotidien::2026-11-12 명사 niveau::B1
+혼잡하다	crowded, congested<br><i>bondé, encombré</i>	출근 시간에는 지하철이 너무 혼잡해요.<br>The subway is really crowded during rush hour.<br><i>Aux heures de pointe, le métro est vraiment bondé.</i>	[honjaphada] More formal than 붐비다; typical in news and announcements (교통이 혼잡하다). Hanja 混雜. Pronounced [혼자파다].	quotidien::2026-11-12 형용사 niveau::B1
+마음먹다	to make up one's mind, to resolve<br><i>se décider à, prendre la résolution de</i>	올해는 운동을 꾸준히 하기로 마음먹었어요.<br>This year I made up my mind to exercise regularly.<br><i>Cette année, j'ai décidé de faire du sport régulièrement.</i>	[maeummeokda] Often with -기로 마음먹다 or -(으)려고 마음먹다. Literally 'to eat the heart'. Idiom: 마음먹기에 달렸다 = 'it all depends on your attitude'.	quotidien::2026-11-12 표현 niveau::B1
