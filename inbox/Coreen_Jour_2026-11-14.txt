@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+오해	misunderstanding<br><i>malentendu</i>	제 말을 오해하지 마세요.<br>Please don't misunderstand what I said.<br><i>Ne vous méprenez pas sur mes paroles.</i>	[ohae] Hanja 誤解. Verb form 오해하다 (to misunderstand); 오해를 풀다 = to clear up a misunderstanding.	quotidien::2026-11-14 명사 niveau::B1
+견디다	to endure, to bear<br><i>supporter, endurer</i>	이 더위는 정말 견디기 힘들어요.<br>This heat is really hard to bear.<br><i>Cette chaleur est vraiment difficile à supporter.</i>	[gyeondida] Takes an object with 을/를. Often in -기 힘들다 / 못 견디다 (can't stand). Close to 참다 (hold back) and 버티다 (hold out).	quotidien::2026-11-14 동사 niveau::B1
+함부로	recklessly, carelessly, thoughtlessly<br><i>à la légère, sans réfléchir, n'importe comment</i>	남의 물건을 함부로 만지면 안 돼요.<br>You shouldn't touch other people's things carelessly.<br><i>Il ne faut pas toucher les affaires des autres sans permission.</i>	[hamburo] Usually appears with prohibitions: 함부로 -지 마세요 / -면 안 돼요. Common on signs and in warnings.	quotidien::2026-11-14 부사 niveau::B1
+멀미	motion sickness<br><i>mal des transports</i>	버스를 오래 타면 멀미가 나요.<br>I get motion sickness when I ride the bus for a long time.<br><i>Quand je prends le bus longtemps, j'ai le mal des transports.</i>	[meolmi] Use 멀미가 나다 or 멀미하다. Compounds: 차멀미 (car sickness), 뱃멀미 (seasickness), 멀미약 (motion-sickness pills).	quotidien::2026-11-14 명사 niveau::B1
+깔끔하다	neat, tidy, clean<br><i>propre, net, soigné</i>	방이 정말 깔끔하네요.<br>The room is really neat.<br><i>La chambre est vraiment bien rangée.</i>	[kkalkkeumhada] Also describes people (tidy, meticulous), work (clean result) or taste (clean, not greasy: 맛이 깔끔하다). Adverb: 깔끔하게.	quotidien::2026-11-14 형용사 niveau::A2
