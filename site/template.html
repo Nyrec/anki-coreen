@@ -119,6 +119,41 @@ table.f td .x{display:block;font-family:var(--ko);font-size:14px;color:var(--jjo
 .sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .sheet .k{font-family:var(--ko);font-size:22px;font-weight:700}
 .empty{color:var(--muted);padding:14px}
+:root{--red:#c9503f;--grn:#2c7a59;--vio:#7b3f93}
+body{background:radial-gradient(1200px 420px at 50% -120px,color-mix(in srgb,var(--jjok) 16%,var(--paper)),var(--paper) 70%) no-repeat var(--paper)}
+.hero{background:linear-gradient(140deg,var(--jjok),color-mix(in srgb,var(--jjok) 62%,#0b2533));box-shadow:0 14px 30px -18px color-mix(in srgb,var(--jjok) 80%,transparent)}
+.herotop{display:flex;gap:16px;align-items:center}
+.ring{width:92px;height:92px;flex:none}.ring .rbg{fill:none;stroke:color-mix(in srgb,var(--paper) 22%,transparent);stroke-width:8}
+.ring .rfg{fill:none;stroke:var(--chija);stroke-width:8;stroke-linecap:round}
+.ring text{fill:var(--paper);font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.week{display:flex;gap:6px;margin-top:8px}
+.wd{display:flex;flex-direction:column;align-items:center;gap:3px;font-family:var(--ko);font-size:11px;opacity:.85}
+.wd i{display:block;width:18px;height:18px;border-radius:50%;border:2px solid color-mix(in srgb,var(--paper) 45%,transparent)}
+.wd.on i{background:var(--chija);border-color:var(--chija)}.wd.now i{box-shadow:0 0 0 2px var(--paper)}.wd.fut{opacity:.45}
+.wod{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--chija);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.wod .big{font-size:30px;font-weight:700;line-height:1.25}.wod .ex{font-size:18px;margin-top:4px}
+.short{display:grid;grid-template-columns:1fr;gap:10px}
+@media (min-width:620px){.short{grid-template-columns:repeat(3,1fr)}}
+.sc{border:0;border-radius:16px;padding:14px 16px;text-align:left;display:flex;flex-direction:column;gap:2px;color:#fff;min-height:96px}
+.sc i{font-style:normal;font-size:13px;opacity:.9;color:#fff;display:block}.sc b{font-size:19px;line-height:1.3}.sc span{font-size:13px;opacity:.9;margin-top:auto}
+.sc.c1{background:linear-gradient(135deg,var(--vio),color-mix(in srgb,var(--vio) 60%,#1a0b22))}
+.sc.c2{background:linear-gradient(135deg,var(--grn),color-mix(in srgb,var(--grn) 60%,#082017))}
+.sc.c3{background:linear-gradient(135deg,var(--red),color-mix(in srgb,var(--red) 62%,#2a0d08))}
+.grid .tile{position:relative;overflow:hidden;border:0;background:color-mix(in srgb,var(--tc,var(--jjok)) 12%,var(--card));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tc,var(--jjok)) 28%,transparent)}
+.grid .tile:nth-child(5n+1){--tc:var(--jjok)}.grid .tile:nth-child(5n+2){--tc:var(--red)}.grid .tile:nth-child(5n+3){--tc:var(--chija)}.grid .tile:nth-child(5n+4){--tc:var(--grn)}.grid .tile:nth-child(5n+5){--tc:var(--vio)}
+.grid .tile .ko{font-size:22px;color:color-mix(in srgb,var(--tc,var(--jjok)) 70%,var(--ink))!important}
+.grid .tile .bar{--c:var(--tc,var(--jjok))}
+.kpi{border:0;box-shadow:0 1px 0 var(--line),0 8px 18px -16px rgba(0,0,0,.5)}
+.kpi b{color:var(--jjok)}
+.level{border-width:0 0 0 6px;box-shadow:0 1px 0 var(--line),0 8px 18px -16px rgba(0,0,0,.5)}
+.flash{box-shadow:0 18px 34px -24px rgba(0,0,0,.55);border-radius:22px}
+h1.fin{font-size:40px}
+.rowbtn a.tx{color:inherit;text-decoration:none}
+a.btn,label.btn{text-decoration:none;display:inline-block;cursor:pointer}
+.btn,.grade,.tile,.sc,.level,.rowbtn,.opt{transition:transform .12s ease}
+@media (prefers-reduced-motion:no-preference){.btn:active,.grade:active,.tile:active,.sc:active,.level:active,.opt:active{transform:scale(.97)}
+ .flash{animation:pop .22s ease}.ring .rfg{transition:stroke-dashoffset .6s ease}
+ @keyframes pop{from{transform:translateY(8px) scale(.98);opacity:.6}to{transform:none;opacity:1}}}
 i.ko{font-style:normal;font-family:var(--ko);font-weight:700;display:block;color:var(--ink);font-size:14px}
 .trio span i.ko{color:inherit;opacity:1;font-size:14px}
 h2 .ko{font-size:15px;letter-spacing:0;color:var(--ink);font-weight:700}
@@ -290,7 +325,7 @@ function render(){
   const s=cur();const root=["accueil","themes","cours","fiches","histoires","ecoute"].includes(s.v)?s.v:stack[0].v;
   document.querySelectorAll("#tabs button").forEach(b=>b.dataset.tab===root?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
   closeSheet();
-  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,ecoute:vPods,pod:vPod,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
+  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,pdf:vPdf,histoires:vStories,ecoute:vPods,pod:vPod,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
   if(!s.keepScroll)$("#main").scrollTop=s.scroll||0;
 }
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)tab(b.dataset.tab)});
@@ -311,12 +346,18 @@ function vHome(){
   const fc=[],fl=[];for(let d=0;d<14;d++){fc.push(0);fl.push(d===0?"auj.":dstr(t+d).slice(8))}
   for(const k in S.c){const d=Math.max(0,S.c[k][0]-t);if(d<14&&S.c[k]&&CARDIDX[k])fc[d]++}
   const ret=n30?Math.round(100*(1-a30/n30)):null,todo=st.due+st.newToday;
+  const pct=L[0]+todo?L[0]/(L[0]+todo):0,R=34,C=2*Math.PI*R;
+  const cheer=!L[0]&&!todo?"오늘은 쉬어도 돼요":!L[0]?"오늘도 화이팅!":todo?"잘하고 있어요, 조금만 더!":"오늘 목표 달성! 수고했어요";
+  const dow=(new Date(t*DAY).getUTCDay()+6)%7,wk="월화수목금토일".split("").map((d,i)=>{const n=t-dow+i,on=(S.log[dstr(n)]||[0])[0]>0;return `<span class="wd${on?" on":""}${i===dow?" now":""}${n>t?" fut":""}"><i></i>${d}</span>`}).join("");
+  const pool=CARDS.filter(c=>c.x&&c.p!=="gram"&&c.l!=="A1"),wod=pool[(t*7919)%pool.length];
+  const nextS=STORIES.find(x=>!isRead(x.id))||STORIES[0],nextP=PODCASTS.find(x=>!isHeard(x.id))||PODCASTS[0];
   const seg=(n,c)=>n?`<i style="flex:${n};background:${c}"></i>`:"";
   const lastC=COURSES.filter(c=>c.id[0]==="C").slice(-1)[0],lastJ=COURSES.filter(c=>c.id[0]==="J").slice(-1)[0];
   $("#view").innerHTML=`
-  <header class="top"><h1>한국어 노트<small>${new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}</small></h1></header>
+  <header class="top"><h1>안녕하세요, 막상스 씨!<small>${new Date().toLocaleDateString("ko-KR",{month:"long",day:"numeric",weekday:"long"})} · ${cheer}</small></h1></header>
   <section class="hero">
-    <div class="heroh"><span class="ko">오늘</span><b>${todo?`${todo} carte${todo>1?"s":""} à faire`:(L[0]?"Tout est fait pour aujourd'hui":"Rien à réviser pour l'instant")}</b></div>
+    <div class="herotop"><svg class="ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="${R}" class="rbg"/><circle cx="40" cy="40" r="${R}" class="rfg" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle">${Math.round(pct*100)}%</text></svg>
+    <div class="heroh"><span class="ko">오늘의 복습</span><b>${todo?`${todo} carte${todo>1?"s":""} à faire`:(L[0]?"Tout est fait pour aujourd'hui":"Rien à réviser pour l'instant")}</b><div class="week">${wk}</div></div></div>
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> à revoir</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> faites</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser maintenant":"새 카드 배우기 · Nouvelles cartes"}</button>
   </section>
@@ -328,6 +369,8 @@ function vHome(){
     <div class="kpi"><b>${STORIES.filter(x=>isRead(x.id)).length} / ${STORIES.length}</b><span><i class="ko">읽은 이야기</i> histoires lues</span></div>
     <div class="kpi"><b>${PODCASTS.filter(x=>isHeard(x.id)).length} / ${PODCASTS.length}</b><span><i class="ko">들은 방송</i> épisodes écoutés</span></div>
   </section>
+  <section><h2><span class="ko">오늘의 표현</span> · L'expression du jour</h2><div class="wod"><div class="ko big">${esc(wod.k)}</div><div>${esc(wod.f||wod.e)}</div><div class="ko ex">${esc(wod.x)}</div><div class="count">${esc(wod.z||wod.y||"")}</div><div class="meta">${canPlay?`<button class="mini" data-say="${esc(wod.x)}">문장 듣기</button>`:""}<button class="mini" data-course="${wod.c}">${courseLabel(wod.c)}</button></div></div></section>
+  <section class="short"><button class="sc c1" data-story="${nextS.id}"><i class="ko">이야기</i><b class="ko">${esc(nextS.ko)}</b><span>${isRead(nextS.id)?"Relire":"Prochaine histoire"} · ${nextS.l}</span></button><button class="sc c2" data-pod="${nextP.id}"><i class="ko">듣기</i><b class="ko">${esc(nextP.ko)}</b><span>${isHeard(nextP.id)?"Réécouter":"Prochain épisode"} · ≈ ${podDur(nextP)} min</span></button><button class="sc c3" data-act="go-pdf"><i class="ko">수업 자료</i><b>PDF de Hyesoo</b><span>Ranger et relire les supports de cours</span></button></section>
   <form class="search" id="sf"><input id="q" type="search" placeholder="Chercher un mot en coréen, français ou anglais" autocomplete="off"><button class="btn" type="submit">검색</button></form>
   <section><h2><span class="ko">내 카드</span> · Mes cartes</h2><div class="panel">
     <div class="stack">${seg(st.mature,"var(--a1)")}${seg(st.young,"var(--jjok)")}${seg(st.learn,"var(--chija)")}${seg(st.nw,"var(--line)")}</div>
@@ -359,6 +402,7 @@ function vThemes(){$("#view").innerHTML=`<h1>주제<small>Le vocabulaire de tes 
 function vCours(){
   const H=COURSES.filter(c=>c.id[0]==="C"),J=COURSES.filter(c=>c.id[0]==="J"),D=COURSES.filter(c=>c.id==="jour");
   $("#view").innerHTML=`<h1>수업<small>Chaque cours, avec sa grammaire puis son vocabulaire</small></h1>
+  <section><h2><span class="ko">수업 자료</span> · Supports de cours</h2><div class="rows"><button class="rowbtn" data-act="go-pdf"><span class="id">PDF</span><span class="tx"><span>PDF de Hyesoo</span><small>Ajouter, ranger et relire les supports de cours</small></span></button></div></section>
   <section><h2><span class="ko">오늘의 단어</span> · Mots du jour</h2><div class="rows">${D.map(courseRow).join("")}</div></section>
   <section><h2>Jihyeon (Summer) · ${J.length} cours</h2><div class="rows">${J.slice().reverse().map(courseRow).join("")}</div></section>
   <section><h2>Hyesoo · ${H.length} cours</h2><div class="rows">${H.slice().reverse().map(courseRow).join("")}</div></section>`;
@@ -414,7 +458,7 @@ function vStudy(s){
   if(!s.queue){s.queue=buildSession(s.cards,s.extra,s.recent);s.done=0;s.rev=false;s.spoken=null}
   const left=stats(s.cards);
   if(!s.queue.length){
-    $("#view").innerHTML=`${backBtn()}<h1>${s.done?"끝!":"없어요"}<small>${s.done?`${s.done} carte${s.done>1?"s":""} révisée${s.done>1?"s":""} dans cette série.`:"Aucune carte à réviser ici pour aujourd'hui."}</small></h1>
+    $("#view").innerHTML=`${backBtn()}<h1 class="fin">${s.done?"수고했어요!":"없어요"}<small>${s.done?`${s.done} carte${s.done>1?"s":""} révisée${s.done>1?"s":""} dans cette série.`:"Aucune carte à réviser ici pour aujourd'hui."}</small></h1>
     <p class="intro">${left.nw?`Il reste ${left.nw} nouvelles cartes dans cette liste. La limite du jour est de ${S.cfg.nw}.`:"Toutes les cartes de cette liste ont déjà été vues."}</p>
     <div class="actions">${left.nw?`<button class="btn" data-act="more-new">Apprendre 10 nouvelles cartes de plus</button>`:""}<button class="btn ghost" data-act="back">Revenir</button></div>`;return}
   const c=CARDIDX[s.queue[0]],cs=S.c[c.k];
@@ -483,12 +527,34 @@ function vStory(s){
   ${st.q?`<section><h2><span class="ko">이해 문제</span> · Compréhension</h2>${st.q.map((q,qi)=>`<div class="panel"><div class="ko" style="font-size:18px">${esc(q[0])}</div>${s.qo[qi].map(o=>`<button class="opt${s.ans[qi]!=null?(o===0?" good":s.ans[qi]===o?" bad":""):""}" data-q="${qi}" data-o="${o}" ${s.ans[qi]!=null?"disabled":""}>${esc(q[1+o])}</button>`).join("")}</div>`).join("")}</section>`:""}
   <div class="actions"><button class="btn${isRead(st.id)?" ghost":""}" data-act="read">${isRead(st.id)?"읽었어요 · Lue":"다 읽었어요 · Marquer comme lue"}</button>${next?`<button class="btn ghost" data-story="${next.id}">다음 화 · ${esc(next.ko)}</button>`:""}</div>`;
 }
+/* ---------- supports de cours : PDF gardés sur l'appareil ---------- */
+const DEPOT="https://claude.ai/artifact/PYyPNYjCzEo99qZ3ac45kv";
+function pdfDb(mode,fn){return new Promise((res,rej)=>{let rq;try{rq=indexedDB.open("hgn-files",1)}catch(e){rej(e);return}
+  rq.onupgradeneeded=()=>rq.result.createObjectStore("pdf",{keyPath:"id",autoIncrement:true});rq.onerror=()=>rej(rq.error);
+  rq.onsuccess=()=>{const tx=rq.result.transaction("pdf",mode),r=fn(tx.objectStore("pdf"));tx.oncomplete=()=>res(r&&r.result);tx.onerror=()=>rej(tx.error)}})}
+let pdfUrls=[];
+function renderPdfList(s){
+  pdfUrls.forEach(u=>{try{URL.revokeObjectURL(u)}catch(e){}});pdfUrls=[];const box=$("#pdflist");if(!box)return;
+  pdfDb("readonly",st=>st.getAll()).then(list=>{list=(list||[]).sort((a,b)=>a.name.localeCompare(b.name,"fr",{numeric:true})).reverse();
+    box.innerHTML=list.length?`<div class="rows">${list.map(f=>{const u=URL.createObjectURL(f.blob);pdfUrls.push(u);return `<div class="rowbtn"><a class="tx" href="${u}" target="_blank" rel="noopener"><span>${esc(f.name)}</span><small>${(f.blob.size/1048576).toFixed(1).replace(".",",")} Mo · ajouté le ${new Date(f.at).toLocaleDateString("fr-FR")}</small></a><button class="mini" data-act="pdf-del" data-id="${f.id}">${s.del===f.id?"Confirmer":"Supprimer"}</button></div>`}).join("")}</div>`:`<div class="panel"><p class="count">Aucun PDF pour l'instant. Ajoute les supports que Hyesoo t'envoie pour les relire ici, même hors ligne.</p></div>`;
+  }).catch(()=>{box.innerHTML='<div class="panel"><p class="count">Ce navigateur ne permet pas de garder des fichiers sur l\'appareil.</p></div>'});
+}
+function vPdf(s){
+  $("#view").innerHTML=`${backBtn()}<h1>수업 자료<small>Les PDF de tes cours avec Hyesoo, gardés sur cet appareil</small></h1>
+  <div class="actions"><label class="btn" for="pdfin">PDF 넣기 · Ajouter des PDF</label><input id="pdfin" type="file" accept="application/pdf,.pdf" multiple hidden><a class="btn ghost" href="${DEPOT}" target="_blank" rel="noopener">Envoyer un PDF à Claude pour créer les cartes</a></div>
+  <p class="count" id="pdfmsg">Nomme le fichier « C80_… » pour qu'il se range dans l'ordre des cours. Touche un PDF pour l'ouvrir.</p>
+  <div id="pdflist"></div>
+  <p class="count">Ces fichiers restent sur cet appareil : ils ne sont ni publiés sur le site ni copiés sur tes autres appareils. Pour que Claude en tire des cartes Anki, utilise le second bouton, qui ouvre la page de dépôt 오늘의 단어.</p>`;
+  $("#pdfin").addEventListener("change",async e=>{const fs=[...e.target.files];let n=0;for(const f of fs){try{await pdfDb("readwrite",st=>st.add({name:f.name,at:Date.now(),blob:f}));n++}catch(err){}}
+    const m=$("#pdfmsg");if(m)m.textContent=n===fs.length?`${n} PDF ajouté${n>1?"s":""}.`:`${n} PDF ajouté${n>1?"s":""} sur ${fs.length}. Les autres n'ont pas pu être enregistrés (espace insuffisant ?).`;renderPdfList(s)});
+  renderPdfList(s);
+}
 /* ---------- écoute : épisodes audio ---------- */
 const podDur=p=>{const n=p.lines.reduce((s,l)=>s+l[0].replace(/[^가-힣]/g,"").length,0);return Math.max(1,Math.round(n/5.2/60))};
 const isHeard=id=>!!(S.heard&&S.heard[id]);
 function vPods(){
   const done=PODCASTS.filter(p=>isHeard(p.id)).length;
-  $("#view").innerHTML=`<h1>듣기<small>${PODCASTS.length} épisodes à écouter, ${done} écouté${done>1?"s":""}. Une seule piste par épisode : l'écoute continue écran éteint.</small></h1>`+[["court","짧은 방송","Courts, environ 1 minute"],["moyen","조금 긴 방송","Moyens, environ 2 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="rows">${ps.map(p=>`<button class="rowbtn" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
+  $("#view").innerHTML=`<h1>듣기<small>${PODCASTS.length} épisodes à écouter, ${done} écouté${done>1?"s":""}. Une seule piste par épisode : l'écoute continue écran éteint.</small></h1>`+[["court","짧은 방송","Courts, environ 1 minute"],["moyen","조금 긴 방송","Moyens, environ 2 minutes"],["cinq","5분 방송","Environ 5 minutes"],["dix","10분 방송","Environ 10 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="rows">${ps.map(p=>`<button class="rowbtn" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
 }
 function vPod(s){
   const p=PODCASTS.find(x=>x.id===s.id);s.open=s.open||{};
@@ -518,7 +584,7 @@ function showSheet(w,res){
 
 /* ---------- clics ---------- */
 document.addEventListener("click",e=>{
-  const t=e.target,s=cur();
+  const t=e.target,s=cur();const keep0=()=>{s.scroll=$("#main").scrollTop};
   const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),again=answer(k,+gr.dataset.grade,Date.now()-(s.t0||Date.now()));if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
   const say=t.closest("[data-say]");if(say){stopStory();speak(say.dataset.say);return}
   const ln=t.closest("[data-line]");if(ln&&s.v==="story"){stopStory();const l=lineOf(STORIES.find(x=>x.id===s.id).lines[+ln.dataset.line]);speak(l[1],SPK[l[0]]||"hyunsu");return}
@@ -552,6 +618,8 @@ document.addEventListener("click",e=>{
     if(act==="hide"){stopStory();s.hide=!s.hide;s.open={};s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="read"){S.read=S.read||{};if(S.read[s.id])delete S.read[s.id];else S.read[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dl"){downloadAudio();return}
+    if(act==="go-pdf"){keep0();go({v:"pdf"});return}
+    if(act==="pdf-del"){const id=+a.dataset.id;if(s.del!==id){s.del=id;renderPdfList(s);return}s.del=null;pdfDb("readwrite",st=>st.delete(id)).then(()=>renderPdfList(s));return}
     if(act==="alltr"&&s.v==="pod"){s.all=!s.all;const pa=$("#podau"),tm=pa?pa.currentTime:0,pl=pa&&!pa.paused;s.keepScroll=true;render();s.keepScroll=false;const nb=$("#podau");if(nb&&tm){nb.currentTime=tm;if(pl)nb.play().catch(()=>{})}return}
     if(act==="alltr"){stopStory();s.all=!s.all;s.keepScroll=true;render();s.keepScroll=false;return}
   }
