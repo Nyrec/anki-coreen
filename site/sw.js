@@ -22,8 +22,8 @@ self.addEventListener("fetch", e => {
       fetch(req, { cache: "no-store" }).then(r => { const copy = r.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return r; })
         .catch(() => caches.match(req, { ignoreSearch: true }).then(r => r || caches.match("index.html")))
     );
-  } else {
-    // Polices : cache d'abord.
+  } else if (/fonts\.(googleapis|gstatic)\.com$/.test(url.hostname)) {
+    // Polices : cache d'abord. Tout le reste (dont la synchronisation GitHub) passe directement par le réseau.
     e.respondWith(
       caches.match(req).then(r => r || fetch(req).then(resp => { const copy = resp.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return resp; }).catch(() => new Response("", { status: 504 })))
     );
