@@ -119,6 +119,45 @@ table.f td .x{display:block;font-family:var(--ko);font-size:14px;color:var(--jjo
 .sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .sheet .k{font-family:var(--ko);font-size:22px;font-weight:700}
 .empty{color:var(--muted);padding:14px}
+.top h1 small{text-transform:capitalize}
+.hero{background:var(--jjok);color:var(--paper);border-radius:18px;padding:20px 18px;gap:16px}
+.heroh{display:flex;flex-direction:column;gap:2px}.heroh .ko{font-size:15px;opacity:.8}.heroh b{font-size:24px;line-height:1.2;font-weight:600}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.trio div{background:color-mix(in srgb,var(--paper) 14%,transparent);border-radius:12px;padding:10px 8px;text-align:center}
+.trio b{display:block;font-size:26px;font-variant-numeric:tabular-nums;line-height:1.1}.trio span{font-size:12px;opacity:.85}
+.hero .btn.big{background:var(--paper);color:var(--jjok);border-color:var(--paper)}
+.btn.big{padding:14px 18px;font-size:17px;border-radius:12px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;flex-direction:unset}
+@media (min-width:620px){.kpis{grid-template-columns:repeat(4,1fr)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.two-col>div{display:flex;flex-direction:column;gap:10px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;flex-direction:column}
+.kpi b{font-size:26px;font-variant-numeric:tabular-nums;line-height:1.2}.kpi span{font-size:13px;color:var(--muted)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.stack{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px}.stack i{display:block;min-width:3px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted)}.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+.heat{display:flex;gap:3px;justify-content:space-between}.hw{display:flex;flex-direction:column;gap:3px;flex:1;max-width:22px}
+.hw i{display:block;aspect-ratio:1;border-radius:3px;background:var(--line)}
+.hw i.hx{background:transparent}.hw i.h1{background:color-mix(in srgb,var(--a1) 35%,var(--line))}.hw i.h2{background:color-mix(in srgb,var(--a1) 60%,var(--line))}.hw i.h3{background:color-mix(in srgb,var(--a1) 85%,var(--line))}.hw i.h4{background:var(--a1)}
+.bars{display:flex;align-items:flex-end;gap:3px;height:120px}
+.barcol{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:2px;min-width:0}
+.barcol i{display:block;width:100%;border-radius:3px 3px 0 0;min-height:2px}
+.barcol span{font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums;height:13px}.barcol em{font-style:normal;font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}
+.setrow{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.stepper{display:flex;align-items:center;gap:8px}.stepper b{min-width:28px;text-align:center;font-variant-numeric:tabular-nums}
+textarea.code{width:100%;min-height:70px;font:12px ui-monospace,monospace;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);padding:8px}
+.tile .bar{margin-top:6px;height:4px}.tile{border-radius:14px}
+.rowbtn .n b.due{color:var(--a1);font-weight:600}
+.flash{position:relative}.flash .tag{font-size:12px;color:var(--muted)}.flash hr{border:0;border-top:1px solid var(--line);width:60%;margin:4px auto}
+.flash .ans small{display:block;font-size:14px;color:var(--muted)}.flash .exx{font-size:18px}
+.actions.center{justify-content:center}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.grade{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 4px 12px;font-weight:600;font-size:14px;display:flex;flex-direction:column;align-items:center;gap:2px;border-bottom-width:4px}
+.grade small{font-weight:400;font-size:12px;color:var(--muted)}
+.grade.g1{border-bottom-color:#c0443a}.grade.g2{border-bottom-color:var(--chija)}.grade.g3{border-bottom-color:var(--a1)}.grade.g4{border-bottom-color:var(--jjok)}
+.qc{font-size:13px;color:var(--muted)}
+nav.tabs button b{padding:2px 12px;border-radius:99px}
+nav.tabs button[aria-current="page"] b{background:var(--jjok-soft)}
+
 @media (prefers-reduced-motion:no-preference){.flash,.opt,.chip{transition:border-color .15s,background .15s}}
 </style>
 </head>
@@ -139,6 +178,7 @@ const DATA=/*DATA*/;
 const BUILD="/*BUILD*/";
 const OFFLINE=/*OFFLINE*/;
 const CARDS=DATA.cards, COURSES=DATA.courses;
+const CARDIDX={};for(const c of CARDS)CARDIDX[c.k]=c;
 const THEMES=[
  {g:"Révision rapide",items:[["positions","Prépositions et positions","위치"],["meteo","Météo","날씨"],["chiffres","Chiffres et compteurs","숫자"],["temps","Heures et temps","시간"],["sentiments","Sentiments et états","감정"],["adjectifs","Adjectifs","형용사"],["couleurs","Couleurs","색깔"],["interrogatifs","Mots interrogatifs","의문사"]]},
  {g:"Vie quotidienne",items:[["nourriture","Nourriture","음식"],["maison","Maison","집"],["transport","Transports","교통"],["achats","Achats et vêtements","쇼핑"],["travail","Travail","직장"],["etudes","Études","공부"],["sante","Santé et corps","건강"],["loisirs","Loisirs","취미"],["lieux","Lieux","장소"],["personnes","Personnes et famille","사람"],["metiers","Métiers","직업"],["caractere","Caractère","성격"],["nature","Animaux et plantes","동물"],["pays","Pays et langues","나라"],["objets","Objets","사물"],["salutations","Salutations","인사"]]},
@@ -149,11 +189,68 @@ const LV=[["A1","Débutant","A1","var(--a1)"],["A2","Élémentaire","A2","var(--
 const lvKey=c=>c.l==="B2"?"B1":c.l;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-let known=new Set();
-try{known=new Set(JSON.parse(localStorage.getItem("hgn-known")||"[]"))}catch(e){}
-function saveKnown(){try{localStorage.setItem("hgn-known",JSON.stringify([...known]))}catch(e){}}
+/* ---------- progression : répétition espacée, comme Anki ---------- */
+const DAY=864e5;
+const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/DAY);
+const dstr=n=>new Date(n*DAY).toISOString().slice(0,10);
+// S.c[mot]=[échéance (n° de jour), intervalle en jours, facilité, révisions, oublis] ; S.log[date]=[révisions, oublis, ms, nouvelles]
+let S={c:{},log:{},cfg:{nw:20,auto:true}};
+try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:20,auto:true},S.cfg||{})}catch(e){}
+try{const old=JSON.parse(localStorage.getItem("hgn-known")||"[]");if(old.length&&!S.mig){old.forEach(k=>{if(!S.c[k])S.c[k]=[today()+1+Math.floor(Math.random()*30),30,2.5,1,0]});S.mig=1}}catch(e){}
+function save(){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}}
+const known={has:k=>!!S.c[k]};
+const isNew=c=>!S.c[c.k];
+const isDue=c=>!!S.c[c.k]&&S.c[c.k][0]<=today();
+const logToday=()=>S.log[dstr(today())]||[0,0,0,0];
+function nextIvl(s,g){
+  if(!s||s[1]===0)return g===1||g===2?0:g===3?1:4;
+  const ivl=s[1],ease=s[2],late=Math.max(0,today()-s[0]);
+  if(g===1)return 0;
+  let d=g===2?Math.max(ivl+1,Math.round(ivl*1.2)):g===3?Math.max(ivl+1,Math.round((ivl+late/2)*ease)):Math.max(ivl+2,Math.round((ivl+late)*ease*1.3));
+  return Math.min(d,730);
+}
+function fmtIvl(d){return d===0?"< 10 min":d<30?d+" j":d<365?(Math.round(d/3)/10+" mois").replace(".",","):(Math.round(d/36.5)/10+" an").replace(".",",")}
+function answer(k,g,ms){
+  const t=today(),wasNew=!S.c[k];let s=S.c[k];let d=nextIvl(s,g);
+  if(d>7)d+=Math.round((Math.random()-.5)*d*.1);
+  if(!s)s=S.c[k]=[t,0,2.5,0,0];
+  s[3]++;
+  if(g===1){if(s[1]>0){s[4]++;s[2]=Math.max(1.3,s[2]-.2)}s[1]=0;s[0]=t}
+  else if(d===0){s[0]=t}
+  else{if(g===2)s[2]=Math.max(1.3,s[2]-.15);if(g===4)s[2]=Math.min(3,s[2]+.15);s[1]=d;s[0]=t+d}
+  const key=dstr(t),L=S.log[key]||(S.log[key]=[0,0,0,0]);L[0]++;if(g===1)L[1]++;L[2]+=Math.min(ms||0,60000);if(wasNew)L[3]++;
+  save();return d===0;
+}
+function buildSession(cards,extra,recent){
+  const due=shuffle(cards.filter(isDue)).map(c=>c.k);
+  const quota=Math.max(0,S.cfg.nw-logToday()[3])+(extra||0);
+  let fr=cards.filter(isNew);if(recent){const ci={};COURSES.forEach((c,i)=>ci[c.id]=i);fr=fr.map((c,i)=>[c,i]).sort((a,b)=>(ci[b[0].c]-ci[a[0].c])||(a[1]-b[1])).map(x=>x[0])}
+  const fresh=fr.slice(0,quota).map(c=>c.k);
+  const out=[],step=fresh.length?Math.max(1,Math.floor(due.length/fresh.length)):0;let qi=0;
+  for(const k of fresh){for(let i=0;i<step&&qi<due.length;i++)out.push(due[qi++]);out.push(k)}
+  while(qi<due.length)out.push(due[qi++]);
+  return out;
+}
+function stats(cards){
+  const t=today();let nw=0,learn=0,young=0,mature=0,due=0;
+  for(const c of cards){const s=S.c[c.k];if(!s){nw++;continue}if(s[0]<=t)due++;if(s[1]===0)learn++;else if(s[1]<21)young++;else mature++}
+  return {nw,learn,young,mature,due,total:cards.length,newToday:Math.min(nw,Math.max(0,S.cfg.nw-logToday()[3]))};
+}
+function streak(){let n=0,d=today();if(!S.log[dstr(d)]||!S.log[dstr(d)][0])d--;while(S.log[dstr(d)]&&S.log[dstr(d)][0]){n++;d--}return n}
+function fmtTime(ms){const m=Math.round(ms/6e4);return m<60?m+" min":Math.floor(m/60)+" h "+String(m%60).padStart(2,"0")}
+/* ---------- audio ---------- */
+const AUDIO=/*AUDIO*/;
 const canSpeak=("speechSynthesis" in window)&&("SpeechSynthesisUtterance" in window);
-function speak(t){if(!canSpeak)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)|[\/~]/g," "));u.lang="ko-KR";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+let KV=null,player=null;
+function pickVoice(){try{const vs=speechSynthesis.getVoices().filter(v=>/^ko/i.test(v.lang));if(!vs.length)return;const sc=v=>(/premium/i.test(v.name)?4:/enhanced|améliorée|natural|neural|siri/i.test(v.name)?3:/google/i.test(v.name)?2:1);KV=vs.sort((a,b)=>sc(b)-sc(a))[0]}catch(e){}}
+if(canSpeak){pickVoice();try{speechSynthesis.onvoiceschanged=pickVoice}catch(e){}}
+const canPlay=canSpeak||Object.keys(AUDIO).length>0;
+function speak(t){
+  try{if(player){player.pause();player=null}if(canSpeak)speechSynthesis.cancel()}catch(e){}
+  if(AUDIO[t]){try{player=new Audio("audio/"+AUDIO[t]);player.play().catch(()=>{});return}catch(e){}}
+  if(!canSpeak)return;
+  try{const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)|[\/~]/g," "));u.lang="ko-KR";if(KV)u.voice=KV;u.rate=.9;speechSynthesis.speak(u)}catch(e){}
+}
 function themeCards(key){return key.startsWith("p:")?CARDS.filter(c=>c.p===key.slice(2)):CARDS.filter(c=>c.t&&c.t.includes(key))}
 function courseOf(id){return COURSES.find(c=>c.id===id)}
 function courseLabel(id){return id==="jour"?"Mots du jour":id}
@@ -175,24 +272,59 @@ function render(){
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)tab(b.dataset.tab)});
 const backBtn=()=>stack.length>1?'<button class="back" data-act="back">‹ Retour</button>':"";
 
-/* ---------- accueil ---------- */
+/* ---------- accueil : tableau de bord ---------- */
+function bars(vals,labels,color){const mx=Math.max(1,...vals);return `<div class="bars">${vals.map((v,i)=>`<div class="barcol" title="${labels[i]} : ${v}"><span>${v||""}</span><i style="height:${Math.round(100*v/mx)}%;background:${color}"></i><em>${labels[i]}</em></div>`).join("")}</div>`}
+function heat(){
+  const t=today(),dow=(new Date(t*DAY).getUTCDay()+6)%7,weeks=17,start=t-dow-(weeks-1)*7;let h="";
+  for(let w=0;w<weeks;w++){h+='<div class="hw">';for(let d=0;d<7;d++){const n=start+w*7+d,v=n>t?-1:((S.log[dstr(n)]||[0])[0]);const lv=v<0?"x":v===0?0:v<20?1:v<50?2:v<100?3:4;h+=`<i class="h${lv}" title="${dstr(n)} : ${Math.max(0,v)} révisions"></i>`}h+="</div>"}
+  return `<div class="heat">${h}</div>`;
+}
 function vHome(){
-  const tot=CARDS.length,kn=CARDS.filter(c=>known.has(c.k)).length;
-  const last=COURSES.filter(c=>c.id!=="jour").slice(-1)[0];
-  const lastC=COURSES.filter(c=>c.id[0]==="C").slice(-1)[0], lastJ=COURSES.filter(c=>c.id[0]==="J").slice(-1)[0];
+  const st=stats(CARDS),L=logToday(),sk=streak(),t=today();
+  let n30=0,a30=0,ms30=0,days30=0;const hist=[],hl=[];
+  for(let d=t-29;d<=t;d++){const l=S.log[dstr(d)]||[0,0,0,0];n30+=l[0];a30+=l[1];ms30+=l[2];if(l[0])days30++;}
+  for(let d=t-13;d<=t;d++){hist.push((S.log[dstr(d)]||[0])[0]);hl.push(dstr(d).slice(8))}
+  const fc=[],fl=[];for(let d=0;d<14;d++){fc.push(0);fl.push(d===0?"auj.":dstr(t+d).slice(8))}
+  for(const k in S.c){const d=Math.max(0,S.c[k][0]-t);if(d<14&&S.c[k]&&CARDIDX[k])fc[d]++}
+  const ret=n30?Math.round(100*(1-a30/n30)):null,todo=st.due+st.newToday;
+  const seg=(n,c)=>n?`<i style="flex:${n};background:${c}"></i>`:"";
+  const lastC=COURSES.filter(c=>c.id[0]==="C").slice(-1)[0],lastJ=COURSES.filter(c=>c.id[0]==="J").slice(-1)[0];
   $("#view").innerHTML=`
-  <h1>한국어 노트<small>${tot} cartes, ${COURSES.length-1} cours, ${FICHES.length} fiches, ${STORIES.length} histoires. Mis à jour le ${BUILD}.</small></h1>
+  <header class="top"><h1>한국어 노트<small>${new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}</small></h1></header>
+  <section class="hero">
+    <div class="heroh"><span class="ko">오늘</span><b>${todo?`${todo} carte${todo>1?"s":""} à faire`:(L[0]?"Tout est fait pour aujourd'hui":"Rien à réviser pour l'instant")}</b></div>
+    <div class="trio"><div><b>${st.newToday}</b><span>nouvelles</span></div><div><b>${st.due}</b><span>à revoir</span></div><div><b>${L[0]}</b><span>faites aujourd'hui</span></div></div>
+    <button class="btn big" data-act="all-study">${todo?"Réviser maintenant":"Apprendre de nouvelles cartes"}</button>
+  </section>
+  <section class="kpis">
+    <div class="kpi"><b>${sk}</b><span>jour${sk>1?"s":""} d'affilée</span></div>
+    <div class="kpi"><b>${ret==null?"–":ret+" %"}</b><span>réussite sur 30 jours</span></div>
+    <div class="kpi"><b>${st.mature}</b><span>cartes matures</span></div>
+    <div class="kpi"><b>${fmtTime(L[2])}</b><span>étudiées aujourd'hui</span></div>
+  </section>
   <form class="search" id="sf"><input id="q" type="search" placeholder="Chercher un mot en coréen, français ou anglais" autocomplete="off"><button class="btn" type="submit">Chercher</button></form>
-  <section><h2>Par niveau</h2>${LV.map(([k,name,lab,col])=>{const cs=CARDS.filter(c=>lvKey(c)===k),n=cs.filter(c=>known.has(c.k)).length;
-    return `<button class="level" style="--c:${col}" data-level="${k}"><strong>${lab} · ${name}</strong><span>${cs.length} cartes, ${n} marquées « je sais »</span><div class="bar"><i style="width:${cs.length?Math.round(100*n/cs.length):0}%"></i></div></button>`}).join("")}</section>
+  <section><h2>Mes cartes</h2><div class="panel">
+    <div class="stack">${seg(st.mature,"var(--a1)")}${seg(st.young,"var(--jjok)")}${seg(st.learn,"var(--chija)")}${seg(st.nw,"var(--line)")}</div>
+    <div class="legend"><span><i style="background:var(--a1)"></i>Matures ${st.mature}</span><span><i style="background:var(--jjok)"></i>Jeunes ${st.young}</span><span><i style="background:var(--chija)"></i>En apprentissage ${st.learn}</span><span><i style="background:var(--line)"></i>Nouvelles ${st.nw}</span></div>
+  </div></section>
+  <section><h2>Activité des 17 dernières semaines</h2><div class="panel">${heat()}<p class="count">${n30} révisions sur 30 jours, ${days30} jour${days30>1?"s":""} étudié${days30>1?"s":""}, ${fmtTime(ms30)} au total.</p></div></section>
+  <section class="two-col"><div><h2>Révisions des 14 derniers jours</h2><div class="panel">${bars(hist,hl,"var(--jjok)")}</div></div><div><h2>Prévisions des 14 prochains jours</h2><div class="panel">${bars(fc,fl,"var(--a1)")}</div></div></section>
+  <section><h2>Par niveau</h2>${LV.map(([k,name,lab,col])=>{const s=stats(CARDS.filter(c=>lvKey(c)===k)),seen=s.total-s.nw;
+    return `<button class="level" style="--c:${col}" data-level="${k}"><strong>${lab} · ${name}</strong><span>${seen} vues sur ${s.total}, dont ${s.mature} matures${s.due?` · ${s.due} à revoir`:""}</span><div class="bar"><i style="width:${s.total?100*seen/s.total:0}%"></i></div></button>`}).join("")}</section>
   <section><h2>Révision rapide</h2><div class="grid">${THEMES[0].items.map(tileHTML).join("")}</div></section>
   <section><h2>Derniers cours</h2><div class="rows">${[lastC,lastJ,courseOf("jour")].filter(Boolean).map(courseRow).join("")}</div></section>
-  <section><h2>Tout réviser</h2><div class="actions"><button class="btn" data-act="all-study">Cartes au hasard</button><button class="btn ghost" data-act="all-quiz">Quiz de 10 questions</button><button class="btn ghost" data-act="review">Revoir les cartes non acquises</button></div>
-  <p class="count">${kn} cartes sur ${tot} marquées « je sais » sur cet appareil.</p><p class="count" id="off">${offMsg}</p></section>`;
+  <section><h2>Réglages</h2><div class="panel">
+    <div class="setrow"><span>Nouvelles cartes par jour</span><span class="stepper"><button class="mini" data-act="nw-">−</button><b>${S.cfg.nw}</b><button class="mini" data-act="nw+">+</button></span></div>
+    <div class="setrow"><span>Lire le mot automatiquement</span><button class="chip" aria-pressed="${!!S.cfg.auto}" data-act="auto">${S.cfg.auto?"Activé":"Désactivé"}</button></div>
+    <div class="setrow"><span>Copier ma progression vers un autre appareil</span><span class="stepper"><button class="mini" data-act="export">Copier le code</button><button class="mini" data-act="import">Coller un code</button></span></div>
+    <div id="xfer"></div>
+    <p class="count">La progression est enregistrée sur cet appareil. Pour la retrouver ailleurs, copie le code ici et colle-le sur l'autre appareil.</p>
+    <p class="count" id="off">${offMsg}</p>
+  </div></section>`;
   $("#sf").addEventListener("submit",e=>{e.preventDefault();const q=$("#q").value.trim();if(q)go({v:"deck",kind:"search",q})});
 }
-function tileHTML([key,fr,ko]){const n=themeCards(key).length;return `<button class="tile" data-th="${key}"><span class="ko" style="color:var(--ink)">${ko}</span><span>${fr}</span><em>${n} cartes</em></button>`}
-function courseRow(c){return `<button class="rowbtn" data-course="${c.id}"><span class="id">${c.id==="jour"?"매일":c.id}</span><span class="tx"><span>${esc(c.t)}</span>${c.s?`<small>${esc(c.s)}</small>`:""}</span><span class="n">${c.n}</span></button>`}
+function tileHTML([key,fr,ko]){const cs=themeCards(key),s=stats(cs),seen=s.total-s.nw;return `<button class="tile" data-th="${key}"><span class="ko" style="color:var(--ink)">${ko}</span><span>${fr}</span><em>${s.total} cartes${s.due?` · ${s.due} à revoir`:""}</em><div class="bar" style="--c:var(--jjok)"><i style="width:${s.total?100*seen/s.total:0}%"></i></div></button>`}
+function courseRow(c){const s=stats(CARDS.filter(x=>x.c===c.id));return `<button class="rowbtn" data-course="${c.id}"><span class="id">${c.id==="jour"?"매일":c.id}</span><span class="tx"><span>${esc(c.t)}</span>${c.s?`<small>${esc(c.s)}</small>`:""}</span><span class="n">${s.due?`<b class="due">${s.due}</b> `:""}${c.n}</span></button>`}
 
 /* ---------- thèmes, cours ---------- */
 function vThemes(){$("#view").innerHTML=`<h1>주제<small>Le vocabulaire de tes cartes Anki, rangé par thème</small></h1>`+THEMES.map(g=>`<section><h2>${g.g}</h2><div class="grid">${g.items.map(tileHTML).join("")}</div></section>`).join("")}
@@ -217,7 +349,7 @@ function deckTitle(s){
   if(s.kind==="theme"){for(const g of THEMES)for(const it of g.items)if(it[0]===s.key)return [it[2],it[1]];}
   if(s.kind==="course"){const c=courseOf(s.id);return [s.id==="jour"?"매일 단어":s.id,c.t+(c.s?" · "+c.s:"")]}
   if(s.kind==="level"){const l=LV.find(x=>x[0]===s.key);return [l[2],l[1]+" · niveau estimé d'après le manuel du cours"]}
-  if(s.kind==="review")return ["복습","Cartes pas encore marquées « je sais »"];
+  if(s.kind==="review")return ["새 단어","Cartes pas encore apprises"];
   if(s.kind==="search")return ["« "+s.q+" »","Résultats de la recherche"];
   return ["전체","Toutes les cartes"];
 }
@@ -229,36 +361,44 @@ function cardBody(c){
    ${c.x?`<div class="ex"><div class="ko">${esc(c.x)}</div>${c.y?`<span>${esc(c.y)}</span>`:""}${c.z?`<span>${esc(c.z)}</span>`:""}</div>`:""}
    ${c.n?`<div class="note">${esc(c.n)}</div>`:""}
    <div class="meta"><span class="lvl ${c.l}">${c.l}</span><button class="mini" data-course="${c.c}">${courseLabel(c.c)}${c.d?" · "+c.d.slice(5):""}</button>
-   ${canSpeak?`<button class="mini" data-say="${esc(c.k)}">Écouter le mot</button>${c.x?`<button class="mini" data-say="${esc(c.x)}">Écouter la phrase</button>`:""}`:""}
-   <button class="mini" data-known="${esc(c.k)}">${known.has(c.k)?"Retirer « je sais »":"Je sais"}</button></div></div>`;
+   ${canPlay?`<button class="mini" data-say="${esc(c.k)}">Écouter le mot</button>${c.x?`<button class="mini" data-say="${esc(c.x)}">Écouter la phrase</button>`:""}`:""}
+   <button class="mini" data-known="${esc(c.k)}">${known.has(c.k)?"Remettre à zéro":"Je connais déjà"}</button>${S.c[c.k]?`<span class="count">${S.c[c.k][1]===0?"en apprentissage":"prochaine révision dans "+fmtIvl(Math.max(1,S.c[c.k][0]-today()))}</span>`:""}</div></div>`;
 }
 function vDeck(s){
-  const all=deckCards(s),[ko,fr]=deckTitle(s),cs=filtered(s);s.limit=s.limit||120;
+  const all=deckCards(s),[ko,fr]=deckTitle(s),cs=filtered(s),dst=stats(cs);s.limit=s.limit||120;
   const lv=new Set(all.map(lvKey)),ps=new Set(all.map(c=>c.p));
   const fiche=s.kind==="theme"?FICHES.find(f=>f.themes.includes(s.key)):null;
   const chip=(lab,on,attr)=>`<button class="chip" aria-pressed="${on}" ${attr}>${lab}</button>`;
   $("#view").innerHTML=`${backBtn()}<h1>${esc(ko)}<small>${esc(fr)}</small></h1>
-  ${all.length?`<div class="actions"><button class="btn" data-act="study">Cartes</button><button class="btn ghost" data-act="quiz">Quiz</button>${fiche?`<button class="btn warn" data-fiche="${fiche.id}">Fiche : ${fiche.t}</button>`:""}</div>`:""}
+  ${all.length?`<div class="actions"><button class="btn" data-act="study">Réviser</button><button class="btn ghost" data-act="quiz">Quiz</button>${fiche?`<button class="btn warn" data-fiche="${fiche.id}">Fiche : ${fiche.t}</button>`:""}</div>`:""}
   ${lv.size>1?`<div class="chips">${chip("Tous niveaux",!s.fl,'data-fl=""')}${LV.filter(l=>lv.has(l[0])).map(l=>chip(l[2],s.fl===l[0],`data-fl="${l[0]}"`)).join("")}</div>`:""}
   ${ps.size>1?`<div class="chips">${chip("Tout",!s.fp,'data-fp=""')}${Object.keys(POSN).filter(p=>ps.has(p)).map(p=>chip(POSN[p],s.fp===p,`data-fp="${p}"`)).join("")}</div>`:""}
-  <div class="chips">${chip("Masquer les cartes « je sais »",!!s.fu,'data-fu="1"')}</div>
-  <p class="count">${cs.length} carte${cs.length>1?"s":""}. Touche un mot pour voir l'exemple et la note.</p>
+  <div class="chips">${chip("Masquer les cartes déjà apprises",!!s.fu,'data-fu="1"')}${dst.nw?`<button class="chip" data-act="bulk">${s.bulk?`Confirmer : ${dst.nw} cartes passent en « déjà connues »`:"Je connais déjà toute cette liste"}</button>`:""}</div>
+  <p class="count">${cs.length} carte${cs.length>1?"s":""} : ${dst.due} à revoir, ${dst.nw} nouvelles, ${dst.mature} matures. Touche un mot pour voir l'exemple et la note.</p>
   <div class="rows">${cs.length?cs.slice(0,s.limit).map(c=>`<details class="w${known.has(c.k)?" known":""}" data-k="${esc(c.k)}"><summary><span class="k">${esc(c.k)}</span><span class="e">${esc(c.f||c.e)}</span></summary></details>`).join(""):'<div class="empty">Aucune carte ne correspond à ces filtres.</div>'}</div>
   ${cs.length>s.limit?`<button class="btn ghost" data-act="more">Afficher la suite (${cs.length-s.limit} restantes)</button>`:""}`;
 }
 document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.w")&&d.open&&!d.querySelector(".body")){const c=CARDS.find(x=>x.k===d.dataset.k);if(c)d.insertAdjacentHTML("beforeend",cardBody(c))}},true);
 
-/* ---------- cartes à retourner ---------- */
+/* ---------- révision ---------- */
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function vStudy(s){
-  if(!s.queue){s.queue=shuffle(s.cards.map(c=>c.k));s.done=0;s.total=s.queue.length;s.rev=false}
-  if(!s.queue.length){$("#view").innerHTML=`${backBtn()}<h1>끝!<small>Série terminée : ${s.total} cartes passées en revue.</small></h1><div class="actions"><button class="btn" data-act="restart">Recommencer</button><button class="btn ghost" data-act="back">Revenir à la liste</button></div>`;return}
-  const c=CARDS.find(x=>x.k===s.queue[0]);const front=s.dir==="fr"?esc(c.f||c.e):esc(c.k);
-  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="count">${s.done} / ${s.total} acquises, ${s.queue.length} restantes</span><button class="mini" data-act="dir">${s.dir==="fr"?"Sens : traduction → coréen":"Sens : coréen → traduction"}</button></div>
-  <div class="flash" data-act="flip" role="button" tabindex="0"><div class="big${s.dir==="fr"||c.k.length>9?" small":""}${s.dir==="fr"?"":" ko"}">${front}</div>
-  ${s.rev?`${s.dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.e)}${c.f?`<br><i>${esc(c.f)}</i>`:""}</div>`}${c.x?`<div class="ko" style="font-size:18px">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
-  ${s.rev?`<div class="two"><button class="btn ghost" data-act="again">À revoir</button><button class="btn" data-act="ok">Je sais</button></div>`:`<button class="btn" data-act="flip">Voir la réponse</button>`}
-  ${canSpeak?`<button class="mini" style="align-self:center" data-say="${esc(c.k)}">Écouter</button>`:""}</div>`;
+  if(!s.queue){s.queue=buildSession(s.cards,s.extra,s.recent);s.done=0;s.rev=false;s.spoken=null}
+  const left=stats(s.cards);
+  if(!s.queue.length){
+    $("#view").innerHTML=`${backBtn()}<h1>${s.done?"끝!":"없어요"}<small>${s.done?`${s.done} carte${s.done>1?"s":""} révisée${s.done>1?"s":""} dans cette série.`:"Aucune carte à réviser ici pour aujourd'hui."}</small></h1>
+    <p class="intro">${left.nw?`Il reste ${left.nw} nouvelles cartes dans cette liste. La limite du jour est de ${S.cfg.nw}.`:"Toutes les cartes de cette liste ont déjà été vues."}</p>
+    <div class="actions">${left.nw?`<button class="btn" data-act="more-new">Apprendre 10 nouvelles cartes de plus</button>`:""}<button class="btn ghost" data-act="back">Revenir</button></div>`;return}
+  const c=CARDIDX[s.queue[0]],cs=S.c[c.k],front=s.dir==="fr"?esc(c.f||c.e):esc(c.k);
+  const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
+  if(!s.rev){s.t0=Date.now()}
+  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> nouvelles · <b style="color:var(--chija)">${ql}</b> en cours · <b style="color:var(--a1)">${qr}</b> à revoir</span><button class="mini" data-act="dir">${s.dir==="fr"?"Traduction → coréen":"Coréen → traduction"}</button></div>
+  <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag">${!cs?"Nouvelle":cs[1]===0?"En apprentissage":"Révision"} · ${courseLabel(c.c)} · ${c.l}</span><div class="big${s.dir==="fr"||c.k.length>9?" small":""}${s.dir==="fr"?"":" ko"}">${front}</div>
+  ${s.rev?`<hr>${s.dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.f||c.e)}${c.f?`<small>${esc(c.e)}</small>`:""}</div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
+  ${canPlay?`<div class="actions center"><button class="mini" data-say="${esc(c.k)}">Écouter le mot</button>${s.rev&&c.x?`<button class="mini" data-say="${esc(c.x)}">Écouter la phrase</button>`:""}</div>`:""}
+  ${s.rev?`<div class="grades">${[[1,"À revoir","g1"],[2,"Difficile","g2"],[3,"Bien","g3"],[4,"Facile","g4"]].map(([g,lab,cl])=>`<button class="grade ${cl}" data-grade="${g}"><small>${fmtIvl(nextIvl(cs,g))}</small>${lab}</button>`).join("")}</div>`:`<button class="btn big" data-act="flip">Voir la réponse</button>`}</div>`;
+  if(S.cfg.auto&&canPlay&&!s.rev&&s.dir!=="fr"&&s.spoken!==c.k+s.queue.length){s.spoken=c.k+s.queue.length;speak(c.k)}
+  if(S.cfg.auto&&canPlay&&s.rev&&s.dir==="fr"&&s.spoken!==c.k+"r"){s.spoken=c.k+"r";speak(c.k)}
 }
 
 /* ---------- quiz ---------- */
@@ -278,7 +418,7 @@ function vFiche(s){
   const f=FICHES.find(x=>x.id===s.id);
   $("#view").innerHTML=`${backBtn()}<h1>${f.ko}<small>${f.t}</small></h1><p class="intro">${esc(f.intro)}</p>
   ${f.themes.length?`<div class="actions">${f.themes.map(t=>`<button class="btn ghost" data-th="${t}">Voir mes cartes : ${deckTitle({kind:"theme",key:t})[1]}</button>`).join("")}</div>`:""}
-  ${f.s.map(sec=>`<section><h2>${esc(sec.h)}</h2><div class="tablebox"><table class="f">${sec.r.map(r=>`<tr><td class="k"${canSpeak?` data-say="${esc(r[0])}"`:""}>${esc(r[0])}</td><td>${esc(r[1])}<small>${esc(r[2])}</small>${r[3]?`<span class="x">${esc(r[3])}</span>`:""}</td></tr>`).join("")}</table></div></section>`).join("")}`;
+  ${f.s.map(sec=>`<section><h2>${esc(sec.h)}</h2><div class="tablebox"><table class="f">${sec.r.map(r=>`<tr><td class="k"${canPlay?` data-say="${esc(r[0])}"`:""}>${esc(r[0])}</td><td>${esc(r[1])}<small>${esc(r[2])}</small>${r[3]?`<span class="x">${esc(r[3])}</span>`:""}</td></tr>`).join("")}</table></div></section>`).join("")}`;
 }
 
 /* ---------- histoires ---------- */
@@ -288,10 +428,10 @@ function vStories(){
 function vStory(s){
   const st=STORIES.find(x=>x.id===s.id);s.open=s.open||{};
   $("#view").innerHTML=`${backBtn()}<h1>${st.ko}<small>${st.t} · <span class="lvl ${st.l}">${st.l}</span></small></h1>
-  <div class="actions"><button class="btn ghost" data-act="alltr">${s.all?"Masquer les traductions":"Afficher toutes les traductions"}</button>${canSpeak?`<button class="btn ghost" data-say="${esc(st.lines.map(l=>l[0]).join(" "))}">Écouter l'histoire</button>`:""}</div>
+  <div class="actions"><button class="btn ghost" data-act="alltr">${s.all?"Masquer les traductions":"Afficher toutes les traductions"}</button>${canPlay?`<button class="btn ghost" data-say="${esc(st.lines.map(l=>l[0]).join(" "))}">Écouter l'histoire</button>`:""}</div>
   <p class="count">Touche un mot pour le retrouver dans tes cartes.</p>
   <div class="rows story">${st.lines.map((l,i)=>`<div class="line"><p class="s">${l[0].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>
-   ${s.all||s.open[i]?`<p class="tr"><b>${esc(l[1])}</b>${esc(l[2])}</p>`:""}<div class="meta"><button class="mini" data-tr="${i}">${s.all||s.open[i]?"Masquer":"Traduction"}</button>${canSpeak?`<button class="mini" data-say="${esc(l[0])}">Écouter</button>`:""}</div></div>`).join("")}</div>`;
+   ${s.all||s.open[i]?`<p class="tr"><b>${esc(l[1])}</b>${esc(l[2])}</p>`:""}<div class="meta"><button class="mini" data-tr="${i}">${s.all||s.open[i]?"Masquer":"Traduction"}</button>${canPlay?`<button class="mini" data-say="${esc(l[0])}">Écouter</button>`:""}</div></div>`).join("")}</div>`;
 }
 const HEADS=CARDS.filter(c=>c.p!=="gram"&&!/[?\s\/(]/.test(c.k)).map(c=>({c,stem:c.k.replace(/하다$/,"").replace(/다$/,"")})).filter(h=>h.stem.length>=1);
 function lookup(w){
@@ -312,6 +452,7 @@ function showSheet(w,res){
 /* ---------- clics ---------- */
 document.addEventListener("click",e=>{
   const t=e.target,s=cur();
+  const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),again=answer(k,+gr.dataset.grade,Date.now()-(s.t0||Date.now()));if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
   const say=t.closest("[data-say]");if(say){speak(say.dataset.say);return}
   if(t.closest(".line .s span")){const sp=t.closest(".line .s span");const res=lookup(sp.textContent);showSheet(sp.textContent,res);sp.classList.add("on");return}
   const a=t.closest("[data-act]");
@@ -320,20 +461,25 @@ document.addEventListener("click",e=>{
     if(act==="back"){back();return}
     if(act==="more"){s.limit+=200;s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="study"||act==="quiz"){const cs=filtered(s);if(cs.length){s.scroll=$("#main").scrollTop;go({v:act,cards:cs})}return}
-    if(act==="all-study"){go({v:"study",cards:shuffle(CARDS).slice(0,30)});return}
+    if(act==="all-study"){go({v:"study",cards:CARDS,recent:true,extra:stats(CARDS).due+stats(CARDS).newToday?0:10});return}
+    if(act==="bulk"){if(!s.bulk){s.bulk=1;s.keepScroll=true;render();s.keepScroll=false;return}const cs=filtered(s).filter(isNew),t0=today();cs.forEach(c=>{S.c[c.k]=[t0+7+Math.floor(Math.random()*50),30,2.5,1,0]});save();s.bulk=0;s.keepScroll=true;render();s.keepScroll=false;return}
+    if(act==="more-new"){s.extra=(s.extra||0)+10+Math.max(0,logToday()[3]-S.cfg.nw);delete s.queue;render();return}
+    if(act==="nw-"||act==="nw+"){S.cfg.nw=Math.max(0,Math.min(100,S.cfg.nw+(act==="nw+"?5:-5)));save();s.keepScroll=true;render();s.keepScroll=false;return}
+    if(act==="auto"){S.cfg.auto=!S.cfg.auto;save();s.keepScroll=true;render();s.keepScroll=false;return}
+    if(act==="export"){const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const done=m=>{$("#xfer").innerHTML=`<p class="count">${m}</p><textarea class="code" readonly>${code}</textarea>`};try{navigator.clipboard.writeText(code).then(()=>done("Code copié. Colle-le sur l'autre appareil avec « Coller un code »."),()=>done("Copie ce code à la main :"))}catch(e){done("Copie ce code à la main :")}return}
+    if(act==="import"){$("#xfer").innerHTML=`<textarea class="code" id="incode" placeholder="Colle ici le code copié sur l'autre appareil"></textarea><button class="btn" data-act="import-ok">Remplacer la progression de cet appareil</button>`;return}
+    if(act==="import-ok"){try{const r=JSON.parse(decodeURIComponent(escape(atob($("#incode").value.trim()))));if(!r||!r.c)throw 0;S=r;S.cfg=Object.assign({nw:20,auto:true},S.cfg||{});save();render()}catch(e){$("#xfer").insertAdjacentHTML("beforeend",'<p class="count">Ce code n\'est pas valide. Recopie-le en entier depuis l\'autre appareil.</p>')}return}
     if(act==="all-quiz"){go({v:"quiz",cards:CARDS});return}
     if(act==="review"){go({v:"deck",kind:"review"});return}
     if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dir"){s.dir=s.dir==="fr"?"":"fr";s.rev=false;render();return}
-    if(act==="again"){s.queue.push(s.queue.shift());s.rev=false;render();return}
-    if(act==="ok"){known.add(s.queue.shift());saveKnown();s.done++;s.rev=false;render();return}
-    if(act==="restart"){delete s.queue;delete s.qs;render();return}
+        if(act==="restart"){delete s.queue;delete s.qs;render();return}
     if(act==="next"){s.i++;s.pick=null;render();return}
     if(act==="alltr"){s.all=!s.all;s.keepScroll=true;render();s.keepScroll=false;return}
   }
   const o=t.closest("[data-opt]");if(o&&s.v==="quiz"&&s.pick==null){s.pick=+o.dataset.opt;const q=s.qs[s.i];if(q.opts[s.pick].k===q.c.k)s.score++;s.keepScroll=true;render();s.keepScroll=false;return}
   const tr=t.closest("[data-tr]");if(tr){const i=tr.dataset.tr;if(s.all){s.all=false;s.open={}}else s.open[i]=!s.open[i];s.keepScroll=true;render();s.keepScroll=false;return}
-  const kn=t.closest("[data-known]");if(kn){const k=kn.dataset.known;known.has(k)?known.delete(k):known.add(k);saveKnown();const d=kn.closest("details");if(d){d.classList.toggle("known",known.has(k))}kn.textContent=known.has(k)?"Retirer « je sais »":"Je sais";return}
+  const kn=t.closest("[data-known]");if(kn){const k=kn.dataset.known;if(S.c[k])delete S.c[k];else S.c[k]=[today()+60,60,2.5,1,0];save();const d=kn.closest("details");if(d){d.classList.toggle("known",known.has(k))}kn.textContent=known.has(k)?"Remettre à zéro":"Je connais déjà";return}
   const keep=()=>{s.scroll=$("#main").scrollTop};
   const th=t.closest("[data-th]");if(th&&th.dataset.th){keep();go({v:"deck",kind:"theme",key:th.dataset.th});return}
   const co=t.closest("[data-course]");if(co){keep();go({v:"deck",kind:"course",id:co.dataset.course});return}

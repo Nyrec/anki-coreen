@@ -182,8 +182,11 @@ MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septem
 now=datetime.datetime.now(datetime.timezone.utc)+datetime.timedelta(hours=1)
 build='%d %s %d'%(now.day,MOIS[now.month-1],now.year)
 PWA='<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="한국어 노트"><meta name="theme-color" content="#1d5a78">'
+AUDIO_JSON='{}'
+am=os.path.join(HERE,'static','audio','index.json')
+if os.path.exists(am) and not args.single: AUDIO_JSON=open(am,encoding='utf-8').read().replace('</','<\\/')
 t=open(os.path.join(HERE,'template.html'),encoding='utf-8').read()
-t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*OFFLINE*/','false' if args.single else 'true')
+t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*AUDIO*/',AUDIO_JSON).replace('/*OFFLINE*/','false' if args.single else 'true')
 os.makedirs(args.out,exist_ok=True)
 open(os.path.join(args.out,'index.html'),'w',encoding='utf-8').write(t)
 if not args.single:
