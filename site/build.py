@@ -15,6 +15,8 @@ ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HERE=os.path.join(ROOT,'site')
 ap=argparse.ArgumentParser()
 ap.add_argument('--out',default='_site'); ap.add_argument('--single',action='store_true')
+ap.add_argument('--audio-dir',default='',help='dossier des fichiers audio déjà générés')
+ap.add_argument('--todo',default='',help='écrit la liste (voix, texte, fichier) de tout l audio attendu')
 ap.add_argument('--extra',action='append',default=[],help='dossier supplémentaire de fichiers .txt')
 args=ap.parse_args()
 def natkey(cid):
@@ -182,11 +184,51 @@ MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septem
 now=datetime.datetime.now(datetime.timezone.utc)+datetime.timedelta(hours=1)
 build='%d %s %d'%(now.day,MOIS[now.month-1],now.year)
 PWA='<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="한국어 노트"><meta name="theme-color" content="#1d5a78">'
-AUDIO_JSON='{}'
-am=os.path.join(HERE,'static','audio','index.json')
-if os.path.exists(am) and not args.single: AUDIO_JSON=open(am,encoding='utf-8').read().replace('</','<\\/')
+# --- histoires : anciennes lectures courtes (content.js) + séries (stories.txt)
+def parse_stories(path):
+    out=[];cur=None
+    for raw in open(path,encoding='utf-8'):
+        l=raw.rstrip('\n')
+        if not l.strip() or l.startswith('#'): continue
+        tag,rest=l[0],[x.strip() for x in l[1:].split('|')]
+        if tag=='=':
+            cur=dict(id=rest[0],l=rest[1],serie=rest[2],serieKo=rest[3],ep=int(rest[4]),t=rest[5],ko=rest[6],lines=[],voc=[],gram=[],q=[]); out.append(cur)
+        elif tag=='@': assert len(rest)==4,l; cur['lines'].append(rest)
+        elif tag=='v': assert len(rest)==2,l; cur['voc'].append(rest)
+        elif tag=='g': assert len(rest)==2,l; cur['gram'].append(rest)
+        elif tag=='q': assert len(rest)==4,l; cur['q'].append(rest)
+    return out
+SERIES=parse_stories(os.path.join(HERE,'stories.txt'))
+SPK={'루카':'hyunsu','지수':'sunhi','아주머니':'sunhi','팀장':'sunhi','민호':'injoon','준영':'injoon','N':'hyunsu'}
+def fnv(text,seed):
+    h=seed
+    for b in text.encode('utf-8'): h=((h^b)*16777619)&0xffffffff
+    return '%08x'%h
+def afile(voice,text): k=voice+'|'+text; return fnv(k,2166136261)+fnv(k,84696351)+'.mp3'
+def spoken(t):
+    c=re.sub(r'\s*[/↔]\s*',', ',re.sub(r'\(.*?\)','',t)).strip()
+    return c if re.match(r'^[가-힣 ,?.!~]+$',c) else ''
+old_short=json.loads(open(os.path.join(HERE,'short_stories.json'),encoding='utf-8').read())
+todo=[];seen_a=set()
+def want(voice,key,say):
+    f=afile(voice,key)
+    if f not in seen_a: seen_a.add(f); todo.append([voice,say,f])
+for st in SERIES:
+    for spk,ko,fr,en in st['lines']: want(SPK.get(spk,'hyunsu'),ko,ko)
+    for ko,fr in st['voc']:
+        if spoken(ko): want('hyunsu',ko,spoken(ko))
+for st in old_short:
+    for ko,fr,en in st['lines']: want('hyunsu',ko,ko)
+ci={c['id']:i for i,c in enumerate(cl)}
+for c in sorted(cards,key=lambda c:-ci[c['c']]):
+    if spoken(c['k']): want('hyunsu',c['k'],spoken(c['k']))
+    if c.get('x'): want('hyunsu',c['x'],c['x'])
+if args.todo: json.dump(todo,open(args.todo,'w',encoding='utf-8'),ensure_ascii=False)
+have=[]
+if args.audio_dir and os.path.isdir(args.audio_dir): have=sorted(f for f in os.listdir(args.audio_dir) if f.endswith('.mp3'))
+HAS_AUDIO='true' if (have and not args.single) else 'false'
 t=open(os.path.join(HERE,'template.html'),encoding='utf-8').read()
-t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*AUDIO*/',AUDIO_JSON).replace('/*OFFLINE*/','false' if args.single else 'true')
+t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
 os.makedirs(args.out,exist_ok=True)
 open(os.path.join(args.out,'index.html'),'w',encoding='utf-8').write(t)
 if not args.single:
@@ -199,4 +241,9 @@ if not args.single:
     import shutil
     st=os.path.join(HERE,'static')
     if os.path.isdir(st): shutil.copytree(st,args.out,dirs_exist_ok=True)
+    if have:
+        ad=os.path.join(args.out,'audio'); os.makedirs(ad,exist_ok=True)
+        for f in have: shutil.copyfile(os.path.join(args.audio_dir,f),os.path.join(ad,f))
+        json.dump(have,open(os.path.join(ad,'list.json'),'w'))
+print('audio : %d attendus, %d présents'%(len(todo),len(have)))
 print('%d fichiers sources, %d lignes, %d cartes, %d sans français, %d cours'%(len(seen_src),len(rows),len(cards),nofr,len(cl)))

@@ -7,28 +7,55 @@ on:
     - cron: "12 5 * * *" # 6h12 à Paris en hiver, après l'import Anki de la nuit
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
   group: site
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     outputs:
       pages: ${{ steps.pages.outputs.enabled }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Récupérer toutes les branches (cartes du jour)
+      - name: Récupérer toutes les branches (cartes du jour, audio)
         run: git fetch --no-tags origin '+refs/heads/*:refs/remotes/origin/*'
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Préparer le dossier audio (branche audio)
+        run: |
+          if git rev-parse --verify -q origin/audio >/dev/null; then
+            git worktree add -B audio "$RUNNER_TEMP/audio" origin/audio
+          else
+            git worktree add --detach "$RUNNER_TEMP/audio"
+            cd "$RUNNER_TEMP/audio"
+            git checkout --orphan audio
+            git rm -rfq . || true
+          fi
+      - name: Enregistrer l'audio manquant
+        continue-on-error: true
+        timeout-minutes: 70
+        run: |
+          pip install -q edge-tts
+          python site/build.py --out "$RUNNER_TEMP/pre" --todo "$RUNNER_TEMP/todo.json" --audio-dir "$RUNNER_TEMP/audio"
+          python site/audio.py --todo "$RUNNER_TEMP/todo.json" --dir "$RUNNER_TEMP/audio"
+      - name: Sauvegarder l'audio
+        continue-on-error: true
+        run: |
+          cd "$RUNNER_TEMP/audio"
+          rm -f ./*.part
+          git config user.name "anki-coreen"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || (git commit -q -m "Audio [skip ci]" && git push -q origin audio)
       - name: Construire le site
-        run: python site/build.py --out _site
+        run: python site/build.py --out _site --audio-dir "$RUNNER_TEMP/audio"
       - name: GitHub Pages est-il activé ?
         id: pages
         env:
