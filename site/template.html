@@ -119,6 +119,7 @@ table.f td .x{display:block;font-family:var(--ko);font-size:14px;color:var(--jjo
 .sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .sheet .k{font-family:var(--ko);font-size:22px;font-weight:700}
 .empty{color:var(--muted);padding:14px}
+.panel[hidden],[hidden]{display:none!important}
 .syncrow{flex-direction:row;flex-wrap:wrap;align-items:center;gap:10px}.syncrow .panel{flex-basis:100%}
 .fld{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
 .hero{position:relative;overflow:hidden}
@@ -228,6 +229,12 @@ nav.tabs button b{padding:2px 12px;border-radius:99px}
 nav.tabs button[aria-current="page"] b{background:var(--jjok-soft)}
 
 @media (prefers-reduced-motion:no-preference){.flash,.opt,.chip{transition:border-color .15s,background .15s}}
+/* bandeau du jour : mêmes couleurs en clair et en sombre */
+.hero{background:linear-gradient(140deg,#1d5a78,#12384b)!important;color:#f2f5f4!important}
+.hero .btn.big{background:#f2f5f4!important;color:#1d5a78!important;border-color:#f2f5f4!important}
+.hero .trio div{background:rgba(255,255,255,.13)}
+.ring .rbg{stroke:rgba(255,255,255,.22)}.ring text{fill:#f2f5f4}.ring .rfg{stroke:#e9b648}
+.wd i{border-color:rgba(255,255,255,.45)}.wd.on i{background:#e9b648;border-color:#e9b648}.wd.now i{box-shadow:0 0 0 2px #f2f5f4}
 </style>
 </head>
 <body>
