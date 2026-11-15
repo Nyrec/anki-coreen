@@ -182,7 +182,8 @@ data=json.dumps(dict(cards=cards,courses=cl),ensure_ascii=False,separators=(',',
 content=open(os.path.join(HERE,'content.js'),encoding='utf-8').read().replace('</','<\\/')
 MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
 now=datetime.datetime.now(datetime.timezone.utc)+datetime.timedelta(hours=1)
-build='%d %s %d'%(now.day,MOIS[now.month-1],now.year)
+build='%d %s %d à %02d h %02d'%(now.day,MOIS[now.month-1],now.year,now.hour,now.minute)
+build_id=now.strftime('%Y%m%d%H%M%S')
 PWA='<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="한국어 노트"><meta name="theme-color" content="#1d5a78">'
 # --- histoires : anciennes lectures courtes (content.js) + séries (stories.txt)
 def parse_stories(path):
@@ -240,7 +241,7 @@ have=[]
 if args.audio_dir and os.path.isdir(args.audio_dir): have=sorted(f for f in os.listdir(args.audio_dir) if f.endswith('.mp3'))
 HAS_AUDIO='true' if (have and not args.single) else 'false'
 t=open(os.path.join(HERE,'template.html'),encoding='utf-8').read()
-t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*PODCASTS*/',json.dumps(PODS,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
+t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*BUILDID*/',build_id).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*PODCASTS*/',json.dumps(PODS,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
 os.makedirs(args.out,exist_ok=True)
 open(os.path.join(args.out,'index.html'),'w',encoding='utf-8').write(t)
 if not args.single:
@@ -250,6 +251,7 @@ if not args.single:
     for f in ['manifest.webmanifest','icon-180.png','icon-512.png']:
         open(os.path.join(args.out,f),'wb').write(open(os.path.join(HERE,f),'rb').read())
     open(os.path.join(args.out,'.nojekyll'),'w').write('')
+    json.dump({'build':build_id},open(os.path.join(args.out,'version.json'),'w'))
     import shutil
     st=os.path.join(HERE,'static')
     if os.path.isdir(st): shutil.copytree(st,args.out,dirs_exist_ok=True)

@@ -19,7 +19,7 @@ self.addEventListener("fetch", e => {
   } else if (same) {
     // Réseau d'abord (pour récupérer les nouveaux cours), cache si pas de réseau.
     e.respondWith(
-      fetch(req).then(r => { const copy = r.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return r; })
+      fetch(req, { cache: "no-store" }).then(r => { const copy = r.clone(); caches.open(CACHE).then(c => c.put(req, copy)); return r; })
         .catch(() => caches.match(req, { ignoreSearch: true }).then(r => r || caches.match("index.html")))
     );
   } else {
