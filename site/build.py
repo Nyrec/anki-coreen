@@ -208,11 +208,23 @@ def afile(voice,text): k=voice+'|'+text; return fnv(k,2166136261)+fnv(k,84696351
 def spoken(t):
     c=re.sub(r'\s*[/↔]\s*',', ',re.sub(r'\(.*?\)','',t)).strip()
     return c if re.match(r'^[가-힣 ,?.!~]+$',c) else ''
+def parse_pods(path):
+    out=[];cur=None
+    for raw in open(path,encoding='utf-8'):
+        l=raw.rstrip('\n')
+        if not l.strip() or l.startswith('#'): continue
+        tag,rest=l[0],[x.strip() for x in l[1:].split('|')]
+        if tag=='=': cur=dict(id=rest[0],l=rest[1],d=rest[2],v=rest[3],t=rest[4],ko=rest[5],lines=[]); out.append(cur)
+        elif tag=='-': assert len(rest)==2,l; cur['lines'].append(rest)
+    return out
+PODS=parse_pods(os.path.join(HERE,'podcasts.txt'))
 old_short=json.loads(open(os.path.join(HERE,'short_stories.json'),encoding='utf-8').read())
 todo=[];seen_a=set()
 def want(voice,key,say):
     f=afile(voice,key)
     if f not in seen_a: seen_a.add(f); todo.append([voice,say,f])
+for pd in PODS:
+    f=afile(pd['v'],'pod:'+pd['id']); seen_a.add(f); todo.append([pd['v'],' '.join(l[0] for l in pd['lines']),f])
 for st in SERIES:
     for spk,ko,fr,en in st['lines']: want(SPK.get(spk,'hyunsu'),ko,ko)
     for ko,fr in st['voc']:
@@ -228,7 +240,7 @@ have=[]
 if args.audio_dir and os.path.isdir(args.audio_dir): have=sorted(f for f in os.listdir(args.audio_dir) if f.endswith('.mp3'))
 HAS_AUDIO='true' if (have and not args.single) else 'false'
 t=open(os.path.join(HERE,'template.html'),encoding='utf-8').read()
-t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
+t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*PODCASTS*/',json.dumps(PODS,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
 os.makedirs(args.out,exist_ok=True)
 open(os.path.join(args.out,'index.html'),'w',encoding='utf-8').write(t)
 if not args.single:
