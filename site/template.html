@@ -247,6 +247,7 @@ const DATA=/*DATA*/;
 /*CONTENT*/
 const BUILD="/*BUILD*/";
 const OFFLINE=/*OFFLINE*/;
+const BUILD_ID="/*BUILDID*/";
 const CARDS=DATA.cards, COURSES=DATA.courses;
 const CARDIDX={};for(const c of CARDS)CARDIDX[c.k]=c;
 const THEMES=[
@@ -440,6 +441,7 @@ function vHome(){
     <div class="setrow"><span>Copier ma progression vers un autre appareil</span><span class="stepper"><button class="mini" data-act="export">Copier le code</button><button class="mini" data-act="import">Coller un code</button></span></div>
     <div id="xfer"></div>
     <p class="count">La progression est enregistrée sur cet appareil. Pour la retrouver ailleurs, copie le code ici et colle-le sur l'autre appareil.</p>
+    <div class="setrow"><span>버전 · Version du ${BUILD}</span>${OFFLINE?`<button class="mini" data-act="update">업데이트 · Mettre à jour</button>`:""}</div>
     <p class="count" id="off">${offMsg}</p>
   </div></section>`;
   $("#sf").addEventListener("submit",e=>{e.preventDefault();const q=$("#q").value.trim();if(q)go({v:"deck",kind:"search",q})});
@@ -648,6 +650,7 @@ document.addEventListener("click",e=>{
     if(act==="hide"){stopStory();s.hide=!s.hide;s.open={};s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="read"){S.read=S.read||{};if(S.read[s.id])delete S.read[s.id];else S.read[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dl"){downloadAudio();return}
+    if(act==="update"){a.textContent="업데이트 중…";(async()=>{try{const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();await fetch("index.html?v="+Date.now(),{cache:"reload"})}catch(err){}location.reload()})();return}
     if(act==="sync"){if(!SY||e.detail===2){const b=$("#syncbox");if(b)b.hidden=!b.hidden}if(SY)doSync();return}
     if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tok=$("#sytok").value.trim()||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)||!tok){$("#syncst").textContent="Indique le dépôt sous la forme Nom/depot et colle le code d'accès.";return}SY={repo,token:tok};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
     if(act==="sync-cfg"){$("#main").scrollTop=0;const b=$("#syncbox");if(b)b.hidden=false;return}
@@ -679,6 +682,8 @@ async function downloadAudio(){
   }catch(e){if(m)m.textContent="Le téléchargement a échoué. Vérifie ta connexion et réessaie."}
 }
 if(OFFLINE&&SY&&navigator.onLine!==false)setTimeout(()=>doSync(true),800);
+async function checkVersion(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=await r.json();if(v.build&&v.build!==BUILD_ID&&!document.getElementById("newver")){document.body.insertAdjacentHTML("beforeend",'<button id="newver" class="btn" data-act="update" style="position:fixed;left:50%;transform:translateX(-50%);bottom:86px;z-index:9;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)">새 버전 · Nouvelle version : mettre à jour</button>')}}catch(e){}}
+if(OFFLINE){setTimeout(checkVersion,1500);document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()})}
 const start=(location.hash||"").slice(1);
 tab(["accueil","themes","cours","fiches","histoires","ecoute"].includes(start)?start:"accueil");
 </script>
