@@ -49,6 +49,15 @@
     "hyunsu-phrase.mp3",
     "hyunsu-histoire.mp3"
    ]
+  },
+  {
+   "id": "melo",
+   "label": "Open source MeloTTS (femme)",
+   "files": [
+    "melo-mot.wav",
+    "melo-phrase.wav",
+    "melo-histoire.wav"
+   ]
   }
  ]
 }
