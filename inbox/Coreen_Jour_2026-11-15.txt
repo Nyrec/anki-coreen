@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+서류	documents, paperwork<br><i>document(s), dossier administratif</i>	내일까지 서류를 제출해야 해요.<br>I have to submit the documents by tomorrow.<br><i>Je dois remettre les documents d'ici demain.</i>	[seoryu] Hanja 書類 (writing + kind). Common collocations: 서류를 준비하다 / 제출하다 / 작성하다; 서류 가방 = briefcase.	quotidien::2026-11-15 명사 niveau::B1
+부딪히다	to bump into, to hit (something)<br><i>se cogner, heurter</i>	어제 문에 머리를 부딪혔어요.<br>Yesterday I bumped my head on the door.<br><i>Hier je me suis cogné la tête contre la porte.</i>	[budichida] Takes N에 부딪히다. Pronounced [부디치다]. Passive of 부딪다; 부딪치다 is the active/mutual form (two things colliding), often confused.	quotidien::2026-11-15 동사 niveau::B1
+미지근하다	lukewarm<br><i>tiède</i>	커피가 식어서 미지근해요.<br>The coffee has cooled down, it's lukewarm.<br><i>Le café a refroidi, il est tiède.</i>	[mijigeunhada] Also used figuratively for a half-hearted reaction or attitude: 반응이 미지근하다 = the response is lukewarm.	quotidien::2026-11-15 형용사 niveau::B1
+드디어	finally, at last<br><i>enfin, finalement (après une longue attente)</i>	드디어 프로젝트가 끝났어요!<br>The project is finally over!<br><i>Le projet est enfin terminé !</i>	[deudieo] Positive nuance: something long awaited happens. Compare 결국 (in the end), which is neutral or often negative.	quotidien::2026-11-15 부사 niveau::A2
+그럴 리가 없다	there's no way, that can't be<br><i>ce n'est pas possible, ça ne peut pas être vrai</i>	그 사람이 늦었다고요? 그럴 리가 없어요.<br>He was late? There's no way.<br><i>Il est arrivé en retard ? Ce n'est pas possible.</i>	[geureol riga eopda] Built on V-(으)ㄹ 리가 없다 'there is no reason/way that…'. Short spoken form: 그럴 리가요! Often paired with 설마.	quotidien::2026-11-15 표현 niveau::B1
