@@ -1,0 +1,49 @@
+#separator:tab
+#html:true
+#deck:Coréen::C17
+#tags column:5
+나이가 어떻게 되세요?	How old are you? (polite)	가: 나이가 어떻게 되세요?<br>나: 스물네 살이에요.	The polite way to ask. 몇 살이에요? is fine with peers and children, rude with elders.	cours::C17 교재::L5 표현
+몇 + 단위명사	how many + counter	교실에 학생이 몇 명 있어요?<br>How many students are in the classroom?	Any 'how many' question needs 몇 plus the right counter: 몇 개, 몇 명, 몇 마리, 몇 잔.	cours::C17 교재::L5 문법
+N에 + 가격	per unit (price)	사과는 두 개에 삼천 원이에요.<br>Apples are 3,000 won for two.	에 here means 'for / per': 한 개에 천 원 = 1,000 won each.	cours::C17 교재::L5 문법
+송이	counter for flowers	튤립이 한 송이 있어요.<br>There's one tulip.		cours::C17 교재::L5 단위
+켤레	counter for pairs (shoes, socks)	신발이 한 켤레 있어요.<br>There's one pair of shoes.		cours::C17 교재::L5 단위
+봉지	counter for bags (of snacks)	과자는 다섯 봉지에 2,400원이에요.<br>Five bags of snacks for 2,400 won.	封紙. Also the plastic bag itself.	cours::C17 교재::L5 단위
+어서 오세요	Welcome (to a shop)	어서 오세요!<br>Welcome!	Said by staff to a customer entering. The customer doesn't reply to it.	cours::C17 교재::L5 표현
+또 오세요	Come again	감사합니다. 또 오세요.<br>Thank you. Come again.	오다 + -세요. Said as the customer leaves.	cours::C17 교재::L5 표현
+맛있게 드세요	Enjoy your meal	네, 맛있게 드세요.<br>Here you go — enjoy your meal.	드시다 is the honorific of 먹다.	cours::C17 교재::L5 표현
+안녕히 계세요	Goodbye (to someone staying)	안녕히 계세요.<br>Goodbye.	계시다 = to stay (honorific). The person leaving says this; the one staying says 안녕히 가세요.	cours::C17 교재::L5 표현
+여기 있습니다	Here you are	네, 여기 있습니다.<br>Yes, here you are.	Formal version of 여기 있어요, used when handing something over.	cours::C17 교재::L5 표현
+죄송합니다	I'm sorry (formal apology)	죄송합니다, 손님.<br>I'm sorry, sir.	罪悚. More formal than 미안해요; the right register for staff and strangers.	cours::C17 교재::L5 표현
+-네요	realisation ending	샌드위치가 지금 없네요.<br>Oh, we're out of sandwiches.	Marks something the speaker has just noticed, often with admiration: 한국어가 많이 늘었네요. Nouns take (이)네요. 없네요 is pronounced [엄네요].	cours::C17 교재::L5 문법
+점원	shop assistant	점원이 인사해요.<br>The shop assistant greets us.	店員. 직원 (職員) is staff generally.	cours::C17 교재::L5 직업
+손님	customer, guest	죄송합니다, 손님.<br>I'm sorry, sir.	The 님 makes it respectful by default.	cours::C17 교재::L5 사람
+요즘	these days, lately	요즘은 뭐가 맛있어요?<br>What's good at the moment?		cours::C17 교재::L5 시간
+싱싱하다	to be fresh	수박이 싱싱해요.<br>The watermelon is fresh.	Used for produce and fish. 신선하다 is the more formal synonym.	cours::C17 교재::L5 형용사
+아주	very	아주 싸요.<br>It's very cheap.	Interchangeable with 정말 and 매우 in most contexts.	cours::C17 교재::L5 부사
+특별히	especially, specially	오늘은 특별히 싸요.<br>Today it's especially cheap.	特別히.	cours::C17 교재::L5 부사
+형제	siblings	형제가 몇 명 있어요?<br>How many siblings do you have?	兄弟.	cours::C17 교재::L5 사람
+할아버지	grandfather	할아버지 한 명하고 할머니 한 명이에요.<br>One grandfather and one grandmother.	Also used for any elderly man.	cours::C17 교재::L5 사람
+할머니	grandmother	할머니가 계세요.<br>My grandmother is here.	Elders take 계시다 rather than 있다.	cours::C17 교재::L5 사람
+고양이	cat	집에 고양이가 몇 마리 있어요?<br>How many cats do you have?	냥이 is the affectionate internet form.	cours::C17 교재::L5 동물
+개 (동물)	dog	개가 한 마리 있어요.<br>There's one dog.	Neutral word; 강아지 is warmer and far more common in speech. Same spelling as the counter 개.	cours::C17 교재::L5 동물
+닭	chicken	닭이 있어요.<br>There's a chicken.	Pronounced [닥]; 닭이 becomes [달기]. 닭고기 = chicken meat.	cours::C17 교재::L5 동물
+생선	fish (as food)	생선을 먹어요.<br>I eat fish.	生鮮 — fish on the plate. The live animal is 물고기.	cours::C17 교재::L5 음식
+기차	train	기차표 세 장 있습니다.<br>Here are three train tickets.	汽車. The KTX and subway are 지하철/열차.	cours::C17 교재::L5 명사
+영화	film, movie	영화표 여섯 장이에요.<br>Six cinema tickets.	映畵.	cours::C17 교재::L5 명사
+신발	shoes	바닥에 신발이 한 켤레 있어요.<br>There's a pair of shoes on the floor.	General word; counted with 켤레.	cours::C17 교재::L5 명사
+구두	dress shoes	구두 한 켤레예요.<br>It's a pair of dress shoes.		cours::C17 교재::L5 명사
+양말	socks	양말이 있어요.<br>There are socks.	洋襪.	cours::C17 교재::L5 명사
+슬리퍼	slippers	슬리퍼 한 켤레예요.<br>It's a pair of slippers.		cours::C17 교재::L5 명사
+장갑	gloves	장갑이 있어요.<br>There are gloves.	掌匣. Also counted with 켤레.	cours::C17 교재::L5 명사
+바닥	floor, ground	바닥에 신발이 있어요.<br>There are shoes on the floor.		cours::C17 교재::L5 집
+장미	rose	장미 한 송이예요.<br>It's one rose.	薔薇.	cours::C17 교재::L5 명사
+튤립	tulip	튤립이 한 송이 있어요.<br>There's one tulip.		cours::C17 교재::L5 명사
+카네이션	carnation	카네이션이에요.<br>It's a carnation.	Given to parents and teachers on 어버이날 and 스승의 날 in May.	cours::C17 교재::L5 명사
+키위	kiwi	키위가 있어요.<br>There are kiwis.		cours::C17 교재::L5 음식
+오렌지	orange	오렌지 세 개 주세요.<br>Three oranges, please.	The imported citrus; the native tangerine is 귤.	cours::C17 교재::L5 음식
+사이다	lemon-lime soda	사이다 한 병 주세요.<br>One lemon-lime soda, please.	Not apple cider — it's Sprite-like. A classic false friend.	cours::C17 교재::L5 음식
+샌드위치	sandwich	샌드위치 하나 주세요.<br>One sandwich, please.		cours::C17 교재::L5 음식
+케이크	cake	그럼 케이크 하나 주세요.<br>Then one cake, please.		cours::C17 교재::L5 음식
+여기요	Excuse me! / Here you are	가: 얼마예요?<br>나: 만 천 원이에요. — 여기요.	Two uses: calling a server's attention, and handing something over. 저기요 works for the first only.	cours::C17 교재::L5 표현
+몇 개 드릴까요?	How many would you like?	가: 몇 개 드릴까요?<br>나: 사과 네 개 주세요.	Swap the counter to match the goods: 몇 잔 드릴까요?, 몇 병 드릴까요?	cours::C17 교재::L5 표현
+사탕	candy, sweets	사탕 세 개에 천 원이에요.<br>Three sweets for 1,000 won.	砂糖 — the same characters give 설탕, sugar.	cours::C17 교재::L5 음식

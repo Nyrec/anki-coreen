@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+우기다	to insist stubbornly, to claim obstinately<br><i>s'entêter à soutenir, insister (à tort)</i>	친구가 자기 말이 맞다고 계속 우겨요.<br>My friend keeps insisting that he's right.<br><i>Mon ami n'arrête pas de soutenir qu'il a raison.</i>	[ugida] Usually with a quoted clause: -다고 우기다. Implies the person is wrong or unreasonable.	quotidien::2026-11-01 동사 niveau::B1
+속상하다	to be upset, distressed<br><i>être contrarié, avoir de la peine</i>	시험을 망쳐서 너무 속상해요.<br>I messed up my exam, so I'm really upset.<br><i>J'ai raté mon examen, j'en suis vraiment contrarié.</i>	[soksanghada] Lit. 'the inside is damaged' (속 + 상하다). Softer and more personal than 화가 나다; common for disappointment or hurt.	quotidien::2026-11-01 형용사 niveau::A2
+하마터면	almost, nearly (something bad happened)<br><i>pour un peu, j'ai failli</i>	하마터면 지하철을 놓칠 뻔했어요.<br>I almost missed the subway.<br><i>J'ai failli rater le métro.</i>	[hamateomyeon] Almost always paired with -(으)ㄹ 뻔하다 (past: -(으)ㄹ 뻔했다) for a narrowly avoided bad outcome.	quotidien::2026-11-01 부사 niveau::B1
+노선	route, line (bus/subway)<br><i>ligne, itinéraire (transport)</i>	이 버스는 노선이 바뀌어서 시청에 안 가요.<br>This bus doesn't go to City Hall because its route changed.<br><i>Ce bus ne va plus à la mairie car son itinéraire a changé.</i>	[noseon] Hanja 路線. Common in 노선도 (route map) and 버스 노선. Compare 호선 = numbered subway line (2호선).	quotidien::2026-11-01 명사 niveau::B1
+입이 무겁다	to be tight-lipped, able to keep a secret<br><i>savoir tenir sa langue, être discret</i>	민수 씨는 입이 무거워서 비밀을 말해도 돼요.<br>Minsu can keep a secret, so you can tell him.<br><i>Minsu sait tenir sa langue, tu peux lui confier un secret.</i>	[ibi mugeopda] Lit. 'the mouth is heavy'. Opposite: 입이 가볍다 (can't keep a secret). 무겁다 is ㅂ-irregular: 무거워요.	quotidien::2026-11-01 표현 niveau::B1

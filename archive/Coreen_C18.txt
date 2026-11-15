@@ -1,0 +1,48 @@
+#separator:tab
+#html:true
+#deck:Coréen::C18
+#tags column:5
+마트	supermarket	여기는 싱싱마트예요.<br>This is Singsing Mart.	Shortened from 슈퍼마켓/마켓; 이마트, 홈플러스 are the big chains.	cours::C18 교재::L5 장소
+비빔밥	bibimbap	비빔밥이 맛있어요?<br>Is the bibimbap good?	비비다 (to mix) + 밥. Rice mixed with vegetables, egg and often meat.	cours::C18 교재::L6 음식
+삼계탕	ginseng chicken soup	삼계탕이에요.<br>It's samgyetang.	蔘鷄湯. A whole young chicken stuffed with rice and ginseng, eaten in midsummer.	cours::C18 교재::L6 음식
+김밥	gimbap	김밥을 만들어요.<br>I'm making gimbap.	김 (seaweed) + 밥. Looks like sushi but uses sesame oil, not vinegar.	cours::C18 교재::L6 음식
+잡채	japchae	아니요, 잡채예요.<br>No, it's japchae.	雜菜. Sweet-potato glass noodles stir-fried with vegetables and meat.	cours::C18 교재::L6 음식
+삼겹살	grilled pork belly	삼겹살을 먹어요.<br>We're having samgyeopsal.	三겹살 — three-layered meat. Grilled at the table and wrapped in lettuce.	cours::C18 교재::L6 음식
+냉면	cold buckwheat noodles	냉면을 좋아해요.<br>I like naengmyeon.	冷麵. 물냉면 in icy broth, 비빔냉면 with spicy sauce.	cours::C18 교재::L6 음식
+순두부찌개	spicy soft tofu stew	순두부찌개예요.<br>It's sundubu-jjigae.	순두부 (soft tofu) + 찌개 (stew).	cours::C18 교재::L6 음식
+해물파전	seafood and spring onion pancake	해물파전이 맛있어요.<br>The seafood pancake is delicious.	海物 (seafood) + 파 (spring onion) + 전 (pancake).	cours::C18 교재::L6 음식
+갈비탕	short rib soup	이 음식이 갈비탕이에요?<br>Is this dish galbitang?	갈비 + 탕 (湯, soup).	cours::C18 교재::L6 음식
+김치찌개	kimchi stew	이 김치찌개는 맵지 않아요.<br>This kimchi stew isn't spicy.	김치 + 찌개. 찌개 is thicker and saltier than 국.	cours::C18 교재::L6 음식
+안 + V	not (negation before the verb)	저는 커피를 안 마셔요.<br>I don't drink coffee.	안 goes directly before the verb. With Noun+하다 verbs it splits them: 공부 안 해요, not 안 공부해요.	cours::C18 교재::L6 문법
+-지 않다	not (negation after the verb)	이 김치찌개는 맵지 않아요.<br>This kimchi stew isn't spicy.	Stem + 지 않아요. Same meaning as 안, slightly more formal and more common in writing. 운동하지 않아요 keeps 하다 attached.	cours::C18 교재::L6 문법
+좋아하다	to like	무슨 음식을 좋아해요?<br>What food do you like?	Takes the object particle 을/를, unlike 좋다 which takes 이/가. 안 좋아해요 = to dislike.	cours::C18 교재::L6 동사
+기다리다	to wait for	친구를 기다려요.<br>I'm waiting for a friend.	기다리 + 어요 → 기다려요. What you wait for takes 을/를, not 'for'.	cours::C18 교재::L6 동사
+만들다	to make	유진 씨가 김밥을 만들어요.<br>Yujin is making gimbap.	만들 + 어요 → 만들어요. ㄹ-final stem: the ㄹ drops before ㄴ, ㅂ, ㅅ (만드세요, 만듭니다).	cours::C18 교재::L6 동사
+타다	to ride, to take (transport)	버스를 타요.<br>I take the bus.	The vehicle takes 을/를: 지하철을 타요, 기차를 타요.	cours::C18 교재::L6 동사
+듣다	to listen, to hear	음악을 들어요.<br>I listen to music.	ㄷ irregular: the ㄷ becomes ㄹ before a vowel → 들어요. Same pattern as 걷다 → 걸어요.	cours::C18 교재::L6 동사
+쓰다	to write; to use; to be bitter	생일 카드를 써요.<br>I'm writing a birthday card.	으 irregular: 쓰 + 어요 → 써요. Three unrelated meanings share this spelling — 커피가 너무 써요 = the coffee is too bitter.	cours::C18 교재::L6 동사
+맵다	to be spicy	이 김치가 매워요?<br>Is this kimchi spicy?	ㅂ irregular: 맵 + 어요 → 매워요.	cours::C18 교재::L6 형용사
+고기	meat	저는 고기를 안 먹어요.<br>I don't eat meat.	Animal + 고기 gives the meat: 소고기, 돼지고기, 닭고기.	cours::C18 교재::L6 음식
+소	cow	소고기를 사요.<br>I'm buying beef.	소고기 (= 쇠고기) is beef.	cours::C18 교재::L6 동물
+돼지	pig	돼지고기를 먹어요.<br>I eat pork.	돼지고기 = pork.	cours::C18 교재::L6 동물
+오리	duck	오리고기예요.<br>It's duck meat.		cours::C18 교재::L6 동물
+음료수	soft drink, beverage	음료수를 마셔요.<br>I'm having a soft drink.	飮料水. Pronounced [음뇨수] — ㅁ followed by ㄹ turns the ㄹ into ㄴ.	cours::C18 교재::L6 음식
+술	alcohol	술을 안 마셔요.<br>I don't drink alcohol.	Covers every kind: 맥주, 소주, 와인.	cours::C18 교재::L6 음식
+음악	music	음악을 들어요.<br>I listen to music.	音樂.	cours::C18 교재::L6 명사
+잠	sleep (noun)	잠을 자요.<br>I sleep.	잠 + 자다 — Korean uses the noun with its verb, like 춤을 추다 (to dance).	cours::C18 교재::L6 명사
+생일 카드	birthday card	생일 카드를 써요.<br>I'm writing a birthday card.		cours::C18 교재::L6 명사
+조금	a little, slightly	조금 매워요.<br>It's a little spicy.	Contracts to 좀, which also serves as the politeness softener.	cours::C18 교재::L6 부사
+너무	too (much)	커피가 너무 써요.<br>The coffee is too bitter.	Strictly excessive, but widely used to mean simply 'very' in speech.	cours::C18 교재::L6 부사
+이 음식이 뭐예요?	What is this dish?	가: 이 음식이 뭐예요?<br>나: 순두부찌개예요.	The everyday way to ask about an unfamiliar dish at a restaurant.	cours::C18 교재::L6 표현
+무슨 음식을 좋아해요?	What food do you like?	가: 무슨 음식을 좋아해요?<br>나: 냉면을 좋아해요.	무슨 asks which kind within a category. The answer repeats the object particle: N을/를 좋아해요.	cours::C18 교재::L6 표현
+이름	name	이름을 써요.<br>I'm writing my name.		cours::C18 교재::L6 명사
+이메일	email	이메일을 써요.<br>I'm writing an email.	메일 alone is just as common.	cours::C18 교재::L6 명사
+편지	letter	편지를 써요.<br>I'm writing a letter.	便紙.	cours::C18 교재::L6 명사
+택시	taxi	택시를 타요.<br>I take a taxi.		cours::C18 교재::L6 명사
+비행기	aeroplane	비행기를 타요.<br>I take a plane.	飛行機. 비행기표 = plane ticket.	cours::C18 교재::L6 명사
+신문	newspaper	신문을 읽어요.<br>I read the newspaper.	新聞.	cours::C18 교재::L6 명사
+소고기	beef	소고기를 사요.<br>I'm buying beef.	Also written 쇠고기.	cours::C18 교재::L6 음식
+돼지고기	pork	돼지고기를 먹어요.<br>I eat pork.		cours::C18 교재::L6 음식
+닭고기	chicken (meat)	닭고기를 먹어요.<br>I eat chicken.	Pronounced [닥꼬기].	cours::C18 교재::L6 음식
+어떤	what kind of, which	어떤 음식을 좋아해요?<br>What kind of food do you like?	Close to 무슨; 어떤 leans towards qualities, 무슨 towards categories.	cours::C18 교재::L6 문법
+아르바이트	part-time job	저녁에 아르바이트를 해요.<br>I work my part-time job in the evening.	From German Arbeit via Japanese. Shortened to 알바 in speech: 알바를 해요.	cours::C18 교재::L6 명사

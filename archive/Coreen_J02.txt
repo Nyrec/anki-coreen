@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J02
+#tags column:5
+개월	month (counter, Sino)	삼 개월 동안 배웠어요.<br>I studied it for three months.	個月. Sino numbers: 일 개월, 이 개월. The native pair is 한 달, 두 달 — same meaning, different series.	cours::J02 교재::MKG9 단위
+N에 + 횟수	X times per period	일주일에 세 번 운동해요.<br>I work out three times a week.	에 marks the period, and the count follows: 하루에 두 잔, 일 년에 한 번, 이틀에 한 번.	cours::J02 교재::MKG9 문법
+얼마나 자주	how often	얼마나 자주 요리해요?<br>How often do you cook?	얼마나 = how much. The answer uses N에 + 번.	cours::J02 교재::MKG9 표현
+데이트하다	to go on a date	남자 친구하고 데이트했어요.<br>I went on a date with my boyfriend.	데이트 = a date.	cours::J02 교재::MKG9 동사
+이라서/라서	because it is (noun)	가수라서 노래를 잘해요.<br>She sings well because she's a singer.	이라서 after a consonant, 라서 after a vowel. The noun version of -아서/-어서. Negative: 이/가 아니라서 — 주말이 아니라서 차가 안 막혀요.	cours::J02 교재::MKG15 문법
+증상	symptom	증상이 어때요?<br>What are your symptoms?	症狀.	cours::J02 교재::MKG15 명사
+속이 안 좋다	to feel sick, to have an upset stomach	속이 안 좋아서 약을 먹었어요.<br>I felt sick so I took some medicine.	속 = the insides. Milder and vaguer than 배가 아프다.	cours::J02 교재::MKG15 표현
+어지럽다	to feel dizzy	어지러워서 앉았어요.<br>I felt dizzy so I sat down.	ㅂ irregular → 어지러워요.	cours::J02 교재::MKG15 형용사
+주사를 맞다	to get an injection	병원에서 주사를 맞았어요.<br>I got a shot at the hospital.	注射. 맞다 here means to receive a blow — the same verb as 'to be correct'.	cours::J02 교재::MKG15 표현
+건강하다	to be healthy	운동을 많이 해서 건강해요.<br>I exercise a lot so I'm healthy.	健康. 건강 = health.	cours::J02 교재::MKG15 형용사
+부자	rich person	부자라서 돈이 많아요.<br>He's rich, so he has a lot of money.	富者.	cours::J02 교재::MKG15 사람
+파스타	pasta	배고파서 파스타를 만들었어요.<br>I was hungry so I made pasta.		cours::J02 교재::MKG15 음식
+세계 여행	travelling the world	돈을 모아서 세계 여행을 할 거예요.<br>I'll save up and travel the world.	世界.	cours::J02 교재::MKG15 명사
+공공장소	public place	공공장소라서 담배를 못 피워요.<br>It's a public place so I can't smoke.	公共場所.	cours::J02 교재::MKG15 장소

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+헷갈리다	to be confused, to mix up<br><i>confondre, s'embrouiller</i>	이 두 단어가 너무 헷갈려요.<br>I always mix up these two words.<br><i>Je confonds tout le temps ces deux mots.</i>	[hetgallida] The confusing thing is the subject: N이/가 헷갈리다. The variant 헛갈리다 is also standard.	quotidien::2026-10-10 동사
+서운하다	to feel hurt, let down<br><i>être vexé, peiné (déçu par un proche)</i>	친구가 제 생일을 잊어버려서 서운했어요.<br>I felt hurt that my friend forgot my birthday.<br><i>J'ai été peiné que mon ami oublie mon anniversaire.</i>	[seounhada] Hurt feelings toward someone close, or sadness at parting. Pattern: N한테 서운하다. Near-synonym: 섭섭하다.	quotidien::2026-10-10 형용사
+어차피	anyway, in any case<br><i>de toute façon</i>	어차피 늦었으니까 천천히 가요.<br>We're late anyway, so let's take it easy.<br><i>On est en retard de toute façon, alors allons-y tranquillement.</i>	[eochapi] Means the outcome is the same regardless; often followed by -(으)니까. Not the same as 아무튼 (anyway, to change topic).	quotidien::2026-10-10 부사
+환승	transfer (between lines)<br><i>correspondance (transports)</i>	다음 역에서 2호선으로 환승하세요.<br>Transfer to Line 2 at the next station.<br><i>Changez pour la ligne 2 à la prochaine station.</i>	[hwanseung] Hanja 換乘 (change + ride). Verb 환승하다; 환승역 = transfer station. More formal than 갈아타다, heard in subway announcements.	quotidien::2026-10-10 명사
+그러게요	I know, right? / exactly<br><i>c'est clair, tu l'as dit</i>	그러게요, 오늘 정말 덥네요.<br>I know, it's really hot today.<br><i>C'est clair, il fait vraiment chaud aujourd'hui.</i>	[geureogeyo] Reply agreeing with a remark; also 'that's what I wonder' (그러게요, 왜 그랬을까요?). Casual form: 그러게.	quotidien::2026-10-10 표현

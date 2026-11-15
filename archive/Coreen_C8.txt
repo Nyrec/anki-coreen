@@ -1,0 +1,63 @@
+#separator:tab
+#html:true
+#deck:Coréen::C8
+#tags column:5
+가다	to go	지금 어디에 가요?<br>Where are you going now?	Stem vowel ㅏ → -아요. 가 + 아요 contracts to 가요.	cours::C8 교재::L2 동사
+오다	to come	오늘 친구가 집에 와요.<br>A friend is coming to my house today.	Stem vowel ㅗ → -아요. 오 + 아요 merges into 와요.	cours::C8 교재::L2 동사
+자다	to sleep	메이 씨는 지금 자요.<br>Mei is sleeping now.	Stem vowel ㅏ → 자 + 아요 contracts to 자요.	cours::C8 교재::L2 동사
+사다	to buy	빵 사요.<br>I'm buying bread.	Stem vowel ㅏ → 사 + 아요 contracts to 사요.	cours::C8 교재::L2 동사
+보다	to see, to watch	지금 뭐 봐요?<br>What are you watching now?	Stem vowel ㅗ → 보 + 아요 merges into 봐요.	cours::C8 교재::L2 동사
+만나다	to meet	오늘 친구 만나요.<br>I'm meeting a friend today.	Stem vowel ㅏ → 만나 + 아요 contracts to 만나요.	cours::C8 교재::L2 동사
+살다	to live	저는 한국에 살아요.<br>I live in Korea.	Stem vowel ㅏ but the stem ends in a consonant, so no contraction: 살아요.	cours::C8 교재::L2 동사
+먹다	to eat	점심 먹어요.<br>I'm eating lunch.	Stem vowel is neither ㅏ nor ㅗ → -어요. Pronounced [머거요].	cours::C8 교재::L2 동사
+읽다	to read	책 읽어요.<br>I'm reading a book.	-어요 ending. Pronounced [일거요].	cours::C8 교재::L2 동사
+마시다	to drink	커피 마셔요.<br>I'm drinking coffee.	마시 + 어요 → 마셔요. ㅣ + ㅓ contracts to ㅕ.	cours::C8 교재::L2 동사
+쉬다	to rest	오늘은 쉬어요.<br>Today I'm resting.	쉬 + 어요 = 쉬어요. The contraction is not written.	cours::C8 교재::L2 동사
+울다	to cry	동생이 울어요.<br>My younger sibling is crying.	-어요 ending. Pronounced [우러요].	cours::C8 교재::L2 동사
+입다	to wear, to put on	옷 입어요.<br>I'm putting on clothes.	-어요 ending. Pronounced [이버요].	cours::C8 교재::L2 동사
+일하다	to work	네, 일해요.<br>Yes, I'm working.	하다 verb: 하 + 여요 → 해요.	cours::C8 교재::L2 동사
+전화하다	to call, to talk on the phone	요한 씨는 전화해요.<br>Johan is on the phone.	하다 verb → 전화해요. 전화 = 電話 (telephone).	cours::C8 교재::L2 동사
+이야기하다	to talk, to have a conversation	지금 이야기해요.<br>They're talking right now.	하다 verb → 이야기해요. 이야기 = story, talk.	cours::C8 교재::L2 동사
+공부하다	to study	지금 한국어 공부해요.<br>I'm studying Korean now.	하다 verb → 공부해요. 공부 = 工夫.	cours::C8 교재::L2 동사
+운동하다	to work out, to exercise	저는 지금 운동해요.<br>I'm working out now.	하다 verb → 운동해요. 운동 = 運動.	cours::C8 교재::L2 동사
+수영하다	to swim	지윤 씨는 수영해요.<br>Jiyun is swimming.	하다 verb → 수영해요. 수영 = 水泳.	cours::C8 교재::L2 동사
+농구하다	to play basketball	오늘 농구해요.<br>I'm playing basketball today.	하다 verb → 농구해요. 농구 = 籠球.	cours::C8 교재::L2 동사
+축구하다	to play soccer	오늘 축구해요.<br>I'm playing soccer today.	하다 verb → 축구해요. 축구 = 蹴球.	cours::C8 교재::L2 동사
+-아요/-어요/-여요	polite present-tense ending (해요체)	수아 씨, 지금 뭐 해요?<br>Sua, what are you doing now?	Describes an action or a state. Stem vowel ㅏ/ㅗ → -아요; any other vowel → -어요; 하다 → 해요.	cours::C8 교재::L2 문법
+에	destination particle: to	회사에 가요.<br>I'm going to the company.	Place noun + 에 + movement verb (가다 / 오다 / 다니다). Marks where you are heading, not where you are.	cours::C8 교재::L2 문법 조사
+이/가	subject particle	여기가 수아 씨 집이에요?<br>Is this Sua's house?	이 after a consonant, 가 after a vowel. Puts the focus on the subject: who or what.	cours::C8 교재::L2 문법 조사
+은/는 vs 이/가	topic focus vs subject focus	박연진은 노래를 잘한다.<br>박연진이 노래를 잘한다.	은/는 → the focus is on the predicate: what is being said about the topic (she sings well). 이/가 → the focus is on the subject: it is Yeonjin who sings well.	cours::C8 교재::L2 문법 조사
+어디	where	여기는 어디예요?<br>Where is this?		cours::C8 교재::L2 명사
+여기	here, this place	여기는 식당이에요.<br>This is a restaurant.		cours::C8 교재::L2 명사
+지금	now	지금 뭐 해요?<br>What are you doing now?	只今.	cours::C8 교재::L2 시간
+뭐	what	뭐 마셔요?<br>What are you drinking?	Shortened from 무엇. Often written together with the verb: 뭐해요?	cours::C8 교재::L2 명사
+어제	yesterday	어제 쉬어요.<br>(I) rested yesterday.		cours::C8 교재::L2 시간
+오늘	today	오늘 일해요?<br>Are you working today?		cours::C8 교재::L2 시간
+내일	tomorrow	내일 세종학당에 가요.<br>I'm going to the Sejong Institute tomorrow.	來日.	cours::C8 교재::L2 시간
+우리	we, our	우리 집이에요.<br>It's our house.	Korean uses 우리 where English says 'my' for shared things: 우리 집, 우리 회사, 우리 학교.	cours::C8 교재::L2 명사
+점심	lunch	점심 먹어요.<br>I'm eating lunch.	點心.	cours::C8 교재::L2 음식
+밥	rice, meal	밥 먹어요.<br>I'm having a meal.	Literally cooked rice; 밥 먹어요 is the ordinary way to say 'to have a meal'.	cours::C8 교재::L2 음식
+빵	bread	빵 사요.<br>I'm buying bread.	From Portuguese pão via Japanese パン.	cours::C8 교재::L2 음식
+커피	coffee	커피 마셔요.<br>I'm drinking coffee.		cours::C8 교재::L2 음식
+옷	clothes	옷 사요.<br>I'm buying clothes.		cours::C8 교재::L2 명사
+책	book	책 읽어요.<br>I'm reading a book.	冊.	cours::C8 교재::L2 명사
+과일	fruit	과일 가게에 가요.<br>I'm going to the fruit store.		cours::C8 교재::L2 음식
+채소	vegetable	채소 가게에 가요.<br>I'm going to the vegetable store.	菜蔬.	cours::C8 교재::L2 음식
+식당	restaurant	여기는 식당이에요.<br>This is a restaurant.	食堂.	cours::C8 교재::L2 장소
+가게	store, shop	옷 가게예요.<br>It's a clothing store.	Attaches to what is sold: 옷 가게, 과일 가게, 채소 가게, 신발 가게.	cours::C8 교재::L2 장소
+옷 가게	clothing store	옷 가게에 가요.<br>I'm going to the clothing store.	옷 + 가게.	cours::C8 교재::L2 장소
+커피숍	coffee shop	커피숍에 가요.<br>I'm going to the coffee shop.	From English. 카페 is equally common in daily speech.	cours::C8 교재::L2 장소
+사무실	office	사무실에 가요.<br>I'm going to the office.	事務室. 회사 is the company as an organisation, 사무실 the room you work in.	cours::C8 교재::L2 장소
+화장실	restroom	화장실에 가요.<br>I'm going to the restroom.	化粧室.	cours::C8 교재::L2 장소
+집	home, house	집에 가요.<br>I'm going home.	집에 is pronounced [지베].	cours::C8 교재::L2 장소
+학교	school	학생이 학교에 가요.<br>The student goes to school.	學校.	cours::C8 교재::L2 장소
+세종학당	King Sejong Institute (Korean language school)	아니요, 세종학당에 가요.<br>No, I'm going to the Sejong Institute.	世宗學堂.	cours::C8 교재::L2 장소
+도서관	library	저는 도서관에 가요.<br>I'm going to the library.	圖書館.	cours::C8 교재::L2 장소
+서점	bookstore	서점에 가요.<br>I'm going to the bookstore.	書店. 책방 is the more native-sounding alternative.	cours::C8 교재::L2 장소
+과일 가게	fruit store	과일 가게에 가요.<br>I'm going to the fruit store.		cours::C8 교재::L2 장소
+채소 가게	vegetable store	채소 가게에 가요.<br>I'm going to the vegetable store.		cours::C8 교재::L2 장소
+헬스장	gym	요한 씨는 헬스장에 가요.<br>Johan is going to the gym.	English 'health' + 場. 헬스클럽 also appears in the textbook.	cours::C8 교재::L2 장소
+놀이공원	amusement park	지윤 씨는 놀이공원에 가요.<br>Jiyun is going to the amusement park.	놀이 (play) + 공원 (park). Pronounced [노리공원].	cours::C8 교재::L2 장소
+호텔	hotel	호텔에 가요.<br>I'm going to the hotel.		cours::C8 교재::L2 장소
+빵집	bakery	수아 씨는 빵집에 가요.<br>Sua is going to the bakery.	빵 + 집 = bread house. 제과점 is the formal equivalent.	cours::C8 교재::L2 장소
+이해했어요	I understood	네, 이해했어요.<br>Yes, I understood.	Past tense of 이해하다 (理解). Pronounced [이해해써요].	cours::C8 교재::L2 표현

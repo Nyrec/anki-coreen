@@ -1,0 +1,17 @@
+#separator:tab
+#html:true
+#deck:Coréen::C70
+#tags column:5
+기회	opportunity, chance	기회가 되면 유학을 가고 싶어요.<br>If I get the chance I'd like to study abroad.	機會. 기회가 되다 = an opportunity arises.	cours::C70 교재2::L14 명사
+전공하다	to major in	한국에서 영화를 전공하고 싶어요.<br>I want to major in film in Korea.	專攻. 전공 = one's major.	cours::C70 교재2::L14 동사
+영화사	film company	한국 영화사에서 일하고 싶어요.<br>I'd like to work at a Korean film company.	映畫社.	cours::C70 교재2::L14 장소
+일등	first place	말하기 대회에서 일등을 했어요.<br>She came first in the speaking contest.	一等. Written 1등.	cours::C70 교재2::L14 명사
+모르는 단어	unknown word	모르는 단어가 많아졌어요.<br>There are more words I don't know now.	모르다 → 모르는 before a noun.	cours::C70 교재2::L14 표현
+렌즈	lens	카메라를 떨어뜨려서 렌즈가 깨졌어요.<br>I dropped the camera and the lens cracked.	Also contact lenses: 콘택트렌즈.	cours::C70 교재2::L13 명사
+서비스 센터	service centre	카메라를 서비스 센터에 맡겼어요.<br>I left the camera at the service centre.	Same idea as 수리 센터; this is the maker's own repair shop.	cours::C70 교재2::L13 장소
+연기	acting	연기가 자연스러워요.<br>The acting is natural.	演技. 연기하다 = to act. Also means smoke (煙氣).	cours::C70 교재2::L14 명사
+자신이 없다	to lack confidence	중국어 말하기에 자신이 없어요.<br>I'm not confident speaking Chinese.	自信. Opposite: 자신이 있다. Close to 자신감이 없다.	cours::C70 교재2::L14 표현
+부자연스럽다	to be unnatural	발음이 좀 부자연스러워요.<br>The pronunciation is a bit unnatural.	不 + 자연스럽다. ㅂ irregular → 부자연스러워요.	cours::C70 교재2::L14 형용사
+부정확하다	to be inaccurate	발음이 부정확해요.<br>The pronunciation is inaccurate.	不正確.	cours::C70 교재2::L14 형용사
+밥을 사다	to treat someone to a meal	제가 밥을 살게요.<br>The meal's on me.	Literally 'to buy the rice'. 한턱내다 is the more emphatic version.	cours::C70 교재2::L13 표현
+관광지	tourist spot	관광지로 유명해요.<br>It's famous as a tourist destination.	觀光地.	cours::C70 교재2::L14 장소

@@ -1,0 +1,42 @@
+#separator:tab
+#html:true
+#deck:Coréen::C11
+#tags column:5
+10 이상의 수	reading numbers above ten	10 + 1 = 십일<br>200 + 30 + 7 = 이백삼십칠	Sino numbers simply stack: tens digit + 십 + units. 11 is 십일, never 일십일.	cours::C11 교재::L3 숫자
+백	hundred	삼백 원이에요.<br>It's 300 won.	百.	cours::C11 교재::L3 숫자
+천	thousand	칠천 원이에요.<br>It's 7,000 won.	千.	cours::C11 교재::L3 숫자
+만	ten thousand	만 육천 원이에요.<br>It's 16,000 won.	萬. Korean groups large numbers by 만, not by thousands: 100,000 = 십만, 1,000,000 = 백만. 10,000 is 만, not 일만.	cours::C11 교재::L3 숫자
+원	won (currency)	천 원이에요.<br>It's 1,000 won.	圓.	cours::C11 교재::L3 명사
+얼마예요?	How much is it?	이 연필 얼마예요?<br>How much is this pencil?	얼마 = how much (price or quantity).	cours::C11 교재::L3 표현
+모두	all, in total	모두 371,590원입니다.<br>That's 371,590 won in total.		cours::C11 교재::L3 부사
+-입니다	formal statement ending	1644-8857입니다.<br>It's 1644-8857.	합쇼체: the formal counterpart of 이에요/예요. Question form: -입니까?	cours::C11 교재::L3 문법
+층	floor (of a building)	사무실이 3층이에요.<br>The office is on the third floor.	層. Read with Sino numbers: 십사 층.	cours::C11 교재::L3 단위
+쪽	page	책 212쪽이에요.<br>It's page 212 of the book.	Native word; 페이지 is also used.	cours::C11 교재::L3 단위
+호	room number	301호예요.<br>It's room 301.	號.	cours::C11 교재::L3 단위
+년	year	2017년이에요.<br>It's the year 2017.	年.	cours::C11 교재::L3 단위
+번	number (in a series)	420번 버스예요.<br>It's the number 420 bus.	番. Used for buses, exits, phone numbers: 몇 번이에요?	cours::C11 교재::L3 단위
+버스	bus	700번 버스예요.<br>It's the 700 bus.		cours::C11 교재::L3 명사
+출구	exit	4번 출구가 아니에요.<br>It isn't exit 4.	出口. Essential in subway stations.	cours::C11 교재::L3 장소
+교실	classroom	교실이 201호예요.<br>The classroom is room 201.	敎室.	cours::C11 교재::L3 장소
+이 아니에요/가 아니에요	is not (noun negation)	친구가 아니에요. 동생이에요.<br>She isn't a friend. She's my younger sister.	Attaches to a noun to negate it: 이 after a consonant, 가 after a vowel. The negative counterpart of 이에요/예요.	cours::C11 교재::L3 문법
+누가	who (as subject)	누가 일해요?<br>Who is working?	Contraction of 누구 + 가. The answer takes 이/가 too: 민호가 일해요.	cours::C11 교재::L3 문법
+우유	milk	우유가 얼마예요?<br>How much is the milk?	牛乳.	cours::C11 교재::L3 음식
+라면	ramyeon, instant noodles	라면이 천삼백 원이에요.<br>The ramyeon is 1,300 won.	拉麵. Korean instant noodles, distinct from Japanese ramen (라멘).	cours::C11 교재::L3 음식
+아이스크림	ice cream	아이스크림이 구백 원이에요.<br>The ice cream is 900 won.		cours::C11 교재::L3 음식
+연필	pencil	이 연필 얼마예요?<br>How much is this pencil?	鉛筆.	cours::C11 교재::L3 명사
+물	water	커피가 아니에요. 물이에요.<br>It's not coffee. It's water.		cours::C11 교재::L3 음식
+김치	kimchi	김치가 아니에요. 과일이에요.<br>It's not kimchi. It's fruit.		cours::C11 교재::L3 음식
+문	door	문이 아니에요. 창문이에요.<br>It's not a door. It's a window.	門.	cours::C11 교재::L3 명사
+창문	window	창문이에요.<br>It's a window.	窓門.	cours::C11 교재::L3 명사
+사전	dictionary	사전이 아니에요. 공책이에요.<br>It's not a dictionary. It's a notebook.	辭典.	cours::C11 교재::L3 명사
+공책	notebook	공책이에요.<br>It's a notebook.	空冊. 노트 is also common.	cours::C11 교재::L3 명사
+가수	singer	영화배우가 아니에요. 가수예요.<br>She isn't a film actress. She's a singer.	歌手.	cours::C11 교재::L3 직업
+영화배우	film actor, actress	영화배우가 아니에요.<br>She isn't a film actress.	映畫俳優. 영화 = film.	cours::C11 교재::L3 직업
+의사	doctor	의사가 아니에요. 요리사예요.<br>She isn't a doctor. She's a chef.	醫師. Shares the 사 professional suffix with 간호사 and 요리사.	cours::C11 교재::L3 직업
+요리사	cook, chef	요리사예요.<br>She's a chef.	料理師. 요리 = cooking, dish.	cours::C11 교재::L3 직업
+선생님	teacher	선생님이 아니에요. 학생이에요.<br>He isn't a teacher. He's a student.	先生 + 님 (honorific suffix). The 님 is not dropped when addressing them.	cours::C11 교재::L3 직업
+미국	the United States	미국 사람이 아니에요.<br>He isn't American.	美國. Country + 사람 = nationality.	cours::C11 교재::L3 나라
+캐나다	Canada	캐나다 사람이에요.<br>He's Canadian.		cours::C11 교재::L3 나라
+호주	Australia	호주 사람이에요?<br>Are you Australian?	濠洲.	cours::C11 교재::L3 나라
+영국	the United Kingdom	영국 사람이에요.<br>He's British.	英國.	cours::C11 교재::L3 나라
+영수증	receipt	영수증을 주세요.<br>The receipt, please.	領收證.	cours::C11 교재::L3 명사

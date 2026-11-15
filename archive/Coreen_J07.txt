@@ -1,0 +1,16 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J07
+#tags column:5
+-아도 되다/-어도 되다	may, it's okay to (permission)	여기에 앉아도 돼요?<br>May I sit here?	ㅏ/ㅗ → -아도 (봐도), other vowels → -어도 (마셔도), 하다 → 해도. 듣다 → 들어도. Answer: 네, -아도 돼요 / 아니요, -으면 안 돼요. -아도 괜찮아요 is a softer twin.	cours::J07 교재::MKG-UB11 문법
+-으면 안 돼요?	couldn't I …? would it be okay if …? (hesitant request)	오늘은 요리 안 하고 외식하면 안 돼요?<br>Could we eat out today instead of cooking?	Literally 'is it not okay if…?'. Sounds more careful than -아도 돼요?, as if expecting a no. 이거 제가 가지면 안 돼요? = Could I have this?	cours::J07 교재::MKG-UB11 표현
+만지다	to touch	강아지 만져도 돼요?<br>May I pet the dog?	이건 만지면 안 돼요 = don't touch this.	cours::J07 교재::MKG-UB11 동사
+음악을 틀다	to put music on	음악을 틀어도 돼요?<br>Can I put some music on?	틀다 is an ㄹ stem → 틀어요. Also for the TV or AC: 에어컨을 틀다.	cours::J07 교재::MKG-UB11 표현
+가지다	to have, to keep	이거 제가 가져도 돼요?<br>Can I keep this?	가져가다 = to take away, 가져오다 = to bring.	cours::J07 교재::MKG-UB11 동사
+돌아다니다	to wander around	밤늦게 돌아다녀도 돼요?<br>Is it okay to wander around late at night?	돌다 (to turn) + 다니다.	cours::J07 교재::MKG-UB11 동사
+밤늦게	late at night	밤늦게 전화하면 안 돼요.<br>You shouldn't call late at night.	밤 + 늦게.	cours::J07 교재::MKG-UB11 시간
+때리다	to hit	친구를 때리면 안 돼요.<br>You mustn't hit your friends.	맞다 = to be hit (the same 맞다 as in 주사를 맞다).	cours::J07 교재::MKG-UB11 동사
+연애하다	to date, to be in a relationship	연애할 때 애인이 뭐 하면 안 돼요?<br>When you're dating, what shouldn't your partner do?	戀愛. 연애 = romance, relationship.	cours::J07 교재::MKG-UB11 동사
+애인	boyfriend, girlfriend, partner	애인이 있어요?<br>Are you seeing someone?	愛人. Neutral in Korean — it just means one's partner.	cours::J07 교재::MKG-UB11 사람
+수영복	swimsuit	수영복이 없으면 티셔츠를 입어도 돼요.<br>If you don't have a swimsuit, you can wear a T-shirt.	水泳服.	cours::J07 교재::MKG-UB11 명사
+음주 운전	drink-driving	음주 운전을 하면 안 돼요.<br>You must not drink and drive.	飮酒 運轉.	cours::J07 교재::MKG-UB11 명사

@@ -1,0 +1,23 @@
+#separator:tab
+#html:true
+#deck:Coréen::C68
+#tags column:5
+부족하다	to be insufficient, lacking	아직 많이 부족해요.<br>I still have a long way to go.	不足. A modest self-assessment.	cours::C68 교재2::L14 형용사
+형편없다	to be terrible, hopeless	제 그림 실력은 형편없어요.<br>My drawing is hopeless.	形便없다.	cours::C68 교재2::L14 형용사
+수준	level, standard	한국어 수준이 높아요.<br>Her Korean is at a high level.	水準. 수준이 높다 / 낮다.	cours::C68 교재2::L14 명사
+유창하다	to be fluent	한국어가 유창해요.<br>She's fluent in Korean.	流暢.	cours::C68 교재2::L14 형용사
+자신감	confidence	자신감이 생겼어요.<br>I've gained confidence.	自信感. 자신감이 있다 / 없다.	cours::C68 교재2::L14 명사
+그저 그렇다	to be so-so	가: 어때요?<br>나: 그저 그래요.	Neither good nor bad.	cours::C68 교재2::L14 표현
+자연스럽다	to be natural	발음이 자연스러워요.<br>Your pronunciation sounds natural.	自然스럽다. ㅂ irregular. Opposite: 부자연스럽다.	cours::C68 교재2::L14 형용사
+정확하다	to be accurate	발음이 정확해요.<br>The pronunciation is accurate.	正確. Opposite: 부정확하다.	cours::C68 교재2::L14 형용사
+뛰어나다	to be outstanding	실력이 뛰어나요.<br>Her skills are outstanding.		cours::C68 교재2::L14 형용사
+완벽하다	to be perfect	완벽하게 말해요.<br>She speaks perfectly.	完璧.	cours::C68 교재2::L14 형용사
+어색하다	to be awkward, unnatural	발음이 좀 어색해요.<br>The pronunciation is a bit awkward.	語塞. Also for awkward situations.	cours::C68 교재2::L14 형용사
+알아듣다	to catch, to understand (what is said)	선생님 말을 다 알아들었어요.<br>I understood everything the teacher said.	알다 + 듣다. ㄷ irregular → 알아들어요.	cours::C68 교재2::L14 동사
+자막	subtitles	드라마를 자막 없이 봐요.<br>I watch dramas without subtitles.	字幕.	cours::C68 교재2::L14 명사
+따라 부르다	to sing along	노래를 따라 불러요.<br>I sing along to the songs.	따라 하다 = to repeat after.	cours::C68 교재2::L14 표현
+문학 작품	literary work	한국 문학 작품을 읽고 싶어요.<br>I'd like to read Korean literature.	文學作品.	cours::C68 교재2::L14 명사
+취미로	as a hobby	취미로 한국어를 배워요.<br>I study Korean as a hobby.	재미로 = just for fun.	cours::C68 교재2::L14 표현
+꾸준히	steadily, consistently	꾸준히 연습하면 좋아져요.<br>It improves if you practise steadily.		cours::C68 교재2::L14 부사
+맡기다	to leave (in someone's care)	카메라를 수리 센터에 맡겼어요.<br>I left the camera at the repair centre.	The causative of 맡다.	cours::C68 교재2::L14 동사
+물론이죠	Of course	가: 도와줄 수 있어요?<br>나: 물론이죠.	勿論. Full form: 물론이지요.	cours::C68 교재2::L14 표현

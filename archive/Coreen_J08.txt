@@ -1,0 +1,25 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J08
+#tags column:5
+V-는 / V-은 / V-을 + N	verb before a noun: present / past / future	비행기에서 읽을 책을 샀어요.<br>I bought a book to read on the plane.	먹는 사람 (who is eating), 먹은 음식 (that I ate), 먹을 도시락 (to eat later). With clothes the past form describes the current state: 빨간색 드레스를 입은 사람 = the person wearing a red dress.	cours::J08 교재::MKG-UB12 문법
+친절하다	to be kind, friendly	가게 직원이 정말 친절해요.<br>The shop staff are really friendly.	親切. About how someone treats others; 착하다 is about their nature.	cours::J08 교재::MKG-UB12 형용사
+웃기다	to be funny	제 친구는 정말 웃겨요.<br>My friend is really funny.	웃다 = to laugh; 웃기다 = to make someone laugh.	cours::J08 교재::MKG-UB12 형용사
+소심하다	to be timid, faint-hearted	소심해서 발표를 못 해요.<br>I'm too timid to give presentations.	小心. Also easily hurt by small things.	cours::J08 교재::MKG-UB12 형용사
+성실하다	to be conscientious, sincere	성실한 사람이 좋아요.<br>I like conscientious people.	誠實. Reliable and honest; 부지런하다 is about working hard.	cours::J08 교재::MKG-UB12 형용사
+다정하다	to be affectionate, warm	남자 친구가 다정해요.<br>My boyfriend is very sweet.	多情.	cours::J08 교재::MKG-UB12 형용사
+솔직하다	to be frank, honest	솔직하게 말해 주세요.<br>Please tell me honestly.	率直. 솔직히 = frankly.	cours::J08 교재::MKG-UB12 형용사
+외향적이다	to be extroverted	외향적인 사람은 친구가 많아요.<br>Extroverted people have lots of friends.	外向的. Opposite: 내향적이다.	cours::J08 교재::MKG-UB12 형용사
+긍정적이다	to be positive	긍정적인 사람이 되고 싶어요.<br>I want to be a positive person.	肯定的.	cours::J08 교재::MKG-UB12 형용사
+부정적이다	to be negative	너무 부정적으로 생각하지 마세요.<br>Don't think so negatively.	否定的.	cours::J08 교재::MKG-UB12 형용사
+인내심이 있다	to be patient	선생님은 인내심이 있어요.<br>The teacher is patient.	忍耐心. 인내심이 없다 = impatient.	cours::J08 교재::MKG-UB12 표현
+책임감이 있다	to be responsible	책임감이 있는 사람이에요.<br>He's a responsible person.	責任感. 책임감이 없다 = irresponsible.	cours::J08 교재::MKG-UB12 표현
+자신감이 있다	to be confident	발표할 때 자신감이 있어요.<br>She's confident when presenting.	自信感. 자신감이 생기다 = to gain confidence.	cours::J08 교재::MKG-UB12 표현
+성격이 급하다	to be impatient, hasty	성격이 급해서 기다리는 걸 싫어해요.<br>I'm impatient, so I hate waiting.	急. Wants everything done right away.	cours::J08 교재::MKG-UB12 표현
+날씬하다	to be slim	날씬한 사람이 제 동생이에요.<br>The slim one is my sibling.		cours::J08 교재::MKG-UB12 형용사
+꽃이 피다	(flowers) to bloom	예쁜 꽃이 많이 피었어요.<br>Lots of pretty flowers have bloomed.	피었어요 often contracts to 폈어요.	cours::J08 교재::MKG-UB12 표현
+미용사	hairdresser	머리를 자르는 사람은 미용사예요.<br>The person who cuts hair is a hairdresser.	美容師. Works at a 미용실.	cours::J08 교재::MKG-UB12 직업
+작가	writer, author	책을 쓰는 사람은 작가예요.<br>A person who writes books is an author.	作家.	cours::J08 교재::MKG-UB12 직업
+다운받다	to download	비행기에서 볼 영화를 다운받았어요.<br>I downloaded a movie to watch on the plane.	From 다운로드 + 받다.	cours::J08 교재::MKG-UB12 동사
+할 말이 있어요	I have something to tell you	저기, 할 말이 있어요.<br>Um, there's something I need to tell you.	할 (to say) + 말. Often announces something serious.	cours::J08 교재::MKG-UB12 표현
+도시락을 싸다	to pack a lunch box	회사에서 먹을 도시락을 싸요.<br>I pack a lunch to eat at work.	Same 싸다 as 짐을 싸다.	cours::J08 교재::MKG-UB12 표현

@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#deck:Coréen::C35
+#tags column:5
+싫어하다	to dislike	저는 그 영화를 싫어해요.<br>I don't like that film.	Pronounced [시러해요]. Stronger than 안 좋아해요.	cours::C35 교재::L14 동사
+다치다	to get hurt, to injure	팔을 다쳐서 운동을 못 해요.<br>I hurt my arm so I can't exercise.	An injury; 아프다 is the pain you feel.	cours::C35 교재::L14 동사
+팔	arm	팔을 다쳤어요.<br>I hurt my arm.	팔다리 = limbs.	cours::C35 교재::L14 명사
+고장 나다	to break down	휴대폰이 고장 나서 전화를 못 해요.<br>My phone broke so I can't call.	故障. 고장 났어요 is the usual form.	cours::C35 교재::L14 표현
+운전하다	to drive	눈이 많이 와서 운전을 못 해요.<br>It's snowing hard so I can't drive.	運轉. 운전면허 = driving licence.	cours::C35 교재::L14 동사
+문자	text message	문자를 보내요.<br>I send a text.	文字. Also 문자 메시지.	cours::C35 교재::L14 명사
+소리	sound, noise	알람 소리를 못 들었어요.<br>I didn't hear the alarm.		cours::C35 교재::L14 명사
+졸업하다	to graduate	내년에 대학교를 졸업할 거예요.<br>I'll graduate from university next year.	卒業. Takes 를, not 에서.	cours::C35 교재::L14 동사
+물어보다	to ask	친구들한테 다시 물어볼게요.<br>I'll ask my friends again.	묻다 + 보다. Softer than 묻다 alone.	cours::C35 교재::L14 동사
+날짜	date	모임 날짜를 바꿀까요?<br>Shall we change the date of the meet-up?		cours::C35 교재::L14 명사
+-(으)ㄴ/는 + N	adjective before a noun	맛있는 음식이 많았어요.<br>There was a lot of good food.	Adjectives change form before a noun: 맛있다 → 맛있는, 무섭다 → 무서운, 맵다 → 매운, 시원하다 → 시원한.	cours::C35 교재::L14 문법
+이나/나	or (between nouns)	장갑이나 넥타이를 선물할 거예요.<br>I'll give gloves or a tie.	이나 after a consonant, 나 after a vowel. For verbs, use -거나.	cours::C35 교재2::L1 문법 조사
+-거나	or (between verbs)	도서관에서 책을 읽거나 공부를 해요.<br>At the library I read or study.	Stem + 거나.	cours::C35 교재2::L1 문법
+꽃다발	bouquet	꽃다발이 예뻐요.<br>The bouquet is lovely.	꽃 + 다발 (bunch).	cours::C35 교재2::L1 명사
+향수	perfume	이 향수 정말 마음에 들어요.<br>I really like this perfume.	香水.	cours::C35 교재2::L1 명사
+만년필	fountain pen	작년 생일에 만년필을 선물 받았어요.<br>I got a fountain pen for my birthday last year.	萬年筆.	cours::C35 교재2::L1 명사
+와인	wine	와인을 선물할 거예요.<br>I'll give wine as a gift.		cours::C35 교재2::L1 명사
+소설책	novel	소설책을 선물했어요.<br>I gave a novel as a present.	소설 + 책.	cours::C35 교재2::L1 명사
+열쇠고리	keyring	여행을 다녀와서 열쇠고리를 줬어요.<br>He came back from a trip and gave me a keyring.	열쇠 + 고리 (ring).	cours::C35 교재2::L1 명사
+상품권	gift voucher	상품권을 선물했어요.<br>I gave a gift voucher.	商品券.	cours::C35 교재2::L1 명사
+입장권	entrance ticket	콘서트 입장권이에요.<br>It's a concert ticket.	入場券.	cours::C35 교재2::L1 명사
+축하하다	to congratulate	생일 축하해요.<br>Happy birthday.	祝賀. 졸업 축하해요, 결혼 축하해요.	cours::C35 교재2::L1 동사
+맛집	a good restaurant	맛집에 갈 거예요.<br>I'll go to a well-known restaurant.	맛 + 집. A place known for its food.	cours::C35 교재2::L1 장소

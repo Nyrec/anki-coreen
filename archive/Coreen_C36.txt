@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#deck:Coréen::C36
+#tags column:5
+-아서/-어서/-여서 (순서)	and then (sequence)	친구 집에 모여서 생일 파티를 했어요.<br>We gathered at a friend's place and had a birthday party.	Two linked actions in order, where the first enables the second: 학교에 가서 공부해요. Different from -고, which just lists.	cours::C36 교재2::L1 문법
+기숙사	dormitory	도서관이나 기숙사에서 공부해요.<br>I study at the library or the dorm.	寄宿舍.	cours::C36 교재2::L1 장소
+드라이브	a drive	산책하거나 드라이브를 해요.<br>I take a walk or go for a drive.	드라이브하다 = to go for a drive, for pleasure; 운전하다 = to drive.	cours::C36 교재2::L1 명사
+합격하다	to pass (an exam)	시험에 합격했어요.<br>I passed the exam.	合格. Takes 에. Opposite: 불합격하다.	cours::C36 교재2::L1 동사
+입학하다	to enter school, to enrol	대학교에 입학했어요.<br>I entered university.	入學. Takes 에. Opposite: 졸업하다.	cours::C36 교재2::L1 동사
+상	prize, award	상을 받았어요.<br>I received a prize.	賞. The verb is 받다.	cours::C36 교재2::L1 명사
+학위	degree, diploma	학위를 받았어요.<br>I got my degree.	學位.	cours::C36 교재2::L1 명사
+취직하다	to get a job	회사에 취직했어요.<br>I got a job at a company.	就職. 취직을 하다 also works.	cours::C36 교재2::L1 동사
+낳다	to give birth to	아이를 낳았어요.<br>She had a baby.	Pronounced [나타]. Don't confuse with 낫다 (to recover).	cours::C36 교재2::L1 동사
+아기	baby	아기 옷을 사서 선물했어요.<br>I bought baby clothes as a gift.	아이 is a child, 아기 an infant.	cours::C36 교재2::L1 사람
+축하 메시지	congratulatory message	축하 메시지를 보냈어요.<br>I sent a congratulatory message.	문자 / 메시지 / 문자 메시지 all work.	cours::C36 교재2::L1 표현
+기념사진	commemorative photo	기념사진을 찍을 거예요.<br>We'll take a commemorative photo.	記念寫眞.	cours::C36 교재2::L1 명사
+축의금	congratulatory money	축의금을 전달해요.<br>I hand over the congratulatory money.	祝儀金. Given in a white envelope at weddings.	cours::C36 교재2::L1 명사
+전달하다	to hand over, to deliver	축의금을 전달했어요.<br>I handed over the money gift.	傳達.	cours::C36 교재2::L1 동사
+인사	greeting	축하 인사를 할까요?<br>Shall we offer our congratulations?	人事. 인사하다 = to greet.	cours::C36 교재2::L1 명사
+초대하다	to invite	친구들을 초대했어요.<br>I invited my friends.	招待. 초대받다 = to be invited.	cours::C36 교재2::L1 동사
+봉투	envelope	흰 봉투에 넣어요.<br>I put it in a white envelope.	封套.	cours::C36 교재2::L1 명사
+모으다	to collect, to gather (things)	친구들하고 돈을 모아서 청소기를 사 줄 거예요.<br>We'll pool our money and buy a vacuum cleaner.	으 irregular → 모아요. Don't confuse with 모이다 (people gather).	cours::C36 교재2::L1 동사
+모이다	to gather, to come together	친구 집에 모여서 파티를 했어요.<br>We gathered at a friend's place and had a party.	The intransitive twin of 모으다.	cours::C36 교재2::L1 동사
+건너다	to cross	길을 건너서 왼쪽으로 가세요.<br>Cross the street and go left.	횡단보도 = pedestrian crossing.	cours::C36 교재2::L1 동사
+길	road, street	길이 막혀요.<br>The road is jammed.	Also means way or path.	cours::C36 교재2::L1 명사
+청소기	vacuum cleaner	청소기를 사 줄 거예요.<br>We'll buy her a vacuum cleaner.	淸掃機.	cours::C36 교재2::L1 명사
+넣다	to put in	설탕만 넣어서 만들었어요.<br>I made it with only sugar in it.	Pronounced [너타].	cours::C36 교재2::L1 동사
+설탕	sugar	설탕을 넣어요.<br>I add sugar.	雪糖.	cours::C36 교재2::L1 음식
+씻다	to wash	손을 씻어서 밥을 먹어요.<br>I wash my hands and then eat.	Pronounced [씯따].	cours::C36 교재2::L1 동사
+먼저	first, beforehand	제일 먼저 뭘 해요?<br>What do you do first of all?		cours::C36 교재2::L1 부사
+때문에	because of	회사 일 때문에 바빴어요.<br>I was busy because of work.	Takes a noun; for a clause use -아서/-어서.	cours::C36 교재2::L1 문법
+-(으)ㄹ 수 있다	can, to be able to	한국어를 말할 수 있어요.<br>I can speak Korean.	Negative: -(으)ㄹ 수 없다, or 못.	cours::C36 교재2::L1 문법

@@ -1,0 +1,11 @@
+#separator:tab
+#html:true
+#deck:Coréen::C49
+#tags column:5
+급여	salary, pay	급여를 받았어요.<br>I got my salary.	給與. 월급 is the more common word.	cours::C49 교재2::L6 명사
+냄새가 나다	to smell	이곳에서 냄새가 나요.<br>There's a smell here.	냄새 (smell) + 나다.	cours::C49 교재2::L6 표현
+곳	place	조용한 곳에 가고 싶어요.<br>I want to go somewhere quiet.	More written than 데; always after a modifier.	cours::C49 교재2::L6 명사
+고치다	to fix, to repair	고장 난 휴대폰을 고쳤어요.<br>I fixed my broken phone.	Also to correct a mistake.	cours::C49 교재2::L6 동사
+미끄럽다	to be slippery	눈이 와서 길이 미끄러워요.<br>It snowed so the road is slippery.	ㅂ irregular → 미끄러워요.	cours::C49 교재2::L6 형용사
+비옷	raincoat	비가 오니까 비옷을 입으세요.<br>It's raining, so wear a raincoat.	비 + 옷. 우비 is the other word.	cours::C49 교재2::L6 명사
+위치	location, position	가구 위치가 달라졌어요.<br>The furniture has been moved.	位置.	cours::C49 교재2::L6 명사

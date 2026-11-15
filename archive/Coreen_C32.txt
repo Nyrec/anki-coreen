@@ -1,0 +1,41 @@
+#separator:tab
+#html:true
+#deck:Coréen::C32
+#tags column:5
+-을 거예요/-ㄹ 거예요 (추측)	probably, I expect (supposition)	주말에는 사람이 많을 거예요.<br>There'll probably be a lot of people at the weekend.	Same ending as the future, but with an adjective or about someone else it expresses a guess based on experience. Often with 아마.	cours::C32 교재::L12-13 문법
+아마	probably, maybe	오늘 제임스 씨는 아마 피곤할 거예요.<br>James is probably tired today.	Pairs with -을 거예요.	cours::C32 교재::L12-13 부사
+곧	soon	곧 올 거예요. 좀 기다려요.<br>He'll come soon. Please wait.		cours::C32 교재::L12-13 부사
+까지	until, by	밤 12시까지 축구를 봤어요.<br>I watched football until midnight.	Pairs with 부터: 9시부터 11시까지.	cours::C32 교재::L12-13 문법 조사
+결과	result	오늘 결과를 봤어요.<br>I saw the results today.	結果.	cours::C32 교재::L12-13 명사
+잘하다	to be good at	제인 씨는 요리를 아주 잘해요.<br>Jane is very good at cooking.	Opposite: 잘 못하다 = to be bad at.	cours::C32 교재::L12-13 동사
+걱정되다	to be worried	좀 걱정될 거예요.<br>She's probably a bit worried.	걱정하다 = to worry (active); 걱정되다 = to feel worried.	cours::C32 교재::L12-13 동사
+가져오다	to bring (an object)	우산을 가져오세요.<br>Bring an umbrella.	가지다 + 오다. 가지고 오다 is the fuller form.	cours::C32 교재::L12-13 동사
+알람	alarm	알람을 끄고 잘 거예요.<br>I'll turn off the alarm and sleep.	알람 소리 = the alarm sound.	cours::C32 교재::L12-13 명사
+끄다	to turn off	불을 꺼요.<br>I turn off the light.	으 irregular → 꺼요. Opposite: 켜다.	cours::C32 교재::L12-13 동사
+면접	job interview	면접 준비로 바쁠 거예요.<br>She's probably busy preparing for an interview.	面接.	cours::C32 교재::L12-13 명사
+막히다	to be blocked, congested	길이 막힐 거예요.<br>The roads will be jammed.	길이 막히다 = traffic jam.	cours::C32 교재::L12-13 동사
+갑자기	suddenly	갑자기 급한 일이 생겼어요.<br>Something urgent suddenly came up.		cours::C32 교재::L12-13 부사
+급하다	to be urgent	급한 일이 생겼어요.<br>Something urgent has come up.	急.	cours::C32 교재::L12-13 형용사
+근처	nearby, vicinity	근처에 은행이 있어요?<br>Is there a bank nearby?	近處.	cours::C32 교재::L12-13 명사
+도착하다	to arrive	비행기가 곧 도착할 거예요.<br>The plane will arrive soon.	到着. Opposite: 출발하다.	cours::C32 교재::L12-13 동사
+공항	airport	공항에 갔어요.<br>I went to the airport.	空港.	cours::C32 교재::L12-13 장소
+태풍	typhoon	여름에 태풍이 불어요.<br>Typhoons blow in summer.	颱風.	cours::C32 교재::L12-13 명사
+유학	studying abroad	다음 달에 유학을 가요.<br>I'm going abroad to study next month.	留學. 유학생 = international student.	cours::C32 교재::L12-13 명사
+그동안	meanwhile, in the meantime	그동안 많이 바빴어요.<br>I've been very busy in the meantime.		cours::C32 교재::L12-13 시간
+그러니까	so, therefore	눈이 많이 와요. 그러니까 겨울옷을 가지고 가세요.<br>It snows a lot, so take winter clothes.	Introduces a conclusion or a piece of advice, where 그래서 states a plain result.	cours::C32 교재::L12-13 문법
+실력	skill, ability	한국어 실력이 좋아질 거예요.<br>Your Korean will improve.	實力.	cours::C32 교재::L12-13 명사
+좋아지다	to get better, to improve	실력이 좋아졌어요.<br>My skills have improved.	좋다 + 아지다 = to become. Same pattern: 많아지다, 커지다.	cours::C32 교재::L12-13 동사
+서핑	surfing	바다에서 서핑을 할 거예요.<br>I'll go surfing at the sea.	서핑하다 = to surf.	cours::C32 교재::L12-13 명사
+선글라스	sunglasses	선글라스하고 모자가 필요해요.<br>I need sunglasses and a hat.		cours::C32 교재::L12-13 명사
+장화	rain boots	비가 와요. 그래서 장화가 필요해요.<br>It's raining, so I need rain boots.	長靴.	cours::C32 교재::L12-13 명사
+목도리	scarf, muffler	목도리를 해요.<br>I wear a scarf.	목 (neck) + 도리. The verb is 하다.	cours::C32 교재::L12-13 명사
+신다	to wear (footwear)	구두를 신었어요.<br>She wore dress shoes.	For 신발, 운동화, 구두, 양말, 장화.	cours::C32 교재::L12-13 동사
+끼다 (착용)	to wear (gloves, rings)	장갑을 껴요.<br>I put on gloves.	끼 + 어요 → 껴요. For hand items. Same spelling as 끼다 (fog forms).	cours::C32 교재::L12-13 동사
+차다	to wear (on the wrist)	시계를 손목에 차요.<br>I wear a watch on my wrist.	For watches and bracelets only.	cours::C32 교재::L12-13 동사
+치마	skirt	수민 씨는 치마를 입었어요.<br>Sumin wore a skirt.		cours::C32 교재::L12-13 명사
+바지	trousers	까만색 바지를 입었어요.<br>He wore black trousers.		cours::C32 교재::L12-13 명사
+티셔츠	T-shirt	티셔츠를 입었어요.<br>He wore a T-shirt.		cours::C32 교재::L12-13 명사
+넥타이	tie	넥타이를 매요.<br>I put on a tie.	The verb is 매다.	cours::C32 교재::L12-13 명사
+한테	to (a person, spoken)	동생한테 전화해요.<br>I'm calling my younger sibling.	Spoken twin of 에게; 께 is the honorific.	cours::C32 교재::L12-13 문법 조사
+한테서	from (a person)	남자 친구한테서 편지를 받았어요.<br>I got a letter from my boyfriend.	Written form: 에게서. The 서 marks the source.	cours::C32 교재::L12-13 문법 조사
+찾다	to look for, to find	손님, 뭘 찾으세요?<br>What are you looking for, sir?	찾 + 아요 → 찾아요. Both searching and finding.	cours::C32 교재::L12-13 동사

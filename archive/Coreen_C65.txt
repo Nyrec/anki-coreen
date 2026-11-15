@@ -1,0 +1,10 @@
+#separator:tab
+#html:true
+#deck:Coréen::C65
+#tags column:5
+방법	method, way	좋은 방법이 있어요.<br>There's a good way to do it.	方法. 법 alone means law or rule.	cours::C65 교재2::L11-12 명사
+기억에 남다	to be memorable	기억에 남는 여행이었어요.<br>It was a memorable trip.	기억 (memory) + 남다 (to remain).	cours::C65 교재2::L11-12 표현
+촬영하다	to film, to shoot	여기에서 촬영하면 안 돼요.<br>You mustn't film here.	撮影. Pronounced [촤령]. 녹화하다 is the everyday word.	cours::C65 교재2::L11-12 동사
+주의	caution, attention	주의 사항을 읽으세요.<br>Read the precautions.	注意. Pronounced [주이]. 주의하다 = to be careful.	cours::C65 교재2::L11-12 명사
+가격	price	가격이 조금 비싸요.<br>The price is a bit high.	價格. 값 is the everyday word.	cours::C65 교재2::L11-12 명사
+알아보다 (찾다)	to look into, to check out	다른 카페를 알아보려고 해요.<br>I'm going to look for another café.	알다 + 보다. Also used for job hunting: 일자리를 알아보다.	cours::C65 교재2::L11-12 동사

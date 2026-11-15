@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::C53
+#tags column:5
+-을 때/-ㄹ 때	when, while	책을 읽을 때 음악을 들어요.<br>I listen to music when I read.	Consonant → -을 때, vowel or ㄹ → -ㄹ 때 (갈 때, 만들 때). With a noun, just 때: 대학생 때, 휴가 때. Past: -았을 때.	cours::C53 교재2::L9 문법
+-을게요/-ㄹ게요	I'll … (promise to the listener)	제가 연락할게요.<br>I'll get in touch.	First person only, and it answers something the other person said. 늦지 않을게요 = I promise not to be late.	cours::C53 교재2::L9 문법
+취소하다	to cancel	약속을 취소했어요.<br>I cancelled the appointment.	取消.	cours::C53 교재2::L9 동사
+참석하다	to attend	모임에 참석해요.<br>I attend the gathering.	參席.	cours::C53 교재2::L9 동사
+장소	place, venue	장소를 알려 주세요.<br>Let me know the venue.	場所.	cours::C53 교재2::L9 명사
+집중	concentration	집중이 더 잘 돼요.<br>I concentrate better.	集中. 집중하다 = to focus.	cours::C53 교재2::L9 명사
+긴장되다	to feel tense, nervous	발표 전에 긴장돼요.<br>I get nervous before a presentation.	緊張. Close to 떨리다.	cours::C53 교재2::L9 형용사
+부끄럽다	to be embarrassed, shy	넘어져서 부끄러웠어요.<br>I fell over and was embarrassed.	ㅂ irregular → 부끄러워요.	cours::C53 교재2::L9 형용사
+섭섭하다	to feel let down, sorry to part	벌써 가세요? 섭섭하네요.<br>You're leaving already? What a shame.	A soft disappointment at parting.	cours::C53 교재2::L9 형용사
+꿈	dream	제 꿈은 경찰이 되는 거예요.<br>My dream is to become a police officer.	Both sleeping dreams and ambitions.	cours::C53 교재2::L9 명사
+고등학생	high school student	고등학생 때 아르바이트를 했어요.<br>I had a part-time job in high school.	高等學生. 대학생, 중학생 follow the same pattern.	cours::C53 교재2::L9 사람
+벚꽃	cherry blossom	벚꽃을 보러 가요.<br>We're going to see the cherry blossoms.	Pronounced [벋꼳].	cours::C53 교재2::L9 명사
+길거리 음식	street food	길거리 음식을 즐겁게 먹었어요.<br>We happily ate street food.	길거리 = the street.	cours::C53 교재2::L9 음식
+놀이기구	fairground ride	놀이기구가 무서워서 안 탔어요.<br>The rides scared me so I didn't go on.	놀이 (play) + 기구 (apparatus). The verb is 타다.	cours::C53 교재2::L9 명사

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+지치다	to be exhausted, worn out<br><i>être épuisé, s'épuiser</i>	요즘 일이 많아서 너무 지쳤어요.<br>I have a lot of work these days, so I'm really worn out.<br><i>Ces temps-ci j'ai beaucoup de travail, je suis vraiment épuisé.</i>	[jichida] Usually used in past tense (지쳤어요) to describe a state. Stronger and more emotional than 피곤하다; N에 지치다 = to be tired of N (e.g. 기다림에 지치다).	quotidien::2026-10-14 동사
+일부러	on purpose, deliberately<br><i>exprès, délibérément</i>	일부러 그런 거 아니에요. 미안해요.<br>I didn't do it on purpose. Sorry.<br><i>Je ne l'ai pas fait exprès. Désolé.</i>	[ilbureo] Also means 'going out of one's way': 일부러 와 주셔서 감사해요 = thanks for taking the trouble to come. Opposite nuance: 실수로 (by mistake).	quotidien::2026-10-14 부사
+고민	worry, dilemma, something on one's mind<br><i>souci, dilemme, réflexion</i>	이직할지 말지 고민 중이에요.<br>I'm debating whether or not to change jobs.<br><i>Je me demande si je devrais changer de boulot ou pas.</i>	[gomin] Hanja 苦悶. 고민하다 = to agonize/think hard over; -(으)ㄹ지 고민하다 = to wonder whether to. 고민이 있어요 = I've got something bothering me.	quotidien::2026-10-14 명사
+낯설다	unfamiliar, strange<br><i>inconnu, peu familier, dépaysant</i>	처음에는 서울 생활이 많이 낯설었어요.<br>At first, life in Seoul felt very unfamiliar.<br><i>Au début, la vie à Séoul m'était très étrangère.</i>	[natseolda] ㄹ-irregular: 낯선 사람 (a stranger), 낯설어요. Literally 낯 (face) + 설다 (unripe). Opposite of 익숙하다.	quotidien::2026-10-14 형용사
+티가 나다	to show, be noticeable<br><i>ça se voit, être visible</i>	피곤한 게 얼굴에 티가 나요.<br>It shows on your face that you're tired.<br><i>Ça se voit sur ton visage que tu es fatigué.</i>	[tiga nada] -(으)ㄴ/는 티가 나다 = it shows that... Related: 티를 내다 (to show it on purpose), 티 안 나게 (discreetly).	quotidien::2026-10-14 표현

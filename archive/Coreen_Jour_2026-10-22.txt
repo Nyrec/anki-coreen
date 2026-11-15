@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+번거롭다	cumbersome, troublesome, a hassle<br><i>compliqué, fastidieux, pénible (à faire)</i>	서류를 다시 내야 해서 좀 번거로워요.<br>It's a bit of a hassle because I have to submit the documents again.<br><i>C'est un peu fastidieux parce qu'il faut redéposer les documents.</i>	[beongeoropda] ㅂ-irregular: 번거로워요, 번거로운. 번거롭게 해서 죄송해요 = sorry for the trouble.	quotidien::2026-10-22 형용사
+마중하다	to go meet / pick up (someone arriving)<br><i>aller accueillir, aller chercher (qqn qui arrive)</i>	공항에 친구를 마중하러 가요.<br>I'm going to the airport to meet my friend.<br><i>Je vais à l'aéroport accueillir un ami.</i>	[majunghada] Often 마중(을) 나가다. Opposite: 배웅하다 (to see someone off).	quotidien::2026-10-22 동사
+오히려	rather, on the contrary, if anything<br><i>au contraire, plutôt, bien au contraire</i>	택시보다 지하철이 오히려 더 빨라요.<br>The subway is actually faster than a taxi.<br><i>Le métro est même plus rapide que le taxi.</i>	[ohiryeo] Marks a result opposite to expectation. 오히려 제가 감사하죠 = I should be the one thanking you.	quotidien::2026-10-22 부사
+엉망	a mess, a wreck<br><i>pagaille, désordre, fiasco</i>	비 때문에 여행 계획이 엉망이 됐어요.<br>Our travel plans were ruined because of the rain.<br><i>À cause de la pluie, nos plans de voyage sont tombés à l'eau.</i>	[eongmang] Used with 이다/되다: 엉망이에요, 엉망이 되다. Stronger: 엉망진창.	quotidien::2026-10-22 명사
+엄두가 안 나다	can't bring oneself to (start), feel too daunted<br><i>ne pas oser s'y lancer, ne pas en avoir le courage</i>	일이 너무 많아서 시작할 엄두가 안 나요.<br>There's so much work that I can't bring myself to start.<br><i>Il y a tellement de travail que je n'ose même pas commencer.</i>	[eomduga an nada] Pattern: V-(으)ㄹ 엄두가 안 나다. Also 엄두를 못 내다.	quotidien::2026-10-22 표현

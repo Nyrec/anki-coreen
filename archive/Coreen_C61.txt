@@ -1,0 +1,21 @@
+#separator:tab
+#html:true
+#deck:Coréen::C61
+#tags column:5
+-은 지/-ㄴ 지	since (time elapsed)	이사 온 지 두 달 됐어요.<br>It's been two months since I moved in.	Consonant → -은 지, vowel or ㄹ → -ㄴ 지 (만난 지, 산 지). Followed by a duration + 됐어요 or 지났어요.	cours::C61 교재2::L11-12 문법
+이틀	two days	이틀 동안 아팠어요.<br>I was ill for two days.		cours::C61 교재2::L11-12 시간
+사흘	three days	사흘 동안 부산에 있었어요.<br>I was in Busan for three days.		cours::C61 교재2::L11-12 시간
+나흘	four days	나흘 걸렸어요.<br>It took four days.		cours::C61 교재2::L11-12 시간
+닷새	five days	닷새 동안 약을 먹어요.<br>I take the medicine for five days.		cours::C61 교재2::L11-12 시간
+열흘	ten days	열흘 동안 휴가예요.<br>I'm on holiday for ten days.	보름 = fifteen days.	cours::C61 교재2::L11-12 시간
+넘다	to exceed, to pass	읽은 지 1년이 넘었어요.<br>It's been over a year since I read it.	Pronounced [넘따].	cours::C61 교재2::L11-12 동사
+오래되다	to be a long time ago	못 본 지 오래됐어요.<br>It's been ages since I saw him.	오래 + 되다.	cours::C61 교재2::L11-12 형용사
+간식	snack	간식을 먹은 지 얼마 안 됐어요.<br>I ate a snack not long ago.	間食.	cours::C61 교재2::L11-12 음식
+귀국하다	to return to one's country	메이 씨가 귀국한 지 일주일 됐어요.<br>It's been a week since Mei went home.	歸國.	cours::C61 교재2::L11-12 동사
+국립	national (institution)	국립 박물관에 갔어요.<br>We went to the National Museum.	國立. Pronounced [궁닙].	cours::C61 교재2::L11-12 명사
+작품	work (of art)	작품을 손으로 만지면 안 됩니다.<br>You must not touch the artworks.	作品.	cours::C61 교재2::L11-12 명사
+만지다	to touch	만지지 마세요.<br>Don't touch.		cours::C61 교재2::L11-12 동사
+둘러보다	to look around	천천히 둘러보세요.<br>Take your time looking around.	돌다 + 보다.	cours::C61 교재2::L11-12 동사
+안내원	guide, attendant	관광 안내원이 설명해요.<br>The tour guide is explaining.	案內員.	cours::C61 교재2::L11-12 사람
+찢다	to tear	책을 찢으면 안 돼요.<br>You mustn't tear the books.	Pronounced [찓따].	cours::C61 교재2::L11-12 동사
+자료	materials, resources	자료를 찾고 있어요.<br>I'm looking for materials.	資料.	cours::C61 교재2::L11-12 명사

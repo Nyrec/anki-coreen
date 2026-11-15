@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#deck:Coréen::C31
+#tags column:5
+봄	spring	봄은 따뜻해요.<br>Spring is warm.		cours::C31 교재::L12 시간
+여름	summer	여름은 더워요.<br>Summer is hot.		cours::C31 교재::L12 시간
+겨울	winter	겨울은 춥고 눈이 많이 와요.<br>Winter is cold and snowy.		cours::C31 교재::L12 시간
+꽃구경	flower viewing	봄에 꽃구경을 해요.<br>We go flower viewing in spring.	꽃 + 구경. Cherry blossom season is a national event.	cours::C31 교재::L12 명사
+소풍	picnic, outing	소풍을 가요.<br>We go on a picnic.	消風. 피크닉 is also used.	cours::C31 교재::L12 명사
+단풍	autumn leaves	가을에 단풍 구경을 가요.<br>We go to see the autumn leaves in autumn.	丹楓. 단풍 구경 is an autumn ritual.	cours::C31 교재::L12 명사
+팥빙수	patbingsu (shaved ice)	여름에 팥빙수를 먹어요.<br>We eat patbingsu in summer.	팥 (red bean) + 빙수 (氷水). The summer dessert.	cours::C31 교재::L12 음식
+캠핑	camping	가을에 캠핑을 가요.<br>We go camping in autumn.		cours::C31 교재::L12 명사
+스키	ski	겨울에 스키를 타요.<br>We ski in winter.	The verb is 타다. 스키장 = ski resort.	cours::C31 교재::L12 명사
+눈사람	snowman	눈사람을 만들어요.<br>We make a snowman.	눈 + 사람.	cours::C31 교재::L12 명사
+눈싸움	snowball fight	눈싸움을 해요.<br>We have a snowball fight.	눈 + 싸움 (fight).	cours::C31 교재::L12 명사
+피다	to bloom	꽃이 많이 피었어요.<br>Lots of flowers have bloomed.	피 + 어요 → 피어요, contracted 펴요.	cours::C31 교재::L12 동사
+장마	monsoon, rainy season	여름에 장마가 시작돼요.<br>The rainy season starts in summer.	Late June to July in Korea.	cours::C31 교재::L12 시간
+시작되다	to begin (by itself)	장마가 시작돼요.<br>The rainy season begins.	The passive twin of 시작하다: something starts on its own.	cours::C31 교재::L12 동사
+파랗다	to be blue	하늘이 파래요.<br>The sky is blue.	ㅎ irregular → 파래요. 파란색 = the colour blue.	cours::C31 교재::L12 형용사
+쌓이다	to pile up, to accumulate	눈이 쌓였어요.<br>The snow has piled up.	Passive of 쌓다. Pronounced [싸이다].	cours::C31 교재::L12 동사
+운동회	sports day	가을에 운동회를 해요.<br>We hold a sports day in autumn.	運動會. A school event.	cours::C31 교재::L12 명사
+진달래	azalea	봄에 진달래가 펴요.<br>Azaleas bloom in spring.	A classic Korean spring flower.	cours::C31 교재::L12 명사
+개나리	forsythia	개나리가 펴요.<br>The forsythia is blooming.	The yellow flower that opens Korean spring.	cours::C31 교재::L12 명사
+여름방학	summer holidays	여름방학에 바다에 가요.<br>I go to the sea in the summer holidays.	여름 + 방학. 겨울방학 = winter break.	cours::C31 교재::L12 시간
+스키장	ski resort	겨울방학마다 스키장에 가요.<br>I go to a ski resort every winter break.	스키 + 場.	cours::C31 교재::L12 장소
+복습하다	to review, to revise	이번 주에 열심히 복습했어요.<br>I revised hard this week.	復習. 예습하다 = to prepare in advance.	cours::C31 교재::L12 동사
+힘이 나다	to feel energised	삼계탕을 먹고 힘이 났어요.<br>I ate samgyetang and felt energised.	힘 (strength) + 나다 (to arise).	cours::C31 교재::L12 표현

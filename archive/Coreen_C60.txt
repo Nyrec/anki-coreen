@@ -1,0 +1,23 @@
+#separator:tab
+#html:true
+#deck:Coréen::C60
+#tags column:5
+-아야 되다/-어야 되다	must, have to	20분 전에는 입장해야 돼요.<br>You have to be seated 20 minutes beforehand.	Obligation or necessity. -아야 하다 is the same thing, slightly more written. Negative counterpart: -으면 안 되다.	cours::C60 교재2::L11 문법
+관람	viewing, watching (a show)	관람 예절을 지켜야 돼요.<br>You must observe the viewing etiquette.	觀覽. 관람객 = spectator.	cours::C60 교재2::L11 명사
+예절	etiquette, manners	공공 예절을 지키세요.<br>Observe public etiquette.	禮節.	cours::C60 교재2::L11 명사
+줄을 서다	to queue up	줄을 서야 돼요.<br>You have to queue.	줄 = line, 서다 = to stand.	cours::C60 교재2::L11 표현
+자리를 바꾸다	to change seats	자리를 바꿨어요.<br>I changed seats.	자리 = seat, place.	cours::C60 교재2::L11 표현
+울리다	to ring	전화벨이 울렸어요.<br>The phone rang.	전화벨 = ringtone.	cours::C60 교재2::L11 동사
+동영상	video	동영상을 찍지 마세요.<br>Don't record video.	動映像. Also 영상.	cours::C60 교재2::L11 명사
+몰래	secretly, without permission	사진을 몰래 찍으면 안 돼요.<br>You mustn't take photos on the sly.		cours::C60 교재2::L11 부사
+녹음하다	to record (audio)	공연을 녹음했어요.<br>I recorded the performance.	錄音. For video it's 녹화하다.	cours::C60 교재2::L11 동사
+박수를 치다	to applaud, to clap	일어서서 박수를 쳤어요.<br>They stood up and applauded.	拍手. 치다 as in hitting.	cours::C60 교재2::L11 표현
+들려주다	to play something for someone	녹음해서 친구에게 들려줬어요.<br>I recorded it and played it for my friend.	듣다 causative + 주다.	cours::C60 교재2::L11 동사
+일어서다	to stand up	일어서서 박수를 쳐요.<br>They stand up and clap.	일어나다 is to get up from sleep or a fall.	cours::C60 교재2::L11 동사
+매표소	ticket office	매표소에서 표를 샀어요.<br>I bought the tickets at the box office.	賣票所.	cours::C60 교재2::L11 장소
+연주자	performer, musician	연주자가 무대에 나왔어요.<br>The musicians came on stage.	演奏者. 연주하다 = to play music.	cours::C60 교재2::L11 사람
+신경 쓰다	to worry about, to mind	신경 쓰지 마세요.<br>Don't worry about it.	神經. A very common reassurance.	cours::C60 교재2::L11 표현
+음식물	food and drink	공연장에 음식물을 가지고 들어가면 안 돼요.<br>You can't bring food or drink into the venue.	飮食物.	cours::C60 교재2::L11 명사
+설명하다	to explain	선생님이 학생들에게 설명해요.<br>The teacher explains to the students.	說明.	cours::C60 교재2::L11 동사
+신청서	application form	신청서를 이메일로 보내야 돼요.<br>I have to email the application form.	申請書.	cours::C60 교재2::L11 명사
+선수	athlete, player	농구 선수는 키가 커야 돼요.<br>Basketball players have to be tall.	選手.	cours::C60 교재2::L11 사람

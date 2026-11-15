@@ -1,0 +1,40 @@
+#separator:tab
+#html:true
+#deck:Coréen::C30
+#tags column:5
+-고	and (connecting clauses)	바람이 많이 불고 좀 추워요.<br>It's windy and a little cold.	Joins two clauses of equal weight: 토끼는 작고 귀여워요. Tense is carried by the final verb only.	cours::C30 교재::L11-12 문법
+힘들다	to be tough, tiring	조금 힘들었어요.<br>It was a bit tough.	Physical or emotional strain; 어렵다 is about difficulty of a task.	cours::C30 교재::L11-12 형용사
+유명하다	to be famous	유명한 한국 가수들이 나와요.<br>Famous Korean singers are coming.	有名.	cours::C30 교재::L11-12 형용사
+나오다	to come out, to appear	가수들이 많이 나와요.<br>Many singers appear.	나 + 오다 → 나와요.	cours::C30 교재::L11-12 동사
+오랜만에	after a long time	오랜만에 테니스를 치러 갈까요?<br>Shall we play tennis, for the first time in ages?	From 오랜만 — the same word as 오랜만이에요.	cours::C30 교재::L11-12 표현
+생기다	to come up, to arise, to get	뮤지컬 표가 2장 생겼어요.<br>I've got two musical tickets.	Something appears without you seeking it.	cours::C30 교재::L11-12 동사
+벌써	already	저는 그 뮤지컬을 벌써 봤어요.<br>I've already seen that musical.	Earlier than expected; 이미 is neutral.	cours::C30 교재::L11-12 부사
+바꾸다	to change, to exchange	백화점에서 옷을 바꾸고 싶어요.<br>I want to exchange the clothes.	바꾸 + 어요 → 바꿔요.	cours::C30 교재::L11-12 동사
+빠르다	to be fast	지하철이 빨라요.<br>The subway is fast.	르 irregular → 빨라요.	cours::C30 교재::L11-12 형용사
+느리다	to be slow	강아지가 느려요.<br>The puppy is slow.	느리 + 어요 → 느려요.	cours::C30 교재::L11-12 형용사
+넓다	to be wide, spacious	지하철이 넓어요.<br>The subway is spacious.	Pronounced [널따]. Opposite: 좁다.	cours::C30 교재::L11-12 형용사
+좁다	to be narrow, cramped	방이 좁아요.<br>The room is cramped.		cours::C30 교재::L11-12 형용사
+길다	to be long	머리가 길어요.<br>My hair is long.	ㄹ stem: 긴 머리. Opposite: 짧다.	cours::C30 교재::L11-12 형용사
+짧다	to be short	머리가 짧아요.<br>My hair is short.	Pronounced [짤따].	cours::C30 교재::L11-12 형용사
+달다	to be sweet	떡볶이가 조금 달아요.<br>The tteokbokki is a bit sweet.	ㄹ stem → 달아요.	cours::C30 교재::L11-12 형용사
+지루하다	to be boring	이 영화는 지루해요.<br>This film is boring.	Close to 재미없다.	cours::C30 교재::L11-12 형용사
+성격	personality	친구는 성격이 좋아요.<br>My friend has a good personality.	性格. 성격이 좋다 = to be good-natured.	cours::C30 교재::L11-12 명사
+태권도	taekwondo	학원에서 태권도를 배우고 싶어요.<br>I want to learn taekwondo at an academy.	跆拳道.	cours::C30 교재::L11-12 명사
+동물	animal	동물원에서 동물을 구경했어요.<br>I looked at the animals at the zoo.	動物. 동물원 = zoo.	cours::C30 교재::L11-12 명사
+토끼	rabbit	토끼는 작고 귀여워요.<br>Rabbits are small and cute.		cours::C30 교재::L11-12 동물
+눈 (신체)	eye	제 동생은 눈이 크고 머리가 길어요.<br>My sibling has big eyes and long hair.	Same spelling as 눈 (snow); the vowel is shorter for the eye.	cours::C30 교재::L11-12 명사
+청소	cleaning	청소를 하고 빨래도 할 거예요.<br>I'll clean and do the laundry.	淸掃.	cours::C30 교재::L11-12 명사
+빨래	laundry	빨래를 해요.<br>I do the laundry.		cours::C30 교재::L11-12 명사
+계절	season	한국은 계절이 네 개예요.<br>Korea has four seasons.	季節: 봄, 여름, 가을, 겨울.	cours::C30 교재::L11-12 시간
+하늘	sky	하늘이 맑아요.<br>The sky is clear.		cours::C30 교재::L11-12 명사
+맑다	to be clear, sunny	하늘이 맑고 따뜻해요.<br>It's clear and warm.	Pronounced [막따].	cours::C30 교재::L11-12 형용사
+흐리다	to be cloudy, overcast	하늘이 흐려요.<br>The sky is overcast.	흐리 + 어요 → 흐려요.	cours::C30 교재::L11-12 형용사
+눈 (날씨)	snow	눈이 와요.<br>It's snowing.	눈이 오다 / 눈이 내리다. Same spelling as 눈 (eye).	cours::C30 교재::L11-12 명사
+내리다	to fall (rain, snow); to get off	비가 내려요.<br>It's raining.	Slightly more written than 오다 for weather. Also 버스에서 내려요.	cours::C30 교재::L11-12 동사
+바람	wind	바람이 많이 불어요.<br>It's very windy.	The verb is 불다.	cours::C30 교재::L11-12 명사
+불다	to blow	바람이 불고 쌀쌀해요.<br>The wind is blowing and it's chilly.	ㄹ stem → 불어요.	cours::C30 교재::L11-12 동사
+따뜻하다	to be warm	날씨가 맑고 따뜻해요.<br>It's clear and warm.	Pleasantly warm; 덥다 is uncomfortably hot.	cours::C30 교재::L11-12 형용사
+쌀쌀하다	to be chilly	좀 쌀쌀해요.<br>It's a bit chilly.	Milder than 춥다 — typical autumn weather.	cours::C30 교재::L11-12 형용사
+구름	cloud	구름이 꼈어요.<br>It's clouded over.	The verb is 끼다.	cours::C30 교재::L11-12 명사
+안개	fog	안개가 끼고 더워요.<br>It's foggy and hot.	안개가 끼다 = fog forms.	cours::C30 교재::L11-12 명사
+끼다	to form, to set in (cloud, fog)	구름이 꼈어요.<br>Clouds have formed.	Used with 구름 and 안개 only.	cours::C30 교재::L11-12 동사

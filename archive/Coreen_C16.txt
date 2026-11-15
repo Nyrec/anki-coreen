@@ -1,0 +1,46 @@
+#separator:tab
+#html:true
+#deck:Coréen::C16
+#tags column:5
+하나 둘 셋 넷 다섯 여섯 일곱 여덟 아홉 열	native Korean numbers 1 to 10	사과 하나<br>친구 둘	여덟 is pronounced [여덜]. This series is used for counting objects, people and age; Sino numbers handle money, dates and phone numbers.	cours::C16 교재::L5 숫자
+스물 서른 마흔 쉰 예순 일흔 여든 아흔	native tens: 20 to 90	스물여섯<br>마흔하나 / 쉰일곱 / 여든아홉	Tens + units, written as one word. The native series stops here: from 100 on, Korean switches back to 백, 천, 만.	cours::C16 교재::L5 숫자
+한, 두, 세, 네, 스무	shortened number forms used before a counter	사과 한 개<br>주스 네 잔 / 스무 살	하나 → 한, 둘 → 두, 셋 → 세, 넷 → 네, 스물 → 스무. Only these five change; 다섯, 여섯 … stay as they are.	cours::C16 교재::L5 문법
+단위명사	counters (classifiers)	사과 세 개 주세요.<br>Three apples, please.	Order is noun + number + counter: 사과 세 개. Never pluralise the noun: 사과들 세 개 is wrong.	cours::C16 교재::L5 문법
+개	counter for general objects	사과 한 개 주세요.<br>One apple, please.	個. The default counter when no specific one fits.	cours::C16 교재::L5 단위
+명	counter for people	교실에 학생이 몇 명 있어요?<br>How many students are in the classroom?	名. 분 is the respectful counter for people.	cours::C16 교재::L5 단위
+마리	counter for animals	고양이가 한 마리 있어요.<br>There's one cat.		cours::C16 교재::L5 단위
+잔	counter for cups and glasses	주스 네 잔 주세요.<br>Four glasses of juice, please.	盞. Used for coffee, tea, water, alcohol.	cours::C16 교재::L5 단위
+병	counter for bottles	콜라 다섯 병이에요.<br>That's five bottles of cola.	甁. 병 on its own also means illness (病).	cours::C16 교재::L5 단위
+권	counter for books	책 다섯 권 있어요.<br>There are five books.	卷.	cours::C16 교재::L5 단위
+장	counter for flat sheets	종이 세 장이 필요해요.<br>I need three sheets of paper.	張. Paper, tickets, photos, cards.	cours::C16 교재::L5 단위
+살	counter for age	스무 살이에요.<br>I'm twenty.	Always with native numbers. The Sino counter 세 appears in formal writing.	cours::C16 교재::L5 단위
+어머니	mother	어머니하고 오빠가 있어요.<br>My mother and older brother are there.	Neutral and respectful; 엄마 is the affectionate form.	cours::C16 교재::L5 사람
+남자 친구	boyfriend	수지 씨하고 수지 씨 남자 친구예요.<br>It's Suji and her boyfriend.	With a space it's a male friend; written solid (남자친구) it's a partner. 여자 친구 = girlfriend.	cours::C16 교재::L5 사람
+여학생	female student	여학생 일곱 명이 있어요.<br>There are seven female students.	여 (female) + 학생. 남학생 = male student.	cours::C16 교재::L5 사람
+녹차	green tea	녹차 한 잔 주세요.<br>One green tea, please.	綠茶.	cours::C16 교재::L5 음식
+바나나	banana	바나나 우유하고 딸기 우유가 있어요.<br>There's banana milk and strawberry milk.	바나나 우유 is a Korean convenience-store staple.	cours::C16 교재::L5 음식
+포도	grape	사과하고 포도가 있어요.<br>There are apples and grapes.	葡萄.	cours::C16 교재::L5 음식
+귤	tangerine	제주도 귤이 맛있어요.<br>Jeju tangerines are delicious.	橘. The winter fruit in Korea, mostly from Jeju.	cours::C16 교재::L5 음식
+수박	watermelon	수박이 한 개에 만 이천 원이에요.<br>A watermelon is 12,000 won each.		cours::C16 교재::L5 음식
+갈비	galbi (grilled ribs)	갈비하고 된장찌개가 맛있어요.<br>The galbi and doenjang stew are good.	Literally ribs. 갈비탕 = rib soup.	cours::C16 교재::L5 음식
+된장찌개	doenjang stew	된장찌개 주세요.<br>Doenjang stew, please.	된장 (soybean paste) + 찌개 (stew).	cours::C16 교재::L5 음식
+햄버거	hamburger	햄버거하고 콜라 주세요.<br>A burger and a cola, please.		cours::C16 교재::L5 음식
+콜라	cola	콜라 두 잔 있어요.<br>There are two glasses of cola.		cours::C16 교재::L5 음식
+맥주	beer	맥주 한 병 주세요.<br>One bottle of beer, please.	麥酒 — barley alcohol.	cours::C16 교재::L5 음식
+컵라면	cup noodles	컵라면이에요.<br>It's cup noodles.	컵 + 라면.	cours::C16 교재::L5 음식
+샴푸	shampoo	샴푸 옆에 뭐가 있어요?<br>What's next to the shampoo?	린스 = conditioner (from 'rinse', not 'conditioner').	cours::C16 교재::L5 명사
+휴지	tissue, toilet paper	휴지가 샴푸 아래에 있어요.<br>The tissues are under the shampoo.	休紙. 화장지 is the more formal word.	cours::C16 교재::L5 명사
+물티슈	wet wipes	물티슈예요.<br>They're wet wipes.	물 (water) + 티슈.	cours::C16 교재::L5 명사
+종이	paper	종이 세 장 주세요.<br>Three sheets of paper, please.		cours::C16 교재::L5 명사
+표	ticket	영화표 여섯 장이에요.<br>That's six cinema tickets.	票. Counted with 장: 기차표 세 장.	cours::C16 교재::L5 명사
+버스 정류장	bus stop	공원하고 버스 정류장이 있어요.<br>There's a park and a bus stop.	停留場. Pronounced [정뉴장] — ㅇ followed by ㄹ turns the ㄹ into ㄴ.	cours::C16 교재::L5 장소
+영화관	cinema	1층에 영화관하고 커피숍이 있어요.<br>There's a cinema and a coffee shop on the first floor.	映畵館. 극장 is the older word.	cours::C16 교재::L5 장소
+제주도	Jeju Island	제주도 귤이에요.<br>They're Jeju tangerines.	濟州島.	cours::C16 교재::L5 장소
+많다	to be a lot, to be many	과일이 많아요.<br>There's a lot of fruit.	많 + 아요 → 많아요 [마나요]. Opposite: 적다.	cours::C16 교재::L5 형용사
+필요하다	to need	종이 세 장이 필요해요.<br>I need three sheets of paper.	하다 verb. What is needed takes 이/가, not the object particle: 시간이 필요해요.	cours::C16 교재::L5 동사
+가지고 오다	to bring (something)	공책 세 권 가지고 오세요.<br>Bring three notebooks.	가지다 (to hold) + 오다. 가지고 가다 = to take along.	cours::C16 교재::L5 동사
+시간	time, hour	시간이 필요해요.<br>I need time.	時間.	cours::C16 교재::L5 시간
+몇이에요?	How many / what number is it?	가: 몇이에요?<br>나: 서른하나예요.	Very context-dependent: it can ask a quantity, a number or an age depending on what you're both looking at.	cours::C16 교재::L5 표현
+아버지	father	아버지하고 어머니가 계세요.<br>My father and mother are here.	Neutral and respectful; 아빠 is the affectionate form, like 엄마.	cours::C16 교재::L5 사람
+누나	older sister (used by a man)	누나가 한 명 있어요.<br>I have one older sister.	A man says 누나 / 형; a woman says 언니 / 오빠.	cours::C16 교재::L5 사람
+린스	hair conditioner	린스가 샴푸 옆에 있어요.<br>The conditioner is next to the shampoo.	From English 'rinse', not 'conditioner' — a Konglish false friend.	cours::C16 교재::L5 명사

@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#deck:Coréen::C40
+#tags column:5
+-을래요/-ㄹ래요	I'd like to / do you want to?	같이 점심 먹으러 갈래요?<br>Shall we go for lunch together?	Personal will. Only for 'I' in statements and 'you' in questions — never for the weather or a third person. -을 거예요 is the neutral future.	cours::C40 교재2::L3-4 문법
+주문하다	to order	닭갈비 2인분 주문할까요?<br>Shall we order two portions of dakgalbi?	注文. 시키다 is the casual twin.	cours::C40 교재2::L3-4 동사
+종업원	waiter, staff member	종업원을 불렀어요.<br>I called the waiter.	從業員. 점원 is a shop assistant.	cours::C40 교재2::L3-4 사람
+무료	free of charge	음료는 무료입니다.<br>Drinks are free.	無料. 유료 = paid.	cours::C40 교재2::L3-4 명사
+국수	noodles	국수도 같이 시켜요.<br>Let's order noodles too.	Wheat noodles in broth.	cours::C40 교재2::L3-4 음식
+닭갈비	dakgalbi (spicy stir-fried chicken)	닭갈비 2인분 주세요.<br>Two portions of dakgalbi, please.	닭 + 갈비. A Chuncheon speciality.	cours::C40 교재2::L3-4 음식
+피자	pizza	피자하고 과일을 가져왔어요.<br>I brought pizza and fruit.		cours::C40 교재2::L3-4 음식
+샐러드	salad	샐러드는 리에 씨가 만들었어요.<br>Rie made the salad.		cours::C40 교재2::L3-4 음식
+짜다	to be salty	커피가 왜 이렇게 짜요?<br>Why is this coffee so salty?		cours::C40 교재2::L3-4 형용사
+시다	to be sour	레몬은 셔요.<br>Lemons are sour.	시 + 어요 → 셔요.	cours::C40 교재2::L3-4 형용사
+싱겁다	to be bland, not salty enough	계란 프라이가 좀 싱거워요.<br>The fried egg is a bit bland.	ㅂ irregular → 싱거워요. Opposite: 짜다.	cours::C40 교재2::L3-4 형용사
+소금	salt	소금을 안 넣었어요?<br>Didn't you add salt?		cours::C40 교재2::L3-4 음식
+식초	vinegar	식초를 조금 넣어요.<br>I add a little vinegar.	食醋.	cours::C40 교재2::L3-4 음식
+인삼차	ginseng tea	인삼차는 써요.<br>Ginseng tea is bitter.	人蔘茶.	cours::C40 교재2::L3-4 음식
+달콤하다	to be nicely sweet	케이크가 달콤해서 좋아요.<br>The cake is pleasantly sweet.	The appetising version of 달다.	cours::C40 교재2::L3-4 형용사
+매콤하다	to be pleasantly spicy	닭갈비가 매콤하고 달콤해요.<br>The dakgalbi is nicely spicy and sweet.	A milder, tastier 맵다.	cours::C40 교재2::L3-4 형용사
+새콤하다	to be pleasantly sour	이 음식이 새콤해요.<br>This dish is nicely tangy.	The appetising version of 시다.	cours::C40 교재2::L3-4 형용사
+고소하다	to be nutty, savoury	참기름 맛이 고소해요.<br>The sesame oil tastes nutty.	Used for sesame, almonds, roasted things.	cours::C40 교재2::L3-4 형용사
+느끼하다	to be greasy	피자가 좀 느끼하지요?<br>The pizza is a bit greasy, isn't it?	Heavy with oil or dairy.	cours::C40 교재2::L3-4 형용사
+외식하다	to eat out	오늘 외식할까요?<br>Shall we eat out today?	外食.	cours::C40 교재2::L3-4 동사
+이상하다	to be strange, weird	맛이 좀 이상해요.<br>It tastes a bit strange.	異常.	cours::C40 교재2::L3-4 형용사
+계란	egg	계란 프라이를 만들었어요.<br>I made a fried egg.	鷄卵. 달걀 is the native word.	cours::C40 교재2::L3-4 음식
+그럼요	Of course	가: 매운 음식 잘 먹죠?<br>나: 그럼요.	An emphatic yes.	cours::C40 교재2::L3-4 표현

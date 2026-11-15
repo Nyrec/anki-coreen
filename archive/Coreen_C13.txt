@@ -1,0 +1,37 @@
+#separator:tab
+#html:true
+#deck:Coréen::C13
+#tags column:5
+에 있다 / 에 없다	to be (not) in a place	컴퓨터가 방에 있어요.<br>The computer is in the room.	Place noun + 에 + 있다/없다 states where something or someone is. Compare 에 가요, which marks a destination with movement.	cours::C13 교재::L4 문법
+뭐가 있어요?	What is there?	거실에 뭐가 있어요?<br>What's in the living room?	뭐 + 가 (subject particle). The answer also takes 이/가: 소파가 있어요.	cours::C13 교재::L4 표현
+어디에 있어요?	Where is it?	화장실이 어디에 있어요?<br>Where is the restroom?	The thing you're asking about takes 이/가, not 은/는.	cours::C13 교재::L4 표현
+N1하고 N2	N1 and N2	제니하고 헨리 사이에 있어요.<br>He's between Jenny and Henry.	하고 joins two nouns. 그리고 joins two sentences — they are not interchangeable.	cours::C13 교재::L4 문법
+위	on, on top of	모자가 책상 위에 있어요.<br>The cap is on the desk.	Position words sit between the place noun and 에: N + 위 + 에.	cours::C13 교재::L4 위치
+아래	under, below	공이 의자 아래에 있어요.<br>The ball is under the chair.	밑 is the more colloquial synonym.	cours::C13 교재::L4 위치
+안	inside	남자는 차 안에 있어요.<br>The man is in the car.		cours::C13 교재::L4 위치
+밖	outside	여자는 차 밖에 있어요.<br>The woman is outside the car.	Pronounced [박]; 밖에 becomes [바께].	cours::C13 교재::L4 위치
+앞	in front of	강아지가 차 앞에 있어요.<br>The puppy is in front of the car.		cours::C13 교재::L4 위치
+뒤	behind	가방이 차 뒤에 있어요.<br>The bag is behind the car.		cours::C13 교재::L4 위치
+옆	next to, beside	아이는 엄마 옆에 있어요.<br>The child is next to their mother.		cours::C13 교재::L4 위치
+오른쪽	right side	편의점이 오른쪽에 있어요.<br>The convenience store is on the right.	쪽 = side, direction.	cours::C13 교재::L4 위치
+왼쪽	left side	약국이 왼쪽에 있어요.<br>The pharmacy is on the left.		cours::C13 교재::L4 위치
+Subject + Place + Location + Verb	Korean word order for location	모자가 가방 위에 있어요.<br>가방 위에 모자가 있어요.	Both orders are correct. Leading with the place answers 'what's there?'; leading with the subject answers 'where is it?'.	cours::C13 교재::L4 문법
+방	room	방에 침대가 있어요.<br>There's a bed in the room.	房.	cours::C13 교재::L4 집
+공원	park	공원에 있어요.<br>He's at the park.	公園.	cours::C13 교재::L4 장소
+약국	pharmacy	약국이 병원 옆에 있어요.<br>The pharmacy is next to the hospital.	藥局. 약 = medicine.	cours::C13 교재::L4 장소
+편의점	convenience store	편의점이 학교 앞에 있어요.<br>The convenience store is in front of the school.	便宜店. CU, GS25 and 7-Eleven are the usual chains.	cours::C13 교재::L4 장소
+지하철	subway	지하철을 타요.<br>I take the subway.	地下鐵 — literally underground iron.	cours::C13 교재::L4 장소
+역	station	지하철역이 어디에 있어요?<br>Where is the subway station?	驛. Attaches to the line or place name: 서울역, 대전역.	cours::C13 교재::L4 장소
+휴대폰	mobile phone	휴대폰이 가방에 있어요.<br>My phone is in my bag.	携帶폰. More standard than 핸드폰; 폰 alone is common in speech.	cours::C13 교재::L4 명사
+지갑	wallet	지갑이 가방에 없어요.<br>The wallet isn't in the bag.	紙匣.	cours::C13 교재::L4 명사
+달력	calendar	달력이 교실에 있어요.<br>There's a calendar in the classroom.	달 (month, moon) + 력 (曆).	cours::C13 교재::L4 명사
+필통	pencil case	필통이 책상 위에 있어요.<br>The pencil case is on the desk.	筆筒.	cours::C13 교재::L4 명사
+기타	guitar	방에 기타가 있어요?<br>Is there a guitar in the room?	Homonym of 기타 (其他, 'et cetera') — context tells them apart.	cours::C13 교재::L4 명사
+공	ball	공이 의자 아래에 있어요.<br>The ball is under the chair.		cours::C13 교재::L4 명사
+상자	box	상자 안에 공이 있어요.<br>There's a ball in the box.	箱子. 박스 is also used.	cours::C13 교재::L4 명사
+차	car	남자가 차 안에 있어요.<br>The man is in the car.	車. Also means tea (茶) — a different word with the same spelling.	cours::C13 교재::L4 명사
+남자	man	남자는 차 안에 있어요.<br>The man is in the car.	男子.	cours::C13 교재::L4 사람
+여자	woman	여자는 차 밖에 있어요.<br>The woman is outside the car.	女子.	cours::C13 교재::L4 사람
+아이	child	아이는 엄마 옆에 있어요.<br>The child is next to their mother.	애 is the contracted spoken form.	cours::C13 교재::L4 사람
+엄마	mum	엄마 옆에 있어요.<br>She's beside her mum.	Informal; 어머니 is the neutral or respectful word.	cours::C13 교재::L4 사람
+강아지	puppy, dog	강아지가 차 앞에 있어요.<br>The puppy is in front of the car.	Strictly a puppy, but used affectionately for dogs of any age. 개 is the neutral word.	cours::C13 교재::L4 명사

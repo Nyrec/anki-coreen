@@ -1,0 +1,16 @@
+#separator:tab
+#html:true
+#deck:Coréen::C63
+#tags column:5
+익숙하다	to be familiar, used to	아직 한국 음식이 익숙하지 않아요.<br>I'm not used to Korean food yet.	N에 익숙하다.	cours::C63 교재2::L12 형용사
+늘다	to improve, to increase	한국어가 빨리 늘었어요.<br>My Korean improved quickly.	ㄹ stem → 늘어요. For skills and quantities.	cours::C63 교재2::L12 동사
+중급	intermediate level	중급부터 어려워졌어요.<br>It got harder from the intermediate level.	中級. 초급 = beginner, 고급 = advanced.	cours::C63 교재2::L12 명사
+모양	shape, appearance	모양은 예쁜데 값이 비싸요.<br>It looks nice but it's expensive.	模樣.	cours::C63 교재2::L12 명사
+집값	house prices	회사 근처는 집값이 비싸요.<br>Housing is expensive near the office.	집 + 값. Pronounced [집깝].	cours::C63 교재2::L12 명사
+새집	a new house	새집이라서 깨끗해요.<br>It's a new place so it's clean.	새 + 집.	cours::C63 교재2::L12 집
+보름	fifteen days, a fortnight	보름 동안 여행했어요.<br>I travelled for a fortnight.	Also the full moon: 보름달.	cours::C63 교재2::L12 시간
+찌개	stew	이 찌개를 만든 지 하루 됐어요.<br>I made this stew a day ago.	Thicker and saltier than 국.	cours::C63 교재2::L12 음식
+관심	interest	한국 문화에 관심이 있어요.<br>I'm interested in Korean culture.	關心. 관심이 있다 / 없다.	cours::C63 교재2::L12 명사
+초등학교	primary school	초등학교 때 배웠어요.<br>I learnt it in primary school.	初等學校. Then 중학교, 고등학교.	cours::C63 교재2::L12 장소
+중학교	middle school	중학교에 다녀요.<br>He goes to middle school.	中學校.	cours::C63 교재2::L12 장소
+응대하다	to attend to, to serve (customers)	손님을 친절하게 응대해요.<br>She serves customers politely.	應對.	cours::C63 교재2::L12 동사

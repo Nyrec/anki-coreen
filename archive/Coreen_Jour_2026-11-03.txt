@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+쏟다	to spill, to pour out<br><i>renverser (un liquide), verser, répandre</i>	노트북에 커피를 쏟았어요.<br>I spilled coffee on my laptop.<br><i>J'ai renversé du café sur mon ordinateur portable.</i>	[ssotda] Takes 을/를. Pronounced [쏟따]; 쏟아요 = [쏘다요]. Related: 쏟아지다 = to pour down (비가 쏟아져요 = it's pouring).	quotidien::2026-11-03 동사 niveau::B1
+곤란하다	to be awkward, difficult, in a tight spot<br><i>embarrassant, difficile, délicat</i>	갑자기 부탁하시면 좀 곤란해요.<br>It's a bit difficult for me if you ask so suddenly.<br><i>Si vous me le demandez si soudainement, ça m'embête un peu.</i>	[gollanhada] Hanja 困難. Pronounced [골란하다]. 좀 곤란해요 is a soft, polite way to refuse. 곤란한 질문 = an awkward question.	quotidien::2026-11-03 형용사 niveau::B1
+의외로	surprisingly, unexpectedly<br><i>étonnamment, contre toute attente</i>	그 영화가 의외로 재미있었어요.<br>That movie was surprisingly fun.<br><i>Ce film était étonnamment intéressant.</i>	[uioero] From 의외 (意外, 'outside of expectation') + 로. Usually comes right before the adjective or verb. Close synonym: 뜻밖에.	quotidien::2026-11-03 부사 niveau::B1
+기한	time limit, due date, term<br><i>délai, date limite, échéance</i>	서류 제출 기한이 이번 주 금요일까지예요.<br>The deadline for submitting the documents is this Friday.<br><i>Le délai pour rendre le dossier court jusqu'à vendredi de cette semaine.</i>	[gihan] Hanja 期限. 기한을 넘기다 = to miss the deadline; 유통기한 = expiry date on food. 마감 is the closing moment, 기한 the allowed period.	quotidien::2026-11-03 명사 niveau::B1
+신세를 지다	to be indebted to someone, to impose on someone<br><i>être redevable à qn, abuser de la gentillesse de qn</i>	지난번에 신세를 많이 졌어요. 고마워요.<br>I really imposed on you last time. Thank you.<br><i>Je vous ai beaucoup dérangé la dernière fois. Merci.</i>	[sinsereul jida] 지다 here = to owe, as in 빚을 지다 (to be in debt). Past form 졌어요. Typical thank-you after a favor or a stay: 신세 많이 졌습니다.	quotidien::2026-11-03 표현 niveau::B1

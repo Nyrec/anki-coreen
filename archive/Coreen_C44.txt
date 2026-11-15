@@ -1,0 +1,41 @@
+#separator:tab
+#html:true
+#deck:Coréen::C44
+#tags column:5
+일기 예보	weather forecast	아침에 일기 예보를 못 들었어요.<br>I didn't hear the forecast this morning.	日氣豫報.	cours::C44 교재2::L6-7 명사
+금방	in a moment, just now	소나기니까 금방 그칠 거예요.<br>It's a shower, it'll stop shortly.	Both 'very soon' and 'a moment ago'.	cours::C44 교재2::L6-7 시간
+잠깐	for a moment	잠깐 기숙사에 다녀올게요.<br>I'll pop back to the dorm for a moment.	잠시 is the more formal twin.	cours::C44 교재2::L6-7 시간
+두다 (놓다)	to leave, to put down	농구공은 여기에 두고 가세요.<br>Leave the basketball here.	두고 가다 = to leave behind.	cours::C44 교재2::L6-7 동사
+꽤	quite, fairly	아침저녁으로 꽤 쌀쌀해요.<br>It's quite chilly morning and evening.	Stronger than 조금, weaker than 아주.	cours::C44 교재2::L6-7 부사
+점점	gradually, more and more	점점 흐려져요.<br>It's gradually clouding over.	漸漸.	cours::C44 교재2::L6-7 부사
+전국	the whole country	밤사이 전국에 비가 와요.<br>It'll rain nationwide overnight.	全國.	cours::C44 교재2::L6-7 명사
+반팔	short sleeves	낮에는 더우니까 반팔 옷을 준비하세요.<br>It's hot during the day, so bring short sleeves.	반 (half) + 팔 (arm). 긴팔 = long sleeves.	cours::C44 교재2::L6-7 명사
+알려 주다	to let someone know	알려 줘서 고마워요.<br>Thanks for letting me know.	알리다 + 주다.	cours::C44 교재2::L6-7 표현
+태어나다	to be born	2003년에 태어났습니다.<br>I was born in 2003.		cours::C44 교재2::L6-7 동사
+새롭다	to be new	새로운 친구를 사귀고 싶어요.<br>I want to make new friends.	ㅂ irregular → 새로워요, 새로운. The modifier 새 needs no ending: 새 옷.	cours::C44 교재2::L6-7 형용사
+-아 주세요/-어 주세요	please do (for me)	창문 좀 닫아 주세요.<br>Please close the window.	Asks someone to do something for you. To offer help: -아/어 줄까요? or the humbler -아/어 드릴까요?	cours::C44 교재2::L6-7 문법
+-으면/-면	if, when	날씨가 좋으면 등산을 갈 거예요.<br>If the weather's good I'll go hiking.	Consonant → -으면, vowel or ㄹ → -면. 알다 → 알면, never 알으면.	cours::C44 교재2::L6-7 문법
+전화를 걸다	to make a call	유진 씨에게 전화를 걸었어요.<br>I called Yujin.	걸다 is ㄹ-stem → 걸어요, same form as 걷다 → 걸어요.	cours::C44 교재2::L6-7 표현
+끊다	to hang up, to cut off	전화를 끊었어요.<br>I hung up.	Pronounced [끈타].	cours::C44 교재2::L6-7 동사
+통화 중	on the phone, busy	지금은 통화 중입니다.<br>The line is busy.	通話 中. 중 = in the middle of.	cours::C44 교재2::L6-7 표현
+부재중 전화	missed call	부재중 전화가 있었어요.<br>I had a missed call.	不在中.	cours::C44 교재2::L6-7 명사
+음성 메시지	voice message	음성 메시지를 남겨 주세요.<br>Please leave a voice message.	音聲.	cours::C44 교재2::L6-7 명사
+남기다	to leave (a message)	메시지를 남겼어요.<br>I left a message.	The causative of 남다 (to remain).	cours::C44 교재2::L6-7 동사
+전원	power (of a device)	전원을 꺼요.<br>I turn the power off.	電源. 전원을 켜다 / 끄다.	cours::C44 교재2::L6-7 명사
+진동	vibrate mode	휴대폰을 진동으로 바꿔 주세요.<br>Please put your phone on vibrate.	振動. 무음 = silent.	cours::C44 교재2::L6-7 명사
+충전하다	to charge (a battery)	배터리를 충전해요.<br>I charge the battery.	充電.	cours::C44 교재2::L6-7 동사
+바꾸다 (전환)	to switch (to another mode or person)	김미라 선생님 좀 바꿔 주세요.<br>Could you put Ms Kim on, please?	On the phone, 바꿔 주세요 asks to be passed to someone. Same verb as 바꾸다 (to exchange) in C30.	cours::C44 교재2::L6-7 동사
+전해 주다	to pass on, to deliver	메모 좀 전해 주세요.<br>Please pass on the note.	전하다 + 주다.	cours::C44 교재2::L6-7 표현
+메모	note, memo	메모를 했어요.<br>I took a note.	메모하다 = to jot down.	cours::C44 교재2::L6-7 명사
+수첩	notebook, planner	수첩에 메모를 했어요.<br>I wrote it in my planner.	手帖.	cours::C44 교재2::L6-7 명사
+삭제하다	to delete	메시지를 삭제했어요.<br>I deleted the message.	削除. 지우다 is the everyday word.	cours::C44 교재2::L6-7 동사
+누르다	to press	별표를 누르세요.<br>Press the star key.	르 irregular → 눌러요.	cours::C44 교재2::L6-7 동사
+비밀번호	password, PIN	비밀번호를 누르세요.<br>Enter the password.	祕密番號.	cours::C44 교재2::L6-7 명사
+짐	luggage, load	짐이 많네요. 도와 드릴까요?<br>That's a lot of luggage. Shall I help?		cours::C44 교재2::L6-7 명사
+들다	to hold, to carry	이것 좀 같이 들어 주세요.<br>Please help me carry this.	ㄹ stem → 들어요. Also 나이가 들다 = to grow old.	cours::C44 교재2::L6-7 동사
+가위	scissors	가위로 잘라 주세요.<br>Please cut it with scissors.		cours::C44 교재2::L6-7 명사
+지우개	eraser	지우개 좀 빌려 주세요.<br>Could you lend me an eraser?	지우다 + 개 (tool suffix).	cours::C44 교재2::L6-7 명사
+빌려주다	to lend	저한테 빌려주세요.<br>Please lend it to me.	빌리다 = to borrow; 빌려주다 = to lend.	cours::C44 교재2::L6-7 동사
+오래	for a long time	게임을 오래 하면 눈이 나빠져요.<br>If you game for long your eyes get worse.	오랫동안 is the fuller form.	cours::C44 교재2::L6-7 부사
+졸리다	to be sleepy	수업 시간에 졸려요.<br>I get sleepy in class.		cours::C44 교재2::L6-7 형용사
+사이즈	size	어떤 사이즈로 바꿔 드릴까요?<br>What size shall I change it for?	크기 is the native word.	cours::C44 교재2::L6-7 명사

@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#deck:Coréen::C37
+#tags column:5
+-습니다/-ㅂ니다	formal polite ending	회사 일이 많아서 바빴습니다.<br>I was busy because of work.	합쇼체. Consonant stem → -습니다, vowel or ㄹ stem → -ㅂ니다 (갑니다, 삽니다). Question: -습니까?/-ㅂ니까? Used at work, in presentations, in the army.	cours::C37 교재2::L2 문법
+잘 지내요	I'm doing well	가: 잘 지냈어요?<br>나: 네, 잘 지냈어요.	지내다 = to get by, to live. Past: 잘 지냈어요.	cours::C37 교재2::L2 표현
+어떻게 지내요?	How are you doing?	요즘 어떻게 지내요?<br>How have you been lately?	Formal: 어떻게 지내셨습니까?	cours::C37 교재2::L2 표현
+별일 없어요	Nothing much, all is well	네, 별일 없어요.<br>Yes, nothing much going on.	別일. As a question: 별일 없어요? = is everything all right?	cours::C37 교재2::L2 표현
+얼굴이 좋아 보여요	You look well	얼굴이 좋아 보여요.<br>You're looking well.	보이다 = to appear. Negative: 얼굴이 안 좋아 보여요.	cours::C37 교재2::L2 표현
+한가하다	to be free, not busy	요즘에는 좀 한가해요.<br>I'm fairly free these days.	閑暇. Opposite: 바쁘다.	cours::C37 교재2::L2 형용사
+그냥 그래요	So-so	가: 요즘 어때요?<br>나: 그냥 그래요.	그냥 = just. Neither good nor bad.	cours::C37 교재2::L2 표현
+덕분에	thanks to you	덕분에 잘 지냈어요.<br>I've been well, thanks to you.	德分. A polite reply to 잘 지냈어요? Also used generally: 인턴십 덕분에 실력이 늘었어요. Only for good outcomes — 때문에 is neutral.	cours::C37 교재2::L2 표현
+처음 뵙겠습니다	How do you do (first meeting)	처음 뵙겠습니다. 만나서 반갑습니다.<br>How do you do. Pleased to meet you.	From 뵙다, the humble form of 만나다.	cours::C37 교재2::L2 표현
+보이다	to be visible, to appear	지윤 씨가 안 보여요.<br>I can't see Jiyun.	The passive of 보다. 좋아 보여요 = looks good.	cours::C37 교재2::L2 동사
+방금	just now	방금 왔습니다.<br>I've just arrived.	More immediate than 아까.	cours::C37 교재2::L2 시간
+헤어지다	to break up, to part	남자 친구와 헤어졌어요.<br>I broke up with my boyfriend.	Also just parting ways after meeting.	cours::C37 교재2::L2 동사
+사귀다	to make friends, to date	친구를 사귀었어요.<br>I made friends.	사귀 + 어요 → 사귀어요. With a partner it means to date.	cours::C37 교재2::L2 동사
+옮기다	to move, to change (jobs)	회사를 옮겼어요.<br>I changed companies.	Pronounced [옴기다].	cours::C37 교재2::L2 동사
+일자리	job, position	일자리를 알아보고 있어요.<br>I'm looking for a job.	일 + 자리 (seat).	cours::C37 교재2::L2 명사
+알아보다	to look into, to find out	일자리를 알아봐요.<br>I'm looking into job openings.	알다 + 보다.	cours::C37 교재2::L2 동사
+그만두다	to quit	회사를 그만두었어요.<br>I quit my job.	Contracted: 그만뒀어요.	cours::C37 교재2::L2 동사
+대학원	graduate school	대학원에 입학했어요.<br>I started graduate school.	大學院.	cours::C37 교재2::L2 장소
+개학	start of term	다음 주에 개학을 해요.<br>Term starts next week.	開學. Opposite: 방학.	cours::C37 교재2::L2 시간
+조카	nephew, niece	조카 돌잔치에 갔어요.<br>I went to my nephew's first birthday party.		cours::C37 교재2::L2 사람
+돌잔치	first birthday party	돌잔치에 초대받았어요.<br>I was invited to a first birthday party.	돌 (first birthday) + 잔치 (feast). A major family event in Korea.	cours::C37 교재2::L2 명사
+반지	ring	보통 금반지를 선물해요.<br>People usually give a gold ring.	금 = gold, 은 = silver.	cours::C37 교재2::L2 명사
+경치	scenery, view	경치도 아름답고 음식도 맛있었어요.<br>The scenery was beautiful and the food was good.	景致.	cours::C37 교재2::L2 명사
+기념	commemoration, souvenir	여행 기념 선물이에요.<br>It's a souvenir from my trip.	記念. 기념품 = souvenir.	cours::C37 교재2::L2 명사
+-지요?	right? isn't it?	오늘 오지요?<br>You're coming today, right?	Contracts to -죠? Seeks confirmation of something you already assume.	cours::C37 교재2::L2 문법
+하루	a day	행복한 하루 보내세요.<br>Have a happy day.	One day as a span; 날 is the calendar day. Opens the native day count: 하루, 이틀, 사흘, 나흘, 닷새.	cours::C37 교재2::L2 시간

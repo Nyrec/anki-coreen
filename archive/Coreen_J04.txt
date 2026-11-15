@@ -1,0 +1,36 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J04
+#tags column:5
+-습니다/-ㅂ니다	formal polite statement ending	저는 프랑스에서 왔습니다.<br>I come from France.	Consonant → -습니다 (먹습니다), vowel → -ㅂ니다 (갑니다). ㄹ drops: 살다 → 삽니다, 만들다 → 만듭니다. Nouns: 학생입니다, negative 학생이 아닙니다. For interviews, presentations, the news.	cours::J04 교재::MKG-UB5 문법
+-습니까?/-ㅂ니까?	formal polite question ending	아이디어가 있습니까?<br>Does anyone have an idea?	Same rule as -습니다: 먹습니까?, 갑니까?, 학생입니까? 안녕하십니까? is the formal greeting.	cours::J04 교재::MKG-UB5 문법
+-으면/-면	if; when (condition)	비가 오면 집에 있을 거예요.<br>If it rains, I'll stay home.	Consonant → -으면, vowel or ㄹ → -면 (살면). ㄷ irregular: 걷다 → 걸으면. Nouns: 학생이면, 엄마면. Also 'when' for a sure event (도착하면 전화해 주세요) or a habit (주말이면).	cours::J04 교재::MKG-UB5 문법
+경험	experience	경험이 있습니까?<br>Do you have experience?	經驗. 경험이 있다 / 없다.	cours::J04 교재::MKG-UB5 명사
+전공	major, field of study	제 전공은 비즈니스예요.<br>My major is business.	專攻. 전공하다 = to major in.	cours::J04 교재::MKG-UB5 명사
+승무원	flight attendant	나중에 승무원이 되고 싶습니다.<br>I want to become a flight attendant one day.	乘務員.	cours::J04 교재::MKG-UB5 직업
+목이 마르다	to be thirsty	목이 마르면 물을 드세요.<br>If you're thirsty, have some water.	르 irregular → 목이 말라요. Often written 목말라요.	cours::J04 교재::MKG-UB5 표현
+화장품	cosmetics	한국에 가면 화장품을 많이 살 거예요.<br>When I go to Korea, I'll buy lots of cosmetics.	化粧品.	cours::J04 교재::MKG-UB5 명사
+등산하다	to go hiking	주말에 시간이 있으면 같이 등산할래요?<br>If you're free this weekend, want to go hiking together?	登山.	cours::J04 교재::MKG-UB5 동사
+휴가	holiday, leave (from work)	일주일 동안 휴가면 뭐 할 거예요?<br>What would you do with a week off?	休暇. For school holidays, 방학.	cours::J04 교재::MKG-UB5 명사
+-읍시다/-ㅂ시다	let's … (formal)	회의를 시작합시다.<br>Let's begin the meeting.	Consonant → -읍시다 (먹읍시다), vowel or ㄹ → -ㅂ시다 (갑시다, 놉시다). ㄷ/ㅂ irregulars: 걸읍시다, 도웁시다. Heard in announcements and signs, not towards superiors. In conversation: -을까요?, -을래요?, -아요.	cours::J04 교재::MKG-UB6 문법
+-지 맙시다	let's not …	서두르지 맙시다.<br>Let's not rush.	Stem + 지 맙시다, from 말다. The group version of -지 마세요.	cours::J04 교재::MKG-UB6 문법
+어렸을 때	when I was young, as a child	어렸을 때 뭐가 되고 싶었어요?<br>What did you want to be when you were little?	어리다 + -었을 때.	cours::J04 교재::MKG-UB6 표현
+N대	one's …ties (age)	20대 때부터 운동을 꾸준히 하세요.<br>Exercise regularly from your twenties.	代. Read with Sino numbers: 20대 = 이십 대, 30대 = 삼십 대.	cours::J04 교재::MKG-UB6 단위
+인기가 많다	to be popular	저는 고등학교 때 인기가 많았어요.<br>I was popular in high school.	人氣. 인기 있는 가수 = a popular singer.	cours::J04 교재::MKG-UB6 표현
+꾸준히	steadily, regularly	운동을 꾸준히 해요.<br>I exercise regularly.	Stresses consistency over time.	cours::J04 교재::MKG-UB6 부사
+챙기다	to make sure to take, to pack	나갈 때 항상 지갑을 챙겨요.<br>I always make sure to take my wallet when I go out.	Also to look after: 밥을 챙겨 먹다 = to eat properly.	cours::J04 교재::MKG-UB6 동사
+기쁘다	to be glad	선물을 받아서 기뻐요.<br>I'm glad I got a present.	으 drops → 기뻐요. More a moment of joy than 행복하다.	cours::J04 교재::MKG-UB6 형용사
+행복하다	to be happy	저는 먹을 때 제일 행복해요.<br>I'm happiest when I'm eating.	幸福.	cours::J04 교재::MKG-UB6 형용사
+슬프다	to be sad	영화가 너무 슬퍼요.<br>The movie is so sad.	으 drops → 슬퍼요.	cours::J04 교재::MKG-UB6 형용사
+놀라다	to be surprised, startled	소식을 듣고 놀랐어요.<br>I was surprised to hear the news.	Usually in the past: 놀랐어요. 깜짝 놀라다 = to be startled.	cours::J04 교재::MKG-UB6 동사
+무섭다	to be scary; to be scared	치과가 무서워요.<br>I'm scared of the dentist.	ㅂ irregular → 무서워요. The thing feared takes 이/가.	cours::J04 교재::MKG-UB6 형용사
+짜증나다	to be annoyed, irritated	버스가 안 와서 짜증나요.<br>The bus isn't coming, it's so annoying.	짜증 = irritation. 짜증을 내다 = to snap at someone.	cours::J04 교재::MKG-UB6 형용사
+실망하다	to be disappointed	여행이 취소됐을 때 실망했어요.<br>I was disappointed when the trip was cancelled.	失望. 실망스럽다 = disappointing.	cours::J04 교재::MKG-UB6 동사
+싸우다	to fight, to argue	친구하고 싸웠어요.<br>I had a fight with my friend.	Verbal or physical.	cours::J04 교재::MKG-UB6 동사
+서두르다	to hurry	서두르지 마세요.<br>Don't rush.	르 irregular → 서둘러요.	cours::J04 교재::MKG-UB6 동사
+무리하다	to overdo it, to push too hard	아프면 무리하지 마세요.<br>If you're unwell, don't push yourself.	無理.	cours::J04 교재::MKG-UB6 동사
+조용히	quietly	도서관에서는 조용히 합시다.<br>Let's keep quiet in the library.	From 조용하다.	cours::J04 교재::MKG-UB6 부사
+결정하다	to decide	금요일까지 결정합시다.<br>Let's decide by Friday.	決定. More formal than 정하다.	cours::J04 교재::MKG-UB6 동사
+해결하다	to solve, to resolve	같이 문제를 해결합시다.<br>Let's solve the problem together.	解決.	cours::J04 교재::MKG-UB6 동사
+모으다	to save up, to collect	돈을 모읍시다.<br>Let's save money.	으 drops → 모아요.	cours::J04 교재::MKG-UB6 동사
+환경을 보호하다	to protect the environment	환경을 보호합시다.<br>Let's protect the environment.	環境 + 保護.	cours::J04 교재::MKG-UB6 표현

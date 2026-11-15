@@ -1,0 +1,36 @@
+#separator:tab
+#html:true
+#deck:Coréen::C41
+#tags column:5
+-은 후에/-ㄴ 후에	after doing	밥을 먹은 후에 커피를 마셔요.<br>I drink coffee after eating.	Consonant stem → -은 후에, vowel or ㄹ stem → -ㄴ 후에 (한 후에, 만든 후에). With a noun: 식사 후에. Opposite: -기 전에.	cours::C41 교재2::L4-5 문법
+-고 있다	to be doing (progressive)	지금 밥을 먹고 있어요.<br>I'm eating right now.	An action in progress. Honorific: -고 계세요. With clothes it marks the state: 옷을 입고 있어요.	cours::C41 교재2::L4-5 문법
+정리하다	to tidy up, to organise	집 안을 정리해요.<br>I tidy up the house.	整理.	cours::C41 교재2::L4-5 동사
+설거지하다	to do the washing-up	밥을 먹은 후에 설거지해요.<br>I do the dishes after eating.	설거지 = the washing-up.	cours::C41 교재2::L4-5 동사
+청소기를 돌리다	to vacuum	청소기를 돌릴까요?<br>Shall I run the vacuum?	돌리다 = to run a machine.	cours::C41 교재2::L4-5 표현
+외출하다	to go out	오늘은 외출할 거예요.<br>I'm going out today.	外出.	cours::C41 교재2::L4-5 동사
+장을 보다	to do the grocery shopping	퇴근한 후에 장을 봐요.<br>I do the shopping after work.	장 = market. 쇼핑 is for clothes and goods.	cours::C41 교재2::L4-5 표현
+옷장	wardrobe	옷을 옷장 안에 넣으세요.<br>Put the clothes in the wardrobe.	옷 + 장 (欌).	cours::C41 교재2::L4-5 집
+놓다	to put down, to place	가방은 어디에 놓아요?<br>Where shall I put the bag?	놓다 = on a surface; 넣다 = inside something.	cours::C41 교재2::L4-5 동사
+이를 닦다	to brush one's teeth	방금 이를 닦았어요.<br>I've just brushed my teeth.	Also 양치를 하다.	cours::C41 교재2::L4-5 표현
+머리를 감다	to wash one's hair	아침에 머리를 감아요.<br>I wash my hair in the morning.	감다 is only for hair; 씻다 for the body.	cours::C41 교재2::L4-5 표현
+말리다	to dry	빨리 머리를 말리세요.<br>Dry your hair quickly.	마르다 = to dry by itself; 말리다 = to dry something.	cours::C41 교재2::L4-5 동사
+면도를 하다	to shave	아침에 면도를 해요.<br>I shave in the morning.	面刀.	cours::C41 교재2::L4-5 표현
+목욕하다	to take a bath	목욕한 후에 로션을 발라요.<br>I apply lotion after a bath.	沐浴. 샤워하다 = to shower.	cours::C41 교재2::L4-5 동사
+화장을 하다	to put on makeup	화장을 하고 나갔어요.<br>She put on makeup and went out.	化粧. 화장을 지우다 = to remove makeup.	cours::C41 교재2::L4-5 표현
+지우다	to erase, to remove	화장을 지웠어요.<br>I took my makeup off.	Also for erasing writing.	cours::C41 교재2::L4-5 동사
+바르다	to apply, to spread	로션을 발라요.<br>I apply lotion.	르 irregular → 발라요.	cours::C41 교재2::L4-5 동사
+갈아입다	to change clothes	옷을 갈아입었어요.<br>I changed clothes.	갈다 (to swap) + 입다.	cours::C41 교재2::L4-5 동사
+다림질	ironing	다림질을 해요.<br>I do the ironing.	다리미 = iron.	cours::C41 교재2::L4-5 명사
+널다	to hang out (laundry)	빨래를 널까요?<br>Shall I hang out the laundry?	ㄹ stem → 널어요, 널까요?	cours::C41 교재2::L4-5 동사
+개다	to fold (clothes)	옷을 개서 옷장에 넣어요.<br>I fold the clothes and put them away.		cours::C41 교재2::L4-5 동사
+닦다	to wipe, to polish	창문을 닦을까요?<br>Shall I clean the windows?	Pronounced [닥따]. Also 이를 닦다.	cours::C41 교재2::L4-5 동사
+먼지	dust	먼지를 털까요?<br>Shall I dust it off?	털다 = to shake off.	cours::C41 교재2::L4-5 명사
+버리다	to throw away	쓰레기를 버려요.<br>I take out the rubbish.		cours::C41 교재2::L4-5 동사
+쓰레기	rubbish, trash	쓰레기를 버리세요.<br>Throw out the rubbish.	쓰레기통 = bin.	cours::C41 교재2::L4-5 명사
+미리	in advance, beforehand	미리 준비하세요.<br>Prepare it in advance.		cours::C41 교재2::L4-5 부사
+추천하다	to recommend	친구에게 음식을 추천해 주세요.<br>Recommend a dish to your friend.	推薦.	cours::C41 교재2::L4-5 동사
+치킨집	fried chicken restaurant	근처 치킨집이 맛있어요.<br>The chicken place nearby is good.	치킨 + 집.	cours::C41 교재2::L4-5 장소
+미역국	seaweed soup	생일에 미역국을 먹어요.<br>Koreans eat seaweed soup on their birthday.	Traditional for birthdays and after childbirth.	cours::C41 교재2::L4-5 음식
+여러 가지	various, several kinds	여러 가지 채소를 넣어요.<br>I put in various vegetables.	여러 = several, 가지 = kind.	cours::C41 교재2::L4-5 문법
+주차하다	to park	주차장에 주차하고 있어요.<br>I'm parking in the car park.	駐車. 주차장 = car park.	cours::C41 교재2::L4-5 동사
+잘 먹겠습니다	Thank you for the meal (before eating)	네, 잘 먹겠습니다.<br>Thank you, I'll enjoy it.	Said before eating. Afterwards: 잘 먹었습니다.	cours::C41 교재2::L4-5 표현

@@ -1,0 +1,15 @@
+#separator:tab
+#html:true
+#deck:Coréen::C56
+#tags column:5
+-은/-ㄴ + N	adjective before a noun	저는 매운 음식을 잘 못 먹어요.<br>I can't eat spicy food well.	Adjectives take -은 after a consonant (좋은, 많은), -ㄴ after a vowel or ㄹ (기쁜, 먼). 있다/없다 adjectives take -는: 맛있는, 재미없는.	cours::C56 교재2::L10 문법
+활발하다	to be outgoing, lively	안나 씨는 활발하고 재미있어요.<br>Anna is lively and fun.	活潑.	cours::C56 교재2::L10 형용사
+똑똑하다	to be smart	지원 씨는 똑똑하고 부지런해요.<br>Jiwon is smart and hard-working.		cours::C56 교재2::L10 형용사
+부지런하다	to be diligent	항상 일찍 오고 부지런해요.<br>He always comes early and works hard.	Opposite: 게으르다.	cours::C56 교재2::L10 형용사
+착하다	to be kind-hearted, good	미카 씨는 조용하고 착해요.<br>Mika is quiet and kind-hearted.	About moral goodness; 친절하다 is about behaviour towards others.	cours::C56 교재2::L10 형용사
+마음이 넓다	to be broad-minded, generous	선생님께서는 마음도 넓으세요.<br>Our teacher is very generous of spirit.	마음 (heart) + 넓다 (wide).	cours::C56 교재2::L10 표현
+주변	surroundings, the people around	주변에 친구들이 많아요.<br>She has many friends around her.	周邊.	cours::C56 교재2::L10 명사
+응원하다	to cheer on, to support	친구를 응원해요.<br>I'm cheering my friend on.	應援.	cours::C56 교재2::L10 동사
+참가하다	to take part in	말하기 대회에 참가해요.<br>I'm taking part in the speech contest.	參加. 참석하다 is about attending, 참가하다 about competing.	cours::C56 교재2::L10 동사
+말하기	speaking (skill)	말하기 대회가 있어요.<br>There's a speech contest.	The four skills: 말하기, 듣기, 읽기, 쓰기.	cours::C56 교재2::L10 명사
+이상형	ideal type (of partner)	제 이상형을 이야기할게요.<br>I'll describe my ideal type.	理想型.	cours::C56 교재2::L10 명사

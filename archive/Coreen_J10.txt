@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J10
+#tags column:5
+-는 것	doing, the act of … (nominaliser)	사진 찍는 걸 좋아해요.<br>I like taking photos.	Stem + 는 것: 먹는 것, 자는 것. ㄹ drops: 놀다 → 노는 것. In speech: 것 → 거, 것이 → 게, 것을 → 걸, 것은 → 건 — 한국어 배우는 게 재미있어요.	cours::J10 교재::MKG-INT 문법
+-기	doing, to do (nominaliser)	듣기는 말하기보다 어려워요.<br>Listening is harder than speaking.	Stem + 기, no irregular change: 듣기, 돕기. More abstract than -는 것: used for skills (말하기, 쓰기), hobbies (빵 만들기), to-do lists and goals.	cours::J10 교재::MKG-INT 문법
+-기 쉽다 / -기 어렵다 / -기 힘들다	easy / hard / tough to …	지도 없이는 길을 찾기 어려워요.<br>It's hard to find the way without a map.	-기 쉽다 also means 'prone to': 이런 날씨에는 감기에 걸리기 쉬워요. 겨울에는 아침에 일어나기 힘들어요.	cours::J10 교재::MKG-INT 문법
+-기 좋다	good for …, nice to …	이 카페는 조용해서 일하기 좋아요.<br>This café is quiet, so it's a nice place to work.	살기 좋은 도시 = a city that's good to live in.	cours::J10 교재::MKG-INT 문법
+-기 싫다 / -기 귀찮다	don't feel like … / can't be bothered to …	약속이 있지만 준비하기 귀찮아요.<br>I have plans, but I can't be bothered to get ready.	침대에서 나가기 싫어요 = I don't want to get out of bed.	cours::J10 교재::MKG-INT 문법
+귀찮다	to be a hassle, can't be bothered	청소하기 귀찮아요.<br>I can't be bothered to clean.	Pronounced [귀찬타]. 귀찮게 하다 = to pester someone.	cours::J10 교재::MKG-INT 형용사
+자신 있다	to be confident in (a skill)	제가 제일 자신 있는 건 요리예요.<br>What I'm most confident in is cooking.	自信. About a specific thing: 요리에 자신 있어요. 자신감이 있다 is general self-confidence.	cours::J10 교재::MKG-INT 표현
+원하다	to want	제가 원하는 건 선물이 아니에요.<br>What I want isn't a present.	願. More formal than -고 싶다.	cours::J10 교재::MKG-INT 동사
+중요하다	to be important	중요한 건 그게 아니에요.<br>That's not what matters.	重要.	cours::J10 교재::MKG-INT 형용사
+저축하다	to save (money)	젊을 때 저축하는 게 중요해요.<br>It's important to save when you're young.	貯蓄. More formal than 돈을 모으다.	cours::J10 교재::MKG-INT 동사
+젊다	to be young (adult)	젊을 때 여행을 많이 하세요.<br>Travel a lot while you're young.	Pronounced [점따]. For children: 어리다.	cours::J10 교재::MKG-INT 형용사
+놀이공원	amusement park	놀이공원에 가는 게 기대돼요.<br>I'm looking forward to going to the amusement park.	놀이 + 公園.	cours::J10 교재::MKG-INT 장소
+이해하다	to understand	그 행동을 이해할 수 없어요.<br>I can't understand that behaviour.	理解.	cours::J10 교재::MKG-INT 동사
+행동	behaviour, action	이해할 수 없는 행동이 있어요?<br>Is there any behaviour you can't understand?	行動. 행동하다 = to act.	cours::J10 교재::MKG-INT 명사
+할 일	things to do, tasks	이번 주 할 일이 뭐예요?<br>What do you have to do this week?	할 (future modifier) + 일.	cours::J10 교재::MKG-INT 표현
+편하다	to be comfortable, at ease	혼자 밥 먹는 게 편해요.<br>I feel comfortable eating alone.	便. Opposite: 불편하다 — 전화하는 게 불편해요. 편리하다 = convenient.	cours::J10 교재::MKG-INT 형용사
+실수하다	to make a mistake	실수하는 게 무서워요.<br>I'm scared of making mistakes.	失手.	cours::J10 교재::MKG-INT 동사
+시간을 보내다	to spend time	혼자 시간을 보내는 걸 좋아해요.<br>I like spending time alone.	보내다 = to send, to spend.	cours::J10 교재::MKG-INT 표현
+기억하다	to remember	단어를 기억하는 게 힘들어요.<br>Remembering words is hard.	記憶. 기억이 나다 = to come to mind.	cours::J10 교재::MKG-INT 동사
+매력 있다	to be attractive, charming	잘 들어 주는 게 매력 있어요.<br>Being a good listener is attractive.	魅力. 매력적이다 is the same idea.	cours::J10 교재::MKG-INT 표현
+들어 주다	to listen (to someone)	제 말을 잘 들어 줘요.<br>He really listens to me.	듣다 + 주다: listening for the other person's sake.	cours::J10 교재::MKG-INT 표현
+자랑스럽다	to be proud	한국이 안전한 게 자랑스러워요.<br>I'm proud that Korea is safe.	ㅂ irregular → 자랑스러워요. 자랑하다 = to show off.	cours::J10 교재::MKG-INT 형용사
+안전하다	to be safe	한국은 안전해서 살기 좋아요.<br>Korea is safe, so it's a good place to live.	安全. Opposite: 위험하다.	cours::J10 교재::MKG-INT 형용사
+집값	house prices	집값이 비싼 걸 바꾸고 싶어요.<br>I'd like to change how expensive housing is.	집 + 값 (price). Pronounced [집깝].	cours::J10 교재::MKG-INT 명사
+길을 잃다	to get lost	이 동네에서는 길을 잃기 쉬워요.<br>It's easy to get lost in this neighbourhood.	잃다 = to lose — same root as 잃어버리다.	cours::J10 교재::MKG-INT 표현
+멈추다	to stop	그 가수는 노래 부르기를 멈추지 않았어요.<br>The singer didn't stop singing.		cours::J10 교재::MKG-INT 동사
+유난히	unusually, especially	오늘은 유난히 일하기 싫어요.<br>I especially don't feel like working today.	Something stands out compared with usual.	cours::J10 교재::MKG-INT 부사

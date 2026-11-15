@@ -1,0 +1,16 @@
+#separator:tab
+#html:true
+#deck:Coréen::C28
+#tags column:5
+-고 싶다	to want to	저도 낚시를 하고 싶어요.<br>I want to go fishing too.	Verb stem + 고 싶어요, for yourself. For a third person, use -고 싶어 하다: 동생이 피자를 먹고 싶어 해요.	cours::C28 교재::L10 문법
+비	rain	오늘 비가 와요.<br>It's raining today.	비가 오다 / 비가 내리다 = to rain.	cours::C28 교재::L10 명사
+크다	to be big	물고기가 정말 커요.<br>The fish is really big.	으 irregular → 커요. Opposite: 작다.	cours::C28 교재::L10 형용사
+물고기	fish (live)	물고기가 커요.<br>The fish is big.	물 + 고기. On the plate it's 생선.	cours::C28 교재::L10 명사
+무척	very, extremely	어머니께서 바다를 무척 좋아하세요.<br>My mother loves the sea.	Stronger than 아주; slightly literary.	cours::C28 교재::L10 부사
+고궁	old palace	고궁에 사진을 찍으러 가셨어요.<br>He went to the old palace to take photos.	古宮. 경복궁, 창덕궁 are 고궁.	cours::C28 교재::L10 장소
+학원	private academy	요리 학원에 가세요.<br>He goes to a cooking school.	學院. After-hours schools, hugely common in Korea.	cours::C28 교재::L10 장소
+낮	daytime	낮에는 일을 하세요.<br>He works during the day.	Opposite of 밤.	cours::C28 교재::L10 시간
+산	mountain	산이 예뻐요.<br>The mountains are beautiful.	山.	cours::C28 교재::L10 명사
+어떤 분이세요?	What is he/she like?	할아버지는 어떤 분이세요?<br>What is your grandfather like?	어떤 (what kind) + 분 (person, honorific). Asks about character.	cours::C28 교재::L10 표현
+두다	to play (board games)	할아버지하고 체스를 두세요.<br>He plays chess with me.	Used for 체스, 바둑, 장기. 체스를 하다 also works.	cours::C28 교재::L10 동사
+올림	Sincerely (letter closing)	막서스 올림<br>Sincerely, Maxence	Signs a letter to someone senior. To a friend or junior: 이름 + 가.	cours::C28 교재::L10 표현

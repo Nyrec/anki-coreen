@@ -1,0 +1,44 @@
+#separator:tab
+#html:true
+#deck:Coréen::C29
+#tags column:5
+-을까요?/-ㄹ까요?	Shall we …? (asking an opinion)	공연장 앞에서 만날까요?<br>Shall we meet in front of the concert hall?	Consonant stem → -을까요 (먹을까요), vowel or ㄹ stem → -ㄹ까요 (볼까요, 만들까요). 돕다 → 도울까요, 듣다 → 들을까요.	cours::C29 교재::L11 문법
+어렵다	to be difficult	발표 준비가 너무 어려워요.<br>Preparing the presentation is very hard.	ㅂ irregular → 어려워요. Opposite: 쉽다.	cours::C29 교재::L11 형용사
+쉽다	to be easy	시험이 쉬웠어요.<br>The exam was easy.	ㅂ irregular → 쉬워요.	cours::C29 교재::L11 형용사
+기쁘다	to be glad, joyful	정말 기뻐요.<br>I'm really glad.	으 irregular → 기뻐요.	cours::C29 교재::L11 형용사
+행복하다	to be happy	저는 행복해요.<br>I'm happy.	幸福. A lasting state, where 기쁘다 is a moment.	cours::C29 교재::L11 형용사
+슬프다	to be sad	영화가 슬퍼요.<br>The film is sad.	으 irregular → 슬퍼요.	cours::C29 교재::L11 형용사
+무섭다	to be scary, frightening	그 영화는 무서워요.<br>That film is scary.	ㅂ irregular → 무서워요.	cours::C29 교재::L11 형용사
+친절하다	to be kind	제 친구는 아주 친절해요.<br>My friend is very kind.	親切.	cours::C29 교재::L11 형용사
+편리하다	to be convenient	제 휴대폰은 편리해요.<br>My phone is convenient.	便利. Opposite: 불편하다.	cours::C29 교재::L11 형용사
+불편하다	to be inconvenient, uncomfortable	지하철이 좀 불편해요.<br>The subway is a bit inconvenient.	不便.	cours::C29 교재::L11 형용사
+편하다	to be comfortable	그 신발은 편해요.<br>Those shoes are comfortable.	便. 편리하다 is about usefulness, 편하다 about comfort.	cours::C29 교재::L11 형용사
+무겁다	to be heavy	가방이 무거워요.<br>The bag is heavy.	ㅂ irregular → 무거워요.	cours::C29 교재::L11 형용사
+가볍다	to be light	제 휴대폰은 가벼워요.<br>My phone is light.	ㅂ irregular → 가벼워요.	cours::C29 교재::L11 형용사
+시끄럽다	to be noisy	밖이 좀 시끄러워요.<br>It's a bit noisy outside.	ㅂ irregular → 시끄러워요.	cours::C29 교재::L11 형용사
+조용하다	to be quiet	그 커피숍이 조용해요.<br>That coffee shop is quiet.	The adverb 조용히 comes from it.	cours::C29 교재::L11 형용사
+밝다	to be bright	방이 밝아요.<br>The room is bright.	Pronounced [박따]. Opposite: 어둡다.	cours::C29 교재::L11 형용사
+어둡다	to be dark	방이 어두워요.<br>The room is dark.	ㅂ irregular → 어두워요.	cours::C29 교재::L11 형용사
+깨끗하다	to be clean	그 커피숍이 깨끗해요.<br>That coffee shop is clean.	Pronounced [깨끄타다].	cours::C29 교재::L11 형용사
+더럽다	to be dirty	방이 더러워요.<br>The room is dirty.	ㅂ irregular → 더러워요.	cours::C29 교재::L11 형용사
+뜨겁다	to be hot (to the touch)	커피가 뜨거워요.<br>The coffee is hot.	ㅂ irregular → 뜨거워요. For weather it's 덥다.	cours::C29 교재::L11 형용사
+차갑다	to be cold (to the touch)	물이 차가워요.<br>The water is cold.	ㅂ irregular → 차가워요. For weather it's 춥다.	cours::C29 교재::L11 형용사
+같다	to be the same	키가 같아요.<br>We're the same height.	Opposite: 다르다. N하고 같아요 = the same as N.	cours::C29 교재::L11 형용사
+가깝다	to be close, near	집이 가까워요.<br>My house is close by.	ㅂ irregular → 가까워요.	cours::C29 교재::L11 형용사
+멀다	to be far	회사가 멀어요.<br>The office is far.	ㄹ stem: 머세요, 먼 곳.	cours::C29 교재::L11 형용사
+도와주다	to help (someone)	항상 저를 많이 도와줘요.<br>She always helps me a lot.	돕다 + 주다. 도와주세요 = please help me.	cours::C29 교재::L11 동사
+예약하다	to book, to reserve	제가 식당을 예약할까요?<br>Shall I book the restaurant?	豫約. For tables and rooms; tickets take 예매하다.	cours::C29 교재::L11 동사
+원하다	to want (something)	이거 원해요.<br>I want this.	願. Takes a noun; for verbs use -고 싶다.	cours::C29 교재::L11 동사
+방문하다	to visit	한국에 방문하고 싶어요.<br>I'd like to visit Korea.	訪問.	cours::C29 교재::L11 동사
+출근하다	to go to work	아침 8시에 출근해요.<br>I leave for work at 8 am.	出勤. 퇴근하다 = to leave work.	cours::C29 교재::L11 동사
+계획	plan	아직 특별한 계획은 없어요.<br>I don't have any particular plans yet.	計劃.	cours::C29 교재::L11 명사
+다른	other, different	다른 약속이 있어요.<br>I have another appointment.	The modifier form of 다르다.	cours::C29 교재::L11 문법
+특별하다	to be special	특별한 계획은 없어요.<br>No special plans.	特別. The adverb is 특별히.	cours::C29 교재::L11 형용사
+미안해요	I'm sorry	미안해요. 오늘은 좀 바빠요.<br>Sorry, I'm a bit busy today.	未安. Less formal than 죄송합니다.	cours::C29 교재::L11 표현
+한식	Korean food	한식을 먹고 싶어요.<br>I want to eat Korean food.	韓食. Also 일식, 중식, 양식 (Western).	cours::C29 교재::L11 음식
+발표	presentation	다음 주에 발표가 있어요.<br>I have a presentation next week.	發表. 발표하다 = to present.	cours::C29 교재::L11 명사
+준비	preparation	발표 준비가 어려워요.<br>Preparing the presentation is hard.	準備. 준비하다 = to prepare.	cours::C29 교재::L11 명사
+키	height	키가 같아요.<br>We're the same height.	키가 크다 = to be tall, not 높다.	cours::C29 교재::L11 명사
+켜다	to turn on	불을 켜요.<br>I turn on the light.	Opposite: 끄다. 불 = light or fire.	cours::C29 교재::L11 동사
+색깔	colour	다른 색깔도 볼까요?<br>Shall we look at other colours too?	색 alone works as well.	cours::C29 교재::L11 명사
+제가	I (subject, humble)	제가 식당을 예약할까요?<br>Shall I book the restaurant?	저 + 가 becomes 제가, never 저가. Same shift as 나 + 가 → 내가.	cours::C29 교재::L11 문법

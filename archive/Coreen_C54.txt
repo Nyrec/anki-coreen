@@ -1,0 +1,12 @@
+#separator:tab
+#html:true
+#deck:Coréen::C54
+#tags column:5
+기대되다	to look forward to	좀 떨리지만 기대돼요.<br>I'm nervous but looking forward to it.	期待. 기대하다 = to expect.	cours::C54 교재2::L9 동사
+한류	the Korean wave	세종학당에서 한류 축제를 준비해요.<br>We're preparing a Hallyu festival at the institute.	韓流. Pronounced [할류].	cours::C54 교재2::L9 명사
+콘테스트	contest	케이팝 콘테스트도 있어요.<br>There's a K-pop contest too.	대회 is the native-style word.	cours::C54 교재2::L9 명사
+담배를 끊다	to quit smoking	담배를 끊을게요.<br>I'll quit smoking.	끊다 = to cut off, also used for hanging up the phone.	cours::C54 교재2::L9 표현
+거짓말하다	to lie	거짓말하지 마세요.<br>Don't lie.	거짓말 = a lie.	cours::C54 교재2::L9 동사
+나중에	later, some other time	나중에 할게요.<br>I'll do it later.	Open-ended, unlike 이따가 which stays within the day.	cours::C54 교재2::L9 시간
+진행하다	to carry out, to proceed with	프로젝트를 진행하기가 어려워요.<br>It's hard to move the project forward.	進行.	cours::C54 교재2::L9 동사
+어렵다 (일)	to be hard to do (with -기가)	공부하기가 어려워요.<br>Studying is hard.	V-기가 어렵다 / 쉽다 turns an action into what's hard or easy.	cours::C54 교재2::L9 문법

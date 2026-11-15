@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+반납하다	to return (something borrowed)<br><i>rendre, restituer (un objet emprunté)</i>	책은 다음 주 월요일까지 반납해야 돼요.<br>I have to return the book by next Monday.<br><i>Il faut rendre le livre d'ici lundi prochain.</i>	[bannaphada] Hanja 返納. Used for library books, rentals, shared bikes, equipment: 노트북을 반납하다. Opposite of 빌리다/대여하다.	quotidien::2026-10-19 동사
+적당하다	suitable, appropriate, moderate<br><i>convenable, approprié, juste ce qu'il faut</i>	이 정도 가격이면 적당한 것 같아요.<br>At this price, it seems reasonable.<br><i>À ce prix-là, ça me semble raisonnable.</i>	[jeokdanghada] Hanja 適當. Adverb 적당히 = in moderation: 적당히 드세요. Also common: 적당한 시간/장소 (a good time/place).	quotidien::2026-10-19 형용사
+슬슬	gradually; it's about time to<br><i>petit à petit, il est temps de (commencer à)</i>	늦었으니까 슬슬 일어날까요?<br>It's getting late, shall we start heading out?<br><i>Il se fait tard, on commence à y aller ?</i>	[seulseul] Very common before leaving or starting something: 슬슬 가 볼게요 (I'll get going). Also 슬슬 추워지다 = to slowly get cold.	quotidien::2026-10-19 부사
+일정	schedule, itinerary<br><i>emploi du temps, programme, planning</i>	이번 주는 일정이 꽉 차 있어요.<br>My schedule is fully booked this week.<br><i>Cette semaine, mon planning est complètement rempli.</i>	[iljeong] Hanja 日程. Collocations: 일정을 잡다 (set a schedule), 일정이 바뀌다, 여행 일정 (travel itinerary). More formal than 스케줄.	quotidien::2026-10-19 명사
+입에 맞다	to suit one's taste (food)<br><i>être au goût de qqn (nourriture)</i>	한국 음식이 입에 맞아요?<br>Does Korean food suit your taste?<br><i>La cuisine coréenne est à votre goût ?</i>	[ibe matda] Lit. 'to fit the mouth'. Takes 이/가 on the food; often polite with 입에 맞으세요? Negative: 입에 안 맞다.	quotidien::2026-10-19 표현

@@ -1,0 +1,21 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J09
+#tags column:5
+-은/-는/-을 것 같다	I think, it seems (guess)	옷이 저한테 조금 큰 것 같아요.<br>I think these clothes are a bit big for me.	Same forms as before a noun: A-은 (큰 것 같다), V-는 (오는 것 같다), V-은 past (온 것 같다), -을 future (올 것 같다). Nouns: 학생인 것 같다 / 학생이 아닌 것 같다. Also softens an opinion: 좀 비싼 것 같아요.	cours::J09 교재::MKG-UB13 문법
+어색하다	to be awkward	분위기가 어색한 것 같아요.<br>The atmosphere feels awkward.	語塞.	cours::J09 교재::MKG-UB13 형용사
+어울리다	to suit, to look good on	이 옷이 잘 어울리는 것 같아요.<br>I think this outfit suits you.	Takes 이/가: 옷이 잘 어울려요.	cours::J09 교재::MKG-UB13 동사
+잊어버리다	to forget	남자 친구가 기념일을 잊어버린 것 같아요.<br>I think my boyfriend forgot our anniversary.	Don't confuse with 잃어버리다 (to lose an object). 잊다 = to forget.	cours::J09 교재::MKG-UB13 동사
+기념일	anniversary	오늘이 우리 기념일이에요.<br>Today is our anniversary.	記念日.	cours::J09 교재::MKG-UB13 명사
+이미	already	이미 늦은 것 같아요.<br>I think it's already too late.	Neutral; 벌써 adds surprise.	cours::J09 교재::MKG-UB13 부사
+취하다	to get drunk	곧 취할 것 같아요.<br>I think I'm about to get drunk.	醉.	cours::J09 교재::MKG-UB13 동사
+회식	work dinner, staff outing	저는 회식에 못 갈 것 같아요.<br>I don't think I can make the work dinner.	會食. A big part of Korean office culture.	cours::J09 교재::MKG-UB13 명사
+지연되다	to be delayed	비행기가 지연될 것 같아요.<br>I think the flight will be delayed.	遲延.	cours::J09 교재::MKG-UB13 동사
+이기다	to win	우리 팀이 이길 것 같아요.<br>I think our team will win.	Opposite: 지다 (to lose a match).	cours::J09 교재::MKG-UB13 동사
+가짜	fake	이 가방은 가짜인 것 같아요.<br>I think this bag is fake.	Opposite: 진짜.	cours::J09 교재::MKG-UB13 명사
+고치다	to fix, to repair	차를 고치는 것 같아요.<br>It looks like he's fixing the car.	Also to correct a mistake: 문장을 고치다.	cours::J09 교재::MKG-UB13 동사
+훔치다	to steal	도둑이 지갑을 훔친 것 같아요.<br>I think a thief stole the wallet.	도둑 = thief.	cours::J09 교재::MKG-UB13 동사
+넘어지다	to fall over, to trip	길에서 넘어졌어요.<br>I tripped in the street.		cours::J09 교재::MKG-UB13 동사
+살이 찌다	to put on weight	많이 먹어서 살이 찔 것 같아요.<br>I've eaten so much I think I'll gain weight.	Opposite: 살이 빠지다 / 살을 빼다.	cours::J09 교재::MKG-UB13 표현
+사고가 나다	(an accident) to happen	사고가 난 것 같아요.<br>It looks like there's been an accident.	事故. The accident is the subject.	cours::J09 교재::MKG-UB13 표현
+부족하다	to be lacking, insufficient	돈이 부족할 것 같아요.<br>I think I'll be short of money.	不足.	cours::J09 교재::MKG-UB13 형용사

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+마무리하다	to wrap up, to finish off<br><i>terminer, finaliser, boucler</i>	오늘 안에 보고서를 마무리할게요.<br>I'll wrap up the report by the end of today.<br><i>Je finaliserai le rapport d'ici la fin de la journée.</i>	[mamurihada] Noun 마무리 = finishing touch / final stage; 마무리가 잘 되다 = to end well. Common at work: 마무리 단계 (final phase).	quotidien::2026-10-29 동사 niveau::B1
+어이없다	absurd, ridiculous, dumbfounding<br><i>absurde, ahurissant, c'est n'importe quoi</i>	그런 이유로 화를 내다니 정말 어이없어요.<br>Getting angry for a reason like that is just ridiculous.<br><i>Se fâcher pour une raison pareille, c'est vraiment absurde.</i>	[eoieopda] Often as an exclamation: 어이가 없네! Casual synonym: 황당하다. Used for situations that leave you speechless.	quotidien::2026-10-29 형용사 niveau::B1
+진작	earlier, sooner (should have)<br><i>plus tôt, (aurait dû) avant</i>	진작 말해 주지 그랬어요?<br>Why didn't you tell me sooner?<br><i>Pourquoi tu ne me l'as pas dit plus tôt ?</i>	[jinjak] Expresses regret about the past; typical patterns: 진작 -(으)ㄹ 걸 (I should have...) and 진작 -지 그랬어요? (why didn't you...?).	quotidien::2026-10-29 부사 niveau::B1
+소문	rumor, word (going around)<br><i>rumeur, bruit qui court</i>	그 식당이 맛있다는 소문을 들었어요.<br>I heard (a rumor) that restaurant is good.<br><i>J'ai entendu dire que ce restaurant était bon.</i>	[somun] Hanja 所聞. 소문이 나다 = word gets around; 소문을 내다 = to spread a rumor. Pairs with indirect speech -다는 소문.	quotidien::2026-10-29 명사 niveau::A2
+눈코 뜰 새 없다	to be extremely busy (no time to blink)<br><i>ne pas avoir une minute à soi, être débordé</i>	요즘 일이 많아서 눈코 뜰 새 없어요.<br>I have so much work lately that I don't have a moment to spare.<br><i>Ces temps-ci j'ai tellement de travail que je n'ai pas une minute à moi.</i>	[nunko tteul sae eopda] Literally 'no time to open eyes and nose'. 새 = 사이 (gap, moment). Stronger than 바쁘다; close to 정신이 없다.	quotidien::2026-10-29 표현 niveau::B2

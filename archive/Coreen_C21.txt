@@ -1,0 +1,44 @@
+#separator:tab
+#html:true
+#deck:Coréen::C21
+#tags column:5
+잘 지냈어요?	How have you been?	가: 잘 지냈어요?<br>나: 네, 잘 지냈어요.	잘 지내셨어요? adds deference. Answer 잘 지냈어요 or 잘 못 지냈어요.	cours::C21 교재::L7 표현
+못	cannot (negation of ability)	잘 못 지냈어요.<br>I haven't been doing well.	Placed before the verb like 안, but means inability rather than choice: 안 가요 = I don't go, 못 가요 = I can't go.	cours::C21 교재::L7 문법
+며칠	what date, how many days	오늘은 며칠이에요?<br>What's the date today?	Spelled 며칠, never 몇일.	cours::C21 교재::L7 시간
+무슨 요일이에요?	What day of the week is it?	가: 오늘은 무슨 요일이에요?<br>나: 토요일이에요.	무슨 asks which one within a set, so it's the right word for weekdays.	cours::C21 교재::L7 표현
+몇 시예요?	What time is it?	가: 지금 몇 시예요?<br>나: 두 시 사 분이에요.	몇 + 시. The answer needs native numbers for the hour.	cours::C21 교재::L7 표현
+시	o'clock (hour)	지금 두 시예요.<br>It's two o'clock.	時. Native numbers only: 한 시, 두 시, 세 시 … 열두 시.	cours::C21 교재::L7 단위
+분 (시간)	minute	열 시 이십삼 분이에요.<br>It's 10:23.	分. Sino numbers only — so a full time mixes both systems: 세 시 십 분.	cours::C21 교재::L7 단위
+반	half past	세 시 반이에요.<br>It's half past three.	半. 세 시 반 = 세 시 삼십 분.	cours::C21 교재::L7 시간
+전	before, to (the hour)	세 시 십 분 전이에요.<br>It's ten to three.	前. Comes after the time: 다섯 시 십오 분 전 = quarter to five.	cours::C21 교재::L7 시간
+오전	AM, morning	오전 7시 20분에 회사에 가요.<br>I go to work at 7:20 AM.	午前.	cours::C21 교재::L7 시간
+오후	PM, afternoon	오후 두 시예요.<br>It's two in the afternoon.	午後.	cours::C21 교재::L7 시간
+아침	morning; breakfast	아침 6시에 일어나요.<br>I get up at 6 in the morning.	One word for both the time of day and the meal: 아침을 먹어요 = to have breakfast.	cours::C21 교재::L7 시간
+저녁	evening; dinner	저녁 8시에 집에 와요.<br>I get home at 8 in the evening.	Same double meaning as 아침. 점심 works the same way for midday.	cours::C21 교재::L7 시간
+밤	night	밤 11시쯤 자요.<br>I go to sleep around 11 at night.	Later than 저녁; the two overlap around 9 or 10 pm.	cours::C21 교재::L7 시간
+쯤	about, around	11시쯤 자요.<br>I sleep around 11.	Attached directly to the time or quantity, no space: 세 시쯤, 만 원쯤.	cours::C21 교재::L7 문법
+일어나다	to get up, to wake up	아침 6시에 일어나요.<br>I get up at 6 AM.	일어나 + 아요 → 일어나요. Also means to stand up.	cours::C21 교재::L7 동사
+뉴스	news	저녁 뉴스를 봐요.<br>I watch the evening news.		cours::C21 교재::L7 명사
+모레	the day after tomorrow	모레는 토요일이에요.<br>The day after tomorrow is Saturday.	Its counterpart is 그저께 (the day before yesterday).	cours::C21 교재::L7 시간
+주말	weekend	주말이에요.<br>It's the weekend.	週末.	cours::C21 교재::L7 시간
+평일	weekday	평일에는 회사에 가요.<br>On weekdays I go to work.	平日.	cours::C21 교재::L7 시간
+다음 주	next week	다음 주에 만나요.<br>See you next week.	지난주 (last week) is written solid, 다음 주 and 이번 주 with a space.	cours::C21 교재::L7 시간
+다음 달	next month	다음 달은 십일월이에요.<br>Next month is November.	달 = month as a duration; 월 is the month's name.	cours::C21 교재::L7 시간
+내년	next year	내년은 2027년이에요.<br>Next year is 2027.	來年. Also said 다음 해. Last year: 작년 or 지난해.	cours::C21 교재::L7 시간
+약속	appointment, plan, promise	오늘 약속이 있어요.<br>I have plans today.	約束. 약속이 있다 covers any arrangement to meet, not just formal appointments.	cours::C21 교재::L7 명사
+-(으)세요	polite request or instruction	여기 좀 앉으세요.<br>Please have a seat here.	Consonant stem → -으세요 (읽으세요), vowel stem → -세요 (보세요). Irregulars: 듣다 → 들으세요, 돕다 → 도우세요, 만들다 → 만드세요.	cours::C21 교재::L7 문법
+드세요	please eat (honorific)	아침을 꼭 드세요.<br>Do make sure to eat breakfast.	From 드시다, the honorific of 먹다. Saying 먹으세요 to an elder sounds blunt.	cours::C21 교재::L7 표현
+앉다	to sit down	이쪽으로 앉으세요.<br>Please sit over here.	앉 + 아요 → 앉아요 [안자요].	cours::C21 교재::L7 동사
+돕다	to help	할머니를 도우세요.<br>Please help your grandmother.	ㅂ irregular: 도와요, 도우세요.	cours::C21 교재::L7 동사
+들어오다	to come in	들어오세요.<br>Please come in.	들어 + 오다. Its pair is 들어가다 (to go in, away from the speaker).	cours::C21 교재::L7 동사
+따라 하다	to repeat after, to copy	잘 듣고 따라 하세요.<br>Listen carefully and repeat.	따라 (following) + 하다. The instruction you'll hear most in class.	cours::C21 교재::L7 표현
+약	medicine	이 약은 언제 먹어요?<br>When do I take this medicine?	藥. Korean says 약을 먹다 (to eat medicine), not 'to take'.	cours::C21 교재::L7 명사
+식후	after a meal	식후 30분에 드세요.<br>Take it 30 minutes after eating.	食後. Its opposite is 식전. The 식 of 음식 and 식탁 — it means eating.	cours::C21 교재::L7 명사
+아프다	to hurt, to be sick	다리가 아파요.<br>My leg hurts.	으 irregular → 아파요. The body part takes 이/가: 머리가 아파요.	cours::C21 교재::L7 형용사
+다리	leg	다리가 아파요.<br>My leg hurts.	Also means bridge — same spelling, different word.	cours::C21 교재::L7 명사
+괜찮아요?	Are you OK?	가: 아야!<br>나: 괜찮아요?	Pronounced [괜차나요]. As a statement it also means 'it's fine' or politely declines an offer.	cours::C21 교재::L7 표현
+꼭	be sure to, definitely	아침을 꼭 드세요.<br>Do be sure to eat breakfast.	Adds insistence to a request or a promise.	cours::C21 교재::L7 부사
+사진을 찍다	to take a photo	우리 사진 찍어요.<br>Let's take a photo.	찍 + 어요 → 찍어요. The verb is fixed with 사진.	cours::C21 교재::L7 표현
+언제	when	우리 언제 도서관에 가요?<br>When shall we go to the library?		cours::C21 교재::L7 문법
+함께	together	친구와 함께 쿠키를 만드세요.<br>Make cookies with a friend.	Same meaning as 같이 but more written; pairs with 와/과.	cours::C21 교재::L7 부사
+이쪽	this way, this side	이쪽으로 앉으세요.<br>Please sit this way.	이 + 쪽 (side). 그쪽, 저쪽 follow the same pattern.	cours::C21 교재::L7 명사

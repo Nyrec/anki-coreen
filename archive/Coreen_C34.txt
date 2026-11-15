@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#deck:Coréen::C34
+#tags column:5
+인기	popularity	요즘 인기가 많아요.<br>It's very popular these days.	人氣. 인기가 많다 = to be popular.	cours::C34 교재::L13-14 명사
+포장하다	to wrap, to pack	이거 포장해 주세요.<br>Please wrap this up.	包裝. Also 포장해 주세요 for takeaway.	cours::C34 교재::L13-14 동사
+-(으)려고요	I'm thinking of …	원피스 좀 사려고요.<br>I'm thinking of buying a dress.	A softer, less settled plan than -을 거예요.	cours::C34 교재::L13-14 문법
+-아/어 보다	to try doing	한번 입어 볼게요.<br>I'll try it on.	먹어 보다, 가 보다, 입어 보다 — trying something out.	cours::C34 교재::L13-14 문법
+-아서/-어서/-여서 (이유)	because, so (reason)	감기에 걸려서 못 갔어요.<br>I couldn't go because I caught a cold.	Never carries a tense marker: 비가 많이 와서 못 갔어요, never 왔어서. Cannot be used with a command or a suggestion — use -(으)니까 for those.	cours::C34 교재::L13-14 문법
+나다	to occur, to come out	열이 나요.<br>I have a fever.	Used for symptoms: 열이 나다, 기침이 나다, 콧물이 나다.	cours::C34 교재::L13-14 동사
+배	stomach, belly	배가 아팠어요.<br>I had a stomachache.	Also means pear and boat.	cours::C34 교재::L13-14 명사
+이	tooth	이가 좀 아파요.<br>My tooth hurts a bit.	치아 is the formal word.	cours::C34 교재::L13-14 명사
+목	neck, throat	목이 아파요.<br>I have a sore throat.	Both the neck and the throat.	cours::C34 교재::L13-14 명사
+허리	lower back, waist	허리가 아파요.<br>My back hurts.	등 = upper back.	cours::C34 교재::L13-14 명사
+열	fever	열도 나고 머리도 아파요.<br>I have a fever and a headache.	熱. 열이 나다.	cours::C34 교재::L13-14 명사
+기침	cough	기침이 나요.<br>I have a cough.	기침하다 = to cough.	cours::C34 교재::L13-14 명사
+콧물	runny nose	콧물이 나요.<br>I have a runny nose.	코 (nose) + 물 (water). Pronounced [콘물].	cours::C34 교재::L13-14 명사
+감기에 걸리다	to catch a cold	감기에 걸려서 못 갔어요.<br>I caught a cold so I couldn't go.	感氣. The verb is 걸리다, with 에.	cours::C34 교재::L13-14 표현
+배가 부르다	to be full	배가 너무 불러서 못 먹었어요.<br>I was too full to eat.	르 irregular → 불러요.	cours::C34 교재::L13-14 표현
+잃어버리다	to lose (something)	지갑을 잃어버려서 기분이 안 좋아요.<br>I lost my wallet so I'm in a bad mood.	잃다 + 버리다.	cours::C34 교재::L13-14 동사
+지각하다	to be late (for school, work)	아침에 늦게 일어나서 지각했어요.<br>I got up late and was late.	遲刻.	cours::C34 교재::L13-14 동사
+늦게	late	늦게 일어났어요.<br>I got up late.	Adverb of 늦다. Opposite: 일찍.	cours::C34 교재::L13-14 부사
+대청소	big clean-up	주말에 대청소를 해요.<br>I do a big clean at the weekend.	大淸掃.	cours::C34 교재::L13-14 명사
+출장	business trip	출장을 가요.<br>I'm going on a business trip.	出張.	cours::C34 교재::L13-14 명사
+대회	contest, competition	대회에 나가요.<br>I take part in a competition.	大會. 나가다 = to enter, to take part.	cours::C34 교재::L13-14 명사
+모임	gathering, meet-up	이번 모임은 어디에서 할까요?<br>Where shall we hold this meet-up?	From 모이다. 모임에 가다 / 모임을 하다.	cours::C34 교재::L13-14 명사
+계속	continuously, still	오늘까지 계속 해요.<br>It runs continuously until today.	繼續.	cours::C34 교재::L13-14 부사
+결석하다	to be absent (school)	아파서 결석했어요.<br>I was ill so I missed class.	缺席. For work it's 결근하다.	cours::C34 교재::L13-14 동사
+퇴근하다	to leave work	6시에 퇴근해요.<br>I leave work at six.	退勤. Opposite: 출근하다.	cours::C34 교재::L13-14 동사
+기운	energy, strength	기운이 없어요.<br>I have no energy.	기운이 없다 = to feel run down. 힘 is its synonym.	cours::C34 교재::L13-14 명사
+떠나다	to leave, to depart	내일 아침에 떠나요.<br>I leave tomorrow morning.	출발하다 is the neutral 'to depart'.	cours::C34 교재::L13-14 동사
+공연하다	to perform	내일 마크 씨가 노래 공연을 해요.<br>Mark is giving a singing performance tomorrow.	公演.	cours::C34 교재::L13-14 동사

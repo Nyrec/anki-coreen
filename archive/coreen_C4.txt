@@ -1,0 +1,31 @@
+#separator:tab
+#html:true
+#tags column:5
+한국	Korea	저는 한국에서 왔어요.<br>I'm from Korea.	Nationality = country + 사람: 한국 사람.	cours::C4 교재::L1 나라
+호주	Australia	마크 씨는 호주 사람이에요.<br>Mark is Australian.	From 濠洲, the sino-Korean transcription of "Australia".	cours::C4 교재::L1 나라
+중국	China	왕밍 씨는 중국에서 왔어요.<br>Wang Ming is from China.	中國. Language: 중국어 (Mandarin).	cours::C4 교재::L1 나라
+프랑스	France	저는 프랑스에서 왔어요.<br>I'm from France.	프랑스 사람 = French person; 프랑스어 = the French language.	cours::C4 교재::L1 나라
+미국	United States	존슨 씨는 미국 사람이에요.<br>Johnson is American.	美國, "beautiful country" — a phonetic borrowing, not a judgement.	cours::C4 교재::L1 나라
+베트남	Vietnam	투이 씨는 베트남에서 왔어요.<br>Thuy is from Vietnam.		cours::C4 교재::L1 나라
+브라질	Brazil	브라질에서 왔어요?<br>Are you from Brazil?		cours::C4 교재::L1 나라
+케냐	Kenya	케냐 사람이에요.<br>He's Kenyan.		cours::C4 교재::L1 나라
+이탈리아	Italy	이탈리아 음식을 좋아해요.<br>I like Italian food.		cours::C4 교재::L1 나라
+어디에서 왔어요?	Where are you from?	가: 어디에서 왔어요? 나: 프랑스에서 왔어요.<br>A: Where are you from? B: I'm from France.	Literally "where did you come from". The everyday way to ask someone's origin.	cours::C4 교재::L1 표현
+-에서 왔어요	I came from ~	저는 리옹에서 왔어요.<br>I'm from Lyon.	에서 marks the origin point; 왔어요 is the past of 오다. Pronounced [와써요].	cours::C4 교재::L1 문법
+오다	to come	친구가 한국에 와요.<br>My friend is coming to Korea.	Present 와요, past 왔어요. The 오+아 contraction gives 와.	cours::C4 교재::L1 동사
+-씨	Mr / Ms (after a name)	투이 씨, 어디에서 왔어요?<br>Thuy, where are you from?	Attaches to a given name or full name — never to a family name alone, and never to yourself.	cours::C4 교재::L1 표현
+이에요/예요	to be (polite ending)	학생이에요. / 의사예요.<br>I'm a student. / I'm a doctor.	이에요 after a consonant, 예요 after a vowel. Same form for statements and questions — only the intonation changes.	cours::C4 교재::L1 문법
+저	I (humble)	저는 대학생이에요.<br>I'm a university student.	Humble form of 나. Use 저 with anyone you'd address politely.	cours::C4 교재::L1 대명사
+제	my (humble)	제 이름은 막서스예요.<br>My name is Maxence.	Contraction of 저의. Casual equivalent: 내 (from 나의).	cours::C4 교재::L1 대명사
+우리	our / my	우리 언니예요.<br>She's my older sister.	Korean uses 우리 where French would use "mon" for family, school or country — 우리 집, 우리 나라.	cours::C4 교재::L1 대명사
+누구	who	이 사람은 누구예요?<br>Who is this person?	누구 + 예요 → 누구예요. As a subject it contracts: 누가.	cours::C4 교재::L1 대명사
+사람	person	저 사람은 제 친구예요.<br>That person is my friend.	Also forms nationalities: 한국 사람, 프랑스 사람.	cours::C4 교재::L1 명사
+언니	older sister (of a woman)	우리 언니예요.<br>She's my older sister.	Only a female speaker says 언니. A male speaker says 누나.	cours::C4 교재::L1 가족
+누나	older sister (of a man)	누나가 두 명 있어요.<br>I have two older sisters.	Used by a male speaker only — this is the one you'd use.	cours::C4 교재::L1 가족
+오빠	older brother (of a woman)	오빠는 회사원이에요.<br>My older brother is an office worker.	Female speaker only. Also used for an older boyfriend or a male friend.	cours::C4 교재::L1 가족
+형	older brother (of a man)	이 사람은 우리 형이에요.<br>This is my older brother.	Male speaker only — the one that applies to you.	cours::C4 교재::L1 가족
+남자	man	저 남자는 경찰이에요.<br>That man is a police officer.	男子.	cours::C4 교재::L1 명사
+여자	woman	이 여자는 의사예요.<br>This woman is a doctor.	女子.	cours::C4 교재::L1 명사
+친구	friend	다니엘은 제 친구예요.<br>Daniel is my friend.	Strictly a peer — you don't call someone much older 친구.	cours::C4 교재::L1 명사
+의자	chair	언니 의자예요.<br>It's my sister's chair.	Nearly homophonous with 의사 (doctor); only the second syllable differs.	cours::C4 교재::L1 사물
+세종학당	King Sejong Institute	세종학당이에요.<br>It's the King Sejong Institute.	The state network of Korean-language centres, named after the king who created hangeul.	cours::C4 교재::L1 명사

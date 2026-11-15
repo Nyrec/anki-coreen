@@ -1,0 +1,25 @@
+#separator:tab
+#html:true
+#deck:Coréen::C72
+#tags column:5
+-을까/-ㄹ까 하다	to be thinking of doing	주말에는 책을 좀 읽을까 해요.<br>I'm thinking of reading a bit at the weekend.	A loose intention, less settled than -으려고 하다 and much less than -을 거예요.	cours::C72 교재3::L1 문법
+본격적으로	in earnest, properly	방학에 본격적으로 배워 보려고요.<br>I'm going to learn it properly over the break.	本格的.	cours::C72 교재3::L1 부사
+동호회	club, hobby group	동호회 모임에 가요.<br>I go to a club meeting.	同好會.	cours::C72 교재3::L1 명사
+요가	yoga	요가를 하면 몸이 유연해져요.<br>Yoga makes your body flexible.		cours::C72 교재3::L1 명사
+영상통화	video call	친구와 영상통화를 해요.<br>I video call my friend.	映像通話.	cours::C72 교재3::L1 명사
+래프팅	rafting	휴가에 래프팅을 했어요.<br>I went rafting on holiday.		cours::C72 교재3::L1 명사
+프리랜서	freelancer	프리랜서로 일하고 싶어요.<br>I'd like to work freelance.		cours::C72 교재3::L1 사람
+사업	business	사업을 할까 해요.<br>I'm thinking of starting a business.	事業. 사업하다.	cours::C72 교재3::L1 명사
+입대하다	to enlist in the military	졸업 후에 입대해요.<br>I'll enlist after graduating.	入隊. 군인 = soldier. Compulsory for Korean men.	cours::C72 교재3::L1 동사
+군인	soldier	군인이 됐어요.<br>He became a soldier.	軍人.	cours::C72 교재3::L1 사람
+유연하다	to be flexible	요가를 하면 몸이 유연해져요.<br>Yoga makes you flexible.	柔軟.	cours::C72 교재3::L1 형용사
+비결	secret, knack	비결이 뭐예요?<br>What's your secret?	祕訣.	cours::C72 교재3::L1 명사
+정해져 있다	to be fixed, set	시간이 정해져 있지 않아요.<br>The hours aren't fixed.	정하다 passive + 있다.	cours::C72 교재3::L1 표현
+불규칙하다	to be irregular	생활이 불규칙해요.<br>My routine is irregular.	不規則. Opposite: 규칙적이다.	cours::C72 교재3::L1 형용사
+가입하다	to join, to sign up	동호회에 가입할까 해요.<br>I'm thinking of joining a club.	加入. For clubs and services; 등록하다 for courses.	cours::C72 교재3::L1 동사
+진료를 받다	to see a doctor, to get treatment	병원에서 진료를 받을까 해요.<br>I think I'll see a doctor.	診療. Pronounced [질료].	cours::C72 교재3::L1 표현
+돌보다	to look after, to care for	아이를 돌볼까 해요.<br>I'm thinking of looking after the child.		cours::C72 교재3::L1 동사
+해변	beach, seashore	해변을 걸을까 해요.<br>I might walk along the beach.	海邊. 바닷가 is the native word.	cours::C72 교재3::L1 장소
+볶음밥	fried rice	볶음밥을 만들까 해요.<br>I might make fried rice.	볶다 + 밥.	cours::C72 교재3::L1 음식
+체중	body weight	체중이 5킬로그램 늘었어요.<br>I've put on five kilos.	體重. 몸무게 is the native word.	cours::C72 교재3::L1 명사
+-는 편이다	to tend to be	늘 복습을 하는 편이에요.<br>I tend to always review.	Softens a statement into a tendency.	cours::C72 교재3::L1 문법

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+시달리다	to be plagued / harassed by, to suffer from<br><i>être harcelé / accablé par, souffrir de</i>	요즘 야근에 시달려서 너무 피곤해요.<br>I'm so tired these days from being worn down by overtime.<br><i>Ces temps-ci je suis épuisé à force d'enchaîner les heures sup.</i>	[sidallida] Takes the particle 에 for the cause: N에 시달리다 (e.g. 스트레스에, 소음에, 빚에 시달리다). Passive-like meaning.	quotidien::2026-10-23 동사
+빠듯하다	tight, barely enough (time, money)<br><i>juste, serré (temps, argent)</i>	이번 달은 생활비가 좀 빠듯해요.<br>Money for living expenses is a bit tight this month.<br><i>Ce mois-ci, le budget est un peu serré.</i>	[ppadeutada] Common with 시간, 일정, 예산, 생활비. Synonym in casual speech: 빡빡하다. Opposite: 넉넉하다 (ample).	quotidien::2026-10-23 형용사
+틈틈이	in spare moments, whenever there's time<br><i>dès que j'ai un moment, à temps perdu</i>	출근길에 틈틈이 한국어를 공부해요.<br>I study Korean in spare moments on my commute.<br><i>J'étudie le coréen dès que j'ai un moment sur le trajet du travail.</i>	[teumteumi] From 틈 (gap, spare moment) doubled + 이. Related: 틈이 나다 / 시간이 나다 (to have free time).	quotidien::2026-10-23 부사
+지름길	shortcut (route)<br><i>raccourci (chemin)</i>	이 골목으로 가면 지름길이에요.<br>If you go through this alley, it's a shortcut.<br><i>Si on passe par cette ruelle, c'est un raccourci.</i>	[jireumgil] Also figurative: 성공의 지름길 (the shortcut to success). Usual verbs: 지름길로 가다, 지름길을 찾다.	quotidien::2026-10-23 명사
+실감이 나다	to feel real, to sink in<br><i>se rendre vraiment compte, réaliser (que c'est réel)</i>	벌써 연말이라니 실감이 안 나요.<br>It doesn't feel real that it's already the end of the year.<br><i>Je n'arrive pas à réaliser qu'on est déjà en fin d'année.</i>	[silgami nada] Hanja 實感 (real + feeling). Mostly used in the negative: 실감이 안 나다 = it hasn't sunk in yet.	quotidien::2026-10-23 표현

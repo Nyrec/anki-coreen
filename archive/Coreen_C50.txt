@@ -1,0 +1,20 @@
+#separator:tab
+#html:true
+#deck:Coréen::C50
+#tags column:5
+-려고 하다	to intend to, to be planning to	태국으로 여행을 가려고 해요.<br>I'm planning to travel to Thailand.	Consonant → -으려고 하다. A settled intention, softer than -을 거예요.	cours::C50 교재2::L8 문법
+예매하다	to book (a ticket)	비행기 표를 예매했어요.<br>I booked the flight ticket.	豫買. For tickets; 예약하다 is for tables and rooms.	cours::C50 교재2::L8 동사
+숙소	accommodation	숙소를 정했어요?<br>Have you decided where to stay?	宿所.	cours::C50 교재2::L8 명사
+정하다	to decide, to set	여행지를 정했어요.<br>I've chosen the destination.	定.	cours::C50 교재2::L8 동사
+여행지	travel destination	여행지를 못 정했어요.<br>I haven't decided where to go.	旅行地.	cours::C50 교재2::L8 장소
+리조트	resort	리조트에서 잘 거예요.<br>We'll stay at a resort.		cours::C50 교재2::L8 장소
+캠핑장	campsite	캠핑장에서 자고 싶어요.<br>I'd like to stay at a campsite.	캠핑 + 場.	cours::C50 교재2::L8 장소
+게스트 하우스	guesthouse	게스트 하우스가 싸요.<br>Guesthouses are cheap.		cours::C50 교재2::L8 장소
+환전	currency exchange	공항에서 환전을 했어요.<br>I changed money at the airport.	換錢. 환전하다.	cours::C50 교재2::L8 명사
+여권	passport	여권을 만들었어요.<br>I got a passport.	旅券. Pronounced [여꿘].	cours::C50 교재2::L8 명사
+짐을 싸다	to pack	가방을 싸고 있어요.<br>I'm packing my bag.	싸다 here means to wrap or pack — not the 싸다 that means cheap.	cours::C50 교재2::L8 표현
+빌리다 (차)	to rent (a car)	차를 빌렸어요.<br>I rented a car.	Same verb as borrowing a book; with money involved it's renting.	cours::C50 교재2::L8 동사
+관광	sightseeing, tourism	시내 관광을 할 거예요.<br>We'll go sightseeing in the city.	觀光. 관광객 = tourist.	cours::C50 교재2::L8 명사
+왕궁	royal palace	왕궁을 구경했어요.<br>We visited the royal palace.	王宮.	cours::C50 교재2::L8 장소
+즐기다	to enjoy	해양 스포츠를 즐기고 싶어요.<br>I want to enjoy water sports.	즐겁다 is the adjective.	cours::C50 교재2::L8 동사
+바로	right away, directly	바로 전화할게요.<br>I'll call right away.	Also 'exactly': 바로 여기예요.	cours::C50 교재2::L8 부사

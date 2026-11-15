@@ -1,0 +1,23 @@
+#separator:tab
+#html:true
+#deck:Coréen::C9
+#tags column:5
+다니다	to attend, to go somewhere regularly	학교에 다녀요.<br>I go to school.	다니 + 어요 → 다녀요. Used for a routine destination: 회사에 다녀요, 학교에 다녀요. 가다 is a single trip.	cours::C9 교재::L2 동사
+있다	to exist, to be there; to have	회의가 있어요.<br>I have a meeting.	있 + 어요 = 있어요. Noun + 이/가 있어요 is how Korean expresses 'to have'.	cours::C9 교재::L2 동사
+배고프다	to be hungry	배고파요. 그래서 식당에 가요.<br>I'm hungry, so I'm going to a restaurant.	으 irregular: the ㅡ of 프 drops and the preceding ㅏ decides the ending → 배고파요. 배 = belly.	cours::C9 교재::L2 동사
+파티하다	to have a party	오늘 친구가 집에 와요. 파티해요.<br>A friend is coming over today. We're having a party.	하다 verb → 파티해요.	cours::C9 교재::L2 동사
+그래서	so, therefore	배고파요. 그래서 식당에 가요.<br>I'm hungry, so I'm going to a restaurant.	Starts the second sentence; it links a cause to its consequence.	cours::C9 교재::L2 문법
+도	also, too (particle)	저도 지금 슈퍼마켓에 가요.<br>I'm going to the supermarket too.	Replaces 은/는 and 이/가 instead of stacking with them: 저는 → 저도.	cours::C9 교재::L2 문법 조사
+같이	together	같이 가요.<br>Let's go together.	Pronounced [가치]: ㅌ followed by 이 palatalises to ㅊ.	cours::C9 교재::L2 부사
+회의	meeting (business)	오늘 회의가 있어요.<br>I have a meeting today.	會議.	cours::C9 교재::L2 명사
+학생	student	마크 씨는 학생이에요?<br>Is Mark a student?	學生.	cours::C9 교재::L2 명사 직업
+회사원	office worker	회사원이에요. 회사에 다녀요.<br>I'm an office worker. I work at a company.	會社員.	cours::C9 교재::L2 명사 직업
+직업	job, occupation	직업이 뭐예요?<br>What's your job?	職業.	cours::C9 교재::L2 명사 직업
+친구	friend	오늘 친구 만나요.<br>I'm meeting a friend today.	親舊.	cours::C9 교재::L2 명사
+수영장	swimming pool	수영장에 가요. 그리고 수영해요.<br>I'm going to the pool, and I swim.	水泳場.	cours::C9 교재::L2 장소
+슈퍼마켓	supermarket	저는 슈퍼마켓에 가요.<br>I'm going to the supermarket.	슈퍼마켓에 is pronounced [슈퍼마케세].	cours::C9 교재::L2 장소
+그래요?	Really? Is that so?	아, 그래요?<br>Oh, really?	Question form of 그렇다. With falling intonation it becomes agreement rather than surprise.	cours::C9 교재::L2 표현
+지금 뭐 해요?	What are you doing now?	가: 지금 뭐 해요?<br>나: 책 읽어요.	Everyday spoken form; often written 뭐해요.	cours::C9 교재::L2 표현
+어디에 가요?	Where are you going?	가: 지금 어디에 가요?<br>나: 회사에 가요.	The 에 is frequently dropped in speech: 어디 가요?	cours::C9 교재::L2 표현
+여기는 어디예요?	Where is this? / What is this place?	가: 여기는 어디예요?<br>나: 커피숍이에요.	여기 (here) + 는 (topic) + 어디 (where) + 예요.	cours::C9 교재::L2 표현
+직업이 뭐예요?	What's your job?	가: 직업이 뭐예요?<br>나: 회사원이에요.	Set question. 무슨 일을 해요? asks the same thing through the activity rather than the title.	cours::C9 교재::L2 표현

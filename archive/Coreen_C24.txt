@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#deck:Coréen::C24
+#tags column:5
+빌리다	to borrow	도서관에서 책을 빌려요.<br>I borrow books from the library.	빌리 + 어요 → 빌려요. 빌려주다 = to lend.	cours::C24 교재::L8 동사
+자르다	to cut	미용실에서 머리를 잘라요.<br>I get my hair cut at the salon.	르 irregular → 잘라요, past 잘랐어요.	cours::C24 교재::L8 동사
+보내다	to send	친구에게 편지를 보내요.<br>I send a letter to a friend.	보내 + 어요 → 보내요 (no change).	cours::C24 교재::L8 동사
+부르다	to sing; to call	노래를 불렀어요.<br>We sang songs.	르 irregular → 불러요. 노래를 부르다 is the fixed pairing for singing.	cours::C24 교재::L8 동사
+덥다	to be hot (weather)	여름에 정말 더워요.<br>It's really hot in summer.	ㅂ irregular → 더워요, past 더웠어요. Opposite: 춥다.	cours::C24 교재::L8 형용사
+아름답다	to be beautiful	바다가 정말 아름다웠어요.<br>The sea was really beautiful.	ㅂ irregular → 아름다워요. More literary than 예쁘다.	cours::C24 교재::L8 형용사
+즐겁다	to be enjoyable, delightful	조금 피곤했어요. 그렇지만 즐거웠어요.<br>I was a bit tired, but it was delightful.	ㅂ irregular → 즐거워요.	cours::C24 교재::L8 형용사
+피곤하다	to be tired	너무 피곤했어요.<br>I was too tired.	疲困.	cours::C24 교재::L8 형용사
+하지만	but, however	저도 서울에 갔어요. 하지만 동대문 시장에는 안 갔어요.<br>I went to Seoul too, but I didn't go to Dongdaemun market.	Starts the contrasting sentence. 그렇지만 is its close twin; 그런데 is softer.	cours::C24 교재::L8 문법
+자주	often	자전거를 자주 타요?<br>Do you ride your bike often?	Between 가끔 (sometimes) and 항상 (always).	cours::C24 교재::L8 부사
+매일	every day	매일 자전거를 타요.<br>I ride my bike every day.	每日.	cours::C24 교재::L8 시간
+하루 종일	all day long	하루 종일 게임을 했어요.<br>I played games all day.	하루 (a day) + 종일 (終日).	cours::C24 교재::L8 시간
+방학	school holiday, vacation	방학에 바다에 갔어요.<br>I went to the sea during the holidays.	放學 — school break specifically. Work leave is 휴가.	cours::C24 교재::L8 시간
+가을	autumn	지난 가을에 한국에서 샀어요.<br>I bought it in Korea last autumn.	The four seasons: 봄, 여름, 가을, 겨울.	cours::C24 교재::L8 시간
+기분	mood, feeling	기분이 좋았어요.<br>I was in a good mood.	氣分. 기분이 좋다 / 나쁘다.	cours::C24 교재::L8 명사
+바다	sea	바다에 갔어요.<br>I went to the sea.		cours::C24 교재::L8 명사
+소설	novel	한국 소설을 읽었어요.<br>I read a Korean novel.	小說.	cours::C24 교재::L8 명사
+선물	present, gift	백화점에서 선물을 샀어요.<br>I bought a present at the department store.	膳物. 선물하다 = to give a gift.	cours::C24 교재::L8 명사
+화장품	cosmetics	명동에서 화장품을 샀어요.<br>I bought cosmetics in Myeongdong.	化粧品. Same 화장 as 화장실.	cours::C24 교재::L8 명사
+놀이 기구	fairground ride, attraction	놀이공원에서 놀이 기구를 타요.<br>I ride the attractions at the amusement park.	놀이 (play) + 기구 (器具). The verb is 타다.	cours::C24 교재::L8 명사
+생신	birthday (honorific)	오늘은 할머니 생신이에요.<br>Today is my grandmother's birthday.	The respectful form of 생일, used for elders.	cours::C24 교재::L8 명사
+댁	house, home (honorific)	할머니 댁에 갔어요.<br>We went to my grandmother's house.	宅. The respectful form of 집.	cours::C24 교재::L8 명사
+중국	China	다음 달에 중국에 가요.<br>I'm going to China next month.	中國. 중국어 = Chinese language.	cours::C24 교재::L8 나라

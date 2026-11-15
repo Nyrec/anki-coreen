@@ -1,0 +1,32 @@
+#separator:tab
+#html:true
+#deck:Coréen::C71
+#tags column:5
+휴학하다	to take a leave from university	휴학하고 아르바이트를 하고 있어요.<br>I'm on leave from uni and working part-time.	休學. Pronounced [휴하카다]. Its pair is 복학하다.	cours::C71 교재3::L1 동사
+복학하다	to return to university after a leave	내년에 복학할 거예요.<br>I'll go back to university next year.	復學. Pronounced [보칵카다].	cours::C71 교재3::L1 동사
+휴직하다	to take a leave from work	일 년 동안 휴직했어요.<br>I took a year's leave from work.	休職.	cours::C71 교재3::L1 동사
+이성 친구	boyfriend or girlfriend	이성 친구가 생겼어요.<br>I've started seeing someone.	異性. Literally 'opposite-sex friend', but it means a romantic partner.	cours::C71 교재3::L1 사람
+약혼하다	to get engaged	작년에 약혼했어요.<br>We got engaged last year.	約婚. 약혼자 = fiancé(e).	cours::C71 교재3::L1 동사
+취미 생활	pursuing a hobby	요즘 취미 생활을 하고 있어요.<br>I'm keeping up my hobbies these days.	趣味生活.	cours::C71 교재3::L1 명사
+근황	recent news, how one is doing	근황이 어때요?<br>How have things been?	近況.	cours::C71 교재3::L1 명사
+동료	colleague	동료들도 친절해서 좋아요.<br>My colleagues are kind, which is nice.	同僚.	cours::C71 교재3::L1 사람
+최근	recently, lately	최근에 취직했어요.<br>I got a job recently.	最近.	cours::C71 교재3::L1 시간
+직장	workplace	직장이 멀어요.<br>My workplace is far.	職場. 회사 is a company, 직장 the place you work.	cours::C71 교재3::L1 장소
+봉사 활동	volunteer work	주말에는 봉사 활동도 해요.<br>At weekends I also do volunteer work.	奉仕活動.	cours::C71 교재3::L1 명사
+수다를 떨다	to chat, to natter	친구하고 수다를 떨어요.<br>I have a natter with my friend.	수다 = chatter. ㄹ stem: 떨어요.	cours::C71 교재3::L1 표현
+상담하다	to consult, to seek advice	윗사람과 상담해요.<br>I consult someone senior.	相談. 상담사 = counsellor.	cours::C71 교재3::L1 동사
+윗사람	one's senior, an elder	윗사람에게 예의를 지켜요.<br>You show respect to your seniors.	위 + 사람. Opposite: 아랫사람.	cours::C71 교재3::L1 사람
+달래다	to soothe, to comfort	우는 아이를 달래요.<br>I comfort the crying child.		cours::C71 교재3::L1 동사
+안아주다	to hug	천천히 안아주면 울음을 그쳐요.<br>If you hug them gently they stop crying.	안다 + 주다.	cours::C71 교재3::L1 동사
+사과하다	to apologise	편지를 주면서 사과해요.<br>I apologise while handing over a letter.	謝過. Same spelling as 사과 (apple).	cours::C71 교재3::L1 동사
+적성	aptitude	적성에 맞는 일을 찾고 싶어요.<br>I want a job that suits me.	適性. 적성에 맞다 = to suit one's aptitude.	cours::C71 교재3::L1 명사
+다양하다	to be varied, diverse	다양한 경험을 했어요.<br>I've had a variety of experiences.	多樣.	cours::C71 교재3::L1 형용사
+경험	experience	좋은 경험이었어요.<br>It was a good experience.	經驗. 경험하다.	cours::C71 교재3::L1 명사
+자격증을 따다	to obtain a certificate	컴퓨터 자격증을 따고 싶어요.<br>I want to get an IT certificate.	資格證. 따다 = to pick, to earn.	cours::C71 교재3::L1 표현
+어학연수	language course abroad	어학연수를 갈 거예요.<br>I'll go abroad for a language course.	語學硏修.	cours::C71 교재3::L1 명사
+다이어트	diet, slimming	다이어트를 하려고 해요.<br>I'm planning to go on a diet.	다이어트하다.	cours::C71 교재3::L1 명사
+돈을 모으다	to save money	돈을 모아야 해요.<br>I need to save money.	모으다 = to gather. 저축하다 is the formal word.	cours::C71 교재3::L1 표현
+마련하다	to arrange, to secure (a home)	집을 마련하고 싶어요.<br>I want to get a place of my own.		cours::C71 교재3::L1 동사
+등록하다	to register, to enrol	헬스클럽에 등록했어요.<br>I signed up at the gym.	登錄. Pronounced [등녹하다].	cours::C71 교재3::L1 동사
+인턴	intern	인턴으로 일하고 있어요.<br>I'm working as an intern.	인턴십 = internship.	cours::C71 교재3::L1 사람
+어버이날	Parents' Day	오월 팔일은 어버이날이에요.<br>The 8th of May is Parents' Day.	어버이 = parents. Children give carnations.	cours::C71 교재3::L1 시간
