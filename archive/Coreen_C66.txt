@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::C66
+#tags column:5
+-을 수 있다/-을 수 없다	can / cannot	저는 매운 음식을 먹을 수 없어요.<br>I can't eat spicy food.	Ability or possibility. Consonant → -을 수, vowel or ㄹ → -ㄹ 수 (할 수 있다, 만들 수 있다). 못 is the shorter spoken equivalent.	cours::C66 교재2::L13 문법
+부탁	favour, request	부탁이 있는데요.<br>I have a favour to ask.	付託. 부탁하다 / 부탁드리다.	cours::C66 교재2::L13 명사
+실수하다	to make a mistake	부장님께 실수했어요.<br>I made a mistake in front of my manager.	失手.	cours::C66 교재2::L13 동사
+안 되다	to not work, to be broken	전화가 안 돼요.<br>The phone isn't working.	Used for devices and services that fail.	cours::C66 교재2::L13 표현
+잊어버리다	to forget	비밀번호를 잊어버렸어요.<br>I forgot the password.	잊다 + 버리다. Don't confuse with 잃어버리다 (to lose an object).	cours::C66 교재2::L13 동사
+신고하다	to report (to the authorities)	경찰서에 신고하세요.<br>Report it to the police.	申告.	cours::C66 교재2::L13 동사
+자꾸	repeatedly, keeps on	휴대폰이 자꾸 꺼져요.<br>My phone keeps switching off.		cours::C66 교재2::L13 부사
+꺼지다	to switch off, to go out	전원이 꺼졌어요.<br>The power went off.	The intransitive of 끄다.	cours::C66 교재2::L13 동사
+땀을 흘리다	to sweat	왜 그렇게 땀을 흘려요?<br>Why are you sweating so much?	땀 = sweat, 흘리다 = to spill.	cours::C66 교재2::L13 표현
+하나도	not at all (with a negative)	일본어는 하나도 못 해요.<br>I can't speak a word of Japanese.	Literally 'not even one'.	cours::C66 교재2::L13 부사
+외국어	foreign language	외국어를 할 수 있어요?<br>Can you speak a foreign language?	外國語.	cours::C66 교재2::L13 명사
+왼손	left hand	왼손으로 글씨를 쓸 수 있어요?<br>Can you write with your left hand?	오른손 = right hand.	cours::C66 교재2::L13 명사
+글씨	handwriting, lettering	글씨가 예뻐요.<br>Your handwriting is lovely.	글씨를 쓰다.	cours::C66 교재2::L13 명사
+고추	chilli pepper	고추를 먹을 수 있어요?<br>Can you eat chillies?	고춧가루 = chilli powder.	cours::C66 교재2::L13 음식

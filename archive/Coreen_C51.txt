@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#deck:Coréen::C51
+#tags column:5
+성	castle, fortress	성을 구경했어요.<br>We visited the fortress.	城.	cours::C51 교재2::L8 장소
+불꽃놀이	fireworks	한강에서 불꽃놀이를 봐요.<br>We watch the fireworks at the Han River.	불꽃 + 놀이. 불꽃 축제 = fireworks festival.	cours::C51 교재2::L8 명사
+기념품	souvenir	기념품을 샀어요.<br>I bought a souvenir.	記念品.	cours::C51 교재2::L8 명사
+온천	hot spring	온천이 정말 좋았어요.<br>The hot springs were wonderful.	溫泉.	cours::C51 교재2::L8 장소
+유람선	cruise boat	유람선을 탔어요.<br>We took a cruise boat.	遊覽船.	cours::C51 교재2::L8 명사
+유적지	historical site	유적지가 많아요.<br>There are many historical sites.	遺跡地.	cours::C51 교재2::L8 장소
+시차	time difference	시차가 8시간이에요.<br>The time difference is eight hours.	時差. 시차 적응 = jet lag.	cours::C51 교재2::L8 명사
+후기	review, write-up	숙소 후기를 읽어 보세요.<br>Read the reviews of the accommodation.	後記. Online reviews.	cours::C51 교재2::L8 명사
+출발지	point of departure	출발지가 파리예요.<br>The departure point is Paris.	出發地.	cours::C51 교재2::L8 명사
+도착지	destination	도착지가 서울이에요.<br>The destination is Seoul.	到着地. 목적지 = the place you're aiming for.	cours::C51 교재2::L8 명사
+목적지	destination, goal	목적지는 인천이에요.<br>The destination is Incheon.	目的地.	cours::C51 교재2::L8 명사
+편도	one-way	편도로 예매했어요.<br>I booked a one-way ticket.	片道. Opposite: 왕복.	cours::C51 교재2::L8 명사
+왕복	round trip	왕복으로 예매해 주세요.<br>A return ticket, please.	往復.	cours::C51 교재2::L8 명사
+엽서	postcard	엽서를 보냈어요.<br>I sent a postcard.	葉書.	cours::C51 교재2::L8 명사
+도움	help	도움이 될 거예요.<br>It'll be helpful.	From 돕다. 도움이 되다 = to be of help.	cours::C51 교재2::L8 명사
+굽다	to grill, to bake	고기를 구워 봤어요.<br>I tried grilling meat.	ㅂ irregular → 구워요.	cours::C51 교재2::L8 동사
+혼자	alone, by oneself	저는 혼자 여행해 봤어요.<br>I've travelled alone.	같이 is its opposite.	cours::C51 교재2::L8 부사
+햇볕	sunshine (warmth)	햇볕이 강해요.<br>The sun is strong.	햇빛 is the light, 햇볕 the heat of the sun.	cours::C51 교재2::L8 명사
+가져가다	to take along	선글라스를 가져가려고 해요.<br>I'm going to take sunglasses.	가지다 + 가다. 가져오다 = to bring.	cours::C51 교재2::L8 동사
+거리	distance	한 시간 거리에 계세요.<br>They live an hour away.	距離. Also means street (거리에서).	cours::C51 교재2::L8 명사
+머무르다	to stay	기차 안에서 네 시간 동안 머물렀어요.<br>I stayed on the train for four hours.	르 irregular → 머물러요.	cours::C51 교재2::L8 동사
+동안	for, during	네 시간 동안 기다렸어요.<br>I waited for four hours.	Follows a duration: 일주일 동안, 방학 동안.	cours::C51 교재2::L8 문법
+해양 스포츠	water sports	해양 스포츠를 즐기고 싶어요.<br>I want to enjoy water sports.	海洋.	cours::C51 교재2::L8 명사
+시골	countryside	시골에서 살아 봤어요.<br>I've lived in the countryside.	Opposite: 도시.	cours::C51 교재2::L8 장소

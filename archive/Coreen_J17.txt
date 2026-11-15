@@ -1,0 +1,23 @@
+#separator:tab
+#html:true
+#tags column:5
+#deck column:6
+-아/어하다	to show / feel (3rd-person feelings)	제가 한국에 있을 때 여자친구가 혼자 있어서 외로워했어요.<br>When I was in Korea, my girlfriend felt lonely because she was alone.	Turns a feeling adjective into a verb for someone else's emotions: 외롭다 → 외로워하다, 서운하다 → 서운해하다, 좋다 → 좋아하다.	cours::J17 회화 문법	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+아무리 -아/어도	no matter how (much) …	프랑스 커플들은 아무리 싸워도 화해하면 괜찮아져요.<br>For French couples, no matter how much they fight, things are fine once they make up.	아무리 + V-아/어도. 아무리 바빠도 = however busy you are.	cours::J17 회화 문법	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+-아도/-어도	even if, even without	싸우지 않아도 대화로 해결할 수 있어요.<br>You can work things out through communication without fighting.	Concession. -지 않아도 = even without doing. Different from -아도 되다 (permission).	cours::J17 회화 문법	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+N보다 -는 게 더 좋다	to prefer doing … rather than N	저는 메시지보다 만나서 얘기하는 게 더 좋아요.<br>I prefer talking in person rather than texting.	-는 게 = -는 것이. 만나서 얘기하다 = to talk in person.	cours::J17 회화 문법	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+-(으)ㄴ/는지에 따라 다르다	it depends on whether / how …	얼마나 사귀었는지에 따라 달라요.<br>It depends on how long you've been dating.	Clause version of N에 따라 다르다: 얼마나 + V-았/었는지에 따라.	cours::J17 회화 문법	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+느껴지다	to be felt, to come across	모든 걸 이해할 수 있어서 사람들의 감정이 다 느껴져요.<br>I can understand everything, so I can pick up on everyone's emotions.	Passive of 느끼다 (느끼 + 어지다). Something is felt without effort.	cours::J17 회화 동사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+데려가다	to take (a person) along	항상 파트너를 데려가요.<br>We always bring our partners along.	For people/animals; for things use 가져가다. Opposite direction: 데려오다.	cours::J17 회화 동사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+믿다	to trust, to believe	다른 여자들을 안 믿어요.<br>I don't trust other women.	N을/를 믿다. Noun 믿음 (faith, trust).	cours::J17 회화 동사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+화해하다	to make up, to reconcile	아무리 싸워도 화해하면 괜찮아져요.<br>No matter how much they fight, things are fine once they make up.	Hanja 和解. Opposite of 싸우다; N하고 화해하다.	cours::J17 회화 동사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+외롭다	lonely	여자친구가 혼자 있어서 외로워했어요.<br>My girlfriend felt lonely because she was alone.	ㅂ-irregular: 외로워요. Noun 외로움 (loneliness).	cours::J17 회화 형용사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+무조건	absolutely, unconditionally	무조건 있다고 생각해요.<br>I definitely think it's possible.	Hanja 無條件. Very common in speech for 'definitely, no matter what'.	cours::J17 회화 부사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+감정	emotion, feeling	부정적인 감정도 다 느껴져요.<br>I can feel all the negative emotions too.	Hanja 感情. 감정을 표현하다 = to express emotions.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+사이	relationship (between people)	대화를 많이 한 덕분에 사이가 좋아졌어요.<br>Our relationship has improved because we've talked a lot.	사이가 좋다/나쁘다. 결혼할 사이예요 = we're planning to get married.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+의무	obligation, duty	의무가 아니라 같이 활동을 하고 싶어서 해요.<br>It's not an obligation; you do things together because you want to.	Hanja 義務. 의무적으로 = out of obligation.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+소통	communication	소통을 많이 해야 돼요.<br>You have to communicate a lot.	Hanja 疏通. 소통하다; synonym in this sense: 대화.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+의견	opinion	의견이 달라요.<br>We have different opinions.	Hanja 意見. 의견이 다르다/맞다.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+질투	jealousy	질투가 많아요.<br>I get jealous easily.	Hanja 嫉妬. 질투하다 = to be jealous; 질투가 많다 = jealous by nature.	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+여사친 / 남사친	female friend / male friend (platonic)	여사친이 있는 것에 대해서 생각이 달라요.<br>We have different opinions about having female friends.	Slang: 여자 사람 친구 / 남자 사람 친구, as opposed to 여자친구 (girlfriend).	cours::J17 회화 명사	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)
+제 경우에는	in my case	제 경우에는 여자친구를 고등학교에서 만나서 부모님을 더 빨리 만났어요.<br>In my case, I met my girlfriend in high school, so I met her parents earlier.	경우 (境遇) = case, situation. -(으)ㄹ 경우에 = in case ….	cours::J17 회화 표현	Coréen::Jihyeon::J17 · Free talk (-아/어하다, 아무리 -아/어도)

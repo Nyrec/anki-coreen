@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+조르다	to pester, to beg (for something)<br><i>supplier, harceler (pour obtenir qqch)</i>	아이가 장난감을 사 달라고 계속 졸라요.<br>The kid keeps begging me to buy him a toy.<br><i>L'enfant n'arrête pas de supplier qu'on lui achète un jouet.</i>	[joreuda] 르-irregular: 졸라요, 졸랐어요. Often used with -아/어 달라고 조르다 (to beg someone to do something).	quotidien::2026-10-25 동사
+쑥스럽다	to feel shy, awkward, self-conscious<br><i>gêné, intimidé, embarrassé (timidité)</i>	칭찬을 들으니까 좀 쑥스러워요.<br>I feel a bit shy when I get compliments.<br><i>Ça me gêne un peu de recevoir des compliments.</i>	[ssukseureopda] ㅂ-irregular: 쑥스러워요. Milder and more about awkwardness than 부끄럽다 (shame) or 창피하다 (humiliation).	quotidien::2026-10-25 형용사
+은근히	subtly; quietly; surprisingly, kind of<br><i>discrètement ; en fait, plutôt (sans en avoir l'air)</i>	이 영화 은근히 재미있어요.<br>This movie is surprisingly fun.<br><i>Ce film est en fait plutôt sympa.</i>	[eungeunhi] Very common in speech for something that is more X than expected. Hanja 慇懃. Related: 은근하다 (subtle, discreet).	quotidien::2026-10-25 부사
+바가지	rip-off, overcharging (lit. gourd bowl)<br><i>arnaque, prix abusif (litt. calebasse)</i>	관광지에서 택시 탔다가 바가지 썼어요.<br>I took a taxi in a tourist area and got ripped off.<br><i>J'ai pris un taxi dans un coin touristique et je me suis fait arnaquer.</i>	[bagaji] 바가지를 쓰다 = to get ripped off; 바가지를 씌우다 = to rip someone off. 바가지요금 = inflated price.	quotidien::2026-10-25 명사
+생색을 내다	to make a show of one's favor, to take credit<br><i>se faire mousser, faire valoir ce qu'on a fait pour autrui</i>	한 번 도와주고 너무 생색을 내요.<br>He helped once and keeps making a big deal of it.<br><i>Il a aidé une seule fois et il en fait tout un plat.</i>	[saengsaegeul naeda] Hanja 生色. Often negative: 생색만 내다 (only pretend to help). Noun: 생색.	quotidien::2026-10-25 표현

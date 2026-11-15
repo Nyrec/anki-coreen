@@ -1,0 +1,10 @@
+#separator:tab
+#html:true
+#deck:Coréen::C48
+#tags column:5
+화면	screen	화면이 잘 보여요?<br>Can you see the screen well?	畫面.	cours::C48 교재2::L5 명사
+쓰레기봉투	bin bag	쓰레기봉투에 넣어서 버리세요.<br>Put it in a bin bag and throw it out.	쓰레기 + 봉투.	cours::C48 교재2::L5 명사
+세탁	laundry, washing	세탁을 해요.<br>I do the washing.	洗濯. 빨래 is the everyday word; 세탁소 = dry cleaner's.	cours::C48 교재2::L5 명사
+우선	first of all	우선 손을 씻으세요.<br>First, wash your hands.	于先. Same use as 먼저.	cours::C48 교재2::L5 부사
+주의 사항	instructions, things to note	주의 사항을 들은 후에 이용하세요.<br>Use it after hearing the instructions.	注意事項.	cours::C48 교재2::L5 명사
+사용하다	to use	이 방법을 사용하세요.<br>Use this method.	使用. 쓰다 is the everyday word.	cours::C48 교재2::L5 동사

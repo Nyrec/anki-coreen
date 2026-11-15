@@ -1,0 +1,45 @@
+#separator:tab
+#html:true
+#deck:Coréen::C10
+#tags column:5
+아직	still, yet	아직 회사예요. 지금 일해요.<br>I'm still at the office. I'm working now.	Often paired with a negative: 아직 안 왔어요 = hasn't come yet.	cours::C10 교재::L2 부사
+바쁘다	to be busy	오늘은 바빠요.<br>I'm busy today.	으 irregular: the ㅡ of 쁘 drops → 바빠요.	cours::C10 교재::L2 형용사
+알았어요	Got it, I understood	알았어요. 내일 만나요.<br>Got it. See you tomorrow.	Past of 알다 (to know), so literally 'I knew it'. 알겠어요 / 알겠습니다 acknowledge an instruction more politely.	cours::C10 교재::L2 표현
+오랜만이에요	Long time no see	안녕하세요? 오랜만이에요.<br>Hello! It's been a while.	Contraction of 오래간만이에요 (오래 = long + 간 = interval). 오랜만이야 in casual speech.	cours::C10 교재::L2 표현
+결혼하다	to get married	오늘 친구가 결혼해요.<br>A friend of mine is getting married today.	하다 verb → 결혼해요. 결혼 = 結婚.	cours::C10 교재::L2 동사
+고등학교	high school	고등학교 친구예요.<br>She's a high-school friend.	高等學校. 중학교 = middle school, 초등학교 = elementary school.	cours::C10 교재::L2 장소
+그럼	then, in that case	그래요? 그럼 잘 다녀와요.<br>Really? Then have a good trip.	Contraction of 그러면.	cours::C10 교재::L2 문법
+다녀오다	to go somewhere and come back	잘 다녀와요.<br>Have a good trip.	다녀 + 오다 → 다녀와요. 잘 다녀와요 is what you say to someone leaving and returning.	cours::C10 교재::L2 동사
+신발 가게	shoe store	신발 가게에 가요.<br>I'm going to the shoe store.	신발 = shoes, footwear.	cours::C10 교재::L2 장소
+N + 는요?	And what about N?	회사에 가요. 지윤 씨는요?<br>I'm going to work. And you, Jiyun?	요 tacked onto a noun phrase bounces the same question back without repeating it.	cours::C10 교재::L2 문법
+일 이 삼 사 오 육 칠 팔 구 십	Sino-Korean numbers 1 to 10	112 = 일일이<br>119 = 일일구	Used for phone numbers, money, dates, minutes, floors and page numbers. The native series (하나, 둘…) is counted separately.	cours::C10 교재::L3 숫자
+공 / 영	zero (in numbers read aloud)	1330 = 일삼삼공<br>The travel hotline is 1330.	영 is the other reading; 공 is the usual one for phone numbers.	cours::C10 교재::L3 숫자
+전화번호	phone number	전화번호가 뭐예요?<br>What's your phone number?	電話番號. Also asked as 전화번호가 어떻게 돼요?	cours::C10 교재::L3 명사
+번호	number	제 번호는 010-1306-7852예요.<br>My number is 010-1306-7852.	番號. The dash is read 에.	cours::C10 교재::L3 명사
+병원	hospital	병원 전화번호가 뭐예요?<br>What's the hospital's phone number?	病院.	cours::C10 교재::L3 장소
+경찰	police	경찰이 아니에요.<br>He isn't a police officer.	警察.	cours::C10 교재::L3 직업
+경찰서	police station	경찰서 전화번호는 112예요.<br>The police number is 112.	警察署. 서 marks an administrative office.	cours::C10 교재::L3 장소
+없다	to not exist, to not have	의자가 없어요.<br>There's no chair.	Opposite of 있다. Pronounced [업따] → 없어요 [업써요].	cours::C10 교재::L3 동사
+맛	taste, flavour	맛이 있어요.<br>It has taste (it's good).	맛 + 있다/없다 is where 맛있다 and 맛없다 come from.	cours::C10 교재::L3 명사
+맛있다	to be tasty	불고기가 맛있어요.<br>The bulgogi is delicious.	Literally 'taste exists'. Pronounced [마시써요].	cours::C10 교재::L3 형용사
+맛없다	to be not tasty	빵이 맛없어요.<br>The bread isn't good.	Pronounced [마덥써요] — note the irregular ㅅ→ㄷ sound.	cours::C10 교재::L3 형용사
+재미있다	to be fun, interesting	드라마가 재미있어요.<br>The drama is interesting.	재미 (fun) + 있다. Same pattern as 맛있다.	cours::C10 교재::L3 형용사
+재미없다	to be boring	책이 재미없어요.<br>The book is boring.	재미 (fun) + 없다.	cours::C10 교재::L3 형용사
+비싸다	to be expensive	가방이 비싸요.<br>The bag is expensive.		cours::C10 교재::L3 형용사
+싸다	to be cheap	빵이 싸요.<br>The bread is cheap.	Not related to 사다 (to buy) despite the similarity.	cours::C10 교재::L3 형용사
+좋다	to be good	날씨가 좋아요.<br>The weather is nice.	Pronounced [조타] → 좋아요 [조아요].	cours::C10 교재::L3 형용사
+나쁘다	to be bad	날씨가 나빠요.<br>The weather is bad.	으 irregular → 나빠요.	cours::C10 교재::L3 형용사
+예쁘다	to be pretty	꽃이 예뻐요.<br>The flowers are pretty.	으 irregular → 예뻐요 (the syllable before has ㅖ, so -어요).	cours::C10 교재::L3 형용사
+ㅡ 탈락	ㅡ-dropping (으 irregular)	나쁘다 → 나빠요<br>예쁘다 → 예뻐요 / 쓰다 → 써요	The ㅡ of the last stem syllable drops before -아/어요. The vowel of the syllable before then decides: ㅏ/ㅗ → -아요, otherwise -어요. One-syllable stems take -어요.	cours::C10 교재::L3 문법
+날씨	weather	날씨가 어때요?<br>How's the weather?		cours::C10 교재::L3 명사
+어때요?	How is it?	드라마가 어때요?<br>How's the drama?	ㅎ irregular: 어떻 + 어요 → 어때요. Asks for an impression, not a fact.	cours::C10 교재::L3 표현
+우산	umbrella	우산이 있어요?<br>Do you have an umbrella?	雨傘.	cours::C10 교재::L3 명사
+시계	clock, watch	시계가 있어요.<br>There's a clock.	時計. 손목시계 = wristwatch.	cours::C10 교재::L3 명사
+의자	chair	의자가 없어요.<br>There's no chair.	椅子.	cours::C10 교재::L3 명사
+가방	bag	가방이 비싸요.<br>The bag is expensive.		cours::C10 교재::L3 명사
+모자	hat, cap	모자가 팔천 원이에요.<br>The cap is 8,000 won.	帽子.	cours::C10 교재::L3 명사
+꽃	flower	꽃이 예뻐요.<br>The flower is pretty.	꽃이 is pronounced [꼬치]; 꽃 alone is [꼳].	cours::C10 교재::L3 명사
+드라마	drama, TV series	드라마가 재미있어요.<br>The drama is interesting.		cours::C10 교재::L3 명사
+불고기	bulgogi	불고기가 맛있어요.<br>The bulgogi is delicious.	불 (fire) + 고기 (meat).	cours::C10 교재::L3 음식
+잘 다녀와요	Have a good trip, take care	그래요? 그럼 잘 다녀와요.<br>Really? Then have a good trip.	Said to someone leaving who will come back. The person leaving answers 다녀올게요.	cours::C10 교재::L2 표현
+내일 봐요	See you tomorrow	가: 알았어요. 내일 만나요.<br>나: 네, 내일 봐요.	보다 → 봐요 used as a farewell. Same frame as 또 봐요 (see you again) and 다음에 봐요 (see you next time).	cours::C10 교재::L2 표현

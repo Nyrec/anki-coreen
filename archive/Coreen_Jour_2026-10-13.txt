@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+망설이다	to hesitate<br><i>hésiter</i>	망설이지 말고 물어보세요.<br>Don't hesitate, just ask.<br><i>N'hésitez pas à demander.</i>	[mangseorida] Often used as -(으)ㄹ까 망설이다 (to hesitate whether to...). Noun: 망설임 (hesitation).	quotidien::2026-10-13 동사
+민망하다	to be embarrassed, awkward<br><i>être gêné, embarrassé (situation gênante)</i>	사람들 앞에서 넘어져서 너무 민망했어요.<br>I was so embarrassed to fall in front of people.<br><i>J'ai été tellement gêné d'être tombé devant les gens.</i>	[minmanghada] Hanja 憫惘. Stronger than 어색하다 (awkward): embarrassment you feel about a situation; 부끄럽다 = shame/shyness.	quotidien::2026-10-13 형용사
+차라리	rather, might as well<br><i>plutôt, autant (mieux vaut)</i>	이렇게 막힐 거면 차라리 지하철을 탈게요.<br>If traffic is this bad, I'd rather take the subway.<br><i>Si ça bouchonne comme ça, autant prendre le métro.</i>	[charari] Introduces the lesser of two evils; often paired with -(으)ㄹ 바에야 / -(으)ㄹ 거면 (if it's going to be...).	quotidien::2026-10-13 부사
+여유	spare time, leeway, room<br><i>marge, temps libre, aisance</i>	요즘 일이 많아서 여유가 없어요.<br>I have a lot of work these days, so I have no time to spare.<br><i>J'ai beaucoup de travail ces temps-ci, je n'ai pas de temps libre.</i>	[yeoyu] Hanja 餘裕. 여유가 있다/없다; adjective 여유롭다 (relaxed, leisurely). Also used for money: 돈에 여유가 있다.	quotidien::2026-10-13 명사
+어쩔 수 없다	it can't be helped, there's no choice<br><i>on n'y peut rien, c'est inévitable</i>	비가 오니까 어쩔 수 없이 집에 있었어요.<br>Since it rained, I had no choice but to stay home.<br><i>Comme il pleuvait, je n'ai pas eu d'autre choix que de rester à la maison.</i>	[eojjeol su eopda] From 어찌하다 (to do what) + -(으)ㄹ 수 없다. Adverbial form 어쩔 수 없이 = unavoidably; 어쩔 수 없죠 = oh well.	quotidien::2026-10-13 표현

@@ -1,0 +1,14 @@
+#separator:tab
+#html:true
+#deck:Coréen::C64
+#tags column:5
+멀리	far away	멀리에서도 보여요.<br>You can see it even from far away.	The adverb of 멀다. Opposite: 가까이.	cours::C64 교재2::L10-11 부사
+정	affection, attachment	한국 사람들은 정이 많아요.<br>Koreans have a lot of 정.	情. The warm bond that builds between people over time — a cultural key word with no French equivalent.	cours::C64 교재2::L10-11 명사
+교환하다	to exchange	이 옷을 교환하고 싶어요.<br>I'd like to exchange this item.	交換. Same idea as 바꾸다 but for shop returns.	cours::C64 교재2::L10-11 동사
+멋지다	to be cool, splendid	정말 멋진 사람이에요.<br>He's a really impressive person.	Interchangeable with 멋있다.	cours::C64 교재2::L10-11 형용사
+길이	length	길이가 짧아요.<br>The length is short.	From 길다. 넓이 = width, 높이 = height.	cours::C64 교재2::L10-11 명사
+부럽다	to be envious	좋겠어요. 정말 부러워요.<br>Lucky you. I'm really envious.	ㅂ irregular → 부러워요. A friendly envy, not resentment.	cours::C64 교재2::L10-11 형용사
+주인	owner	이 가방 주인이 누구예요?<br>Whose bag is this?	主人. 주인공 = main character.	cours::C64 교재2::L10-11 사람
+농담	joke	농담이에요.<br>I'm joking.	弄談. 농담하다.	cours::C64 교재2::L10-11 명사
+무음	silent mode	휴대폰을 무음으로 하세요.<br>Put your phone on silent.	無音. 진동 = vibrate.	cours::C64 교재2::L10-11 명사
+강릉	Gangneung	강릉에 가 봤어요.<br>I've been to Gangneung.	江陵. Pronounced [강능]. A seaside city on the east coast.	cours::C64 교재2::L10-11 장소

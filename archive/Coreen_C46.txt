@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::C46
+#tags column:5
+-(으)면서	while doing	음악을 들으면서 공부해요.<br>I study while listening to music.	Two actions at once by the same subject. Consonant → -으면서, vowel or ㄹ → -면서.	cours::C46 교재2::L2-7 문법
+을/를 위해	for, for the sake of	대학교에 들어가기 위해 열심히 공부해요.<br>I study hard to get into university.	With a verb: -기 위해. 위하다 = to be for.	cours::C46 교재2::L2-7 문법
+스트레스를 받다	to be stressed	스트레스를 받으면 음식을 먹거나 쇼핑해요.<br>When I'm stressed I eat or go shopping.	스트레스를 풀다 = to relieve stress.	cours::C46 교재2::L2-7 표현
+상황	situation	이런 상황에서 어떻게 해요?<br>What do you do in this situation?	狀況.	cours::C46 교재2::L2-7 명사
+반드시	definitely, without fail	과일은 먹기 전에 반드시 씻어서 먹어요.<br>Always wash fruit before eating it.	Same force as 꼭, more written.	cours::C46 교재2::L2-7 부사

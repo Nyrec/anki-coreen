@@ -1,0 +1,20 @@
+#separator:tab
+#html:true
+#deck:Coréen::C67
+#tags column:5
+-는 것 같다	it seems, I think	밖에 비가 오는 것 같아요.<br>It seems to be raining outside.	Verbs take -는 것 같다 for the present, -은/-ㄴ 것 같다 for the past (결혼한 것 같아요). Adjectives take -은/-ㄴ 것 같다 (예쁜 것 같아요). A guess, and also a way to soften an opinion.	cours::C67 교재2::L13 문법
+다운되다	to crash, to freeze (computer)	컴퓨터가 다운됐어요.<br>My computer crashed.	From 'down'.	cours::C67 교재2::L13 동사
+바이러스에 걸리다	to get a virus	컴퓨터가 바이러스에 걸렸어요.<br>The computer caught a virus.	걸리다, as with 감기에 걸리다.	cours::C67 교재2::L13 표현
+연결	connection	와이파이 연결이 안 돼요.<br>The wifi won't connect.	連結. 연결하다 = to connect.	cours::C67 교재2::L13 명사
+재생	playback	재생이 안 돼요.<br>It won't play.	再生. 재생하다.	cours::C67 교재2::L13 명사
+깨지다	to break, to crack	화면이 깨졌어요.<br>The screen is cracked.	The intransitive of 깨다.	cours::C67 교재2::L13 동사
+떨어뜨리다	to drop	휴대폰을 떨어뜨렸어요.<br>I dropped my phone.	The causative of 떨어지다.	cours::C67 교재2::L13 동사
+수리 센터	repair centre	수리 센터에 맡겼어요.<br>I left it at the repair centre.	修理.	cours::C67 교재2::L13 장소
+보고서	report	보고서를 못 썼어요.<br>I couldn't finish the report.	報告書.	cours::C67 교재2::L13 명사
+싸우다	to fight, to argue	두 사람은 싸운 것 같아요.<br>Those two seem to have argued.	싸움 = a fight.	cours::C67 교재2::L13 동사
+서로	each other	서로 말도 안 해요.<br>They're not even speaking to each other.	相互.	cours::C67 교재2::L13 부사
+아무도	nobody (with a negative)	집에 아무도 없는 것 같아요.<br>It seems nobody's home.	아무나 = anyone at all.	cours::C67 교재2::L13 문법
+월급	monthly salary	월급을 받은 것 같아요.<br>She seems to have been paid.	月給.	cours::C67 교재2::L13 명사
+외투	coat, outerwear	따뜻한 외투를 입고 다녀요.<br>People are wearing warm coats.	外套. 겉옷 is the everyday word.	cours::C67 교재2::L13 명사
+돌려주다	to give back, to return	내일 꼭 돌려 드릴게요.<br>I'll definitely return it tomorrow.	돌리다 + 주다.	cours::C67 교재2::L13 동사
+봐 주다	to take a look (for someone)	프린터 좀 봐 줄 수 있어요?<br>Could you take a look at the printer?	보다 + 주다. Also means to overlook a fault.	cours::C67 교재2::L13 표현

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+예약하다	to book, to reserve<br><i>réserver</i>	주말에 식당을 예약했어요.<br>I booked a restaurant for the weekend.<br><i>J'ai réservé un restaurant pour le week-end.</i>	[yeyakhada] 예약 (豫約, reservation) + 하다. 예약을 취소하다: to cancel a booking.	quotidien::2026-10-09 동사
+갑자기	suddenly<br><i>soudain, tout à coup</i>	갑자기 비가 오기 시작했어요.<br>It suddenly started to rain.<br><i>Il s'est mis à pleuvoir tout à coup.</i>	[gapjagi] Often with -기 시작하다 or a past event: 갑자기 생각났어요 (it suddenly came to me).	quotidien::2026-10-09 부사
+익숙하다	to be used to, familiar<br><i>être habitué à, familier</i>	이제 한국 생활에 익숙해졌어요.<br>I've gotten used to life in Korea now.<br><i>Maintenant je me suis habitué à la vie en Corée.</i>	[iksukhada] N에 익숙하다. Becoming used to it: 익숙해지다.	quotidien::2026-10-09 형용사
+마감	deadline<br><i>date limite, échéance</i>	보고서 마감이 내일이에요.<br>The report deadline is tomorrow.<br><i>La date limite du rapport, c'est demain.</i>	[magam] 마감일: due date. 마감되다: to be closed (applications, sales).	quotidien::2026-10-09 명사
+아깝다	to be a waste, what a pity<br><i>c'est dommage / quel gâchis</i>	음식을 버리기 아까워요.<br>It feels like a waste to throw food away.<br><i>Ça me fait mal de jeter de la nourriture.</i>	[akkapda] ㅂ irregular → 아까워요. -기 아깝다: it's a shame to (waste) do X.	quotidien::2026-10-09 형용사

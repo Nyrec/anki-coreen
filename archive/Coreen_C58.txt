@@ -1,0 +1,23 @@
+#separator:tab
+#html:true
+#deck:Coréen::C58
+#tags column:5
+-는 + N	verb modifying a noun (present)	한국어를 배우는 학생이에요.<br>She's a student who is learning Korean.	Verbs take -는 for the present, -은/-ㄴ for the past (제가 이야기한 친구) and -을/-ㄹ for the future (공부할 부분). ㄹ stems drop it: 팔다 → 파는, 판, 팔.	cours::C58 교재2::L10 문법
+잡다	to grab, to hold	손을 잡았어요.<br>I held their hand.	Also 택시를 잡다 = to hail a taxi.	cours::C58 교재2::L10 동사
+줍다	to pick up (off the ground)	쓰레기를 주웠어요.<br>I picked up the rubbish.	ㅂ irregular → 주워요, 주운.	cours::C58 교재2::L10 동사
+팔다	to sell	프랑스에서 파는 치즈가 많아요.<br>There are many cheeses sold in France.	ㄹ stem: 파는, 판, 팔, 팝니다.	cours::C58 교재2::L10 동사
+웃다	to laugh, to smile	잘 웃는 사람을 좋아해요.<br>I like people who smile a lot.	Pronounced [욷따]. 웃기다 = to be funny.	cours::C58 교재2::L10 동사
+놀라다	to be surprised	깜짝 놀랐어요.<br>I was startled.	깜짝 놀라다 = to be startled.	cours::C58 교재2::L10 동사
+한참	for quite a while	한참 이야기를 했어요.<br>We talked for quite a while.		cours::C58 교재2::L10 시간
+사실	actually, in fact	사실 그 사람은 제가 아니었어요.<br>Actually, she wasn't there for me.	事實. Also a noun: a fact.	cours::C58 교재2::L10 부사
+친하다	to be close (with someone)	제일 친한 친구예요.<br>She's my closest friend.	親. 친해지다 = to become close.	cours::C58 교재2::L10 형용사
+제목	title	소설 제목이 '소나기'예요.<br>The novel is called 'Sonagi'.	題目.	cours::C58 교재2::L10 명사
+부분	part, section	공부할 부분이 많아요.<br>There's a lot to study.	部分.	cours::C58 교재2::L10 명사
+부동산	estate agency	이사할 집을 부동산에서 찾았어요.<br>I found the new flat through an agency.	不動産.	cours::C58 교재2::L10 장소
+여름휴가	summer holiday	여름휴가 때 가는 곳이에요.<br>It's where we go for the summer break.	여름 + 휴가.	cours::C58 교재2::L10 시간
+옛날	long ago, the old days	옛날 옛날에 공주가 살았어요.<br>Once upon a time there was a princess.	옛날 옛날에 opens a fairy tale.	cours::C58 교재2::L10 시간
+깊다	to be deep	깊은 숲속에 갔어요.<br>She went into the deep forest.	Pronounced [깁따]. Opposite: 얕다.	cours::C58 교재2::L10 형용사
+숲	forest, woods	숲속에서 만났어요.<br>They met in the forest.	숲속 = inside the woods.	cours::C58 교재2::L10 장소
+세상	the world	세상에서 제일 아름다운 여자예요.<br>She's the most beautiful woman in the world.	世上.	cours::C58 교재2::L10 명사
+말을 걸다	to strike up a conversation	모르는 사람이 말을 걸었어요.<br>A stranger started talking to me.	걸다 is ㄹ stem → 걸어요.	cours::C58 교재2::L10 표현
+소개해 주다	to introduce (someone to someone)	친구를 소개해 줄게요.<br>I'll introduce you to a friend.	소개하다 + 주다: doing it for the other person.	cours::C58 교재2::L10 표현

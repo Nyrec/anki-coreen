@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+들키다	to get caught, to be found out<br><i>se faire prendre, être découvert</i>	몰래 과자를 먹다가 엄마한테 들켰어요.<br>I got caught by my mom secretly eating snacks.<br><i>Je me suis fait prendre par ma mère en mangeant des gâteaux en cachette.</i>	[deulkida] Use N한테/에게 for the person who catches you: 친구한테 들키다. Often paired with 몰래 (secretly).	quotidien::2026-10-30 동사 niveau::B1
+촌스럽다	tacky, old-fashioned, unrefined<br><i>ringard, démodé, qui fait plouc</i>	이 옷 좀 촌스럽지 않아요?<br>Doesn't this outfit look a bit tacky?<br><i>Ce vêtement ne fait pas un peu ringard ?</i>	[chonseureopda] ㅂ-irregular: 촌스러워요. 촌 (村, countryside) + -스럽다. Opposite: 세련되다 (stylish, refined).	quotidien::2026-10-30 형용사 niveau::B1
+억지로	forcibly, against one's will<br><i>de force, à contrecœur</i>	배가 불렀는데 억지로 다 먹었어요.<br>I was full, but I forced myself to eat it all.<br><i>J'étais rassasié, mais je me suis forcé à tout manger.</i>	[eokjiro] From 억지 (forcing, unreasonableness). Related: 억지를 부리다 = to be stubborn/unreasonable; 억지로 시키다 = to force someone.	quotidien::2026-10-30 부사 niveau::B1
+택배	parcel, home delivery<br><i>colis (livraison à domicile)</i>	어제 주문한 택배가 아직 안 왔어요.<br>The parcel I ordered yesterday hasn't arrived yet.<br><i>Le colis que j'ai commandé hier n'est pas encore arrivé.</i>	[taekbae] Hanja 宅配 (home + deliver). 택배를 보내다/받다; 택배 기사님 = delivery driver; 택배 보관함 = parcel locker.	quotidien::2026-10-30 명사 niveau::A2
+김이 새다	to lose all excitement, to take the wind out of one's sails<br><i>perdre tout son intérêt, être refroidi (douche froide)</i>	영화 결말을 미리 들어서 김이 샜어요.<br>I heard the movie's ending beforehand, so it killed the excitement.<br><i>On m'a spoilé la fin du film, ça m'a coupé tout l'enthousiasme.</i>	[gimi saeda] Literally 'the steam leaks out' (김 = steam, 새다 = to leak; past 샜어요). Often written 김새다; synonym 김빠지다.	quotidien::2026-10-30 표현 niveau::B1

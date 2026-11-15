@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::C43
+#tags column:5
+-으니까/-니까	since, because (+ suggestion)	날씨가 추우니까 따뜻한 옷을 입으세요.<br>It's cold, so wear something warm.	Consonant → -으니까, vowel or ㄹ → -니까 (가니까, 사니까). Unlike -아서/-어서, it can be followed by a command or a suggestion, and it does accept a past marker: 늦었으니까.	cours::C43 교재2::L6 문법
+우기	rainy season	지금은 우기예요.<br>It's the rainy season now.	雨期. 건기 = dry season.	cours::C43 교재2::L6 시간
+온도	temperature	온도 차이가 커요.<br>The temperature gap is large.	溫度. 기온 is specifically air temperature.	cours::C43 교재2::L6 명사
+차이	difference, gap	아침과 저녁의 기온 차이가 커요.<br>The morning and evening temperatures differ a lot.	差異. Shortened to 차.	cours::C43 교재2::L6 명사
+단어	word, vocabulary	이 단어 뜻을 아세요?<br>Do you know what this word means?	單語.	cours::C43 교재2::L6 명사
+뜻	meaning	단어의 뜻을 몰라요.<br>I don't know the word's meaning.	의미 is the formal synonym.	cours::C43 교재2::L6 명사
+알다	to know	수지 씨 이메일을 알면 가르쳐 주세요.<br>If you know Suji's email, let me know.	ㄹ stem: 알아요, but the ㄹ drops before ㄴ, ㅂ, ㅅ — 아니까, 압니다, 아세요. 알으면 is wrong; it's 알면.	cours::C43 교재2::L6 동사
+신입 사원	new employee	신입 사원이니까 잘 가르쳐 주세요.<br>He's new, so please show him the ropes.	新入社員.	cours::C43 교재2::L6 사람
+에어컨	air conditioner	에어컨을 켜세요.<br>Turn on the air conditioning.	에어컨을 켜다 / 끄다.	cours::C43 교재2::L6 명사
+유행	trend; going around	감기가 유행이에요.<br>There's a cold going around.	流行. Both fashion trends and illnesses.	cours::C43 교재2::L6 명사
+건물	building	높은 건물이 많아졌어요.<br>There are more tall buildings now.	建物.	cours::C43 교재2::L6 명사
+도시	city	도시가 많이 달라졌어요.<br>The city has changed a lot.	都市. 시골 = countryside.	cours::C43 교재2::L6 장소
+늦잠	sleeping in	일요일이니까 늦잠을 자세요.<br>It's Sunday, so have a lie-in.	늦다 + 잠. 늦잠을 자다.	cours::C43 교재2::L6 명사
+놀러 가다	to go out for fun	날씨가 좋으니까 놀러 가요.<br>The weather's nice, let's go out.	놀다 + -러 가다.	cours::C43 교재2::L6 표현

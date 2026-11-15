@@ -1,0 +1,28 @@
+#separator:tab
+#html:true
+#tags column:5
+#deck column:6
+-(으)ㄹ 수도 있다	might, could possibly	파리에서 살 수도 있어요.<br>I might live in Paris.	Possibility, softer than -(으)ㄹ 거예요. Reported: 파리에서 살 수도 있다고 했어요.	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+-(으)ㄴ/는지 모르겠다	I don't know if / whether …	한국에 가는 게 좋은 결정인지 모르겠어요.<br>I don't know if going to Korea is a good decision.	Noun + 인지, verb + 는지, adjective + (으)ㄴ지: 맞는지 모르겠어요, 좋은지 모르겠어요.	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+-(으)로서	as (in the role of)	외국인으로서 엔지니어 일을 구하기가 어려워요.<br>As a foreigner, it's hard to find an engineering job.	Role or status. Don't mix up with -(으)로써 (by means of).	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+-기가 어렵다	it's hard to …	요즘 엔지니어는 돈을 벌기가 어려워졌어요.<br>These days it's become harder for engineers to make money.	V + 기가 어렵다 / 쉽다. 어려워지다 = to become hard.	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+-다고 들었어요	I heard that …	리옹이 좋다고 들었어요.<br>I heard Lyon is nice.	Adjective + 다고, verb + ㄴ/는다고, noun + (이)라고 들었어요.	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+N만	only N	하루만 같이 여행했어요.<br>We travelled together for just one day.	만 sticks to the word it limits: 미야지마에서만 만났어요 (we only met in Miyajima).	cours::J16 회화 문법	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+당분간	for a while, for the time being	파리에서 당분간 지낼 거예요.<br>I'm going to stay in Paris for a while.	當分間.	cours::J16 회화 부사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+최대	maximum, up to	최대 3개월 있을 수 있어요.<br>I can stay for up to three months.	最大. Opposite: 최소 (minimum).	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+입양되다	to be adopted	아버지가 한국에서 프랑스로 입양됐어요.<br>My father was adopted from Korea to France.	入養. Active form: 입양하다 (to adopt).	cours::J16 회화 동사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+평생	one's whole life	평생 한국에서 살고 싶어요?<br>Do you want to live in Korea for the rest of your life?	平生. 평생 처음 = for the first time in my life.	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+엄격하다	to be strict	일 문화가 너무 엄격해요.<br>The work culture is too strict.	嚴格.	cours::J16 회화 형용사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+세금을 떼다	to deduct taxes	프랑스는 세금을 많이 떼요.<br>In France they take a lot of your income in taxes.	떼다 = to take off, deduct. Related: 최저임금 (minimum wage), 월급 (monthly salary).	cours::J16 회화 표현	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+난리가 나다	to be chaos, a big mess	고등학교 때문에 난리가 났어요.<br>There was chaos because of the high schools.	난리 (亂離) = turmoil, uproar.	cours::J16 회화 표현	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+파업하다 / 시위하다	to go on strike / to protest	노동자들이 10월 17일에 시위를 또 해요.<br>Workers are protesting again on October 17.	파업 (罷業) = strike, 시위 (示威) = demonstration.	cours::J16 회화 동사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+소매치기	pickpocket(ing)	소매치기가 많고 이상한 사람들이 많아요.<br>There are lots of pickpockets and strange people.	소매 (sleeve) + 치기.	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+한산하다	to be quiet, not crowded	리옹은 더 깨끗하고 한산해요.<br>Lyon is cleaner and less crowded.	閑散. Opposite: 붐비다 (to be crowded).	cours::J16 회화 형용사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+여유롭다	to be relaxed, unhurried	사람들이 더 여유로워요.<br>People are more relaxed.	ㅂ irregular → 여유로워요. 여유가 있다 = to have time / room to spare.	cours::J16 회화 형용사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+차분하다	to be calm, composed	한국 사람들이 더 차분해요.<br>Korean people are calmer.	차분해지다 = to calm down.	cours::J16 회화 형용사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+직설적이다	to be direct, blunt	프랑스 사람들은 더 솔직하고 직설적이에요.<br>French people are more honest and direct.	直說的.	cours::J16 회화 형용사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+앞뒤가 다르다	to say one thing and do another	그 사람은 앞뒤가 달라요.<br>That person says one thing and does another.	Literally: front and back are different.	cours::J16 회화 표현	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+장거리 연애	long-distance relationship	장거리 연애가 어려워요.<br>Long-distance relationships are difficult.	長距離 + 戀愛.	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+당연하죠	of course, naturally	물론이죠! 당연하죠!<br>Of course! Definitely!	當然. -죠 to agree warmly.	cours::J16 회화 표현	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+표정	facial expression	파리 사람들의 표정이 안 좋아요.<br>Parisians often look unhappy.	表情. 표정이 밝다 = to look cheerful.	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)
+관광객	tourist	관광객이 많고 분위기도 달라요.<br>There are lots of tourists and the atmosphere is different too.	觀光客.	cours::J16 회화 명사	Coréen::Jihyeon::J16 · Free talk (-ㄹ 수도 있다, -는지 모르겠다)

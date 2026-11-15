@@ -1,0 +1,19 @@
+#separator:tab
+#html:true
+#tags column:5
+#deck column:6
+그립다	to miss (someone, a place)	한국에 있는 동안 프랑스가 그리웠어요?<br>Did you miss France while you were in Korea?	ㅂ irregular → 그리워요, 그리울 거예요. What you miss takes 이/가: 한국이 그리울 거예요.	cours::J15 회화 형용사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+V-는 동안	while (during an action)	한국에 있는 동안 여행을 많이 했어요.<br>I travelled a lot while I was in Korea.	Verb stem + 는 동안: the whole time something is going on. After a noun of time: 일주일 동안.	cours::J15 회화 문법	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+-자마자	as soon as	프랑스에 도착하자마자 2주 동안 수업이 있어요.<br>As soon as I get to France, I have two weeks of classes.	Stem + 자마자, never with a past marker: 먹자마자 (not 먹었자마자). 밥을 먹자마자 배가 아팠어요.	cours::J15 회화 문법	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+남쪽 / 북쪽 / 동쪽 / 서쪽	south / north / east / west	남쪽에 있는 성이에요.<br>It's a castle in the south.	南 / 北 / 東 / 西 + 쪽 (side). Order in Korean: 동서남북.	cours::J15 회화 명사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+할 게 없다 / 볼 게 없다	there's nothing to do / to see	오사카에는 할 게 별로 없는 것 같아요.<br>I don't think there's much to do in Osaka.	할 것이 → 할 게. With 별로 it softens to 'not much'. 볼거리 = things to see: 볼거리가 많아요.	cours::J15 회화 표현	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+N에 따라 다르다	to depend on N	뭔지에 따라 달라요.<br>It depends on what it is.	Also with a question clause: 뭔지에 따라, 어디인지에 따라 (it depends on what / where).	cours::J15 회화 표현	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+콘텐츠	content (media)	한국 콘텐츠를 SNS에서 봤어요.<br>I watched Korean content on social media.	Media content; 내용 is the content of a text or a class.	cours::J15 회화 명사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+주제	topic, subject	앞으로는 더 어려운 주제에 대해서 얘기하면 좋을 것 같아요.<br>From now on it would be good to talk about harder topics.	主題.	cours::J15 회화 명사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+엔지니어	engineer	저는 엔지니어 공부를 하고 있어요.<br>I'm studying to be an engineer.	공학 = engineering (the field), 공학 대학원 = engineering school.	cours::J15 회화 직업	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+엄청	really, extremely	엄청 많이 늘었어요.<br>You've improved a huge amount.	Casual, stronger than 정말 or 아주.	cours::J15 회화 부사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+쓸모없다	to be useless	문법이 쓸모없어요?<br>Is grammar useless?	쓸모 (use) + 없다. Pronounced [쓸모업따]. Opposite: 쓸모 있다.	cours::J15 회화 형용사	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+N 말고	other than N, not N but	대전 말고 어디 어디 여행했어요?<br>Where else did you travel besides Daejeon?	말고 = apart from, instead of: 커피 말고 차 주세요 (tea, not coffee).	cours::J15 회화 문법	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+어디 어디	which places (expecting a list)	한국에서 어디 어디 여행했어요?<br>Which places did you travel to in Korea?	Repeating the question word asks for several answers: 뭐 뭐, 누구 누구.	cours::J15 회화 표현	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+포차	street food tent bar (pocha)	마지막에 포차의 분위기를 정말 좋아했어요.<br>At the end I really loved the pocha atmosphere.	Short for 포장마차: covered stalls serving drinks and snacks late at night.	cours::J15 회화 장소	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)
+그렇게 해요!	Let's do that!	가: 다음에 더 어려운 주제로 얘기할까요?<br>나: 그렇게 해요!	Agreeing to a suggestion. In 반말: 그렇게 해!	cours::J15 회화 표현	Coréen::Jihyeon::J15 · Free talk (-자마자, -는 동안)

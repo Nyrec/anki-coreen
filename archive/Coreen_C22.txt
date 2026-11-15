@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#deck:Coréen::C22
+#tags column:5
+닫다	to close	창문을 닫으세요.<br>Please close the window.	닫 + 아요 → 닫아요. 창문을 is pronounced [창무늘]. Opposite: 열다.	cours::C22 교재::L7 동사
+춥다	to be cold (weather)	날씨가 추워요. 창문을 닫으세요.<br>It's cold. Please close the window.	ㅂ irregular → 추워요. For objects and food it's 차갑다.	cours::C22 교재::L7 형용사
+많이	a lot, much	많이 드세요.<br>Help yourself — eat plenty.	The adverb of 많다. 많이 드세요 is what a host says at the table.	cours::C22 교재::L7 부사
+부터	from (a point in time)	9시부터 수업을 들어요.<br>I have class from 9 o'clock.	Pairs with 까지 (until): 9시부터 11시까지. For places, use 에서.	cours::C22 교재::L7 문법 조사
+에서	at, in (where an action happens)	영화관 앞에서 만나요.<br>Let's meet in front of the cinema.	Marks the place of an action, unlike 에 which marks a destination or a static location: 학교에 가요 vs 학교에서 공부해요.	cours::C22 교재::L7 문법 조사
+수업을 듣다	to take a class	9시부터 수업을 들어요.<br>I have class from 9.	Literally to listen to a class. 듣다 is ㄷ irregular → 들어요.	cours::C22 교재::L7 표현
+이번 주	this week	이번 주 토요일 11시예요.<br>It's this Saturday at 11.	이번 = this time. Also 이번 달, 이번 주말.	cours::C22 교재::L7 시간
+지난달	last month	지난달에 한국에 왔어요.<br>I came to Korea last month.	Written solid, unlike 다음 달 and 이번 달.	cours::C22 교재::L7 시간
+올해	this year	올해는 2026년이에요.<br>This year is 2026.	Also 이번 해. Last year: 작년 / 지난해.	cours::C22 교재::L7 시간
+작년	last year	작년에 왔어요.<br>I came last year.	昨年. Pronounced [장년].	cours::C22 교재::L7 시간
+일찍	early	일찍 오세요.<br>Come early.	Opposite: 늦게.	cours::C22 교재::L7 부사
+시작하다	to start, to begin	한국어 수업이 언제 시작해요?<br>When does the Korean class start?	始作. 끝나다 = to finish.	cours::C22 교재::L7 동사
+정말요?	Really?	정말요? 어느 영화관이에요?<br>Really? Which cinema?	Pronounced [정마료]. Interchangeable with 진짜요? in casual speech.	cours::C22 교재::L7 표현
+어느	which (of several)	어느 영화관이에요?<br>Which cinema is it?	Picks one from a known set; 무슨 asks what kind.	cours::C22 교재::L7 문법
+배우	actor	11시에 배우들이 영화관에 와요.<br>The actors come to the cinema at 11.	俳優. 영화배우 = film actor.	cours::C22 교재::L7 직업
+극장	theatre, cinema	시청 앞 미래 극장이에요.<br>It's the Mirae Theatre in front of city hall.	劇場. Older word than 영화관, kept in cinema names.	cours::C22 교재::L7 장소
+시청	city hall	시청 앞에서 만나요.<br>Let's meet in front of city hall.	市廳. A common meeting point and subway stop.	cours::C22 교재::L7 장소
+생일 파티	birthday party	금요일에 수잔 씨 생일 파티에 와요?<br>Are you coming to Susan's birthday party on Friday?		cours::C22 교재::L7 명사
+어린이날	Children's Day	오월 오일은 어린이날이에요.<br>The 5th of May is Children's Day.	어린이 (child) + 날 (day). A public holiday in Korea.	cours::C22 교재::L7 시간
+고르다	to choose, to pick	알맞은 것을 골라요.<br>Choose the right one.	르 irregular: 고르 + 아요 → 골라요, like 모르다 → 몰라요.	cours::C22 교재::L7 동사
+자전거	bicycle	공원에서 자전거를 타요.<br>I ride a bike in the park.	自轉車. The verb is 타다, like buses and trains.	cours::C22 교재::L8 명사
+공연장	concert hall, performance venue	공연장에 가요.<br>I'm going to the concert hall.	公演場. 공연 = a performance.	cours::C22 교재::L8 장소
+대사관	embassy	프랑스 대사관이 어디에 있어요?<br>Where is the French embassy?	大使館.	cours::C22 교재::L8 장소
+백화점	department store	백화점에서 옷을 사요.<br>I buy clothes at the department store.	百貨店 — literally hundred-goods store. Pronounced [배콰점].	cours::C22 교재::L8 장소
+시장	market	시장에서 과일을 사요.<br>I buy fruit at the market.	市場. The traditional market, as opposed to 마트 and 백화점.	cours::C22 교재::L8 장소
+조용히	quietly	여러분, 조용히 하세요.<br>Everyone, be quiet please.	From 조용하다 (to be quiet). 조용히 하세요 is the classroom instruction.	cours::C22 교재::L7 부사

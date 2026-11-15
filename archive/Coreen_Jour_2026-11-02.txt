@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+내키다	to feel like (doing), to be in the mood<br><i>avoir envie de, être d'humeur à</i>	오늘은 왠지 밖에 나갈 마음이 안 내켜요.<br>For some reason I don't feel like going out today.<br><i>Aujourd'hui, je n'ai pas trop envie de sortir, je ne sais pas pourquoi.</i>	[naekida] Mostly used negatively: 마음이 내키지 않다 / 내키지 않는 일 (something you're reluctant to do). 내키는 대로 = as one pleases.	quotidien::2026-11-02 동사 niveau::B1
+엉뚱하다	odd, off-the-wall, unexpected; irrelevant<br><i>farfelu, inattendu, à côté de la plaque</i>	그 친구는 가끔 엉뚱한 질문을 해요.<br>That friend sometimes asks off-the-wall questions.<br><i>Cet ami pose parfois des questions farfelues.</i>	[eongttunghada] Can be quirky (엉뚱한 매력) or simply wrong: 엉뚱한 곳 = the wrong place, 엉뚱한 사람 = the wrong person.	quotidien::2026-11-02 형용사 niveau::B1
+웬만하면	if at all possible, unless there's a good reason<br><i>si possible, sauf empêchement</i>	웬만하면 내일 아침 일찍 출발해요.<br>If at all possible, let's leave early tomorrow morning.<br><i>Si possible, partons tôt demain matin.</i>	[wenmanhamyeon] From 웬만하다 (fair, tolerable). Softens requests and advice; also 웬만한 + noun = most/average (웬만한 사람 = most people).	quotidien::2026-11-02 부사 niveau::B1
+엄살	making a fuss, exaggerating pain or hardship<br><i>comédie, faire semblant de souffrir, chochoterie</i>	조금 아픈 걸로 엄살 부리지 마세요.<br>Don't make such a fuss over a little pain.<br><i>Ne fais pas tout un drame pour une petite douleur.</i>	[eomsal] Used with 부리다 or 떨다: 엄살을 부리다 / 엄살을 떨다. 엄살쟁이 = a crybaby, someone who always exaggerates.	quotidien::2026-11-02 명사 niveau::B2
+시치미를 떼다	to feign ignorance, to play innocent<br><i>faire l'innocent, jouer les ignorants</i>	다 알면서 시치미 떼지 마세요.<br>Don't play dumb, you know everything.<br><i>Ne fais pas l'innocent, tu sais tout.</i>	[sichimireul ttaeda] 시치미 was a falconer's name tag on a hawk; removing it (떼다) hid ownership. Often 시치미를 뚝 떼다 for emphasis.	quotidien::2026-11-02 표현 niveau::B2

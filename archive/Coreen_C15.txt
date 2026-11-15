@@ -1,0 +1,26 @@
+#separator:tab
+#html:true
+#deck:Coréen::C15
+#tags column:5
+여보세요?	Hello? (on the phone)	여보세요? 네, 안나 씨.<br>Hello? Yes, Anna.	Only used on the phone — never face to face.	cours::C15 교재::L4 표현
+혹시	by any chance	혹시 제 방 책상 위에 지갑이 있어요?<br>Is my wallet on my desk, by any chance?	Softens a question or a request; very frequent in polite speech.	cours::C15 교재::L4 부사
+잠깐만요	Just a moment	잠깐만요. 음…<br>Hang on a second. Hmm…	잠시만요 is the slightly more formal twin. Also used to mean 'excuse me, let me through'.	cours::C15 교재::L4 표현
+다행이에요	What a relief	휴, 정말 다행이에요.<br>Phew, what a relief.	다행 = good fortune. Said when something turned out fine after a worry.	cours::C15 교재::L4 표현
+룸메이트	roommate	안나 씨가 룸메이트에게 전화해요.<br>Anna is calling her roommate.		cours::C15 교재::L4 사람
+노트북	laptop	노트북이 모자하고 필통 사이에 있어요.<br>The laptop is between the cap and the pencil case.	A laptop, not a notebook — 공책 is the paper one.	cours::C15 교재::L4 명사
+와/과	and (joining nouns, written style)	침대와 책상과 의자가 있어요.<br>There's a bed, a desk and a chair.	와 after a vowel, 과 after a consonant. Same job as 하고, but written and more formal.	cours::C15 교재::L4 문법 조사
+나가다	to go out (from inside)	제가 밖으로 나갈게요.<br>I'll come out.	나 (out) + 가다. Its pair is 들어가다 (to go in).	cours::C15 교재::L4 동사
+들어가다	to go in, to enter	지하철역 안으로 들어가요.<br>I'm going into the station.	들어 (entering) + 가다. 들어오다 = to come in.	cours::C15 교재::L4 동사
+(으)로	direction particle: towards	밖으로 나갈게요.<br>I'll head outside.	로 after a vowel or ㄹ, 으로 after any other consonant. Marks the direction of movement, where 에 marks the destination.	cours::C15 교재::L4 문법 조사
+-(으)ㄹ게요	I'll … (speaker's intention)	제가 밖으로 나갈게요.<br>I'll go outside then.	First person only, and implies the decision is made in response to the other person. Not used for facts about others.	cours::C15 교재::L4 문법
+주스	juice	우유가 주스 위에 있어요.<br>The milk is above the juice.		cours::C15 교재::L5 음식
+사과	apple	사과 두 개 주세요.<br>Two apples, please.	Homonym of 사과 (謝過, apology) — 사과하다 = to apologise.	cours::C15 교재::L5 음식
+딸기	strawberry	딸기 우유가 맛있어요.<br>Strawberry milk is delicious.		cours::C15 교재::L5 음식
+칫솔	toothbrush	칫솔이 치약 옆에 있어요.<br>The toothbrush is next to the toothpaste.	Pronounced [치쏠]. 이 (tooth) + 솔 (brush).	cours::C15 교재::L5 명사
+치약	toothpaste	치약이에요.<br>It's toothpaste.	齒藥 — tooth + medicine.	cours::C15 교재::L5 명사
+비누	soap	비누 아래에 수건이 있어요.<br>The towels are under the soap.		cours::C15 교재::L5 명사
+수건	towel	수건이 있어요?<br>Do you have towels?	手巾. 타월 is also used.	cours::C15 교재::L5 명사
+뭘 드릴까요?	What can I get you?	가: 뭘 드릴까요?<br>나: 우유하고 라면 주세요.	뭘 = 무엇을 contracted. 드리다 is the humble form of 주다, so the shopkeeper says it, not the customer.	cours::C15 교재::L5 표현
+오빠	older brother (used by a woman)	제 언니하고 오빠예요.<br>They're my older sister and brother.	A man says 형 instead. The female pair is 언니 / 누나.	cours::C15 교재::L5 사람
+남동생	younger brother	남동생하고 저예요.<br>It's my younger brother and me.	남 (male) + 동생. 여동생 = younger sister; 동생 alone doesn't specify.	cours::C15 교재::L5 사람
+열심히	hard, diligently	열심히 공부해요.<br>I study hard.	Pronounced [열씨미]. Pairs with work and study verbs: 열심히 일해요.	cours::C15 교재::L5 부사

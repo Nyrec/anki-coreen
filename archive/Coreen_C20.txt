@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::C20
+#tags column:5
+에 (시간)	at, on (time particle)	4월 21일에 가요.<br>I'm going on 21 April.	Attaches to a time word to say when something happens: 아침 8시에, 토요일에, 주말에. Never used with 오늘, 내일, 어제, 지금 — those take no particle.	cours::C20 교재::L7 문법 조사
+지난 / 이번 / 다음	last / this / next (time periods)	지난주, 이번 주, 다음 주<br>last week, this week, next week	Combine with 주, 달, 해: 지난달, 이번 달, 다음 달. 저번 is a spoken synonym of 지난. For years there are single words too: 작년, 올해, 내년.	cours::C20 교재::L7 시간
+주	week	다음 주 금요일에 와요.<br>I'm coming back next Friday.	週. The full set of time units: 년 (year), 월 (month), 주 (week), 일 (day).	cours::C20 교재::L7 시간
+그제	the day before yesterday	그제는 시월 십칠일이에요.<br>The day before yesterday was 17 October.	Also 그저께. Its counterpart is 모레 (the day after tomorrow).	cours::C20 교재::L7 시간
+초	second (of time)	십 초예요.<br>It's ten seconds.	秒. Sino numbers, like 분. The full sequence: 시 (native) 분 초 (Sino).	cours::C20 교재::L7 단위
+여행	travel, trip	3월 4일에 여행을 가요.<br>I'm going on a trip on 4 March.	旅行. 여행을 가다 = to go on a trip; 여행하다 = to travel.	cours::C20 교재::L7 명사
+보통	usually, normally	보통 여섯 시 반에 일어나요.<br>I usually get up at half past six.	普通. As a noun it also means 'average, ordinary'.	cours::C20 교재::L7 부사
+시험	exam, test	평일에 시험을 봐요.<br>I take an exam on a weekday.	試驗. The verb is 보다: 시험을 봐요, like 사진을 찍다 — the pairing is fixed.	cours::C20 교재::L7 명사
+축제	festival	축제에 가요.<br>I'm going to the festival.	祝祭. University campus festivals in May are a big deal in Korea.	cours::C20 교재::L7 명사
+해	year (native word)	올해는 2026년이에요.<br>This year is 2026.	Pairs with 지난/이번/다음: 지난해, 이번 해, 다음 해. 년 is the Sino counter used after a number: 2026년.	cours::C20 교재::L7 시간
+달	month (duration)	다음 달에 음식 축제를 해요.<br>There's a food festival next month.	달 is a month as a span of time; 월 names the month (시월). 달 also means moon.	cours::C20 교재::L7 시간
+날	day	무슨 날이에요?<br>What day is it?	The native word for a day. 일 is the Sino counter used in dates (십오일), and 어린이날 shows 날 in a compound.	cours::C20 교재::L7 시간
+요일	day of the week	오늘이 무슨 요일이에요?<br>What day of the week is it today?	曜日. 며칠 asks the date, 요일 asks the weekday — the two questions are not interchangeable.	cours::C20 교재::L7 시간
+저번	last, previous (spoken)	저번 주에 만났어요.<br>We met last week.	Spoken synonym of 지난: 저번 주, 저번 달. 지난 is the safer written form.	cours::C20 교재::L7 시간

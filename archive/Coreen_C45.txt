@@ -1,0 +1,16 @@
+#separator:tab
+#html:true
+#deck:Coréen::C45
+#tags column:5
+-는데요	softening ending (statement or lead-in)	저는 메이라고 하는데요.<br>This is Mei speaking…	Leaves the sentence open so the other person can respond. Very common on the phone: 예약을 하고 싶은데요.	cours::C45 교재2::L7 문법
+-라고 하다	to be called, to say that	저는 케빈이라고 합니다.<br>My name is Kevin.	이라고 after a consonant. Used to introduce yourself on the phone or to report someone's words.	cours::C45 교재2::L7 문법
+잘못	wrongly, by mistake	전화 잘못 거셨어요.<br>You've dialled the wrong number.	Written solid as an adverb. 잘 못 (with a space) means 'not well'.	cours::C45 교재2::L7 부사
+연락처	contact details	성함하고 연락처를 알려 주세요.<br>Please give me your name and contact number.	連絡處. Pronounced [열락처].	cours::C45 교재2::L7 명사
+주소	address	주소를 말씀해 주세요.<br>Please tell me the address.	住所.	cours::C45 교재2::L7 명사
+불이 나다	to catch fire	옆집에 불이 났어요.<br>The house next door is on fire.	불 (fire) + 나다.	cours::C45 교재2::L7 표현
+신분증	ID card	시청에서 신분증을 받았어요.<br>I got my ID card at city hall.	身分證.	cours::C45 교재2::L7 명사
+벌다	to earn	돈을 많이 벌면 뭐 할 거예요?<br>What will you do if you earn a lot?	ㄹ stem: 벌면, never 벌으면.	cours::C45 교재2::L7 동사
+천천히	slowly, take your time	천천히 오세요.<br>Take your time getting here.	Opposite: 빨리.	cours::C45 교재2::L7 부사
+자리	seat, place	자리가 있어요?<br>Is there a seat available?		cours::C45 교재2::L7 명사
+선배	senior (at school or work)	선배하고 같이 갔어요.<br>I went with a senior.	先輩. 후배 = junior.	cours::C45 교재2::L7 사람
+똑바로	straight, upright	똑바로 앉으세요.<br>Sit up straight.	Also 'go straight ahead'.	cours::C45 교재2::L7 부사

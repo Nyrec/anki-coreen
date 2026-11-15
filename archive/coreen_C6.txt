@@ -1,0 +1,27 @@
+#separator:tab
+#html:true
+#tags column:5
+은/는	topic particle	저는 대학생이에요.<br>I'm a university student.	Marks the topic of the sentence: 은 after a consonant, 는 after a vowel. Often dropped in casual speech — the textbook puts it in brackets for that reason.	cours::C6 교재::L1 문법
+주부	homemaker	이 사람은 주부예요.<br>This person is a homemaker.	主婦. 전업주부 specifies full-time.	cours::C6 교재::L1 직업
+대학생	university student	저는 대학생이에요.<br>I'm a university student.	대학 (university) + 생 (student). 고등학생, 중학생 follow the same pattern.	cours::C6 교재::L1 직업
+간호사	nurse	아니요, 간호사예요.<br>No, she's a nurse.	看護師. Shares the 사 professional suffix with 의사 and 요리사.	cours::C6 교재::L1 직업
+기자	reporter / journalist	이 사람은 기자예요?<br>Is this person a journalist?	記者: record + person.	cours::C6 교재::L1 직업
+은행원	bank teller	은행원이에요.<br>He's a bank teller.	은행 (bank) + 원 (worker) — the same 원 as in 회사원.	cours::C6 교재::L1 직업
+소방관	firefighter	이 사람은 소방관이에요.<br>This person is a firefighter.	消防官: extinguish + prevent + official.	cours::C6 교재::L1 직업
+회사	company	회사에 가요.<br>I'm going to the office.	會社. 회사원 = someone who works at one.	cours::C6 교재::L1 명사
+은행	bank	은행에서 일해요.<br>I work at a bank.	Homograph: 은행 also means "ginkgo" — 은행잎, 은행나무.	cours::C6 교재::L1 동음이의어
+이 사람	this person	이 사람은 누구예요?<br>Who is this person?	이 (this) + 사람. Contrast 저 사람 (that person, over there).	cours::C6 교재::L1 표현
+이 / 그 / 저	this / that / that over there	이 가방, 그 가방, 저 가방<br>this bag, that bag, that bag over there	Three-way distinction: 이 near the speaker, 그 near the listener, 저 far from both.	cours::C6 교재::L1 문법
+것	thing	이것은 제 가방이에요.<br>This is my bag.	Combines with 이/그/저 to give 이것, 그것, 저것.	cours::C6 교재::L1 명사
+이건	this is (contracted)	이건 뭐예요?<br>What is this?	Short form of 이것은. Same for 그것은 → 그건, 저것은 → 저건. Standard in speech.	cours::C6 교재::L1 문법
+무슨 일을 해요?	What do you do for work?	가: 무슨 일을 해요? 나: 은행원이에요.<br>A: What do you do? B: I'm a bank teller.	Less formal than 직업이 뭐예요. Honorific version: 무슨 일 하세요?	cours::C6 교재::L1 표현
+무슨	what kind of	무슨 일을 해요?<br>What work do you do?	무슨 asks what kind; 어느 asks which one of a known set.	cours::C6 교재::L1 문법
+일	work	일이 많아요.<br>I have a lot of work.	Homograph: 일 also means "one" and "day" (일요일).	cours::C6 교재::L1 동음이의어
+하다	to do	운동을 해요.<br>I exercise.	Present 해요, irregular. Attaches to countless nouns: 공부하다, 전화하다, 운동하다.	cours::C6 교재::L1 동사
+을/를	object particle	일을 해요.<br>I do work.	을 after a consonant, 를 after a vowel. Marks the direct object.	cours::C6 교재::L1 문법
+동생	younger sibling	제 동생은 대학생이에요.<br>My younger sibling is at university.	Gender-neutral. Specify with 남동생 (brother) or 여동생 (sister).	cours::C6 교재::L1 가족
+반 친구	classmate	이 사람은 우리 반 친구예요.<br>This is my classmate.	반 (class) + 친구 (friend).	cours::C6 교재::L1 명사
+그리고	and	저는 대학생이에요. 그리고 이 사람은 제 친구예요.<br>I'm a student. And this is my friend.	Links two sentences. To link two nouns, use 하고 or 와/과.	cours::C6 교재::L1 표현
+프랑스어	French (language)	프랑스어 책이에요.<br>It's a French book.	Country + 어 gives the language: 중국어, 스페인어, 한국어. But English is 영어, not *영국어.	cours::C6 교재::L1 언어
+일본	Japan	유카 씨는 일본 사람이에요.<br>Yuka is Japanese.	日本. Language: 일본어.	cours::C6 교재::L1 나라
+국적	nationality	국적이 어떻게 되세요?<br>What's your nationality?	國籍. The form on documents; in speech people ask 어느 나라 사람이에요.	cours::C6 교재::L1 명사

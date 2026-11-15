@@ -1,0 +1,34 @@
+#separator:tab
+#html:true
+#deck:Coréen::C14
+#tags column:5
+의	possessive particle: 's, of	다니엘 씨의 책이에요.<br>It's Daniel's book.	N1의 N2 = N2 belonging to N1. Pronounced [에] in this use, and very often dropped in speech: 다니엘 씨 책.	cours::C14 교재::L4 문법 조사
+A하고 B 사이	between A and B	마이클 씨는 제니하고 헨리 사이에 있어요.<br>Michael is between Jenny and Henry.	사이 behaves like the other position words: N + 사이 + 에.	cours::C14 교재::L4 위치
+이건	this, this thing	이건 누구 책이에요?<br>Whose book is this?	Contraction of 이것은. 이것 = this thing, + 은 topic particle.	cours::C14 교재::L4 문법
+누구	who	저 사람은 누구예요?<br>Who is that person?	누구 + 가 contracts to 누가 as a subject. Possessive: 누구 책 = whose book.	cours::C14 교재::L4 문법
+-들	plural suffix	아이들의 생각을 몰라요.<br>I don't know what children think.	Optional in Korean: 아이 can already mean children from context. Used when plurality matters.	cours::C14 교재::L4 문법
+분	person (polite)	저 분은 누구예요?<br>Who is that person?	The respectful counterpart of 사람 — use it for strangers, elders and customers.	cours::C14 교재::L4 사람
+귀엽다	to be cute	아이의 얼굴이 귀여워요.<br>The child's face is cute.	ㅂ irregular: 귀엽 + 어요 → 귀여워요.	cours::C14 교재::L4 형용사
+멋있다	to be cool, stylish	휴대폰의 디자인이 멋있어요.<br>The phone's design is stylish.	멋 (style) + 있다. Opposite: 멋없다.	cours::C14 교재::L4 형용사
+작다	to be small	안나 씨의 가방이 작아요.<br>Anna's bag is small.	Don't confuse with 적다 (to be few in number).	cours::C14 교재::L4 형용사
+모르다	to not know	아이들의 생각을 몰라요.<br>I don't know what children think.	르 irregular: the 르 doubles the ㄹ → 몰라요. Opposite of 알다 → 알아요.	cours::C14 교재::L4 동사
+세수하다	to wash one's face	욕실에서 세수해요.<br>I wash my face in the bathroom.	洗手 + 하다. For a full shower it's 샤워하다.	cours::C14 교재::L4 동사
+정말	really, very	정말 맛있어요.<br>It's really delicious.	아주 and 매우 are close synonyms; 매우 is more written.	cours::C14 교재::L4 부사
+음식	food, dish	이 식당의 음식은 어때요?<br>How is this restaurant's food?	飮食.	cours::C14 교재::L4 음식
+생일	birthday	오늘은 제 생일이에요.<br>Today is my birthday.	生日.	cours::C14 교재::L4 명사
+얼굴	face	아이의 얼굴이 귀여워요.<br>The child's face is cute.		cours::C14 교재::L4 명사
+노래	song	이 가수의 노래가 정말 좋아요.<br>This singer's songs are really good.	노래하다 = to sing.	cours::C14 교재::L4 명사
+고향	hometown	다니엘의 고향은 런던이에요.<br>Daniel's hometown is London.	故鄕.	cours::C14 교재::L4 명사
+사진	photo	마크의 사진이에요.<br>It's Mark's photo.	寫眞. 사진을 찍다 = to take a photo.	cours::C14 교재::L4 명사
+열쇠	key	제 열쇠예요.<br>It's my key.	키 is also used for card keys.	cours::C14 교재::L4 명사
+돈	money	지갑 안에 돈이 있어요.<br>There's money in the wallet.		cours::C14 교재::L4 명사
+생각	thought, idea	아이들의 생각을 몰라요.<br>I don't know children's thoughts.	생각하다 = to think.	cours::C14 교재::L4 명사
+디자인	design	휴대폰의 디자인이 멋있어요.<br>The phone's design is nice.		cours::C14 교재::L4 명사
+언니	older sister (used by a woman)	언니의 옷이에요.<br>It's my older sister's clothes.	A woman says 언니; a man says 누나. 옷이 is pronounced [오시].	cours::C14 교재::L4 사람
+컵	cup	컵이 탁자 위에 있어요.<br>The cup is on the table.		cours::C14 교재::L4 명사
+욕실	bathroom	욕실에서 세수해요.<br>I wash my face in the bathroom.	浴室 — the room with the bath. 화장실 is the toilet.	cours::C14 교재::L4 집
+침실	bedroom	침실에 침대가 있어요.<br>There's a bed in the bedroom.	寢室. In everyday speech Koreans just say 방.	cours::C14 교재::L4 집
+벽	wall	텔레비전은 벽에 있어요.<br>The television is on the wall.	壁.	cours::C14 교재::L4 집
+화분	plant pot, potted plant	화분은 책상 옆에 있어요.<br>The plant is next to the desk.	花盆.	cours::C14 교재::L4 집
+조명	lighting, lamp	조명은 소파 뒤에 있어요.<br>The lamp is behind the sofa.	照明. A standing lamp is 스탠드.	cours::C14 교재::L4 집
+저 분은 누구예요?	Who is that person? (polite)	가: 저 분은 누구예요?<br>나: 메이 씨의 선생님이에요.	저 = that (over there). Use 분 rather than 사람 when asking about someone you don't know.	cours::C14 교재::L4 표현

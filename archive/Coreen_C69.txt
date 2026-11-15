@@ -1,0 +1,12 @@
+#separator:tab
+#html:true
+#deck:Coréen::C69
+#tags column:5
+-기 위해(서)	in order to	유학을 가기 위해서 한국어를 공부해요.<br>I study Korean in order to go abroad.	Verb stem + 기 위해서. With a noun: N을/를 위해서 — 가족을 위해서 요리해요.	cours::C69 교재2::L14 문법
+-(으)려면	if you want to	자신감을 얻으려면 더 자주 말해야 해요.<br>If you want confidence, you have to speak more often.	Contraction of -으려고 하면. Sets up advice.	cours::C69 교재2::L14 문법
+실력이 늘다	one's skills improve	한국어 실력이 늘었네요.<br>Your Korean has really come along.	Also 실력이 좋아지다.	cours::C69 교재2::L14 표현
+검색하다	to search (online)	여러 웹 사이트를 검색해 봤어요.<br>I searched several websites.	檢索.	cours::C69 교재2::L14 동사
+환경	environment	환경을 보호하기 위해서예요.<br>It's to protect the environment.	環境.	cours::C69 교재2::L14 명사
+보호하다	to protect	환경을 보호해요.<br>We protect the environment.	保護.	cours::C69 교재2::L14 동사
+물건	item, goods	물건을 싸게 사고 싶어요.<br>I want to buy things cheaply.	物件.	cours::C69 교재2::L14 명사
+얻다	to obtain, to gain	자신감을 얻었어요.<br>I gained confidence.	Pronounced [얻따].	cours::C69 교재2::L14 동사

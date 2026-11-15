@@ -1,0 +1,39 @@
+#separator:tab
+#html:true
+#deck:Coréen::C39
+#tags column:5
+으로/로 (수단)	by, with (means or tool)	버스로 가요.<br>I go by bus.	Consonant → 으로, vowel or ㄹ → 로. Covers transport (지하철로), tools (젓가락으로), and languages (한국어로).	cours::C39 교재2::L3 문법 조사
+에서 ~ 까지	from … to … (place)	집에서 회사까지 2시간 걸려요.<br>It takes two hours from home to the office.	에서 marks the starting place. For times, use 부터: 12시부터 1시까지.	cours::C39 교재2::L3 문법
+걸리다	to take (time)	30분쯤 걸려요.<br>It takes about 30 minutes.	시간이 얼마나 걸려요? = how long does it take?	cours::C39 교재2::L3 동사
+얼마나	how much, how long	시간이 얼마나 걸려요?<br>How long does it take?	얼마 + 나.	cours::C39 교재2::L3 문법
+고속버스	express coach	고속버스로 갈 거예요.<br>I'll take the express coach.	高速버스. Between cities.	cours::C39 교재2::L3 명사
+자동차	car	자동차로 가요.<br>I go by car.	自動車. 차 for short.	cours::C39 교재2::L3 명사
+오토바이	motorcycle	오토바이를 타고 다녀요.<br>I commute by motorbike.	From 'auto-bi'.	cours::C39 교재2::L3 명사
+배 (교통)	ship, boat	배로 가요.<br>I go by boat.	Same spelling as 배 (stomach, pear).	cours::C39 교재2::L3 명사
+갈아타다	to change, to transfer	시청역에서 2호선으로 갈아타세요.<br>Change to line 2 at City Hall station.	갈다 (to swap) + 타다.	cours::C39 교재2::L3 동사
+걸어서 가다	to go on foot	멀지 않아서 걸어서 왔어요.<br>It wasn't far so I came on foot.	걷다 → 걸어서. 도보로 is the formal version.	cours::C39 교재2::L3 표현
+횡단보도	pedestrian crossing	횡단보도를 건너세요.<br>Cross at the crossing.	橫斷步道.	cours::C39 교재2::L3 명사
+계단	stairs	계단으로 갈까요?<br>Shall we take the stairs?	階段.	cours::C39 교재2::L3 명사
+엘리베이터	lift, elevator	엘리베이터를 타세요.<br>Take the lift.	승강기 is the formal word.	cours::C39 교재2::L3 명사
+에스컬레이터	escalator	에스컬레이터를 탔어요.<br>I took the escalator.		cours::C39 교재2::L3 명사
+올라가다	to go up	계단으로 올라가요.<br>I go up the stairs.	올라 + 가다. Opposite: 내려가다.	cours::C39 교재2::L3 동사
+호선	subway line number	1호선을 타세요.<br>Take line 1.	號線. 2호선 = line 2.	cours::C39 교재2::L3 명사
+숟가락	spoon	국은 숟가락으로 먹어요.<br>You eat soup with a spoon.	젓가락 = chopsticks.	cours::C39 교재2::L3 명사
+젓가락	chopsticks	젓가락으로 라면을 먹어요.<br>I eat ramyeon with chopsticks.	Pronounced [저까락].	cours::C39 교재2::L3 명사
+한국말	Korean (spoken language)	그건 한국말로 뭐예요?<br>What's that in Korean?	말 is the native word for language; 한국어 is the Sino-Korean one.	cours::C39 교재2::L3 명사
+실례합니다	Excuse me	저, 실례합니다.<br>Excuse me, please.	失禮. Used to approach a stranger.	cours::C39 교재2::L3 표현
+사거리	crossroads, intersection	저 사거리에서 오른쪽으로 가세요.<br>Turn right at that intersection.	四거리 — four ways.	cours::C39 교재2::L3 장소
+점심시간	lunch break	점심시간은 12시부터 1시까지예요.<br>Lunch is from 12 to 1.		cours::C39 교재2::L3 시간
+모범택시	deluxe taxi	모범택시는 요금이 비싸요.<br>Deluxe taxis are expensive.	模範. Black with a gold stripe.	cours::C39 교재2::L3 명사
+시내버스	city bus	시내버스를 타요.<br>I take the city bus.	市內버스. 시외버스 = intercity, 마을버스 = local shuttle.	cours::C39 교재2::L3 명사
+요금	fare, charge	요금이 얼마예요?<br>How much is the fare?	料金.	cours::C39 교재2::L3 명사
+끓이다	to boil	냄비에 물을 넣고 끓입니다.<br>Put water in the pot and boil it.	끓다 = to boil by itself; 끓이다 = to boil something.	cours::C39 교재2::L3 동사
+냄비	pot, saucepan	냄비에 물을 넣어요.<br>I put water in the pot.		cours::C39 교재2::L3 명사
+볶다	to stir-fry	미역과 홍합을 볶습니다.<br>Stir-fry the seaweed and mussels.	Pronounced [복따]. 볶음밥 = fried rice.	cours::C39 교재2::L3 동사
+섞다	to mix	밀가루를 섞어요.<br>I mix in the flour.	Pronounced [석따].	cours::C39 교재2::L3 동사
+썰다	to slice, to chop	고추를 썰어요.<br>I chop the chilli.	ㄹ stem → 썰어요.	cours::C39 교재2::L3 동사
+양념	seasoning, sauce	고추장 양념을 만들어요.<br>I make a gochujang sauce.	藥念.	cours::C39 교재2::L3 음식
+고추장	gochujang (chilli paste)	고추장을 좀 넣었어요.<br>I added some gochujang.	고추 (chilli) + 장 (paste). 된장 = soybean paste.	cours::C39 교재2::L3 음식
+간장	soy sauce	간장을 넣고 끓입니다.<br>Add soy sauce and boil.		cours::C39 교재2::L3 음식
+참기름	sesame oil	냄비에 참기름을 넣어요.<br>I put sesame oil in the pot.	참깨 (sesame) + 기름 (oil).	cours::C39 교재2::L3 음식
+떡	rice cake	떡과 채소를 넣어요.<br>Add rice cake and vegetables.	The base of 떡볶이.	cours::C39 교재2::L3 음식

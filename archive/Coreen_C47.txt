@@ -1,0 +1,11 @@
+#separator:tab
+#html:true
+#deck:Coréen::C47
+#tags column:5
+-고 vs -아서/-어서	sequence vs cause	집에 가서 숙제를 했어요.<br>문을 열고 들어오세요.	-고 just lists actions in order and allows two different subjects. -아서/-어서 requires the same subject and implies the first action leads to or enables the second: 친구를 만나서 영화를 봤어요 (met, then watched with them).	cours::C47 교재2::L3 문법
+당황하다	to be flustered, panicked	지갑을 잃어버려서 많이 당황했어요.<br>I lost my wallet and was really flustered.	唐慌.	cours::C47 교재2::L3 동사
+매번	every time	매번 늦어요.<br>He's late every time.	每番. Also 매일, 매달, 매년.	cours::C47 교재2::L3 시간
+수저	spoon and chopsticks (set)	수저를 놓아 주세요.<br>Please set the cutlery.	숟가락 + 젓가락.	cours::C47 교재2::L3 명사
+땅	ground, land	땅 위로 다녀요.<br>It runs above ground.		cours::C47 교재2::L3 명사
+경복궁	Gyeongbokgung Palace	경복궁을 구경했어요.<br>I visited Gyeongbokgung.	景福宮. The main palace in Seoul.	cours::C47 교재2::L3 장소
+끝내다	to finish (something)	숙제를 끝내고 텔레비전을 봤어요.<br>I finished my homework and watched TV.	The transitive twin of 끝나다.	cours::C47 교재2::L3 동사

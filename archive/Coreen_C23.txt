@@ -1,0 +1,33 @@
+#separator:tab
+#html:true
+#deck:Coréen::C23
+#tags column:5
+-았어요/-었어요/-였어요	past tense ending	주말에 뭐 했어요?<br>What did you do at the weekend?	Same vowel rule as the present: ㅏ/ㅗ → -았어요, other vowels → -었어요, 하다 → 했어요. 가다 → 갔어요, 먹다 → 먹었어요, 운동하다 → 운동했어요.	cours::C23 교재::L8 문법
+거기	there, that place	거기에서 뭐 해요?<br>What do you do there?	The set is 여기 (here), 거기 (there, near you), 저기 (over there).	cours::C23 교재::L8 명사
+꽃집	flower shop	편의점이 세종학당하고 꽃집 사이에 있어요.<br>The convenience store is between the Sejong Institute and the flower shop.	꽃 + 집, like 빵집. Also 꽃 가게.	cours::C23 교재::L8 장소
+미술관	art gallery	미술관에서 전시를 봐요.<br>I see an exhibition at the gallery.	美術館. 미술 = art + 관 = hall.	cours::C23 교재::L8 장소
+박물관	museum	박물관에 가요.<br>I'm going to the museum.	博物館. 미술관 is for art, 박물관 for history and objects.	cours::C23 교재::L8 장소
+미용실	hair salon	미용실에서 머리를 잘라요.<br>I get my hair cut at the salon.	美容室. 머리를 자르다 = to have a haircut.	cours::C23 교재::L8 장소
+운동장	sports ground, track	운동장에서 농구를 해요.<br>I play basketball on the sports ground.	運動場 — the outdoor field of a school.	cours::C23 교재::L8 장소
+체육관	gymnasium	체육관에서 농구해요.<br>I play basketball in the gym.	體育館 — a school or public sports hall, unlike 헬스장 (fitness club).	cours::C23 교재::L8 장소
+우체국	post office	우체국에서 편지를 보내요.<br>I send a letter at the post office.	郵遞局.	cours::C23 교재::L8 장소
+요리하다	to cook	집에서 요리해요.<br>I cook at home.	料理. 요리 also means a dish.	cours::C23 교재::L8 동사
+배우다	to learn	세종학당에서 한국어를 배워요.<br>I learn Korean at the Sejong Institute.	배우 + 어요 → 배워요. Not to be confused with 배우 (actor).	cours::C23 교재::L8 동사
+받다	to receive, to get	병원에서 치료를 받아요.<br>I get treatment at the hospital.	받 + 아요 → 받아요. Also 선물을 받다, 전화를 받다.	cours::C23 교재::L8 동사
+신청하다	to apply for	대사관에서 비자를 신청해요.<br>I apply for a visa at the embassy.	申請.	cours::C23 교재::L8 동사
+빨래하다	to do the laundry	집에서 빨래해요.<br>I do the laundry at home.	빨래 = washing. 세탁하다 is the formal equivalent.	cours::C23 교재::L8 동사
+걷다	to walk	공원에서 걸어요.<br>I walk in the park.	ㄷ irregular: 걷 + 어요 → 걸어요, like 듣다 → 들어요. Past: 걸었어요.	cours::C23 교재::L8 동사
+주다	to give	친구가 꽃을 주었어요.<br>My friend gave me flowers.	주 + 어요 → 줘요, contracted from 주어요. Past: 줬어요 / 주었어요.	cours::C23 교재::L8 동사
+어울리다	to suit, to go well with	그 옷 정말 잘 어울려요.<br>Those clothes really suit you.	잘 어울려요 is a standard compliment on clothes.	cours::C23 교재::L8 동사
+심심하다	to be bored	주말에 심심했어요.<br>I was bored at the weekend.	Describes the person who is bored; 재미없다 describes the boring thing.	cours::C23 교재::L8 형용사
+복잡하다	to be complicated, crowded	시장이 복잡해요.<br>The market is crowded.	複雜. Used for both crowded places and complicated matters.	cours::C23 교재::L8 형용사
+간단하다	to be simple	요리가 간단해요.<br>The dish is simple.	簡單.	cours::C23 교재::L8 형용사
+다르다	to be different	이 옷은 달라요.<br>These clothes are different.	르 irregular → 달라요, past 달랐어요. Like 모르다 → 몰라요.	cours::C23 교재::L8 형용사
+공연	performance, concert	공연장에서 공연을 봤어요.<br>I saw a concert at the venue.	公演. 공연하다 = to perform.	cours::C23 교재::L8 명사
+전시	exhibition	미술관에서 전시를 봐요.<br>I'm seeing an exhibition at the gallery.	展示. 전시회 = exhibition event.	cours::C23 교재::L8 명사
+치료	treatment	병원에서 치료를 받아요.<br>I get treatment at the hospital.	治療. The verb is 받다, not 하다.	cours::C23 교재::L8 명사
+숙제	homework	커피숍에서 숙제를 해요.<br>I do my homework at the coffee shop.	宿題.	cours::C23 교재::L8 명사
+낮잠	nap	낮잠을 자요.<br>I take a nap.	낮 (daytime) + 잠 (sleep).	cours::C23 교재::L8 명사
+집안일	housework, chores	집안일을 해요.<br>I do the housework.	집 + 안 + 일. Pronounced [지반닐].	cours::C23 교재::L8 명사
+비자	visa	비자 신청을 해요.<br>I'm applying for a visa.		cours::C23 교재::L8 명사
+머리	head; hair	미용실에서 머리를 잘라요.<br>I get my hair cut at the salon.	머리카락 is a strand of hair specifically; 머리 covers both head and hair.	cours::C23 교재::L8 명사

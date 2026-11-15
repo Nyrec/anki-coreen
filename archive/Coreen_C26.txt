@@ -1,0 +1,18 @@
+#separator:tab
+#html:true
+#deck:Coréen::C26
+#tags column:5
+-(으)러 가다	to go in order to do	축구하러 가요.<br>I'm going to play football.	Verb stem + -(으)러 + 가다/오다. States the purpose of the trip: 밥 먹으러 가요.	cours::C26 교재::L9 문법
+-기	noun-making ending	제 취미는 한국 드라마 보기예요.<br>My hobby is watching Korean dramas.	Verb stem + 기 turns it into a noun: 보다 → 보기, 읽다 → 읽기, 말하다 → 말하기.	cours::C26 교재::L9 문법
+-는 것	the act of doing (noun form)	야구 보는 것을 좋아해요.<br>I like watching baseball.	Verb stem + 는 것. Close to -기; -는 것 is more common in speech.	cours::C26 교재::L9 문법
+더	more	저는 3시가 더 좋아요.<br>Three o'clock suits me better.	더 좋다 = better, 더 많이 = more.	cours::C26 교재::L9 부사
+한번	once, sometime	언제 한번 같이 가요.<br>Let's go together sometime.	Written solid it means 'sometime'; 한 번 with a space means literally one time.	cours::C26 교재::L9 표현
+축구장	football pitch	축구장에 가요.<br>I'm going to the football pitch.	축구 + 場. Same 장 as 운동장, 수영장.	cours::C26 교재::L9 장소
+소개하다	to introduce	가족을 소개할 거예요.<br>I'll introduce my family.	紹介.	cours::C26 교재::L9 동사
+-으시-/-시-	honorific verb infix	할아버지께서 책을 읽으세요.<br>My grandfather is reading a book.	Raises the subject, not the listener. Consonant stem → -으시- (읽으시다 → 읽으세요), vowel stem → -시- (가시다 → 가세요). 듣다 → 들으세요, 만들다 → 만드세요. Past: 부르셨어요.	cours::C26 교재::L10 문법
+께서	honorific subject particle	어머니께서 여행을 가실 거예요.<br>My mother is going to travel.	The respectful replacement for 이/가; 께서는 replaces 은/는. Pairs with a -으시- verb.	cours::C26 교재::L10 문법 조사
+남편	husband	제 남편은 회사원이에요.<br>My husband is an office worker.	男便.	cours::C26 교재::L10 사람
+아내	wife	제 아내는 등산을 좋아해요.<br>My wife likes hiking.	와이프 is common in speech but 아내 is the proper word.	cours::C26 교재::L10 사람
+아들	son	제 아들은 열 살이에요.<br>My son is ten.		cours::C26 교재::L10 사람
+딸	daughter	제 딸은 여덟 살이에요.<br>My daughter is eight.		cours::C26 교재::L10 사람
+여동생	younger sister	여동생이 있어요.<br>I have a younger sister.	여 (female) + 동생. 남동생 = younger brother.	cours::C26 교재::L10 사람

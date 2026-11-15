@@ -1,0 +1,39 @@
+#separator:tab
+#html:true
+#deck:Coréen::C42
+#tags column:5
+-기 전에	before doing	밥을 먹기 전에 손을 씻어요.<br>I wash my hands before eating.	Stem + 기 전에, no vowel change. With a noun: 식사 전에. Opposite: -은 후에.	cours::C42 교재2::L5-6 문법
+-아지다/-어지다/-여지다	to become (change of state)	푹 쉬어서 많이 좋아졌어요.<br>I rested well so I'm much better.	Attaches to an adjective: 좋다 → 좋아지다, 깨끗하다 → 깨끗해지다, 빠르다 → 빨라지다. Describes a change, not a state.	cours::C42 교재2::L5-6 문법
+씩	each, apiece, per	30분씩 조깅을 해요.<br>I jog for 30 minutes at a time.	Attaches directly: 하나씩, 한 시간씩.	cours::C42 교재2::L5-6 문법 조사
+조깅	jogging	저녁 먹은 후에 조깅을 해요.<br>I jog after dinner.	조깅하다 = to jog.	cours::C42 교재2::L5-6 명사
+푹	deeply, thoroughly (rest, sleep)	푹 쉬세요.<br>Get plenty of rest.	Only with 쉬다 and 자다.	cours::C42 교재2::L5-6 부사
+소나기	sudden shower	소나기니까 금방 그칠 거예요.<br>It's a shower, so it'll stop soon.	A brief, heavy summer rain.	cours::C42 교재2::L5-6 명사
+그치다	to stop (rain, snow)	비가 그쳤어요.<br>The rain has stopped.	멈추다 is the general 'to stop'.	cours::C42 교재2::L5-6 동사
+햇빛	sunlight	햇빛이 너무 강해요.<br>The sunlight is too strong.	해 (sun) + 빛 (light). Pronounced [해삗].	cours::C42 교재2::L5-6 명사
+강하다	to be strong	햇빛이 강해요.<br>The sun is strong.	強. Opposite: 약하다.	cours::C42 교재2::L5-6 형용사
+약하다	to be weak	햇빛이 약해요.<br>The sunlight is weak.	弱.	cours::C42 교재2::L5-6 형용사
+폭설	heavy snowfall	폭설이 내려요.<br>There's heavy snow.	暴雪. 폭우 = heavy rain.	cours::C42 교재2::L5-6 명사
+기온	temperature (air)	오늘 기온이 36도까지 오를 거예요.<br>The temperature will reach 36 degrees today.	氣溫. 온도 is temperature in general.	cours::C42 교재2::L5-6 명사
+습도	humidity	습도가 높아요.<br>The humidity is high.	濕度.	cours::C42 교재2::L5-6 명사
+습하다	to be humid	여름에는 습해요.<br>It's humid in summer.	濕. Opposite: 건조하다.	cours::C42 교재2::L5-6 형용사
+건조하다	to be dry	요즘 건조해요.<br>It's dry these days.	乾燥. Don't confuse with 건강하다 (healthy).	cours::C42 교재2::L5-6 형용사
+오르다	to rise, to go up	기온이 25도까지 올라요.<br>The temperature rises to 25 degrees.	르 irregular → 올라요. Opposite: 내리다.	cours::C42 교재2::L5-6 동사
+도 (온도)	degree	아침 기온은 9도예요.<br>The morning temperature is 9 degrees.	度. Same syllable as the particle 도 (also).	cours::C42 교재2::L5-6 단위
+조심하다	to be careful	운전을 조심하세요.<br>Drive carefully.	操心. 조심해요! = watch out!	cours::C42 교재2::L5-6 동사
+세차하다	to wash the car	주말에 세차할 거예요.<br>I'll wash the car at the weekend.	洗車.	cours::C42 교재2::L5-6 동사
+선크림	sunscreen	선크림을 바르세요.<br>Put on sunscreen.	선크림을 바르다.	cours::C42 교재2::L5-6 명사
+챙기다	to take along, to look after	우산을 챙기세요.<br>Take an umbrella with you.	Also 사람을 챙기다 = to look after someone.	cours::C42 교재2::L5-6 동사
+겉옷	outerwear, a jacket	외출하기 전에 겉옷을 준비하세요.<br>Get a jacket before you go out.	겉 (outside) + 옷.	cours::C42 교재2::L5-6 명사
+환기	ventilation, airing out	환기를 시키세요.<br>Air the room out.	換氣. 환기하다 / 환기를 시키다.	cours::C42 교재2::L5-6 명사
+달라지다	to change, to become different	날씨가 어떻게 달라졌어요?<br>How has the weather changed?	다르다 + 아지다.	cours::C42 교재2::L5-6 동사
+되다	to become	여름이 되면 더워져요.<br>When summer comes it gets hot.	N이/가 되다.	cours::C42 교재2::L5-6 동사
+가구	furniture	가구 위치가 달라졌어요.<br>The furniture has been moved.	家具.	cours::C42 교재2::L5-6 명사
+분위기	atmosphere, mood	분위기가 조용해졌어요.<br>The atmosphere has become quiet.	雰圍氣.	cours::C42 교재2::L5-6 명사
+예전	the past, before	예전보다 가까워졌어요.<br>We're closer than before.	예전보다 = than before.	cours::C42 교재2::L5-6 시간
+보다 (비교)	than (comparison)	예전보다 바빠졌어요.<br>I'm busier than before.	Attaches to the noun compared: N보다 + adjective.	cours::C42 교재2::L5-6 문법 조사
+천둥	thunder	천둥 번개가 쳐요.<br>There's thunder and lightning.	The verb is 치다.	cours::C42 교재2::L5-6 명사
+번개	lightning	번개가 쳐요.<br>Lightning is flashing.		cours::C42 교재2::L5-6 명사
+황사	yellow dust	황사가 심해요.<br>The yellow dust is bad.	黃砂. Spring sandstorms from the Gobi.	cours::C42 교재2::L5-6 명사
+꽃샘추위	late cold snap in spring	꽃샘추위가 왔어요.<br>The spring cold snap has come.	꽃 (flower) + 샘 (envy) + 추위 (cold): the cold that envies the blossoms.	cours::C42 교재2::L5-6 명사
+환절기	change of season	환절기에 감기에 걸려요.<br>People catch colds when the seasons change.	換節期.	cours::C42 교재2::L5-6 시간
+심하다	to be severe	황사가 심해요.<br>The yellow dust is severe.	甚.	cours::C42 교재2::L5-6 형용사

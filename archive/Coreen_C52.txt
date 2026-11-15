@@ -1,0 +1,20 @@
+#separator:tab
+#html:true
+#deck:Coréen::C52
+#tags column:5
+찾아보다	to look up, to search for	홈페이지에서 한번 찾아보세요.<br>Try looking it up on the website.	찾다 + 보다.	cours::C52 교재2::L8-9 동사
+국제	international	국제 시장도 재미있었어요.<br>The international market was fun too.	國際.	cours::C52 교재2::L8-9 명사
+도시락	packed lunch, bento	도시락도 맛있었어요.<br>The bento was good too.		cours::C52 교재2::L8-9 음식
+교통	transport	교통이 편리해요.<br>The transport links are convenient.	交通.	cours::C52 교재2::L8-9 명사
+직접	directly, in person	직접 요리해 보세요.<br>Try cooking it yourself.	直接.	cours::C52 교재2::L8-9 부사
+다음 날	the next day	다음 날부터 일을 시작해요.<br>I start work the next day.	내일 is tomorrow from now; 다음 날 is the day after a past point.	cours::C52 교재2::L8-9 시간
+안내	guidance, information	여행 안내 책이에요.<br>It's a travel guidebook.	案內. 안내하다 = to guide.	cours::C52 교재2::L8-9 명사
+신나다	to be excited, thrilled	놀이공원에 와서 신나요.<br>I'm excited to be at the amusement park.	신 (excitement) + 나다.	cours::C52 교재2::L8-9 형용사
+우울하다	to be down, depressed	시험을 못 봐서 조금 우울해요.<br>I did badly on the exam so I feel down.	憂鬱.	cours::C52 교재2::L8-9 형용사
+떨리다	to be nervous, to tremble	내일 소개팅이 있어서 떨려요.<br>I have a blind date tomorrow so I'm nervous.	From 떨다 (to shake).	cours::C52 교재2::L8-9 형용사
+설레다	to feel a flutter of excitement	불꽃놀이를 볼 때 설레었어요.<br>I felt a flutter watching the fireworks.	Anticipation, not fear. 설레요.	cours::C52 교재2::L8-9 형용사
+아쉽다	to be a pity, to feel regret	오늘이 마지막 날이라서 아쉬워요.<br>It's the last day, which is a shame.	ㅂ irregular → 아쉬워요.	cours::C52 교재2::L8-9 형용사
+화가 나다	to get angry	약속 시간이 지났는데 안 와서 화가 나요.<br>They're late and I'm getting angry.	화 (anger) + 나다. 화를 내다 = to show anger.	cours::C52 교재2::L8-9 표현
+소개팅	blind date	내일 소개팅을 해요.<br>I have a blind date tomorrow.	소개 (introduction) + 팅 (from 'meeting').	cours::C52 교재2::L8-9 명사
+지나다	to pass (time, a place)	약속 시간이 30분 지났어요.<br>The meeting time passed 30 minutes ago.		cours::C52 교재2::L8-9 동사
+마지막	last, final	오늘이 마지막 날이에요.<br>Today is the last day.	마지막 날 = the final day.	cours::C52 교재2::L8-9 명사

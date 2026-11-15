@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한국어 노트 de Maxence</title>
+<!--PWA-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout : carnet de révision, une colonne lisible, barre d'onglets en bas (téléphone) ou rail à gauche (tablette). */
+:root{
+  --paper:#f2f5f4; --card:#ffffff; --ink:#15242b; --muted:#5b6b72; --line:#d6dedc;
+  --jjok:#1d5a78; --jjok-soft:#dcebf1; --chija:#d99a1c;
+  --a1:#2c7a59; --a2:#1d5a78; --b1:#7b3f93;
+  --ko:"Gowun Batang","Apple SD Gothic Neo","Noto Serif KR",serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f181c; --card:#18242a; --ink:#e8efee; --muted:#93a4aa; --line:#2a3a41;
+  --jjok:#7dc0df; --jjok-soft:#1c3440; --chija:#e9b648; --a1:#62c79b; --a2:#7dc0df; --b1:#c890e0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f181c; --card:#18242a; --ink:#e8efee; --muted:#93a4aa; --line:#2a3a41;
+  --jjok:#7dc0df; --jjok-soft:#1c3440; --chija:#e9b648; --a1:#62c79b; --a2:#7dc0df; --b1:#c890e0; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--chija);outline-offset:2px}
+.ko{font-family:var(--ko)}
+#app{display:flex;flex-direction:column;height:100%}
+main{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.wrap{max-width:760px;margin:0 auto;padding:20px 16px 40px;display:flex;flex-direction:column;gap:20px}
+nav.tabs{display:flex;border-top:1px solid var(--line);background:var(--card)}
+nav.tabs button{flex:1;border:0;background:none;padding:8px 2px 10px;display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--muted);font-size:11px}
+nav.tabs button b{font-family:var(--ko);font-size:17px;font-weight:700}
+nav.tabs button[aria-current="page"]{color:var(--jjok)}
+@media (min-width:820px){
+  #app{flex-direction:row-reverse}
+  nav.tabs{flex-direction:column;border-top:0;border-right:1px solid var(--line);width:104px;padding-top:16px;gap:6px}
+  nav.tabs button{flex:0;padding:12px 4px;font-size:12px}
+  nav.tabs button b{font-size:21px}
+  .wrap{padding-top:32px}
+}
+h1{font-family:var(--ko);font-size:30px;line-height:1.2;margin:0;text-wrap:balance}
+h1 small{display:block;font-family:var(--body);font-size:14px;font-weight:400;color:var(--muted);margin-top:4px}
+h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}
+section{display:flex;flex-direction:column;gap:10px}
+.back{align-self:flex-start;border:0;background:none;padding:4px 0;color:var(--jjok);font-weight:500}
+.search{display:flex;gap:8px}
+.search input{flex:1;min-width:0;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.tile{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:76px}
+.tile .ko{font-size:19px;font-weight:700}
+.tile span{font-size:13px;color:var(--muted)}
+.tile em{font-style:normal;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:auto}
+.rows{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+.rowbtn{display:flex;align-items:center;gap:12px;padding:12px 14px;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;width:100%}
+.rows>:last-child{border-bottom:0}
+.rowbtn .id{font-family:var(--ko);font-weight:700;min-width:44px;color:var(--jjok)}
+.rowbtn .tx{flex:1;min-width:0;display:flex;flex-direction:column}
+.rowbtn .tx small{color:var(--muted);font-size:13px}
+.rowbtn .n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lvl{display:inline-block;font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;border:1px solid currentColor;line-height:1.5}
+.lvl.A1{color:var(--a1)} .lvl.A2{color:var(--a2)} .lvl.B1,.lvl.B2{color:var(--b1)}
+.level{display:flex;flex-direction:column;gap:6px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--c);background:var(--card);border-radius:12px;text-align:left}
+.level strong{font-size:17px}
+.level span{font-size:13px;color:var(--muted)}
+.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--c)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:5px 12px;font-size:13px}
+.chip[aria-pressed="true"]{background:var(--jjok);border-color:var(--jjok);color:var(--paper)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid var(--jjok);background:var(--jjok);color:var(--paper);border-radius:10px;padding:10px 16px;font-weight:600}
+.btn.ghost{background:none;color:var(--jjok)}
+.btn.warn{border-color:var(--chija);background:none;color:var(--ink)}
+details.w{border-bottom:1px solid var(--line)}
+details.w summary{list-style:none;display:flex;align-items:baseline;gap:10px;padding:11px 14px;cursor:pointer}
+details.w summary::-webkit-details-marker{display:none}
+details.w summary .k{font-family:var(--ko);font-size:19px;font-weight:700;flex:0 1 auto}
+details.w summary .e{flex:1;min-width:0;color:var(--muted);font-size:14px;text-align:right}
+details.w.known summary .k::after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--a1);margin-left:7px;vertical-align:middle}
+.body{padding:0 14px 14px;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.body .fr{font-style:italic}
+.body .ex{border-left:3px solid var(--jjok-soft);padding-left:10px}
+.body .ex .ko{font-size:17px}
+.body .ex span{display:block;color:var(--muted);font-size:14px}
+.body .note{color:var(--muted);font-size:14px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mini{border:1px solid var(--line);background:none;border-radius:8px;padding:4px 10px;font-size:13px}
+.count{font-size:13px;color:var(--muted)}
+.study{display:flex;flex-direction:column;gap:16px;align-items:stretch}
+.flash{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:28px 18px;min-height:280px;display:flex;flex-direction:column;justify-content:center;gap:12px;text-align:center}
+.flash .big{font-family:var(--ko);font-size:38px;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
+.flash .big.small{font-size:24px}
+.flash .ans{font-size:19px}
+.flash .hint{color:var(--muted);font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:14px;text-align:left;font-size:16px}
+.opt.good{border-color:var(--a1);box-shadow:inset 0 0 0 1px var(--a1)}
+.opt.bad{border-color:#c0443a;box-shadow:inset 0 0 0 1px #c0443a}
+table.f{width:100%;border-collapse:collapse;font-size:15px}
+table.f td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.f tr:last-child td{border-bottom:0}
+table.f td.k{font-family:var(--ko);font-size:18px;font-weight:700;width:38%}
+table.f td small{display:block;color:var(--muted);font-size:13px}
+table.f td .x{display:block;font-family:var(--ko);font-size:14px;color:var(--jjok);margin-top:2px}
+.tablebox{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow-x:auto}
+.intro{color:var(--muted);max-width:62ch;margin:0}
+.story p{margin:0}
+.line{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.line .s{font-family:var(--ko);font-size:21px;line-height:1.7}
+.line .s span{border-radius:4px;cursor:pointer}
+.line .s span.on{background:var(--jjok-soft)}
+.line .tr{font-size:14px;color:var(--muted)}
+.line .tr b{font-weight:400;color:var(--ink);display:block}
+.sheet{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:2px solid var(--jjok);padding:14px 16px 18px;max-height:46%;overflow-y:auto;box-shadow:0 -8px 24px rgba(0,0,0,.18);display:flex;flex-direction:column;gap:8px;z-index:5}
+.sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.sheet .k{font-family:var(--ko);font-size:22px;font-weight:700}
+.empty{color:var(--muted);padding:14px}
+@media (prefers-reduced-motion:no-preference){.flash,.opt,.chip{transition:border-color .15s,background .15s}}
+</style>
+</head>
+<body>
+<div id="app">
+  <main id="main"><div class="wrap" id="view"></div></main>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="accueil"><b>집</b>Accueil</button>
+    <button data-tab="themes"><b>주제</b>Thèmes</button>
+    <button data-tab="cours"><b>수업</b>Cours</button>
+    <button data-tab="fiches"><b>정리</b>Fiches</button>
+    <button data-tab="histoires"><b>이야기</b>Histoires</button>
+  </nav>
+</div>
+<script>
+const DATA=/*DATA*/;
+/*CONTENT*/
+const BUILD="/*BUILD*/";
+const OFFLINE=/*OFFLINE*/;
+const CARDS=DATA.cards, COURSES=DATA.courses;
+const THEMES=[
+ {g:"Révision rapide",items:[["positions","Prépositions et positions","위치"],["meteo","Météo","날씨"],["chiffres","Chiffres et compteurs","숫자"],["temps","Heures et temps","시간"],["sentiments","Sentiments et états","감정"],["adjectifs","Adjectifs","형용사"],["couleurs","Couleurs","색깔"],["interrogatifs","Mots interrogatifs","의문사"]]},
+ {g:"Vie quotidienne",items:[["nourriture","Nourriture","음식"],["maison","Maison","집"],["transport","Transports","교통"],["achats","Achats et vêtements","쇼핑"],["travail","Travail","직장"],["etudes","Études","공부"],["sante","Santé et corps","건강"],["loisirs","Loisirs","취미"],["lieux","Lieux","장소"],["personnes","Personnes et famille","사람"],["metiers","Métiers","직업"],["caractere","Caractère","성격"],["nature","Animaux et plantes","동물"],["pays","Pays et langues","나라"],["objets","Objets","사물"],["salutations","Salutations","인사"]]},
+ {g:"Par type de mot",items:[["p:v","Verbes","동사"],["p:adv","Adverbes","부사"],["p:n","Noms","명사"],["p:expr","Expressions","표현"],["p:gram","Grammaire","문법"],["particules","Particules","조사"],["hangeul","Hangeul et prononciation","한글"],["homonymes","Homonymes","동음이의어"],["emprunts","Mots empruntés","외래어"]]}
+];
+const POSN={n:"Noms",v:"Verbes",adj:"Adjectifs",adv:"Adverbes",expr:"Expressions",gram:"Grammaire"};
+const LV=[["A1","Débutant","A1","var(--a1)"],["A2","Élémentaire","A2","var(--a2)"],["B1","Intermédiaire","B1+","var(--b1)"]];
+const lvKey=c=>c.l==="B2"?"B1":c.l;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+let known=new Set();
+try{known=new Set(JSON.parse(localStorage.getItem("hgn-known")||"[]"))}catch(e){}
+function saveKnown(){try{localStorage.setItem("hgn-known",JSON.stringify([...known]))}catch(e){}}
+const canSpeak=("speechSynthesis" in window)&&("SpeechSynthesisUtterance" in window);
+function speak(t){if(!canSpeak)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)|[\/~]/g," "));u.lang="ko-KR";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+function themeCards(key){return key.startsWith("p:")?CARDS.filter(c=>c.p===key.slice(2)):CARDS.filter(c=>c.t&&c.t.includes(key))}
+function courseOf(id){return COURSES.find(c=>c.id===id)}
+function courseLabel(id){return id==="jour"?"Mots du jour":id}
+
+/* ---------- navigation ---------- */
+let stack=[];
+let offMsg="";
+function go(v,push){if(push!==false)stack.push(v);render()}
+function back(){stack.pop();if(!stack.length)stack=[{v:"accueil"}];render()}
+function tab(name){stack=[{v:name}];try{history.replaceState(null,"","#"+name)}catch(e){location.hash=name}render()}
+function cur(){return stack[stack.length-1]}
+function render(){
+  const s=cur();const root=["accueil","themes","cours","fiches","histoires"].includes(s.v)?s.v:stack[0].v;
+  document.querySelectorAll("#tabs button").forEach(b=>b.dataset.tab===root?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
+  closeSheet();
+  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
+  if(!s.keepScroll)$("#main").scrollTop=s.scroll||0;
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)tab(b.dataset.tab)});
+const backBtn=()=>stack.length>1?'<button class="back" data-act="back">‹ Retour</button>':"";
+
+/* ---------- accueil ---------- */
+function vHome(){
+  const tot=CARDS.length,kn=CARDS.filter(c=>known.has(c.k)).length;
+  const last=COURSES.filter(c=>c.id!=="jour").slice(-1)[0];
+  const lastC=COURSES.filter(c=>c.id[0]==="C").slice(-1)[0], lastJ=COURSES.filter(c=>c.id[0]==="J").slice(-1)[0];
+  $("#view").innerHTML=`
+  <h1>한국어 노트<small>${tot} cartes, ${COURSES.length-1} cours, ${FICHES.length} fiches, ${STORIES.length} histoires. Mis à jour le ${BUILD}.</small></h1>
+  <form class="search" id="sf"><input id="q" type="search" placeholder="Chercher un mot en coréen, français ou anglais" autocomplete="off"><button class="btn" type="submit">Chercher</button></form>
+  <section><h2>Par niveau</h2>${LV.map(([k,name,lab,col])=>{const cs=CARDS.filter(c=>lvKey(c)===k),n=cs.filter(c=>known.has(c.k)).length;
+    return `<button class="level" style="--c:${col}" data-level="${k}"><strong>${lab} · ${name}</strong><span>${cs.length} cartes, ${n} marquées « je sais »</span><div class="bar"><i style="width:${cs.length?Math.round(100*n/cs.length):0}%"></i></div></button>`}).join("")}</section>
+  <section><h2>Révision rapide</h2><div class="grid">${THEMES[0].items.map(tileHTML).join("")}</div></section>
+  <section><h2>Derniers cours</h2><div class="rows">${[lastC,lastJ,courseOf("jour")].filter(Boolean).map(courseRow).join("")}</div></section>
+  <section><h2>Tout réviser</h2><div class="actions"><button class="btn" data-act="all-study">Cartes au hasard</button><button class="btn ghost" data-act="all-quiz">Quiz de 10 questions</button><button class="btn ghost" data-act="review">Revoir les cartes non acquises</button></div>
+  <p class="count">${kn} cartes sur ${tot} marquées « je sais » sur cet appareil.</p><p class="count" id="off">${offMsg}</p></section>`;
+  $("#sf").addEventListener("submit",e=>{e.preventDefault();const q=$("#q").value.trim();if(q)go({v:"deck",kind:"search",q})});
+}
+function tileHTML([key,fr,ko]){const n=themeCards(key).length;return `<button class="tile" data-th="${key}"><span class="ko" style="color:var(--ink)">${ko}</span><span>${fr}</span><em>${n} cartes</em></button>`}
+function courseRow(c){return `<button class="rowbtn" data-course="${c.id}"><span class="id">${c.id==="jour"?"매일":c.id}</span><span class="tx"><span>${esc(c.t)}</span>${c.s?`<small>${esc(c.s)}</small>`:""}</span><span class="n">${c.n}</span></button>`}
+
+/* ---------- thèmes, cours ---------- */
+function vThemes(){$("#view").innerHTML=`<h1>주제<small>Le vocabulaire de tes cartes Anki, rangé par thème</small></h1>`+THEMES.map(g=>`<section><h2>${g.g}</h2><div class="grid">${g.items.map(tileHTML).join("")}</div></section>`).join("")}
+function vCours(){
+  const H=COURSES.filter(c=>c.id[0]==="C"),J=COURSES.filter(c=>c.id[0]==="J"),D=COURSES.filter(c=>c.id==="jour");
+  $("#view").innerHTML=`<h1>수업<small>Chaque cours, avec sa grammaire puis son vocabulaire</small></h1>
+  <section><h2>Mots du jour</h2><div class="rows">${D.map(courseRow).join("")}</div></section>
+  <section><h2>Jihyeon (Summer) · ${J.length} cours</h2><div class="rows">${J.slice().reverse().map(courseRow).join("")}</div></section>
+  <section><h2>Hyesoo · ${H.length} cours</h2><div class="rows">${H.slice().reverse().map(courseRow).join("")}</div></section>`;
+}
+
+/* ---------- liste de cartes ---------- */
+function deckCards(s){
+  if(s.kind==="theme")return themeCards(s.key);
+  if(s.kind==="course"){const cs=CARDS.filter(c=>c.c===s.id);return s.id==="jour"?cs.slice().reverse():cs.filter(c=>c.p==="gram").concat(cs.filter(c=>c.p!=="gram"))}
+  if(s.kind==="level")return CARDS.filter(c=>lvKey(c)===s.key);
+  if(s.kind==="review")return CARDS.filter(c=>!known.has(c.k));
+  if(s.kind==="search"){const q=s.q.toLowerCase();return CARDS.filter(c=>c.k.includes(s.q)||c.e.toLowerCase().includes(q)||(c.f||"").toLowerCase().includes(q)||(c.x||"").includes(s.q))}
+  return CARDS;
+}
+function deckTitle(s){
+  if(s.kind==="theme"){for(const g of THEMES)for(const it of g.items)if(it[0]===s.key)return [it[2],it[1]];}
+  if(s.kind==="course"){const c=courseOf(s.id);return [s.id==="jour"?"매일 단어":s.id,c.t+(c.s?" · "+c.s:"")]}
+  if(s.kind==="level"){const l=LV.find(x=>x[0]===s.key);return [l[2],l[1]+" · niveau estimé d'après le manuel du cours"]}
+  if(s.kind==="review")return ["복습","Cartes pas encore marquées « je sais »"];
+  if(s.kind==="search")return ["« "+s.q+" »","Résultats de la recherche"];
+  return ["전체","Toutes les cartes"];
+}
+function filtered(s){let cs=deckCards(s);if(s.fl)cs=cs.filter(c=>lvKey(c)===s.fl);if(s.fp)cs=cs.filter(c=>c.p===s.fp);if(s.fu)cs=cs.filter(c=>!known.has(c.k));return cs}
+function cardBody(c){
+  const co=courseOf(c.c);
+  return `<div class="body">
+   ${c.e?`<div>${esc(c.e)}</div>`:""}${c.f?`<div class="fr">${esc(c.f)}</div>`:""}
+   ${c.x?`<div class="ex"><div class="ko">${esc(c.x)}</div>${c.y?`<span>${esc(c.y)}</span>`:""}${c.z?`<span>${esc(c.z)}</span>`:""}</div>`:""}
+   ${c.n?`<div class="note">${esc(c.n)}</div>`:""}
+   <div class="meta"><span class="lvl ${c.l}">${c.l}</span><button class="mini" data-course="${c.c}">${courseLabel(c.c)}${c.d?" · "+c.d.slice(5):""}</button>
+   ${canSpeak?`<button class="mini" data-say="${esc(c.k)}">Écouter le mot</button>${c.x?`<button class="mini" data-say="${esc(c.x)}">Écouter la phrase</button>`:""}`:""}
+   <button class="mini" data-known="${esc(c.k)}">${known.has(c.k)?"Retirer « je sais »":"Je sais"}</button></div></div>`;
+}
+function vDeck(s){
+  const all=deckCards(s),[ko,fr]=deckTitle(s),cs=filtered(s);s.limit=s.limit||120;
+  const lv=new Set(all.map(lvKey)),ps=new Set(all.map(c=>c.p));
+  const fiche=s.kind==="theme"?FICHES.find(f=>f.themes.includes(s.key)):null;
+  const chip=(lab,on,attr)=>`<button class="chip" aria-pressed="${on}" ${attr}>${lab}</button>`;
+  $("#view").innerHTML=`${backBtn()}<h1>${esc(ko)}<small>${esc(fr)}</small></h1>
+  ${all.length?`<div class="actions"><button class="btn" data-act="study">Cartes</button><button class="btn ghost" data-act="quiz">Quiz</button>${fiche?`<button class="btn warn" data-fiche="${fiche.id}">Fiche : ${fiche.t}</button>`:""}</div>`:""}
+  ${lv.size>1?`<div class="chips">${chip("Tous niveaux",!s.fl,'data-fl=""')}${LV.filter(l=>lv.has(l[0])).map(l=>chip(l[2],s.fl===l[0],`data-fl="${l[0]}"`)).join("")}</div>`:""}
+  ${ps.size>1?`<div class="chips">${chip("Tout",!s.fp,'data-fp=""')}${Object.keys(POSN).filter(p=>ps.has(p)).map(p=>chip(POSN[p],s.fp===p,`data-fp="${p}"`)).join("")}</div>`:""}
+  <div class="chips">${chip("Masquer les cartes « je sais »",!!s.fu,'data-fu="1"')}</div>
+  <p class="count">${cs.length} carte${cs.length>1?"s":""}. Touche un mot pour voir l'exemple et la note.</p>
+  <div class="rows">${cs.length?cs.slice(0,s.limit).map(c=>`<details class="w${known.has(c.k)?" known":""}" data-k="${esc(c.k)}"><summary><span class="k">${esc(c.k)}</span><span class="e">${esc(c.f||c.e)}</span></summary></details>`).join(""):'<div class="empty">Aucune carte ne correspond à ces filtres.</div>'}</div>
+  ${cs.length>s.limit?`<button class="btn ghost" data-act="more">Afficher la suite (${cs.length-s.limit} restantes)</button>`:""}`;
+}
+document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.w")&&d.open&&!d.querySelector(".body")){const c=CARDS.find(x=>x.k===d.dataset.k);if(c)d.insertAdjacentHTML("beforeend",cardBody(c))}},true);
+
+/* ---------- cartes à retourner ---------- */
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function vStudy(s){
+  if(!s.queue){s.queue=shuffle(s.cards.map(c=>c.k));s.done=0;s.total=s.queue.length;s.rev=false}
+  if(!s.queue.length){$("#view").innerHTML=`${backBtn()}<h1>끝!<small>Série terminée : ${s.total} cartes passées en revue.</small></h1><div class="actions"><button class="btn" data-act="restart">Recommencer</button><button class="btn ghost" data-act="back">Revenir à la liste</button></div>`;return}
+  const c=CARDS.find(x=>x.k===s.queue[0]);const front=s.dir==="fr"?esc(c.f||c.e):esc(c.k);
+  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="count">${s.done} / ${s.total} acquises, ${s.queue.length} restantes</span><button class="mini" data-act="dir">${s.dir==="fr"?"Sens : traduction → coréen":"Sens : coréen → traduction"}</button></div>
+  <div class="flash" data-act="flip" role="button" tabindex="0"><div class="big${s.dir==="fr"||c.k.length>9?" small":""}${s.dir==="fr"?"":" ko"}">${front}</div>
+  ${s.rev?`${s.dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.e)}${c.f?`<br><i>${esc(c.f)}</i>`:""}</div>`}${c.x?`<div class="ko" style="font-size:18px">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
+  ${s.rev?`<div class="two"><button class="btn ghost" data-act="again">À revoir</button><button class="btn" data-act="ok">Je sais</button></div>`:`<button class="btn" data-act="flip">Voir la réponse</button>`}
+  ${canSpeak?`<button class="mini" style="align-self:center" data-say="${esc(c.k)}">Écouter</button>`:""}</div>`;
+}
+
+/* ---------- quiz ---------- */
+function vQuiz(s){
+  if(!s.qs){const pool=s.cards.filter(c=>c.e);s.qs=shuffle(pool).slice(0,10).map(c=>{let o=pool.filter(x=>x.k!==c.k&&x.p===c.p);if(o.length<3)o=CARDS.filter(x=>x.k!==c.k&&x.p===c.p);return {c,opts:shuffle(shuffle(o).slice(0,3).concat(c))}});s.i=0;s.score=0;s.pick=null}
+  if(s.i>=s.qs.length){$("#view").innerHTML=`${backBtn()}<h1>${s.score} / ${s.qs.length}<small>${s.score===s.qs.length?"Sans faute.":"Les cartes ratées restent à revoir dans la liste."}</small></h1><div class="actions"><button class="btn" data-act="restart">Nouveau quiz</button><button class="btn ghost" data-act="back">Revenir à la liste</button></div>`;return}
+  const q=s.qs[s.i];
+  $("#view").innerHTML=`${backBtn()}<div class="study"><span class="count">Question ${s.i+1} sur ${s.qs.length} · score ${s.score}</span>
+  <div class="flash" style="min-height:150px"><div class="big ko${q.c.k.length>9?" small":""}">${esc(q.c.k)}</div></div>
+  ${q.opts.map((o,j)=>`<button class="opt${s.pick!=null?(o.k===q.c.k?" good":j===s.pick?" bad":""):""}" data-opt="${j}" ${s.pick!=null?"disabled":""}>${esc(o.f||o.e)}</button>`).join("")}
+  ${s.pick!=null?`${q.c.x?`<p class="count"><span class="ko" style="font-size:17px;color:var(--ink)">${esc(q.c.x)}</span><br>${esc(q.c.z||q.c.y||"")}</p>`:""}<button class="btn" data-act="next">Question suivante</button>`:""}</div>`;
+}
+
+/* ---------- fiches ---------- */
+function vFiches(){$("#view").innerHTML=`<h1>정리<small>Les tableaux à relire en deux minutes avant un cours</small></h1><div class="grid">${FICHES.map(f=>`<button class="tile" data-fiche="${f.id}"><span class="ko" style="color:var(--ink)">${f.ko}</span><span>${f.t}</span><em>${f.s.reduce((n,x)=>n+x.r.length,0)} lignes</em></button>`).join("")}</div>`}
+function vFiche(s){
+  const f=FICHES.find(x=>x.id===s.id);
+  $("#view").innerHTML=`${backBtn()}<h1>${f.ko}<small>${f.t}</small></h1><p class="intro">${esc(f.intro)}</p>
+  ${f.themes.length?`<div class="actions">${f.themes.map(t=>`<button class="btn ghost" data-th="${t}">Voir mes cartes : ${deckTitle({kind:"theme",key:t})[1]}</button>`).join("")}</div>`:""}
+  ${f.s.map(sec=>`<section><h2>${esc(sec.h)}</h2><div class="tablebox"><table class="f">${sec.r.map(r=>`<tr><td class="k"${canSpeak?` data-say="${esc(r[0])}"`:""}>${esc(r[0])}</td><td>${esc(r[1])}<small>${esc(r[2])}</small>${r[3]?`<span class="x">${esc(r[3])}</span>`:""}</td></tr>`).join("")}</table></div></section>`).join("")}`;
+}
+
+/* ---------- histoires ---------- */
+function vStories(){
+  $("#view").innerHTML=`<h1>이야기<small>Des textes courts écrits avec le vocabulaire de tes cours</small></h1>`+LV.map(([k,name,lab])=>{const st=STORIES.filter(x=>x.l===k);return st.length?`<section><h2>${lab} · ${name}</h2><div class="rows">${st.map(x=>`<button class="rowbtn" data-story="${x.id}"><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${x.ko}</span><small>${x.t}</small></span><span class="n">${x.lines.length} phrases</span></button>`).join("")}</div></section>`:""}).join("");
+}
+function vStory(s){
+  const st=STORIES.find(x=>x.id===s.id);s.open=s.open||{};
+  $("#view").innerHTML=`${backBtn()}<h1>${st.ko}<small>${st.t} · <span class="lvl ${st.l}">${st.l}</span></small></h1>
+  <div class="actions"><button class="btn ghost" data-act="alltr">${s.all?"Masquer les traductions":"Afficher toutes les traductions"}</button>${canSpeak?`<button class="btn ghost" data-say="${esc(st.lines.map(l=>l[0]).join(" "))}">Écouter l'histoire</button>`:""}</div>
+  <p class="count">Touche un mot pour le retrouver dans tes cartes.</p>
+  <div class="rows story">${st.lines.map((l,i)=>`<div class="line"><p class="s">${l[0].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>
+   ${s.all||s.open[i]?`<p class="tr"><b>${esc(l[1])}</b>${esc(l[2])}</p>`:""}<div class="meta"><button class="mini" data-tr="${i}">${s.all||s.open[i]?"Masquer":"Traduction"}</button>${canSpeak?`<button class="mini" data-say="${esc(l[0])}">Écouter</button>`:""}</div></div>`).join("")}</div>`;
+}
+const HEADS=CARDS.filter(c=>c.p!=="gram"&&!/[?\s\/(]/.test(c.k)).map(c=>({c,stem:c.k.replace(/하다$/,"").replace(/다$/,"")})).filter(h=>h.stem.length>=1);
+function lookup(w){
+  w=w.replace(/[^가-힣]/g,"");if(!w)return [];
+  const out=[];const exact=CARDS.filter(c=>c.k===w);out.push(...exact);
+  let best=0;const pre=[];
+  for(const h of HEADS){const st=h.stem;if(st.length<2&&!(w.length<=st.length+2))continue;if(w.startsWith(st)){if(st.length>best){best=st.length;pre.length=0}if(st.length===best)pre.push(h.c)}}
+  if(best>=2||(best===1&&w.length<=3))for(const c of pre)if(!out.includes(c))out.push(c);
+  return out.slice(0,4);
+}
+function closeSheet(){const s=$(".sheet");if(s)s.remove();document.querySelectorAll(".line .s span.on").forEach(x=>x.classList.remove("on"))}
+function showSheet(w,res){
+  closeSheet();
+  const html=res.length?res.map(c=>`<div><div class="hd"><span class="k">${esc(c.k)}</span><span class="lvl ${c.l}">${c.l}</span></div><div>${esc(c.e)}${c.f?` · <i>${esc(c.f)}</i>`:""}</div>${c.n?`<div class="count">${esc(c.n)}</div>`:""}</div>`).join(""):`<div class="hd"><span class="k">${esc(w)}</span></div><div class="count">Ce mot n'est pas encore dans tes cartes Anki.</div>`;
+  document.body.insertAdjacentHTML("beforeend",`<div class="sheet">${html}<button class="mini" style="align-self:flex-end" data-act="close">Fermer</button></div>`);
+}
+
+/* ---------- clics ---------- */
+document.addEventListener("click",e=>{
+  const t=e.target,s=cur();
+  const say=t.closest("[data-say]");if(say){speak(say.dataset.say);return}
+  if(t.closest(".line .s span")){const sp=t.closest(".line .s span");const res=lookup(sp.textContent);showSheet(sp.textContent,res);sp.classList.add("on");return}
+  const a=t.closest("[data-act]");
+  if(a){const act=a.dataset.act;
+    if(act==="close"){closeSheet();return}
+    if(act==="back"){back();return}
+    if(act==="more"){s.limit+=200;s.keepScroll=true;render();s.keepScroll=false;return}
+    if(act==="study"||act==="quiz"){const cs=filtered(s);if(cs.length){s.scroll=$("#main").scrollTop;go({v:act,cards:cs})}return}
+    if(act==="all-study"){go({v:"study",cards:shuffle(CARDS).slice(0,30)});return}
+    if(act==="all-quiz"){go({v:"quiz",cards:CARDS});return}
+    if(act==="review"){go({v:"deck",kind:"review"});return}
+    if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
+    if(act==="dir"){s.dir=s.dir==="fr"?"":"fr";s.rev=false;render();return}
+    if(act==="again"){s.queue.push(s.queue.shift());s.rev=false;render();return}
+    if(act==="ok"){known.add(s.queue.shift());saveKnown();s.done++;s.rev=false;render();return}
+    if(act==="restart"){delete s.queue;delete s.qs;render();return}
+    if(act==="next"){s.i++;s.pick=null;render();return}
+    if(act==="alltr"){s.all=!s.all;s.keepScroll=true;render();s.keepScroll=false;return}
+  }
+  const o=t.closest("[data-opt]");if(o&&s.v==="quiz"&&s.pick==null){s.pick=+o.dataset.opt;const q=s.qs[s.i];if(q.opts[s.pick].k===q.c.k)s.score++;s.keepScroll=true;render();s.keepScroll=false;return}
+  const tr=t.closest("[data-tr]");if(tr){const i=tr.dataset.tr;if(s.all){s.all=false;s.open={}}else s.open[i]=!s.open[i];s.keepScroll=true;render();s.keepScroll=false;return}
+  const kn=t.closest("[data-known]");if(kn){const k=kn.dataset.known;known.has(k)?known.delete(k):known.add(k);saveKnown();const d=kn.closest("details");if(d){d.classList.toggle("known",known.has(k))}kn.textContent=known.has(k)?"Retirer « je sais »":"Je sais";return}
+  const keep=()=>{s.scroll=$("#main").scrollTop};
+  const th=t.closest("[data-th]");if(th&&th.dataset.th){keep();go({v:"deck",kind:"theme",key:th.dataset.th});return}
+  const co=t.closest("[data-course]");if(co){keep();go({v:"deck",kind:"course",id:co.dataset.course});return}
+  const lv=t.closest("[data-level]");if(lv){keep();go({v:"deck",kind:"level",key:lv.dataset.level});return}
+  const fi=t.closest("[data-fiche]");if(fi){keep();go({v:"fiche",id:fi.dataset.fiche});return}
+  const st=t.closest("[data-story]");if(st){keep();go({v:"story",id:st.dataset.story});return}
+  for(const f of ["fl","fp","fu"]){const c=t.closest(`[data-${f}]`);if(c&&s.v==="deck"){s[f]=f==="fu"?(s.fu?"":"1"):c.dataset[f];s.limit=120;s.keepScroll=true;render();s.keepScroll=false;return}}
+});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches(".flash[data-act]")){e.preventDefault();e.target.click()}});
+if(OFFLINE&&"serviceWorker" in navigator){
+  navigator.serviceWorker.register("sw.js").then(()=>navigator.serviceWorker.ready).then(()=>{offMsg="Copie hors ligne prête sur cet appareil. Elle se met à jour toute seule quand tu ouvres le site avec du réseau.";const o=$("#off");if(o)o.textContent=offMsg}).catch(()=>{offMsg="La copie hors ligne n'a pas pu s'installer sur ce navigateur.";const o=$("#off");if(o)o.textContent=offMsg});
+}
+const start=(location.hash||"").slice(1);
+tab(["accueil","themes","cours","fiches","histoires"].includes(start)?start:"accueil");
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+#separator:tab
+#html:true
+#deck:Coréen::C62
+#tags column:5
+-는데, -은데/-ㄴ데	but, and (contrast or background)	방은 좀 작은데 깨끗해요.<br>The room is a bit small, but it's clean.	Verbs take -는데 (가는데), adjectives -은데/-ㄴ데 (작은데, 큰데), nouns 인데. Sets up a contrast or gives background before the main point.	cours::C62 교재2::L12 문법
+새벽	dawn, early hours	새벽에 일어났어요.<br>I got up at dawn.	The stretch from midnight to sunrise.	cours::C62 교재2::L12 시간
+정오	noon, midday	정오에 만나요.<br>Let's meet at noon.	正午.	cours::C62 교재2::L12 시간
+자정	midnight	자정 전까지 오세요.<br>Come before midnight.	子正.	cours::C62 교재2::L12 시간
+늦어지다	to be delayed	버스가 안 와서 출발이 늦어졌어요.<br>The bus didn't come so we left late.	늦다 + 어지다.	cours::C62 교재2::L12 동사
+출발하다	to depart, to set off	아침 일찍 출발했어요.<br>I set off early in the morning.	出發. Opposite: 도착하다.	cours::C62 교재2::L12 동사
+들르다	to drop by, to stop off	서점에 들렀어요.<br>I stopped by the bookshop.	으 irregular → 들러요, 들렀어요.	cours::C62 교재2::L12 동사
+사고가 나다	to have an accident	사고가 나서 오래 걸렸어요.<br>There was an accident so it took ages.	事故.	cours::C62 교재2::L12 표현
+오래 걸리다	to take a long time	길이 막혀서 오래 걸렸어요.<br>The traffic was bad so it took a long time.		cours::C62 교재2::L12 표현
+거의 다 오다	to be almost there	거의 다 왔어요.<br>I'm almost there.	거의 = almost, 다 = all.	cours::C62 교재2::L12 표현
+공주	princess	옛날에 예쁜 공주가 살았어요.<br>Once there was a beautiful princess.	公主. Also a city south of Seoul.	cours::C62 교재2::L12 명사

@@ -1,0 +1,24 @@
+#separator:tab
+#html:true
+#tags column:5
+ㄱ	기역	가방<br>bag	Irregular name: you would expect *기윽.	cours::C1 자모 자음
+ㄴ	니은	나무<br>tree	Regular pattern: 니 + 은.	cours::C1 자모 자음
+ㄷ	디귿	다리<br>leg / bridge	Irregular name: you would expect *디읃.	cours::C1 자모 자음
+ㄹ	리을	라면<br>ramyeon	Neither L nor R exactly. There is no R sound in Korean; ㄹ is simply what replaces a foreign R.	cours::C1 자모 자음
+ㅁ	미음	머리<br>head / hair	Regular pattern.	cours::C1 자모 자음
+ㅂ	비읍	바다<br>sea	Regular pattern.	cours::C1 자모 자음
+ㅅ	시옷	사과<br>apple	Irregular name: you would expect *시읏.	cours::C1 자모 자음
+ㅇ	이응	아기 / 강<br>baby / river	Silent in initial position, pronounced [ŋ] as a 받침.	cours::C1 자모 자음
+ㅈ	지읒	자리<br>seat	Regular pattern.	cours::C1 자모 자음
+ㅊ	치읓	차<br>car / tea	Regular pattern.	cours::C1 자모 자음
+ㅋ	키읔	코<br>nose	Regular pattern.	cours::C1 자모 자음
+ㅌ	티읕	토마토<br>tomato	Regular pattern.	cours::C1 자모 자음
+ㅍ	피읖	포도<br>grapes	Regular pattern.	cours::C1 자모 자음
+ㅎ	히읗	하늘<br>sky	Regular pattern.	cours::C1 자모 자음
+ㄲ	쌍기역	꽃<br>flower	Tense consonant. The prefix 쌍- applies to all five doubles.	cours::C1 자모 자음 된소리
+ㄸ	쌍디귿	딸기<br>strawberry	Tense consonant.	cours::C1 자모 자음 된소리
+ㅃ	쌍비읍	빵<br>bread	Tense consonant.	cours::C1 자모 자음 된소리
+ㅆ	쌍시옷	쌀<br>uncooked rice	Tense consonant.	cours::C1 자모 자음 된소리
+ㅉ	쌍지읒	짜다<br>to be salty	Tense consonant.	cours::C1 자모 자음 된소리
+How are 디귿이, 시옷이, 지읒이 pronounced?	[디그시], [시오시], [지으시]	디귿이 뭐예요?<br>What is 디귿?	A quirk of 표준 발음법: before a particle, the 받침 of a letter name surfaces as ㅅ, not as the letter itself. Same for 치읓이[치으시], 티읕이[티으시], 히읗이[히으시]. Exceptions: 키읔이[키으기], 피읖이[피으비].	cours::C1 자모 발음
+How many consonants and vowels does Hangeul have?	자음 19개, 모음 21개	자음 19개와 모음 21개가 있어요.<br>There are 19 consonants and 21 vowels.	The 19 consonants include the 5 tense ones; the 21 vowels include the 11 compound ones.	cours::C1 자모

@@ -1,0 +1,14 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J13
+#tags column:5
+-았으면 좋겠다/-었으면 좋겠다	I wish …, I really hope …	제 키가 더 컸으면 좋겠어요.<br>I wish I were taller.	Stronger than -으면 좋겠다, often contrary to reality: 형제가 있었으면 좋겠어요. Also for hopes about the future: 주말에 날씨가 좋았으면 좋겠어요. -아 줬으면 좋겠어요 = I'd like you to: 조심해 줬으면 좋겠어요.	cours::J13 교재::MKG-INT 문법
+복권에 당첨되다	to win the lottery	복권에 당첨됐으면 좋겠어요.<br>I wish I'd win the lottery.	福券 + 當籤.	cours::J13 교재::MKG-INT 표현
+형제	siblings	형제가 있었으면 좋겠어요.<br>I wish I had siblings.	兄弟. Used for siblings in general: 형제가 몇 명이에요?	cours::J13 교재::MKG-INT 사람
+비가 그치다	(rain) to stop	비가 그쳤으면 좋겠어요.<br>I wish it would stop raining.	그치다 is for rain, snow or crying.	cours::J13 교재::MKG-INT 표현
+유창하다	to be fluent	한국어를 유창하게 했으면 좋겠어요.<br>I wish I spoke Korean fluently.	流暢. Adverb: 유창하게.	cours::J13 교재::MKG-INT 형용사
+가볍다	to be light (weight)	노트북이 더 가벼웠으면 좋겠어요.<br>I wish my laptop were lighter.	ㅂ irregular → 가벼워요. Opposite: 무겁다.	cours::J13 교재::MKG-INT 형용사
+미래	the future	미래에 살 집이 어땠으면 좋겠어요?<br>What would you like your future home to be like?	未來. 과거 = past, 현재 = present.	cours::J13 교재::MKG-INT 명사
+소원	wish	소원이 세 개 있으면 뭐 할 거예요?<br>If you had three wishes, what would you do?	所願. 소원을 빌다 = to make a wish.	cours::J13 교재::MKG-INT 명사
+마당	yard, courtyard	넓은 마당이 있었으면 좋겠어요.<br>I wish I had a big yard.		cours::J13 교재::MKG-INT 명사
+바라다	to hope for, to want from someone	가족에게 바라는 게 있어요?<br>Is there anything you want from your family?	The standard form is 바라요, though 바래요 is common in speech.	cours::J13 교재::MKG-INT 동사

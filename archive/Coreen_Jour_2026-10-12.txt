@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+적응하다	to adapt, to adjust to<br><i>s'adapter, s'habituer à</i>	이제 한국 생활에 좀 적응했어요.<br>I've gotten a bit used to life in Korea now.<br><i>Maintenant je me suis un peu adapté à la vie en Corée.</i>	[jeogeunghada] N에 적응하다 (adapt TO something). Hanja 適應. Describes the process; 익숙하다 describes the resulting state.	quotidien::2026-10-12 동사
+뿌듯하다	to feel proud, gratified<br><i>fier, plein de satisfaction (après un accomplissement)</i>	프로젝트를 끝내서 정말 뿌듯해요.<br>I finished the project, I feel really proud.<br><i>J'ai fini le projet, je suis vraiment fier de moi.</i>	[ppudeutada] Pronounced [뿌드타다]. A warm inner sense of accomplishment; 자랑스럽다 is being proud OF someone/something.	quotidien::2026-10-12 형용사
+하필	of all times/things, of all people<br><i>justement, comme par hasard (pile au mauvais moment)</i>	하필 비 오는 날 우산을 안 가져왔어요.<br>Of all days, I didn't bring an umbrella on the rainy one.<br><i>Comme par hasard, je n'ai pas pris de parapluie le jour où il pleut.</i>	[hapil] Hanja 何必. Common complaint: 왜 하필 나야? (Why me, of all people?). Also 하필이면.	quotidien::2026-10-12 부사
+부담	burden, pressure<br><i>charge, pression, poids</i>	너무 부담 갖지 마세요.<br>Don't feel too much pressure.<br><i>Ne vous mettez pas trop de pression.</i>	[budam] Hanja 負擔. Collocations: 부담(이) 되다, 부담을 주다. Adjective 부담스럽다 = 'it feels like too much'.	quotidien::2026-10-12 명사
+정신이 없다	to be swamped, frazzled<br><i>être débordé, ne plus savoir où donner de la tête</i>	요즘 일이 너무 많아서 정신이 없어요.<br>I've had so much work lately that I'm completely swamped.<br><i>Ces temps-ci j'ai tellement de travail que je suis débordé.</i>	[jeongsini eopda] Lit. 'to have no mind (정신)'. Often written 정신없다; adverb 정신없이 바쁘다 = crazy busy.	quotidien::2026-10-12 표현

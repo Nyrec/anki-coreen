@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+깨닫다	to realize, to come to understand<br><i>se rendre compte, prendre conscience</i>	나중에야 제 실수를 깨달았어요.<br>Only later did I realize my mistake.<br><i>Ce n'est qu'après coup que j'ai pris conscience de mon erreur.</i>	[kkaedatda] ㄷ-irregular: 깨달아요, 깨달았어요 (ㄷ→ㄹ before vowels). Stronger than 알게 되다: a real insight. Noun: 깨달음.	quotidien::2026-10-31 동사 niveau::B1
+무뚝뚝하다	curt, blunt, unexpressive<br><i>bourru, peu expansif, sec (dans ses manières)</i>	아버지는 좀 무뚝뚝하지만 정이 많아요.<br>My father is a bit gruff, but he's very warm-hearted.<br><i>Mon père est un peu bourru, mais il est très affectueux.</i>	[muttukttukada] Pronounced [무뚝뚜카다]. Describes an unexpressive manner, not necessarily unkindness. Opposite: 다정하다 / 상냥하다.	quotidien::2026-10-31 형용사 niveau::B1
+차근차근	step by step, methodically<br><i>pas à pas, méthodiquement</i>	급하게 하지 말고 차근차근 하세요.<br>Don't rush it, take it step by step.<br><i>Ne vous précipitez pas, faites-le étape par étape.</i>	[chageunchageun] Common with 설명하다, 준비하다, 배우다: 차근차근 설명해 주세요. Also 차근차근히. Close to 하나씩.	quotidien::2026-10-31 부사 niveau::B1
+환불	refund<br><i>remboursement</i>	이 옷 환불할 수 있어요?<br>Can I get a refund for this item of clothing?<br><i>Est-ce que je peux me faire rembourser ce vêtement ?</i>	[hwanbul] Hanja 還拂 (return + pay). 환불하다 / 환불받다 (to get a refund). Compare 교환 (exchange); you usually need the 영수증.	quotidien::2026-10-31 명사 niveau::A2
+머리를 식히다	to clear one's head, to take a mental break<br><i>se changer les idées, s'aérer l'esprit</i>	머리 좀 식히러 산책하고 올게요.<br>I'm going for a walk to clear my head.<br><i>Je vais faire un tour pour me changer les idées.</i>	[meorireul sikida] 식히다 is the causative of 식다 (to cool down): lit. 'to cool the head'. Often 머리 좀 식히다 or 머리 식힐 겸 (partly to unwind).	quotidien::2026-10-31 표현 niveau::B1

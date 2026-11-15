@@ -1,0 +1,34 @@
+#separator:tab
+#html:true
+#tags column:5
+의사	doctor	저는 의사예요.<br>I'm a doctor.	醫師. Don't confuse with 의자 (chair).	cours::C5 교재::L1 직업
+학생	student	저는 학생이에요.<br>I'm a student.	Ends in a consonant → 학생이에요.	cours::C5 교재::L1 직업
+선생님	teacher	한국어 선생님이에요.<br>She's a Korean teacher.	선생 + 님, the honorific suffix. Used for teachers and as a polite form of address generally.	cours::C5 교재::L1 직업
+가수	singer	이 사람은 한국 가수예요.<br>This person is a Korean singer.	歌手: song + hand.	cours::C5 교재::L1 직업
+경찰	police officer	저 남자는 경찰이에요.<br>That man is a police officer.	警察. The force itself and its members share the word.	cours::C5 교재::L1 직업
+요리사	chef / cook	제 친구는 요리사예요.<br>My friend is a chef.	요리 (cooking) + 사, the suffix for a qualified professional.	cours::C5 교재::L1 직업
+회사원	office worker	저는 회사원이에요.<br>I'm an office worker.	회사 (company) + 원 (member). The default word for a salaried employee.	cours::C5 교재::L1 직업
+영화배우	film actor	영화배우 이우빈 씨예요.<br>It's the film actor Lee Woo-bin.	영화 (film) + 배우 (actor).	cours::C5 교재::L1 직업
+운동선수	athlete	앙리 씨는 운동선수예요.<br>Henry is an athlete.	운동 (sport) + 선수 (player). For a specific sport: 축구 선수, 농구 선수.	cours::C5 교재::L1 직업
+직업	job / occupation	직업이 뭐예요?<br>What's your job?	職業. The neutral, slightly formal way to ask.	cours::C5 교재::L1 직업
+직업이 뭐예요?	What's your job?	가: 직업이 뭐예요? 나: 저는 요리사예요.<br>A: What do you do? B: I'm a chef.	이 is the subject particle here, attached because 직업 ends in a consonant.	cours::C5 교재::L1 표현
+이름이 뭐예요?	What's your name?	가: 이름이 뭐예요? 나: 저는 막서스예요.<br>A: What's your name? B: I'm Maxence.	Polite but direct. To an elder, prefer 성함이 어떻게 되세요?	cours::C5 교재::L1 표현
+뭐예요?	What is it?	가: 뭐예요? 나: 우산이에요.<br>A: What is it? B: It's an umbrella.	뭐 is the spoken contraction of 무엇.	cours::C5 교재::L1 표현
+누구예요?	Who is it?	가: 누구예요? 나: 선생님이에요.<br>A: Who is it? B: It's the teacher.	Contrast with 뭐예요 — 누구 for people, 뭐 for things.	cours::C5 교재::L1 표현
+이름	name	제 이름은 막서스예요.<br>My name is Maxence.	For a superior's name, the honorific word is 성함.	cours::C5 교재::L1 명사
+가방	bag	이건 제 가방이에요.<br>This is my bag.	Covers handbag, backpack and suitcase alike.	cours::C5 교재::L1 사물
+신발	shoes	신발을 벗으세요.<br>Please take off your shoes.	신다 (to wear on the feet) + 발 (foot).	cours::C5 교재::L1 사물
+운동화	sneakers	운동화를 신고 왔어요.<br>I came in sneakers.	운동 (exercise) + 화 (footwear). Same 화 in 구두 alternatives like 등산화.	cours::C5 교재::L1 사물
+모자	hat / cap	모자를 썼어요.<br>I'm wearing a hat.	Verb for wearing on the head: 쓰다, not 입다.	cours::C5 교재::L1 사물
+물	water	물 한 잔 주세요.<br>A glass of water, please.	Free at any Korean restaurant, usually self-serve.	cours::C5 교재::L1 명사
+차	car	차가 많아요.<br>There are a lot of cars.	Homograph: 차 also means tea, and appears in vehicle compounds (기차, 구급차).	cours::C5 교재::L1 동음이의어
+가족	family	우리 가족이에요.<br>This is my family.	家族. Said 우리 가족, not 제 가족, in ordinary speech.	cours::C5 교재::L1 가족
+할머니	grandmother	할머니가 오셨어요.<br>My grandmother has come.	Also used to address any elderly woman politely.	cours::C5 교재::L1 가족
+할아버지	grandfather	할아버지예요.<br>It's my grandfather.	Same broadening: any elderly man can be addressed this way.	cours::C5 교재::L1 가족
+어느 나라	which country	어느 나라 사람이에요?<br>Which country are you from?	어느 (which, among a known set) differs from 무슨 (what kind of).	cours::C5 교재::L1 표현
+그럼	then / in that case	그럼 운동선수예요?<br>Then are you an athlete?	Contraction of 그러면. Extremely common as a conversational pivot.	cours::C5 교재::L1 표현
+맞아요	that's right	네, 맞아요.<br>Yes, that's right.	From 맞다. 맞아요 confirms; 아니요 or 틀려요 denies.	cours::C5 교재::L1 표현
+축구	football	축구 선수예요.<br>He's a footballer.	蹴球: kicking + ball.	cours::C5 교재::L1 운동
+농구	basketball	농구를 좋아해요.<br>I like basketball.	籠球: basket + ball.	cours::C5 교재::L1 운동
+야구	baseball	한국에서 야구가 인기가 많아요.<br>Baseball is very popular in Korea.	野球: field + ball.	cours::C5 교재::L1 운동
+선수	player / athlete	축구 선수예요.<br>He's a football player.	選手. Attaches to any sport: 야구 선수, 농구 선수.	cours::C5 교재::L1 운동

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+넉넉하다	ample, plenty, generous<br><i>suffisant, large, ample (temps, argent, taille)</i>	시간이 넉넉하니까 천천히 가도 돼요.<br>We have plenty of time, so we can go slowly.<br><i>On a largement le temps, donc on peut y aller tranquillement.</i>	[neongneokhada] Opposite of 빠듯하다 (tight). Adverb form 넉넉히; also used for clothes: 옷이 넉넉해요 (loose-fitting).	quotidien::2026-10-26 형용사
+아무래도	it seems like, after all; no matter how you look at it<br><i>de toute évidence, j'ai bien l'impression que ; quoi qu'on fasse</i>	아무래도 오늘은 비가 올 것 같아요.<br>It really looks like it's going to rain today.<br><i>J'ai bien l'impression qu'il va pleuvoir aujourd'hui.</i>	[amuraedo] Often paired with -(으)ㄹ 것 같다 or -겠다 to soften a conclusion. From 아무리 해도 ('however much one does').	quotidien::2026-10-26 부사
+끼어들다	to cut in, butt in, interrupt<br><i>s'immiscer, couper (la parole, la file), se rabattre</i>	남의 말에 끼어들지 마세요.<br>Don't cut in when others are talking.<br><i>Ne coupez pas la parole aux autres.</i>	[kkieodeulda] ㄹ-irregular: 끼어들어요, 끼어드는. Takes 에: 대화에/줄에 끼어들다. In driving, 끼어들기 = cutting into a lane.	quotidien::2026-10-26 동사
+헛걸음	a wasted trip<br><i>déplacement pour rien</i>	가게가 문을 닫아서 헛걸음했어요.<br>The shop was closed, so I made the trip for nothing.<br><i>Le magasin était fermé, je me suis déplacé pour rien.</i>	[heotgeoreum] 헛- prefix = 'in vain/empty' (헛수고 wasted effort, 헛소리 nonsense) + 걸음 (step). Usually 헛걸음하다 or 헛걸음을 치다.	quotidien::2026-10-26 명사
+한숨 돌리다	to catch one's breath, get a breather<br><i>souffler un peu, reprendre son souffle (après un rush)</i>	마감이 끝나서 이제 좀 한숨 돌렸어요.<br>The deadline is over, so I can finally catch my breath.<br><i>La deadline est passée, je peux enfin souffler un peu.</i>	[hansum dollida] Literally 'turn one breath'. Compare 한숨(을) 쉬다 = to sigh. Often 한숨 돌릴 틈도 없다 = no time to even breathe.	quotidien::2026-10-26 표현

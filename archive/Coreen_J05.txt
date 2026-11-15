@@ -1,0 +1,20 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J05
+#tags column:5
+-으면서/-면서	while doing	음악을 들으면서 요리해요.<br>I cook while listening to music.	Both actions by the same subject. Consonant → -으면서, vowel or ㄹ → -면서 (놀면서). Irregulars: 듣다 → 들으면서, 걷다 → 걸으면서, 줍다 → 주우면서.	cours::J05 교재::MKG-UB7 문법
+제가 살게요	It's on me, I'll pay	점심은 제가 살게요.<br>Lunch is on me.	사다 + -ㄹ게요. The standard way to offer to treat someone.	cours::J05 교재::MKG-UB7 표현
+먼저 갈게요	I'll head off first	죄송하지만, 저는 먼저 갈게요.<br>Sorry, but I'll get going.	Said when leaving before others. At work: 먼저 퇴근할게요.	cours::J05 교재::MKG-UB7 표현
+잠시만요, 지나갈게요	Excuse me, coming through	잠시만요, 지나갈게요.<br>Excuse me, let me through.	지나가다 = to pass by. Heard constantly in crowded buses and markets.	cours::J05 교재::MKG-UB7 표현
+전화를 받다	to answer the phone	동료가 전화를 안 받아요.<br>My colleague isn't picking up.		cours::J05 교재::MKG-UB7 표현
+전화가 오다	to get a call	모르는 번호로 전화가 왔어요.<br>I got a call from an unknown number.	The phone is the subject: 전화가 와요. 모르는 번호 = unknown number.	cours::J05 교재::MKG-UB7 표현
+문자를 보내다	to send a text	도착하면 문자를 보낼게요.<br>I'll text you when I arrive.	문자 = text message.	cours::J05 교재::MKG-UB7 표현
+동료	colleague	동료 것도 샀어요.<br>I bought my colleague's one too.	同僚.	cours::J05 교재::MKG-UB7 사람
+제출하다	to submit, to hand in	다음 주까지 숙제를 제출할게요.<br>I'll hand in the homework by next week.	提出.	cours::J05 교재::MKG-UB7 동사
+들르다	to drop by	출근하면서 은행에 들렀어요.<br>I dropped by the bank on my way to work.	으 drops → 들러요, 들렀어요. Takes 에.	cours::J05 교재::MKG-UB7 동사
+필기하다	to take notes	수업을 들으면서 필기해요.<br>I take notes while listening to the class.	筆記.	cours::J05 교재::MKG-UB7 동사
+줍다	to pick up (from the ground)	쓰레기를 주우면서 걸어요.<br>I walk and pick up litter as I go.	ㅂ irregular → 주워요.	cours::J05 교재::MKG-UB7 동사
+코를 골다	to snore	자면서 코를 골아요.<br>I snore in my sleep.	ㄹ stem → 골아요, 고는 사람.	cours::J05 교재::MKG-UB7 표현
+잠꼬대를 하다	to talk in one's sleep	동생이 자면서 잠꼬대를 해요.<br>My sibling talks in their sleep.		cours::J05 교재::MKG-UB7 표현
+부부	married couple	부부가 어떤 약속을 해요?<br>What promises does the couple make?	夫婦.	cours::J05 교재::MKG-UB7 사람
+룸메이트	roommate	룸메이트하고 같이 살아요.<br>I live with a roommate.		cours::J05 교재::MKG-UB7 사람

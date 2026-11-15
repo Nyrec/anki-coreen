@@ -1,0 +1,42 @@
+#separator:tab
+#html:true
+#deck:Coréen::C25
+#tags column:5
+-을 거예요/-ㄹ 거예요	future tense: will, be going to	주말에 뭐 할 거예요?<br>What will you do at the weekend?	Consonant stem → -을 거예요 (먹을 거예요), vowel or ㄹ stem → -ㄹ 거예요 (갈 거예요, 부를 거예요). 듣다 → 들을 거예요. A ㄹ-final stem never doubles it: 만들다 → 만들 거예요.	cours::C25 교재::L9 문법
+-아요/-어요/-여요(2)	let's … (suggestion)	내일도 같이 축구해요.<br>Let's play football together again tomorrow.	Same endings as the present tense — only intonation and context mark the suggestion. 같이 often accompanies it.	cours::C25 교재::L9 문법
+치다	to play (racket or keyboard instruments)	테니스를 쳐요.<br>I play tennis.	치 + 어요 → 쳐요. Used for 테니스, 탁구, 피아노, 기타 — but 축구 and 야구 take 하다.	cours::C25 교재::L9 동사
+테니스	tennis	테니스를 자주 쳐요.<br>I often play tennis.		cours::C25 교재::L9 명사
+탁구	table tennis	탁구를 좋아해요.<br>I like table tennis.	卓球.	cours::C25 교재::L9 명사
+야구	baseball	야구를 봐요.<br>I watch baseball.	野球. Korea's most-followed sport.	cours::C25 교재::L9 명사
+피아노	piano	피아노를 쳐요.<br>I play the piano.		cours::C25 교재::L9 명사
+낚시	fishing	낚시를 해요.<br>I go fishing.	Pronounced [낙씨]. 낚시하다 = to fish.	cours::C25 교재::L9 명사
+등산	hiking, mountain climbing	주말에 등산을 해요.<br>I go hiking at the weekend.	登山. A national pastime in Korea.	cours::C25 교재::L9 명사
+그림	picture, drawing	그림을 그려요.<br>I draw a picture.	그림을 그리다 is the fixed pairing.	cours::C25 교재::L9 명사
+그리다	to draw	그림을 그렸어요.<br>I drew a picture.	그리 + 어요 → 그려요.	cours::C25 교재::L9 동사
+춤	dance	춤을 춰요.<br>I dance.	The verb is 추다: 춤을 추다.	cours::C25 교재::L9 명사
+추다	to dance	춤을 췄어요.<br>I danced.	추 + 어요 → 춰요. Only ever used with 춤.	cours::C25 교재::L9 동사
+찍다	to take (a photo)	사진을 찍어요.<br>I take a photo.	찍 + 어요 → 찍어요. Also used for video.	cours::C25 교재::L9 동사
+스케이트	ice skating	친구들과 스케이트를 탔어요.<br>I went skating with friends.	The verb is 타다. 스케이트보드 = skateboard.	cours::C25 교재::L9 명사
+경기	match, game	야구 경기를 봐요.<br>I watch a baseball match.	競技.	cours::C25 교재::L9 명사
+콘서트	concert	콘서트에 갔어요.<br>I went to a concert.	공연 is the native-style equivalent.	cours::C25 교재::L9 명사
+구경하다	to look around, to go sightseeing	시내를 구경했어요.<br>I looked around the city centre.	Watching for pleasure, not 보다 in general.	cours::C25 교재::L9 동사
+시내	city centre, downtown	시내에 가요.<br>I'm going downtown.	市內 — literally inside the city.	cours::C25 교재::L9 장소
+피시방	internet café	피시방에 가요.<br>I'm going to the PC room.	PC + 방 (room). Gaming cafés, everywhere in Korea.	cours::C25 교재::L9 장소
+취미	hobby	취미가 뭐예요?<br>What's your hobby?	趣味.	cours::C25 교재::L9 명사
+항상	always	아침에 항상 운동을 해요.<br>I always exercise in the morning.	The scale: 항상 > 자주 > 가끔 > 별로 안 / 거의 안 > 전혀 안.	cours::C25 교재::L9 부사
+가끔	sometimes, occasionally	가끔 테니스도 쳐요.<br>I sometimes play tennis too.		cours::C25 교재::L9 부사
+거의 안	hardly ever	음악을 거의 안 들어요.<br>I hardly ever listen to music.	거의 = almost. Always with a negative.	cours::C25 교재::L9 부사
+전혀 안	never, not at all	고기를 전혀 안 먹어요.<br>I never eat meat.	The strongest negative of the set; needs 안 or -지 않다.	cours::C25 교재::L9 부사
+만 (조사)	only (particle)	채소만 먹어요.<br>I only eat vegetables.	Attaches to the noun and replaces 은/는, 이/가. Same syllable as 만 (10,000).	cours::C25 교재::L9 문법 조사
+이따	later (today)	이따 오후에 뭐 할 거예요?<br>What are you doing later this afternoon?	이따가 in full. Only within the same day; 나중에 is open-ended.	cours::C25 교재::L9 시간
+그냥	just, for no particular reason	저는 그냥 집에서 쉴 거예요.<br>I'll just rest at home.		cours::C25 교재::L9 부사
+다시	again	다시 회사에 갈 거예요.<br>I'll go back to the office.	또 is 'once more', 다시 is 'over again'.	cours::C25 교재::L9 부사
+끝나다	to finish, to be over	수업이 끝났어요.<br>Class is over.	Intransitive: the thing ends. 끝내다 = to finish something.	cours::C25 교재::L9 동사
+이제	now, from now on	이제 뭐 할 거예요?<br>What will you do now?	Marks a change from before; 지금 is just the present moment.	cours::C25 교재::L9 시간
+연습	practice	말하기 연습을 할 거예요.<br>I'm going to practise speaking.	練習. 연습하다 = to practise.	cours::C25 교재::L9 명사
+올리다	to post, to upload	홈페이지에 사진을 올릴 거예요.<br>I'll post the photo on the website.	올리 + 어요 → 올려요. Literally to raise.	cours::C25 교재::L9 동사
+결혼식	wedding ceremony	결혼식에서 사진을 찍을 거예요.<br>I'll take photos at the wedding.	結婚式. 식 = ceremony.	cours::C25 교재::L9 명사
+부모님	parents	부모님 댁에 가요.<br>I'm going to my parents' house.	父母 + 님. Always with the honorific 님.	cours::C25 교재::L9 사람
+휴가	holiday, leave	휴가 때 어디에 갈 거예요?<br>Where will you go on holiday?	休暇 — time off work. 방학 is the school break.	cours::C25 교재::L9 시간
+일주일	one week	일주일에 네 번쯤 전화해요.<br>I call about four times a week.	一週日. N에 X번 = X times per N.	cours::C25 교재::L9 시간
+시원하다	to be cool, refreshing	시원한 물을 마셔요.<br>I drink cool water.	Pleasantly cool — not 춥다 (unpleasantly cold).	cours::C25 교재::L9 형용사

@@ -1,0 +1,19 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J06
+#tags column:5
+-았어야 했다/-었어야 했다	should have done	공부를 열심히 했어야 했어요.<br>I should have studied hard.	Regret about the past. Negative: -지 말았어야 했다 — 그 말을 하지 말았어야 했어요 (I shouldn't have said that).	cours::J06 교재::MKG-UB8 문법
+안 -아도 되다/-어도 되다	don't have to	주말에는 일찍 안 일어나도 돼요.<br>I don't have to get up early at weekends.	Also -지 않아도 되다: 걱정하지 않아도 돼요. Opposite: -아야 되다. Don't confuse with -으면 안 되다 (must not).	cours::J06 교재::MKG-UB8 문법
+-으려면/-려면	if you want to …, to …	여행 가려면 돈을 벌어야 돼요.<br>If you want to travel, you have to earn money.	A goal, then what it takes: usually followed by -아야 되다 or an instruction. Consonant → -으려면, vowel or ㄹ → -려면 (놀려면). 듣다 → 들으려면. Negative: 늦지 않으려면.	cours::J06 교재::MKG-UB8 문법
+돈을 벌다	to earn money	돈을 많이 벌고 싶어요.<br>I want to earn a lot of money.	ㄹ stem → 벌어요. 돈을 모으다 = to save it.	cours::J06 교재::MKG-UB8 표현
+돈을 내다	to pay	학생은 돈을 안 내도 돼요.<br>Students don't have to pay.	내다 = to put out, hand over.	cours::J06 교재::MKG-UB8 표현
+살을 빼다	to lose weight	살을 빼려면 덜 먹어야 돼요.<br>To lose weight, you have to eat less.	살 = flesh. Opposite: 살이 찌다.	cours::J06 교재::MKG-UB8 표현
+면접을 보다	to have an interview	취직하려면 면접을 봐야 돼요.<br>To get a job, you have to do an interview.	面接. Same 보다 as 시험을 보다.	cours::J06 교재::MKG-UB8 표현
+목표	goal	목표가 뭐예요?<br>What's your goal?	目標.	cours::J06 교재::MKG-UB8 명사
+이루다	to achieve	목표를 이루려면 어떻게 해야 돼요?<br>What do you have to do to achieve your goal?	이뤄요. Also 꿈을 이루다 = to make a dream come true.	cours::J06 교재::MKG-UB8 동사
+계획을 짜다	to draw up a plan	여행 계획을 짜요.<br>I'm putting together a travel plan.	짜다 = to put together — same spelling as 짜다 (salty).	cours::J06 교재::MKG-UB8 표현
+끝내다	to finish (something)	오늘까지 일을 끝내야 돼요.<br>I have to finish the work by today.	Transitive. 끝나다 = to end, by itself: 수업이 끝났어요.	cours::J06 교재::MKG-UB8 동사
+대답하다	to answer, to reply	대답 안 해도 돼요.<br>You don't have to answer.	對答.	cours::J06 교재::MKG-UB8 동사
+조심하다	to be careful	뜨거우니까 조심해야 돼요.<br>It's hot, so you have to be careful.	操心. 조심하세요! = watch out.	cours::J06 교재::MKG-UB8 동사
+복잡하다	to be complicated; to be crowded	길이 복잡해서 지도를 봐야 돼요.<br>The roads are confusing, so you have to look at the map.	複雜. Also for crowds: 지하철이 복잡해요.	cours::J06 교재::MKG-UB8 형용사
+가져가다	to take (something) along	우산을 안 가져가도 돼요.<br>You don't need to take an umbrella.	가지다 + 가다. For people: 데려가다. 가져오다 = to bring.	cours::J06 교재::MKG-UB8 동사

@@ -1,0 +1,30 @@
+#separator:tab
+#html:true
+#deck:Coréen::C27
+#tags column:5
+계시다	to be, to stay (honorific of 있다)	할머니께서 댁에 계세요.<br>My grandmother is at home.	Honorific of 있다 for people only. Negative: 안 계시다. For objects, 있으시다.	cours::C27 교재::L10 동사
+주무시다	to sleep (honorific)	할머니께서 방에서 주무세요.<br>My grandmother is sleeping in her room.	Honorific of 자다.	cours::C27 교재::L10 동사
+편찮으시다	to be ill (honorific)	할아버지께서 편찮으세요.<br>My grandfather is unwell.	Honorific of 아프다, for elders only.	cours::C27 교재::L10 동사
+돌아가시다	to pass away (honorific)	할아버지께서는 돌아가셨어요.<br>My grandfather passed away.	Honorific of 죽다. Literally 'to return'. Almost always in the past: 돌아가셨어요.	cours::C27 교재::L10 동사
+성함	name (honorific)	성함이 어떻게 되세요?<br>May I ask your name?	姓銜. Honorific of 이름. Never ask an elder 이름이 뭐예요?	cours::C27 교재::L10 명사
+연세	age (honorific)	연세가 어떻게 되세요?<br>May I ask your age?	年歲. Honorific of 나이.	cours::C27 교재::L10 명사
+진지	meal (honorific)	어머니께서 진지를 드세요.<br>My mother is having her meal.	Honorific of 밥.	cours::C27 교재::L10 명사
+약주	alcoholic drink (honorific)	할아버지께서 약주를 드세요.<br>My grandfather is having a drink.	藥酒. Honorific of 술.	cours::C27 교재::L10 명사
+말씀	words, speech (honorific)	선생님께서 말씀하셨어요.<br>The teacher said so.	Honorific of 말 / 이야기. 말씀하시다 = to speak (honorific).	cours::C27 교재::L10 명사
+드리다	to give (humble)	아버지께 선물을 드려요.<br>I give my father a present.	Humble form of 주다, used when giving to someone above you. 드리 + 어요 → 드려요.	cours::C27 교재::L10 동사
+뵈다	to meet, to see (humble)	사장님을 뵈어요.<br>I meet the company president.	Also 뵙다. 뵈어요 contracts to 봬요. Humble form of 만나다.	cours::C27 교재::L10 동사
+여쭈다	to ask (humble)	할머니께 성함을 여쭤요.<br>I ask my grandmother her name.	Also 여쭙다 → 여쭤요. Humble form of 묻다.	cours::C27 교재::L10 동사
+묻다	to ask	언니에게 질문을 물어요.<br>I ask my older sister a question.	ㄷ irregular → 물어요, like 듣다 → 들어요. Its humble form is 여쭈다.	cours::C27 교재::L10 동사
+에게	to (a person)	친구에게 선물을 줘요.<br>I give a present to a friend.	For people; 한테 is its spoken twin. The honorific version is 께.	cours::C27 교재::L10 문법 조사
+께	to (a person, honorific)	아버지께 선물을 드려요.<br>I give a present to my father.	Honorific replacement for 에게, paired with 드리다 or 여쭈다.	cours::C27 교재::L10 문법 조사
+질문	question	질문이 있어요.<br>I have a question.	質問. 질문하다 = to ask a question.	cours::C27 교재::L10 명사
+사장님	company president, boss	사장님께서 전화를 하세요.<br>The boss is on the phone.	社長 + 님.	cours::C27 교재::L10 사람
+놀다	to play, to hang out	친구랑 놀러 갈 거예요.<br>I'll go out with a friend.	ㄹ stem: 놀러 가다, 노세요. Not childish — adults use it for socialising.	cours::C27 교재::L10 동사
+랑	with; and (spoken)	친구랑 놀러 가요.<br>I'm going out with a friend.	Casual equivalent of 하고 and 와/과. 이랑 after a consonant.	cours::C27 교재::L10 문법 조사
+저희	we, our (humble)	저희 가족은 모두 여기 있어요.<br>All of my family is here.	Humble form of 우리.	cours::C27 교재::L10 명사
+마다	every	주말마다 요리 학원에 가세요.<br>He goes to cooking school every weekend.	Attaches directly: 아침마다, 주말마다, 일요일마다.	cours::C27 교재::L10 문법 조사
+이모	aunt (mother's sister)	이모가 오셨어요.<br>My aunt came.	姨母.	cours::C27 교재::L10 사람
+고모	aunt (father's sister)	고모가 오셨어요.<br>My aunt came.	姑母.	cours::C27 교재::L10 사람
+삼촌	uncle (father's brother)	삼촌하고 같이 갔어요.<br>I went with my uncle.	三寸.	cours::C27 교재::L10 사람
+외삼촌	uncle (mother's brother)	외삼촌을 만났어요.<br>I met my uncle.	外 marks the mother's side: 외할머니, 외할아버지, 외삼촌.	cours::C27 교재::L10 사람
+이렇게	like this, so	왜 이렇게 많이 만들었어요?<br>Why did you make so much?	그렇게, 저렇게 follow the same pattern.	cours::C27 교재::L10 부사

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+헤매다	to wander around lost, to struggle to find one's way<br><i>errer, chercher son chemin, tourner en rond</i>	역 안에서 출구를 찾느라 30분이나 헤맸어요.<br>I wandered around the station for 30 minutes looking for the exit.<br><i>J'ai tourné en rond 30 minutes dans la gare pour trouver la sortie.</i>	[hemaeda] Place is marked with 에서 or 을/를 (길을 헤매다). Also figurative: 문제를 푸느라 헤매다 = to flounder on a problem.	quotidien::2026-10-16 동사
+홀가분하다	to feel light, relieved, unburdened<br><i>se sentir léger, soulagé, libéré d'un poids</i>	프로젝트를 끝내니까 마음이 정말 홀가분해요.<br>Now that the project is done, I feel really relieved.<br><i>Maintenant que le projet est fini, je me sens vraiment soulagé.</i>	[holgabunhada] Usually with 마음이 / 기분이. Stronger nuance than 시원하다: a burden or obligation is gone.	quotidien::2026-10-16 형용사
+괜히	for no reason, in vain, needlessly<br><i>pour rien, inutilement, sans raison</i>	괜히 걱정했네요. 생각보다 쉬웠어요.<br>I worried for nothing. It was easier than I thought.<br><i>Je me suis inquiété pour rien. C'était plus facile que prévu.</i>	[gwaenhi] Common pattern: 괜히 -았/었어요 to express regret (괜히 왔어요 = I shouldn't have come). Unrelated to 괜찮다 in usage.	quotidien::2026-10-16 부사
+연차	annual leave (paid day off)<br><i>congé annuel (jour de congé payé)</i>	금요일에 연차를 쓰고 부산에 갈 거예요.<br>I'm taking a day off on Friday and going to Busan.<br><i>Je vais poser un jour de congé vendredi et aller à Busan.</i>	[yeoncha] Hanja 年次. Verb: 연차를 쓰다/내다. Half day = 반차 (半次). More specific than 휴가.	quotidien::2026-10-16 명사
+말이 나온 김에	speaking of which, since it came up<br><i>puisqu'on en parle, à ce propos</i>	말이 나온 김에 다음 주 회의 시간도 정해요.<br>Speaking of which, let's also set the time for next week's meeting.<br><i>Puisqu'on en parle, fixons aussi l'heure de la réunion de la semaine prochaine.</i>	[mari naon gime] Pattern -(으)ㄴ/는 김에 = 'while/since already doing X' (e.g. 나간 김에 장도 봤어요).	quotidien::2026-10-16 표현

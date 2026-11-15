@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+놓치다	to miss (a bus, a chance)<br><i>rater, manquer (un bus, une occasion)</i>	늦게 일어나서 버스를 놓쳤어요.<br>I woke up late, so I missed the bus.<br><i>Je me suis levé tard, alors j'ai raté le bus.</i>	[notchida] Takes 을/를: 기회를 놓치다 (miss a chance). Not for missing a person — use 보고 싶다 / 그립다.	quotidien::2026-10-15 동사
+억울하다	to feel wronged, unfairly treated<br><i>se sentir lésé, injustement traité</i>	제 잘못이 아닌데 혼나서 억울해요.<br>It wasn't my fault but I got scolded, so I feel wronged.<br><i>Ce n'est pas ma faute mais je me suis fait gronder, je trouve ça injuste.</i>	[eogulhada] Hanja 抑鬱. Typical with -는데 / -아서 explaining the unfair situation; 억울하게 = unjustly.	quotidien::2026-10-15 형용사
+어느새	before you know it, already<br><i>sans s'en rendre compte, déjà</i>	어느새 벌써 10월이네요.<br>Before we knew it, it's already October.<br><i>Sans qu'on s'en rende compte, on est déjà en octobre.</i>	[eoneusae] Contraction of 어느 사이에. Often paired with 벌써 and the past tense or -네요.	quotidien::2026-10-15 부사
+잔돈	small change, coins<br><i>petite monnaie</i>	죄송한데 잔돈 있으세요?<br>Sorry, do you have any change?<br><i>Excusez-moi, vous avez de la monnaie ?</i>	[jandon] Change given back after paying is 거스름돈. 잔돈으로 바꾸다 = to break a bill.	quotidien::2026-10-15 명사
+그렇지 않아도	I was just about to; as it happens<br><i>justement, j'allais justement…</i>	그렇지 않아도 전화하려고 했어요.<br>I was just about to call you.<br><i>Justement, j'allais t'appeler.</i>	[geureochi anado] Often shortened to 안 그래도 in speech. Usually followed by -(으)려고 했어요.	quotidien::2026-10-15 표현

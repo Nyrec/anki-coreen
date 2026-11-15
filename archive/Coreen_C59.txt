@@ -1,0 +1,24 @@
+#separator:tab
+#html:true
+#deck:Coréen::C59
+#tags column:5
+-지 말다	don't (negative imperative)	여기에 쓰레기를 버리지 마세요.<br>Don't throw rubbish here.	Stem + 지 마세요. For 'let's not', use -지 맙시다. To contrast: -지 말고 = not … but rather.	cours::C59 교재2::L11 문법
+-으면 좋겠어요	I wish, I hope	잘 웃어 주면 좋겠어요.<br>I'd like it if they smiled a lot.	-으면 + 좋겠다. A soft wish.	cours::C59 교재2::L11 문법
+뛰어다니다	to run around	아이가 공원에서 뛰어다녀요.<br>The child is running around the park.	뛰다 (to run) + 다니다.	cours::C59 교재2::L11 동사
+떠들다	to make a racket, to chatter loudly	도서관에서 떠들지 마세요.<br>Don't make noise in the library.	ㄹ stem → 떠들어요.	cours::C59 교재2::L11 동사
+발로 차다	to kick	의자를 발로 차지 마세요.<br>Don't kick the seat.	발 (foot) + 차다 (to kick). Same 차다 as wearing a watch.	cours::C59 교재2::L11 표현
+새치기	queue-jumping	새치기를 하지 마세요.<br>Don't push in.	새치기하다.	cours::C59 교재2::L11 명사
+담배를 피우다	to smoke	여기에서 담배를 피우지 마세요.<br>Don't smoke here.	피우다 is used only with 담배.	cours::C59 교재2::L11 표현
+큰소리로	loudly	지하철에서 큰소리로 통화해요.<br>He's talking loudly on the phone in the subway.	큰 + 소리 + 로.	cours::C59 교재2::L11 부사
+통화하다	to talk on the phone	큰소리로 통화하지 마세요.<br>Don't make loud phone calls.	通話. Same as 전화하다 but focused on the conversation.	cours::C59 교재2::L11 동사
+낙서	graffiti, doodling	문에 낙서를 해요.<br>He's scribbling on the door.	落書.	cours::C59 교재2::L11 명사
+질서를 지키다	to observe order, to queue properly	질서를 지켜 주세요.<br>Please keep order.	秩序. 지키다 = to keep, to observe.	cours::C59 교재2::L11 표현
+차례	one's turn	차례를 기다리세요.<br>Wait your turn.	次例. 차례를 지키다 = to wait your turn.	cours::C59 교재2::L11 명사
+지키다	to keep, to observe (a rule)	약속을 지키세요.<br>Keep your promise.	Rules, promises, order.	cours::C59 교재2::L11 동사
+입장하다	to enter (a venue)	공연 20분 전에는 입장해야 돼요.<br>You must be seated 20 minutes before the show.	入場. 입장권 = entrance ticket.	cours::C59 교재2::L11 동사
+-으면 안 되다	must not	낙서를 하면 안 돼요.<br>You mustn't scribble on things.	Literally 'if you do, it doesn't work'. The counterpart of -어야 되다 (must).	cours::C59 교재2::L11 문법
+연극	play, theatre	연극을 보러 갔어요.<br>We went to see a play.	演劇. 뮤지컬 and 공연 are separate words.	cours::C59 교재2::L11 명사
+사교적이다	to be sociable	사교적인 사람을 좋아해요.<br>I like sociable people.	社交的. Close to 외향적이다.	cours::C59 교재2::L11 형용사
+내성적이다	to be reserved, introverted	저는 좀 내성적이에요.<br>I'm a bit reserved.	內省的. Also 내향적이다.	cours::C59 교재2::L11 형용사
+외모	appearance, looks	외모보다 성격이 중요해요.<br>Personality matters more than looks.	外貌.	cours::C59 교재2::L11 명사
+반대	the opposite	저하고 성격이 반대예요.<br>Our personalities are opposites.	反對. Also means opposition: 반대하다.	cours::C59 교재2::L11 명사

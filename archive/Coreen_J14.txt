@@ -1,0 +1,12 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J14
+#tags column:5
+-은 지 + 되다/지나다/넘다	it has been (time) since …	한국에 온 지 3년이 됐어요.<br>It's been three years since I came to Korea.	Verb + -은/-ㄴ 지 + duration + 되다 (it's been), 지나다 (has passed), 넘다 (over). 만들다 → 만든 지. Question: 한국어를 배운 지 얼마나 됐어요?	cours::J14 교재::MKG-INT 문법
+-은 지 N이나 / N밖에 안 / N도 안 됐다	already N / only N / not even N since …	운전을 배운 지 일주일밖에 안 됐어요.<br>It's only been a week since I learned to drive.	이나 됐어요 = already that long (30분이나 됐어요). 밖에 안 됐어요 = only. 도 안 됐어요 = not even: 집에 온 지 10분도 안 됐어요.	cours::J14 교재::MKG-INT 문법
+오래되다	to be a long time; to be old	그 친구를 만난 지 오래됐어요.<br>It's been ages since I saw that friend.	Also for objects: 오래된 컴퓨터 = an old computer.	cours::J14 교재::MKG-INT 형용사
+얼마 안 되다	not to be long	이 동네에 이사 온 지 얼마 안 됐어요.<br>I haven't lived in this neighbourhood long.	얼마 = how much, some amount.	cours::J14 교재::MKG-INT 표현
+넘다	to exceed, to go over	주문한 지 30분이 넘었는데 음식이 안 나와요.<br>It's been over 30 minutes since we ordered and the food still hasn't come.	Also physically: 담을 넘다 = to climb over a wall.	cours::J14 교재::MKG-INT 동사
+멀쩡하다	to be perfectly fine, intact	산 지 10년이 넘었는데 아직 멀쩡해요.<br>I bought it over ten years ago and it's still in perfect shape.	For objects and for people who seem fine.	cours::J14 교재::MKG-INT 형용사
+해외여행	travel abroad	해외여행을 한 지 얼마나 됐어요?<br>How long has it been since you travelled abroad?	海外旅行.	cours::J14 교재::MKG-INT 명사
+직장	workplace, job	지금 직장을 다닌 지 얼마나 됐어요?<br>How long have you been at your current job?	職場. 직장을 다니다 = to work somewhere.	cours::J14 교재::MKG-INT 명사

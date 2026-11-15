@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+빠뜨리다	to leave out, to forget (to include); to drop into<br><i>oublier (qqch), omettre ; faire tomber dans</i>	서류에 중요한 내용을 빠뜨렸어요.<br>I left out something important in the document.<br><i>J'ai oublié une information importante dans le document.</i>	[ppatteurida] Takes 을/를. Passive-like intransitive: 빠지다 (to be missing / to fall in). Also 빠트리다 (both standard).	quotidien::2026-10-28 동사
+허전하다	to feel empty, to feel something is missing<br><i>se sentir vide, avoir un manque</i>	친구가 이사 가서 좀 허전해요.<br>My friend moved away, so I feel a bit empty.<br><i>Mon ami a déménagé, alors je me sens un peu vide.</i>	[heojeonhada] Used for emotional emptiness or a bare look (목이 허전하다 = neck feels bare without a scarf/necklace).	quotidien::2026-10-28 형용사
+어쩐지	no wonder; somehow, for some reason<br><i>pas étonnant que… ; je me disais bien</i>	어쩐지 조용하다 했어요. 다들 퇴근했네요.<br>No wonder it was so quiet. Everyone has gone home.<br><i>Je me disais bien que c'était calme. Tout le monde est parti.</i>	[eojjeonji] Common pattern: 어쩐지 ~더라(니) / ~다 했어요 when something finally makes sense. From 어찌 된 일인지.	quotidien::2026-10-28 부사
+맞장구를 치다	to chime in agreeing, to back someone up in conversation<br><i>acquiescer, abonder dans le sens de qqn</i>	제 얘기에 친구가 계속 맞장구를 쳐 줬어요.<br>My friend kept chiming in agreement as I talked.<br><i>Mon ami n'arrêtait pas d'abonder dans mon sens pendant que je parlais.</i>	[matjanggureul chida] Literally 'to beat the 장구 drum together'. Typical 맞장구: 맞아요, 그러니까요, 진짜요?	quotidien::2026-10-28 표현
+연착	delayed arrival (of a train, flight, etc.)<br><i>retard (à l'arrivée d'un train, avion…)</i>	비행기가 한 시간 연착됐어요.<br>The plane arrived an hour late.<br><i>L'avion est arrivé avec une heure de retard.</i>	[yeonchak] Hanja 延着 (delay + arrive). Use 연착되다. Compare 지연 (延遲, general delay) and 결항 (cancelled flight).	quotidien::2026-10-28 명사

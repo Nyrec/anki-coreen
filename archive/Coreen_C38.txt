@@ -1,0 +1,25 @@
+#separator:tab
+#html:true
+#deck:Coréen::C38
+#tags column:5
+-고 (순서)	and then (sequence of actions)	회사를 그만두고 대학에 들어갔어요.<br>I quit my job and went to university.	Lists two actions in order. Unlike -아서/-어서, the two clauses may have different subjects: 저는 밥을 먹고 친구는 빵을 먹어요.	cours::C38 교재2::L2 문법
+-겠습니다	I will (formal intention)	다음에 또 뵙겠습니다.<br>I'll see you again next time.	겠 marks intention or conjecture; with -습니다 it makes a formal promise. 알겠습니다, 잘 먹겠습니다.	cours::C38 교재2::L2 문법
+승진하다	to be promoted	작년에 승진했습니다.<br>I was promoted last year.	昇進.	cours::C38 교재2::L2 동사
+창업하다	to start a business	내년에 창업할 거예요.<br>I'll start a business next year.	創業.	cours::C38 교재2::L2 동사
+진학하다	to go on to higher education	대학원에 진학했어요.<br>I went on to graduate school.	進學.	cours::C38 교재2::L2 동사
+장학금	scholarship	장학금을 받았어요?<br>Did you get a scholarship?	奬學金. The verb is 받다.	cours::C38 교재2::L2 명사
+마치다	to finish, to complete	유학 생활을 마치고 돌아왔어요.<br>I finished studying abroad and came back.	끝나다 happens by itself; 마치다 is something you complete.	cours::C38 교재2::L2 동사
+돌아오다	to come back, to return	휴가에서 돌아왔어요.<br>I came back from holiday.	돌다 + 오다. 돌아가다 = to go back.	cours::C38 교재2::L2 동사
+생활	life, daily living	학교생활 재미있어요?<br>Is school life fun?	生活. 회사생활, 유학 생활.	cours::C38 교재2::L2 명사
+얼마 전에	a little while ago	얼마 전에 회사를 그만뒀어요.<br>I quit my job a little while ago.	Weeks or months, not years. 며칠 전에 = a few days ago.	cours::C38 교재2::L2 시간
+학기	semester, term	이번 학기가 끝났어요.<br>This semester has ended.	學期.	cours::C38 교재2::L2 시간
+부장님	department head	안녕하십니까? 부장님.<br>Good morning, sir.	部長 + 님. Korean workplaces address people by title, not name.	cours::C38 교재2::L2 사람
+힘내세요	Cheer up, hang in there	힘내세요!<br>Hang in there!	힘 (strength) + 내다. What you say to someone struggling.	cours::C38 교재2::L2 표현
+전혀	not at all	저는 전혀 몰랐어요.<br>I had no idea at all.	Always with a negative.	cours::C38 교재2::L2 부사
+답장	reply (to a letter)	답장 부탁합니다.<br>I look forward to your reply.	答狀. 답장하다 = to reply.	cours::C38 교재2::L2 명사
+부탁하다	to ask a favour	답장 부탁합니다.<br>Please reply.	付託. Humble form: 부탁드립니다.	cours::C38 교재2::L2 동사
+연락	contact	연락드리겠습니다.<br>I'll be in touch.	連絡. 연락하다 / 연락드리다 (humble).	cours::C38 교재2::L2 명사
+풀다	to solve, to untie	문제를 풀어요.<br>I solve the problem.	ㄹ stem → 풀어요.	cours::C38 교재2::L2 동사
+문제	problem, question	문제가 어려워요.<br>The question is difficult.	問題.	cours::C38 교재2::L2 명사
+확인하다	to check, to confirm	휴대 전화를 확인하고 나갔어요.<br>I checked my phone and went out.	確認.	cours::C38 교재2::L2 동사
+새	new	새 회사에 들어갈 거예요.<br>I'll join a new company.	Always before a noun: 새 옷, 새 집. The adjective is 새롭다.	cours::C38 교재2::L2 문법

@@ -1,0 +1,38 @@
+#separator:tab
+#html:true
+#deck:Coréen::C33
+#tags column:5
+-지만	although, but	가방이 예쁘지만 좀 무거워요.<br>The bag is pretty but a bit heavy.	Stem + 지만, inside one sentence. 하지만 and 그렇지만 start a new one.	cours::C33 교재::L13 문법
+빨간색	red	빨간색 티셔츠를 입었어요.<br>He wore a red T-shirt.	Also 빨강. From 빨갛다.	cours::C33 교재::L13 색
+노란색	yellow	노란색 티셔츠를 입고 있어요.<br>She's wearing a yellow T-shirt.	From 노랗다.	cours::C33 교재::L13 색
+파란색	blue	파란색 바지를 입었어요.<br>He wore blue trousers.	From 파랗다. 하늘색 = sky blue.	cours::C33 교재::L13 색
+하얀색	white	하얀색 구두를 신었어요.<br>She wore white shoes.	Also 흰색. From 하얗다.	cours::C33 교재::L13 색
+까만색	black	까만색 바지를 입었어요.<br>He wore black trousers.	Also 검정색. From 까맣다.	cours::C33 교재::L13 색
+초록색	green	초록색 가방이에요.<br>It's a green bag.	綠. Also 녹색.	cours::C33 교재::L13 색
+분홍색	pink	분홍색 치마를 입었어요.<br>She wore a pink skirt.	粉紅. 핑크색 is equally common.	cours::C33 교재::L13 색
+보라색	purple	보라색 티셔츠를 입고 있어요.<br>He's wearing a purple T-shirt.		cours::C33 교재::L13 색
+회색	grey	회색 양복을 입고 있어요.<br>He's wearing a grey suit.	灰色. 그레이 in fashion contexts.	cours::C33 교재::L13 색
+갈색	brown	갈색 바지를 입고 있어요.<br>He's wearing brown trousers.	褐色.	cours::C33 교재::L13 색
+주황색	orange	주황색 가방이에요.<br>It's an orange bag.	朱黃.	cours::C33 교재::L13 색
+입고 있다	to be wearing	까만색 티셔츠를 입고 있어요.<br>He's wearing a black T-shirt.	-고 있다 marks the resulting state, not the action: 신고 있다, 쓰고 있다.	cours::C33 교재::L13 문법
+양복	suit	회색 양복을 입고 있어요.<br>He's wearing a grey suit.	洋服. 정장 is the other common word.	cours::C33 교재::L13 명사
+와이셔츠	dress shirt	하얀색 와이셔츠를 입었어요.<br>He wore a white dress shirt.	From 'white shirt' via Japanese.	cours::C33 교재::L13 명사
+귀걸이	earrings	귀걸이를 했어요.<br>She wore earrings.	귀 (ear) + 걸이. Jewellery takes 하다.	cours::C33 교재::L13 명사
+목걸이	necklace	목걸이를 하고 나갔어요.<br>She put on a necklace and went out.	목 (neck) + 걸이.	cours::C33 교재::L13 명사
+스카프	scarf	스카프를 매고 갔어요.<br>She tied a scarf and went.	Lighter than 목도리; the verb is 매다.	cours::C33 교재::L13 명사
+매다	to tie, to fasten	넥타이를 매요.<br>I tie a tie.	For ties, scarves, seatbelts.	cours::C33 교재::L13 동사
+메다	to carry on the shoulder	가방을 멨어요.<br>I carried the bag on my shoulder.	Only for bags. Don't confuse with 매다.	cours::C33 교재::L13 동사
+마스크	face mask	미세먼지가 많아요. 마스크를 쓰세요.<br>There's a lot of fine dust. Wear a mask.	The verb is 쓰다.	cours::C33 교재::L13 명사
+미세먼지	fine dust, air pollution	미세먼지가 심해요.<br>The fine dust is bad.	微細먼지. A daily concern in Korea.	cours::C33 교재::L13 명사
+높다	to be high	그 구두는 높아요.<br>Those shoes have a high heel.	Pronounced [놉따]. For height of things; people take 키가 크다.	cours::C33 교재::L13 형용사
+낮다	to be low	가격이 낮아요.<br>The price is low.	Pronounced [낟따].	cours::C33 교재::L13 형용사
+두껍다	to be thick	코트가 따뜻하지만 좀 두꺼워요.<br>The coat is warm but a bit thick.	ㅂ irregular → 두꺼워요. Opposite: 얇다.	cours::C33 교재::L13 형용사
+튼튼하다	to be sturdy, strong	가방이 튼튼하지만 무거워요.<br>The bag is sturdy but heavy.		cours::C33 교재::L13 형용사
+값	price	값은 비싸지만 서비스가 좋아요.<br>It's expensive but the service is good.	가격 is the more formal word.	cours::C33 교재::L13 명사
+외국	foreign country	외국에서 공부하고 싶어요.<br>I want to study abroad.	外國. 외국인 = foreigner.	cours::C33 교재::L13 명사
+코트	coat	코트가 따뜻해요.<br>The coat is warm.		cours::C33 교재::L13 명사
+수영복	swimsuit	분홍색 수영복을 입을 거예요.<br>I'll wear a pink swimsuit.	水泳服.	cours::C33 교재::L13 명사
+원피스	dress	원피스를 사려고요.<br>I'm thinking of buying a dress.	From 'one-piece'. 드레스 is for formal gowns.	cours::C33 교재::L13 명사
+마음에 들다	to like, to be to one's taste	이 향수 정말 마음에 들어요.<br>I really like this perfume.	Literally 'it enters my heart'. Negative: 마음에 안 들어요.	cours::C33 교재::L13 표현
+생각이 나다	to remember, to come to mind	이름을 들었지만 생각이 안 나요.<br>I heard the name but I can't recall it.	Literally 'the thought arises'.	cours::C33 교재::L13 표현
+고급	high-class, upmarket	고급 식당에 가요.<br>I'm going to a fancy restaurant.	高級.	cours::C33 교재::L13 명사

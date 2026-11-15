@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+엇갈리다	to cross paths without meeting; to differ (opinions)<br><i>se croiser sans se rencontrer ; diverger (avis)</i>	길이 엇갈려서 친구를 못 만났어요.<br>We missed each other on the way, so I couldn't meet my friend.<br><i>On s'est croisés sans se voir, alors je n'ai pas pu retrouver mon ami.</i>	[eotgallida] Common with 의견이 엇갈리다 (opinions are divided) and 길이 엇갈리다. Related: 어긋나다 (to go wrong, not match).	quotidien::2026-10-24 동사
+까다롭다	picky, demanding; tricky<br><i>difficile, exigeant, pointilleux</i>	우리 팀장님은 보고서에 좀 까다로워요.<br>Our team leader is a bit picky about reports.<br><i>Notre chef d'équipe est assez exigeant sur les rapports.</i>	[kkadaropda] ㅂ-irregular: 까다로워요, 까다로운. Used for people (입맛이 까다롭다 = picky eater) and things (까다로운 문제 = tricky problem).	quotidien::2026-10-24 형용사
+얼른	quickly, right away<br><i>vite, sans tarder</i>	늦었으니까 얼른 가요.<br>We're late, so let's go quickly.<br><i>On est en retard, allons-y vite.</i>	[eolleun] Colloquial, often with commands/suggestions; close to 빨리 but stresses 'without delay'. 얼른 와! = Come here quick!	quotidien::2026-10-24 부사
+잔소리	nagging<br><i>remontrances, sermons (répétitifs)</i>	엄마가 또 잔소리하셨어요.<br>My mom nagged me again.<br><i>Ma mère m'a encore fait la morale.</i>	[jansori] 잔소리하다 = to nag; 잔소리를 듣다 = to get nagged. 잔- means 'small, petty' (cf. 잔돈 small change).	quotidien::2026-10-24 명사
+귀가 얇다	to be easily swayed (lit. 'thin ears')<br><i>être influençable, crédule</i>	저는 귀가 얇아서 광고를 보면 바로 사요.<br>I'm easily swayed, so I buy things as soon as I see an ad.<br><i>Je suis influençable : dès que je vois une pub, j'achète.</i>	[gwiga yalda] 얇다 (thin) is pronounced [얄따]; 얇아서 [얄바서]. Opposite idea: 고집이 세다 (stubborn).	quotidien::2026-10-24 표현

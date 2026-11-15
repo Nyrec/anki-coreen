@@ -1,0 +1,10 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J01
+#tags column:5
+그릇	bowl; counter for bowls	비빔밥 두 그릇 주세요.<br>Two bowls of bibimbap, please.	Both the bowl itself and the counter for servings of rice, soup or stew.	cours::J01 교재::MKG6 단위
+조각	piece, slice (counter)	케이크 한 조각 주세요.<br>One slice of cake, please.	For cake, pizza, fruit. 피자 두 조각.	cours::J01 교재::MKG6 단위
+아메리카노	americano	아메리카노 한 잔에 얼마예요?<br>How much is one americano?	The default coffee order in Korea; often shortened to 아아 for the iced version.	cours::J01 교재::MKG6 음식
+양파	onion	양파가 이천 원이에요.<br>The onions are 2,000 won.	洋파 — the 'Western' spring onion. 파 = spring onion.	cours::J01 교재::MKG6 음식
+소주	soju	소주가 두 병에 얼마예요?<br>How much for two bottles of soju?	燒酒. Counted with 병.	cours::J01 교재::MKG6 음식
+펭귄	penguin	펭귄이 몇 마리 있어요?<br>How many penguins are there?		cours::J01 교재::MKG6 동물

@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+버티다	to hold out, to endure, to bear<br><i>tenir bon, endurer, tenir le coup</i>	금요일까지만 버티면 돼요.<br>I just have to hold out until Friday.<br><i>Il suffit de tenir jusqu'à vendredi.</i>	[beotida] Often with -(으)면 되다 or 못 버티다 (can't take it anymore). Regular verb: 버텨요.	quotidien::2026-10-17 동사
+뻔하다	obvious, predictable<br><i>évident, prévisible, couru d'avance</i>	그 드라마는 결말이 너무 뻔해요.<br>That drama's ending is way too predictable.<br><i>La fin de ce drama est trop prévisible.</i>	[ppeonhada] Common pattern: V-(으)ㄹ 게 뻔하다 = 'it's obvious that… will happen' (늦을 게 뻔해요).	quotidien::2026-10-17 형용사
+대충	roughly, more or less, sloppily<br><i>à peu près, grosso modo, vite fait</i>	시간이 없어서 대충 먹었어요.<br>I didn't have time, so I just ate something quick.<br><i>Je n'avais pas le temps, alors j'ai mangé vite fait.</i>	[daechung] Neutral (대충 알아요 = I roughly know) or negative (대충 하다 = to do carelessly). Opposite: 꼼꼼하게.	quotidien::2026-10-17 부사
+단골	regular (customer), favorite spot<br><i>habitué (client), adresse habituelle</i>	여기는 제 단골 카페예요.<br>This is my regular café.<br><i>C'est mon café habituel.</i>	[dangol] 단골손님 = regular customer, 단골집 = go-to place. Shop owners may give 서비스 (freebies) to 단골.	quotidien::2026-10-17 명사
+말도 안 되다	it makes no sense, that's ridiculous<br><i>c'est n'importe quoi, c'est absurde</i>	그 가격은 말도 안 돼요.<br>That price is ridiculous.<br><i>Ce prix, c'est n'importe quoi.</i>	[maldo an doeda] Lit. 'even words don't work'. Casual: 말도 안 돼! Also as modifier: 말도 안 되는 소리 (nonsense).	quotidien::2026-10-17 표현

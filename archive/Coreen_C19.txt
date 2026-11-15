@@ -1,0 +1,29 @@
+#separator:tab
+#html:true
+#deck:Coréen::C19
+#tags column:5
+그런데	however, by the way	다 맛있어요. 그런데 저는 냉면을 좋아해요.<br>It's all good. That said, I like naengmyeon.	Two uses: contrast (however) and changing the subject (by the way). 근데 in speech.	cours::C19 교재::L6 문법
+다	all, everything	다 맛있어요.<br>Everything is delicious.	Adverb, placed before the verb. Also means 'everyone' depending on context.	cours::C19 교재::L6 부사
+시키다	to order (food)	비빔냉면 하나 시킬까요?<br>Shall we order one bibim-naengmyeon?	시키 + 어요 → 시켜요. 주문하다 is the more formal equivalent.	cours::C19 교재::L6 동사
+-(으)ㄹ까요?	Shall we …? / Shall I …?	그럼 냉면 하나 시킬까요?<br>Shall we order one naengmyeon then?	Suggests an action and asks the other person's opinion. 시키다 → 시킬까요, 먹다 → 먹을까요.	cours::C19 교재::L6 문법
+빼다	to leave out, to remove	비빔냉면에는 고기를 빼 주세요.<br>Please leave the meat out of the bibim-naengmyeon.	빼 주세요 is how you ask for an ingredient to be omitted — essential if you don't eat meat.	cours::C19 교재::L6 동사
+비빔냉면	spicy mixed cold noodles	저는 비빔냉면을 좋아해요.<br>I like bibim-naengmyeon.	비비다 (to mix) + 냉면. Served with red pepper sauce rather than broth.	cours::C19 교재::L6 음식
+물냉면	cold noodles in broth	저는 물냉면을 좋아해요.<br>I like mul-naengmyeon.	물 (water) + 냉면. The icy-broth version, not spicy.	cours::C19 교재::L6 음식
+떡볶이	tteokbokki	이 식당 떡볶이는 매워요?<br>Is this restaurant's tteokbokki spicy?	떡 (rice cake) + 볶이 (stir-fried). Pronounced [떡뽀끼].	cours::C19 교재::L6 음식
+메뉴판	menu	저기 메뉴판이 있어요.<br>There's a menu over there.	메뉴 + 판 (板, board).	cours::C19 교재::L6 명사
+종류	kind, type	이 식당은 김밥 종류가 많아요.<br>This restaurant has many kinds of gimbap.	種類. Pronounced [종뉴].	cours::C19 교재::L6 명사
+제일	the most, the best	무슨 김밥이 제일 맛있어요?<br>Which gimbap is the best?	第一. 가장 is the more written synonym.	cours::C19 교재::L6 부사
+특히	especially	소고기 김밥이 특히 맛있어요.<br>The beef gimbap is especially good.	特히, pronounced [트키]. Singles out one item; 특별히 stresses that something is done as a special case.	cours::C19 교재::L6 부사
+그렇군요	I see, is that so	아, 그렇군요.<br>Ah, I see.	-군요 marks new information you've just taken in. 그렇구나 in casual speech.	cours::C19 교재::L6 표현
+별로	not really, not particularly	별로 맵지 않아요.<br>It isn't particularly spicy.	Always paired with a negative: 별로 안 …, 별로 …지 않아요.	cours::C19 교재::L6 부사
+인분	portion (counter for dishes)	떡볶이 일 인분 주세요.<br>One portion of tteokbokki, please.	人分. Takes Sino numbers, unlike most counters: 일 인분, 이 인분.	cours::C19 교재::L6 단위
+N하고 같이	together with N	저는 친구하고 같이 영화를 봐요.<br>I watch films with a friend.	Used when two or more people do the action together. 하고 can be dropped: 친구하고 영화를 봐요.	cours::C19 교재::L6 문법
+가족	family	가족하고 같이 뭐 해요?<br>What do you do with your family?	家族.	cours::C19 교재::L6 사람
+게임	game	게임을 안 해요. 공부를 해요.<br>I don't play games. I study.	게임을 하다 = to play a game. Negated as 게임 안 해요.	cours::C19 교재::L6 명사
+산책	walk, stroll	공원에서 산책해요.<br>I take a walk in the park.	散策. 산책하다 = to go for a walk.	cours::C19 교재::L6 명사
+노래방	karaoke room	친구들하고 노래방에 가요.<br>I go to a karaoke room with friends.	노래 (song) + 방 (room). Private rooms rented by the hour, not an open bar.	cours::C19 교재::L6 장소
+일월 이월 삼월 … 십이월	the twelve months	오늘은 시월 십팔일이에요.<br>Today is 18 October.	Sino number + 월. Two are irregular: 유월 (June, not 육월) and 시월 (October, not 십월).	cours::C19 교재::L7 시간
+유월	June	유월 십일이에요.<br>It's the 10th of June.	The ㄱ of 육 drops: 육월 is wrong.	cours::C19 교재::L7 시간
+시월	October	시월 이십오일이에요.<br>It's the 25th of October.	The ㅂ of 십 drops: 십월 is wrong.	cours::C19 교재::L7 시간
+일 (날짜)	day of the month	오늘은 시월 십팔일이에요.<br>Today is 18 October.	Sino number + 일: 이일, 십삼일, 삼십일일. Same syllable as 일 (work), different word.	cours::C19 교재::L7 시간
+월요일 화요일 수요일 목요일 금요일 토요일 일요일	the days of the week (Monday to Sunday)	오늘은 토요일이에요.<br>Today is Saturday.	月火水木金土日 + 요일: moon, fire, water, wood, metal, earth, sun.	cours::C19 교재::L7 시간

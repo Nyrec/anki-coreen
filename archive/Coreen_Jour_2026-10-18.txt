@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+아끼다	to save, to be sparing with; to cherish<br><i>économiser, épargner ; tenir à, chérir</i>	요즘 돈을 아끼려고 점심을 싸 와요.<br>These days I bring a packed lunch to save money.<br><i>Ces temps-ci, je prépare mon déjeuner pour économiser de l'argent.</i>	[akkida] Takes 을/를: 시간을 아끼다 (save time). Also 'to cherish': 아끼는 물건 = a treasured item. Related: 아깝다 (what a waste).	quotidien::2026-10-18 동사
+든든하다	reassuring, reliable; full and satisfied (after eating)<br><i>rassurant, solide ; (estomac) bien rempli</i>	아침을 든든하게 먹어서 아직 배가 안 고파요.<br>I had a hearty breakfast, so I'm not hungry yet.<br><i>J'ai pris un bon petit-déjeuner, donc je n'ai pas encore faim.</i>	[deundeunhada] Adverb form 든든하게/든든히. Also used for people: 네가 있어서 든든해 = I feel safe with you around.	quotidien::2026-10-18 형용사
+마침	just, at the right moment, as it happens<br><i>justement, pile au bon moment</i>	마침 저도 전화하려고 했어요.<br>I was just about to call you too.<br><i>Justement, j'allais vous appeler moi aussi.</i>	[machim] Positive coincidence (opposite feel of 하필). 마침내 = finally, at last — a different meaning.	quotidien::2026-10-18 부사
+품절	sold out, out of stock<br><i>rupture de stock, épuisé</i>	그 모델은 벌써 품절됐어요.<br>That model is already sold out.<br><i>Ce modèle est déjà en rupture de stock.</i>	[pumjeol] Hanja 品切. Used with 되다: 품절되다. Seen everywhere online; 재입고 = restock.	quotidien::2026-10-18 명사
+손이 많이 가다	to take a lot of work / effort<br><i>demander beaucoup de travail / de soin</i>	김밥은 맛있지만 손이 많이 가요.<br>Gimbap is tasty, but it takes a lot of work.<br><i>Les kimbap sont bons, mais ils demandent beaucoup de travail.</i>	[soni mani gada] Lit. 'many hands go'. Subject takes 은/는 or 이/가: 이 일은 손이 많이 가요. Also for people needing care: 손이 많이 가는 아이.	quotidien::2026-10-18 표현

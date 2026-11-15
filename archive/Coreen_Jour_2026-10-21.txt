@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+설치하다	to install, to set up<br><i>installer</i>	새 프로그램을 설치했는데 실행이 안 돼요.<br>I installed a new program, but it won't run.<br><i>J'ai installé un nouveau programme, mais il ne se lance pas.</i>	[seolchihada] Hanja 設置. Object takes 을/를; passive 설치되다 (to be installed). Related: 설치 파일 (installer), 앱을 깔다 (casual 'install an app').	quotidien::2026-10-21 동사
+불안하다	to be anxious, uneasy; unstable<br><i>être inquiet, anxieux ; instable</i>	면접 전날이라서 너무 불안해요.<br>It's the day before my interview, so I'm really anxious.<br><i>C'est la veille de mon entretien, alors je suis très anxieux.</i>	[buranhada] Hanja 不安 (not + peaceful), opposite of 안심하다 (to feel relieved). Also for things: 와이파이가 불안해요 = the Wi-Fi is unstable. Noun: 불안감.	quotidien::2026-10-21 형용사
+겨우	barely, just barely; only (a mere)<br><i>à peine, tout juste, de justesse ; seulement</i>	지하철을 겨우 탔어요.<br>I barely made it onto the subway.<br><i>J'ai eu le métro de justesse.</i>	[gyeou] Two uses: 'with difficulty, barely' (겨우 끝냈어요) and 'a mere, only' with a small amount, often + 밖에: 겨우 천 원밖에 없어요. Synonym: 간신히 (barely).	quotidien::2026-10-21 부사
+막차	the last train / bus (of the day)<br><i>le dernier métro / bus / train</i>	막차가 몇 시에 있어요?<br>What time is the last train?<br><i>À quelle heure est le dernier métro ?</i>	[makcha] 막- = 'last' (막내 youngest child); 차 = vehicle. Opposite: 첫차 (first train). Verbs: 막차를 타다 / 놓치다; 막차가 끊기다 = service ends for the night.	quotidien::2026-10-21 명사
+기가 막히다	to be dumbfounded / outrageous; (also) amazing, superb<br><i>être sidéré, c'est incroyable ; (aussi) génial, épatant</i>	이 집 김치찌개는 맛이 기가 막혀요.<br>The kimchi stew at this place is unbelievably good.<br><i>Le kimchi-jjigae de ce resto est incroyablement bon.</i>	[giga makhida] Lit. 'one's energy (氣) gets blocked'. Negative (기가 막혀서 말이 안 나와요 = I'm speechless) or positive praise (맛이 기가 막히다). 막히다 = to be blocked (길이 막히다).	quotidien::2026-10-21 표현

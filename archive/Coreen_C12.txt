@@ -1,0 +1,46 @@
+#separator:tab
+#html:true
+#deck:Coréen::C12
+#tags column:5
+몇	how many, what (with numbers)	전화번호가 몇 번이에요?<br>What's your phone number?	Always sits before a counter: 몇 번, 몇 층, 몇 시.	cours::C12 교재::L3 문법
+좀	a little; softener	번호 좀 가르쳐 주세요.<br>Could you give me the number, please?	Shortened from 조금. Inserted before a request to cushion it — extremely common in speech.	cours::C12 교재::L3 문법
+가르치다	to teach	한국어를 가르쳐요.<br>She teaches Korean.	가르치 + 어요 → 가르쳐요. Don't confuse with 가리키다 (to point at).	cours::C12 교재::L3 동사
+주세요	please give me	물 주세요.<br>Water, please.	From 주다 (to give). V-아/어 + 주세요 asks someone to do something for you.	cours::C12 교재::L3 표현
+가르쳐 주세요	please tell me, please teach me	전화번호 좀 가르쳐 주세요.<br>Could you tell me your phone number?	가르치다 + 주세요. The standard polite way to ask for someone's number.	cours::C12 교재::L3 표현
+알겠습니다	Understood (formal)	네, 알겠습니다.<br>Yes, understood.	Pronounced [알게씀니다]. 알겠어요 is the 해요체 version. 알았어요 states you understood; 알겠어요 accepts what you've just been told.	cours::C12 교재::L3 표현
+N이/가 아니라 N	not A but B	7353이 아니라 7354예요.<br>It's not 7353 but 7354.	Corrects the previous statement inside a single sentence, unlike 아니에요 which ends one.	cours::C12 교재::L3 문법
+여행사	travel agency	한국 여행사 번호 좀 가르쳐 주세요.<br>Could you give me the Korean travel agency's number?	旅行社. 여행 = travel, trip.	cours::C12 교재::L3 장소
+반갑다	to be glad (to meet someone)	반가워요.<br>Nice to meet you.	ㅂ irregular: 반갑 + 아요 → 반가워요.	cours::C12 교재::L3 형용사
+만나서 반가워요	Nice to meet you	만나서 반가워요. 저는 메이예요.<br>Nice to meet you. I'm Mei.	Literally 'having met you, I'm glad'. 반가워요 alone is the short version.	cours::C12 교재::L3 표현
+저	I (humble)	저는 수안이에요.<br>I'm Suan.	Humble form of 나, used with anyone you're not close to. Possessive: 제.	cours::C12 교재::L3 명사
+제	my (humble)	제 번호는 010-1306-7852예요.<br>My number is 010-1306-7852.	저 + 의 contracted. The casual counterpart is 내.	cours::C12 교재::L3 명사
+맞다	to be correct	010-1306-7851, 맞아요?<br>010-1306-7851, is that right?	맞아요? is the everyday way to check information.	cours::C12 교재::L3 동사
+고맙다	to be thankful	고마워요.<br>Thank you.	ㅂ irregular → 고마워요. 고맙습니다 is formal; 감사합니다 is a notch more formal still.	cours::C12 교재::L3 형용사
+감사합니다	thank you (formal)	네, 감사합니다.<br>Yes, thank you.	感謝. The safest choice with strangers, staff and superiors.	cours::C12 교재::L3 표현
+아파트	apartment	이 아파트에 살아요?<br>Do you live in this apartment building?	Refers to the whole building or complex, not just one flat.	cours::C12 교재::L3 장소
+지난주	last week	지난주에 이사 왔어요.<br>I moved in last week.	지난 (past) + 주 (week). 이번 주 = this week, 다음 주 = next week.	cours::C12 교재::L3 시간
+이사	moving house	지난주에 이사 왔어요.<br>I moved in last week.	移徙. 이사하다 = to move; 이사 오다 = to move in.	cours::C12 교재::L3 명사
+참	oh, by the way	참, 지윤 씨. 전화번호 좀 가르쳐 주세요.<br>Oh, Jiyun — could you give me your number?	Marks something that just came to mind mid-conversation.	cours::C12 교재::L3 표현
+또	again	그럼 또 봐요.<br>See you again, then.	또 봐요 is a casual goodbye between people who'll meet again.	cours::C12 교재::L3 부사
+무엇	what	무엇이 천 원이에요?<br>What costs 1,000 won?	Written or formal form; 뭐 is the spoken contraction.	cours::C12 교재::L3 명사
+청소하다	to clean, to tidy up	로라가 청소해요.<br>Laura is cleaning.	하다 verb → 청소해요. 청소 = 淸掃.	cours::C12 교재::L3 동사
+안경	glasses	안경이 삼만 이천 원이에요.<br>The glasses are 32,000 won.	眼鏡. 안경을 쓰다 = to wear glasses.	cours::C12 교재::L3 명사
+과자	snacks, cookies	과자가 천 원이에요.<br>The snacks are 1,000 won.	菓子.	cours::C12 교재::L3 음식
+손목시계	wristwatch	손목시계가 만 이천 원이에요.<br>The watch is 12,000 won.	손목 (wrist) + 시계 (clock).	cours::C12 교재::L3 명사
+여행가방	suitcase	여행가방이 오만 오천 원이에요.<br>The suitcase is 55,000 won.	여행 (travel) + 가방 (bag). 캐리어 is common in speech.	cours::C12 교재::L3 명사
+운동화	sneakers, trainers	운동화가 이만 오천 원이에요.<br>The trainers are 25,000 won.	運動靴 — literally exercise shoes.	cours::C12 교재::L3 명사
+컴퓨터	computer	컴퓨터가 칠십팔만 원이에요.<br>The computer is 780,000 won.		cours::C12 교재::L3 명사
+핸드폰	mobile phone	핸드폰이 사십오만 원이에요.<br>The phone is 450,000 won.	Konglish; 휴대폰 and 휴대 전화 are the more standard forms.	cours::C12 교재::L3 명사
+침대	bed	침대가 있어요.<br>There's a bed.	寢臺.	cours::C12 교재::L4 집
+책상	desk	책상이 있어요.<br>There's a desk.	冊床 — literally book table. Distinct from 식탁 (dining table) and 탁자 (low table).	cours::C12 교재::L4 집
+소파	sofa	소파가 비싸요.<br>The sofa is expensive.		cours::C12 교재::L4 집
+탁자	low table, coffee table	탁자가 있어요.<br>There's a coffee table.	卓子.	cours::C12 교재::L4 집
+텔레비전	television	텔레비전이 있어요.<br>There's a television.	Often shortened to TV [티비].	cours::C12 교재::L4 집
+식탁	dining table	식탁이 있어요.<br>There's a dining table.	食卓.	cours::C12 교재::L4 집
+냉장고	refrigerator	냉장고가 있어요.<br>There's a fridge.	冷藏庫.	cours::C12 교재::L4 집
+부엌	kitchen	부엌이에요.<br>It's the kitchen.	Pronounced [부억]; 부엌이 becomes [부어키]. 주방 is the more formal word.	cours::C12 교재::L4 집
+거실	living room	거실에 소파가 있어요.<br>There's a sofa in the living room.	居室.	cours::C12 교재::L4 집
+전화번호가 어떻게 돼요?	What's your phone number? (polite)	가: 전화번호가 어떻게 되세요?<br>나: 010-2735-6910이에요.	어떻게 돼요? is softer than 뭐예요?; 어떻게 되세요? adds a further level of deference. Same pattern for 이름, 나이.	cours::C12 교재::L3 표현
+형	older brother (used by a man)	동생이 아니에요. 형이에요.<br>He isn't my younger brother. He's my older brother.	A man says 형 / 누나; a woman says 오빠 / 언니.	cours::C12 교재::L3 사람
+영어	English (language)	영어 수업이 아니에요. 한국어 수업이에요.<br>It isn't an English class. It's a Korean class.	英語. Language names end in 어: 한국어, 프랑스어, 일본어.	cours::C12 교재::L3 명사
+수업	class, lecture	내일 수업 시간이에요.<br>It's class time tomorrow.	授業.	cours::C12 교재::L3 명사

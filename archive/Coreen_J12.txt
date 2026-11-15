@@ -1,0 +1,14 @@
+#separator:tab
+#html:true
+#deck:Coréen::Jihyeon::J12
+#tags column:5
+-은 적이 있다/없다	have (never) done (experience)	외국에서 산 적이 있어요.<br>I've lived abroad.	Consonant → -은 적 (먹은 적), vowel → -ㄴ 적 (간 적). ㄹ drops: 놀다 → 논 적. 듣다 → 들은 적. Never: 한 번도 -은 적이 없어요. 이 is often dropped in speech: 간 적 있어요?	cours::J12 교재::MKG-INT 문법
+-아 본 적이 있다/-어 본 적이 있다	have ever tried …	한국 음식을 만들어 본 적이 있어요?<br>Have you ever tried making Korean food?	-아 보다 (to try) + -은 적이 있다. The usual way to ask about experiences you choose to have: 가 본 적, 먹어 본 적, 해 본 적.	cours::J12 교재::MKG-INT 문법
+저도 그런 적이 있어요	That's happened to me too	가: 지갑을 도둑맞았어요.<br>나: 저도 그런 적이 있어요.	그런 = like that. Negative: 저는 그런 적이 없어요.	cours::J12 교재::MKG-INT 표현
+도둑맞다	to be robbed, to have something stolen	지갑을 도둑맞았어요.<br>My wallet was stolen.	도둑 (thief) + 맞다 (to suffer). The stolen item takes 을/를.	cours::J12 교재::MKG-INT 동사
+포기하다	to give up	중간에 포기한 적이 있어요.<br>I've given up halfway before.	抛棄. 중간에 = halfway through.	cours::J12 교재::MKG-INT 동사
+연예인	celebrity, entertainer	연예인을 실제로 본 적이 있어요?<br>Have you ever seen a celebrity in real life?	演藝人. Singers, actors, TV personalities.	cours::J12 교재::MKG-INT 사람
+실제로	in real life, actually	실제로 보니까 더 멋있어요.<br>He looks even cooler in person.	實際. 실제 = reality.	cours::J12 교재::MKG-INT 부사
+첫눈에 반하다	to fall in love at first sight	첫눈에 반한 적이 있어요?<br>Have you ever fallen in love at first sight?	첫눈 = first sight (also 'first snow'). 반하다 = to fall for someone.	cours::J12 교재::MKG-INT 표현
+대회에 나가다	to enter a competition	노래 대회에 나간 적이 있어요.<br>I've entered a singing contest.	大會. 나가다 here = to take part.	cours::J12 교재::MKG-INT 표현
+악기	musical instrument	악기를 배워 본 적이 있어요?<br>Have you ever learned an instrument?	樂器. 악기를 연주하다 = to play an instrument.	cours::J12 교재::MKG-INT 명사

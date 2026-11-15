@@ -1,0 +1,119 @@
+#separator:tab
+#html:true
+#tags column:5
+감	persimmon	가을에는 감이 맛있어요.<br>Persimmons are delicious in autumn.	Also 곶감 (dried persimmon), a common winter snack.	cours::C2 과일
+귤	tangerine	제주도 귤이 제일 유명해요.<br>Jeju tangerines are the most famous.	Jeju is the main producing region; a winter staple.	cours::C2 과일
+딸기	strawberry	딸기 우유를 좋아해요.<br>I like strawberry milk.		cours::C2 과일
+멜론	melon	멜론은 비싸요.<br>Melons are expensive.	Your worksheet writes 메론; the standard spelling is 멜론.	cours::C2 과일 외래어
+바나나	banana	바나나 한 송이 주세요.<br>One bunch of bananas, please.	Counter for a bunch: 송이.	cours::C2 과일 외래어
+밤	chestnut	군밤을 사 먹었어요.<br>I bought some roasted chestnuts.	Homograph: 밤 also means "night". Two unrelated words, same spelling.	cours::C2 과일 동음이의어
+배	pear / ship / belly	배가 아파요.<br>My stomach hurts.	Three distinct words sharing one spelling: pear, ship, belly. Context disambiguates.	cours::C2 과일 동음이의어
+복숭아	peach	복숭아 알레르기가 있어요.<br>I have a peach allergy.		cours::C2 과일
+사과	apple	사과 주스 한 잔 주세요.<br>A glass of apple juice, please.	Homograph: 사과 also means "apology" (사과하다, to apologize).	cours::C2 과일 동음이의어
+수박	watermelon	여름에는 수박이 최고예요.<br>Watermelon is the best in summer.		cours::C2 과일
+참외	Korean melon	참외는 한국에서만 흔해요.<br>Korean melon is common only in Korea.	Yellow, oblong; no real Western equivalent.	cours::C2 과일
+키위	kiwi	키위를 반으로 잘랐어요.<br>I cut the kiwi in half.		cours::C2 과일 외래어
+파인애플	pineapple	파인애플 피자를 어떻게 생각해요?<br>What do you think of pineapple pizza?		cours::C2 과일 외래어
+포도	grapes	포도를 씻어서 먹어요.<br>I wash the grapes before eating them.		cours::C2 과일
+가지	eggplant	가지를 볶았어요.<br>I stir-fried the eggplant.	Homograph: 가지 also means "branch" and works as a counter for kinds/types (세 가지 = three kinds).	cours::C2 채소 동음이의어
+감자	potato	감자를 삶고 있어요.<br>I'm boiling potatoes.		cours::C2 채소
+고구마	sweet potato	겨울에 군고구마를 자주 먹어요.<br>I often eat roasted sweet potatoes in winter.	군고구마 (roasted sweet potato) is a winter street food.	cours::C2 채소
+고추	chili pepper	이 고추는 정말 매워요.<br>This chili is really spicy.	고춧가루 = chili powder, the base of most Korean seasoning.	cours::C2 채소
+당근	carrot	당근을 채 썰었어요.<br>I julienned the carrot.	당근 is also slang for "of course", playing on 당연하지.	cours::C2 채소
+마늘	garlic	한국 음식에는 마늘이 많이 들어가요.<br>Korean food uses a lot of garlic.		cours::C2 채소
+무	radish	무로 국물을 냈어요.<br>I made broth with radish.	Korean 무 is the large white daikon, not a small red radish.	cours::C2 채소
+배추	napa cabbage	배추로 김치를 담가요.<br>We make kimchi with napa cabbage.	The base of 배추김치, the default kind of kimchi.	cours::C2 채소
+버섯	mushroom	버섯을 구웠어요.<br>I grilled the mushrooms.	Pronounced [버섣] — a final ㅅ neutralizes to [t].	cours::C2 채소 발음
+양파	onion	양파를 썰면 눈물이 나요.<br>Cutting onions makes me cry.	Literally "Western 파" — 파 alone is a spring onion.	cours::C2 채소
+오이	cucumber	오이를 싫어하는 사람이 많아요.<br>A lot of people dislike cucumber.		cours::C2 채소
+옥수수	corn	옥수수를 쪄서 먹어요.<br>We steam the corn and eat it.		cours::C2 채소
+토마토	tomato	토마토는 과일이에요, 채소예요?<br>Is a tomato a fruit or a vegetable?	A palindrome in Korean too.	cours::C2 채소 외래어
+호박	pumpkin / squash	호박전을 만들었어요.<br>I made squash pancakes.	애호박 is the green summer squash used in everyday cooking.	cours::C2 채소
+개구리	frog	비가 오면 개구리가 울어요.<br>Frogs croak when it rains.		cours::C2 동물
+개미	ant	개미가 줄지어 가요.<br>The ants are marching in a line.		cours::C2 동물
+거북이	turtle	거북이처럼 느리게 걸었어요.<br>I walked slowly, like a turtle.	거북 is the dictionary form; 거북이 is what people actually say.	cours::C2 동물
+나비	butterfly	나비가 꽃에 앉았어요.<br>A butterfly landed on the flower.		cours::C2 동물
+달팽이	snail	달팽이가 천천히 기어가요.<br>The snail is crawling slowly.		cours::C2 동물
+메뚜기	grasshopper	논에 메뚜기가 많아요.<br>There are many grasshoppers in the rice paddy.		cours::C2 동물
+잠자리	dragonfly	가을 하늘에 잠자리가 날아요.<br>Dragonflies fly in the autumn sky.	Careful: 잠자리 also means "sleeping place / bed", but with different pitch — [잠짜리] for that sense.	cours::C2 동물 동음이의어
+거미	spider	거미가 거미줄을 쳤어요.<br>The spider spun a web.	거미줄 = spider web (줄 = string).	cours::C2 동물
+고양이	cat	고양이를 키우고 싶어요.<br>I want to have a cat.	Cat sound: 야옹.	cours::C2 동물
+게	crab	게를 쪄서 먹었어요.<br>We steamed and ate the crab.	간장게장 = raw crab marinated in soy sauce, a famous dish.	cours::C2 동물
+돌고래	dolphin	돌고래는 아주 똑똑해요.<br>Dolphins are very smart.	고래 = whale; 돌- here marks a smaller wild variety.	cours::C2 동물
+벌	bee	벌에 쏘였어요.<br>I got stung by a bee.	Homograph: 벌 also means "punishment".	cours::C2 동물 동음이의어
+비둘기	pigeon	공원에 비둘기가 많아요.<br>There are lots of pigeons in the park.		cours::C2 동물
+사슴	deer	사슴을 산에서 봤어요.<br>I saw a deer in the mountains.		cours::C2 동물
+양	sheep	양이 풀을 먹고 있어요.<br>The sheep are eating grass.	Homograph: 양 also means "quantity" and is the prefix for "Western" (양파, 양복).	cours::C2 동물 동음이의어
+토끼	rabbit	토끼가 빨리 뛰어요.<br>The rabbit runs fast.	In Korean folklore the rabbit lives on the moon pounding rice cakes.	cours::C2 동물
+펭귄	penguin	펭귄은 날 수 없어요.<br>Penguins can't fly.		cours::C2 동물 외래어
+닭	chicken	닭을 튀겼어요.<br>I fried the chicken.	Pronounced [닥]: in a ㄺ cluster before a consonant or pause, only ㄱ is heard. But 닭이 → [달기].	cours::C2 동물 발음
+돼지	pig	돼지고기를 자주 먹어요.<br>I often eat pork.	돼지꿈 (dreaming of a pig) is considered a sign of coming luck.	cours::C2 동물
+까마귀	crow	까마귀가 시끄럽게 울어요.<br>The crow is cawing noisily.	Traditionally a bad omen — the opposite of 까치.	cours::C2 동물 새
+까치	magpie	까치가 울면 손님이 온대요.<br>They say a magpie's call means a guest is coming.	Considered a lucky bird, unlike the crow.	cours::C2 동물 새
+독수리	eagle	독수리가 하늘 높이 날아요.<br>The eagle flies high in the sky.		cours::C2 동물 새
+병아리	chick	병아리가 삐약삐약 울어요.<br>The chick is peeping.	Also used figuratively for a complete beginner.	cours::C2 동물 새
+부엉이	owl	부엉이는 밤에 활동해요.<br>Owls are active at night.	부엉이 (horned owl) vs 올빼미 (round-headed owl) are distinguished in Korean.	cours::C2 동물 새
+오리	duck	오리가 물에서 헤엄쳐요.<br>The duck is swimming in the water.		cours::C2 동물 새
+타조	ostrich	타조는 아주 빨리 달려요.<br>Ostriches run very fast.		cours::C2 동물 새
+가위	scissors	가위로 고기를 잘라요.<br>We cut the meat with scissors.	Also the "scissors" of rock-paper-scissors: 가위바위보.	cours::C2 사물
+돋보기	magnifying glass	돋보기로 글씨를 봤어요.<br>I looked at the writing with a magnifying glass.	From 돋보다 (to make stand out) + 기 (device).	cours::C2 사물
+노트	notebook	노트에 필기했어요.<br>I took notes in my notebook.	From English "note" but means the notebook itself, not a note.	cours::C2 사물 외래어
+물감	paint	물감으로 그림을 그렸어요.<br>I painted a picture with paints.	물 (water) + 감 (material).	cours::C2 사물
+붓	brush	붓으로 글씨를 써요.<br>I write with a brush.	Pronounced [붇] — final ㅅ neutralizes to [t].	cours::C2 사물 발음
+연필	pencil	연필을 깎아 주세요.<br>Please sharpen the pencil.	From 鉛筆 (lead + writing brush).	cours::C2 사물
+지우개	eraser	지우개로 지웠어요.<br>I erased it with an eraser.	지우다 (to erase) + 개, the suffix for a tool.	cours::C2 사물
+책	book	책을 읽고 있어요.<br>I'm reading a book.		cours::C2 사물
+칼	knife	칼을 조심하세요.<br>Be careful with the knife.	Covers knife, blade and box cutter alike.	cours::C2 사물
+크레용	crayon	크레용으로 색칠했어요.<br>I coloured it in with crayons.	크레파스 (from Japanese) is the more common word in practice.	cours::C2 사물 외래어
+필통	pencil case	필통에 펜이 많아요.<br>There are lots of pens in my pencil case.	筆筒: 필 (writing) + 통 (container).	cours::C2 사물
+시계	clock / watch	시계가 멈췄어요.<br>The clock has stopped.	손목시계 = wristwatch.	cours::C2 사물
+우산	umbrella	우산을 안 가져왔어요.<br>I didn't bring an umbrella.	雨傘: rain + parasol. A sun umbrella is 양산.	cours::C2 사물
+컵	cup	컵에 물을 따랐어요.<br>I poured water into the cup.	종이컵 = paper cup.	cours::C2 사물 외래어
+나팔꽃	morning glory	나팔꽃이 아침에 피어요.<br>Morning glories bloom in the morning.	나팔 (trumpet) + 꽃 (flower), from the shape. 꽃 is pronounced [꼳].	cours::C2 식물 발음
+무궁화	rose of Sharon	무궁화는 한국의 국화예요.<br>The rose of Sharon is Korea's national flower.	無窮花, "the flower that never ends".	cours::C2 식물
+장미	rose	장미 한 송이를 받았어요.<br>I received a single rose.		cours::C2 식물
+코스모스	cosmos	가을에 코스모스가 피어요.<br>Cosmos flowers bloom in autumn.	Strongly associated with autumn roadsides in Korea.	cours::C2 식물 외래어
+튤립	tulip	튤립 축제에 갔어요.<br>I went to the tulip festival.		cours::C2 식물 외래어
+해바라기	sunflower	해바라기가 해를 따라가요.<br>Sunflowers follow the sun.	해 (sun) + 바라기 (looking toward) — the name says what it does.	cours::C2 식물
+은행잎	ginkgo leaf	은행잎이 노랗게 변했어요.<br>The ginkgo leaves have turned yellow.	은행 is also the word for "bank" — two different words.	cours::C2 식물 동음이의어
+단풍잎	maple leaf	단풍잎이 빨개졌어요.<br>The maple leaves have turned red.	단풍 also names the autumn-foliage season itself (단풍 구경 = leaf viewing).	cours::C2 식물
+대나무	bamboo	대나무가 빨리 자라요.<br>Bamboo grows fast.		cours::C2 식물
+보리	barley	보리차를 마셨어요.<br>I drank barley tea.	보리차 is the default free tea in Korean restaurants.	cours::C2 식물
+벼	rice plant	논에 벼가 자라요.<br>Rice is growing in the paddy.	Three words for rice: 벼 (the plant), 쌀 (uncooked grain), 밥 (cooked).	cours::C2 식물
+선인장	cactus	선인장은 물이 조금만 필요해요.<br>A cactus needs only a little water.		cours::C2 식물
+소나무	pine tree	산에 소나무가 많아요.<br>There are many pine trees on the mountain.	A symbol of endurance in Korean art and poetry.	cours::C2 식물
+기타	guitar	기타를 배우고 있어요.<br>I'm learning the guitar.	Homograph: 기타 (其他) also means "etcetera / other" in written lists.	cours::C2 사물 동음이의어
+피아노	piano	피아노를 칠 수 있어요?<br>Can you play the piano?	Verb for keyboard and string instruments: 치다.	cours::C2 사물 외래어
+우체통	mailbox	편지를 우체통에 넣었어요.<br>I put the letter in the mailbox.	우체국 = post office; same 우체- root.	cours::C2 교통
+자전거	bicycle	자전거를 타고 학교에 가요.<br>I go to school by bicycle.	自轉車, "self-turning vehicle".	cours::C2 교통
+경찰차	police car	경찰차가 지나갔어요.<br>A police car went past.	경찰 (police) + 차 (vehicle).	cours::C2 교통
+구급차	ambulance	구급차를 불러 주세요.<br>Please call an ambulance.	구급 (emergency relief) + 차. 앰뷸런스 is also used.	cours::C2 교통
+기차	train	기차로 부산에 갔어요.<br>I went to Busan by train.	기차 = intercity train; KTX and 무궁화호 are both 기차.	cours::C2 교통
+낙하산	parachute	낙하산을 타고 뛰어내렸어요.<br>I jumped with a parachute.	落下傘: falling + descending + parasol.	cours::C2 교통
+버스	bus	버스를 놓쳤어요.<br>I missed the bus.		cours::C2 교통 외래어
+비행기	airplane	비행기가 곧 출발해요.<br>The plane departs soon.	飛行機: flying + going + machine.	cours::C2 교통
+오토바이	motorcycle	오토바이로 배달해요.<br>They deliver by motorcycle.	From Japanese-English "auto-bi(cycle)", not from "motorcycle".	cours::C2 교통 외래어
+헬리콥터	helicopter	헬리콥터 소리가 들려요.<br>I can hear a helicopter.		cours::C2 교통 외래어
+지하철	subway	지하철이 더 빨라요.<br>The subway is faster.	地下鐵: underground + iron.	cours::C2 교통
+화물차	truck	화물차가 짐을 실어요.<br>The truck is loading cargo.	화물 (freight) + 차. 트럭 is equally common in speech.	cours::C2 교통
+승용차	passenger car	승용차로 출퇴근해요.<br>I commute by car.	乘用車: for riding. The everyday word is just 차.	cours::C2 교통
+감자튀김	french fries	감자튀김을 시켰어요.<br>I ordered fries.	감자 (potato) + 튀김 (deep-fried thing), from 튀기다.	cours::C2 음식
+붕어빵	fish-shaped pastry	겨울에는 붕어빵이 최고예요.<br>붕어빵 is the best in winter.	붕어 (crucian carp) + 빵 (bread) — named for the mould's shape, not the filling, which is red bean. Also used figuratively: "two peas in a pod".	cours::C2 음식
+사탕	candy	아이에게 사탕을 줬어요.<br>I gave the child a sweet.	砂糖 — the same characters mean "sugar" in Chinese and Japanese.	cours::C2 음식
+샌드위치	sandwich	점심으로 샌드위치를 먹었어요.<br>I had a sandwich for lunch.		cours::C2 음식 외래어
+아이스크림	ice cream	아이스크림이 다 녹았어요.<br>The ice cream has all melted.		cours::C2 음식 외래어
+초콜릿	chocolate	초콜릿을 선물했어요.<br>I gave chocolate as a gift.	Standard spelling is 초콜릿, though 초콜렛 is often seen.	cours::C2 음식 외래어
+치즈	cheese	치즈를 듬뿍 넣었어요.<br>I added plenty of cheese.	Also what you say for a photo, like "cheese" in English.	cours::C2 음식 외래어
+케이크	cake	생일 케이크를 샀어요.<br>I bought a birthday cake.	Your worksheet corrects 케익 to 케이크 — the latter is the standard form.	cours::C2 음식 외래어
+피자	pizza	피자 한 판을 시켰어요.<br>I ordered a whole pizza.	Counter for a whole pizza: 판.	cours::C2 음식 외래어
+우유	milk	우유를 마시고 자요.<br>I drink milk before sleeping.	牛乳: cow + milk.	cours::C2 음식
+주스	juice	오렌지 주스 주세요.<br>Orange juice, please.		cours::C2 음식 외래어
+커피	coffee	커피 한 잔 할래요?<br>Shall we have a coffee?	아메리카노 is the default order in Korea.	cours::C2 음식 외래어
+냉장고	refrigerator	냉장고에 넣어 두세요.<br>Please put it in the fridge.	冷藏庫: cold + storage + warehouse.	cours::C2 가전
+다리미	iron	다리미로 셔츠를 다렸어요.<br>I ironed the shirt.	From the verb 다리다 (to iron).	cours::C2 가전
+선풍기	electric fan	선풍기를 틀었어요.<br>I turned on the fan.	扇風機: fan + wind + machine.	cours::C2 가전
+세탁기	washing machine	세탁기를 돌리고 있어요.<br>I've got the washing machine running.	Idiom: 세탁기를 돌리다, literally "to turn the washing machine".	cours::C2 가전
+전기밥솥	rice cooker	전기밥솥으로 밥을 지어요.<br>I cook rice in the rice cooker.	전기 (electric) + 밥솥 (rice pot). Verb for cooking rice: 짓다.	cours::C2 가전
+청소기	vacuum cleaner	청소기를 돌렸어요.<br>I vacuumed.	清掃機: cleaning machine. Full form 진공청소기.	cours::C2 가전
+카세트	cassette player	카세트에 테이프를 넣었어요.<br>I put a tape in the cassette player.	Dated, but still turns up in older material.	cours::C2 가전 외래어
+텔레비전	television	텔레비전을 보고 있어요.<br>I'm watching television.	Standard form; 티브이 is what people say.	cours::C2 가전 외래어

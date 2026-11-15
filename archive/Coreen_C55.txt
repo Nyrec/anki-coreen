@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::C55
+#tags column:5
+얼음	ice	얼음을 넣어 주세요.<br>Please put ice in it.		cours::C55 교재2::L8-9 음식
+남은 음식	leftovers	남은 음식을 싸 주세요.<br>Please pack up the leftovers.	남다 = to remain.	cours::C55 교재2::L8-9 표현
+열다	to open	상자를 열어요.<br>I open the box.	ㄹ stem → 열어요. Opposite: 닫다.	cours::C55 교재2::L8-9 동사
