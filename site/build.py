@@ -193,4 +193,7 @@ if not args.single:
     for f in ['manifest.webmanifest','icon-180.png','icon-512.png']:
         open(os.path.join(args.out,f),'wb').write(open(os.path.join(HERE,f),'rb').read())
     open(os.path.join(args.out,'.nojekyll'),'w').write('')
+    import shutil
+    st=os.path.join(HERE,'static')
+    if os.path.isdir(st): shutil.copytree(st,args.out,dirs_exist_ok=True)
 print('%d fichiers sources, %d lignes, %d cartes, %d sans français, %d cours'%(len(seen_src),len(rows),len(cards),nofr,len(cl)))
