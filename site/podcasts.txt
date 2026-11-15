@@ -1,0 +1,116 @@
+# Épisodes audio originaux (une seule voix par épisode, un seul fichier audio).
+#   = id | niveau | durée | voix | titre fr | titre ko
+#   - coréen | français
+
+= pod-pyeonuijeom | A2 | court | hyunsu | Les supérettes coréennes | 한국의 편의점
+- 안녕하세요, 여러분. 오늘은 한국의 편의점에 대해서 이야기해 볼게요. | Bonjour à tous. Aujourd'hui, je vais vous parler des supérettes coréennes.
+- 한국에는 편의점이 정말 많아요. | En Corée, il y a vraiment beaucoup de supérettes.
+- 집 앞에도 있고, 회사 옆에도 있고, 지하철역 안에도 있어요. | Il y en a devant chez soi, à côté du bureau et même dans les stations de métro.
+- 대부분 이십사 시간 문을 열어요. | La plupart sont ouvertes vingt-quatre heures sur vingt-quatre.
+- 그래서 밤늦게 배가 고플 때 아주 편해요. | C'est donc très pratique quand on a faim tard le soir.
+- 편의점에서는 물이나 과자만 파는 게 아니에요. | Dans une supérette, on ne vend pas seulement de l'eau ou des biscuits.
+- 삼각김밥, 도시락, 컵라면도 살 수 있어요. | On peut aussi acheter des gimbap triangulaires, des plateaux-repas et des nouilles en gobelet.
+- 그리고 가게 안에서 바로 먹을 수도 있어요. | Et on peut même manger directement dans le magasin.
+- 뜨거운 물도 있고 전자레인지도 있거든요. | C'est qu'il y a de l'eau chaude et un micro-ondes.
+- 저는 학생 때 점심을 편의점에서 자주 먹었어요. | Quand j'étais étudiant, je déjeunais souvent à la supérette.
+- 싸고 빠르고 생각보다 맛있어요. | C'est bon marché, rapide et meilleur qu'on ne le pense.
+- 한국에 가면 꼭 한번 편의점에서 밥을 먹어 보세요. | Si vous allez en Corée, essayez absolument de manger une fois dans une supérette.
+- 그럼 다음에 또 만나요. | Alors à la prochaine.
+
+= pod-ppalli | A2 | court | sunhi | La culture du « vite, vite » | 빨리빨리 문화
+- 안녕하세요. 오늘의 주제는 '빨리빨리'예요. | Bonjour. Le sujet d'aujourd'hui, c'est « ppalli-ppalli ».
+- '빨리'는 속도가 빠르다는 뜻이에요. | « Ppalli » veut dire que quelque chose va vite.
+- 한국 사람들은 이 말을 정말 자주 써요. | Les Coréens utilisent très souvent ce mot.
+- 식당에서 음식을 주문하면 오 분 안에 나와요. | Au restaurant, quand on commande, le plat arrive en moins de cinq minutes.
+- 인터넷으로 물건을 사면 다음 날 아침에 도착해요. | Quand on achète quelque chose sur internet, ça arrive le lendemain matin.
+- 엘리베이터를 타면 닫힘 버튼을 먼저 눌러요. | Dans l'ascenseur, on appuie d'abord sur le bouton de fermeture des portes.
+- 처음 한국에 온 외국 사람들은 조금 놀라요. | Les étrangers qui arrivent en Corée pour la première fois sont un peu surpris.
+- 하지만 살다 보면 금방 익숙해져요. | Mais à force d'y vivre, on s'y habitue vite.
+- 물론 가끔은 천천히 하는 것도 필요해요. | Bien sûr, il faut aussi parfois prendre son temps.
+- 요즘은 '천천히 살기'를 좋아하는 사람도 많아졌어요. | Ces temps-ci, de plus en plus de gens aiment « vivre lentement ».
+- 여러분 나라는 어때요? 빨리빨리예요, 천천히예요? | Et dans votre pays ? C'est plutôt « vite, vite » ou « doucement » ?
+- 한국어로 한번 대답해 보세요. | Essayez de répondre en coréen.
+
+= pod-nai | A2 | court | hyunsu | Pourquoi demande-t-on l'âge ? | 나이를 왜 물어봐요?
+- 안녕하세요. 오늘은 재미있는 질문을 하나 가져왔어요. | Bonjour. Aujourd'hui, j'apporte une question amusante.
+- 한국 사람들은 처음 만났을 때 왜 나이를 물어볼까요? | Pourquoi les Coréens demandent-ils l'âge quand ils rencontrent quelqu'un pour la première fois ?
+- 다른 나라에서는 실례가 될 수도 있지요. | Dans d'autres pays, cela peut être impoli.
+- 하지만 한국에서는 이유가 있어요. | Mais en Corée, il y a une raison.
+- 한국어는 나이에 따라서 말이 달라지거든요. | C'est qu'en coréen, la façon de parler change selon l'âge.
+- 나이가 많은 사람한테는 존댓말을 써요. | Avec une personne plus âgée, on utilise le langage poli.
+- 친구나 동생한테는 반말을 쓸 수 있어요. | Avec un ami ou quelqu'un de plus jeune, on peut utiliser le langage familier.
+- 부르는 말도 달라요. 형, 누나, 오빠, 언니 같은 말이 있어요. | Les mots pour s'adresser aux gens changent aussi : hyeong, nuna, oppa, eonni.
+- 그래서 나이를 알아야 편하게 이야기할 수 있어요. | Il faut donc connaître l'âge pour pouvoir parler à l'aise.
+- 누가 나이를 물어봐도 너무 놀라지 마세요. | Si on vous demande votre âge, ne soyez pas trop surpris.
+- 그건 친해지고 싶다는 뜻이에요. | Cela veut dire qu'on a envie de se rapprocher de vous.
+- 오늘도 들어 주셔서 감사합니다. | Merci encore de m'avoir écouté aujourd'hui.
+
+= pod-nunchi | B1 | court | sunhi | C'est quoi, le « nunchi » ? | 눈치가 뭐예요?
+- 안녕하세요. 오늘은 번역하기 어려운 한국어 단어를 소개할게요. 바로 '눈치'예요. | Bonjour. Aujourd'hui, je vous présente un mot coréen difficile à traduire : « nunchi ».
+- 눈치는 말하지 않아도 다른 사람의 기분이나 상황을 알아차리는 능력이에요. | Le nunchi, c'est la capacité à percevoir l'humeur des autres ou la situation sans qu'on ait besoin de le dire.
+- 예를 들어 친구가 "괜찮아"라고 했는데 표정이 안 좋으면 사실은 괜찮지 않은 거지요. | Par exemple, si un ami dit « ça va » avec une mauvaise mine, c'est qu'en réalité ça ne va pas.
+- 그걸 바로 아는 사람한테 "눈치가 빠르다"고 해요. | De quelqu'un qui le comprend tout de suite, on dit qu'il « a le nunchi rapide ».
+- 반대로 잘 모르는 사람한테는 "눈치가 없다"고 해요. | À l'inverse, de quelqu'un qui ne s'en rend pas compte, on dit qu'il « n'a pas de nunchi ».
+- 회사에서도 눈치는 아주 중요해요. | Au travail aussi, le nunchi est très important.
+- 모두 바쁠 때 혼자 큰 소리로 웃으면 눈치가 없어 보일 수 있어요. | Si on rit bruyamment tout seul quand tout le monde est débordé, on peut passer pour quelqu'un qui manque de nunchi.
+- '눈치를 보다'라는 표현도 있는데, 다른 사람의 반응을 걱정한다는 뜻이에요. | Il existe aussi l'expression « regarder le nunchi », qui veut dire s'inquiéter de la réaction des autres.
+- 눈치를 너무 많이 보면 피곤하지만 조금은 있어야 사람들과 잘 지낼 수 있어요. | Trop s'en soucier est fatigant, mais il en faut un peu pour bien s'entendre avec les gens.
+- 외국어를 배울 때는 단어뿐만 아니라 이런 문화도 같이 배우게 돼요. | Quand on apprend une langue étrangère, on apprend aussi ce genre de culture, pas seulement des mots.
+- 여러분은 눈치가 빠른 편이에요? | Et vous, avez-vous plutôt le nunchi rapide ?
+- 다음 시간에 또 재미있는 단어로 만나요. | On se retrouve la prochaine fois avec un autre mot intéressant.
+
+= pod-gongbu | B1 | moyen | hyunsu | Étudier le coréen : essayez comme ça | 한국어 공부, 이렇게 해 보세요
+- 안녕하세요, 여러분. 오늘은 한국어를 공부하는 방법에 대해서 이야기하려고 해요. | Bonjour à tous. Aujourd'hui, je voudrais parler des façons d'étudier le coréen.
+- 많은 분들이 "단어를 외워도 자꾸 잊어버려요"라고 말해요. | Beaucoup de gens disent : « J'ai beau apprendre des mots, je les oublie sans cesse. »
+- 사실 잊어버리는 건 아주 자연스러운 일이에요. | En réalité, oublier est tout à fait naturel.
+- 중요한 건 잊어버리기 전에 다시 보는 거예요. | L'important, c'est de revoir avant d'oublier.
+- 첫 번째 방법은 매일 조금씩 하는 거예요. | La première méthode, c'est d'en faire un peu chaque jour.
+- 일주일에 한 번 세 시간 공부하는 것보다 매일 이십 분씩 하는 게 훨씬 좋아요. | Vingt minutes chaque jour valent bien mieux que trois heures une fois par semaine.
+- 두 번째는 단어만 외우지 말고 문장으로 외우는 거예요. | La deuxième, c'est de ne pas apprendre des mots seuls, mais des phrases.
+- 예를 들어 '약속'이라는 단어를 배웠으면 "약속을 잡았어요"라고 같이 외워 보세요. | Par exemple, si vous avez appris le mot « rendez-vous », retenez-le avec « j'ai fixé un rendez-vous ».
+- 그러면 실제로 말할 때 훨씬 빨리 생각나요. | Ainsi, ça vous reviendra bien plus vite quand vous parlerez vraiment.
+- 세 번째는 많이 듣는 거예요. | La troisième, c'est d'écouter beaucoup.
+- 처음에는 다 이해하지 못해도 괜찮아요. | Au début, ce n'est pas grave de ne pas tout comprendre.
+- 같은 내용을 여러 번 들으면 조금씩 들리기 시작해요. | En écoutant plusieurs fois le même contenu, on commence peu à peu à entendre.
+- 저는 같은 이야기를 세 번 듣는 걸 추천해요. | Je recommande d'écouter trois fois la même histoire.
+- 한 번은 그냥 듣고, 한 번은 글을 보면서 듣고, 마지막으로 다시 그냥 들어 보세요. | Une fois sans rien, une fois en lisant le texte, puis une dernière fois de nouveau sans le texte.
+- 네 번째는 소리 내서 따라 하는 거예요. | La quatrième, c'est de répéter à voix haute.
+- 눈으로만 공부하면 입이 준비가 안 돼요. | Si on étudie seulement avec les yeux, la bouche n'est pas prête.
+- 혼자 있을 때 큰 소리로 따라 해 보세요. 조금 부끄러워도 효과가 정말 커요. | Quand vous êtes seul, répétez à voix haute. Même si c'est un peu gênant, c'est vraiment efficace.
+- 다섯 번째는 틀리는 걸 무서워하지 않는 거예요. | La cinquième, c'est de ne pas avoir peur de se tromper.
+- 한국 사람들은 외국 사람이 한국어로 말하면 아주 좋아해요. | Les Coréens adorent qu'un étranger leur parle en coréen.
+- 문법이 조금 틀려도 다 이해해 줘요. | Même si la grammaire est un peu fausse, ils comprennent tout.
+- 마지막으로 자기가 좋아하는 걸로 공부하세요. | Enfin, étudiez avec ce que vous aimez.
+- 드라마를 좋아하면 드라마로, 음악을 좋아하면 노래 가사로 공부하는 거예요. | Si vous aimez les dramas, avec des dramas ; si vous aimez la musique, avec des paroles de chansons.
+- 재미있어야 오래 할 수 있거든요. | Parce que c'est en s'amusant qu'on tient longtemps.
+- 언어는 달리기가 아니라 긴 산책 같아요. | Une langue, ce n'est pas une course, c'est plutôt une longue promenade.
+- 오늘 이십 분, 내일 이십 분. 그렇게 가다 보면 어느새 멀리 와 있을 거예요. | Vingt minutes aujourd'hui, vingt minutes demain. À ce rythme, vous serez arrivé loin sans vous en apercevoir.
+- 여러분 모두 응원할게요. 다음에 또 만나요. | Je vous encourage tous. À la prochaine.
+
+= pod-seoul | A2 | moyen | sunhi | Une journée à Séoul | 서울에서 보내는 하루
+- 안녕하세요. 오늘은 저와 같이 서울에서 하루를 보내 볼까요? | Bonjour. Et si vous passiez une journée à Séoul avec moi aujourd'hui ?
+- 눈을 감고 상상해 보세요. | Fermez les yeux et imaginez.
+- 아침 여덟 시예요. 지하철은 출근하는 사람들로 가득해요. | Il est huit heures du matin. Le métro est rempli de gens qui vont au travail.
+- 모두 핸드폰을 보거나 음악을 듣고 있어요. | Tout le monde regarde son téléphone ou écoute de la musique.
+- 우리는 먼저 경복궁에 갈 거예요. | Nous allons d'abord au palais Gyeongbokgung.
+- 경복궁은 아주 오래된 왕궁이에요. | Gyeongbokgung est un très ancien palais royal.
+- 한복을 입고 가면 입장료가 무료예요. | Si on y va en hanbok, l'entrée est gratuite.
+- 그래서 한복을 입은 사람들을 많이 볼 수 있어요. | On peut donc y voir beaucoup de gens en hanbok.
+- 사진을 찍고 나서 근처 시장에 가요. | Après avoir pris des photos, on va au marché d'à côté.
+- 시장에서는 떡볶이하고 김밥을 먹어요. | Au marché, on mange des tteokbokki et du gimbap.
+- 조금 맵지만 정말 맛있어요. | C'est un peu épicé, mais vraiment délicieux.
+- 점심을 먹은 후에는 카페에 가요. | Après le déjeuner, on va dans un café.
+- 서울에는 예쁜 카페가 정말 많아요. | À Séoul, il y a vraiment beaucoup de jolis cafés.
+- 한옥으로 만든 카페도 있고 옥상에 있는 카페도 있어요. | Il y a des cafés installés dans des maisons traditionnelles et d'autres sur les toits.
+- 커피를 마시면서 조금 쉬어요. | On se repose un peu en buvant un café.
+- 오후에는 한강 공원에 가요. | L'après-midi, on va au parc du fleuve Han.
+- 날씨가 좋으면 사람들이 자전거를 타거나 잔디에 앉아서 이야기해요. | S'il fait beau, les gens font du vélo ou discutent assis sur la pelouse.
+- 한강에서는 치킨을 배달시킬 수도 있어요. 신기하지요? | Au fleuve Han, on peut même se faire livrer du poulet frit. Étonnant, non ?
+- 해가 지면 남산에 올라가요. | Quand le soleil se couche, on monte au mont Namsan.
+- 남산 위에서 보는 서울의 야경은 정말 멋있어요. | La vue nocturne de Séoul depuis le Namsan est vraiment superbe.
+- 수많은 불빛이 별처럼 반짝여요. | D'innombrables lumières scintillent comme des étoiles.
+- 저녁에는 친구들을 만나서 삼겹살을 먹어요. | Le soir, on retrouve des amis pour manger du samgyeopsal.
+- 고기를 굽는 소리와 웃는 소리가 식당에 가득해요. | Le restaurant est rempli du bruit de la viande qui grille et des rires.
+- 집에 돌아오는 지하철에서는 다리가 좀 아프지만 기분이 좋아요. | Dans le métro du retour, on a un peu mal aux jambes, mais on se sent bien.
+- 서울에서의 하루, 어땠어요? | Alors, cette journée à Séoul, c'était comment ?
+- 언젠가 여러분도 꼭 직접 가 보세요. 그럼 안녕히 계세요. | Un jour, allez-y vraiment vous aussi. Au revoir.

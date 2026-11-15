@@ -55,3 +55,4 @@ const FICHES=[
  {h:"Mots de liaison",r:[["그리고","et","and"],["그래서","donc, alors","so"],["그런데 / 근데","mais, au fait","but, by the way"],["하지만","mais","however"],["그러니까","c'est pourquoi","that's why"],["그러면 / 그럼","dans ce cas","then, in that case"],["그래도","quand même","even so"],["왜냐하면","parce que","because"],["게다가","en plus","on top of that"],["오히려","au contraire, plutôt","rather"]]}]}
 ];
 const STORIES=/*STORIES*/;
+const PODCASTS=/*PODCASTS*/;
