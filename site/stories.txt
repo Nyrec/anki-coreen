@@ -1,0 +1,343 @@
+# Histoires originales en série. Format :
+#   = id | niveau | série (fr) | série (ko) | n° | titre fr | titre ko
+#   @ personnage | coréen | français | anglais
+#   v coréen | français            (vocabulaire)
+#   g structure | explication      (grammaire)
+#   q question en coréen | bonne réponse | mauvaise | mauvaise
+# Voix : 루카 = hyunsu ; 지수, 아주머니, 팀장 = sunhi ; 민호, 준영 = injoon
+
+= luka1 | A1 | Luka arrive à Séoul | 루카, 서울에 오다 | 1 | À l'aéroport | 공항에서
+@ 루카 | 저는 루카예요. 프랑스 사람이에요. | Je m'appelle Luka. Je suis français. | I'm Luka. I'm French.
+@ 루카 | 오늘 한국에 왔어요. | Je suis arrivé en Corée aujourd'hui. | I arrived in Korea today.
+@ 루카 | 공항이 아주 커요. 사람도 많아요. | L'aéroport est très grand. Il y a aussi beaucoup de monde. | The airport is very big. There are lots of people too.
+@ 루카 | 저는 한국어를 조금 해요. | Je parle un peu coréen. | I speak a little Korean.
+@ 지수 | 안녕하세요! 루카 씨예요? | Bonjour ! Vous êtes Luka ? | Hello! Are you Luka?
+@ 루카 | 네, 맞아요. 지수 씨예요? | Oui, c'est ça. Vous êtes Jisu ? | Yes, that's right. Are you Jisu?
+@ 지수 | 네, 만나서 반가워요. 많이 피곤해요? | Oui, enchantée. Vous êtes très fatigué ? | Yes, nice to meet you. Are you very tired?
+@ 루카 | 조금 피곤해요. 그런데 기분이 좋아요. | Un peu fatigué. Mais je suis de bonne humeur. | A little tired. But I feel good.
+@ 지수 | 그럼 같이 지하철을 타요. 집이 멀지 않아요. | Alors prenons le métro ensemble. La maison n'est pas loin. | Then let's take the subway together. The house isn't far.
+@ 루카 | 고마워요, 지수 씨. | Merci, Jisu. | Thank you, Jisu.
+v 공항 | aéroport
+v 피곤하다 | être fatigué
+v 기분이 좋다 | être de bonne humeur
+v 지하철을 타다 | prendre le métro
+v 멀다 | être loin
+g N이에요 / N예요 | « être » poli : 이에요 après une consonne (사람이에요), 예요 après une voyelle (루카예요).
+g 같이 V-아요/어요 | La forme polie sert aussi à proposer : 같이 타요 = « prenons-le ensemble ».
+q 루카 씨는 어느 나라 사람이에요? | Français | Coréen | Japonais
+q 두 사람은 뭘 타요? | Le métro | Le bus | Un taxi
+
+= luka2 | A1 | Luka arrive à Séoul | 루카, 서울에 오다 | 2 | Le nouveau logement | 새 집
+@ 루카 | 제 방은 삼 층에 있어요. | Ma chambre est au troisième étage. | My room is on the third floor.
+@ 루카 | 방은 작지만 깨끗해요. | La chambre est petite mais propre. | The room is small but clean.
+@ 루카 | 방 안에 침대하고 책상이 있어요. | Dans la chambre, il y a un lit et un bureau. | In the room there is a bed and a desk.
+@ 루카 | 창문 밖에 작은 공원이 보여요. | Par la fenêtre, on voit un petit parc. | Outside the window you can see a small park.
+@ 지수 | 방이 어때요? 마음에 들어요? | Comment est la chambre ? Elle vous plaît ? | How's the room? Do you like it?
+@ 루카 | 네, 아주 마음에 들어요. 그런데 냉장고가 없어요. | Oui, elle me plaît beaucoup. Mais il n'y a pas de réfrigérateur. | Yes, I like it a lot. But there's no fridge.
+@ 지수 | 냉장고는 부엌에 있어요. 같이 써요. | Le réfrigérateur est dans la cuisine. On le partage. | The fridge is in the kitchen. We share it.
+@ 루카 | 아, 그래요? 편의점은 어디에 있어요? | Ah bon ? Et où est la supérette ? | Oh, really? Where is the convenience store?
+@ 지수 | 집 앞에 있어요. 아주 가까워요. | Elle est devant la maison. C'est tout près. | It's in front of the house. It's very close.
+@ 루카 | 좋아요. 지금 물을 사러 가요. | Très bien. Je vais acheter de l'eau maintenant. | Great. I'm going to buy some water now.
+v 층 | étage
+v 깨끗하다 | être propre
+v 마음에 들다 | plaire
+v 냉장고 | réfrigérateur
+v 가깝다 | être proche
+g N에 있어요 / 없어요 | Dire où se trouve quelque chose : 부엌에 있어요 = « c'est dans la cuisine ».
+g V-(으)러 가다 | Aller quelque part pour faire quelque chose : 물을 사러 가요 = « je vais acheter de l'eau ».
+q 루카 씨 방에 뭐가 없어요? | Un réfrigérateur | Un lit | Un bureau
+q 편의점은 어디에 있어요? | Devant la maison | À côté du parc | Au troisième étage
+
+= luka3 | A1 | Luka arrive à Séoul | 루카, 서울에 오다 | 3 | La première commande | 첫 주문
+@ 루카 | 오늘 지수 씨하고 식당에 갔어요. | Aujourd'hui, je suis allé au restaurant avec Jisu. | Today I went to a restaurant with Jisu.
+@ 루카 | 메뉴가 전부 한국어였어요. 조금 어려웠어요. | Le menu était entièrement en coréen. C'était un peu difficile. | The menu was all in Korean. It was a bit hard.
+@ 지수 | 루카 씨, 매운 음식을 잘 먹어요? | Luka, vous mangez bien épicé ? | Luka, can you handle spicy food?
+@ 루카 | 아니요, 잘 못 먹어요. | Non, je n'y arrive pas très bien. | No, not very well.
+@ 지수 | 그럼 비빔밥이 어때요? 별로 안 매워요. | Alors que diriez-vous d'un bibimbap ? Ce n'est pas très épicé. | Then how about bibimbap? It's not very spicy.
+@ 루카 | 좋아요. 여기요! 비빔밥 하나하고 김치찌개 하나 주세요. | D'accord. S'il vous plaît ! Un bibimbap et un kimchi-jjigae. | OK. Excuse me! One bibimbap and one kimchi stew, please.
+@ 지수 | 와, 주문을 잘하네요! | Oh, vous commandez bien ! | Wow, you're good at ordering!
+@ 루카 | 수업에서 배웠어요. | Je l'ai appris en cours. | I learned it in class.
+@ 루카 | 비빔밥은 정말 맛있었어요. 그런데 김치는 조금 매웠어요. | Le bibimbap était vraiment délicieux. Mais le kimchi était un peu épicé. | The bibimbap was really delicious. But the kimchi was a bit spicy.
+@ 루카 | 다음에는 제가 살게요. | La prochaine fois, c'est moi qui invite. | Next time it's on me.
+v 전부 | tout, entièrement
+v 맵다 | être épicé
+v 주문 | commande
+v 배우다 | apprendre
+v 제가 살게요 | c'est moi qui invite
+g 못 + V | Ne pas pouvoir : 잘 못 먹어요 = « je n'arrive pas bien à en manger ».
+g V-았어요 / 었어요 | Le passé : 가다 → 갔어요, 맛있다 → 맛있었어요, 맵다 → 매웠어요.
+g A/V-네요 | Constat ou surprise sur ce qu'on vient de remarquer : 잘하네요 !
+q 루카 씨는 뭘 먹었어요? | Un bibimbap | Un bulgogi | Des nouilles froides
+q 루카 씨는 매운 음식을 잘 먹어요? | Non, pas vraiment | Oui, très bien | Il n'a jamais essayé
+
+= luka4 | A1 | Luka arrive à Séoul | 루카, 서울에 오다 | 4 | Perdu en ville | 길을 잃었어요
+@ 루카 | 토요일에 혼자 시내에 갔어요. | Samedi, je suis allé seul au centre-ville. | On Saturday I went downtown by myself.
+@ 루카 | 서점에서 한국어 책을 한 권 샀어요. | J'ai acheté un livre de coréen à la librairie. | I bought a Korean book at the bookstore.
+@ 루카 | 그런데 집에 올 때 길을 잃었어요. | Mais en rentrant, je me suis perdu. | But on the way home I got lost.
+@ 루카 | 실례합니다. 시청역이 어디에 있어요? | Excusez-moi. Où est la station Hôtel-de-Ville ? | Excuse me. Where is City Hall station?
+@ 아주머니 | 시청역이요? 이 길로 쭉 가세요. 그리고 은행 앞에서 오른쪽으로 가세요. | La station Hôtel-de-Ville ? Allez tout droit par cette rue. Puis tournez à droite devant la banque. | City Hall station? Go straight down this street. Then turn right in front of the bank.
+@ 루카 | 쭉 가요, 그리고 오른쪽… 여기에서 멀어요? | Tout droit, puis à droite… C'est loin d'ici ? | Straight, then right… Is it far from here?
+@ 아주머니 | 아니요, 걸어서 오 분쯤 걸려요. | Non, il faut environ cinq minutes à pied. | No, it takes about five minutes on foot.
+@ 루카 | 감사합니다! | Merci beaucoup ! | Thank you!
+@ 루카 | 아주머니가 천천히 말했어요. 그래서 다 이해했어요. | La dame a parlé lentement. Du coup, j'ai tout compris. | The lady spoke slowly. So I understood everything.
+@ 루카 | 오늘은 기분이 정말 좋았어요. | Aujourd'hui, j'étais vraiment content. | I felt really good today.
+v 혼자 | seul
+v 길을 잃다 | se perdre
+v 쭉 | tout droit
+v 오른쪽 | à droite
+v 걸리다 | prendre (du temps)
+g V-(으)세요 | Consigne polie : 가세요 = « allez ».
+g N(으)로 | Direction : 오른쪽으로 = « vers la droite », 이 길로 = « par cette rue ».
+g V-(으)ㄹ 때 | « Quand, au moment de » : 집에 올 때 = « en rentrant ».
+q 루카 씨는 서점에서 뭘 샀어요? | Un livre de coréen | Un plan de la ville | Un stylo
+q 시청역까지 얼마나 걸려요? | Cinq minutes à pied | Quinze minutes à pied | Cinq minutes en bus
+
+= luka5 | A1 | Luka arrive à Séoul | 루카, 서울에 오다 | 5 | Le rendez-vous du week-end | 주말 약속
+@ 지수 | 루카 씨, 이번 주말에 뭐 해요? | Luka, que faites-vous ce week-end ? | Luka, what are you doing this weekend?
+@ 루카 | 아직 계획이 없어요. 왜요? | Je n'ai encore rien de prévu. Pourquoi ? | I don't have plans yet. Why?
+@ 지수 | 일요일에 한강에 갈 거예요. 같이 갈래요? | Dimanche, je vais au fleuve Han. Vous voulez venir ? | I'm going to the Han River on Sunday. Want to come?
+@ 루카 | 좋아요! 한강에서 뭐 해요? | Avec plaisir ! Qu'est-ce qu'on fait au fleuve Han ? | Sure! What do you do at the Han River?
+@ 지수 | 자전거를 타요. 그리고 치킨을 먹어요. | On fait du vélo. Et on mange du poulet frit. | We ride bikes. And we eat fried chicken.
+@ 루카 | 몇 시에 만날까요? | On se retrouve à quelle heure ? | What time shall we meet?
+@ 지수 | 오후 두 시에 지하철역 앞에서 만나요. | Retrouvons-nous à quatorze heures devant la station de métro. | Let's meet at two in the afternoon in front of the subway station.
+@ 루카 | 날씨가 좋으면 좋겠어요. | J'espère qu'il fera beau. | I hope the weather is nice.
+@ 지수 | 일기 예보를 봤어요. 일요일은 맑아요. | J'ai regardé la météo. Dimanche, il fera beau. | I checked the forecast. Sunday will be sunny.
+@ 루카 | 한국에 와서 처음으로 친구하고 놀러 가요. 정말 기대돼요. | C'est la première fois que je sors avec une amie depuis mon arrivée en Corée. J'ai vraiment hâte. | It's my first time going out with a friend since coming to Korea. I'm really looking forward to it.
+v 계획 | projet, plan
+v 자전거를 타다 | faire du vélo
+v 만나다 | se retrouver
+v 맑다 | être dégagé, ensoleillé
+v 기대되다 | avoir hâte
+g V-(으)ㄹ 거예요 | Le futur : 갈 거예요 = « je vais y aller ».
+g V-(으)ㄹ래요? | Proposer en demandant l'envie de l'autre : 같이 갈래요? = « tu veux venir ? »
+g V-(으)ㄹ까요? | Demander l'avis de l'autre : 몇 시에 만날까요? = « on se retrouve à quelle heure ? »
+q 두 사람은 언제 만나요? | Dimanche à quatorze heures | Samedi à quatorze heures | Dimanche à midi
+q 한강에서 뭘 먹어요? | Du poulet frit | Un bibimbap | Des ramyeon
+
+= hasuk1 | A2 | Les gens de la pension | 하숙집 사람들 | 1 | Le déménagement | 이사
+@ 루카 | 한국에 온 지 석 달이 됐어요. | Cela fait trois mois que je suis arrivé en Corée. | It's been three months since I came to Korea.
+@ 루카 | 한국어를 더 많이 쓰고 싶어서 하숙집으로 이사하기로 했어요. | Comme je voulais utiliser davantage le coréen, j'ai décidé d'emménager dans une pension. | I wanted to use Korean more, so I decided to move into a boarding house.
+@ 루카 | 하숙집에서는 아주머니가 아침하고 저녁을 해 주세요. | À la pension, la logeuse prépare le petit-déjeuner et le dîner. | At the boarding house, the landlady makes breakfast and dinner.
+@ 아주머니 | 어서 와요, 루카 학생. 짐이 이게 다예요? | Bienvenue, Luka. C'est tout ce que tu as comme bagages ? | Welcome, Luka. Is this all your luggage?
+@ 루카 | 네, 가방 두 개밖에 없어요. | Oui, je n'ai que deux sacs. | Yes, I only have two bags.
+@ 아주머니 | 방은 이 층이에요. 옆방에는 민호 학생이 살아요. | Ta chambre est au deuxième étage. Dans la chambre voisine habite Minho. | Your room is on the second floor. Minho lives in the room next door.
+@ 민호 | 안녕하세요, 민호라고 해요. 필요한 게 있으면 말하세요. | Bonjour, je m'appelle Minho. Si vous avez besoin de quelque chose, dites-le-moi. | Hello, I'm Minho. If you need anything, just say so.
+@ 루카 | 고마워요. 잘 부탁드려요. | Merci. Je compte sur vous. | Thank you. I look forward to getting along.
+@ 루카 | 방은 전보다 작았지만 사람들이 친절해서 마음이 편했어요. | La chambre était plus petite qu'avant, mais comme les gens étaient gentils, je me sentais bien. | The room was smaller than before, but the people were kind, so I felt at ease.
+@ 아주머니 | 저녁은 일곱 시예요. 늦으면 미리 연락해 줘요. | Le dîner est à dix-neuf heures. Si tu es en retard, préviens-moi à l'avance. | Dinner is at seven. If you'll be late, let me know in advance.
+v 하숙집 | pension (chambre avec repas)
+v 짐 | bagages, affaires
+v N밖에 없다 | n'avoir que N
+v 옆방 | chambre voisine
+v 미리 | à l'avance
+g V-(으)ㄴ 지 (시간)이/가 되다 | Durée écoulée : 온 지 석 달이 됐어요 = « cela fait trois mois que je suis arrivé ».
+g V-기로 하다 | Décision : 이사하기로 했어요 = « j'ai décidé de déménager ».
+g A/V-(으)면 | Condition : 늦으면 = « si tu es en retard ».
+q 루카 씨는 왜 하숙집으로 이사했어요? | Pour utiliser davantage le coréen | Parce que le loyer était trop cher | Parce que l'école était trop loin
+q 하숙집 저녁은 몇 시예요? | À dix-neuf heures | À dix-huit heures | À vingt heures
+
+= hasuk2 | A2 | Les gens de la pension | 하숙집 사람들 | 2 | Une nuit bruyante | 시끄러운 밤
+@ 루카 | 하숙집 생활은 좋았는데 문제가 하나 있었어요. | La vie à la pension était agréable, mais il y avait un problème. | Life at the boarding house was good, but there was one problem.
+@ 루카 | 방음이 잘 안 돼서 밤에 옆방 소리가 다 들렸어요. | Comme c'était mal insonorisé, on entendait tout ce qui se passait dans la chambre voisine la nuit. | The soundproofing was poor, so at night I could hear everything from the next room.
+@ 루카 | 민호 씨는 밤늦게까지 게임을 하면서 친구하고 통화했어요. | Minho jouait jusque tard le soir tout en parlant avec un ami au téléphone. | Minho played games late into the night while talking with a friend on the phone.
+@ 루카 | 이틀 동안 잠을 잘 못 자서 수업 시간에 졸았어요. | Comme j'avais mal dormi pendant deux jours, j'ai somnolé en cours. | I slept badly for two days, so I dozed off in class.
+@ 지수 | 루카 씨, 요즘 많이 피곤해 보여요. 무슨 일 있어요? | Luka, tu as l'air très fatigué ces temps-ci. Il se passe quelque chose ? | Luka, you look really tired lately. Is something wrong?
+@ 루카 | 옆방이 시끄러워서 잠을 못 자요. 그런데 말하기가 좀 어려워요. | La chambre d'à côté est bruyante, je n'arrive pas à dormir. Mais c'est un peu délicat à dire. | The room next door is noisy and I can't sleep. But it's a bit hard to bring up.
+@ 지수 | 솔직하게 말하는 게 좋아요. 민호 씨도 모를 수도 있어요. | Il vaut mieux le dire franchement. Minho ne s'en rend peut-être pas compte. | It's better to say it honestly. Minho might not even know.
+@ 루카 | 그날 저녁에 용기를 내서 민호 씨 방문을 두드렸어요. | Ce soir-là, j'ai pris mon courage à deux mains et j'ai frappé à la porte de Minho. | That evening I plucked up my courage and knocked on Minho's door.
+@ 민호 | 아, 정말요? 몰랐어요. 미안해요! 앞으로는 이어폰을 낄게요. | Ah, vraiment ? Je ne savais pas. Désolé ! À partir de maintenant, je mettrai des écouteurs. | Oh, really? I didn't know. Sorry! I'll wear earphones from now on.
+@ 루카 | 말하고 나니까 마음이 가벼워졌어요. | Après l'avoir dit, je me suis senti plus léger. | After saying it, I felt lighter.
+v 방음 | insonorisation
+v 들리다 | s'entendre, être audible
+v 졸다 | somnoler
+v 솔직하게 | franchement
+v 용기를 내다 | prendre son courage à deux mains
+g A/V-는데 / (으)ㄴ데 | Poser le contexte avant un contraste : 좋았는데 문제가 있었어요.
+g A-아/어 보이다 | Avoir l'air : 피곤해 보여요 = « tu as l'air fatigué ».
+g V-(으)ㄹ 수도 있다 | Possibilité : 모를 수도 있어요 = « il se peut qu'il ne le sache pas ».
+g V-고 나니까 | Après avoir fait, on constate : 말하고 나니까 = « une fois que je l'ai dit ».
+q 루카 씨는 왜 잠을 못 잤어요? | À cause du bruit de la chambre voisine | Parce qu'il avait trop de devoirs | Parce qu'il faisait trop chaud
+q 민호 씨는 앞으로 어떻게 할 거예요? | Il mettra des écouteurs | Il déménagera | Il jouera seulement le matin
+
+= hasuk3 | A2 | Les gens de la pension | 하숙집 사람들 | 3 | Le kimchi de la logeuse | 아주머니의 김치
+@ 아주머니 | 오늘은 김장하는 날이에요. 시간이 되면 좀 도와줄래요? | Aujourd'hui, c'est le jour du gimjang. Si tu as le temps, tu veux bien m'aider un peu ? | Today is kimjang day. If you have time, would you help me a bit?
+@ 루카 | 김장이 뭐예요? | C'est quoi, le gimjang ? | What is kimjang?
+@ 아주머니 | 겨울에 먹을 김치를 한꺼번에 많이 만드는 거예요. | C'est préparer d'un seul coup une grande quantité de kimchi pour l'hiver. | It's making a large batch of kimchi all at once to eat through the winter.
+@ 루카 | 재미있겠네요! 저도 해 보고 싶어요. | Ça a l'air amusant ! Moi aussi, j'aimerais essayer. | That sounds fun! I'd like to try too.
+@ 루카 | 배추가 서른 포기나 있었어요. 생각보다 훨씬 많았어요. | Il y avait pas moins de trente choux. C'était bien plus que ce que j'imaginais. | There were as many as thirty cabbages. It was far more than I expected.
+@ 민호 | 루카 씨, 양념을 배추 사이사이에 골고루 발라야 돼요. | Luka, il faut étaler l'assaisonnement uniformément entre chaque feuille de chou. | Luka, you have to spread the seasoning evenly between all the cabbage leaves.
+@ 루카 | 이렇게요? 손이 너무 매워요! | Comme ça ? Mes mains brûlent ! | Like this? My hands are burning!
+@ 아주머니 | 하하, 장갑을 껴야지요. 자, 하나 먹어 봐요. | Ha ha, il faut mettre des gants, voyons. Tiens, goûte-en un. | Ha ha, you need to wear gloves, of course. Here, try one.
+@ 루카 | 방금 만든 김치는 처음 먹어 봤는데 정말 맛있었어요. | C'était la première fois que je goûtais du kimchi tout juste préparé, et c'était vraiment délicieux. | It was my first time eating freshly made kimchi, and it was really delicious.
+@ 루카 | 허리는 아팠지만 하숙집 가족이 된 것 같아서 기뻤어요. | J'avais mal au dos, mais j'étais content parce que j'avais l'impression de faire partie de la famille de la pension. | My back hurt, but I was happy because it felt like I'd become part of the boarding-house family.
+v 김장 | préparation du kimchi pour l'hiver
+v 한꺼번에 | d'un seul coup
+v 포기 | compteur pour les choux
+v 골고루 | uniformément
+v 양념 | assaisonnement
+g V-(으)ㄹ + N | Verbe au futur devant un nom : 겨울에 먹을 김치 = « le kimchi qu'on mangera en hiver ».
+g N(이)나 | Souligner une grande quantité : 서른 포기나 = « pas moins de trente ».
+g V-아/어 보다 | Essayer : 해 보고 싶어요, 먹어 봐요.
+g A/V-(으)ㄴ 것 같다 | Impression : 가족이 된 것 같아요 = « j'ai l'impression d'être devenu de la famille ».
+q 김장은 뭐예요? | Préparer beaucoup de kimchi pour l'hiver | Une fête d'anniversaire | Le grand ménage de fin d'année
+q 배추가 몇 포기 있었어요? | Trente | Treize | Trois cents
+
+= hasuk4 | A2 | Les gens de la pension | 하숙집 사람들 | 4 | Le rhume | 감기
+@ 루카 | 환절기라서 그런지 아침부터 목이 아프고 열이 났어요. | Peut-être à cause du changement de saison, j'avais mal à la gorge et de la fièvre depuis le matin. | Maybe because of the change of season, my throat hurt and I had a fever from the morning.
+@ 루카 | 수업에 못 간다고 지수 씨한테 문자를 보냈어요. | J'ai envoyé un message à Jisu pour lui dire que je ne pouvais pas aller en cours. | I texted Jisu to say I couldn't go to class.
+@ 아주머니 | 루카 학생, 아침을 왜 안 먹어요? 얼굴이 안 좋네요. | Luka, pourquoi tu ne prends pas ton petit-déjeuner ? Tu as mauvaise mine. | Luka, why aren't you eating breakfast? You don't look well.
+@ 루카 | 감기에 걸린 것 같아요. 기침도 나고 머리도 아파요. | Je crois que j'ai attrapé un rhume. Je tousse et j'ai mal à la tête. | I think I've caught a cold. I'm coughing and my head hurts.
+@ 아주머니 | 약은 먹었어요? 잠깐만 기다려 봐요. | Tu as pris un médicament ? Attends un instant. | Have you taken medicine? Wait just a moment.
+@ 루카 | 아주머니는 따뜻한 죽하고 유자차를 가져다주셨어요. | La logeuse m'a apporté une bouillie de riz chaude et du thé au yuzu. | The landlady brought me warm rice porridge and yuzu tea.
+@ 아주머니 | 이거 먹고 푹 자요. 내일도 아프면 병원에 같이 가요. | Mange ça et dors bien. Si tu es encore malade demain, on ira ensemble à l'hôpital. | Eat this and get a good sleep. If you're still sick tomorrow, we'll go to the hospital together.
+@ 루카 | 아플 때 혼자 있으면 외로운데 그날은 전혀 외롭지 않았어요. | Quand on est malade et seul, on se sent isolé, mais ce jour-là je ne me suis pas senti seul du tout. | Being alone when you're sick is lonely, but that day I didn't feel lonely at all.
+@ 지수 | 루카 씨, 괜찮아요? 수업 필기는 제가 보내 줄게요. | Luka, ça va ? Je t'enverrai mes notes de cours. | Luka, are you OK? I'll send you my class notes.
+@ 루카 | 다음 날 아침에는 열이 내려서 다시 학교에 갈 수 있었어요. | Le lendemain matin, la fièvre était tombée et j'ai pu retourner à l'école. | The next morning my fever had gone down and I could go back to school.
+v 환절기 | changement de saison
+v 열이 나다 | avoir de la fièvre
+v 죽 | bouillie de riz
+v 푹 자다 | dormir profondément
+v 외롭다 | se sentir seul
+g A/V-아/어서 그런지 | Cause supposée : 환절기라서 그런지 = « peut-être parce que c'est l'intersaison ».
+g V-ㄴ/는다고 (말하다, 문자를 보내다) | Rapporter ce qu'on dit : 못 간다고 문자를 보냈어요.
+g V-아/어다 주다 | Aller chercher et apporter pour quelqu'un : 가져다주셨어요.
+q 아주머니는 뭘 가져다주셨어요? | De la bouillie de riz et du thé au yuzu | Des médicaments et de l'eau | Une soupe de poulet
+q 다음 날 루카 씨는 어땠어요? | La fièvre était tombée | Il était toujours malade | Il est allé à l'hôpital
+
+= hasuk5 | A2 | Les gens de la pension | 하숙집 사람들 | 5 | La fête d'anniversaire | 생일 파티
+@ 민호 | 지수 씨, 다음 주 금요일이 루카 씨 생일이래요. | Jisu, il paraît que vendredi prochain, c'est l'anniversaire de Luka. | Jisu, apparently next Friday is Luka's birthday.
+@ 지수 | 정말요? 그럼 몰래 파티를 준비할까요? | Vraiment ? Et si on préparait une fête en cachette ? | Really? Then shall we secretly plan a party?
+@ 루카 | 생일날 저녁, 하숙집에 돌아왔는데 집이 너무 조용했어요. | Le soir de mon anniversaire, quand je suis rentré à la pension, la maison était bien trop calme. | On the evening of my birthday, I came back to the boarding house and it was far too quiet.
+@ 루카 | 불을 켜자마자 모두가 "생일 축하해요!"라고 외쳤어요. | Dès que j'ai allumé la lumière, tout le monde a crié « Joyeux anniversaire ! ». | As soon as I turned on the light, everyone shouted "Happy birthday!"
+@ 루카 | 깜짝 놀라서 가방을 떨어뜨렸어요. | J'ai été tellement surpris que j'ai fait tomber mon sac. | I was so startled that I dropped my bag.
+@ 아주머니 | 한국에서는 생일에 미역국을 먹어요. 많이 먹어요. | En Corée, on mange de la soupe aux algues pour son anniversaire. Sers-toi bien. | In Korea we eat seaweed soup on birthdays. Eat plenty.
+@ 지수 | 이건 우리가 같이 준비한 선물이에요. 열어 봐요. | C'est un cadeau qu'on a préparé ensemble. Ouvre-le. | This is a present we prepared together. Open it.
+@ 루카 | 선물은 한국어로 쓴 편지하고 예쁜 공책이었어요. | Le cadeau, c'était une lettre écrite en coréen et un joli cahier. | The present was a letter written in Korean and a pretty notebook.
+@ 루카 | 편지를 읽는 동안 눈물이 날 뻔했어요. | En lisant la lettre, j'ai failli pleurer. | While reading the letter, I almost cried.
+@ 루카 | 가족은 멀리 있지만 여기에도 가족이 생긴 것 같았어요. | Ma famille est loin, mais j'avais l'impression d'en avoir trouvé une ici aussi. | My family is far away, but it felt like I'd gained a family here too.
+v 몰래 | en cachette
+v 외치다 | crier
+v 떨어뜨리다 | faire tomber
+v 미역국 | soupe aux algues
+v 눈물이 나다 | avoir les larmes aux yeux
+g N(이)래요 | Rapporter ce qu'on a entendu : 생일이래요 = « il paraît que c'est son anniversaire ».
+g V-자마자 | Dès que : 불을 켜자마자.
+g V-는 동안 | Pendant que : 편지를 읽는 동안.
+g V-(으)ㄹ 뻔하다 | Faillir : 눈물이 날 뻔했어요 = « j'ai failli pleurer ».
+q 하숙집은 왜 조용했어요? | Tout le monde préparait une fête surprise | Tout le monde dormait | Il n'y avait personne
+q 선물은 뭐였어요? | Une lettre en coréen et un cahier | Un livre de coréen | Un gâteau
+
+= jikjang1 | B1 | Premier emploi | 첫 직장 | 1 | Le premier jour | 첫 출근
+@ 루카 | 한국어 공부를 마치고 서울에 있는 작은 회사에서 인턴으로 일하게 됐어요. | Après avoir fini mes études de coréen, j'ai été amené à travailler comme stagiaire dans une petite entreprise de Séoul. | After finishing my Korean studies, I ended up working as an intern at a small company in Seoul.
+@ 루카 | 첫 출근 날, 긴장한 탓에 한 시간이나 일찍 도착했어요. | Le premier jour, à cause du stress, je suis arrivé une bonne heure en avance. | On my first day, I was so nervous that I arrived a whole hour early.
+@ 팀장 | 루카 씨, 반가워요. 저는 박 팀장이에요. 한국 회사는 처음이지요? | Luka, enchantée. Je suis la cheffe d'équipe Park. C'est votre première entreprise coréenne, n'est-ce pas ? | Luka, nice to meet you. I'm Team Leader Park. This is your first Korean company, isn't it?
+@ 루카 | 네, 처음이라서 모르는 게 많습니다. 잘 부탁드립니다. | Oui, comme c'est la première fois, il y a beaucoup de choses que j'ignore. Je compte sur vous. | Yes, since it's my first time, there's a lot I don't know. I look forward to working with you.
+@ 팀장 | 너무 걱정하지 마세요. 모르는 게 있으면 준영 씨한테 물어보세요. | Ne vous inquiétez pas trop. Si vous avez un doute, demandez à Junyeong. | Don't worry too much. If there's anything you don't know, ask Junyeong.
+@ 준영 | 안녕하세요. 자리는 여기예요. 점심은 보통 팀원들이랑 같이 먹어요. | Bonjour. Votre place est ici. Le midi, on mange en général avec l'équipe. | Hello. Your desk is here. We usually have lunch together as a team.
+@ 루카 | 수업에서 배운 한국어와 회사에서 쓰는 한국어는 꽤 달랐어요. | Le coréen appris en cours et celui qu'on utilise en entreprise étaient assez différents. | The Korean I learned in class and the Korean used at work were quite different.
+@ 루카 | 회의 때 말이 너무 빨라서 절반밖에 못 알아들었어요. | En réunion, ça parlait tellement vite que je n'ai compris que la moitié. | In the meeting people spoke so fast that I only caught half of it.
+@ 준영 | 처음에는 다 그래요. 회의록을 보내 줄 테니까 천천히 읽어 봐요. | Au début, c'est pareil pour tout le monde. Je vais vous envoyer le compte rendu, lisez-le tranquillement. | Everyone's like that at first. I'll send you the minutes, so read them at your own pace.
+@ 루카 | 퇴근길에 피곤하기는 했지만 뭔가 해냈다는 생각에 뿌듯했어요. | Sur le chemin du retour, j'étais certes fatigué, mais fier d'avoir accompli quelque chose. | On the way home I was tired, but I felt proud to have accomplished something.
+v 출근 | fait d'aller au travail
+v 긴장하다 | être tendu, stressé
+v 회의록 | compte rendu de réunion
+v 알아듣다 | comprendre (à l'oral)
+v 뿌듯하다 | être fier de soi
+g V-게 되다 | Situation qui s'est produite sans qu'on la décide entièrement : 일하게 됐어요 = « j'ai été amené à travailler ».
+g V-(으)ㄴ 탓에 | Cause négative : 긴장한 탓에 = « à cause du stress ».
+g V-(으)ㄹ 테니까 | « Je vais…, alors… » : 보내 줄 테니까 읽어 봐요.
+g A/V-기는 하지만 | Concession : 피곤하기는 했지만 = « j'étais certes fatigué, mais ».
+q 루카 씨는 왜 한 시간이나 일찍 도착했어요? | Parce qu'il était stressé | Parce qu'il s'était trompé d'heure | Parce qu'il y avait une réunion tôt
+q 회의에서 루카 씨는 얼마나 알아들었어요? | La moitié seulement | Presque tout | Rien du tout
+
+= jikjang2 | B1 | Premier emploi | 첫 직장 | 2 | Le regard des autres | 눈치
+@ 루카 | 금요일 여섯 시, 일이 다 끝나서 가방을 챙기고 있었어요. | Vendredi, dix-huit heures : mon travail était terminé et je rangeais mes affaires. | Friday, six o'clock: my work was done and I was packing my bag.
+@ 루카 | 그런데 사무실을 둘러보니까 아무도 일어나지 않았어요. | Mais en regardant autour de moi, j'ai vu que personne ne se levait. | But when I looked around the office, nobody was getting up.
+@ 루카 | 프랑스에서는 일이 끝나면 바로 퇴근하는 게 당연한 줄 알았어요. | En France, je croyais qu'il allait de soi de partir dès que le travail est fini. | In France, I'd assumed it was natural to leave as soon as your work is done.
+@ 루카 | 먼저 가도 되는지 몰라서 괜히 서류만 다시 읽었어요. | Ne sachant pas si je pouvais partir le premier, j'ai relu des documents sans raison. | Not knowing whether I could leave first, I just reread documents for no reason.
+@ 준영 | 루카 씨, 일 다 했으면 먼저 들어가도 돼요. | Luka, si vous avez fini, vous pouvez rentrer. | Luka, if you've finished, you can head home.
+@ 루카 | 정말요? 다들 일하고 계셔서 눈치가 보였어요. | Vraiment ? Comme tout le monde travaillait, je n'osais pas. | Really? Everyone was still working, so I felt awkward.
+@ 준영 | 요즘은 많이 달라졌어요. 팀장님도 야근하는 걸 좋아하지 않으세요. | Les choses ont beaucoup changé. La cheffe non plus n'aime pas qu'on fasse des heures supplémentaires. | Things have changed a lot these days. The team leader doesn't like overtime either.
+@ 팀장 | 맞아요. 할 일을 다 했으면 눈치 보지 말고 퇴근하세요. | C'est vrai. Si vous avez fini ce que vous aviez à faire, partez sans vous soucier des autres. | That's right. If you've done what you had to do, go home without worrying about what others think.
+@ 루카 | 그 말을 듣고 나서야 마음 편하게 인사하고 나올 수 있었어요. | Ce n'est qu'après avoir entendu ça que j'ai pu dire au revoir et sortir l'esprit tranquille. | Only after hearing that could I say goodbye and leave with an easy mind.
+@ 루카 | 문화가 다르다는 건 틀린 게 아니라 물어보면 되는 거라는 걸 배웠어요. | J'ai appris qu'une différence culturelle n'est pas une erreur : il suffit de demander. | I learned that a cultural difference isn't a mistake: you just need to ask.
+v 눈치가 보이다 | se sentir gêné par le regard des autres
+v 챙기다 | rassembler ses affaires
+v 당연하다 | aller de soi
+v 괜히 | sans raison, pour rien
+v 야근하다 | faire des heures supplémentaires
+g V-(으)ㄴ/는 줄 알았다 | Croire à tort : 당연한 줄 알았어요 = « je croyais que ça allait de soi ».
+g V-아/어도 되는지 모르다 | Ne pas savoir si on a le droit : 가도 되는지 몰라서.
+g V-고 나서야 | Seulement après : 듣고 나서야 = « ce n'est qu'après avoir entendu ».
+g V-(으)니까 (découverte) | En faisant, on constate : 둘러보니까 아무도… = « en regardant autour, j'ai vu que… ».
+q 루카 씨는 왜 바로 퇴근하지 못했어요? | Parce que personne d'autre ne partait | Parce que son travail n'était pas fini | Parce que la cheffe l'a retenu
+q 팀장님은 야근을 어떻게 생각해요? | Elle n'aime pas ça | Elle l'exige | Ça lui est égal
+
+= jikjang3 | B1 | Premier emploi | 첫 직장 | 3 | Le repas d'équipe | 회식
+@ 준영 | 오늘 저녁에 회식이 있다고 들었어요? 삼겹살집이래요. | Vous avez entendu qu'il y a un repas d'équipe ce soir ? Il paraît que c'est dans un restaurant de samgyeopsal. | Did you hear there's a team dinner tonight? Apparently it's at a pork belly place.
+@ 루카 | 회식은 처음이라서 뭘 조심해야 하는지 모르겠어요. | Comme c'est mon premier repas d'équipe, je ne sais pas à quoi je dois faire attention. | It's my first team dinner, so I don't know what I should be careful about.
+@ 준영 | 어려울 거 없어요. 윗사람이 술을 주시면 두 손으로 받으면 돼요. | Rien de compliqué. Si un supérieur vous sert à boire, il suffit de recevoir le verre à deux mains. | There's nothing hard about it. If a senior pours you a drink, just receive it with both hands.
+@ 루카 | 식당에 도착하자마자 팀장님이 고기를 구워 주셨어요. | Dès notre arrivée au restaurant, la cheffe nous a fait griller la viande. | As soon as we got to the restaurant, the team leader grilled the meat for us.
+@ 팀장 | 루카 씨, 술은 못 마시면 안 마셔도 돼요. 억지로 권하지 않을게요. | Luka, si vous ne buvez pas, vous n'êtes pas obligé. Je ne vous forcerai pas. | Luka, if you don't drink, you don't have to. I won't push you.
+@ 루카 | 감사합니다. 한 잔만 받겠습니다. | Merci. J'accepterai juste un verre. | Thank you. I'll take just one glass.
+@ 루카 | 고개를 옆으로 돌리고 마시는 저를 보고 모두가 놀라워했어요. | En me voyant boire la tête tournée sur le côté, tout le monde a été étonné. | Seeing me turn my head to the side to drink, everyone was amazed.
+@ 준영 | 그런 건 어디에서 배웠어요? 저보다 예절을 더 잘 아네요! | Où avez-vous appris ça ? Vous connaissez mieux les bonnes manières que moi ! | Where did you learn that? You know etiquette better than I do!
+@ 루카 | 드라마에서 봤다고 하니까 다들 크게 웃었어요. | Quand j'ai dit que je l'avais vu dans un drama, tout le monde a éclaté de rire. | When I said I'd seen it in a drama, everyone burst out laughing.
+@ 루카 | 회사에서는 어려워 보이던 팀장님이 그날은 옆집 누나처럼 편하게 느껴졌어요. | La cheffe, qui me paraissait intimidante au bureau, m'a semblé ce jour-là aussi accessible qu'une grande sœur du quartier. | The team leader, who had seemed intimidating at work, felt as approachable as a neighbourhood big sister that day.
+v 회식 | repas d'équipe
+v 윗사람 | supérieur, aîné
+v 억지로 | de force
+v 권하다 | proposer avec insistance
+v 예절 | bonnes manières
+g V-ㄴ/는다고 듣다 | Rapporter ce qu'on a entendu : 회식이 있다고 들었어요.
+g V-아/어야 하는지 모르다 | Ne pas savoir ce qu'il faut faire : 뭘 조심해야 하는지 모르겠어요.
+g V-(으)면 되다 | Il suffit de : 두 손으로 받으면 돼요.
+g A/V-던 + N | Souvenir d'un état passé : 어려워 보이던 팀장님 = « la cheffe qui paraissait intimidante ».
+q 윗사람이 술을 주시면 어떻게 받아야 해요? | À deux mains | De la main gauche | En se levant
+q 루카 씨는 그 예절을 어디에서 배웠어요? | Dans des dramas | En cours de coréen | Auprès de Junyeong
+
+= jikjang4 | B1 | Premier emploi | 첫 직장 | 4 | L'erreur | 실수
+@ 루카 | 입사한 지 한 달쯤 됐을 때 큰 실수를 하고 말았어요. | Environ un mois après mon arrivée dans l'entreprise, j'ai fini par commettre une grosse erreur. | About a month after joining the company, I ended up making a big mistake.
+@ 루카 | 거래처에 보내는 이메일에 반말을 섞어서 써 버린 거예요. | J'avais glissé du langage familier dans un e-mail destiné à un client. | I had mixed casual speech into an email to a client.
+@ 루카 | '확인해 주세요'라고 써야 하는데 '확인해 줘'라고 보냈어요. | J'aurais dû écrire « Veuillez vérifier », mais j'ai envoyé « Vérifie ». | I should have written "Please check", but I sent "Check it".
+@ 루카 | 보내기 버튼을 누르자마자 얼굴이 빨개졌어요. | À peine avais-je appuyé sur « Envoyer » que j'ai rougi. | The moment I pressed the send button, my face turned red.
+@ 루카 | 숨길 수도 있었지만 팀장님께 바로 말씀드리기로 했어요. | J'aurais pu le cacher, mais j'ai décidé d'en parler tout de suite à la cheffe. | I could have hidden it, but I decided to tell the team leader straight away.
+@ 팀장 | 그랬군요. 말해 줘서 고마워요. 지금 사과 메일을 다시 보내면 괜찮을 거예요. | Je vois. Merci de me l'avoir dit. Si vous envoyez un e-mail d'excuse maintenant, tout ira bien. | I see. Thank you for telling me. If you send an apology email now, it'll be fine.
+@ 루카 | 정말 죄송합니다. 앞으로는 보내기 전에 꼭 두 번씩 확인하겠습니다. | Je suis vraiment désolé. À l'avenir, je vérifierai toujours deux fois avant d'envoyer. | I'm truly sorry. From now on I'll always check twice before sending.
+@ 팀장 | 누구나 실수는 해요. 중요한 건 숨기지 않는 거예요. | Tout le monde fait des erreurs. L'important, c'est de ne pas les cacher. | Everyone makes mistakes. What matters is not hiding them.
+@ 준영 | 저는 신입 때 사장님 성함을 틀리게 쓴 적도 있어요. | Moi, quand j'étais nouveau, il m'est même arrivé de mal écrire le nom du PDG. | When I was new, I once even wrote the CEO's name wrong.
+@ 루카 | 아무리 조심해도 실수는 생기지만 어떻게 대처하느냐가 더 중요하다는 걸 알게 됐어요. | J'ai compris qu'on a beau faire attention, les erreurs arrivent, et que le plus important est la façon d'y réagir. | I realised that however careful you are, mistakes happen, and how you handle them matters more.
+v 거래처 | client, partenaire commercial
+v 섞다 | mélanger
+v 숨기다 | cacher
+v 사과 | excuses
+v 대처하다 | réagir, faire face
+g V-고 말다 | Résultat regrettable : 실수를 하고 말았어요 = « j'ai fini par faire une erreur ».
+g V-아/어 버리다 | Action achevée, souvent avec regret : 써 버렸어요.
+g V-(으)ㄴ 적이 있다 | Expérience passée : 틀리게 쓴 적이 있어요 = « il m'est arrivé de mal l'écrire ».
+g 아무리 A/V-아/어도 | Avoir beau : 아무리 조심해도 = « on a beau faire attention ».
+q 루카 씨는 어떤 실수를 했어요? | Il a écrit en langage familier à un client | Il s'est trompé de destinataire | Il a oublié la pièce jointe
+q 팀장님은 뭐가 중요하다고 했어요? | Ne pas cacher ses erreurs | Ne jamais se tromper | Travailler plus vite
+
+= jikjang5 | B1 | Premier emploi | 첫 직장 | 5 | La dernière présentation | 마지막 발표
+@ 루카 | 인턴십 마지막 주에 팀 전체 앞에서 발표를 하게 됐어요. | La dernière semaine de mon stage, j'ai dû faire une présentation devant toute l'équipe. | In the last week of my internship, I had to give a presentation in front of the whole team.
+@ 루카 | 한국어로 이십 분 동안 발표하는 건 생각만 해도 떨렸어요. | Présenter pendant vingt minutes en coréen, rien que d'y penser, j'en tremblais. | Presenting for twenty minutes in Korean made me nervous just thinking about it.
+@ 지수 | 연습은 많이 했어요? 제 앞에서 한번 해 볼래요? | Tu t'es beaucoup entraîné ? Tu veux essayer une fois devant moi ? | Have you practised a lot? Do you want to try it once in front of me?
+@ 루카 | 지수 씨 덕분에 어색한 표현을 여러 군데 고칠 수 있었어요. | Grâce à Jisu, j'ai pu corriger des tournures maladroites à plusieurs endroits. | Thanks to Jisu, I was able to fix awkward expressions in several places.
+@ 루카 | 발표 날, 손은 떨렸지만 준비한 대로 천천히 말하려고 노력했어요. | Le jour J, mes mains tremblaient, mais je me suis efforcé de parler lentement, comme je l'avais préparé. | On the day, my hands were shaking, but I tried to speak slowly, just as I'd prepared.
+@ 팀장 | 질문이 있습니다. 이 아이디어를 실제로 적용하려면 뭐가 필요할까요? | J'ai une question. Que faudrait-il pour appliquer réellement cette idée ? | I have a question. What would it take to actually apply this idea?
+@ 루카 | 좋은 질문 감사합니다. 우선 예산과 시간이 더 필요하다고 생각합니다. | Merci pour cette bonne question. Je pense qu'il faudrait d'abord davantage de budget et de temps. | Thank you for the good question. First, I think more budget and time would be needed.
+@ 준영 | 루카 씨, 일 년 전에는 인사밖에 못 했다면서요? 믿을 수가 없네요. | Luka, il paraît qu'il y a un an vous ne saviez que dire bonjour ? Je n'arrive pas à y croire. | Luka, I hear a year ago you could only say hello? I can't believe it.
+@ 팀장 | 수고 많았어요. 졸업하면 꼭 다시 연락 주세요. | Vous avez fait du bon travail. Recontactez-nous sans faute après votre diplôme. | You've worked hard. Be sure to get in touch again when you graduate.
+@ 루카 | 공항에서 "안녕하세요"밖에 못 하던 제가 여기까지 온 걸 생각하니 가슴이 뭉클했어요. | En pensant que moi, qui ne savais dire que « bonjour » à l'aéroport, j'en étais arrivé là, j'ai eu le cœur serré d'émotion. | Thinking about how I, who could only say "hello" at the airport, had come this far, I felt a lump in my throat.
+v 발표 | présentation, exposé
+v 떨리다 | trembler, avoir le trac
+v 어색하다 | maladroit, peu naturel
+v 적용하다 | appliquer
+v 가슴이 뭉클하다 | avoir le cœur serré d'émotion
+g V-(으)ㄴ/는 대로 | Conformément à : 준비한 대로 = « comme je l'avais préparé ».
+g V-(으)려면 | Si on veut : 적용하려면 = « pour appliquer ».
+g V-ㄴ/는다면서요? | Vérifier une information entendue : 못 했다면서요? = « il paraît que vous ne saviez pas… ? »
+g V-던 + N | Souvenir d'une habitude ou d'un état passé : "안녕하세요"밖에 못 하던 제가.
+q 누가 발표 연습을 도와줬어요? | Jisu | Junyeong | La cheffe d'équipe
+q 팀장님은 마지막에 뭐라고 했어요? | De la recontacter après le diplôme | De refaire la présentation | De rester un mois de plus
