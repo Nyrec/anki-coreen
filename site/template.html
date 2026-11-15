@@ -119,6 +119,26 @@ table.f td .x{display:block;font-family:var(--ko);font-size:14px;color:var(--jjo
 .sheet .hd{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .sheet .k{font-family:var(--ko);font-size:22px;font-weight:700}
 .empty{color:var(--muted);padding:14px}
+.syncrow{flex-direction:row;flex-wrap:wrap;align-items:center;gap:10px}.syncrow .panel{flex-basis:100%}
+.fld{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
+.hero{position:relative;overflow:hidden}
+.hero::after{content:"한";position:absolute;right:-14px;bottom:-58px;font:700 210px var(--ko);color:#fff;opacity:.07;pointer-events:none;line-height:1}
+.hero>*{position:relative;z-index:1}
+.hero .btn.big{box-shadow:0 10px 22px -12px rgba(0,0,0,.6)}
+h2::before{content:"";display:inline-block;width:16px;height:4px;border-radius:2px;background:var(--chija);margin-right:8px;vertical-align:middle}
+.covers{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cover{position:relative;overflow:hidden;border:0;border-radius:18px;padding:14px;min-height:132px;display:flex;flex-direction:column;gap:6px;text-align:left;color:#fff;background:linear-gradient(145deg,var(--cv),color-mix(in srgb,var(--cv) 55%,#0a1418));box-shadow:0 14px 24px -18px var(--cv);transition:transform .12s ease}
+.cover.lv-A1{--cv:var(--grn)}.cover.lv-A2{--cv:var(--jjok)}.cover.lv-B1,.cover.lv-B2{--cv:var(--vio)}
+.cover .id{position:absolute;right:8px;top:-8px;font:700 64px var(--ko);opacity:.16;color:#fff}
+.cover .tx{display:flex;flex-direction:column;gap:2px;position:relative}.cover .tx .ko{font-size:20px!important;line-height:1.3}
+.cover .tx small{color:#fff;opacity:.85;font-size:13px}
+.cover .n{margin-top:auto;font-size:12px;color:#fff;opacity:.92}.cover .n b.due{color:#fff;background:rgba(255,255,255,.22);padding:2px 8px;border-radius:99px;font-weight:600}
+@media (prefers-reduced-motion:no-preference){.cover:active{transform:scale(.97)}}
+.flash .tag.lvband{align-self:center;padding:3px 12px;border-radius:99px;background:color-mix(in srgb,var(--lc) 14%,transparent);color:var(--lc)}
+.lvband.A1{--lc:var(--a1)}.lvband.A2{--lc:var(--a2)}.lvband.B1,.lvband.B2{--lc:var(--b1)}
+.flash{border:0;background:linear-gradient(180deg,var(--card),color-mix(in srgb,var(--jjok) 5%,var(--card)))}
+.wod{box-shadow:0 12px 24px -20px rgba(0,0,0,.5)}
+nav.tabs{box-shadow:0 -8px 20px -18px rgba(0,0,0,.5)}
 :root{--red:#c9503f;--grn:#2c7a59;--vio:#7b3f93}
 body{background:radial-gradient(1200px 420px at 50% -120px,color-mix(in srgb,var(--jjok) 16%,var(--paper)),var(--paper) 70%) no-repeat var(--paper)}
 .hero{background:linear-gradient(140deg,var(--jjok),color-mix(in srgb,var(--jjok) 62%,#0b2533));box-shadow:0 14px 30px -18px color-mix(in srgb,var(--jjok) 80%,transparent)}
@@ -288,6 +308,32 @@ function stats(cards){
 }
 function streak(){let n=0,d=today();if(!S.log[dstr(d)]||!S.log[dstr(d)][0])d--;while(S.log[dstr(d)]&&S.log[dstr(d)][0]){n++;d--}return n}
 function fmtTime(ms){const m=Math.round(ms/6e4);return m<60?m+" min":Math.floor(m/60)+" h "+String(m%60).padStart(2,"0")}
+/* ---------- synchronisation entre appareils : un fichier dans un dépôt GitHub privé ---------- */
+let SY=null;try{SY=JSON.parse(localStorage.getItem("hgn-sync")||"null")}catch(e){}
+let syncMsg="";
+function mergeS(a,b){
+  const o=Object.assign({},a,{c:{},log:{},read:{},heard:{}});
+  for(const k of new Set([...Object.keys(a.c||{}),...Object.keys(b.c||{})])){const x=(a.c||{})[k],y=(b.c||{})[k];o.c[k]=!x?y:!y?x:(y[3]>x[3]||(y[3]===x[3]&&y[0]>x[0])?y:x)}
+  for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
+  Object.assign(o.read,b.read||{},a.read||{});Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
+}
+async function syncNow(){
+  if(!SY||!SY.repo||!SY.token)throw new Error("la synchronisation n'est pas encore configurée");
+  const api="https://api.github.com/repos/"+SY.repo+"/contents/progression.json",h={Authorization:"Bearer "+SY.token,Accept:"application/vnd.github+json"};
+  let sha=null;const r=await fetch(api+"?t="+Date.now(),{headers:h,cache:"no-store"});
+  if(r.status===200){const j=await r.json();sha=j.sha;const remote=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))));if(remote&&remote.c)S=mergeS(S,remote)}
+  else if(r.status!==404)throw new Error(r.status===401||r.status===403?"le code d'accès est refusé":"GitHub a répondu "+r.status);
+  S.sync=Date.now();save();
+  const body={message:"Progression "+dstr(today()),content:btoa(unescape(encodeURIComponent(JSON.stringify(S))))};if(sha)body.sha=sha;
+  const w=await fetch(api,{method:"PUT",headers:h,body:JSON.stringify(body)});
+  if(!w.ok)throw new Error(w.status===409?"un autre appareil vient d'écrire, réessaie":"l'envoi a été refusé ("+w.status+")");
+}
+function doSync(quiet){
+  if(!SY){if(!quiet){syncMsg="";const b=$("#syncbox");if(b)b.hidden=false}return}
+  syncMsg="동기화 중… · Synchronisation en cours…";const el=$("#syncst");if(el)el.textContent=syncMsg;
+  syncNow().then(()=>{syncMsg="";if(cur().v==="accueil")render()},e=>{syncMsg="Synchronisation impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg});
+}
+const syncLabel=()=>syncMsg||(!SY?"Pas encore configurée sur cet appareil.":S.sync?"Dernière synchronisation : "+new Date(S.sync).toLocaleString("fr-FR",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"})+".":"Jamais synchronisé sur cet appareil.");
 /* ---------- audio ---------- */
 const HAS_AUDIO=/*HASAUDIO*/;
 const canSpeak=("speechSynthesis" in window)&&("SpeechSynthesisUtterance" in window);
@@ -362,6 +408,8 @@ function vHome(){
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
   </section>
+  ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>
+    <div class="panel" id="syncbox" hidden><p class="count">Pour relier ordinateur, tablette et téléphone, indique une fois sur chaque appareil ton dépôt GitHub privé et son code d'accès.</p><input class="fld" id="syrepo" placeholder="Nyrec/hangugeo-sync" value="${SY?esc(SY.repo):""}" autocomplete="off" autocapitalize="off"><input class="fld" id="sytok" type="password" placeholder="Code d'accès GitHub (github_pat_…)" autocomplete="off"><div class="actions"><button class="btn" data-act="sync-save">저장 · Enregistrer</button>${SY?`<button class="btn ghost" data-act="sync-off">Déconnecter cet appareil</button>`:""}</div></div></section>`:""}
   <section class="kpis">
     <div class="kpi"><b>${sk}</b><span><i class="ko">연속 학습</i> jour${sk>1?"s":""} d'étude à la suite</span></div>
     <div class="kpi"><b>${ret==null?"–":ret+" %"}</b><span><i class="ko">정답률</i> taux de bonnes réponses (30 jours)</span></div>
@@ -388,6 +436,7 @@ function vHome(){
     <div class="setrow"><span>Lire le mot automatiquement</span><button class="chip" aria-pressed="${!!S.cfg.auto}" data-act="auto">${S.cfg.auto?"Activé":"Désactivé"}</button></div>
     <div class="setrow"><span>Voix au ralenti</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">Lent</button></div>
     ${HAS_AUDIO&&OFFLINE?`<div class="setrow"><span>Garder tout l'audio sur cet appareil pour le hors-ligne</span><button class="mini" data-act="dl">Télécharger l'audio</button></div><p class="count" id="dlmsg">Sans ça, seul l'audio déjà écouté fonctionne hors ligne.</p>`:""}
+    ${OFFLINE?`<div class="setrow"><span>동기화 설정 · Réglages de synchronisation</span><button class="mini" data-act="sync-cfg">${SY?esc(SY.repo):"Configurer"}</button></div>`:""}
     <div class="setrow"><span>Copier ma progression vers un autre appareil</span><span class="stepper"><button class="mini" data-act="export">Copier le code</button><button class="mini" data-act="import">Coller un code</button></span></div>
     <div id="xfer"></div>
     <p class="count">La progression est enregistrée sur cet appareil. Pour la retrouver ailleurs, copie le code ici et colle-le sur l'autre appareil.</p>
@@ -459,6 +508,7 @@ function vStudy(s){
   if(!s.queue){s.queue=buildSession(s.cards,s.extra,s.recent);s.done=0;s.rev=false;s.spoken=null}
   const left=stats(s.cards);
   if(!s.queue.length){
+    if(s.done&&!s.synced&&OFFLINE&&SY){s.synced=1;doSync(true)}
     $("#view").innerHTML=`${backBtn()}<h1 class="fin">${s.done?"수고했어요! · Bien travaillé !":"없어요 · Il n'y en a pas"}<small>${s.done?`${s.done} carte${s.done>1?"s":""} révisée${s.done>1?"s":""} dans cette série.`:"Aucune carte à réviser ici pour aujourd'hui."}</small></h1>
     <p class="intro">${left.nw?`Il reste ${left.nw} nouvelles cartes dans cette liste. La limite du jour est de ${S.cfg.nw}.`:"Toutes les cartes de cette liste ont déjà été vues."}</p>
     <div class="actions">${left.nw?`<button class="btn" data-act="more-new">Apprendre 10 nouvelles cartes de plus</button>`:""}<button class="btn ghost" data-act="back">Revenir</button></div>`;return}
@@ -469,7 +519,7 @@ function vStudy(s){
   const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
   if(!s.rev){s.t0=Date.now()}
   $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":"방향 : 자동 · Sens : automatique"}</button></div>
-  <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span><div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${front}</div>
+  <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag lvband ${c.l}">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span><div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${front}</div>
   ${s.rev?`<hr>${dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.f||c.e)}${c.f?`<small>${esc(c.e)}</small>`:""}</div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
   ${canPlay?`<div class="actions center">${spoken(c.k)&&(s.rev||dir!=="fr")?`<button class="mini" data-say="${esc(c.k)}">단어 듣기 · Écouter le mot</button>`:""}${s.rev&&c.x?`<button class="mini" data-say="${esc(c.x)}">문장 듣기 · Écouter la phrase</button>`:""}</div>`:""}
   ${s.rev?`<div class="grades two"><button class="grade g1" data-grade="1"><small>revient dans cette série</small><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-grade="3"><small>revient dans ${fmtIvl(nextIvl(cs,3))}</small><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="flip">답 보기 · Voir la réponse</button>`}</div>`;
@@ -503,7 +553,7 @@ const isRead=id=>!!(S.read&&S.read[id]);
 function vStories(){
   const series=[];for(const x of STORIES){const key=x.serie||"Lectures courtes";let g=series.find(s=>s.key===key);if(!g)series.push(g={key,ko:x.serieKo||"짧은 글",l:x.serie?x.l:"",items:[]});g.items.push(x)}
   const done=STORIES.filter(x=>isRead(x.id)).length;
-  $("#view").innerHTML=`<h1>이야기 · Histoires<small>${STORIES.length} histoires, ${done} lue${done>1?"s":""}. Chaque épisode a son audio, son vocabulaire et ses questions.</small></h1>`+series.map(g=>`<section><h2>${g.l?g.l+" · ":""}${esc(g.key)} <span class="ko" style="text-transform:none;letter-spacing:0">${esc(g.ko)}</span></h2><div class="rows">${g.items.map(x=>`<button class="rowbtn" data-story="${x.id}"><span class="id">${x.ep||x.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(x.ko)}</span><small>${esc(x.t)}</small></span><span class="n">${isRead(x.id)?'<b class="due">lu</b>':x.lines.length+" phrases"}</span></button>`).join("")}</div></section>`).join("");
+  $("#view").innerHTML=`<h1>이야기 · Histoires<small>${STORIES.length} histoires, ${done} lue${done>1?"s":""}. Chaque épisode a son audio, son vocabulaire et ses questions.</small></h1>`+series.map(g=>`<section><h2>${g.l?g.l+" · ":""}${esc(g.key)} <span class="ko" style="text-transform:none;letter-spacing:0">${esc(g.ko)}</span></h2><div class="covers">${g.items.map(x=>`<button class="cover lv-${x.l}" data-story="${x.id}"><span class="id">${x.ep||x.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(x.ko)}</span><small>${esc(x.t)}</small></span><span class="n">${isRead(x.id)?'<b class="due">lu</b>':x.lines.length+" phrases"}</span></button>`).join("")}</div></section>`).join("");
 }
 let playing=null;
 function stopStory(){playing=null;stopAudio();document.querySelectorAll(".line.now").forEach(x=>x.classList.remove("now"))}
@@ -534,7 +584,7 @@ const podDur=p=>{const n=p.lines.reduce((s,l)=>s+l[0].replace(/[^가-힣]/g,"").
 const isHeard=id=>!!(S.heard&&S.heard[id]);
 function vPods(){
   const done=PODCASTS.filter(p=>isHeard(p.id)).length;
-  $("#view").innerHTML=`<h1>듣기 · Écoute<small>${PODCASTS.length} épisodes à écouter, ${done} écouté${done>1?"s":""}. Une seule piste par épisode : l'écoute continue écran éteint.</small></h1>`+[["court","짧은 방송","Émissions courtes, environ 1 minute"],["moyen","조금 긴 방송","Émissions un peu plus longues, environ 2 minutes"],["cinq","5분 방송","Émissions de 5 minutes"],["dix","10분 방송","Émissions de 10 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="rows">${ps.map(p=>`<button class="rowbtn" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
+  $("#view").innerHTML=`<h1>듣기 · Écoute<small>${PODCASTS.length} épisodes à écouter, ${done} écouté${done>1?"s":""}. Une seule piste par épisode : l'écoute continue écran éteint.</small></h1>`+[["court","짧은 방송","Émissions courtes, environ 1 minute"],["moyen","조금 긴 방송","Émissions un peu plus longues, environ 2 minutes"],["cinq","5분 방송","Émissions de 5 minutes"],["dix","10분 방송","Émissions de 10 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="covers">${ps.map(p=>`<button class="cover lv-${p.l}" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
 }
 function vPod(s){
   const p=PODCASTS.find(x=>x.id===s.id);s.open=s.open||{};
@@ -598,6 +648,10 @@ document.addEventListener("click",e=>{
     if(act==="hide"){stopStory();s.hide=!s.hide;s.open={};s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="read"){S.read=S.read||{};if(S.read[s.id])delete S.read[s.id];else S.read[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dl"){downloadAudio();return}
+    if(act==="sync"){if(!SY||e.detail===2){const b=$("#syncbox");if(b)b.hidden=!b.hidden}if(SY)doSync();return}
+    if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tok=$("#sytok").value.trim()||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)||!tok){$("#syncst").textContent="Indique le dépôt sous la forme Nom/depot et colle le code d'accès.";return}SY={repo,token:tok};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
+    if(act==="sync-cfg"){$("#main").scrollTop=0;const b=$("#syncbox");if(b)b.hidden=false;return}
+    if(act==="sync-off"){SY=null;try{localStorage.removeItem("hgn-sync")}catch(err){}syncMsg="";render();return}
     if(act==="alltr"&&s.v==="pod"){s.all=!s.all;const pa=$("#podau"),tm=pa?pa.currentTime:0,pl=pa&&!pa.paused;s.keepScroll=true;render();s.keepScroll=false;const nb=$("#podau");if(nb&&tm){nb.currentTime=tm;if(pl)nb.play().catch(()=>{})}return}
     if(act==="alltr"){stopStory();s.all=!s.all;s.keepScroll=true;render();s.keepScroll=false;return}
   }
@@ -624,6 +678,7 @@ async function downloadAudio(){
     if(m)m.textContent=ko?`Audio téléchargé, sauf ${ko} fichiers. Relance avec une meilleure connexion pour compléter.`:`Tout l'audio (${list.length} fichiers) est disponible hors ligne sur cet appareil.`;
   }catch(e){if(m)m.textContent="Le téléchargement a échoué. Vérifie ta connexion et réessaie."}
 }
+if(OFFLINE&&SY&&navigator.onLine!==false)setTimeout(()=>doSync(true),800);
 const start=(location.hash||"").slice(1);
 tab(["accueil","themes","cours","fiches","histoires","ecoute"].includes(start)?start:"accueil");
 </script>
