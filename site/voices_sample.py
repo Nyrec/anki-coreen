@@ -35,10 +35,9 @@ def melo():
         spk = model.hps.data.spk2id["KR"]
         files = []
         for tid, text in TEXTS:
-            wav = os.path.join(OUT, f"melo-{tid}.wav"); mp3 = wav[:-4] + ".mp3"
+            wav = os.path.join(OUT, f"melo-{tid}.wav")
             model.tts_to_file(text, spk, wav, speed=1.0)
-            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-b:a", "64k", mp3], check=True)
-            os.remove(wav); files.append(os.path.basename(mp3))
+            files.append(os.path.basename(wav))
         manifest.append({"id": "melo", "label": "Open source MeloTTS (femme)", "files": files})
         print("ok melo")
     except Exception as e:
