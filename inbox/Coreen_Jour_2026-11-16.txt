@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+첫차	first train / bus of the day<br><i>premier train / bus (de la journée)</i>	내일 첫차를 타야 해서 일찍 자야 해요.<br>I have to take the first train tomorrow, so I need to go to bed early.<br><i>Je dois prendre le premier train demain, donc je dois me coucher tôt.</i>	[cheotcha] 첫 (first) + 차 (vehicle). Opposite: 막차 (last train/bus). 첫 also in 첫날, 첫눈.	quotidien::2026-11-16 명사 niveau::A2
+출출하다	to feel peckish<br><i>avoir un petit creux</i>	좀 출출한데 간식 먹을까요?<br>I'm a bit peckish, shall we have a snack?<br><i>J'ai un petit creux, on mange un snack ?</i>	[chulchulhada] Milder than 배고프다. Very often used as 출출한데… to suggest eating something.	quotidien::2026-11-16 형용사 niveau::B1
+들뜨다	to be excited / restless (with anticipation)<br><i>être tout excité, avoir la tête ailleurs (d'impatience)</i>	휴가가 다가와서 마음이 들떠요.<br>My vacation is coming up, so I'm all excited.<br><i>Les vacances approchent, alors je suis tout excité.</i>	[deultteuda] 으-irregular: 들떠요, 들떠서. Usually with 마음이 / 기분이 as subject.	quotidien::2026-11-16 동사 niveau::B1
+검토하다	to review, to examine<br><i>examiner, relire, étudier (un document, une proposition)</i>	보고서를 검토해 주시겠어요?<br>Could you review the report?<br><i>Pourriez-vous relire le rapport ?</i>	[geomtohada] Hanja 檢討. Common at work: 검토 중이에요 = it's under review.	quotidien::2026-11-16 동사 niveau::B1
+뜻밖에	unexpectedly<br><i>de façon inattendue, contre toute attente</i>	시험이 뜻밖에 쉬웠어요.<br>The exam was unexpectedly easy.<br><i>L'examen était étonnamment facile.</i>	[tteutbakke] 뜻 (intention) + 밖 (outside) + 에. Before a noun: 뜻밖의 소식 (unexpected news).	quotidien::2026-11-16 부사 niveau::B1
