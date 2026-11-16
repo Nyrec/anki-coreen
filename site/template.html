@@ -236,6 +236,22 @@ nav.tabs button[aria-current="page"] b{background:var(--jjok-soft)}
 .hero .trio div{background:rgba(255,255,255,.13)}
 .ring .rbg{stroke:rgba(255,255,255,.22)}.ring text{fill:#f2f5f4}.ring .rfg{stroke:#e9b648}
 .wd i{border-color:rgba(255,255,255,.45)}.wd.on i{background:#e9b648;border-color:#e9b648}.wd.now i{box-shadow:0 0 0 2px #f2f5f4}
+/* confort de révision et finitions */
+.bar.sess{height:5px;margin:-6px 0 0}
+.mini.snd.off{border-color:#c0443a;color:#c0443a}.mini.snd.front,.mini.snd.back{border-color:var(--a1);color:var(--a1)}
+.study .meta{gap:6px}.count.keys{text-align:center;font-size:12px}
+.grades.two .g1{background:color-mix(in srgb,#c0443a 11%,var(--card));border-color:color-mix(in srgb,#c0443a 45%,var(--line))}
+.grades.two .g3{background:var(--a1);border-color:var(--a1);color:#fff}.grades.two .g3 small{color:#fff;opacity:.88}
+.grades.two .grade{border-bottom-width:1px;border-radius:14px;box-shadow:0 10px 18px -14px rgba(0,0,0,.5)}
+#view>h1{padding:16px 18px;border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--jjok) 16%,var(--card)),var(--card) 70%);box-shadow:inset 0 0 0 1px var(--line)}
+#view>h1.fin{background:linear-gradient(135deg,color-mix(in srgb,var(--a1) 22%,var(--card)),var(--card) 75%)}
+.rows{box-shadow:0 10px 22px -20px rgba(0,0,0,.5)}
+.rowbtn{transition:background .12s ease}
+@media (hover:hover){.rowbtn:hover{background:color-mix(in srgb,var(--jjok) 7%,transparent)}.tile:hover,.cover:hover,.sc:hover,.level:hover{filter:brightness(1.06)}.btn:hover{filter:brightness(1.08)}}
+details.w[open]{background:color-mix(in srgb,var(--jjok) 5%,transparent)}
+details.w summary .k{transition:color .12s}details.w[open] summary .k{color:var(--jjok)}
+.chip{transition:background .12s,color .12s}
+@media (min-width:1100px){.wrap{max-width:900px}}
 </style>
 </head>
 <body>
@@ -364,6 +380,8 @@ function speak(t,voice,onend){
   try{const a=new Audio(afile(voice||"hyunsu",t));a.playbackRate=rate;a.onended=()=>{if(onend)onend()};a.onerror=tts;player=a;const p=a.play();if(p&&p.catch)p.catch(tts)}catch(e){tts()}
 }
 // Ce qu'on fait entendre pour une carte : le mot s'il se prononce, sinon la phrase d'exemple.
+const sndMode=()=>S.cfg.snd||(S.cfg.auto===false?"off":"front");
+const SND={front:"소리 : 카드가 나올 때 · Son : quand la carte apparaît",back:"소리 : 답을 본 후 · Son : après la réponse",off:"소리 : 끔 · Son coupé"};
 function sayCard(c){if(spoken(c.k))speak(c.k);else if(c.x)speak(c.x)}
 function themeCards(key){return key.startsWith("p:")?CARDS.filter(c=>c.p===key.slice(2)):CARDS.filter(c=>c.t&&c.t.includes(key))}
 function courseOf(id){return COURSES.find(c=>c.id===id)}
@@ -443,7 +461,7 @@ function vHome(){
   <section><h2><span class="ko">최근 수업</span> · Cours récents</h2><div class="rows">${[lastC,lastJ,courseOf("jour")].filter(Boolean).map(courseRow).join("")}</div></section>
   <section><h2><span class="ko">설정</span> · Réglages</h2><div class="panel">
     <div class="setrow"><span>Nouvelles cartes par jour</span><span class="stepper"><button class="mini" data-act="nw-">−</button><b>${S.cfg.nw}</b><button class="mini" data-act="nw+">+</button></span></div>
-    <div class="setrow"><span>Lire le mot automatiquement</span><button class="chip" aria-pressed="${!!S.cfg.auto}" data-act="auto">${S.cfg.auto?"Activé":"Désactivé"}</button></div>
+    <div class="setrow"><span>복습 중 소리 · Son pendant la révision</span><button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button></div>
     <div class="setrow"><span>Voix au ralenti</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">Lent</button></div>
     ${HAS_AUDIO&&OFFLINE?`<div class="setrow"><span>Garder tout l'audio sur cet appareil pour le hors-ligne</span><button class="mini" data-act="dl">Télécharger l'audio</button></div><p class="count" id="dlmsg">Sans ça, seul l'audio déjà écouté fonctionne hors ligne.</p>`:""}
     ${OFFLINE?`<div class="setrow"><span>동기화 설정 · Réglages de synchronisation</span><button class="mini" data-act="sync-cfg">${SY?esc(SY.repo):"Configurer"}</button></div>`:""}
@@ -529,12 +547,14 @@ function vStudy(s){
   const front=dir==="fr"?esc(c.f||c.e):esc(c.k);
   const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
   if(!s.rev){s.t0=Date.now()}
-  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":"방향 : 자동 · Sens : automatique"}</button></div>
+  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
+  <div class="bar sess" style="--c:var(--a1)"><i style="width:${s.done+s.queue.length?Math.round(100*s.done/(s.done+s.queue.length)):0}%"></i></div>
   <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag lvband ${c.l}">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span><div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${front}</div>
   ${s.rev?`<hr>${dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.f||c.e)}${c.f?`<small>${esc(c.e)}</small>`:""}</div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
   ${canPlay?`<div class="actions center">${spoken(c.k)&&(s.rev||dir!=="fr")?`<button class="mini" data-say="${esc(c.k)}">단어 듣기 · Écouter le mot</button>`:""}${s.rev&&c.x?`<button class="mini" data-say="${esc(c.x)}">문장 듣기 · Écouter la phrase</button>`:""}</div>`:""}
-  ${s.rev?`<div class="grades two"><button class="grade g1" data-grade="1"><small>revient dans cette série</small><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-grade="3"><small>revient dans ${fmtIvl(nextIvl(cs,3))}</small><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="flip">답 보기 · Voir la réponse</button>`}</div>`;
-  if(S.cfg.auto&&canPlay){const key=c.k+"|"+s.queue.length+"|"+(s.rev?1:0);if(s.spoken!==key){s.spoken=key;if(!s.rev&&dir!=="fr")sayCard(c);if(s.rev&&dir==="fr")sayCard(c)}}
+  ${s.rev?`<div class="grades two"><button class="grade g1" data-grade="1"><small>revient dans cette série</small><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-grade="3"><small>revient dans ${fmtIvl(nextIvl(cs,3))}</small><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="flip">답 보기 · Voir la réponse</button>`}
+  <p class="count keys">${s.rev?"Glisse la carte à droite si tu savais, à gauche sinon. Au clavier : → ou Espace, ←, Z pour annuler, R pour réécouter.":"Au clavier : Espace pour voir la réponse."}</p></div>`;
+  if(canPlay&&sndMode()!=="off"){const key=c.k+"|"+s.queue.length+"|"+(s.rev?1:0);if(s.spoken!==key){s.spoken=key;const m=sndMode();if(m==="front"&&!s.rev&&dir!=="fr")sayCard(c);if(s.rev&&(m==="back"||dir==="fr"))sayCard(c)}}
 }
 
 /* ---------- quiz ---------- */
@@ -626,7 +646,7 @@ function showSheet(w,res){
 /* ---------- clics ---------- */
 document.addEventListener("click",e=>{
   const t=e.target,s=cur();const keep0=()=>{s.scroll=$("#main").scrollTop};
-  const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),again=answer(k,+gr.dataset.grade,Date.now()-(s.t0||Date.now()));if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
+  const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),dk=dstr(today());s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk};const again=answer(k,+gr.dataset.grade,Date.now()-(s.t0||Date.now()));s.last.again=again;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
   const say=t.closest("[data-say]");if(say){stopStory();speak(say.dataset.say);return}
   const ln=t.closest("[data-line]");if(ln&&s.v==="story"){stopStory();const l=lineOf(STORIES.find(x=>x.id===s.id).lines[+ln.dataset.line]);speak(l[1],SPK[l[0]]||"hyunsu");return}
   const qb=t.closest("[data-q]");if(qb&&s.v==="story"){s.ans[+qb.dataset.q]=+qb.dataset.o;s.keepScroll=true;render();s.keepScroll=false;return}
@@ -659,6 +679,8 @@ document.addEventListener("click",e=>{
     if(act==="hide"){stopStory();s.hide=!s.hide;s.open={};s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="read"){S.read=S.read||{};if(S.read[s.id])delete S.read[s.id];else S.read[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dl"){downloadAudio();return}
+    if(act==="snd"){const o=["front","back","off"];S.cfg.snd=o[(o.indexOf(sndMode())+1)%3];if(S.cfg.snd==="off")stopAudio();save();s.keepScroll=true;if(s.v==="study")s.spoken=cur().queue&&cur().queue[0]?"x":null;render();s.keepScroll=false;return}
+    if(act==="undo"&&s.v==="study"&&s.last){const L=s.last;if(L.card)S.c[L.k]=L.card;else delete S.c[L.k];if(L.log)S.log[L.dk]=L.log;else delete S.log[L.dk];const i=s.queue.indexOf(L.k);if(i>=0)s.queue.splice(i,1);if(!L.again)s.done=Math.max(0,s.done-1);s.queue.unshift(L.k);s.last=null;s.rev=false;save();render();return}
     if(act==="update"){a.textContent="업데이트 중…";(async()=>{try{const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();await fetch("index.html?v="+Date.now(),{cache:"reload"})}catch(err){}location.reload()})();return}
     if(act==="sync"){if(!SY||e.detail===2){const b=$("#syncbox");if(b)b.hidden=!b.hidden}if(SY)doSync();return}
     if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tok=$("#sytok").value.trim()||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)){sayErr("Écris le dépôt sous la forme Nyrec/hangugeo-sync.");return}if(!tok){sayErr("Colle ton code d'accès GitHub dans le second champ. Il commence par github_pat_.");return}sayErr("동기화 중… · Synchronisation en cours…");SY={repo,token:tok};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
@@ -693,6 +715,18 @@ async function downloadAudio(){
 if(OFFLINE&&SY&&navigator.onLine!==false)setTimeout(()=>doSync(true),800);
 async function checkVersion(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=await r.json();if(v.build&&v.build!==BUILD_ID&&!document.getElementById("newver")){document.body.insertAdjacentHTML("beforeend",'<button id="newver" class="btn" data-act="update" style="position:fixed;left:50%;transform:translateX(-50%);bottom:86px;z-index:9;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)">새 버전 · Nouvelle version : mettre à jour</button>')}}catch(e){}}
 if(OFFLINE){setTimeout(checkVersion,1500);document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()})}
+document.addEventListener("keydown",e=>{
+  if(cur().v!=="study"||e.target.matches("input,textarea")||e.metaKey||e.ctrlKey)return;
+  const click=sel=>{const b=document.querySelector(sel);if(b){e.preventDefault();b.click()}};
+  if(e.key===" "||e.key==="Enter"){if(cur().rev)click('[data-grade="3"]');else click('[data-act="flip"]')}
+  else if(e.key==="1"||e.key==="ArrowLeft")click('[data-grade="1"]');
+  else if(e.key==="2"||e.key==="ArrowRight")click('[data-grade="3"]');
+  else if(e.key==="z"||e.key==="Z")click('[data-act="undo"]');
+  else if(e.key==="r"||e.key==="R")click('.study [data-say]');
+});
+let tsx=null,tsy=null;
+document.addEventListener("touchstart",e=>{const f=e.target.closest&&e.target.closest(".flash");if(f&&cur().v==="study"&&cur().rev){tsx=e.touches[0].clientX;tsy=e.touches[0].clientY}else tsx=null},{passive:true});
+document.addEventListener("touchend",e=>{if(tsx==null)return;const dx=e.changedTouches[0].clientX-tsx,dy=e.changedTouches[0].clientY-tsy;tsx=null;if(Math.abs(dx)>80&&Math.abs(dx)>2*Math.abs(dy)){const b=document.querySelector(dx>0?'[data-grade="3"]':'[data-grade="1"]');if(b)b.click()}},{passive:true});
 const start=(location.hash||"").slice(1);
 tab(["accueil","themes","cours","fiches","histoires","ecoute"].includes(start)?start:"accueil");
 </script>
