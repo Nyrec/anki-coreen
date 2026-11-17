@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>한국어 노트 de Maxence</title>
 <!--PWA-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -315,6 +315,31 @@ details.w summary .k{transition:color .12s}details.w[open] summary .k{color:var(
 @media (hover:hover){.tile,.cover,.sc,.voc,.gchip,.opt:not([disabled]){transition:transform .15s ease,box-shadow .15s ease}.tile:hover,.cover:hover,.sc:hover,.voc:hover,.gchip:hover,.opt:not([disabled]):hover{transform:translateY(-2px);box-shadow:0 12px 24px -16px rgba(0,0,0,.55)}}
 nav.tabs button[aria-current="page"] b{box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--jjok) 30%,transparent)}
 ::selection{background:color-mix(in srgb,var(--jjok) 30%,transparent)}
+/* parcours du jour */
+.path h2 b{margin-left:auto;color:var(--a1)}.path h2{display:flex;align-items:center;gap:6px}
+.steps{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.step{display:flex;align-items:center;gap:12px;text-align:left;padding:12px 14px;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--ink);box-shadow:0 8px 18px -18px rgba(0,0,0,.6)}
+.step i{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:14px;background:var(--jjok-soft);color:var(--jjok)}
+.step span{display:flex;flex-direction:column;font-size:15px;line-height:1.3}.step span b{font-size:16px;margin-right:4px}.step small{color:var(--muted);font-size:13px;margin-top:2px}
+.step.ok{opacity:.72}.step.ok i{background:var(--a1);color:#fff}.step.ok span>b,.step.ok span{text-decoration:none}
+.earbtn{font-size:44px;width:96px;height:96px;border-radius:50%;border:0;margin:14px auto 6px;display:block;background:var(--jjok-soft);box-shadow:0 0 0 10px color-mix(in srgb,var(--jjok) 10%,transparent)}
+/* téléphone */
+nav.tabs{padding-bottom:env(safe-area-inset-bottom)}
+@media (max-width:819px){
+ .wrap{padding:calc(14px + env(safe-area-inset-top)) max(14px,env(safe-area-inset-left)) 28px;gap:16px}
+ nav.tabs{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+ nav.tabs button{min-width:0;padding:6px 0 6px!important;font-size:9.5px!important;letter-spacing:-.02em;overflow:hidden;white-space:nowrap}
+ nav.tabs button b{font-size:15px!important;padding:3px 0!important;width:44px;text-align:center}
+ #view>h1{padding:12px 14px;font-size:24px;border-radius:16px}#view>h1 small{font-size:13px}
+ .player{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;bottom:6px;padding:6px;border-radius:16px}
+ .player::-webkit-scrollbar{display:none}
+ .player .btn{padding:8px 12px;white-space:nowrap;font-size:14px;flex:none}.player .chip{white-space:nowrap;flex:none}
+ .chat .bub{max-width:88%}.chat .line .s{font-size:19px}.chat .av{width:30px;height:30px;font-size:13px}
+ .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .gc{height:56vh}.gsel{right:54px}
+ .study .meta{flex-wrap:wrap}
+}
+@media (max-width:350px){nav.tabs button{font-size:0!important}nav.tabs button b{font-size:16px!important}}
 </style>
 </head>
 <body>
@@ -491,6 +516,17 @@ function heat(){
   for(let w=0;w<weeks;w++){h+='<div class="hw">';for(let d=0;d<7;d++){const n=start+w*7+d,v=n>t?-1:((S.log[dstr(n)]||[0])[0]);const lv=v<0?"x":v===0?0:v<20?1:v<50?2:v<100?3:4;h+=`<i class="h${lv}" title="${dstr(n)} : ${Math.max(0,v)} révisions"></i>`}h+="</div>"}
   return `<div class="heat">${h}</div>`;
 }
+function pathHTML(st,L,nextS,nextP){const t=today(),N=S.notes||{};
+  const steps=[
+   ["복습","Revoir les cartes dues",st.due?`${st.due} carte${st.due>1?"s":""} à revoir`:"rien en retard",st.due===0,'data-act="all-study"'],
+   ["새 단어","Apprendre de nouveaux mots",`${L[3]||0} / ${S.cfg.nw} aujourd'hui`,(L[3]||0)>=S.cfg.nw||st.newToday===0,'data-act="all-study"'],
+   ["읽기","Lire une histoire en l'écoutant",esc(nextS.ko),Object.values(S.read||{}).includes(t),`data-story="${nextS.id}"`],
+   ["듣기","Écouter une émission sans texte",esc(nextP.ko),Object.values(S.heard||{}).includes(t),`data-pod="${nextP.id}"`],
+   ["쓰기","Écrire 3 phrases avec les mots du jour","dans une note du Cerveau",Object.values(N).some(n=>!n.del&&n.t&&Math.floor((n.u-new Date().getTimezoneOffset()*6e4)/DAY)===t),'data-act="gnew"']];
+  const d=steps.filter(x=>x[3]).length;
+  return `<section class="path"><h2><span class="ko">오늘의 학습</span> · Ton parcours du jour <b>${d} / ${steps.length}</b></h2><div class="bar" style="--c:var(--a1)"><i style="width:${100*d/steps.length}%"></i></div>
+  <div class="steps">${steps.map(([ko,fr,sub,ok,at],i)=>`<button class="step${ok?" ok":""}" ${at}><i>${ok?"✓":i+1}</i><span><b class="ko">${ko}</b> ${fr}<small>${sub}</small></span></button>`).join("")}</div>
+  <p class="count">Dans cet ordre : on consolide d'abord, on ajoute ensuite, puis on lit, on écoute et on produit soi-même. C'est la production qui ancre le plus.</p></section>`}
 function vHome(){
   const st=stats(CARDS),L=logToday(),sk=streak(),t=today();
   let n30=0,a30=0,ms30=0,days30=0;const hist=[],hl=[];
@@ -514,6 +550,7 @@ function vHome(){
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
   </section>
+  ${pathHTML(st,L,nextS,nextP)}
   ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>
     <div class="panel" id="syncbox" hidden><p class="count">Pour relier ordinateur, tablette et téléphone, indique une fois sur chaque appareil ton dépôt GitHub privé et son code d'accès.</p><input class="fld" id="syrepo" placeholder="Nom/depot" value="${SY?esc(SY.repo):"Nyrec/hangugeo-sync"}" autocomplete="off" autocapitalize="off"><input class="fld" id="sytok" type="password" placeholder="Code d'accès GitHub (github_pat_…)" autocomplete="off"><p class="msg" id="syncerr"></p><div class="actions"><button class="btn" data-act="sync-save">저장 · Enregistrer</button>${SY?`<button class="btn ghost" data-act="sync-off">Déconnecter cet appareil</button>`:""}</div></div></section>`:""}
   <section class="kpis">
@@ -621,18 +658,20 @@ function vStudy(s){
     <div class="actions">${left.nw?`<button class="btn" data-act="more-new">Apprendre 10 nouvelles cartes de plus</button>`:""}<button class="btn ghost" data-act="back">Revenir</button></div>`;return}
   const c=CARDIDX[s.queue[0]],cs=S.c[c.k];
   // Sens automatique : reconnaissance d'abord, puis production (traduction → coréen) une fois sur deux quand la carte est acquise.
-  const dir=s.dir==="ko"?"":s.dir==="fr"?"fr":(cs&&cs[1]>=7&&cs[3]%2===1&&c.p!=="gram"?"fr":"");
-  const front=dir==="fr"?esc(c.f||c.e):esc(c.k);
+  // Sens automatique : reconnaissance, puis production (traduction → coréen) et écoute seule quand la carte est acquise.
+  const earOK=canPlay&&sndMode()!=="off"&&!!spoken(c.k);
+  const dir=s.dir==="ko"?"":s.dir==="fr"?"fr":s.dir==="ear"?(earOK?"ear":""):(cs&&cs[1]>=7&&cs[3]%2===1&&c.p!=="gram"?"fr":cs&&cs[1]>=3&&cs[3]%3===2&&earOK?"ear":"");
+  const front=dir==="fr"?esc(c.f||c.e):dir==="ear"?"":esc(c.k);
   const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
   if(!s.rev){s.t0=Date.now()}
-  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
+  $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":s.dir==="ear"?"듣기 → 뜻 · Écoute → sens":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
   <div class="bar sess" style="--c:var(--a1)"><i style="width:${s.done+s.queue.length?Math.round(100*s.done/(s.done+s.queue.length)):0}%"></i></div>
-  <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag lvband ${c.l}">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span><div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${front}</div>
-  ${s.rev?`<hr>${dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.f||c.e)}${c.f?`<small>${esc(c.e)}</small>`:""}</div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
+  <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag lvband ${c.l}">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span>${dir==="ear"&&!s.rev?`<button class="earbtn" data-say="${esc(c.k)}" aria-label="Réécouter">🔊</button><div class="hint">듣고 뜻을 떠올려 보세요 · Écoute et retrouve le sens</div>`:`<div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${dir==="ear"?esc(c.k):front}</div>`}
+  ${s.rev?`${dir==="ear"?"":"<hr>"}${dir==="fr"?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="ans">${esc(c.f||c.e)}${c.f?`<small>${esc(c.e)}</small>`:""}</div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">Touche la carte pour voir la réponse</div>`}</div>
   ${canPlay?`<div class="actions center">${spoken(c.k)&&(s.rev||dir!=="fr")?`<button class="mini" data-say="${esc(c.k)}">단어 듣기 · Écouter le mot</button>`:""}${s.rev&&c.x?`<button class="mini" data-say="${esc(c.x)}">문장 듣기 · Écouter la phrase</button>`:""}</div>`:""}
   ${s.rev?`<div class="grades two"><button class="grade g1" data-grade="1"><small>revient dans cette série</small><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-grade="3"><small>revient dans ${fmtIvl(nextIvl(cs,3))}</small><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="flip">답 보기 · Voir la réponse</button>`}
   <p class="count keys">${s.rev?"Glisse la carte à droite si tu savais, à gauche sinon. Au clavier : → ou Espace, ←, Z pour annuler, R pour réécouter.":"Au clavier : Espace pour voir la réponse."}</p></div>`;
-  if(canPlay&&sndMode()!=="off"){const key=c.k+"|"+s.queue.length+"|"+(s.rev?1:0);if(s.spoken!==key){s.spoken=key;const m=sndMode();if(m==="front"&&!s.rev&&dir!=="fr")sayCard(c);if(s.rev&&(m==="back"||dir==="fr"))sayCard(c)}}
+  if(canPlay&&sndMode()!=="off"){const key=c.k+"|"+s.queue.length+"|"+(s.rev?1:0);if(s.spoken!==key){s.spoken=key;const m=sndMode();if(dir==="ear"&&!s.rev)speak(spoken(c.k));else if(m==="front"&&!s.rev&&dir!=="fr")sayCard(c);if(s.rev&&(m==="back"||dir==="fr"))sayCard(c)}}
 }
 
 /* ---------- quiz ---------- */
@@ -761,7 +800,7 @@ document.addEventListener("click",e=>{
     if(act==="all-quiz"){go({v:"quiz",cards:CARDS});return}
     if(act==="review"){go({v:"deck",kind:"review"});return}
     if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
-    if(act==="dir"){s.dir=!s.dir?"ko":s.dir==="ko"?"fr":"";s.rev=false;render();return}
+    if(act==="dir"){s.dir=!s.dir?"ko":s.dir==="ko"?"fr":s.dir==="fr"&&canPlay?"ear":"";s.rev=false;render();return}
         if(act==="restart"){delete s.queue;delete s.qs;render();return}
     if(act==="next"){s.i++;s.pick=null;render();return}
     if(act==="playall"){const st=STORIES.find(x=>x.id===s.id);if(playing){stopStory();a.textContent="▶ 전체 듣기 · Tout écouter"}else{playing={id:st.id,i:0};a.textContent="■ 멈추기 · Arrêter";playStory(st,0)}return}
