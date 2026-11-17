@@ -252,6 +252,28 @@ details.w[open]{background:color-mix(in srgb,var(--jjok) 5%,transparent)}
 details.w summary .k{transition:color .12s}details.w[open] summary .k{color:var(--jjok)}
 .chip{transition:background .12s,color .12s}
 @media (min-width:1100px){.wrap{max-width:900px}}
+/* 뇌 · Cerveau */
+.gwrap{position:relative;margin:12px 0 8px;border-radius:20px;overflow:hidden;box-shadow:0 18px 40px -24px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.06);background:#070d16}
+.gc{display:block;width:100%;height:62vh;min-height:340px;touch-action:none;cursor:grab}
+.gwrap.small .gc{height:320px;min-height:0}
+.gzoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+.gzoom button{width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(10,18,30,.75);color:#e9f1ff;font-size:20px;backdrop-filter:blur(6px)}
+.gsel{position:absolute;left:10px;right:58px;bottom:10px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:10px 12px;border-radius:14px;background:rgba(10,18,30,.86);color:#e9f1ff;border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px)}
+.gsel b{font-size:20px}.gsel span:not(.gtag){opacity:.8;font-size:14px}.gsel em{font-style:normal;opacity:.6;font-size:12px}.gsel .btn{margin-left:auto;padding:8px 14px}
+.gtag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 9px;border-radius:99px;color:var(--c);border:1px solid var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);margin-right:8px;vertical-align:middle}
+#view>h1 .gtag{font-family:var(--body)}
+.gleg{display:flex;flex-wrap:wrap;gap:6px}.gleg .chip i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle;box-shadow:0 0 8px currentColor}
+.gleg .chip[aria-pressed="false"]{opacity:.45}
+.gsearch{position:relative}.gsearch input{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:16px}
+.gres{display:flex;flex-direction:column;gap:4px;margin-top:6px}.gres button{display:flex;align-items:center;gap:10px;text-align:left;padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.gres button i{width:10px;height:10px;border-radius:50%;flex:none}.gres button b{font-size:17px}.gres button span{color:var(--muted);font-size:13px}
+.gh{font-size:13px;color:var(--muted);margin:14px 0 6px;font-weight:600}.gh span{opacity:.7}
+.gchips{display:flex;flex-wrap:wrap;gap:6px}
+.gchip{display:inline-flex;align-items:baseline;gap:6px;padding:6px 11px;border-radius:12px;border:1px solid color-mix(in srgb,var(--c) 55%,var(--line));background:color-mix(in srgb,var(--c) 10%,var(--card));color:var(--ink)}
+.gchip b{font-size:16px}.gchip span{font-size:12px;color:var(--muted)}.gchip.more{--c:var(--muted)}
+.gnote{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;line-height:1.5;resize:vertical}
+.gti{font:inherit;font-size:inherit;font-weight:inherit;color:inherit;background:transparent;border:0;border-bottom:1px dashed var(--line);width:100%;padding:2px 0;outline:none}
+.w.open .body{padding-top:4px}
 </style>
 </head>
 <body>
@@ -264,6 +286,7 @@ details.w summary .k{transition:color .12s}details.w[open] summary .k{color:var(
     <button data-tab="fiches"><b>정리</b>Synthèses</button>
     <button data-tab="histoires"><b>이야기</b>Histoires</button>
     <button data-tab="ecoute"><b>듣기</b>Écoute</button>
+    <button data-tab="cerveau"><b>뇌</b>Cerveau</button>
   </nav>
 </div>
 <script>
@@ -340,7 +363,7 @@ function mergeS(a,b){
   const o=Object.assign({},a,{c:{},log:{},read:{},heard:{}});
   for(const k of new Set([...Object.keys(a.c||{}),...Object.keys(b.c||{})])){const x=(a.c||{})[k],y=(b.c||{})[k];o.c[k]=!x?y:!y?x:(y[3]>x[3]||(y[3]===x[3]&&y[0]>x[0])?y:x)}
   for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
-  Object.assign(o.read,b.read||{},a.read||{});Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
+  Object.assign(o.read,b.read||{},a.read||{});o.notes={};for(const k of new Set([...Object.keys(a.notes||{}),...Object.keys(b.notes||{})])){const x=(a.notes||{})[k],y=(b.notes||{})[k];o.notes[k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
 }
 async function syncNow(){
   if(!SY||!SY.repo||!SY.token)throw new Error("la synchronisation n'est pas encore configurée");
@@ -397,10 +420,10 @@ function cur(){return stack[stack.length-1]}
 function render(){
   document.querySelectorAll("#view audio").forEach(a=>{try{a.pause()}catch(e){}});
   if(typeof stopStory==="function")stopStory();
-  const s=cur();const root=["accueil","themes","cours","fiches","histoires","ecoute"].includes(s.v)?s.v:stack[0].v;
+  const s=cur();const root=["accueil","themes","cours","fiches","histoires","ecoute","cerveau"].includes(s.v)?s.v:stack[0].v;
   document.querySelectorAll("#tabs button").forEach(b=>b.dataset.tab===root?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
   closeSheet();
-  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,ecoute:vPods,pod:vPod,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
+  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,ecoute:vPods,pod:vPod,cerveau:vCerveau,node:vNode,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
   if(!s.keepScroll)$("#main").scrollTop=s.scroll||0;
 }
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)tab(b.dataset.tab)});
@@ -513,7 +536,7 @@ function cardBody(c){
    ${c.n?`<div class="note">${esc(c.n)}</div>`:""}
    <div class="meta"><span class="lvl ${c.l}">${c.l}</span><button class="mini" data-course="${c.c}">${courseLabel(c.c)}${c.d?" · "+c.d.slice(5):""}</button>
    ${canPlay?`${spoken(c.k)?`<button class="mini" data-say="${esc(c.k)}">단어 듣기 · Écouter le mot</button>`:""}${c.x?`<button class="mini" data-say="${esc(c.x)}">문장 듣기 · Écouter la phrase</button>`:""}`:""}
-   <button class="mini" data-known="${esc(c.k)}">${known.has(c.k)?"Remettre à zéro":"Je connais déjà"}</button>${S.c[c.k]?`<span class="count">${S.c[c.k][1]===0?"en apprentissage":"prochaine révision dans "+fmtIvl(Math.max(1,S.c[c.k][0]-today()))}</span>`:""}</div></div>`;
+   <button class="mini" data-node="m:${esc(c.k)}">뇌 · Liens</button><button class="mini" data-known="${esc(c.k)}">${known.has(c.k)?"Remettre à zéro":"Je connais déjà"}</button>${S.c[c.k]?`<span class="count">${S.c[c.k][1]===0?"en apprentissage":"prochaine révision dans "+fmtIvl(Math.max(1,S.c[c.k][0]-today()))}</span>`:""}</div></div>`;
 }
 function vDeck(s){
   const all=deckCards(s),[ko,fr]=deckTitle(s),cs=filtered(s),dst=stats(cs);s.limit=s.limit||120;
@@ -521,7 +544,7 @@ function vDeck(s){
   const fiche=s.kind==="theme"?FICHES.find(f=>f.themes.includes(s.key)):null;
   const chip=(lab,on,attr)=>`<button class="chip" aria-pressed="${on}" ${attr}>${lab}</button>`;
   $("#view").innerHTML=`${backBtn()}<h1>${esc(ko)}<small>${esc(fr)}</small></h1>
-  ${all.length?`<div class="actions"><button class="btn" data-act="study">복습 · Réviser</button><button class="btn ghost" data-act="quiz">퀴즈 · Quiz</button>${fiche?`<button class="btn warn" data-fiche="${fiche.id}">Fiche : ${fiche.t}</button>`:""}</div>`:""}
+  ${all.length?`<div class="actions"><button class="btn" data-act="study">복습 · Réviser</button><button class="btn ghost" data-act="quiz">퀴즈 · Quiz</button>${fiche?`<button class="btn warn" data-fiche="${fiche.id}">Fiche : ${fiche.t}</button>`:""}${s.kind==="course"||s.kind==="theme"?`<button class="btn ghost" data-node="${s.kind==="course"?"c:"+esc(s.id):"t:"+esc(s.key)}">뇌 · Réseau</button>`:""}</div>`:""}
   ${lv.size>1?`<div class="chips">${chip("전체 · Tout",!s.fl,'data-fl=""')}${LV.filter(l=>lv.has(l[0])).map(l=>chip(l[2],s.fl===l[0],`data-fl="${l[0]}"`)).join("")}</div>`:""}
   ${ps.size>1?`<div class="chips">${chip("전체 · Tout",!s.fp,'data-fp=""')}${Object.keys(POSN).filter(p=>ps.has(p)).map(p=>chip(POSN[p],s.fp===p,`data-fp="${p}"`)).join("")}</div>`:""}
   <div class="chips">${chip("Masquer les cartes déjà apprises",!!s.fu,'data-fu="1"')}${dst.nw?`<button class="chip" data-act="bulk">${s.bulk?`Confirmer : ${dst.nw} cartes passent en « déjà connues »`:"Je connais déjà toute cette liste"}</button>`:""}</div>
@@ -573,7 +596,7 @@ function vFiches(){$("#view").innerHTML=`<h1>정리 · Synthèses<small>Les tabl
 function vFiche(s){
   const f=FICHES.find(x=>x.id===s.id);
   $("#view").innerHTML=`${backBtn()}<h1>${f.ko}<small>${f.t}</small></h1><p class="intro">${esc(f.intro)}</p>
-  ${f.themes.length?`<div class="actions">${f.themes.map(t=>`<button class="btn ghost" data-th="${t}">Voir mes cartes : ${deckTitle({kind:"theme",key:t})[1]}</button>`).join("")}</div>`:""}
+  <div class="actions">${f.themes.map(t=>`<button class="btn ghost" data-th="${t}">Voir mes cartes : ${deckTitle({kind:"theme",key:t})[1]}</button>`).join("")}<button class="btn ghost" data-node="f:${f.id}">뇌 · Réseau</button></div>
   ${f.s.map(sec=>`<section><h2>${esc(sec.h)}</h2><div class="tablebox"><table class="f">${sec.r.map(r=>`<tr><td class="k"${canPlay?` data-say="${esc(r[0])}"`:""}>${esc(r[0])}</td><td>${esc(r[1])}<small>${esc(r[2])}</small>${r[3]?`<span class="x">${esc(r[3])}</span>`:""}</td></tr>`).join("")}</table></div></section>`).join("")}`;
 }
 
@@ -607,7 +630,7 @@ function vStory(s){
   ${st.voc?`<section><h2><span class="ko">단어</span> · Vocabulaire</h2><div class="tablebox"><table class="f">${st.voc.map(v=>`<tr><td class="k" data-say="${esc(v[0])}">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
   ${st.gram?`<section><h2><span class="ko">문법</span> · Grammaire</h2><div class="tablebox"><table class="f">${st.gram.map(v=>`<tr><td class="k">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
   ${st.q?`<section><h2><span class="ko">이해 문제</span> · Compréhension</h2>${st.q.map((q,qi)=>`<div class="panel"><div class="ko" style="font-size:18px">${esc(q[0])}</div>${s.qo[qi].map(o=>`<button class="opt${s.ans[qi]!=null?(o===0?" good":s.ans[qi]===o?" bad":""):""}" data-q="${qi}" data-o="${o}" ${s.ans[qi]!=null?"disabled":""}>${esc(q[1+o])}</button>`).join("")}</div>`).join("")}</section>`:""}
-  <div class="actions"><button class="btn${isRead(st.id)?" ghost":""}" data-act="read">${isRead(st.id)?"읽었어요 · J'ai lu":"다 읽었어요 · J'ai tout lu"}</button>${next?`<button class="btn ghost" data-story="${next.id}">다음 화 · Épisode suivant : ${esc(next.ko)}</button>`:""}</div>`;
+  <div class="actions"><button class="btn ghost" data-node="s:${esc(st.id)}">뇌 · Réseau</button><button class="btn${isRead(st.id)?" ghost":""}" data-act="read">${isRead(st.id)?"읽었어요 · J'ai lu":"다 읽었어요 · J'ai tout lu"}</button>${next?`<button class="btn ghost" data-story="${next.id}">다음 화 · Épisode suivant : ${esc(next.ko)}</button>`:""}</div>`;
 }
 const DEPOT="https://claude.ai/artifact/PYyPNYjCzEo99qZ3ac45kv"; // page de dépôt des PDF (오늘의 단어)
 /* ---------- écoute : épisodes audio ---------- */
@@ -623,7 +646,7 @@ function vPod(s){
   ${HAS_AUDIO?`<audio id="podau" controls preload="metadata" src="${afile(p.v,"pod:"+p.id)}" style="width:100%"></audio><p class="count" id="poderr"></p>`:`<div class="actions"><button class="btn" data-act="podtts">듣기 · Écouter</button></div>`}
   <div class="actions"><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button><button class="chip" aria-pressed="${!!s.text}" data-act="podtext">글 보기 · Voir le texte</button><button class="chip" aria-pressed="${!!s.all}" data-act="alltr">번역 · Traductions</button></div>
   ${s.text?`<p class="count">Touche un mot pour le retrouver dans tes cartes.</p><div class="rows story">${p.lines.map((l,i)=>`<div class="line"><p class="s">${l[0].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>${s.all||s.open[i]?`<p class="tr"><b>${esc(l[1])}</b></p>`:`<div class="meta"><button class="mini" data-tr="${i}">번역 · Traduction</button></div>`}</div>`).join("")}</div>`:`<p class="intro">Écoute d'abord sans le texte. Affiche-le ensuite pour vérifier ce que tu as compris.</p>`}
-  <div class="actions"><button class="btn${isHeard(p.id)?" ghost":""}" data-act="heard">${isHeard(p.id)?"들었어요 · J'ai écouté":"다 들었어요 · J'ai tout écouté"}</button></div>`;
+  <div class="actions"><button class="btn ghost" data-node="p:${esc(p.id)}">뇌 · Réseau</button><button class="btn${isHeard(p.id)?" ghost":""}" data-act="heard">${isHeard(p.id)?"들었어요 · J'ai écouté":"다 들었어요 · J'ai tout écouté"}</button></div>`;
   const au=$("#podau");if(au){au.playbackRate=S.cfg.slow?.8:1;au.onerror=()=>{const e=$("#poderr");if(e)e.textContent="L'audio de cet épisode n'est pas encore enregistré. Réessaie plus tard."};au.onended=()=>{S.heard=S.heard||{};S.heard[p.id]=today();save()};
     try{if("mediaSession" in navigator)navigator.mediaSession.metadata=new MediaMetadata({title:p.ko,artist:"한국어 노트",album:p.t})}catch(e){}}
 }
@@ -727,6 +750,7 @@ document.addEventListener("keydown",e=>{
 let tsx=null,tsy=null;
 document.addEventListener("touchstart",e=>{const f=e.target.closest&&e.target.closest(".flash");if(f&&cur().v==="study"&&cur().rev){tsx=e.touches[0].clientX;tsy=e.touches[0].clientY}else tsx=null},{passive:true});
 document.addEventListener("touchend",e=>{if(tsx==null)return;const dx=e.changedTouches[0].clientX-tsx,dy=e.changedTouches[0].clientY-tsy;tsx=null;if(Math.abs(dx)>80&&Math.abs(dx)>2*Math.abs(dy)){const b=document.querySelector(dx>0?'[data-grade="3"]':'[data-grade="1"]');if(b)b.click()}},{passive:true});
+/*BRAIN*/
 const start=(location.hash||"").slice(1);
 tab(["accueil","themes","cours","fiches","histoires","ecoute"].includes(start)?start:"accueil");
 </script>

@@ -241,6 +241,13 @@ have=[]
 if args.audio_dir and os.path.isdir(args.audio_dir): have=sorted(f for f in os.listdir(args.audio_dir) if f.endswith('.mp3'))
 HAS_AUDIO='true' if (have and not args.single) else 'false'
 t=open(os.path.join(HERE,'template.html'),encoding='utf-8').read()
+sys.path.insert(0,HERE)
+import graph as G
+_cjs=open(os.path.join(HERE,'content.js'),encoding='utf-8').read()
+GRAPH=G.build(cards,cl,G.parse_themes(t),G.parse_fiches(_cjs),SERIES+old_short,PODS)
+print('réseau : %d nœuds, %d liens'%(len(GRAPH['k']),len(GRAPH['e'])//2))
+t=t.replace('/*BRAIN*/',open(os.path.join(HERE,'brain.js'),encoding='utf-8').read().replace('</','<\\/'))
+t=t.replace('/*GRAPH*/',json.dumps(GRAPH,ensure_ascii=False,separators=(',',':')).replace('</','<\\/'))
 t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*BUILDID*/',build_id).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*PODCASTS*/',json.dumps(PODS,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
 os.makedirs(args.out,exist_ok=True)
 open(os.path.join(args.out,'index.html'),'w',encoding='utf-8').write(t)
