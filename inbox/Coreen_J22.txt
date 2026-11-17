@@ -1,0 +1,22 @@
+#separator:tab
+#html:true
+#tags column:5
+#deck column:6
+지역	region, area	이 지역은 산이 많아서 등산하기 좋아요.<br>This area has lots of mountains, so it's great for hiking.	Noun, 地域. 이 지역 = this area; 지역 사람 = local people.	cours::J22 회화 명사 niveau::A2	Coréen::Jihyeon::J22 · Free talk (지역)
+접근성	accessibility, ease of access	대전은 접근성이 좋아요.<br>Daejeon is easily accessible.	접근성이 좋다/나쁘다. 接近性; common for places, websites, transport.	cours::J22 회화 명사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (접근성)
+-에 비해서	compared to ~	한국에 비해서 프랑스 사람들은 외국 친구를 별로 안 사귀어요.<br>Compared to Korea, French people don't make many foreign friends.	Attach to a noun. Short form: -에 비해. Same idea: -보다.	cours::J22 회화 문법 niveau::B1	Coréen::Jihyeon::J22 · Free talk (비교)
+-말고는	except for ~, apart from ~	이 두 나라 말고는 아무 데서도 살고 싶지 않아요.<br>I don't want to live anywhere except these two countries.	Always followed by a negative clause. Close to -밖에, -외에는.	cours::J22 회화 문법 niveau::B1	Coréen::Jihyeon::J22 · Free talk (말고는)
+선택하다	to choose, to select	한국에 가는 걸 선택했어요.<br>I chose to go to Korea.	Noun 선택 + 하다. 선택을 하다 also works. 결정하다 = decide, 선택하다 = pick among options.	cours::J22 회화 동사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (선택)
+배경	background, setting	아버지의 배경이 한국이에요.<br>My father has a Korean background.	背景. Used for family/cultural background and for scenery or setting of a story.	cours::J22 회화 명사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (배경)
+-에 한해서	only as far as ~ is concerned, limited to ~	위치에 한해서는 대전이 제일 좋아요.<br>As far as location goes, Daejeon is the best.	限해서. Narrows a statement to one aspect. Often with 는: -에 한해서는.	cours::J22 회화 문법 niveau::B2	Coréen::Jihyeon::J22 · Free talk (한해서)
+다투다	to quarrel, to argue	여자친구하고 많이 다퉜어요?<br>Did you argue a lot with your girlfriend?	Past: 다퉜어요. Milder than 싸우다 (which can also mean to fight physically).	cours::J22 회화 동사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (다투다)
+도전하다	to take on a challenge, to try	새로 도전하고 싶은 게 있어요?<br>Is there anything new you'd like to try?	挑戰. Noun: 도전. Used with N에: 시험에 도전하다.	cours::J22 회화 동사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (도전)
+-끼리	among themselves, only with one's own kind	프랑스 사람들끼리만 놀아요.<br>French people hang out only among themselves.	Attached to plural/group nouns: 친구들끼리, 가족끼리. Often with 만 for emphasis.	cours::J22 회화 문법 niveau::B1	Coréen::Jihyeon::J22 · Free talk (끼리)
+경험하다	to experience	드디어 처음 한국을 경험했어요.<br>I finally got to experience Korea for the first time.	Noun 경험 (experience). 경험이 있다/없다 = to have/lack experience.	cours::J22 회화 동사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (경험)
+흥미	interest, curiosity	아무 나라에도 흥미가 없어요.<br>I'm not interested in any other country.	興味. 흥미가 있다/없다 or 흥미롭다. 관심 is more general interest.	cours::J22 회화 명사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (흥미)
+중간	middle, midway	대전은 한국 중간에 있어요.<br>Daejeon is in the middle of Korea.	中間. 중간에 = in the middle / midway; 중간고사 = midterm exam.	cours::J22 회화 명사 niveau::A2	Coréen::Jihyeon::J22 · Free talk (중간)
+딱히	particularly, especially (with negative)	우리 만난 거 말고는 딱히 없어요.<br>Nothing in particular, apart from us meeting.	Used with a negative: 딱히 없어요, 딱히 안 좋아해요. Casual and very frequent.	cours::J22 회화 부사 niveau::B1	Coréen::Jihyeon::J22 · Free talk (딱히)
+-ㄹ 틈이 없다	to have no time/room to ~	항상 바빠서 외로울 틈이 없었어요.<br>I was always so busy that I had no time to feel lonely.	틈 = gap, spare moment. 틈이 나다 = to find a free moment.	cours::J22 회화 표현 niveau::B2	Coréen::Jihyeon::J22 · Free talk (틈)
+인턴십	internship	올해 처음 인턴십을 해 봤어요.<br>I did an internship for the first time this year.	English loanword. 인턴십을 하다. The intern is 인턴.	cours::J22 회화 명사 niveau::A2	Coréen::Jihyeon::J22 · Free talk (인턴십)
+위치	location, position	위치가 중요해서 시내에 집을 구했어요.<br>Location mattered, so I found a place downtown.	位置. 위치하다 = to be located. Different from 장소 (place).	cours::J22 회화 명사 niveau::A2	Coréen::Jihyeon::J22 · Free talk (위치)
+아무 N도 안 -	not any N at all	저는 아무 나라에도 흥미가 없어요.<br>I'm not interested in any country at all.	아무 + N + (조사)도 + negative. 아무도 = nobody, 아무것도 = nothing.	cours::J22 회화 문법 niveau::B1	Coréen::Jihyeon::J22 · Free talk (아무)
