@@ -42,7 +42,7 @@ jobs:
         continue-on-error: true
         timeout-minutes: 70
         run: |
-          pip install -q edge-tts
+          pip install -q edge-tts numpy
           python site/build.py --out "$RUNNER_TEMP/pre" --todo "$RUNNER_TEMP/todo.json" --audio-dir "$RUNNER_TEMP/audio"
           python site/audio.py --todo "$RUNNER_TEMP/todo.json" --dir "$RUNNER_TEMP/audio"
       - name: Sauvegarder l'audio
