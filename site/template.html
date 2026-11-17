@@ -274,6 +274,47 @@ details.w summary .k{transition:color .12s}details.w[open] summary .k{color:var(
 .gnote{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;line-height:1.5;resize:vertical}
 .gti{font:inherit;font-size:inherit;font-weight:inherit;color:inherit;background:transparent;border:0;border-bottom:1px dashed var(--line);width:100%;padding:2px 0;outline:none}
 .w.open .body{padding-top:4px}
+/* histoires : bulles, lecteur, questions */
+.v-hyunsu{--vc:var(--jjok)}.v-sunhi{--vc:var(--b1)}.v-injoon{--vc:var(--a1)}
+.sthead{position:relative}.sthead .eyebrow{display:block;font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.05em;color:var(--muted);margin-bottom:4px}
+.sthead>.ko{display:block;font-size:30px}
+.cast{display:flex;gap:0;margin-top:10px}.cast .av{margin-right:-6px;border:2px solid var(--card)}
+.av{width:34px;height:34px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--ko);font-style:normal;font-weight:700;font-size:15px;color:#fff;background:var(--vc);box-shadow:0 4px 10px -6px var(--vc)}
+.chat{display:flex;flex-direction:column;gap:14px;margin:16px 0 8px}
+.chat .line{border:0;padding:0;flex-direction:row;align-items:flex-end;gap:8px;background:none!important}
+.chat .line.me{flex-direction:row-reverse}
+.chat .bub{max-width:84%;background:var(--card);border:1px solid var(--line);border-radius:20px 20px 20px 6px;padding:10px 14px 8px;box-shadow:0 8px 18px -16px rgba(0,0,0,.6);display:flex;flex-direction:column;gap:4px;transition:box-shadow .2s,outline-color .2s}
+.chat .me .bub{border-radius:20px 20px 6px 20px;background:color-mix(in srgb,var(--vc) 11%,var(--card));border-color:color-mix(in srgb,var(--vc) 32%,var(--line))}
+.chat .nar{justify-content:center}.chat .nar .bub{max-width:92%;background:none;border:0;box-shadow:none;text-align:center;padding:2px 10px}
+.chat .nar .s{font-size:18px;color:var(--muted)}.chat .nar .meta{justify-content:center}
+.chat .line.now .bub{outline:2px solid var(--vc);box-shadow:0 0 0 6px color-mix(in srgb,var(--vc) 16%,transparent)}
+.chat .line .s{font-size:20px;line-height:1.65}
+.chat .spk{font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--vc)}
+.chat .meta{gap:4px;margin-top:2px}.chat .mini{font-size:12px;padding:3px 10px}
+.chat .tr{border-top:1px dashed var(--line);padding-top:6px}
+.player{position:sticky;bottom:10px;z-index:4;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;border-radius:20px;background:color-mix(in srgb,var(--card) 86%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid var(--line);box-shadow:0 16px 34px -18px rgba(0,0,0,.65);margin:12px 0 4px}
+.player .btn{padding:10px 16px}.player .chip{font-size:13px}
+.tip{margin-top:0}
+.vocg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.voc{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:left;padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.voc b{font-size:18px}.voc span{font-size:13px;color:var(--muted)}
+.qz{display:flex;flex-direction:column;gap:8px}.qh{display:flex;gap:10px;align-items:flex-start}.qk{font-size:19px;font-weight:700}.qf{font-size:13px;color:var(--muted)}
+.qz .opt{display:flex;flex-direction:column;gap:2px}.qz .opt b{font-size:17px;font-weight:600}.qz .opt span{font-size:13px;color:var(--muted)}
+.qres{font-size:14px;font-weight:600;padding:4px 2px}.qres.ok{color:var(--a1)}.qres.ko2{color:#c0443a}
+.wtip{position:fixed;z-index:30;pointer-events:none;transform:translate(-50%,-100%);background:#0f1b27;color:#eef4ff;padding:8px 12px;border-radius:12px;font-size:14px;line-height:1.35;box-shadow:0 12px 26px -12px rgba(0,0,0,.7);max-width:260px;border:1px solid rgba(255,255,255,.1)}
+.wtip b{display:block;font-family:var(--ko);font-size:18px;margin-bottom:1px}.wtip i{opacity:.7}
+.wtip:after{content:"";position:absolute;left:50%;bottom:-6px;margin-left:-6px;border:6px solid transparent;border-bottom:0;border-top-color:#0f1b27}
+@media (hover:hover){.line .s span:hover{background:var(--jjok-soft);box-shadow:0 0 0 2px var(--jjok-soft)}}
+/* finitions générales */
+@media (prefers-reduced-motion:no-preference){
+ #view>*{animation:rise .38s cubic-bezier(.2,.7,.2,1) both}
+ #view>*:nth-child(2){animation-delay:.04s}#view>*:nth-child(3){animation-delay:.08s}#view>*:nth-child(4){animation-delay:.12s}#view>*:nth-child(n+5){animation-delay:.16s}
+ @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+ .chat .line{animation:rise .3s ease both}
+}
+@media (hover:hover){.tile,.cover,.sc,.voc,.gchip,.opt:not([disabled]){transition:transform .15s ease,box-shadow .15s ease}.tile:hover,.cover:hover,.sc:hover,.voc:hover,.gchip:hover,.opt:not([disabled]):hover{transform:translateY(-2px);box-shadow:0 12px 24px -16px rgba(0,0,0,.55)}}
+nav.tabs button[aria-current="page"] b{box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--jjok) 30%,transparent)}
+::selection{background:color-mix(in srgb,var(--jjok) 30%,transparent)}
 </style>
 </head>
 <body>
@@ -315,7 +356,8 @@ const dstr=n=>new Date(n*DAY).toISOString().slice(0,10);
 let S={c:{},log:{},cfg:{nw:20,auto:true}};
 try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:20,auto:true},S.cfg||{})}catch(e){}
 try{const old=JSON.parse(localStorage.getItem("hgn-known")||"[]");if(old.length&&!S.mig){old.forEach(k=>{if(!S.c[k])S.c[k]=[today()+1+Math.floor(Math.random()*30),30,2.5,1,0]});S.mig=1}}catch(e){}
-function save(){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}}
+let inSync=false,syT=0;
+function save(){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}if(!inSync&&typeof autoSync==="function")autoSync(15000)}
 const known={has:k=>!!S.c[k]};
 const isNew=c=>!S.c[c.k];
 const isDue=c=>!!S.c[c.k]&&S.c[c.k][0]<=today();
@@ -365,7 +407,10 @@ function mergeS(a,b){
   for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
   Object.assign(o.read,b.read||{},a.read||{});o.notes={};for(const k of new Set([...Object.keys(a.notes||{}),...Object.keys(b.notes||{})])){const x=(a.notes||{})[k],y=(b.notes||{})[k];o.notes[k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
 }
-async function syncNow(){
+function autoSync(delay){if(!SY||navigator.onLine===false)return;clearTimeout(syT);syT=setTimeout(()=>{if(inSync){autoSync(4000);return}
+  syncNow().then(()=>{syncMsg="";const x=$("#syncst");if(x)x.textContent=syncLabel();const s=cur();if(s.v==="accueil"&&!document.querySelector("input:focus,textarea:focus"))render()}).catch(e=>{syncMsg="Synchronisation automatique impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg})},delay)}
+async function syncNow(retry){inSync=true;try{return await syncOnce()}catch(e){if(!retry&&/réessaie/.test(e.message)){inSync=false;return syncNow(true)}throw e}finally{inSync=false}}
+async function syncOnce(){
   if(!SY||!SY.repo||!SY.token)throw new Error("la synchronisation n'est pas encore configurée");
   const api="https://api.github.com/repos/"+SY.repo+"/contents/progression.json",h={Authorization:"Bearer "+SY.token,Accept:"application/vnd.github+json"};
   let sha=null;const r=await fetch(api+"?t="+Date.now(),{headers:h,cache:"no-store"});
@@ -405,6 +450,16 @@ function speak(t,voice,onend){
 // Ce qu'on fait entendre pour une carte : le mot s'il se prononce, sinon la phrase d'exemple.
 const sndMode=()=>S.cfg.snd||(S.cfg.auto===false?"off":"front");
 const SND={front:"소리 : 카드가 나올 때 · Son : quand la carte apparaît",back:"소리 : 답을 본 후 · Son : après la réponse",off:"소리 : 끔 · Son coupé"};
+function koVoices(){try{return speechSynthesis.getVoices().filter(v=>/^ko/i.test(v.lang))}catch(e){return []}}
+const MALEV=/minsu|jian|injoon|hyunsu|jinho|male|남/i;
+const goodDev=()=>koVoices().some(v=>/premium|enhanced|améliorée|yuna|sora|minsu|jian|suhyun|siri/i.test(v.name));
+const storyDev=()=>canSpeak&&koVoices().length>0&&(S.cfg.sv?S.cfg.sv==="dev":(!HAS_AUDIO||goodDev()));
+function sayDev(t,role,onend){stopAudio();try{const sc=v=>(/premium/i.test(v.name)?4:/enhanced|améliorée|siri|natural|neural/i.test(v.name)?3:/google/i.test(v.name)?2:1);
+  const vs=koVoices().sort((a,b)=>sc(b)-sc(a)),male=role!=="sunhi",v=vs.find(x=>MALEV.test(x.name)===male)||vs[0],fit=v&&MALEV.test(v.name)===male;
+  const u=new SpeechSynthesisUtterance(t.replace(/\(.*?\)|[\/~]/g," "));u.lang="ko-KR";if(v)u.voice=v;u.rate=(S.cfg.slow?.78:.97);
+  u.pitch=fit?(role==="injoon"?.9:1):(male?(role==="injoon"?.72:.82):1.12);if(onend){u.onend=onend;u.onerror=onend}speechSynthesis.speak(u)}catch(e){if(onend)onend()}}
+function sayStory(t,role,onend){if(storyDev())sayDev(t,role,onend);else speak(t,role,onend)}
+const kf=s=>{s=String(s||"");const i=s.indexOf(" ~ ");return i<0?[s,""]:[s.slice(0,i),s.slice(i+3)]};
 function sayCard(c){if(spoken(c.k))speak(c.k);else if(c.x)speak(c.x)}
 function themeCards(key){return key.startsWith("p:")?CARDS.filter(c=>c.p===key.slice(2)):CARDS.filter(c=>c.t&&c.t.includes(key))}
 function courseOf(id){return COURSES.find(c=>c.id===id)}
@@ -607,30 +662,34 @@ const isRead=id=>!!(S.read&&S.read[id]);
 function vStories(){
   const series=[];for(const x of STORIES){const key=x.serie||"Lectures courtes";let g=series.find(s=>s.key===key);if(!g)series.push(g={key,ko:x.serieKo||"짧은 글",l:x.serie?x.l:"",items:[]});g.items.push(x)}
   const done=STORIES.filter(x=>isRead(x.id)).length;
-  $("#view").innerHTML=`<h1>이야기 · Histoires<small>${STORIES.length} histoires, ${done} lue${done>1?"s":""}. Chaque épisode a son audio, son vocabulaire et ses questions.</small></h1>`+series.map(g=>`<section><h2>${g.l?g.l+" · ":""}${esc(g.key)} <span class="ko" style="text-transform:none;letter-spacing:0">${esc(g.ko)}</span></h2><div class="covers">${g.items.map(x=>`<button class="cover lv-${x.l}" data-story="${x.id}"><span class="id">${x.ep||x.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(x.ko)}</span><small>${esc(x.t)}</small></span><span class="n">${isRead(x.id)?'<b class="due">lu</b>':x.lines.length+" phrases"}</span></button>`).join("")}</div></section>`).join("");
+  $("#view").innerHTML=`<h1>이야기 · Histoires<small>읽고 듣기 · Lire en écoutant. Des dialogues en épisodes, phrase par phrase, avec traduction, vocabulaire et questions. ${done} lue${done>1?"s":""} sur ${STORIES.length}.</small></h1>`+series.map(g=>`<section><h2>${g.l?g.l+" · ":""}${esc(g.key)} <span class="ko" style="text-transform:none;letter-spacing:0">${esc(g.ko)}</span></h2><div class="covers">${g.items.map(x=>`<button class="cover lv-${x.l}" data-story="${x.id}"><span class="id">${x.ep||x.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(x.ko)}</span><small>${esc(x.t)}</small></span><span class="n">${isRead(x.id)?'<b class="due">lu</b>':x.lines.length+" phrases"}</span></button>`).join("")}</div></section>`).join("");
 }
 let playing=null;
 function stopStory(){playing=null;stopAudio();document.querySelectorAll(".line.now").forEach(x=>x.classList.remove("now"))}
 function playStory(st,i){
   if(!playing||playing.id!==st.id)return;
-  if(i>=st.lines.length){stopStory();const b=$("[data-act=playall]");if(b)b.textContent="Écouter toute l'histoire";return}
+  if(i>=st.lines.length){stopStory();const b=$("[data-act=playall]");if(b)b.textContent="▶ 전체 듣기 · Tout écouter";return}
   playing.i=i;document.querySelectorAll(".line").forEach((x,j)=>x.classList.toggle("now",j===i));
   const el=document.querySelectorAll(".line")[i];if(el&&el.scrollIntoView)el.scrollIntoView({block:"center",behavior:"smooth"});
-  const l=lineOf(st.lines[i]);speak(l[1],SPK[l[0]]||"hyunsu",()=>setTimeout(()=>playStory(st,i+1),350));
+  const l=lineOf(st.lines[i]);sayStory(l[1],SPK[l[0]]||"hyunsu",()=>setTimeout(()=>playStory(st,i+1),380));
 }
 function vStory(s){
   const st=STORIES.find(x=>x.id===s.id);s.open=s.open||{};s.ans=s.ans||{};
   if(st.q&&!s.qo)s.qo=st.q.map(q=>shuffle([0,1,2]));
   const idx=STORIES.indexOf(st),next=STORIES[idx+1]&&STORIES[idx+1].serie===st.serie&&st.serie?STORIES[idx+1]:null;
-  $("#view").innerHTML=`${backBtn()}<h1>${esc(st.ko)}<small>${st.serie?esc(st.serie)+" · épisode "+st.ep+" · ":""}${esc(st.t)} · <span class="lvl ${st.l}">${st.l}</span></small></h1>
-  <div class="actions"><button class="btn" data-act="playall">전체 듣기 · Tout écouter</button><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button><button class="chip" aria-pressed="${!!s.hide}" data-act="hide">글 숨기기 · Masquer le texte</button><button class="chip" aria-pressed="${!!s.all}" data-act="alltr">번역 · Traductions</button></div>
-  <p class="count">Conseil : écoute une fois sans le texte, relis en lent, puis réécoute à vitesse normale. Touche un mot pour le retrouver dans tes cartes.</p>
-  <div class="rows story">${st.lines.map((raw,i)=>{const l=lineOf(raw);return `<div class="line"><span class="spk v-${SPK[l[0]]||"hyunsu"}">${l[0]==="N"?"":esc(l[0])}</span><p class="s${s.hide&&!s.open[i]?" hidden":""}">${l[1].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>
-   ${s.all||s.open[i]?`<p class="tr"><b>${esc(l[2])}</b>${esc(l[3])}</p>`:""}<div class="meta"><button class="mini" data-line="${i}">듣기 · Écouter</button><button class="mini" data-tr="${i}">${s.all||s.open[i]?"숨기기 · Masquer":(s.hide?"글 보기 · Voir le texte":"번역 · Traduction")}</button></div></div>`}).join("")}</div>
-  ${st.voc?`<section><h2><span class="ko">단어</span> · Vocabulaire</h2><div class="tablebox"><table class="f">${st.voc.map(v=>`<tr><td class="k" data-say="${esc(v[0])}">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
-  ${st.gram?`<section><h2><span class="ko">문법</span> · Grammaire</h2><div class="tablebox"><table class="f">${st.gram.map(v=>`<tr><td class="k">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
-  ${st.q?`<section><h2><span class="ko">이해 문제</span> · Compréhension</h2>${st.q.map((q,qi)=>`<div class="panel"><div class="ko" style="font-size:18px">${esc(q[0])}</div>${s.qo[qi].map(o=>`<button class="opt${s.ans[qi]!=null?(o===0?" good":s.ans[qi]===o?" bad":""):""}" data-q="${qi}" data-o="${o}" ${s.ans[qi]!=null?"disabled":""}>${esc(q[1+o])}</button>`).join("")}</div>`).join("")}</section>`:""}
-  <div class="actions"><button class="btn ghost" data-node="s:${esc(st.id)}">뇌 · Réseau</button><button class="btn${isRead(st.id)?" ghost":""}" data-act="read">${isRead(st.id)?"읽었어요 · J'ai lu":"다 읽었어요 · J'ai tout lu"}</button>${next?`<button class="btn ghost" data-story="${next.id}">다음 화 · Épisode suivant : ${esc(next.ko)}</button>`:""}</div>`;
+  const cast=[...new Set(st.lines.map(r=>lineOf(r)[0]).filter(x=>x!=="N"))];
+  $("#view").innerHTML=`${backBtn()}<h1 class="sthead lv-${st.l}"><span class="eyebrow">${st.serie?esc(st.serieKo||"")+" · "+esc(st.serie)+" · "+st.ep+"화":"짧은 이야기 · Lecture courte"}</span><span class="ko">${esc(st.ko)}</span><small>${esc(st.t)} · <span class="lvl ${st.l}">${st.l}</span> · ${st.lines.length} phrases</small>
+   ${cast.length?`<span class="cast">${cast.map(c=>`<i class="av v-${SPK[c]||"hyunsu"}" title="${esc(c)}">${esc(c[0])}</i>`).join("")}</span>`:""}</h1>
+  <p class="count tip">Écoute une fois sans le texte, puis relis en lent. ${matchMedia("(hover:hover)").matches?"Passe la souris sur un mot pour sa traduction, clique pour sa fiche.":"Touche un mot pour sa traduction."}</p>
+  <div class="chat">${st.lines.map((raw,i)=>{const l=lineOf(raw),v=SPK[l[0]]||"hyunsu",nar=l[0]==="N",me=l[0]==="루카",tr=s.all||s.open[i];
+   return `<div class="line ${nar?"nar":me?"me":"them"} v-${v}">${nar?"":`<i class="av v-${v}">${esc(l[0][0])}</i>`}<div class="bub">${nar?"":`<span class="spk v-${v}">${esc(l[0])}</span>`}<p class="s${s.hide&&!s.open[i]?" hidden":""}">${l[1].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>
+   ${tr?`<p class="tr"><b>${esc(l[2])}</b>${esc(l[3])}</p>`:""}<div class="meta"><button class="mini" data-line="${i}">▶ 듣기</button><button class="mini" data-tr="${i}">${tr?"숨기기 · Masquer":(s.hide?"글 보기 · Texte":"번역 · Traduction")}</button></div></div></div>`}).join("")}</div>
+  <div class="player"><button class="btn" data-act="playall">${playing&&playing.id===st.id?"■ 멈추기 · Arrêter":"▶ 전체 듣기 · Tout écouter"}</button><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button><button class="chip" aria-pressed="${!!s.all}" data-act="alltr">번역 · Traductions</button><button class="chip" aria-pressed="${!!s.hide}" data-act="hide">글 숨기기 · Sans texte</button>${canSpeak&&koVoices().length?`<button class="chip" data-act="sv">목소리 · ${storyDev()?"Mac / appareil":"Microsoft"}</button>`:""}</div>
+  ${st.voc&&st.voc.length?`<section><h2><span class="ko">단어</span> · Vocabulaire</h2><div class="vocg">${st.voc.map(v=>`<button class="voc" data-say="${esc(v[0])}"><b class="ko">${esc(v[0])}</b><span>${esc(v[1])}</span></button>`).join("")}</div></section>`:""}
+  ${st.gram&&st.gram.length?`<section><h2><span class="ko">문법</span> · Grammaire</h2><div class="tablebox"><table class="f">${st.gram.map(v=>`<tr><td class="k">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
+  ${st.q&&st.q.length?`<section><h2><span class="ko">이해 문제</span> · Compréhension</h2><p class="count">Réponds en coréen ; la traduction apparaît après ta réponse (ou avec « 번역 · Traductions »).</p>${st.q.map((q,qi)=>{const [qk,qf]=kf(q[0]),done=s.ans[qi]!=null,show=done||s.all;
+    return `<div class="panel qz"><div class="qh"><button class="mini" data-say="${esc(qk)}">▶</button><div><div class="ko qk">${esc(qk)}</div>${show&&qf?`<div class="qf">${esc(qf)}</div>`:""}</div></div>${s.qo[qi].map(o=>{const [ak,af]=kf(q[1+o]);return `<button class="opt${done?(o===0?" good":s.ans[qi]===o?" bad":""):""}" data-q="${qi}" data-o="${o}" ${done?"disabled":""}><b class="ko">${esc(ak)}</b>${show&&af?`<span>${esc(af)}</span>`:""}</button>`}).join("")}${done?`<div class="qres ${s.ans[qi]===0?"ok":"ko2"}">${s.ans[qi]===0?"맞아요! · Bonne réponse":"아쉬워요 · La bonne réponse : "+esc(kf(q[1])[0])}</div>`:""}</div>`}).join("")}</section>`:""}
+  <div class="actions"><button class="btn${isRead(st.id)?" ghost":""}" data-act="read">${isRead(st.id)?"✓ 읽었어요 · J'ai lu":"다 읽었어요 · J'ai tout lu"}</button>${next?`<button class="btn ghost" data-story="${next.id}">다음 화 · Épisode suivant : ${esc(next.ko)}</button>`:""}<button class="btn ghost" data-node="s:${esc(st.id)}">뇌 · Réseau</button></div>`;
 }
 const DEPOT="https://claude.ai/artifact/PYyPNYjCzEo99qZ3ac45kv"; // page de dépôt des PDF (오늘의 단어)
 /* ---------- écoute : épisodes audio ---------- */
@@ -638,7 +697,7 @@ const podDur=p=>{const n=p.lines.reduce((s,l)=>s+l[0].replace(/[^가-힣]/g,"").
 const isHeard=id=>!!(S.heard&&S.heard[id]);
 function vPods(){
   const done=PODCASTS.filter(p=>isHeard(p.id)).length;
-  $("#view").innerHTML=`<h1>듣기 · Écoute<small>${PODCASTS.length} épisodes à écouter, ${done} écouté${done>1?"s":""}. Une seule piste par épisode : l'écoute continue écran éteint.</small></h1>`+[["court","짧은 방송","Émissions courtes, environ 1 minute"],["moyen","조금 긴 방송","Émissions un peu plus longues, environ 2 minutes"],["cinq","5분 방송","Émissions de 5 minutes"],["dix","10분 방송","Émissions de 10 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="covers">${ps.map(p=>`<button class="cover lv-${p.l}" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
+  $("#view").innerHTML=`<h1>듣기 · Écoute<small>귀로만 · Rien qu'avec les oreilles. Des émissions d'une seule traite, pour le métro ou la marche, écran éteint ; le texte reste caché tant que tu ne le demandes pas. ${done} écoutée${done>1?"s":""} sur ${PODCASTS.length}.</small></h1>`+[["court","짧은 방송","Émissions courtes, environ 1 minute"],["moyen","조금 긴 방송","Émissions un peu plus longues, environ 2 minutes"],["cinq","5분 방송","Émissions de 5 minutes"],["dix","10분 방송","Émissions de 10 minutes"]].map(([k,ko,fr])=>{const ps=PODCASTS.filter(p=>p.d===k);return ps.length?`<section><h2><span class="ko">${ko}</span> · ${fr}</h2><div class="covers">${ps.map(p=>`<button class="cover lv-${p.l}" data-pod="${p.id}"><span class="id">${p.l}</span><span class="tx"><span class="ko" style="font-size:19px;font-weight:700">${esc(p.ko)}</span><small>${esc(p.t)}</small></span><span class="n">${isHeard(p.id)?'<b class="due">écouté</b>':"≈ "+podDur(p)+" min"}</span></button>`).join("")}</div></section>`:""}).join("");
 }
 function vPod(s){
   const p=PODCASTS.find(x=>x.id===s.id);s.open=s.open||{};
@@ -659,6 +718,17 @@ function lookup(w){
   if(best>=2||(best===1&&w.length<=3))for(const c of pre)if(!out.includes(c))out.push(c);
   return out.slice(0,4);
 }
+function storyVoc(){const s=cur();const st=s.v==="story"?STORIES.find(x=>x.id===s.id):null;return (st&&st.voc)||[]}
+function wordGloss(w){const r=lookup(w);if(r.length)return [r[0].k,r[0].f||r[0].e];const c=w.replace(/[^가-힣]/g,"");if(!c)return null;
+  let best=null,bl=0;for(const v of storyVoc()){const k=v[0].replace(/\(.*?\)/g,"").split("/")[0].trim(),st=k.replace(/하다$/,"").replace(/다$/,"");if(st.length>bl&&c.startsWith(st)){best=v;bl=st.length}}return best?[best[0],best[1]]:null}
+let tipEl=null;
+function hideTip(){if(tipEl){tipEl.remove();tipEl=null}}
+document.addEventListener("mouseover",e=>{const sp=e.target.closest&&e.target.closest(".line .s span");if(!sp||sp.closest(".hidden")){hideTip();return}
+  if(tipEl&&tipEl.dataset.w===sp.textContent)return;hideTip();const g=wordGloss(sp.textContent),r=sp.getBoundingClientRect();
+  tipEl=document.createElement("div");tipEl.className="wtip";tipEl.dataset.w=sp.textContent;
+  tipEl.innerHTML=g?`<b>${esc(g[0])}</b>${esc(g[1])}`:`<b>${esc(sp.textContent.replace(/[^가-힣]/g,""))}</b><i>pas encore dans tes cartes</i>`;
+  tipEl.style.left=Math.max(130,Math.min(innerWidth-130,r.left+r.width/2))+"px";tipEl.style.top=(r.top-8)+"px";document.body.appendChild(tipEl)});
+document.addEventListener("scroll",hideTip,true);
 function closeSheet(){const s=$(".sheet");if(s)s.remove();document.querySelectorAll(".line .s span.on").forEach(x=>x.classList.remove("on"))}
 function showSheet(w,res){
   closeSheet();
@@ -670,10 +740,10 @@ function showSheet(w,res){
 document.addEventListener("click",e=>{
   const t=e.target,s=cur();const keep0=()=>{s.scroll=$("#main").scrollTop};
   const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),dk=dstr(today());s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk};const again=answer(k,+gr.dataset.grade,Date.now()-(s.t0||Date.now()));s.last.again=again;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
-  const say=t.closest("[data-say]");if(say){stopStory();speak(say.dataset.say);return}
-  const ln=t.closest("[data-line]");if(ln&&s.v==="story"){stopStory();const l=lineOf(STORIES.find(x=>x.id===s.id).lines[+ln.dataset.line]);speak(l[1],SPK[l[0]]||"hyunsu");return}
+  const say=t.closest("[data-say]");if(say){stopStory();if(s.v==="story")sayStory(say.dataset.say,"hyunsu");else speak(say.dataset.say);return}
+  const ln=t.closest("[data-line]");if(ln&&s.v==="story"){stopStory();const l=lineOf(STORIES.find(x=>x.id===s.id).lines[+ln.dataset.line]);sayStory(l[1],SPK[l[0]]||"hyunsu");return}
   const qb=t.closest("[data-q]");if(qb&&s.v==="story"){s.ans[+qb.dataset.q]=+qb.dataset.o;s.keepScroll=true;render();s.keepScroll=false;return}
-  if(t.closest(".line .s span")){const sp=t.closest(".line .s span");const res=lookup(sp.textContent);showSheet(sp.textContent,res);sp.classList.add("on");return}
+  if(t.closest(".line .s span")){const sp=t.closest(".line .s span");let res=lookup(sp.textContent);if(!res.length){const g=wordGloss(sp.textContent);if(g)res=[{k:g[0],e:g[1],l:""}]}showSheet(sp.textContent,res);sp.classList.add("on");hideTip();return}
   const a=t.closest("[data-act]");
   if(a){const act=a.dataset.act;
     if(act==="close"){closeSheet();return}
@@ -694,7 +764,8 @@ document.addEventListener("click",e=>{
     if(act==="dir"){s.dir=!s.dir?"ko":s.dir==="ko"?"fr":"";s.rev=false;render();return}
         if(act==="restart"){delete s.queue;delete s.qs;render();return}
     if(act==="next"){s.i++;s.pick=null;render();return}
-    if(act==="playall"){const st=STORIES.find(x=>x.id===s.id);if(playing){stopStory();a.textContent="Écouter toute l'histoire"}else{playing={id:st.id,i:0};a.textContent="Arrêter";playStory(st,0)}return}
+    if(act==="playall"){const st=STORIES.find(x=>x.id===s.id);if(playing){stopStory();a.textContent="▶ 전체 듣기 · Tout écouter"}else{playing={id:st.id,i:0};a.textContent="■ 멈추기 · Arrêter";playStory(st,0)}return}
+    if(act==="sv"){stopStory();S.cfg.sv=storyDev()?"rec":"dev";save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="slow"){S.cfg.slow=!S.cfg.slow;save();document.querySelectorAll("[data-act=slow]").forEach(x=>x.setAttribute("aria-pressed",!!S.cfg.slow));if(player)player.playbackRate=S.cfg.slow?.8:1;const pa=$("#podau");if(pa)pa.playbackRate=S.cfg.slow?.8:1;return}
     if(act==="podtext"){s.text=!s.text;s.keepScroll=true;const pa=$("#podau"),tm=pa?pa.currentTime:0,pl=pa&&!pa.paused;render();s.keepScroll=false;const nb=$("#podau");if(nb&&tm){nb.currentTime=tm;if(pl)nb.play().catch(()=>{})}return}
     if(act==="heard"){S.heard=S.heard||{};if(S.heard[s.id])delete S.heard[s.id];else S.heard[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
@@ -735,7 +806,10 @@ async function downloadAudio(){
     if(m)m.textContent=ko?`Audio téléchargé, sauf ${ko} fichiers. Relance avec une meilleure connexion pour compléter.`:`Tout l'audio (${list.length} fichiers) est disponible hors ligne sur cet appareil.`;
   }catch(e){if(m)m.textContent="Le téléchargement a échoué. Vérifie ta connexion et réessaie."}
 }
-if(OFFLINE&&SY&&navigator.onLine!==false)setTimeout(()=>doSync(true),800);
+if(SY&&navigator.onLine!==false)setTimeout(()=>autoSync(0),800);
+document.addEventListener("visibilitychange",()=>{if(!SY)return;autoSync(document.hidden?0:600)});
+window.addEventListener("online",()=>autoSync(1000));
+setInterval(()=>{if(SY&&!document.hidden)autoSync(0)},4*6e4);
 async function checkVersion(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=await r.json();if(v.build&&v.build!==BUILD_ID&&!document.getElementById("newver")){document.body.insertAdjacentHTML("beforeend",'<button id="newver" class="btn" data-act="update" style="position:fixed;left:50%;transform:translateX(-50%);bottom:86px;z-index:9;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)">새 버전 · Nouvelle version : mettre à jour</button>')}}catch(e){}}
 if(OFFLINE){setTimeout(checkVersion,1500);document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()})}
 document.addEventListener("keydown",e=>{
