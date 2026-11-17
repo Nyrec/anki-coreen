@@ -230,6 +230,10 @@ for st in SERIES:
     for spk,ko,fr,en in st['lines']: want(SPK.get(spk,'hyunsu'),ko,ko)
     for ko,fr in st['voc']:
         if spoken(ko): want('hyunsu',ko,spoken(ko))
+    for q in st['q']:
+        for x in q:
+            ko=x.split(' ~ ')[0].strip()
+            if spoken(ko): want('hyunsu',ko,ko)
 for st in old_short:
     for ko,fr,en in st['lines']: want('hyunsu',ko,ko)
 ci={c['id']:i for i,c in enumerate(cl)}
