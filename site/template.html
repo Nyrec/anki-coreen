@@ -11,7 +11,7 @@
 /* Layout : carnet de révision, une colonne lisible, barre d'onglets en bas (téléphone) ou rail à gauche (tablette). */
 :root{
   --paper:#f6f5f1; --card:#ffffff; --ink:#24201c; --muted:#6e665f; --line:#e6e1da;
-  --jjok:#d23a55; --jjok-soft:#fde8ec; --chija:#eea415;
+  --jjok:#13806a; --jjok-soft:#dcefe7; --chija:#eea415;
   --a1:#16936a; --a2:#2d6ce0; --b1:#8a4fd6;
   --sd:linear-gradient(90deg,#d23a55 0 20%,#eea415 20% 40%,#16936a 40% 60%,#2d6ce0 60% 80%,#8a4fd6 80%);
   --ko:"Gowun Batang","Apple SD Gothic Neo","Noto Serif KR",serif;
@@ -19,10 +19,10 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --paper:#1a1513; --card:#251e1b; --ink:#f5eee8; --muted:#b5a89e; --line:#3b312c;
-  --jjok:#ff667e; --jjok-soft:#3d2228; --chija:#ffc53d; --a1:#3fd29a; --a2:#79a9ff; --b1:#c193ff; color-scheme:dark}}
+  --jjok:#52d0ae; --jjok-soft:#1f3631; --chija:#ffc53d; --a1:#3fd29a; --a2:#79a9ff; --b1:#c193ff; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#1a1513; --card:#251e1b; --ink:#f5eee8; --muted:#b5a89e; --line:#3b312c;
-  --jjok:#ff667e; --jjok-soft:#3d2228; --chija:#ffc53d; --a1:#3fd29a; --a2:#79a9ff; --b1:#c193ff; color-scheme:dark}
+  --jjok:#52d0ae; --jjok-soft:#1f3631; --chija:#ffc53d; --a1:#3fd29a; --a2:#79a9ff; --b1:#c193ff; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{height:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-text-size-adjust:100%}
@@ -233,8 +233,8 @@ nav.tabs button[aria-current="page"] b{background:var(--jjok-soft)}
 
 @media (prefers-reduced-motion:no-preference){.flash,.opt,.chip{transition:border-color .15s,background .15s}}
 /* bandeau du jour : mêmes couleurs en clair et en sombre */
-.hero{background:#d23a55!important;color:#fff!important}
-.hero .btn.big{background:#fff!important;color:#b8243f!important;border-color:#fff!important}
+.hero{background:#13806a!important;color:#fff!important}
+.hero .btn.big{background:#fff!important;color:#0e6654!important;border-color:#fff!important}
 .hero .trio div{background:rgba(255,255,255,.13)}
 .ring .rbg{stroke:rgba(255,255,255,.25)}.ring text{fill:#fff}.ring .rfg{stroke:#ffd25e}
 .wd i{border-color:rgba(255,255,255,.5)}.wd.on i{background:#ffd25e;border-color:#ffd25e}.wd.now i{box-shadow:0 0 0 2px #fff}
@@ -343,7 +343,7 @@ nav.tabs{padding-bottom:env(safe-area-inset-bottom)}
 }
 @media (max-width:350px){nav.tabs button{font-size:0!important}nav.tabs button b{font-size:16px!important}}
 /* 색동 : identité */
-.hero{background:#d23a55!important;background-image:radial-gradient(120% 90% at 100% 0%,rgba(255,210,94,.35),transparent 55%),linear-gradient(160deg,#e0475f,#b8243f)!important;padding-bottom:30px!important;box-shadow:0 22px 40px -24px rgba(184,36,63,.75)!important}
+.hero{background:#13806a!important;background-image:radial-gradient(90% 80% at 100% 0%,rgba(255,214,120,.28),transparent 60%),linear-gradient(160deg,#1a9278,#0d5e4e)!important;padding-bottom:30px!important;box-shadow:0 22px 40px -24px rgba(13,94,78,.75)!important}
 .hero:before{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,#fff 0 20%,#eea415 20% 40%,#16936a 40% 60%,#2d6ce0 60% 80%,#8a4fd6 80%);z-index:2}
 .hero::after{content:"색";color:#fff;opacity:.1}
 .hero .trio>div{background:rgba(255,255,255,.14)!important;border:0!important}
@@ -363,9 +363,26 @@ nav.tabs button[aria-current="page"] b:after{content:"";position:absolute;left:8
 .gzoom button,.gsel{background:rgba(30,16,16,.82)!important}
 .wtip{background:#2a1c1a!important}.wtip:after{border-top-color:#2a1c1a!important}
 ::selection{background:color-mix(in srgb,#eea415 40%,transparent)}
+/* fond : 일월오봉도 (soleil, lune et cinq pics), très pâle, derrière le contenu */
+.ilwol{position:fixed;left:0;right:0;bottom:0;height:46vh;z-index:0;pointer-events:none}
+.ilwol svg{width:100%;height:100%;display:block}
+#app{position:relative;z-index:1;background:transparent}
+main{background:transparent}
+.ilwol .moon{fill:#ffffff;stroke:#d9e2dc;stroke-width:2}.ilwol .sun{fill:#ec9f8f}
+.ilwol .pk1{fill:#cfe2d7}.ilwol .pk2{fill:#b8d2c5}.ilwol .wv{fill:none;stroke:#b3cfc2;stroke-width:3}.ilwol .pine{fill:#b9d1c4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ilwol .moon{fill:#3a3430;stroke:#4a423d}:root:not([data-theme="light"]) .ilwol .sun{fill:#5c2b28}:root:not([data-theme="light"]) .ilwol .pk1{fill:#262620}:root:not([data-theme="light"]) .ilwol .pk2{fill:#2c2d25}:root:not([data-theme="light"]) .ilwol .wv{stroke:#34362d}:root:not([data-theme="light"]) .ilwol .pine{fill:#30332a}}
+:root[data-theme="dark"] .ilwol .moon{fill:#3a3430;stroke:#4a423d}:root[data-theme="dark"] .ilwol .sun{fill:#5c2b28}:root[data-theme="dark"] .ilwol .pk1{fill:#262620}:root[data-theme="dark"] .ilwol .pk2{fill:#2c2d25}:root[data-theme="dark"] .ilwol .wv{stroke:#34362d}:root[data-theme="dark"] .ilwol .pine{fill:#30332a}
+@media (min-width:820px){.ilwol{left:104px;height:52vh}}
 </style>
 </head>
 <body>
+<div class="ilwol" aria-hidden="true"><svg viewBox="0 0 1000 380" preserveAspectRatio="xMidYMax slice">
+  <circle class="moon" cx="165" cy="92" r="36"/><circle class="sun" cx="835" cy="92" r="36"/>
+  <path class="pk1" d="M0 380V262Q55 218 105 244Q165 120 248 222Q318 162 392 204Q500 36 608 204Q682 162 752 222Q835 120 895 244Q945 218 1000 262V380Z"/>
+  <path class="pk2" d="M0 380V300Q120 250 230 292Q330 240 430 286Q500 262 570 286Q670 240 770 292Q880 250 1000 300V380Z"/>
+  <path class="wv" d="M0 336q25-18 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0M-25 360q25-18 50 0t50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0 50 0"/>
+  <g class="pine"><path d="M70 300l14-46 14 46zM62 312l22-40 22 40z"/><path d="M902 300l14-46 14 46zM894 312l22-40 22 40z"/></g>
+</svg></div>
 <div id="app">
   <main id="main"><div class="wrap" id="view"></div></main>
   <nav class="tabs" id="tabs" aria-label="Sections">
