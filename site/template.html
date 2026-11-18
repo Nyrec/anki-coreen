@@ -416,6 +416,7 @@ nav.tabs button[aria-current="page"] b:after{content:"";position:absolute;left:8
 .hwords{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 8px}
 .mini.rec{border-color:var(--red);color:var(--red);animation:pulse 1s infinite}
 @keyframes pulse{50%{opacity:.5}}
+.sytoast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));transform:translateX(-50%);z-index:40;background:var(--jjok);color:#fff;padding:8px 14px;border-radius:99px;font-size:13px;box-shadow:0 10px 24px -12px rgba(0,0,0,.6);animation:rise .3s ease both}
 </style>
 </head>
 <body>
@@ -462,7 +463,8 @@ let S={c:{},log:{},cfg:{nw:20,auto:true}};
 try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:20,auto:true},S.cfg||{})}catch(e){}
 try{const old=JSON.parse(localStorage.getItem("hgn-known")||"[]");if(old.length&&!S.mig){old.forEach(k=>{if(!S.c[k])S.c[k]=[today()+1+Math.floor(Math.random()*30),30,2.5,1,0]});S.mig=1}}catch(e){}
 let inSync=false,syT=0;
-function save(){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}if(!inSync&&typeof autoSync==="function")autoSync(15000)}
+let syDirty=true,syEtag=null,sySha=null;
+function save(){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}if(!inSync){syDirty=true;if(typeof autoSync==="function")autoSync(3000)}}
 const known={has:k=>!!S.c[k]};
 const isNew=c=>!S.c[c.k];
 const isDue=c=>!!S.c[c.k]&&S.c[c.k][0]<=today();
@@ -512,19 +514,35 @@ function mergeS(a,b){
   for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
   Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
 }
-function autoSync(delay){if(!SY||navigator.onLine===false)return;clearTimeout(syT);syT=setTimeout(()=>{if(inSync){autoSync(4000);return}
-  syncNow().then(()=>{syncMsg="";const x=$("#syncst");if(x)x.textContent=syncLabel();const s=cur();if(s.v==="accueil"&&!document.querySelector("input:focus,textarea:focus"))render()}).catch(e=>{syncMsg="Synchronisation automatique impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg})},delay)}
-async function syncNow(retry){inSync=true;try{return await syncOnce()}catch(e){if(!retry&&/réessaie/.test(e.message)){inSync=false;return syncNow(true)}throw e}finally{inSync=false}}
+// Synchronisation quasi instantanée : envoi 3 s après un changement, vérification toutes les 15 s.
+// La vérification utilise l'ETag : une réponse « rien de neuf » (304) ne compte pas dans le quota GitHub.
+const sySig=()=>{const x=S.sync;S.sync=0;const s=JSON.stringify(S);S.sync=x;return s};
+const LIVE=["accueil","themes","cours","deck","cerveau","pratique","histoires","ecoute","fiches","hanja"];
+function syToast(m){const o=document.getElementById("sytoast");if(o)o.remove();const x=document.createElement("div");x.id="sytoast";x.className="sytoast";x.textContent=m;document.body.appendChild(x);setTimeout(()=>x.remove(),2600)}
+function autoSync(delay){if(!SY||navigator.onLine===false)return;clearTimeout(syT);syT=setTimeout(()=>{if(inSync){autoSync(2000);return}
+  syncNow().then(changed=>{syncMsg="";const x=$("#syncst");if(x)x.textContent=syncLabel();const s=cur();
+    if(changed&&LIVE.includes(s.v)&&!document.querySelector("input:focus,textarea:focus")){s.keepScroll=true;render();s.keepScroll=false;syToast("동기화됨 · Mis à jour depuis un autre appareil")}})
+  .catch(e=>{syncMsg="Synchronisation automatique impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg})},delay)}
+async function syncNow(retry){inSync=true;try{return await syncOnce()}catch(e){if(!retry&&/réessaie/.test(e.message)){inSync=false;syEtag=null;return syncNow(true)}throw e}finally{inSync=false}}
 async function syncOnce(){
   if(!SY||!SY.repo||!SY.token)throw new Error("la synchronisation n'est pas encore configurée");
   const api="https://api.github.com/repos/"+SY.repo+"/contents/progression.json",h={Authorization:"Bearer "+SY.token,Accept:"application/vnd.github+json"};
-  let sha=null;const r=await fetch(api+"?t="+Date.now(),{headers:h,cache:"no-store"});
-  if(r.status===200){const j=await r.json();sha=j.sha;const remote=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))));if(remote&&remote.c){S=mergeS(S,remote);if(typeof injectMy==="function")injectMy()}}
-  else if(r.status!==404)throw new Error(r.status===401||r.status===403?"le code d'accès est refusé":"GitHub a répondu "+r.status);
-  S.sync=Date.now();save();
-  const body={message:"Progression "+dstr(today()),content:btoa(unescape(encodeURIComponent(JSON.stringify(S))))};if(sha)body.sha=sha;
-  const w=await fetch(api,{method:"PUT",headers:h,body:JSON.stringify(body)});
-  if(!w.ok)throw new Error(w.status===409?"un autre appareil vient d'écrire, réessaie":"l'envoi a été refusé ("+w.status+")");
+  const gh=Object.assign({},h);if(syEtag&&sySha)gh["If-None-Match"]=syEtag;
+  const r=await fetch(api,{headers:gh,cache:"no-store"});let changed=false;
+  if(r.status===200){const j=await r.json();sySha=j.sha;syEtag=r.headers.get("ETag");
+    const remote=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))));
+    if(remote&&remote.c){const before=sySig();S=mergeS(S,remote);if(typeof injectMy==="function")injectMy();changed=sySig()!==before;
+      if(!syDirty&&changed){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}}}}
+  else if(r.status===404){sySha=null;syEtag=null;syDirty=true}
+  else if(r.status!==304)throw new Error(r.status===401||r.status===403?"le code d'accès est refusé":"GitHub a répondu "+r.status);
+  if(syDirty){
+    S.sync=Date.now();try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}
+    const body={message:"Progression "+dstr(today()),content:btoa(unescape(encodeURIComponent(JSON.stringify(S))))};if(sySha)body.sha=sySha;
+    const w=await fetch(api,{method:"PUT",headers:h,body:JSON.stringify(body)});
+    if(!w.ok){syEtag=null;throw new Error(w.status===409||w.status===422?"un autre appareil vient d'écrire, réessaie":"l'envoi a été refusé ("+w.status+")")}
+    const jw=await w.json();sySha=jw.content&&jw.content.sha;syEtag=null;syDirty=false;
+  }else{S.sync=Date.now();try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}}
+  return changed;
 }
 function doSync(quiet){
   if(!SY){if(!quiet){syncMsg="";const b=$("#syncbox");if(b)b.hidden=false}return}
@@ -926,9 +944,9 @@ async function downloadAudio(){
   }catch(e){if(m)m.textContent="Le téléchargement a échoué. Vérifie ta connexion et réessaie."}
 }
 if(SY&&navigator.onLine!==false)setTimeout(()=>autoSync(0),800);
-document.addEventListener("visibilitychange",()=>{if(!SY)return;autoSync(document.hidden?0:600)});
+document.addEventListener("visibilitychange",()=>{if(!SY)return;autoSync(document.hidden?0:300)});
 window.addEventListener("online",()=>autoSync(1000));
-setInterval(()=>{if(SY&&!document.hidden)autoSync(0)},4*6e4);
+setInterval(()=>{if(SY&&!document.hidden&&!inSync)autoSync(0)},15000);
 async function checkVersion(){try{const r=await fetch("version.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)return;const v=await r.json();if(v.build&&v.build!==BUILD_ID&&!document.getElementById("newver")){document.body.insertAdjacentHTML("beforeend",'<button id="newver" class="btn" data-act="update" style="position:fixed;left:50%;transform:translateX(-50%);bottom:86px;z-index:9;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)">새 버전 · Nouvelle version : mettre à jour</button>')}}catch(e){}}
 if(OFFLINE){setTimeout(checkVersion,1500);document.addEventListener("visibilitychange",()=>{if(!document.hidden)checkVersion()})}
 document.addEventListener("keydown",e=>{
