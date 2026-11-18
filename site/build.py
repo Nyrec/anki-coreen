@@ -184,7 +184,7 @@ MOIS=['janvier','février','mars','avril','mai','juin','juillet','août','septem
 now=datetime.datetime.now(datetime.timezone.utc)+datetime.timedelta(hours=1)
 build='%d %s %d à %02d h %02d'%(now.day,MOIS[now.month-1],now.year,now.hour,now.minute)
 build_id=now.strftime('%Y%m%d%H%M%S')
-PWA='<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="한국어 노트"><meta name="theme-color" content="#13806a">'
+PWA='<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="한국어 노트"><meta name="theme-color" content="#0047a0">'
 # --- histoires : anciennes lectures courtes (content.js) + séries (stories.txt)
 def parse_stories(path):
     out=[];cur=None

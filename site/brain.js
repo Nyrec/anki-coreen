@@ -50,9 +50,9 @@ function gDraw(cv,o){
   const sx=p=>(p[0]-V.x)*V.s+W/2,sy=p=>(p[1]-V.y)*V.s+H/2;
   function rad(i){const n=GN[i];const d=n.adj.size;let r=n.type==="m"?1.6+Math.min(3,Math.sqrt(d)*.55):3.5+Math.min(9,Math.sqrt(d)*.9);if(o.big)r*=1.6;return r*Math.max(.7,Math.min(2.4,Math.sqrt(V.s*(o.big?1:2.2))))}
   function draw(){raf=0;ctx.setTransform(dpr,0,0,dpr,0,0);
-    const g=ctx.createRadialGradient(W/2,H/2,0,W/2,H/2,Math.max(W,H)*.7);g.addColorStop(0,"#2b1719");g.addColorStop(1,"#0e0808");ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    const g=ctx.createRadialGradient(W/2,H/2,0,W/2,H/2,Math.max(W,H)*.7);g.addColorStop(0,"#1b2140");g.addColorStop(1,"#0b0c12");ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
     const sel=V.sel;ctx.globalCompositeOperation="lighter";
-    ctx.strokeStyle=o.big?"rgba(255,200,130,.35)":"rgba(255,190,120,"+(sel!=null?.05:.11)+")";ctx.lineWidth=o.big?1.2:.7;ctx.beginPath();
+    ctx.strokeStyle=o.big?"rgba(160,190,255,.35)":"rgba(150,180,255,"+(sel!=null?.05:.11)+")";ctx.lineWidth=o.big?1.2:.7;ctx.beginPath();
     for(let k=0;k<edges.length;k+=2){const a=P(edges[k]),b=P(edges[k+1]);ctx.moveTo(sx(a),sy(a));ctx.lineTo(sx(b),sy(b))}ctx.stroke();
     if(sel!=null&&inSet.has(sel)){const a=P(sel);ctx.strokeStyle="rgba(255,225,150,.75)";ctx.lineWidth=1.4;ctx.beginPath();for(const j of GN[sel].adj)if(inSet.has(j)){const b=P(j);ctx.moveTo(sx(a),sy(a));ctx.lineTo(sx(b),sy(b))}ctx.stroke()}
     const lab=[];
@@ -69,7 +69,7 @@ function gDraw(cv,o){
       const t=gLabel(GN[i])[0],fs=GN[i].type==="m"?12:13,w=t.length*fs*.9+8,box=[x-w/2,y+r+2,x+w/2,y+r+2+fs+4];
       if(pr<100&&occ.some(b=>b[0]<box[2]&&box[0]<b[2]&&b[1]<box[3]&&box[1]<b[3]))continue;occ.push(box);if(occ.length>(o.big?60:90))break;
       ctx.font=(GN[i].type==="m"?"500 ":"700 ")+fs+"px "+(getComputedStyle(document.body).getPropertyValue("--ko")||"sans-serif");
-      ctx.fillStyle="rgba(20,8,8,.72)";ctx.fillRect(box[0],box[1],w,fs+4);ctx.fillStyle=GN[i].type==="m"?"#fff3e6":gColor(GN[i]);ctx.fillText(t,x,y+r+4)}}
+      ctx.fillStyle="rgba(8,10,20,.72)";ctx.fillRect(box[0],box[1],w,fs+4);ctx.fillStyle=GN[i].type==="m"?"#fff3e6":gColor(GN[i]);ctx.fillText(t,x,y+r+4)}}
   }
   const req=()=>{if(!raf)raf=requestAnimationFrame(draw)};
   const pts=new Map();let moved=0,t0=0,pinch=null;
