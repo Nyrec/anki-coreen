@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+첨부하다	to attach (a file)<br><i>joindre (un fichier), mettre en pièce jointe</i>	보고서를 이메일에 첨부해서 보냈어요.<br>I sent the report as an email attachment.<br><i>J'ai envoyé le rapport en pièce jointe de l'e-mail.</i>	[cheombuhada] Hanja 添附. Pattern: N을/를 (이메일에) 첨부하다. 첨부 파일 = attachment.	quotidien::2026-11-18 동사 niveau::B1
+승강장	platform (subway/train)<br><i>quai (de métro, de gare)</i>	출근 시간에는 지하철 승강장이 너무 붐벼요.<br>At rush hour, the subway platform is really crowded.<br><i>Aux heures de pointe, le quai du métro est bondé.</i>	[seunggangjang] Hanja 乘降場: get on (乘) + get off (降) + place (場). Heard in announcements: 승강장과 열차 사이가 넓으니…	quotidien::2026-11-18 명사 niveau::B1
+무사히	safely, without incident<br><i>sain et sauf, sans encombre</i>	비행기가 무사히 도착했어요.<br>The plane arrived safely.<br><i>L'avion est arrivé sans encombre.</i>	[musahi] From 무사 (無事, 'no trouble') + -히. Common with 도착하다, 끝나다, 마치다.	quotidien::2026-11-18 부사 niveau::B1
+고집이 세다	to be stubborn<br><i>être têtu, obstiné</i>	제 동생은 고집이 정말 세요.<br>My younger sibling is really stubborn.<br><i>Mon petit frère est vraiment têtu.</i>	[gojibi seda] 고집 (固執) = obstinacy; 세다 = strong (세요 in polite form). Related: 고집을 부리다 = to dig in one's heels.	quotidien::2026-11-18 표현 niveau::B1
+쓸쓸하다	lonely, desolate, melancholy<br><i>mélancolique, morne, solitaire</i>	가을이 되면 거리가 좀 쓸쓸해요.<br>When autumn comes, the streets feel a bit desolate.<br><i>Quand l'automne arrive, les rues sont un peu mélancoliques.</i>	[sseulsseulhada] Describes a lonely, empty atmosphere (places, seasons, mood); 외롭다 is more about a person feeling alone.	quotidien::2026-11-18 형용사 niveau::B1
