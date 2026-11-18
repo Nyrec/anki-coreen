@@ -417,6 +417,9 @@ nav.tabs button[aria-current="page"] b:after{content:"";position:absolute;left:8
 .mini.rec{border-color:var(--red);color:var(--red);animation:pulse 1s infinite}
 @keyframes pulse{50%{opacity:.5}}
 .sytoast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));transform:translateX(-50%);z-index:40;background:var(--jjok);color:#fff;padding:8px 14px;border-radius:99px;font-size:13px;box-shadow:0 10px 24px -12px rgba(0,0,0,.6);animation:rise .3s ease both}
+.en{display:block;font-size:.82em;color:var(--muted);font-style:italic}
+details.w summary .e .en{display:inline;margin-left:6px}details.w summary .e .en:before{content:"· "}
+.opt .en{font-size:13px}
 </style>
 </head>
 <body>
@@ -453,14 +456,16 @@ const POSN={n:"명사 · Noms",v:"동사 · Verbes",adj:"형용사 · Adjectifs"
 const LV=[["A1","초급 · Débutant","A1","var(--a1)"],["A2","초중급 · Débutant avancé","A2","var(--a2)"],["B1","중급 · Intermédiaire","B1+","var(--b1)"]];
 const lvKey=c=>c.l==="B2"?"B1":c.l;
 const $=s=>document.querySelector(s);
+const biT=c=>c.f&&c.e&&c.f!==c.e?c.f+" · "+c.e:(c.f||c.e||"");
+const biH=c=>c.f&&c.e&&c.f!==c.e?`${esc(c.f)}<span class="en">${esc(c.e)}</span>`:esc(c.f||c.e||"");
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 /* ---------- progression : répétition espacée, comme Anki ---------- */
 const DAY=864e5;
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/DAY);
 const dstr=n=>new Date(n*DAY).toISOString().slice(0,10);
 // S.c[mot]=[échéance (n° de jour), intervalle en jours, facilité, révisions, oublis] ; S.log[date]=[révisions, oublis, ms, nouvelles]
-let S={c:{},log:{},cfg:{nw:20,auto:true}};
-try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:20,auto:true},S.cfg||{})}catch(e){}
+let S={c:{},log:{},cfg:{nw:40,auto:true}};
+try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:40,auto:true},S.cfg||{});if(!S.cfg.m40){S.cfg.nw=Math.max(S.cfg.nw||0,40);S.cfg.m40=1}}catch(e){}
 try{const old=JSON.parse(localStorage.getItem("hgn-known")||"[]");if(old.length&&!S.mig){old.forEach(k=>{if(!S.c[k])S.c[k]=[today()+1+Math.floor(Math.random()*30),30,2.5,1,0]});S.mig=1}}catch(e){}
 let inSync=false,syT=0;
 let syDirty=true,syEtag=null,sySha=null;
@@ -659,7 +664,7 @@ function vHome(){
     <div class="kpi"><b>${STORIES.filter(x=>isRead(x.id)).length} / ${STORIES.length}</b><span><i class="ko">읽은 이야기</i> histoires lues</span></div>
     <div class="kpi"><b>${PODCASTS.filter(x=>isHeard(x.id)).length} / ${PODCASTS.length}</b><span><i class="ko">들은 방송</i> émissions écoutées</span></div>
   </section>
-  <section><h2><span class="ko">오늘의 표현</span> · L'expression du jour</h2><div class="wod"><div class="ko big">${esc(wod.k)}</div><div>${esc(wod.f||wod.e)}</div><div class="ko ex">${esc(wod.x)}</div><div class="count">${esc(wod.z||wod.y||"")}</div><div class="meta">${canPlay?`<button class="mini" data-say="${esc(wod.x)}">문장 듣기 · Écouter la phrase</button>`:""}<button class="mini" data-course="${wod.c}">${courseLabel(wod.c)}</button></div></div></section>
+  <section><h2><span class="ko">오늘의 표현</span> · L'expression du jour</h2><div class="wod"><div class="ko big">${esc(wod.k)}</div><div>${biH(wod)}</div><div class="ko ex">${esc(wod.x)}</div><div class="count">${esc(wod.z||wod.y||"")}</div><div class="meta">${canPlay?`<button class="mini" data-say="${esc(wod.x)}">문장 듣기 · Écouter la phrase</button>`:""}<button class="mini" data-course="${wod.c}">${courseLabel(wod.c)}</button></div></div></section>
   <section class="short"><button class="sc c1" data-story="${nextS.id}"><i class="ko">이야기</i><b class="ko">${esc(nextS.ko)}</b><span>${isRead(nextS.id)?"Relire":"Prochaine histoire"} · ${nextS.l}</span></button><button class="sc c2" data-pod="${nextP.id}"><i class="ko">듣기</i><b class="ko">${esc(nextP.ko)}</b><span>${isHeard(nextP.id)?"Réécouter":"Prochain épisode"} · ≈ ${podDur(nextP)} min</span></button><a class="sc c3" href="${DEPOT}" target="_blank" rel="noopener"><i class="ko">PDF 보내기</i><b>Envoyer un PDF</b><span>Le PDF de Hyesoo devient des cartes la nuit suivante</span></a></section>
   <form class="search" id="sf"><input id="q" type="search" placeholder="Chercher un mot en coréen, français ou anglais" autocomplete="off"><button class="btn" type="submit">검색 · Chercher</button></form>
   <section><h2><span class="ko">내 카드</span> · Mes cartes</h2><div class="panel">
@@ -739,7 +744,7 @@ function vDeck(s){
   ${ps.size>1?`<div class="chips">${chip("전체 · Tout",!s.fp,'data-fp=""')}${Object.keys(POSN).filter(p=>ps.has(p)).map(p=>chip(POSN[p],s.fp===p,`data-fp="${p}"`)).join("")}</div>`:""}
   <div class="chips">${chip("Masquer les cartes déjà apprises",!!s.fu,'data-fu="1"')}${dst.nw?`<button class="chip" data-act="bulk">${s.bulk?`Confirmer : ${dst.nw} cartes passent en « déjà connues »`:"Je connais déjà toute cette liste"}</button>`:""}</div>
   <p class="count">${cs.length} carte${cs.length>1?"s":""} : ${dst.due} à revoir, ${dst.nw} nouvelles, ${dst.mature} matures. Touche un mot pour voir l'exemple et la note.</p>
-  <div class="rows">${cs.length?cs.slice(0,s.limit).map(c=>`<details class="w${known.has(c.k)?" known":""}" data-k="${esc(c.k)}"><summary><span class="k">${esc(c.k)}</span><span class="e">${esc(c.f||c.e)}</span></summary></details>`).join(""):'<div class="empty">Aucune carte ne correspond à ces filtres.</div>'}</div>
+  <div class="rows">${cs.length?cs.slice(0,s.limit).map(c=>`<details class="w${known.has(c.k)?" known":""}" data-k="${esc(c.k)}"><summary><span class="k">${esc(c.k)}</span><span class="e">${biH(c)}</span></summary></details>`).join(""):'<div class="empty">Aucune carte ne correspond à ces filtres.</div>'}</div>
   ${cs.length>s.limit?`<button class="btn ghost" data-act="more">Afficher la suite (${cs.length-s.limit} restantes)</button>`:""}`;
 }
 document.addEventListener("toggle",e=>{const d=e.target;if(d.matches&&d.matches("details.w")&&d.open&&!d.querySelector(".body")){const c=CARDS.find(x=>x.k===d.dataset.k);if(c)d.insertAdjacentHTML("beforeend",cardBody(c))}},true);
@@ -759,7 +764,7 @@ function vStudy(s){
   // Sens automatique : reconnaissance, puis production (traduction → coréen) et écoute seule quand la carte est acquise.
   const earOK=canPlay&&sndMode()!=="off"&&!!spoken(c.k);
   const dir=s.dir==="ko"?"":s.dir==="fr"?"fr":s.dir==="ear"?(earOK?"ear":""):(cs&&cs[1]>=7&&cs[3]%2===1&&c.p!=="gram"?"fr":cs&&cs[1]>=3&&cs[3]%3===2&&earOK?"ear":"");
-  const front=dir==="fr"?esc(c.f||c.e):dir==="ear"?"":esc(c.k);
+  const front=dir==="fr"?biH(c):dir==="ear"?"":esc(c.k);
   const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
   if(!s.rev){s.t0=Date.now()}
   $("#view").innerHTML=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":s.dir==="ear"?"듣기 → 뜻 · Écoute → sens":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
@@ -779,7 +784,7 @@ function vQuiz(s){
   const q=s.qs[s.i];
   $("#view").innerHTML=`${backBtn()}<div class="study"><span class="count">Question ${s.i+1} sur ${s.qs.length} · score ${s.score}</span>
   <div class="flash" style="min-height:150px"><div class="big ko${q.c.k.length>9?" small":""}">${esc(q.c.k)}</div></div>
-  ${q.opts.map((o,j)=>`<button class="opt${s.pick!=null?(o.k===q.c.k?" good":j===s.pick?" bad":""):""}" data-opt="${j}" ${s.pick!=null?"disabled":""}>${esc(o.f||o.e)}</button>`).join("")}
+  ${q.opts.map((o,j)=>`<button class="opt${s.pick!=null?(o.k===q.c.k?" good":j===s.pick?" bad":""):""}" data-opt="${j}" ${s.pick!=null?"disabled":""}>${biH(o)}</button>`).join("")}
   ${s.pick!=null?`${q.c.x?`<p class="count"><span class="ko" style="font-size:17px;color:var(--ink)">${esc(q.c.x)}</span><br>${esc(q.c.z||q.c.y||"")}</p>`:""}<button class="btn" data-act="next">다음 문제 · Question suivante</button>`:""}</div>`;
 }
 
@@ -822,7 +827,7 @@ function vStory(s){
    return `<div class="line ${nar?"nar":me?"me":"them"} v-${v}">${nar?"":`<i class="av v-${v}">${esc(l[0][0])}</i>`}<div class="bub">${nar?"":`<span class="spk v-${v}">${esc(l[0])}</span>`}<p class="s${s.hide&&!s.open[i]?" hidden":""}">${l[1].split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ")}</p>
    ${tr?`<p class="tr"><b>${esc(l[2])}</b>${esc(l[3])}</p>`:""}<div class="meta"><button class="mini" data-line="${i}">▶ 듣기</button><button class="mini" data-tr="${i}">${tr?"숨기기 · Masquer":(s.hide?"글 보기 · Texte":"번역 · Traduction")}</button>${recButtons(st.id,i)}</div></div></div>`}).join("")}</div>
   <div class="player"><button class="btn" data-act="playall">${playing&&playing.id===st.id?"■ 멈추기 · Arrêter":"▶ 전체 듣기 · Tout écouter"}</button><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button><button class="chip" aria-pressed="${!!s.all}" data-act="alltr">번역 · Traductions</button><button class="chip" aria-pressed="${!!s.hide}" data-act="hide">글 숨기기 · Sans texte</button>${canSpeak&&koVoices().length?`<button class="chip" data-act="sv">목소리 · ${storyDev()?"Mac / appareil":"Microsoft"}</button>`:""}</div>
-  ${st.voc&&st.voc.length?`<section><h2><span class="ko">단어</span> · Vocabulaire</h2><div class="vocg">${st.voc.map(v=>`<button class="voc" data-say="${esc(v[0])}"><b class="ko">${esc(v[0])}</b><span>${esc(v[1])}</span></button>`).join("")}</div></section>`:""}
+  ${st.voc&&st.voc.length?`<section><h2><span class="ko">단어</span> · Vocabulaire</h2><div class="vocg">${st.voc.map(v=>`<button class="voc" data-say="${esc(v[0])}"><b class="ko">${esc(v[0])}</b><span>${esc(v[1])}</span>${v[2]?`<span class="en">${esc(v[2])}</span>`:""}</button>`).join("")}</div></section>`:""}
   ${st.gram&&st.gram.length?`<section><h2><span class="ko">문법</span> · Grammaire</h2><div class="tablebox"><table class="f">${st.gram.map(v=>`<tr><td class="k">${esc(v[0])}</td><td>${esc(v[1])}</td></tr>`).join("")}</table></div></section>`:""}
   ${st.q&&st.q.length?`<section><h2><span class="ko">이해 문제</span> · Compréhension</h2><p class="count">Réponds en coréen ; la traduction apparaît après ta réponse (ou avec « 번역 · Traductions »).</p>${st.q.map((q,qi)=>{const [qk,qf]=kf(q[0]),done=s.ans[qi]!=null,show=done||s.all;
     return `<div class="panel qz"><div class="qh"><button class="mini" data-say="${esc(qk)}">▶</button><div><div class="ko qk">${esc(qk)}</div>${show&&qf?`<div class="qf">${esc(qf)}</div>`:""}</div></div>${s.qo[qi].map(o=>{const [ak,af]=kf(q[1+o]);return `<button class="opt${done?(o===0?" good":s.ans[qi]===o?" bad":""):""}" data-q="${qi}" data-o="${o}" ${done?"disabled":""}><b class="ko">${esc(ak)}</b>${show&&af?`<span>${esc(af)}</span>`:""}</button>`}).join("")}${done?`<div class="qres ${s.ans[qi]===0?"ok":"ko2"}">${s.ans[qi]===0?"맞아요! · Bonne réponse":"아쉬워요 · La bonne réponse : "+esc(kf(q[1])[0])}</div>`:""}</div>`}).join("")}</section>`:""}
@@ -856,8 +861,8 @@ function lookup(w){
   return out.slice(0,4);
 }
 function storyVoc(){const s=cur();const st=s.v==="story"?STORIES.find(x=>x.id===s.id):null;return (st&&st.voc)||[]}
-function wordGloss(w){const r=lookup(w);if(r.length)return [r[0].k,r[0].f||r[0].e];const c=w.replace(/[^가-힣]/g,"");if(!c)return null;
-  let best=null,bl=0;for(const v of storyVoc()){const k=v[0].replace(/\(.*?\)/g,"").split("/")[0].trim(),st=k.replace(/하다$/,"").replace(/다$/,"");if(st.length>bl&&c.startsWith(st)){best=v;bl=st.length}}return best?[best[0],best[1]]:null}
+function wordGloss(w){const r=lookup(w);if(r.length)return [r[0].k,biT(r[0])];const c=w.replace(/[^가-힣]/g,"");if(!c)return null;
+  let best=null,bl=0;for(const v of storyVoc()){const k=v[0].replace(/\(.*?\)/g,"").split("/")[0].trim(),st=k.replace(/하다$/,"").replace(/다$/,"");if(st.length>bl&&c.startsWith(st)){best=v;bl=st.length}}return best?[best[0],best[1]+(best[2]?" · "+best[2]:"")]:null}
 let tipEl=null;
 function hideTip(){if(tipEl){tipEl.remove();tipEl=null}}
 document.addEventListener("mouseover",e=>{const sp=e.target.closest&&e.target.closest(".line .s span");if(!sp||sp.closest(".hidden")){hideTip();return}

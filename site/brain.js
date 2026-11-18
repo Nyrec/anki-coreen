@@ -9,7 +9,7 @@ let GBASE=0;
 function gObj(n){const id=n.key.slice(2);
   return n.type==="m"?CARDIDX[id]:n.type==="c"?courseOf(id):n.type==="f"?FICHES.find(f=>f.id===id):n.type==="s"?STORIES.find(x=>x.id===id):n.type==="p"?PODCASTS.find(x=>x.id===id):n.type==="u"?(S.notes||{})[n.key]:n.type==="h"?HJ.find(x=>x.h===id):null}
 function gLabel(n){const o=gObj(n),id=n.key.slice(2);
-  switch(n.type){case "m":return [id,o?(o.f||o.e):""];case "c":return [id==="jour"?"매일 단어":id,o?o.t:""];case "t":return THNAME[id]||[id,""];
+  switch(n.type){case "m":return [id,o?biT(o):""];case "c":return [id==="jour"?"매일 단어":id,o?o.t:""];case "t":return THNAME[id]||[id,""];
   case "f":return o?[o.ko,o.t]:[id,""];case "s":case "p":return o?[o.ko,o.t]:[id,""];case "u":return [o&&o.ti||"제목 없음",o&&o.ti?"Ma note":"Note sans titre"];case "h":return o?[o.h+" "+o.r,o.m]:[id,""]}return [id,""]}
 function gColor(n){if(n.type==="m"){const c=CARDIDX[n.key.slice(2)];return GCOL[c?lvKey(c):"A1"]||GCOL.A1}return GCOL[n.type]}
 function gInit(){
