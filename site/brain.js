@@ -1,21 +1,23 @@
 /* ---------- 뇌 · Cerveau : tout ce que j'apprends, relié comme des neurones ---------- */
 const GR=/*GRAPH*/;
-const GT={m:["단어","Mot"],c:["수업","Cours"],t:["주제","Thème"],f:["정리","Synthèse"],s:["이야기","Histoire"],p:["방송","Émission"],u:["메모","Ma note"]};
-const GCOL={c:"#ffc53d",t:"#ff667e",f:"#c193ff",s:"#4fd8e0",p:"#ff9a3c",u:"#ffffff",A1:"#3fd29a",A2:"#79a9ff",B1:"#c193ff"};
+const GT={h:["한자","Hanja"],m:["단어","Mot"],c:["수업","Cours"],t:["주제","Thème"],f:["정리","Synthèse"],s:["이야기","Histoire"],p:["방송","Émission"],u:["메모","Ma note"]};
+const GCOL={h:"#ffd166",c:"#ffc53d",t:"#ff667e",f:"#c193ff",s:"#4fd8e0",p:"#ff9a3c",u:"#ffffff",A1:"#3fd29a",A2:"#79a9ff",B1:"#c193ff"};
 const THNAME={};for(const g of THEMES)for(const [k,fr,ko] of g.items)THNAME[k]=[ko,fr];
 let GN=null;// {key,type,x,y,adj:Set}
 const GI={};// clé → indice
 let GBASE=0;
 function gObj(n){const id=n.key.slice(2);
-  return n.type==="m"?CARDIDX[id]:n.type==="c"?courseOf(id):n.type==="f"?FICHES.find(f=>f.id===id):n.type==="s"?STORIES.find(x=>x.id===id):n.type==="p"?PODCASTS.find(x=>x.id===id):n.type==="u"?(S.notes||{})[n.key]:null}
+  return n.type==="m"?CARDIDX[id]:n.type==="c"?courseOf(id):n.type==="f"?FICHES.find(f=>f.id===id):n.type==="s"?STORIES.find(x=>x.id===id):n.type==="p"?PODCASTS.find(x=>x.id===id):n.type==="u"?(S.notes||{})[n.key]:n.type==="h"?HJ.find(x=>x.h===id):null}
 function gLabel(n){const o=gObj(n),id=n.key.slice(2);
   switch(n.type){case "m":return [id,o?(o.f||o.e):""];case "c":return [id==="jour"?"매일 단어":id,o?o.t:""];case "t":return THNAME[id]||[id,""];
-  case "f":return o?[o.ko,o.t]:[id,""];case "s":case "p":return o?[o.ko,o.t]:[id,""];case "u":return [o&&o.ti||"제목 없음",o&&o.ti?"Ma note":"Note sans titre"]}return [id,""]}
+  case "f":return o?[o.ko,o.t]:[id,""];case "s":case "p":return o?[o.ko,o.t]:[id,""];case "u":return [o&&o.ti||"제목 없음",o&&o.ti?"Ma note":"Note sans titre"];case "h":return o?[o.h+" "+o.r,o.m]:[id,""]}return [id,""]}
 function gColor(n){if(n.type==="m"){const c=CARDIDX[n.key.slice(2)];return GCOL[c?lvKey(c):"A1"]||GCOL.A1}return GCOL[n.type]}
 function gInit(){
   if(GN)return;GN=[];
   for(let i=0;i<GR.k.length;i++){const key=GR.k[i];GI[key]=i;GN.push({key,type:key[0],x:GR.xy[2*i],y:GR.xy[2*i+1],adj:new Set()})}
   for(let i=0;i<GR.e.length;i+=2){GN[GR.e[i]].adj.add(GR.e[i+1]);GN[GR.e[i+1]].adj.add(GR.e[i])}
+  for(const x of (typeof HJ!=="undefined"?HJ:[])){const ids=x.w.map(k=>GI["m:"+k]).filter(i=>i!=null);if(!ids.length)continue;const key="h:"+x.h,me=GN.length;
+    GI[key]=me;GN.push({key,type:"h",x:ids.reduce((s,i)=>s+GN[i].x,0)/ids.length,y:ids.reduce((s,i)=>s+GN[i].y,0)/ids.length,adj:new Set(ids)});for(const i of ids)GN[i].adj.add(me)}
   GBASE=GN.length;GN.forEach(n=>n.base=new Set(n.adj));
 }
 // Noms reconnus entre [[ ]] : mot, n° de cours, thème, synthèse, histoire, émission, titre d'une de mes notes.
@@ -94,7 +96,7 @@ function vCerveau(){
   gUser();const st=gStats(),N=S.notes||{};
   const mine=Object.keys(N).filter(k=>k[0]==="u"&&!N[k].del).sort((a,b)=>N[b].u-N[a].u);
   const attached=Object.keys(N).filter(k=>k[0]!=="u"&&!N[k].del&&N[k].t&&N[k].t.trim()&&GI[k]!=null);
-  const leg=[["m","단어 · Mots"],["c","수업 · Cours"],["t","주제 · Thèmes"],["f","정리 · Synthèses"],["s","이야기 · Histoires"],["p","방송 · Émissions"],["u","메모 · Mes notes"]];
+  const leg=[["m","단어 · Mots"],["c","수업 · Cours"],["t","주제 · Thèmes"],["f","정리 · Synthèses"],["s","이야기 · Histoires"],["p","방송 · Émissions"],["h","한자 · Hanja"],["u","메모 · Mes notes"]];
   $("#view").innerHTML=`<h1>뇌 · Cerveau<small>Tout ce que tu apprends, relié comme des neurones : ${st.n} éléments et ${st.e} liens. Les mots que tu connais s'allument.</small></h1>
   <div class="kpis"><div class="kpi"><b>${st.on}</b><span><i class="ko">켜진 뉴런</i> mots allumés sur ${st.m}</span></div><div class="kpi"><b>${st.ma}</b><span><i class="ko">튼튼한 뉴런</i> mots ancrés (3 semaines et plus)</span></div><div class="kpi"><b>${mine.length+attached.length}</b><span><i class="ko">내 메모</i> notes écrites</span></div></div>
   <div class="gsearch"><input id="gq" type="search" placeholder="찾기 · Chercher un mot, un cours, une histoire…" autocomplete="off"><div id="gres" class="gres"></div></div>
@@ -132,12 +134,12 @@ function gLocal(center){
   return {ids,pos};
 }
 function gOpenBtn(n){const id=n.key.slice(2);
-  return n.type==="c"?`<button class="btn" data-course="${esc(id)}">수업 열기 · Ouvrir le cours</button>`:n.type==="t"?`<button class="btn" data-th="${esc(id)}">카드 보기 · Voir les cartes</button>`:n.type==="f"?`<button class="btn" data-fiche="${esc(id)}">정리 열기 · Ouvrir la synthèse</button>`:n.type==="s"?`<button class="btn" data-story="${esc(id)}">읽기 · Lire l'histoire</button>`:n.type==="p"?`<button class="btn" data-pod="${esc(id)}">듣기 · Écouter l'émission</button>`:""}
+  return n.type==="c"?`<button class="btn" data-course="${esc(id)}">수업 열기 · Ouvrir le cours</button>`:n.type==="t"?`<button class="btn" data-th="${esc(id)}">카드 보기 · Voir les cartes</button>`:n.type==="f"?`<button class="btn" data-fiche="${esc(id)}">정리 열기 · Ouvrir la synthèse</button>`:n.type==="s"?`<button class="btn" data-story="${esc(id)}">읽기 · Lire l'histoire</button>`:n.type==="p"?`<button class="btn" data-pod="${esc(id)}">듣기 · Écouter l'émission</button>`:n.type==="h"?`<button class="btn" data-pv="hanja">한자 · Tous les hanja</button>`:""}
 function vNode(s){
   gUser();const i=GI[s.key];if(i==null){$("#view").innerHTML=`${backBtn()}<h1>뇌 · Cerveau<small>Cet élément n'existe plus.</small></h1>`;return}
   const n=GN[i],[a,b]=gLabel(n),N=(S.notes||{})[s.key]||{},o=gObj(n);
   const groups={};for(const j of n.adj)(groups[GN[j].type]=groups[GN[j].type]||[]).push(j);
-  const order=["c","t","f","s","p","u","m"];
+  const order=["c","t","f","h","s","p","u","m"];
   $("#view").innerHTML=`${backBtn()}<h1><span class="gtag" style="--c:${gColor(n)}">${GT[n.type][0]} · ${GT[n.type][1]}</span>${n.type==="u"?`<input id="gti" class="gti ko" value="${esc(N.ti||"")}" placeholder="제목 · Titre de la note">`:`<span class="ko">${esc(a)}</span>`}<small>${n.type==="u"?"Note libre, reliée au reste par ses [[liens]]":esc(b)}</small></h1>
   ${n.type==="m"&&o?`<div class="rows"><div class="w open">${cardBody(o)}</div></div>`:""}
   ${gOpenBtn(n)?`<div class="actions">${gOpenBtn(n)}</div>`:""}
@@ -182,9 +184,9 @@ function zip(files){const enc=new TextEncoder(),parts=[],cen=[];let off=0;
 function obsidian(){
   gUser();const msg=$("#obsmsg");if(msg)msg.textContent="Préparation…";
   const safe=s=>String(s).replace(/[\\\/:*?"<>|#^\[\]]/g," ").replace(/\s+/g," ").trim().slice(0,80)||"sans titre";
-  const DIR={m:"단어 Mots",c:"수업 Cours",t:"주제 Thèmes",f:"정리 Synthèses",s:"이야기 Histoires",p:"방송 Émissions",u:"메모 Mes notes"};
+  const DIR={m:"단어 Mots",c:"수업 Cours",t:"주제 Thèmes",f:"정리 Synthèses",s:"이야기 Histoires",p:"방송 Émissions",h:"한자 Hanja",u:"메모 Mes notes"};
   const used={},fname=[];
-  GN.forEach((n,i)=>{const [a,b]=gLabel(n);let nm=n.type==="m"?safe(a):n.type==="c"?safe(n.key==="c:jour"?"매일 단어 (Mots du jour)":n.key.slice(2)):n.type==="t"?safe("주제 "+a+" ("+b+")"):n.type==="f"?safe("정리 "+a+" ("+b+")"):n.type==="s"?safe("이야기 "+a):n.type==="p"?safe("방송 "+a):safe(a||"메모");
+  GN.forEach((n,i)=>{const [a,b]=gLabel(n);let nm=n.type==="m"?safe(a):n.type==="c"?safe(n.key==="c:jour"?"매일 단어 (Mots du jour)":n.key.slice(2)):n.type==="t"?safe("주제 "+a+" ("+b+")"):n.type==="f"?safe("정리 "+a+" ("+b+")"):n.type==="s"?safe("이야기 "+a):n.type==="p"?safe("방송 "+a):n.type==="h"?safe("한자 "+a):safe(a||"메모");
     while(used[nm.toLowerCase()])nm+=" ·";used[nm.toLowerCase()]=1;fname[i]=nm});
   const lk=i=>"[["+fname[i]+"]]";const N=S.notes||{};
   const fix=t=>String(t||"").replace(/\[\[([^\]]+)\]\]/g,(m,x)=>{const j=gFind(x.split("|")[0]);return j>=0?lk(j):m});
@@ -198,7 +200,7 @@ function obsidian(){
       if(n.type==="u"&&o)L.push(fix(o.t),"")}
     const nt=N[n.key];if(n.type!=="u"&&nt&&!nt.del&&nt.t)L.push("## 내 메모 · Ma note","",fix(nt.t),"");
     const g={};for(const j of n.adj)(g[GN[j].type]=g[GN[j].type]||[]).push(j);
-    if(n.adj.size){L.push("## 연결 · Liens","");for(const t of ["c","t","f","s","p","u","m"])if(g[t])L.push("- "+GT[t][1]+" : "+g[t].map(lk).join(" · "));L.push("")}
+    if(n.adj.size){L.push("## 연결 · Liens","");for(const t of ["c","t","f","h","s","p","u","m"])if(g[t])L.push("- "+GT[t][1]+" : "+g[t].map(lk).join(" · "));L.push("")}
     files.push([`한국어 노트/${DIR[n.type]}/${fname[i]}.md`,L.join("\n")])});
   files.push(["한국어 노트/뇌 Cerveau.md",["# 뇌 · Cerveau","","Exporté depuis 한국어 노트 le "+new Date().toLocaleDateString("fr-FR")+".","","Ouvre la vue graphique d'Obsidian pour voir le réseau. Dossiers : "+Object.values(DIR).join(", ")+".","","## Cours","",GN.map((n,i)=>n.type==="c"?"- "+lk(i):"").filter(Boolean).join("\n"),"","## Thèmes","",GN.map((n,i)=>n.type==="t"?"- "+lk(i):"").filter(Boolean).join("\n")].join("\n")]);
   const url=URL.createObjectURL(zip(files)),el=document.createElement("a");el.href=url;el.download="한국어-노트-obsidian.zip";document.body.appendChild(el);el.click();el.remove();setTimeout(()=>URL.revokeObjectURL(url),6e4);
