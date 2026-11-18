@@ -65,13 +65,13 @@ function vDictee(s){
     ${canPlay?`<div class="actions"><button class="btn big" data-act="dstart">시작 · Commencer (10)</button></div>`:`<p class="count">Le son n'est pas disponible sur ce navigateur.</p>`}`;return}
   if(s.i>=s.items.length){const avg=Math.round(s.res.reduce((a,b)=>a+b,0)/s.res.length);
     $("#view").innerHTML=`${backBtn()}<h1 class="fin">${avg>=85?"잘했어요! · Très bien !":avg>=60?"좋아요 · Pas mal":"조금 더 · Encore un effort"}<small>Moyenne : ${avg} % sur ${s.res.length} ${s.mode==="mot"?"expressions":"phrases"}.</small></h1>
-    <div class="rows">${s.items.map((c,i)=>`<div class="drow"><b class="${s.res[i]>=90?"ok":"ko2"}">${s.res[i]} %</b><span class="ko">${esc(dText(s,c))}</span><small>${esc(s.mode==="mot"?(c.f||c.e):(c.z||c.y||""))}</small></div>`).join("")}</div>
+    <div class="rows">${s.items.map((c,i)=>`<div class="drow"><b class="${s.res[i]>=90?"ok":"ko2"}">${s.res[i]} %</b><span class="ko">${esc(dText(s,c))}</span><small>${esc(s.mode==="mot"?biT(c):[c.z,c.y].filter(Boolean).join(" · "))}</small></div>`).join("")}</div>
     <div class="actions"><button class="btn" data-act="dagain">다시 · Nouvelle série</button><button class="btn ghost" data-act="back">Revenir</button></div>`;return}
   const c=s.items[s.i],t=dText(s,c),done=s.chk!=null;
   let res="";if(done){const A=hang(t),B=hang(s.ans),L=lcs(A,B);res=`<div class="dres"><div class="dsc ${s.chk>=90?"ok":"ko2"}">${s.chk} %</div>
     <div><small>정답 · La bonne réponse</small><p class="ko big2">${markText(t,L.ma)}</p></div>
     <div><small>내 답 · Ta réponse</small><p class="ko">${s.ans.trim()?markText(s.ans,L.mb):"—"}</p></div>
-    <p class="count">${esc(s.mode==="mot"?(c.f||c.e):(c.z||c.y||""))}</p></div>`}
+    <p class="count">${esc(s.mode==="mot"?biT(c):[c.z,c.y].filter(Boolean).join(" · "))}</p></div>`}
   $("#view").innerHTML=`${backBtn()}<div class="dict"><div class="meta"><span class="qc">${s.i+1} / ${s.items.length}</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button></div>
   <div class="bar sess"><i style="width:${100*s.i/s.items.length}%"></i></div>
   <button class="earbtn" data-act="dplay" aria-label="Écouter">🔊</button><p class="hint center">듣고 써 보세요 · Écoute et écris</p>
@@ -154,7 +154,7 @@ const HANJA=[
 const HJ=HANJA.map(([h,r,m,w])=>({h,r,m,w:w.split(" ").filter(k=>CARDIDX[k])}));
 function vHanja(s){
   $("#view").innerHTML=`${backBtn()}<h1>한자 · Hanja<small>Environ 60 % du vocabulaire coréen vient du chinois. Une syllabe comme 학 (學, étudier) se retrouve dans 학생, 학교, 방학… La reconnaître aide à deviner un mot nouveau.</small></h1>
-  <div class="hgrid">${HJ.filter(x=>x.w.length).map((x,i)=>`<button class="hcard${s.open===i?" open":""}" data-hj="${i}"><b>${x.h}</b><span class="ko">${x.r}</span><em>${x.m}</em><small>${x.w.length} mots</small></button>${s.open===i?`<div class="hwords">${x.w.map(k=>{const c=CARDIDX[k];return `<button class="gchip" data-node="m:${esc(k)}" style="--c:${GCOL[lvKey(c)]||GCOL.A1}"><b class="ko">${esc(k)}</b><span>${esc((c.f||c.e).slice(0,28))}</span></button>`}).join("")}</div>`:""}`).join("")}</div>
+  <div class="hgrid">${HJ.filter(x=>x.w.length).map((x,i)=>`<button class="hcard${s.open===i?" open":""}" data-hj="${i}"><b>${x.h}</b><span class="ko">${x.r}</span><em>${x.m}</em><small>${x.w.length} mots</small></button>${s.open===i?`<div class="hwords">${x.w.map(k=>{const c=CARDIDX[k];return `<button class="gchip" data-node="m:${esc(k)}" style="--c:${GCOL[lvKey(c)]||GCOL.A1}"><b class="ko">${esc(k)}</b><span>${esc(biT(c).slice(0,40))}</span></button>`}).join("")}</div>`:""}`).join("")}</div>
   <p class="count">Les mêmes liens apparaissent dans 뇌 · Cerveau (points dorés). Attention aux homonymes : 공 de 공원 (公, public) n'est pas celui de 공항 (空, vide).</p>`;
 }
 

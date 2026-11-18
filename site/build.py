@@ -195,7 +195,7 @@ def parse_stories(path):
         if tag=='=':
             cur=dict(id=rest[0],l=rest[1],serie=rest[2],serieKo=rest[3],ep=int(rest[4]),t=rest[5],ko=rest[6],lines=[],voc=[],gram=[],q=[]); out.append(cur)
         elif tag=='@': assert len(rest)==4,l; cur['lines'].append(rest)
-        elif tag=='v': assert len(rest)==2,l; cur['voc'].append(rest)
+        elif tag=='v': assert len(rest) in (2,3),l; cur['voc'].append(rest)
         elif tag=='g': assert len(rest)==2,l; cur['gram'].append(rest)
         elif tag=='q': assert len(rest)==4,l; cur['q'].append(rest)
     return out
@@ -228,7 +228,7 @@ for pd in PODS:
     f=afile(pd['v'],'pod:'+pd['id']); seen_a.add(f); todo.append([pd['v'],' '.join(l[0] for l in pd['lines']),f])
 for st in SERIES:
     for spk,ko,fr,en in st['lines']: want(SPK.get(spk,'hyunsu'),ko,ko)
-    for ko,fr in st['voc']:
+    for ko,fr,*_ in st['voc']:
         if spoken(ko): want('hyunsu',ko,spoken(ko))
     for q in st['q']:
         for x in q:
