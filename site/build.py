@@ -250,6 +250,7 @@ import graph as G
 _cjs=open(os.path.join(HERE,'content.js'),encoding='utf-8').read()
 GRAPH=G.build(cards,cl,G.parse_themes(t),G.parse_fiches(_cjs),SERIES+old_short,PODS)
 print('réseau : %d nœuds, %d liens'%(len(GRAPH['k']),len(GRAPH['e'])//2))
+t=t.replace('/*PRATIQUE*/',open(os.path.join(HERE,'pratique.js'),encoding='utf-8').read().replace('</','<\\/'))
 t=t.replace('/*BRAIN*/',open(os.path.join(HERE,'brain.js'),encoding='utf-8').read().replace('</','<\\/'))
 t=t.replace('/*GRAPH*/',json.dumps(GRAPH,ensure_ascii=False,separators=(',',':')).replace('</','<\\/'))
 t=t.replace('<!--PWA-->','' if args.single else PWA).replace('/*DATA*/',data).replace('/*CONTENT*/',content).replace('/*BUILD*/',build).replace('/*BUILDID*/',build_id).replace('/*HASAUDIO*/',HAS_AUDIO).replace('/*PODCASTS*/',json.dumps(PODS,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*STORIES*/',json.dumps(SERIES+old_short,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('/*OFFLINE*/','false' if args.single else 'true')
