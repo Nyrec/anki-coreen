@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+의논하다	to discuss, to consult (with someone)<br><i>discuter de, se concerter sur</i>	이 문제는 팀장님하고 먼저 의논해 볼게요.<br>I'll discuss this issue with the team leader first.<br><i>Je vais d'abord en discuter avec le chef d'équipe.</i>	[uinonhada] Hanja 議論. Pattern: N과/하고 (N을/를) 의논하다. Similar to 상의하다; 토론하다 is a formal debate.	quotidien::2026-11-19 동사 niveau::B1
+안타깝다	to be a pity, unfortunate; to feel sorry<br><i>regrettable, dommage ; être désolé (pour quelqu'un)</i>	공연이 취소돼서 정말 안타까워요.<br>It's a real pity the show was cancelled.<br><i>C'est vraiment dommage que le spectacle ait été annulé.</i>	[antakkapda] ㅂ-irregular: 안타까워요, 안타까운. Used for sympathy or regret about a situation; 아쉽다 is more about something you missed out on.	quotidien::2026-11-19 형용사 niveau::B1
+우연히	by chance, coincidentally<br><i>par hasard</i>	어제 지하철에서 옛날 친구를 우연히 만났어요.<br>Yesterday I ran into an old friend on the subway by chance.<br><i>Hier, j'ai croisé par hasard un vieil ami dans le métro.</i>	[uyeonhi] From 우연 (偶然, chance) + -히. Very common with 만나다, 보다, 알게 되다. Opposite idea: 일부러 (on purpose).	quotidien::2026-11-19 부사 niveau::A2
+신호등	traffic light<br><i>feu de signalisation</i>	신호등이 초록색으로 바뀌면 건너세요.<br>Cross when the traffic light turns green.<br><i>Traversez quand le feu passe au vert.</i>	[sinhodeung] Hanja 信號燈: signal (信號) + lamp (燈). 신호 alone = signal; 신호를 지키다 = to obey traffic signals.	quotidien::2026-11-19 명사 niveau::A2
+눈을 붙이다	to take a short nap, to get some shut-eye<br><i>faire un petit somme, fermer l'œil un moment</i>	점심 먹고 잠깐 눈을 붙였어요.<br>I got a bit of shut-eye after lunch.<br><i>Après le déjeuner, j'ai fait un petit somme.</i>	[nuneul buchida] Literally 'to stick the eyes together'. 붙이다 is pronounced [부치다]. Often with 잠깐/잠시; 한숨도 못 자다 = not sleep a wink.	quotidien::2026-11-19 표현 niveau::B1
