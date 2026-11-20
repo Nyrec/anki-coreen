@@ -464,8 +464,8 @@ const DAY=864e5;
 const today=()=>Math.floor((Date.now()-new Date().getTimezoneOffset()*6e4)/DAY);
 const dstr=n=>new Date(n*DAY).toISOString().slice(0,10);
 // S.c[mot]=[échéance (n° de jour), intervalle en jours, facilité, révisions, oublis] ; S.log[date]=[révisions, oublis, ms, nouvelles]
-let S={c:{},log:{},cfg:{nw:40,auto:true}};
-try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:40,auto:true},S.cfg||{});if(!S.cfg.m40){S.cfg.nw=Math.max(S.cfg.nw||0,40);S.cfg.m40=1}}catch(e){}
+let S={c:{},log:{},cfg:{nw:30,auto:true}};
+try{const r=JSON.parse(localStorage.getItem("hgn-srs")||"null");if(r&&r.c){S=Object.assign(S,r)}S.cfg=Object.assign({nw:30,auto:true},S.cfg||{});if(!S.cfg.m30){S.cfg.nw=30;S.cfg.m30=1}}catch(e){}
 try{const old=JSON.parse(localStorage.getItem("hgn-known")||"[]");if(old.length&&!S.mig){old.forEach(k=>{if(!S.c[k])S.c[k]=[today()+1+Math.floor(Math.random()*30),30,2.5,1,0]});S.mig=1}}catch(e){}
 let inSync=false,syT=0;
 let syDirty=true,syEtag=null,sySha=null;
@@ -899,7 +899,7 @@ document.addEventListener("click",e=>{
     if(act==="auto"){S.cfg.auto=!S.cfg.auto;save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="export"){const code=btoa(unescape(encodeURIComponent(JSON.stringify(S))));const done=m=>{$("#xfer").innerHTML=`<p class="count">${m}</p><textarea class="code" readonly>${code}</textarea>`};try{navigator.clipboard.writeText(code).then(()=>done("Code copié. Colle-le sur l'autre appareil avec « Coller un code »."),()=>done("Copie ce code à la main :"))}catch(e){done("Copie ce code à la main :")}return}
     if(act==="import"){$("#xfer").innerHTML=`<textarea class="code" id="incode" placeholder="Colle ici le code copié sur l'autre appareil"></textarea><button class="btn" data-act="import-ok">Remplacer la progression de cet appareil</button>`;return}
-    if(act==="import-ok"){try{const r=JSON.parse(decodeURIComponent(escape(atob($("#incode").value.trim()))));if(!r||!r.c)throw 0;S=r;S.cfg=Object.assign({nw:20,auto:true},S.cfg||{});save();render()}catch(e){$("#xfer").insertAdjacentHTML("beforeend",'<p class="count">Ce code n\'est pas valide. Recopie-le en entier depuis l\'autre appareil.</p>')}return}
+    if(act==="import-ok"){try{const r=JSON.parse(decodeURIComponent(escape(atob($("#incode").value.trim()))));if(!r||!r.c)throw 0;S=r;S.cfg=Object.assign({nw:30,auto:true},S.cfg||{});save();render()}catch(e){$("#xfer").insertAdjacentHTML("beforeend",'<p class="count">Ce code n\'est pas valide. Recopie-le en entier depuis l\'autre appareil.</p>')}return}
     if(act==="all-quiz"){go({v:"quiz",cards:CARDS});return}
     if(act==="review"){go({v:"deck",kind:"review"});return}
     if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
