@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+바래다주다	to walk/see someone home, to see someone off<br><i>raccompagner (qqn chez lui / jusqu'à un endroit)</i>	늦었으니까 집까지 바래다줄게요.<br>It's late, so I'll walk you home.<br><i>Il est tard, je vais te raccompagner jusque chez toi.</i>	[baraedajuda] Built from 바래다 (to see off) + -아/어 주다 (doing something for someone). Usually with 까지: 역까지 바래다주다. Don't confuse with 바라다 (to hope).	quotidien::2026-11-20 동사 niveau::B1
+거절하다	to refuse, to turn down<br><i>refuser, décliner</i>	회식 초대를 정중하게 거절했어요.<br>I politely turned down the invitation to the team dinner.<br><i>J'ai poliment décliné l'invitation au dîner d'équipe.</i>	[geojeolhada] Hanja 拒絶. Takes an object with 을/를 (제안을 거절하다). Noun 거절 = refusal; 거절당하다 = to be rejected. Opposite: 받아들이다 / 수락하다.	quotidien::2026-11-20 동사 niveau::B1
+촉박하다	tight, pressing (time/deadline)<br><i>serré, pressant (délai)</i>	마감 시간이 너무 촉박해요.<br>The deadline is way too tight.<br><i>Le délai est vraiment trop serré.</i>	[chokbakhada] Hanja 促迫. Used almost only with time: 시간이/일정이 촉박하다. A more casual near-synonym is 빠듯하다.	quotidien::2026-11-20 형용사 niveau::B2
+그럭저럭	so-so, more or less, getting by<br><i>tant bien que mal, couci-couça, pas trop mal</i>	요즘 어떻게 지내요? 그냥 그럭저럭 지내요.<br>How have you been lately? Just getting by.<br><i>Comment ça va en ce moment ? Ça va, couci-couça.</i>	[geureokjeoreok] Very common answer to 잘 지내요? — paired with 지내다 or 괜찮다. Also means 'somehow, managing to': 그럭저럭 끝냈어요 (I managed to finish it).	quotidien::2026-11-20 부사 niveau::B1
+배려	consideration, thoughtfulness<br><i>attention, égards, prévenance</i>	배려해 주셔서 정말 감사해요.<br>Thank you so much for being so considerate.<br><i>Merci beaucoup pour votre prévenance.</i>	[baeryeo] Hanja 配慮. Verb: 배려하다 (상대방을 배려하다). Common in compliments: 배려심이 많다 = very considerate. A key social value word in Korea.	quotidien::2026-11-20 명사 niveau::B1
