@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+지원하다	to apply (for a job/program)<br><i>postuler, candidater</i>	그 회사 인턴십에 지원했어요.<br>I applied for that company's internship.<br><i>J'ai postulé au stage de cette entreprise.</i>	[jiwonhada] N에 지원하다 (apply to N). Hanja 志願. 지원서 = application form; 지원자 = applicant. Not to be confused with 지원하다 支援 'to support'.	quotidien::2026-11-21 동사 niveau::B1
+예민하다	sensitive, touchy, on edge<br><i>sensible, susceptible, à cran</i>	시험 때문에 요즘 좀 예민해요.<br>I'm a bit on edge these days because of exams.<br><i>Ces temps-ci je suis un peu à cran à cause des examens.</i>	[yeminhada] Hanja 銳敏. Used for mood (irritable) and senses: 소리에 예민하다 = sensitive to noise. Opposite nuance: 둔하다 (dull, insensitive).	quotidien::2026-11-21 형용사 niveau::B1
+갈수록	increasingly, as time goes on<br><i>de plus en plus, avec le temps</i>	한국어가 갈수록 재미있어요.<br>Korean gets more and more interesting.<br><i>Le coréen devient de plus en plus intéressant.</i>	[galsurok] Fixed form of 가다 + -(으)ㄹ수록 ('the more… the more'). Common pattern: 날이 갈수록 = day by day.	quotidien::2026-11-21 부사 niveau::B1
+서랍	drawer<br><i>tiroir</i>	열쇠는 책상 서랍에 있어요.<br>The keys are in the desk drawer.<br><i>Les clés sont dans le tiroir du bureau.</i>	[seorap] Pronounced [서랍]. Verbs: 서랍을 열다/닫다 (open/close the drawer); 서랍장 = chest of drawers.	quotidien::2026-11-21 명사 niveau::A2
+눈이 부시다	to be dazzling, blinding (light)<br><i>être éblouissant, éblouir</i>	햇빛 때문에 눈이 부셔요.<br>The sunlight is dazzling.<br><i>Le soleil m'éblouit.</i>	[nuni busida] Also written as one adjective 눈부시다. Figurative: 눈부신 발전 = remarkable progress. 부시다 conjugates regularly: 부셔요.	quotidien::2026-11-21 표현 niveau::B1
