@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+연장하다	to extend, to prolong<br><i>prolonger, repousser (une échéance)</i>	프로젝트 마감을 일주일 연장했어요.<br>We extended the project deadline by a week.<br><i>On a prolongé la date limite du projet d'une semaine.</i>	[yeonjanghada] Hanja 延長 (extend + long). Takes 을/를: 비자를 연장하다 (extend a visa), 계약을 연장하다. Noun: 연장 (extension); 연장 근무 = overtime.	quotidien::2026-11-22 동사 niveau::B1
+사소하다	trivial, minor, petty<br><i>insignifiant, futile, anodin</i>	사소한 일로 친구랑 다퉜어요.<br>I argued with a friend over something trivial.<br><i>Je me suis disputé avec un ami pour une broutille.</i>	[sasohada] Hanja 些少. Mostly used before a noun: 사소한 실수 (small mistake), 사소한 문제 (minor issue). Opposite idea: 중요하다.	quotidien::2026-11-22 형용사 niveau::B1
+간신히	barely, narrowly, with difficulty<br><i>de justesse, à grand-peine</i>	막차를 간신히 탔어요.<br>I barely caught the last train.<br><i>J'ai attrapé le dernier train de justesse.</i>	[gansinhi] Close to 겨우 but stresses the effort and the narrow margin; usually with a past-tense success: 간신히 통과했어요 (I just scraped through).	quotidien::2026-11-22 부사 niveau::B1
+소지품	belongings, personal items<br><i>affaires personnelles, effets personnels</i>	내리실 때 소지품을 잘 챙기세요.<br>Please take all your belongings when you get off.<br><i>En descendant, n'oubliez pas vos affaires.</i>	[sojipum] Hanja 所持品 (what one holds + item). Very common in subway, bus and airport announcements: 소지품을 확인하세요. Pairs well with 챙기다.	quotidien::2026-11-22 명사 niveau::B1
+그렇다고 해서	that doesn't mean…, even so<br><i>ce n'est pas pour autant que…, pour autant</i>	피곤해요. 그렇다고 해서 쉴 수는 없어요.<br>I'm tired. But that doesn't mean I can rest.<br><i>Je suis fatigué. Mais ce n'est pas pour ça que je peux me reposer.</i>	[geureotago haeseo] Sentence connector from 그렇다 + -다고 해서. Usually followed by a negation such as -(으)ㄹ 수는 없다 or -는 건 아니다. Short spoken form: 그렇다고.	quotidien::2026-11-22 표현 niveau::B1
