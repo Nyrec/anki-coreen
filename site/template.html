@@ -551,9 +551,15 @@ function answer(k,g,ms){
   save();return d===0;
 }
 const JOUR_MAX=2;
+// Mode rattrapage : quand plus de 40 révisions attendent (après un jour sauté…), les nouvelles cartes sont en pause
+// jusqu'à ce que le retard redescende. On peut toujours en demander à la main (« Apprendre 10 nouvelles cartes de plus »).
+const CATCHUP=40;
+function dueAll(){const t=today();let n=0;for(const k in S.c)if(S.c[k][0]<=t&&CARDIDX[k])n++;return n}
+const catchingUp=()=>dueAll()>CATCHUP;
+const newQuota=()=>catchingUp()?0:Math.max(0,S.cfg.nw-logToday()[3]);
 function buildSession(cards,extra,recent){
   const due=shuffle(cards.filter(isDue)).map(c=>c.k);
-  const quota=Math.max(0,S.cfg.nw-logToday()[3])+(extra||0);
+  const quota=newQuota()+(extra||0);
   let fr=cards.filter(isNew);
   if(recent){
     // Priorité aux mots vus en cours : les derniers cours de Jihyeon et de Hyesoo en alternance (J19, C84, J18, C83…),
@@ -577,7 +583,7 @@ function buildSession(cards,extra,recent){
 function stats(cards){
   const t=today();let nw=0,learn=0,young=0,mature=0,due=0;
   for(const c of cards){const s=S.c[c.k];if(!s){nw++;continue}if(s[0]<=t)due++;if(s[1]===0)learn++;else if(s[1]<21)young++;else mature++}
-  return {nw,learn,young,mature,due,total:cards.length,newToday:Math.min(nw,Math.max(0,S.cfg.nw-logToday()[3]))};
+  return {nw,learn,young,mature,due,total:cards.length,newToday:Math.min(nw,newQuota())};
 }
 function streak(){let n=0,d=today();if(!S.log[dstr(d)]||!S.log[dstr(d)][0])d--;while(S.log[dstr(d)]&&S.log[dstr(d)][0]){n++;d--}return n}
 function fmtTime(ms){const m=Math.round(ms/6e4);return m<60?m+" min":Math.floor(m/60)+" h "+String(m%60).padStart(2,"0")}
@@ -699,7 +705,7 @@ function heat(){
 function pathHTML(st,L,nextS,nextP){const t=today(),N=S.notes||{};
   const steps=[
    ["복습","Revoir les cartes dues",st.due?`${st.due} carte${st.due>1?"s":""} à revoir`:"rien en retard",st.due===0,'data-act="all-study"'],
-   ["새 단어","Apprendre de nouveaux mots",`${L[3]||0} / ${S.cfg.nw} aujourd'hui`,(L[3]||0)>=S.cfg.nw||st.newToday===0,'data-act="all-study"'],
+   ["새 단어","Apprendre de nouveaux mots",catchingUp()&&(L[3]||0)<S.cfg.nw?"en pause : rattrape d'abord tes révisions":`${L[3]||0} / ${S.cfg.nw} aujourd'hui`,(L[3]||0)>=S.cfg.nw||st.newToday===0,'data-act="all-study"'],
    ["읽기","Lire une histoire en l'écoutant",esc(nextS.ko),Object.values(S.read||{}).includes(t),`data-story="${nextS.id}"`],
    ["듣기","Écouter une émission sans texte",esc(nextP.ko),Object.values(S.heard||{}).includes(t),`data-pod="${nextP.id}"`],
    ["쓰기","Écrire 3 phrases avec les mots du jour","dans ton journal de cours",!!(S.jr&&S.jr[dstr(t)]&&!S.jr[dstr(t)].del&&S.jr[dstr(t)].s.some(r=>r.m||r.c)),'data-act="journal-today"']];
@@ -726,7 +732,7 @@ function vHome(){
   <header class="top"><h1>안녕하세요, 막상스 씨!<small>Bonjour, Maxence !</small><small class="ko" style="color:var(--ink);font-size:16px;margin-top:8px">${new Date().toLocaleDateString("ko-KR",{month:"long",day:"numeric",weekday:"long"})} · ${cheer}</small><small>${new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})} · ${cheerFr}</small></h1></header>
   <section class="hero">
     <div class="herotop"><svg class="ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="${R}" class="rbg"/><circle cx="40" cy="40" r="${R}" class="rfg" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle">${Math.round(pct*100)}%</text></svg>
-    <div class="heroh"><span class="ko">${!todo&&L[0]?"오늘 목표 달성 ✓":"오늘의 목표"}</span><b>${todo?`Objectif du jour : encore ${todo} carte${todo>1?"s":""}`:(L[0]?"Objectif du jour atteint ✓":"Objectif du jour : rien pour l'instant")}</b><small class="count" style="display:block;margin:2px 0 6px">복습 전부 + 새 단어 ${S.cfg.nw}개 · Toutes les révisions dues + ${S.cfg.nw} nouveaux mots</small><div class="week">${wk}</div></div></div>
+    <div class="heroh"><span class="ko">${!todo&&L[0]?"오늘 목표 달성 ✓":"오늘의 목표"}</span><b>${todo?`Objectif du jour : encore ${todo} carte${todo>1?"s":""}`:(L[0]?"Objectif du jour atteint ✓":"Objectif du jour : rien pour l'instant")}</b><small class="count" style="display:block;margin:2px 0 6px">${catchingUp()?`따라잡기 · Mode rattrapage : ${dueAll()} révisions t'attendent, les nouveaux mots sont en pause jusqu'à ce qu'il en reste ${CATCHUP} ou moins.`:`복습 전부 + 새 단어 ${S.cfg.nw}개 · Toutes les révisions dues + ${S.cfg.nw} nouveaux mots`}</small><div class="week">${wk}</div></div></div>
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
   </section>
@@ -833,7 +839,7 @@ function vStudy(s){
   if(!s.queue.length){
     if(s.done&&!s.synced&&OFFLINE&&SY){s.synced=1;doSync(true)}
     $("#view").innerHTML=`${backBtn()}<h1 class="fin">${s.done?"수고했어요! · Bien travaillé !":"없어요 · Il n'y en a pas"}<small>${s.done?`${s.done} carte${s.done>1?"s":""} révisée${s.done>1?"s":""} dans cette série.`:"Aucune carte à réviser ici pour aujourd'hui."}</small></h1>
-    <p class="intro">${left.nw?`Il reste ${left.nw} nouvelles cartes dans cette liste. La limite du jour est de ${S.cfg.nw}.`:"Toutes les cartes de cette liste ont déjà été vues."}</p>
+    <p class="intro">${left.nw?`Il reste ${left.nw} nouvelles cartes dans cette liste. ${catchingUp()?`Mode rattrapage : nouvelles cartes en pause tant que plus de ${CATCHUP} révisions t'attendent (${dueAll()} maintenant).`:`La limite du jour est de ${S.cfg.nw}.`}`:"Toutes les cartes de cette liste ont déjà été vues."}</p>
     <div class="actions">${left.nw?`<button class="btn" data-act="more-new">Apprendre 10 nouvelles cartes de plus</button>`:""}<button class="btn ghost" data-act="back">Revenir</button></div>`;return}
   const c=CARDIDX[s.queue[0]],cs=S.c[c.k];
   // Sens automatique : reconnaissance d'abord, puis production (traduction → coréen) une fois sur deux quand la carte est acquise.
