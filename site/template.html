@@ -677,10 +677,9 @@ function vHome(){
   <header class="top"><h1>안녕하세요, 막상스 씨!<small>Bonjour, Maxence !</small><small class="ko" style="color:var(--ink);font-size:16px;margin-top:8px">${new Date().toLocaleDateString("ko-KR",{month:"long",day:"numeric",weekday:"long"})} · ${cheer}</small><small>${new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})} · ${cheerFr}</small></h1></header>
   <section class="hero">
     <div class="herotop"><svg class="ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="${R}" class="rbg"/><circle cx="40" cy="40" r="${R}" class="rfg" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}" transform="rotate(-90 40 40)"/><text x="40" y="46" text-anchor="middle">${Math.round(pct*100)}%</text></svg>
-    <div class="heroh"><span class="ko">${!todo&&L[0]?"오늘 목표 달성 ✓":"오늘의 목표"}</span><b>${todo?`Objectif du jour : encore ${todo} carte${todo>1?"s":""}`:(L[0]?"Objectif du jour atteint ✓":"Objectif du jour : rien pour l'instant")}</b><small class="count" style="display:block;margin:2px 0 6px">복습 전부 + 새 단어 ${S.cfg.nw}개 · Toutes les révisions dues + ${S.cfg.nw} nouveaux mots${L[0]+todo?` · ${L[0]} / ${L[0]+todo} faites`:""}</small><div class="week">${wk}</div></div></div>
+    <div class="heroh"><span class="ko">${!todo&&L[0]?"오늘 목표 달성 ✓":"오늘의 목표"}</span><b>${todo?`Objectif du jour : encore ${todo} carte${todo>1?"s":""}`:(L[0]?"Objectif du jour atteint ✓":"Objectif du jour : rien pour l'instant")}</b><small class="count" style="display:block;margin:2px 0 6px">복습 전부 + 새 단어 ${S.cfg.nw}개 · Toutes les révisions dues + ${S.cfg.nw} nouveaux mots</small><div class="week">${wk}</div></div></div>
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
-    <button class="btn ghost" data-pv="exam" style="width:100%;margin-top:8px">모의고사 · Test blanc sur 10 cartes apprises</button>
   </section>
   ${pathHTML(st,L,nextS,nextP)}
   ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>
@@ -694,7 +693,6 @@ function vHome(){
     <div class="kpi"><b>${PODCASTS.filter(x=>isHeard(x.id)).length} / ${PODCASTS.length}</b><span><i class="ko">들은 방송</i> émissions écoutées</span></div>
   </section>
   <section><h2><span class="ko">오늘의 표현</span> · L'expression du jour</h2><div class="wod"><div class="ko big">${esc(wod.k)}</div><div>${biH(wod)}</div><div class="ko ex">${esc(wod.x)}</div><div class="count">${esc(wod.z||wod.y||"")}</div><div class="meta">${canPlay?`<button class="mini" data-say="${esc(wod.x)}">문장 듣기 · Écouter la phrase</button>`:""}<button class="mini" data-course="${wod.c}">${courseLabel(wod.c)}</button></div></div></section>
-  <section class="short"><button class="sc c1" data-story="${nextS.id}"><i class="ko">이야기</i><b class="ko">${esc(nextS.ko)}</b><span>${isRead(nextS.id)?"Relire":"Prochaine histoire"} · ${nextS.l}</span></button><button class="sc c2" data-pod="${nextP.id}"><i class="ko">듣기</i><b class="ko">${esc(nextP.ko)}</b><span>${isHeard(nextP.id)?"Réécouter":"Prochain épisode"} · ≈ ${podDur(nextP)} min</span></button><a class="sc c3" href="${DEPOT}" target="_blank" rel="noopener"><i class="ko">PDF 보내기</i><b>Envoyer un PDF</b><span>Le PDF de Hyesoo devient des cartes la nuit suivante</span></a></section>
   <form class="search" id="sf"><input id="q" type="search" placeholder="Chercher un mot en coréen, français ou anglais" autocomplete="off"><button class="btn" type="submit">검색 · Chercher</button></form>
   <section><h2><span class="ko">내 카드</span> · Mes cartes</h2><div class="panel">
     <div class="stack">${seg(st.mature,"var(--a1)")}${seg(st.young,"var(--jjok)")}${seg(st.learn,"var(--chija)")}${seg(st.nw,"var(--line)")}</div>
@@ -702,10 +700,6 @@ function vHome(){
   </div></section>
   <section><h2><span class="ko">학습 기록</span> · Historique d'étude (17 semaines)</h2><div class="panel">${heat()}<p class="count">${n30} révisions sur 30 jours, ${days30} jour${days30>1?"s":""} étudié${days30>1?"s":""}, ${fmtTime(ms30)} au total.</p></div></section>
   <section class="two-col"><div><h2><span class="ko">지난 복습</span> · Révisions passées (14 jours)</h2><div class="panel">${bars(hist,hl,"var(--jjok)")}</div></div><div><h2><span class="ko">복습 예정</span> · Révisions prévues (14 jours)</h2><div class="panel">${bars(fc,fl,"var(--a1)")}</div></div></section>
-  <section><h2><span class="ko">수준별</span> · Par niveau</h2>${LV.map(([k,name,lab,col])=>{const s=stats(CARDS.filter(c=>lvKey(c)===k)),seen=s.total-s.nw;
-    return `<button class="level" style="--c:${col}" data-level="${k}"><strong>${lab} · ${name}</strong><span>${seen} vues sur ${s.total}, dont ${s.mature} matures${s.due?` · ${s.due} à revoir`:""}</span><div class="bar"><i style="width:${s.total?100*seen/s.total:0}%"></i></div></button>`}).join("")}</section>
-  <section><h2><span class="ko">빠른 복습</span> · Révision rapide</h2><div class="grid">${THEMES[0].items.map(tileHTML).join("")}</div></section>
-  <section><h2><span class="ko">최근 수업</span> · Cours récents</h2><div class="rows">${[lastC,lastJ,courseOf("jour")].filter(Boolean).map(courseRow).join("")}</div></section>
   <section><h2><span class="ko">설정</span> · Réglages</h2><div class="panel">
     <div class="setrow"><span>Nouvelles cartes par jour</span><span class="stepper"><button class="mini" data-act="nw-">−</button><b>${S.cfg.nw}</b><button class="mini" data-act="nw+">+</button></span></div>
     <div class="setrow"><span>기억 목표 · Rétention visée (FSRS)</span><span class="stepper">${[0.85,0.9,0.95].map(r=>`<button class="chip" aria-pressed="${(S.cfg.ret||0.9)===r}" data-ret="${r}">${Math.round(r*100)} %</button>`).join("")}</span></div>
@@ -713,7 +707,6 @@ function vHome(){
     <div class="setrow"><span>복습 중 소리 · Son pendant la révision</span><button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button></div>
     <div class="setrow"><span>Voix au ralenti</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">Lent</button></div>
     ${HAS_AUDIO&&OFFLINE?`<div class="setrow"><span>Garder tout l'audio sur cet appareil pour le hors-ligne</span><button class="mini" data-act="dl">Télécharger l'audio</button></div><p class="count" id="dlmsg">Sans ça, seul l'audio déjà écouté fonctionne hors ligne.</p>`:""}
-    ${OFFLINE?`<div class="setrow"><span>동기화 설정 · Réglages de synchronisation</span><button class="mini" data-act="sync-cfg">${SY?esc(SY.repo):"Configurer"}</button></div>`:""}
     <div class="setrow"><span>Copier ma progression vers un autre appareil</span><span class="stepper"><button class="mini" data-act="export">Copier le code</button><button class="mini" data-act="import">Coller un code</button></span></div>
     <div id="xfer"></div>
     <p class="count">La progression est enregistrée sur cet appareil. Pour la retrouver ailleurs, copie le code ici et colle-le sur l'autre appareil.</p>
@@ -726,7 +719,9 @@ function tileHTML([key,fr,ko]){const cs=themeCards(key),s=stats(cs),seen=s.total
 function courseRow(c){const s=stats(CARDS.filter(x=>x.c===c.id));return `<button class="rowbtn" data-course="${c.id}"><span class="id">${c.id==="jour"?"매일":c.id}</span><span class="tx"><span>${esc(c.t)}</span>${c.s?`<small>${esc(c.s)}</small>`:""}</span><span class="n">${s.due?`<b class="due">${s.due}</b> `:""}${c.n}</span></button>`}
 
 /* ---------- thèmes, cours ---------- */
-function vThemes(){$("#view").innerHTML=`<h1>주제 · Thèmes<small>Le vocabulaire de tes cartes Anki, rangé par thème</small></h1>`+THEMES.map(g=>`<section><h2>${g.g}</h2><div class="grid">${g.items.map(tileHTML).join("")}</div></section>`).join("")}
+function vThemes(){$("#view").innerHTML=`<h1>주제 · Thèmes<small>Tout ton vocabulaire, rangé par niveau et par thème</small></h1>
+  <section><h2><span class="ko">수준별</span> · Par niveau</h2>${LV.map(([k,name,lab,col])=>{const s=stats(CARDS.filter(c=>lvKey(c)===k)),seen=s.total-s.nw;
+    return `<button class="level" style="--c:${col}" data-level="${k}"><strong>${lab} · ${name}</strong><span>${seen} vues sur ${s.total}, dont ${s.mature} matures${s.due?` · ${s.due} à revoir`:""}</span><div class="bar"><i style="width:${s.total?100*seen/s.total:0}%"></i></div></button>`}).join("")}</section>`+THEMES.map(g=>`<section><h2>${g.g}</h2><div class="grid">${g.items.map(tileHTML).join("")}</div></section>`).join("")}
 function vCours(){
   const H=COURSES.filter(c=>c.id[0]==="C"),J=COURSES.filter(c=>c.id[0]==="J"),D=COURSES.filter(c=>c.id==="jour");
   $("#view").innerHTML=`<h1>수업 · Cours<small>Chaque cours, avec sa grammaire puis son vocabulaire</small></h1>

@@ -21,8 +21,7 @@ function vPratique(){
    ["dictee","받아쓰기","Dictée","Écoute une phrase de tes cartes et écris-la en hangeul.",S.dict&&S.dict.n?`${S.dict.n} phrases · ${Math.round(S.dict.sum/S.dict.n)} % en moyenne`:"10 phrases par série","var(--blu)"],
    ["irreg","불규칙","Verbes irréguliers","ㅂ, ㄷ, ㄹ, 르, ㅎ, ㅅ, 으 : conjugue jusqu'à ce que ce soit automatique.",`${IRR.length} verbes`,"var(--chija)"],
    ["hanja","한자","Hanja","Les syllabes sino-coréennes qui relient tes mots entre eux.",`${HANJA.length} caractères`,"var(--grn)"],
-   ["fiches","정리","Synthèses","Les tableaux à relire en deux minutes avant un cours.",`${FICHES.length} fiches`,"var(--vio)"],
-   ["histoires","따라 하기","Shadowing","Dans chaque histoire : 🎙 enregistre-toi après une phrase et compare avec l'original.","dans 이야기","var(--jjok)"]];
+   ["fiches","정리","Synthèses","Les tableaux à relire en deux minutes avant un cours.",`${FICHES.length} fiches`,"var(--vio)"]];
   $("#view").innerHTML=`<h1>연습 · Pratique<small>Des exercices courts pour écouter, écrire et parler, en plus des révisions.</small></h1>
   <div class="ptiles">${tiles.map(([v,ko,fr,d,st,c])=>`<button class="ptile" data-pv="${v}" style="--pc:${c}"><b class="ko">${ko}</b><span class="pt">${fr}</span><span class="pd">${d}</span><em>${st}</em></button>`).join("")}</div>`;
 }
