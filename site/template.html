@@ -221,7 +221,8 @@ textarea.code{width:100%;min-height:70px;font:12px ui-monospace,monospace;border
 .tile .bar{margin-top:6px;height:4px}.tile{border-radius:14px}
 .rowbtn .n b.due{color:var(--a1);font-weight:600}
 .flash{position:relative}.flash .tag{font-size:12px;color:var(--muted)}.flash hr{border:0;border-top:1px solid var(--line);width:60%;margin:4px auto}
-.flash .ans small{display:block;font-size:14px;color:var(--muted)}.flash .exx{font-size:18px}
+.tokwarn{border:1px solid var(--red);margin:12px 0}.tokwarn b{color:var(--red)}
+.flash .ans small{display:block;font-size:14px;color:var(--muted)}.flash .cz{font-size:22px;line-height:1.6;margin:12px 0 6px}.flash .cz .blank{color:var(--jjok);letter-spacing:-2px}.flash .cz mark{background:color-mix(in srgb,var(--chija) 35%,transparent);color:inherit;border-radius:4px;padding:0 2px}.grade.sugg{box-shadow:0 0 0 2px var(--a1);border-color:var(--a1)}.grade.g1.sugg{box-shadow:0 0 0 2px var(--red);border-color:var(--red)}.flash .exx{font-size:18px}
 .actions.center{justify-content:center}
 .grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .grade{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 4px 12px;font-weight:600;font-size:14px;display:flex;flex-direction:column;align-items:center;gap:2px;border-bottom-width:4px}
@@ -477,14 +478,29 @@ const isNew=c=>!S.c[c.k];
 const isDue=c=>!!S.c[c.k]&&S.c[c.k][0]<=today();
 const logToday=()=>S.log[dstr(today())]||[0,0,0,0];
 const stage=k=>!S.c[k]?-1:S.c[k][5]==null?2:S.c[k][5];
-// Quatre choix : la bonne réponse et trois traductions différentes, de préférence de la même nature (nom, verbe…).
+// Phrase à trou : on cherche le mot (ou son radical, pour les verbes conjugués) dans la phrase d'exemple.
+function clozeOf(c){if(!c.x||c.p==="gram")return null;const w=(spoken(c.k)||"").split(", ")[0];if(!w)return null;
+  const stem=w.length>1&&/다$/.test(w)?w.slice(0,-1):w,minL=stem.length===1?1:2;
+  for(let L=stem.length;L>=minL;L--){const p=stem.slice(0,L);let i=c.x.indexOf(p);
+    if(L===1)while(i>0&&c.x[i-1]!==" ")i=c.x.indexOf(p,i+1); // un seul caractère : seulement en début de mot
+    if(i>=0)return {pre:c.x.slice(0,i),mid:p,post:c.x.slice(i+L)}}
+  return null}
+const canWrite=c=>c.p!=="gram"&&!!spoken(c.k)&&!!(c.f||c.e);
+// Quatre choix : la bonne réponse et trois pièges plausibles. On préfère les mots qu'on confond vraiment :
+// même thème, même cours, même nature (nom, verbe…), syllabes en commun, longueur proche. On écarte les quasi-synonymes.
 function mcqOpts(c,cards){
-  const txt=x=>biT(x),ok=x=>x.k!==c.k&&txt(x)&&txt(x)!==txt(c);
-  const pick=[],seen=new Set([txt(c)]);
-  for(const pool of [cards.filter(x=>ok(x)&&x.p===c.p),CARDS.filter(x=>ok(x)&&x.p===c.p),CARDS.filter(ok)]){
-    for(const x of shuffle(pool)){if(pick.length>=3)break;if(!seen.has(txt(x))&&!pick.some(y=>y.k===x.k)){seen.add(txt(x));pick.push(x)}}
-    if(pick.length>=3)break}
-  return pick.length<3||!txt(c)?null:shuffle(pick.concat(c));
+  const txt=x=>biT(x);if(!txt(c))return null;
+  const words=x=>new Set(String(x.f||x.e||"").toLowerCase().split(/[^a-zà-ÿ]+/).filter(w=>w.length>=4));
+  const cw=words(c),ct=new Set(c.t||[]),cs=new Set([...String(c.k).replace(/[^가-힣]/g,"")]);
+  const close=x=>{for(const w of words(x))if(cw.has(w))return true;return false};
+  const seen=new Set([txt(c)]),pool=new Map();
+  for(const x of cards.concat(CARDS))if(x.k!==c.k&&txt(x)&&!seen.has(txt(x))&&!close(x))pool.set(x.k,x);
+  const score=x=>(x.p===c.p?3:0)+((x.t||[]).some(t=>ct.has(t))?3:0)+(x.c===c.c?2:0)
+    +Math.min(2,[...String(x.k).replace(/[^가-힣]/g,"")].filter(ch=>cs.has(ch)).length)
+    +(Math.abs(String(x.k).length-String(c.k).length)<=1?1:0)+Math.random()*2.5;
+  const ranked=[...pool.values()].map(x=>[score(x),x]).sort((a,b)=>b[0]-a[0]);
+  const pick=[];for(const [,x] of ranked){if(pick.length>=3)break;if(!seen.has(txt(x))){seen.add(txt(x));pick.push(x)}}
+  return pick.length<3?null:shuffle(pick.concat(c));
 }
 /* FSRS-5 (Free Spaced Repetition Scheduler, celui d'Anki) : pour chaque carte, stabilité (jours pour retomber à 90 %) et difficulté (1 à 10).
    La carte revient quand la probabilité de s'en souvenir descend à la rétention voulue (S.cfg.ret, 90 % par défaut).
@@ -494,6 +510,12 @@ const FDECAY=-0.5,FFACT=19/81;
 const fclampD=d=>Math.min(10,Math.max(1,d));
 const fD0=g=>fclampD(FW[4]-Math.exp(FW[5]*(g-1))+1);
 const fR=(el,st)=>Math.pow(1+FFACT*el/st,FDECAY);
+// Ajustement à ta mémoire : on garde chaque révision « à distance » (écart en jours, stabilité prévue, réussite),
+// et dès 300 révisions on cherche le facteur qui rend les prévisions de FSRS les plus justes pour toi (S.cfg.fm).
+const fmul=()=>S.cfg.fm||1;
+function fsrsFit(){const L=S.rl||[];if(L.length<300)return;let best=1,bl=-Infinity;
+  for(let m=0.4;m<=2.51;m+=0.05){let ll=0;for(const [el,st,ok] of L){const r=Math.min(.999,Math.max(.001,fR(el,st*m)));ll+=ok?Math.log(r):Math.log(1-r)}if(ll>bl){bl=ll;best=m}}
+  S.cfg.fm=Math.round(best*100)/100;S.cfg.fmN=L.length}
 function fState(s){ // [stabilité, difficulté, dernier jour] ou null si la carte n'a jamais été notée
   if(!s)return null;if(s[6]>0)return [s[6],s[7],s[8]];
   if(s[1]>0)return [s[1],fclampD(5+(2.5-(s[2]||2.5))*5),s[0]-s[1]];
@@ -503,16 +525,18 @@ function fsrsNext(s,g,t){
   if(!f)return {st:FW[g-1],df:fD0(g)};
   let [st,df,last]=f;const el=Math.max(0,t-last);
   if(el===0){st=st*Math.exp(FW[17]*(g-3+FW[18]))} // deuxième révision le même jour
-  else{const r=fR(el,st);
+  else{const r=fR(el,st*fmul());
     if(g===1)st=Math.min(st,FW[11]*Math.pow(df,-FW[12])*(Math.pow(st+1,FW[13])-1)*Math.exp(FW[14]*(1-r)));
     else st=st*(1+Math.exp(FW[8])*(11-df)*Math.pow(st,-FW[9])*(Math.exp(FW[10]*(1-r))-1)*(g===2?FW[15]:1)*(g===4?FW[16]:1))}
   const d1=df-FW[6]*(g-3);df=fclampD(FW[7]*fD0(4)+(1-FW[7])*(df+(d1-df)*(10-df)/9));
   return {st:Math.max(0.1,st),df}}
-const fIvl=st=>{const r=S.cfg.ret||0.9;return Math.min(3650,Math.max(1,Math.round(st/FFACT*(Math.pow(r,1/FDECAY)-1))))};
+const fIvl=st=>{const r=S.cfg.ret||0.9;return Math.min(3650,Math.max(1,Math.round(st*fmul()/FFACT*(Math.pow(r,1/FDECAY)-1))))};
 function nextIvl(s,g){return g===1?0:fIvl(fsrsNext(s,g,today()).st)}
 function fmtIvl(d){return d===0?"< 10 min":d<30?d+" j":d<365?(Math.round(d/3)/10+" mois").replace(".",","):(Math.round(d/36.5)/10+" an").replace(".",",")}
 function answer(k,g,ms){
-  const t=today(),wasNew=!S.c[k];let s=S.c[k];const nx=fsrsNext(s,g,t);let d=g===1?0:fIvl(nx.st);
+  const t=today(),wasNew=!S.c[k];let s=S.c[k];const f0=fState(s);
+  if(f0&&t-f0[2]>0){S.rl=(S.rl||[]);S.rl.push([t-f0[2],+f0[0].toFixed(2),g>1?1:0]);if(S.rl.length>3000)S.rl=S.rl.slice(-3000);if(S.rl.length>=300&&S.rl.length-(S.cfg.fmN||0)>=50)fsrsFit()}
+  const nx=fsrsNext(s,g,t);let d=g===1?0:fIvl(nx.st);
   if(d>7)d+=Math.round((Math.random()-.5)*d*.1);
   if(!s)s=S.c[k]=[t,0,2.5,0,0];
   s[3]++;s[6]=+nx.st.toFixed(3);s[7]=+nx.df.toFixed(3);s[8]=t;
@@ -540,12 +564,17 @@ function streak(){let n=0,d=today();if(!S.log[dstr(d)]||!S.log[dstr(d)][0])d--;w
 function fmtTime(ms){const m=Math.round(ms/6e4);return m<60?m+" min":Math.floor(m/60)+" h "+String(m%60).padStart(2,"0")}
 /* ---------- synchronisation entre appareils : un fichier dans un dépôt GitHub privé ---------- */
 let SY=null;try{SY=JSON.parse(localStorage.getItem("hgn-sync")||"null")}catch(e){}
+if(SY&&SY.exp===undefined){SY.exp="2026-12-18";try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(e){}}
+function tokWarn(){if(!SY||!SY.exp)return "";const left=Math.round((Date.parse(SY.exp+"T00:00:00")-Date.now())/DAY);if(left>10)return "";
+  return `<section class="panel tokwarn"><b>${left<0?"동기화 코드 만료 · Ton code de synchronisation a expiré":`동기화 코드 · Ton code de synchronisation expire ${left<=1?"demain":`dans ${left} jours`}`}</b>
+  <p class="count">Sur GitHub : Settings → Developer settings → Personal access tokens → Fine-grained tokens → ouvre « hangugeo-sync » → Regenerate token, avec <b>No expiration</b>. Puis colle le nouveau code avec le bouton 동기화 ci-dessous, sur chaque appareil.</p>
+  <div class="actions"><a class="btn" href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">GitHub · Mes codes</a></div></section>`}
 let syncMsg="";
 function mergeS(a,b){
   const o=Object.assign({},a,{c:{},log:{},read:{},heard:{}});
   for(const k of new Set([...Object.keys(a.c||{}),...Object.keys(b.c||{})])){const x=(a.c||{})[k],y=(b.c||{})[k];o.c[k]=!x?y:!y?x:(y[3]>x[3]||(y[3]===x[3]&&y[0]>x[0])?y:x)}
   for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
-  Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.exam=(a.exam||[]).length>=(b.exam||[]).length?a.exam:b.exam;o.mig=a.mig||b.mig;return o;
+  Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.exam=(a.exam||[]).length>=(b.exam||[]).length?a.exam:b.exam;o.rl=(a.rl||[]).length>=(b.rl||[]).length?a.rl:b.rl;o.mig=a.mig||b.mig;return o;
 }
 // Synchronisation quasi instantanée : envoi 3 s après un changement, vérification toutes les 8 s. La lecture ajoute ?t= pour passer outre le cache de l API GitHub (sinon jusqu à 1 min de retard).
 // La vérification utilise l'ETag : une réponse « rien de neuf » (304) ne compte pas dans le quota GitHub.
@@ -562,12 +591,13 @@ async function syncOnce(){
   const api="https://api.github.com/repos/"+SY.repo+"/contents/progression.json",h={Authorization:"Bearer "+SY.token,Accept:"application/vnd.github+json"};
   const gh=Object.assign({},h);if(syEtag&&sySha)gh["If-None-Match"]=syEtag;
   const r=await fetch(api+"?t="+Date.now(),{headers:gh,cache:"no-store"});let changed=false;
+  const ex=r.headers.get("github-authentication-token-expiration");if(ex){const d=ex.slice(0,10);if(SY.exp!==d){SY.exp=d;try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(e){}}}
   if(r.status===200){const j=await r.json();sySha=j.sha;syEtag=r.headers.get("ETag");
     const remote=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))));
     if(remote&&remote.c){const before=sySig();S=mergeS(S,remote);if(typeof injectMy==="function")injectMy();changed=sySig()!==before;
       if(!syDirty&&changed){try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}}}}
   else if(r.status===404){sySha=null;syEtag=null;syDirty=true}
-  else if(r.status!==304)throw new Error(r.status===401||r.status===403?"le code d'accès est refusé":"GitHub a répondu "+r.status);
+  else if(r.status!==304)throw new Error(r.status===401?"le code d'accès est refusé ou expiré : crée un nouveau code sans date d'expiration et colle-le ici":r.status===403?"le code d'accès est refusé":"GitHub a répondu "+r.status);
   if(syDirty){
     S.sync=Date.now();try{localStorage.setItem("hgn-srs",JSON.stringify(S))}catch(e){}
     const body={message:"Progression "+dstr(today()),content:btoa(unescape(encodeURIComponent(JSON.stringify(S))))};if(sySha)body.sha=sySha;
@@ -681,6 +711,7 @@ function vHome(){
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
   </section>
+  ${OFFLINE?tokWarn():""}
   ${pathHTML(st,L,nextS,nextP)}
   ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>
     <div class="panel" id="syncbox" hidden><p class="count">Pour relier ordinateur, tablette et téléphone, indique une fois sur chaque appareil ton dépôt GitHub privé et son code d'accès.</p><input class="fld" id="syrepo" placeholder="Nom/depot" value="${SY?esc(SY.repo):"Nyrec/hangugeo-sync"}" autocomplete="off" autocapitalize="off"><input class="fld" id="sytok" type="password" placeholder="Code d'accès GitHub (github_pat_…)" autocomplete="off"><p class="msg" id="syncerr"></p><div class="actions"><button class="btn" data-act="sync-save">저장 · Enregistrer</button>${SY?`<button class="btn ghost" data-act="sync-off">Déconnecter cet appareil</button>`:""}</div></div></section>`:""}
@@ -703,7 +734,7 @@ function vHome(){
   <section><h2><span class="ko">설정</span> · Réglages</h2><div class="panel">
     <div class="setrow"><span>Nouvelles cartes par jour</span><span class="stepper"><button class="mini" data-act="nw-">−</button><b>${S.cfg.nw}</b><button class="mini" data-act="nw+">+</button></span></div>
     <div class="setrow"><span>기억 목표 · Rétention visée (FSRS)</span><span class="stepper">${[0.85,0.9,0.95].map(r=>`<button class="chip" aria-pressed="${(S.cfg.ret||0.9)===r}" data-ret="${r}">${Math.round(r*100)} %</button>`).join("")}</span></div>
-    <p class="count">90 % est le bon équilibre. 85 % : moins de révisions, un peu plus d'oublis. 95 % : beaucoup plus de révisions.</p>
+    <p class="count">90 % est le bon équilibre. 85 % : moins de révisions, un peu plus d'oublis. 95 % : beaucoup plus de révisions. ${S.cfg.fm?`FSRS est ajusté à ta mémoire (${S.cfg.fmN} révisions) : tu retiens ${S.cfg.fm>=1.05?"mieux que":S.cfg.fm<=0.95?"un peu moins bien que":"comme"} la moyenne, intervalles × ${String(S.cfg.fm).replace(".",",")}.`:`FSRS s'ajustera à ta mémoire après 300 révisions (${(S.rl||[]).length} pour l'instant).`}</p>
     <div class="setrow"><span>복습 중 소리 · Son pendant la révision</span><button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button></div>
     <div class="setrow"><span>Voix au ralenti</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">Lent</button></div>
     ${HAS_AUDIO&&OFFLINE?`<div class="setrow"><span>Garder tout l'audio sur cet appareil pour le hors-ligne</span><button class="mini" data-act="dl">Télécharger l'audio</button></div><p class="count" id="dlmsg">Sans ça, seul l'audio déjà écouté fonctionne hors ligne.</p>`:""}
@@ -788,11 +819,15 @@ function vStudy(s){
   const c=CARDIDX[s.queue[0]],cs=S.c[c.k];
   // Sens automatique : reconnaissance d'abord, puis production (traduction → coréen) une fois sur deux quand la carte est acquise.
   // Sens automatique : reconnaissance, puis production (traduction → coréen) et écoute seule quand la carte est acquise.
-  const earOK=canPlay&&sndMode()!=="off"&&!!spoken(c.k);
-  const dir=s.dir==="ko"?"":s.dir==="fr"?"fr":s.dir==="ear"?(earOK?"ear":""):(cs&&cs[1]>=7&&cs[3]%2===1&&c.p!=="gram"?"fr":cs&&cs[1]>=3&&cs[3]%3===2&&earOK?"ear":"");
-  const front=dir==="fr"?biH(c):dir==="ear"?"":esc(c.k);
+  // Rappel libre, cartes acquises (intervalle ≥ 3 j) : on fait tourner les formes de rappel pour que le mot soit utilisable,
+  // pas seulement reconnu : coréen → sens, phrase à trou (le mot dans son contexte), écrire le mot en coréen (≥ 7 j), écoute seule.
+  const earOK=canPlay&&sndMode()!=="off"&&!!spoken(c.k),clz=clozeOf(c),wOK=canWrite(c);
+  let dir="";
+  if(s.dir==="ko")dir="";else if(s.dir==="fr")dir=wOK?"write":"fr";else if(s.dir==="ear")dir=earOK?"ear":"";else if(s.dir==="ctx")dir=clz?"ctx":"";
+  else if(cs&&cs[1]>=3){const modes=[""];if(clz)modes.push("ctx");if(cs[1]>=7)modes.push(wOK?"write":c.p!=="gram"?"fr":"");if(earOK)modes.push("ear");dir=modes[cs[3]%modes.length]}
+  const front=dir==="fr"?biH(c):dir==="ear"||dir==="ctx"?"":esc(c.k);
   const qn=s.queue.filter(k=>!S.c[k]).length,ql=s.queue.filter(k=>S.c[k]&&S.c[k][1]===0).length,qr=s.queue.length-qn-ql;
-  const head=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":s.dir==="ear"?"듣기 → 뜻 · Écoute → sens":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
+  const head=`${backBtn()}<div class="study"><div class="meta"><span class="qc"><b style="color:var(--jjok)">${qn}</b> 새 카드 · <b style="color:var(--chija)">${ql}</b> 배우는 중 · <b style="color:var(--a1)">${qr}</b> 복습<br>nouvelles · en apprentissage · révisions</span><button class="mini" data-act="dir">${s.dir==="fr"?"번역 → 한국어 · Traduction → coréen":s.dir==="ko"?"한국어 → 번역 · Coréen → traduction":s.dir==="ear"?"듣기 → 뜻 · Écoute → sens":s.dir==="ctx"?"빈칸 · Phrase à trou":"방향 : 자동 · Sens : automatique"}</button>${canPlay?`<button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button>`:""}${s.last?`<button class="mini" data-act="undo">되돌리기 · Annuler</button>`:""}</div>
   <div class="bar sess" style="--c:var(--a1)"><i style="width:${s.done+s.queue.length?Math.round(100*s.done/(s.done+s.queue.length)):0}%"></i></div>`;
   const listen=(word,ex)=>canPlay?`<div class="actions center">${word&&spoken(c.k)?`<button class="mini" data-say="${esc(c.k)}">단어 듣기 · Écouter le mot</button>`:""}${ex&&c.x?`<button class="mini" data-say="${esc(c.x)}">문장 듣기 · Écouter la phrase</button>`:""}</div>`:"";
   const backSide=()=>`<div class="ans">${esc(c.f||c.e)}${c.f&&c.e&&c.f!==c.e?`<small>${esc(c.e)}</small>`:""}</div>${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`;
@@ -821,6 +856,30 @@ function vStudy(s){
       return}
   }
   // 3) Rappel libre : retrouver le sens (ou le mot coréen) de mémoire, puis dire honnêtement si on savait.
+  const tagR=`<span class="tag lvband ${c.l}">${cs&&cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span>`;
+  const gradesHTML=sug=>`<div class="grades two"><button class="grade g1${sug===1?" sugg":""}" data-grade="1"><small>revient dans cette série</small><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3${sug===3?" sugg":""}" data-grade="3"><small>revient dans ${fmtIvl(nextIvl(cs,3))}</small><span class="ko">알았어요</span>${sug===3&&s.tw&&!s.tw.ok?"J'avais juste":"Je savais"}</button></div>`;
+  // 3a) Écrire le mot en coréen : la production la plus proche de « parler », corrigée automatiquement.
+  if(dir==="write"){
+    if(!s.tw||s.tw.k!==c.k){s.tw={k:c.k,ans:"",ok:null};s.rev=false;s.t0=Date.now()}
+    const w=s.tw,done=w.ok!=null,alt=exAlts(c)[0];
+    $("#view").innerHTML=`${head}<div class="flash">${tagR}<div class="big small">${biH(c)}</div>
+    ${done?`<div class="hint" style="font-weight:600;color:${w.ok?"var(--a1)":"var(--red)"}">${w.ok?"맞아요 · Juste":w.sim>=70?"거의 · Presque":"틀렸어요 · Faux"}</div>${w.ok?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="dres" style="margin-top:6px"><small>정답 · La bonne réponse</small><p class="ko big2">${markText(alt,lcs(hang(alt),hang(w.ans)).ma)}</p><small>내 답 · Ta réponse</small><p class="ko">${w.ans.trim()?markText(w.ans,lcs(hang(alt),hang(w.ans)).mb):"—"}</p></div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}`:`<div class="hint">한국어로 쓰세요 · Écris le mot en coréen</div>`}</div>
+    <input id="twq" class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(w.ans)}" ${done?"disabled":""}>
+    ${done?listen(true,true)+gradesHTML(w.ok?3:1)+`<p class="count keys">${w.ok?"":"Faute de frappe ou autre forme correcte ? Choisis « J'avais juste ». "}Espace pour valider le choix en surbrillance.</p>`:`<div class="actions"><button class="btn big" data-act="twcheck">확인 · Vérifier</button><button class="btn ghost" data-act="twskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier. Il te faut le clavier coréen.</p>`}</div>`;
+    if(!done){const i=$("#twq");setTimeout(()=>{try{i.focus()}catch(e){}},60);i.oninput=()=>{w.ans=i.value};i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();document.querySelector('[data-act="twcheck"]').click()}}}
+    else if(canPlay&&sndMode()!=="off"&&s.spoken!==c.k+"|w"){s.spoken=c.k+"|w";sayCard(c)}
+    return}
+  // 3b) Phrase à trou : retrouver le mot dans une vraie phrase, avec sa construction.
+  if(dir==="ctx"){
+    if(!s.rev){s.t0=Date.now()}
+    $("#view").innerHTML=`${head}<div class="flash" data-act="flip" role="button" tabindex="0">${tagR}
+    <div class="ko cz">${esc(clz.pre)}${s.rev?`<mark>${esc(clz.mid)}</mark>`:`<span class="blank">${"＿".repeat(Math.max(2,clz.mid.length))}</span>`}${esc(clz.post)}</div>
+    <div class="hint">${esc(c.z||c.y||"")}</div>
+    ${s.rev?`<hr><div class="big ko small">${esc(c.k)}</div><div class="ans">${biH(c)}</div>${c.n?`<div class="hint">${esc(c.n)}</div>`:""}`:`<div class="hint">빈칸에 들어갈 말은? · Quel mot manque ? Dis la phrase entière à voix haute.</div>`}</div>
+    ${s.rev?listen(true,true)+gradesHTML(0):`<button class="btn big" data-act="flip">답 보기 · Voir la réponse</button>`}
+    <p class="count keys">${s.rev?"→ ou Espace si tu savais, ← sinon.":"Espace pour voir la réponse."}</p></div>`;
+    if(s.rev&&canPlay&&sndMode()!=="off"&&s.spoken!==c.k+"|cz"){s.spoken=c.k+"|cz";speak(c.x)}
+    return}
   if(!s.rev){s.t0=Date.now()}
   $("#view").innerHTML=`${head}
   <div class="flash" data-act="flip" role="button" tabindex="0"><span class="tag lvband ${c.l}">${!cs?"새 카드 · Nouvelle carte":cs[1]===0?"배우는 중 · En apprentissage":"복습 · Révision"} · ${courseLabel(c.c)} · ${c.l}</span>${dir==="ear"&&!s.rev?`<button class="earbtn" data-say="${esc(c.k)}" aria-label="Réécouter">🔊</button><div class="hint">듣고 뜻을 떠올려 보세요 · Écoute et retrouve le sens</div>`:`<div class="big${dir==="fr"||c.k.length>9?" small":""}${dir==="fr"?"":" ko"}">${dir==="ear"?esc(c.k):front}</div>`}
@@ -938,7 +997,7 @@ document.addEventListener("click",e=>{
   const gr=t.closest("[data-grade]");if(gr&&s.v==="study"){const k=s.queue.shift(),dk=dstr(today()),g=+gr.dataset.grade,st0=stage(k);s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk};const again=answer(k,g,Date.now()-(s.t0||Date.now()));
     // Rappel libre raté : la carte repasse une fois par le QCM. Carte sans QCM possible : elle avance quand même d'une étape.
     if(S.c[k]){if(g===1&&st0>=2)S.c[k][5]=1;else if(g===3&&st0<2)S.c[k][5]=st0+1;save()}
-    s.last.again=again;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
+    s.last.again=again;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;s.tw=null;render();return}
   const rt=t.closest("[data-ret]");if(rt){S.cfg.ret=+rt.dataset.ret;save();s.keepScroll=true;render();s.keepScroll=false;return}
   const mo=t.closest("[data-mq]");if(mo&&s.v==="study"&&s.mq&&s.mq.pick==null&&!mo.disabled){s.mq.pick=+mo.dataset.mq;s.keepScroll=true;render();s.keepScroll=false;const nx=document.querySelector('[data-act="mcq-next"]');if(nx)try{nx.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(e){}return}
   const say=t.closest("[data-say]");if(say){stopStory();if(s.v==="story")sayStory(say.dataset.say,"hyunsu");else speak(say.dataset.say);return}
@@ -962,13 +1021,14 @@ document.addEventListener("click",e=>{
     if(act==="all-quiz"){go({v:"quiz",cards:CARDS});return}
     if(act==="review"){go({v:"deck",kind:"review"});return}
     if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
+    if((act==="twcheck"||act==="twskip")&&s.v==="study"&&s.tw){const i=$("#twq");if(act==="twskip"){s.tw.ans="";s.tw.ok=false;s.tw.sim=0}else{s.tw.ans=i?i.value:s.tw.ans;const q={c:CARDIDX[s.tw.k],ans:s.tw.ans};exCheck(q);s.tw.ok=q.ok;s.tw.sim=q.sim}s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="intro-ok"&&s.v==="study"&&s.queue.length){const k=s.queue.shift(),t0=today(),dk=dstr(t0);s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk,again:true};
       if(!S.c[k]){S.c[k]=[t0,0,2.5,0,0,0];const L=S.log[dk]||(S.log[dk]=[0,0,0,0]);L[3]++;L[2]+=Math.min(Date.now()-(s.t0||Date.now()),60000)}
       save();s.t0=0;s.queue.splice(Math.min(s.queue.length,2+Math.floor(Math.random()*3)),0,k);render();return}
     if(act==="mcq-next"&&s.v==="study"&&s.mq&&s.mq.pick!=null&&s.queue[0]===s.mq.k){const k=s.queue.shift(),dk=dstr(today()),ok=s.mq.opts[s.mq.pick].k===k;s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk};
       const again=answer(k,ok?3:1,Date.now()-(s.t0||Date.now()));if(ok&&S.c[k]){S.c[k][5]=Math.min(2,(S.c[k][5]||0)+1);save()}
       s.last.again=again;s.mq=null;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;render();return}
-    if(act==="dir"){s.dir=!s.dir?"ko":s.dir==="ko"?"fr":s.dir==="fr"&&canPlay?"ear":"";s.rev=false;render();return}
+    if(act==="dir"){s.dir=!s.dir?"ko":s.dir==="ko"?"ctx":s.dir==="ctx"?"fr":s.dir==="fr"&&canPlay?"ear":"";s.rev=false;s.tw=null;render();return}
         if(act==="restart"){delete s.queue;delete s.qs;render();return}
     if(act==="next"){s.i++;s.pick=null;render();return}
     if(act==="playall"){const st=STORIES.find(x=>x.id===s.id);if(playing){stopStory();a.textContent="▶ 전체 듣기 · Tout écouter"}else{playing={id:st.id,i:0};a.textContent="■ 멈추기 · Arrêter";playStory(st,0)}return}
@@ -981,10 +1041,10 @@ document.addEventListener("click",e=>{
     if(act==="read"){S.read=S.read||{};if(S.read[s.id])delete S.read[s.id];else S.read[s.id]=today();save();s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="dl"){downloadAudio();return}
     if(act==="snd"){const o=["front","back","off"];S.cfg.snd=o[(o.indexOf(sndMode())+1)%3];if(S.cfg.snd==="off")stopAudio();save();s.keepScroll=true;if(s.v==="study")s.spoken=cur().queue&&cur().queue[0]?"x":null;render();s.keepScroll=false;return}
-    if(act==="undo"&&s.v==="study"&&s.last){const L=s.last;if(L.card)S.c[L.k]=L.card;else delete S.c[L.k];if(L.log)S.log[L.dk]=L.log;else delete S.log[L.dk];const i=s.queue.indexOf(L.k);if(i>=0)s.queue.splice(i,1);if(!L.again)s.done=Math.max(0,s.done-1);s.queue.unshift(L.k);s.last=null;s.rev=false;s.mq=null;s.spoken=null;save();render();return}
+    if(act==="undo"&&s.v==="study"&&s.last){const L=s.last;if(L.card)S.c[L.k]=L.card;else delete S.c[L.k];if(L.log)S.log[L.dk]=L.log;else delete S.log[L.dk];const i=s.queue.indexOf(L.k);if(i>=0)s.queue.splice(i,1);if(!L.again)s.done=Math.max(0,s.done-1);s.queue.unshift(L.k);s.last=null;s.rev=false;s.mq=null;s.tw=null;s.spoken=null;save();render();return}
     if(act==="update"){a.textContent="업데이트 중…";(async()=>{try{const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();await fetch("index.html?v="+Date.now(),{cache:"reload"})}catch(err){}location.reload()})();return}
     if(act==="sync"){if(!SY||e.detail===2||syncMsg&&!/en cours/.test(syncMsg)){const b=$("#syncbox");if(b)b.hidden=!b.hidden;return}if(SY)doSync();return}
-    if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tok=$("#sytok").value.trim()||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)){sayErr("Écris le dépôt sous la forme Nyrec/hangugeo-sync.");return}if(!tok){sayErr("Colle ton code d'accès GitHub dans le second champ. Il commence par github_pat_.");return}sayErr("동기화 중… · Synchronisation en cours…");SY={repo,token:tok};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
+    if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tokIn=$("#sytok").value.trim(),tok=tokIn||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)){sayErr("Écris le dépôt sous la forme Nyrec/hangugeo-sync.");return}if(!tok){sayErr("Colle ton code d'accès GitHub dans le second champ. Il commence par github_pat_.");return}sayErr(tokIn?"동기화 중… · Synchronisation en cours…":"Le champ du code est vide : l'ancien code est gardé. Pour le remplacer, colle le nouveau code puis Enregistrer.");const keepExp=!tokIn&&SY?SY.exp:null;SY={repo,token:tok,exp:keepExp};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
     if(act==="sync-cfg"){$("#main").scrollTop=0;const b=$("#syncbox");if(b)b.hidden=false;return}
     if(act==="sync-off"){SY=null;try{localStorage.removeItem("hgn-sync")}catch(err){}syncMsg="";render();return}
     if(act==="alltr"&&s.v==="pod"){s.all=!s.all;const pa=$("#podau"),tm=pa?pa.currentTime:0,pl=pa&&!pa.paused;s.keepScroll=true;render();s.keepScroll=false;const nb=$("#podau");if(nb&&tm){nb.currentTime=tm;if(pl)nb.play().catch(()=>{})}return}
@@ -1022,6 +1082,7 @@ if(OFFLINE){setTimeout(checkVersion,1500);document.addEventListener("visibilityc
 document.addEventListener("keydown",e=>{
   if(cur().v!=="study"||e.target.matches("input,textarea")||e.metaKey||e.ctrlKey)return;
   const click=sel=>{const b=document.querySelector(sel);if(b){e.preventDefault();b.click()}};
+  if(document.querySelector('.grade.sugg')&&(e.key===" "||e.key==="Enter")){click('.grade.sugg');return}
   if(document.querySelector('[data-act="intro-ok"]')){if(e.key===" "||e.key==="Enter")click('[data-act="intro-ok"]');else if(e.key==="z"||e.key==="Z")click('[data-act="undo"]');else if(e.key==="r"||e.key==="R")click('.study [data-say]');return}
   if(document.querySelector('.study [data-mq]')){if(/^[1-4]$/.test(e.key))click(`[data-mq="${+e.key-1}"]:not([disabled])`);else if(e.key===" "||e.key==="Enter")click('[data-act="mcq-next"]');else if(e.key==="z"||e.key==="Z")click('[data-act="undo"]');else if(e.key==="r"||e.key==="R")click('.study [data-say]');return}
   if(e.key===" "||e.key==="Enter"){if(cur().rev)click('[data-grade="3"]');else click('[data-act="flip"]')}

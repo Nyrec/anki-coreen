@@ -214,7 +214,7 @@ function alertMsg(m){const x=document.createElement("div");x.className="wtip";x.
 const EXT={write:["쓰기","Écrire en coréen"],recall:["기억","Retrouver le sens"],ear:["듣기","Reconnaître à l'oreille"],mcq:["선택","Choisir le sens"]};
 function exLearned(){const t=today(),out=[];
   for(const k in S.c){const c=CARDIDX[k],s=S.c[k];if(!c||!s)continue;const f=fState(s);
-    out.push({c,learned:s[1]>0&&stage(k)>=2,r:f?fR(Math.max(0,t-f[2]),f[0]):0})}
+    out.push({c,learned:s[1]>0&&stage(k)>=2,r:f?fR(Math.max(0,t-f[2]),f[0]*fmul()):0})}
   return out}
 const exAlts=c=>spoken(c.k).split(/\s*,\s*/).filter(Boolean);
 function exBuild(){
