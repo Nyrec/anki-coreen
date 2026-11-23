@@ -76,8 +76,8 @@ function vDictee(s){
   $("#view").innerHTML=`${backBtn()}<div class="dict"><div class="meta"><span class="qc">${s.i+1} / ${s.items.length}</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button></div>
   <div class="bar sess"><i style="width:${100*s.i/s.items.length}%"></i></div>
   <button class="earbtn" data-act="dplay" aria-label="Écouter">🔊</button><p class="hint center">듣고 써 보세요 · Écoute et écris</p>
-  <textarea id="dq" class="ko dq" rows="2" placeholder="여기에 쓰세요" ${done?"disabled":""}>${esc(s.ans||"")}</textarea>
-  ${done?res+`<div class="actions"><button class="btn big" data-act="dnext">${s.i+1<s.items.length?"다음 · Suivante":"결과 · Résultat"}</button></div>`:`<div class="actions"><button class="btn big" data-act="dcheck">확인 · Vérifier</button></div><p class="count keys">Entrée pour vérifier. Clavier coréen : ajoute-le dans les réglages de ton téléphone ou de ton Mac.</p>`}</div>`;
+  <textarea id="dq" data-ko-ime class="ko dq" rows="2" placeholder="여기에 쓰세요" ${done?"disabled":""}>${esc(s.ans||"")}</textarea>${done?"":imeHelp()}
+  ${done?res+`<div class="actions"><button class="btn big" data-act="dnext">${s.i+1<s.items.length?"다음 · Suivante":"결과 · Résultat"}</button></div>`:`<div class="actions"><button class="btn big" data-act="dcheck">확인 · Vérifier</button></div><p class="count keys">Entrée pour vérifier.${IME_DESK?"":" Clavier coréen : ajoute-le dans les réglages de ton téléphone."}</p>`}</div>`;
   if(!done){const q=$("#dq");setTimeout(()=>{try{q.focus()}catch(e){}},60);q.onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();document.querySelector('[data-act="dcheck"]').click()}};q.oninput=()=>{s.ans=q.value}}
   if(s.played!==s.i){s.played=s.i;setTimeout(()=>speak(t),250)}
 }
@@ -109,7 +109,7 @@ function vIrreg(s){
   $("#view").innerHTML=`${backBtn()}<h1>불규칙 · Irréguliers<small>${s.ty?IRRT[s.ty]:"Toutes les familles mélangées. Choisis-en une pour réviser sa règle."}</small></h1>${chips}
   <div class="irq"><div class="meta"><span class="qc">${s.i+1} / ${s.qs.length} · ${s.ok} juste${s.ok>1?"s":""}</span><button class="mini" data-act="itable">표 · Tableau</button></div>
    <div class="irv ko">${q.v[0]}</div><div class="hint">${q.v[2]} → <b>${q.f[0]}</b></div>
-   <input id="iq" class="ko dq" autocomplete="off" autocapitalize="off" placeholder="…" value="${esc(s.ans||"")}" ${done?"disabled":""}>
+   <input id="iq" data-ko-ime class="ko dq" autocomplete="off" autocapitalize="off" placeholder="…" value="${esc(s.ans||"")}" ${done?"disabled":""}>${done?"":imeHelp()}
    ${done?`<div class="dres"><div class="dsc ${right?"ok":"ko2"}">${right?"맞아요 · Juste":"정답 · Réponse : "+good}</div><p class="count">${q.v[0]} : ${q.v[3]} · ${q.v[4]} · ${q.v[5]} · ${q.v[6]}${q.v[1]!=="reg"?` — ${IRRT[q.v[1]]}`:""}</p></div><div class="actions"><button class="btn big" data-act="inext">다음 · Suivant</button></div>`:`<div class="actions"><button class="btn big" data-act="icheck">확인 · Vérifier</button></div>`}</div>`;
   if(!done){const i=$("#iq");setTimeout(()=>{try{i.focus()}catch(e){}},60);i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();document.querySelector('[data-act="icheck"]').click()}}}
 }
@@ -254,8 +254,8 @@ function vExam(s){
   let body="";
   if(q.ty==="write"){
     body=`<div class="flash" style="min-height:150px"><span class="tag">${tko} · ${tfr}</span><div class="big small">${biH(c)}</div>${done?verdict+(q.ok?"":`<div class="dres" style="margin-top:6px"><small>정답 · La bonne réponse</small><p class="ko big2">${markText(exAlts(c)[0],lcs(hang(exAlts(c)[0]),hang(q.ans)).ma)}</p><small>내 답 · Ta réponse</small><p class="ko">${q.ans.trim()?markText(q.ans,lcs(hang(exAlts(c)[0]),hang(q.ans)).mb):"—"}</p></div>`)+(c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""):`<div class="hint">Écris le mot en coréen</div>`}</div>
-    <input id="exq" class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(q.ans)}" ${done?"disabled":""}>
-    ${done?(q.ok?"":`<div class="actions center"><button class="mini" data-act="exfix">J'avais juste (faute de frappe, autre forme correcte)</button></div>`)+next:`<div class="actions"><button class="btn big" data-act="excheck">확인 · Vérifier</button><button class="btn ghost" data-act="exskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier. Clavier coréen : ajoute-le dans les réglages de ton téléphone ou de ton Mac.</p>`}`;
+    <input id="exq" data-ko-ime class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(q.ans)}" ${done?"disabled":""}>${done?"":imeHelp()}
+    ${done?(q.ok?"":`<div class="actions center"><button class="mini" data-act="exfix">J'avais juste (faute de frappe, autre forme correcte)</button></div>`)+next:`<div class="actions"><button class="btn big" data-act="excheck">확인 · Vérifier</button><button class="btn ghost" data-act="exskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier.${IME_DESK?"":" Clavier coréen : ajoute-le dans les réglages de ton téléphone."}</p>`}`;
   }else if(q.ty==="recall"){
     body=`<div class="flash" style="min-height:150px"><span class="tag">${tko} · ${tfr}</span><div class="big ko${c.k.length>9?" small":""}">${esc(c.k)}</div>${s.rev||done?`<hr><div class="ans">${biH(c)}</div>${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${verdict}`:`<div class="hint">Dis le sens à voix haute avant de regarder</div>`}</div>
     ${done?next:s.rev?`<div class="grades two"><button class="grade g1" data-act="exno"><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-act="exyes"><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="exflip">답 보기 · Voir la réponse</button>`}`;
@@ -294,3 +294,52 @@ document.addEventListener("keydown",e=>{const s=cur();if(s.v!=="exam"||!s.qs||e.
   if(e.key===" "||e.key==="Enter"){click('[data-act="exnext"]')||click('[data-act="exflip"]')||click('[data-act="exyes"]');return}
   if(e.key==="ArrowLeft")click('[data-act="exno"]');else if(e.key==="ArrowRight")click('[data-act="exyes"]');else if(e.key==="r"||e.key==="R")click('[data-act="explay"]');
 });
+
+/* ---------- 한글 자판 · clavier coréen intégré (ordinateur seulement) ----------
+   Sur un ordinateur sans clavier coréen installé, les cases de réponse transforment la frappe en hangeul,
+   selon la POSITION des touches (disposition coréenne standard « 두벌식 ») : sur un AZERTY, la touche A donne ㅂ.
+   Si un clavier coréen du système est déjà actif, on ne touche à rien. Sur téléphone et tablette : clavier du système. */
+const IME_DESK=(()=>{try{return matchMedia("(hover:hover) and (pointer:fine)").matches}catch(e){return false}})();
+const imeOn=()=>IME_DESK&&S.cfg.ime!==false;
+const IMEK={KeyQ:"ㅂ",KeyW:"ㅈ",KeyE:"ㄷ",KeyR:"ㄱ",KeyT:"ㅅ",KeyY:"ㅛ",KeyU:"ㅕ",KeyI:"ㅑ",KeyO:"ㅐ",KeyP:"ㅔ",KeyA:"ㅁ",KeyS:"ㄴ",KeyD:"ㅇ",KeyF:"ㄹ",KeyG:"ㅎ",KeyH:"ㅗ",KeyJ:"ㅓ",KeyK:"ㅏ",KeyL:"ㅣ",KeyZ:"ㅋ",KeyX:"ㅌ",KeyC:"ㅊ",KeyV:"ㅍ",KeyB:"ㅠ",KeyN:"ㅜ",KeyM:"ㅡ"};
+const IMES={KeyQ:"ㅃ",KeyW:"ㅉ",KeyE:"ㄸ",KeyR:"ㄲ",KeyT:"ㅆ",KeyO:"ㅒ",KeyP:"ㅖ"};
+const HCHO="ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ",HJUNG="ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ",HJONG=["","ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ","ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ","ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+const HV2={"ㅗㅏ":"ㅘ","ㅗㅐ":"ㅙ","ㅗㅣ":"ㅚ","ㅜㅓ":"ㅝ","ㅜㅔ":"ㅞ","ㅜㅣ":"ㅟ","ㅡㅣ":"ㅢ"};
+const HF2={"ㄱㅅ":"ㄳ","ㄴㅈ":"ㄵ","ㄴㅎ":"ㄶ","ㄹㄱ":"ㄺ","ㄹㅁ":"ㄻ","ㄹㅂ":"ㄼ","ㄹㅅ":"ㄽ","ㄹㅌ":"ㄾ","ㄹㅍ":"ㄿ","ㄹㅎ":"ㅀ","ㅂㅅ":"ㅄ"};
+const isV=j=>HJUNG.includes(j),isC=j=>HCHO.includes(j);
+// Assemble une suite de lettres (ㅂ ㅏ ㅂ) en syllabes (밥), comme le clavier coréen standard.
+function hCompose(seq){let out="",c="",v="",f=[];
+  const flush=()=>{if(c&&v){const fj=f.length?(f.length===2?HF2[f[0]+f[1]]:f[0]):"";out+=String.fromCharCode(0xAC00+(HCHO.indexOf(c)*21+HJUNG.indexOf(v))*28+HJONG.indexOf(fj))}else out+=c+v;c="";v="";f=[]};
+  for(const j of seq){
+    if(isC(j)){
+      if(c&&v&&!f.length&&HJONG.includes(j))f=[j];
+      else if(c&&v&&f.length===1&&HF2[f[0]+j])f=[f[0],j];
+      else{flush();c=j}}
+    else if(isV(j)){
+      if(c&&v&&f.length){const mv=f.pop();flush();c=mv;v=j}
+      else if(v&&!f.length&&HV2[v+j])v=HV2[v+j];
+      else if(c&&!v)v=j;
+      else{flush();v=j}}
+    else{flush();out+=j}}
+  flush();return out}
+function imeSet(el,seq){el._seq=seq;el._ime=true;el.value=hCompose(seq);try{el.setSelectionRange(el.value.length,el.value.length)}catch(e){}el.dispatchEvent(new Event("input",{bubbles:true}));el._ime=false}
+document.addEventListener("keydown",e=>{const el=e.target;
+  if(!el||!el.matches||!el.matches("[data-ko-ime]")||!imeOn()||el.disabled)return;
+  if(e.isComposing||e.key==="Process"||e.ctrlKey||e.metaKey||e.altKey)return; // clavier coréen du système actif, ou raccourci
+  if(el.selectionStart!==el.value.length||el.selectionEnd!==el.value.length)return; // curseur au milieu : on laisse faire
+  if(!el._seq)el._seq=[...el.value];
+  const j=(e.shiftKey&&IMES[e.code])||IMEK[e.code];
+  if(j&&e.key.length===1){e.preventDefault();imeSet(el,el._seq.concat(j));return}
+  if(e.key==="Backspace"&&el._seq.length){e.preventDefault();imeSet(el,el._seq.slice(0,-1));return}
+  if(e.key.length===1&&!/[a-zA-Z]/.test(e.key)){e.preventDefault();imeSet(el,el._seq.concat(e.key))}
+},true);
+document.addEventListener("input",e=>{const el=e.target;if(el&&el.matches&&el.matches("[data-ko-ime]")&&!el._ime)el._seq=[...el.value]},true);
+// Sous la case : bascule coréen / lettres, et l'antisèche des touches AZERTY → hangeul (masquable).
+function imeHelp(){if(!IME_DESK)return "";const on=imeOn(),show=on&&S.cfg.kbd!==false;
+  const rows=[["A","Z","E","R","T","Y","U","I","O","P"],["Q","S","D","F","G","H","J","K","L"],["W","X","C","V","B","N",","]];
+  const codes=[["KeyQ","KeyW","KeyE","KeyR","KeyT","KeyY","KeyU","KeyI","KeyO","KeyP"],["KeyA","KeyS","KeyD","KeyF","KeyG","KeyH","KeyJ","KeyK","KeyL"],["KeyZ","KeyX","KeyC","KeyV","KeyB","KeyN","KeyM"]];
+  return `<div class="imebar"><button class="chip" aria-pressed="${on}" data-act="ime-tog">${on?"한글 자판 · Frappe en coréen":"한글 자판 coupé · Frappe normale"}</button>${on?`<button class="mini" data-act="kbd-tog">${show?"자판 숨기기 · Masquer le clavier":"자판 보기 · Voir le clavier"}</button>`:""}</div>
+  ${show?`<div class="kbd">${rows.map((r,i)=>`<div class="kr" style="margin-left:${i*14}px">${r.map((k,n)=>{const cd=codes[i][n];return `<span class="kk"><b class="ko">${IMEK[cd]}</b>${IMES[cd]?`<i class="ko">${IMES[cd]}</i>`:""}<em>${k}</em></span>`}).join("")}</div>`).join("")}<p class="count">Touches de ton clavier AZERTY → lettres coréennes. Maj donne les lettres doublées (ㅃ ㅉ ㄸ ㄲ ㅆ ㅒ ㅖ). Les syllabes s'assemblent toutes seules.</p></div>`:""}`}
+document.addEventListener("click",e=>{const b=e.target.closest&&e.target.closest('[data-act="ime-tog"],[data-act="kbd-tog"]');if(!b)return;e.stopPropagation();
+  if(b.dataset.act==="ime-tog")S.cfg.ime=!imeOn();else S.cfg.kbd=S.cfg.kbd===false;save();
+  const inp=document.querySelector("[data-ko-ime]"),val=inp?inp.value:null,s=cur();s.keepScroll=true;render();s.keepScroll=false;const n=document.querySelector("[data-ko-ime]");if(n&&val!=null&&!n.disabled){n.value=val;n._seq=[...val];n.focus()}},true);

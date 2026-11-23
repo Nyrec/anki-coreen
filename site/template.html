@@ -221,6 +221,11 @@ textarea.code{width:100%;min-height:70px;font:12px ui-monospace,monospace;border
 .tile .bar{margin-top:6px;height:4px}.tile{border-radius:14px}
 .rowbtn .n b.due{color:var(--a1);font-weight:600}
 .flash{position:relative}.flash .tag{font-size:12px;color:var(--muted)}.flash hr{border:0;border-top:1px solid var(--line);width:60%;margin:4px auto}
+.imebar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:8px 0 4px}
+.kbd{margin:6px auto 4px;display:flex;flex-direction:column;gap:5px;align-items:center}.kbd .kr{display:flex;gap:5px}
+.kk{position:relative;width:40px;height:44px;border-radius:8px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line),0 2px 0 var(--line);display:flex;align-items:center;justify-content:center}
+.kk b{font-size:18px;font-weight:600}.kk i{position:absolute;top:2px;right:4px;font-size:10px;font-style:normal;color:var(--muted)}.kk em{position:absolute;bottom:2px;left:4px;font-size:10px;font-style:normal;color:var(--muted)}
+.kbd .count{text-align:center;max-width:460px}
 .tokwarn{border:1px solid var(--red);margin:12px 0}.tokwarn b{color:var(--red)}
 .flash .ans small{display:block;font-size:14px;color:var(--muted)}.flash .cz{font-size:22px;line-height:1.6;margin:12px 0 6px}.flash .cz .blank{color:var(--jjok);letter-spacing:-2px}.flash .cz mark{background:color-mix(in srgb,var(--chija) 35%,transparent);color:inherit;border-radius:4px;padding:0 2px}.grade.sugg{box-shadow:0 0 0 2px var(--a1);border-color:var(--a1)}.grade.g1.sugg{box-shadow:0 0 0 2px var(--red);border-color:var(--red)}.flash .exx{font-size:18px}
 .actions.center{justify-content:center}
@@ -864,8 +869,8 @@ function vStudy(s){
     const w=s.tw,done=w.ok!=null,alt=exAlts(c)[0];
     $("#view").innerHTML=`${head}<div class="flash">${tagR}<div class="big small">${biH(c)}</div>
     ${done?`<div class="hint" style="font-weight:600;color:${w.ok?"var(--a1)":"var(--red)"}">${w.ok?"맞아요 · Juste":w.sim>=70?"거의 · Presque":"틀렸어요 · Faux"}</div>${w.ok?`<div class="big ko small">${esc(c.k)}</div>`:`<div class="dres" style="margin-top:6px"><small>정답 · La bonne réponse</small><p class="ko big2">${markText(alt,lcs(hang(alt),hang(w.ans)).ma)}</p><small>내 답 · Ta réponse</small><p class="ko">${w.ans.trim()?markText(w.ans,lcs(hang(alt),hang(w.ans)).mb):"—"}</p></div>`}${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}`:`<div class="hint">한국어로 쓰세요 · Écris le mot en coréen</div>`}</div>
-    <input id="twq" class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(w.ans)}" ${done?"disabled":""}>
-    ${done?listen(true,true)+gradesHTML(w.ok?3:1)+`<p class="count keys">${w.ok?"":"Faute de frappe ou autre forme correcte ? Choisis « J'avais juste ». "}Espace pour valider le choix en surbrillance.</p>`:`<div class="actions"><button class="btn big" data-act="twcheck">확인 · Vérifier</button><button class="btn ghost" data-act="twskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier. Il te faut le clavier coréen.</p>`}</div>`;
+    <input id="twq" data-ko-ime class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(w.ans)}" ${done?"disabled":""}>${done?"":imeHelp()}
+    ${done?listen(true,true)+gradesHTML(w.ok?3:1)+`<p class="count keys">${w.ok?"":"Faute de frappe ou autre forme correcte ? Choisis « J'avais juste ». "}Espace pour valider le choix en surbrillance.</p>`:`<div class="actions"><button class="btn big" data-act="twcheck">확인 · Vérifier</button><button class="btn ghost" data-act="twskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier.${IME_DESK?"":" Il te faut le clavier coréen."}</p>`}</div>`;
     if(!done){const i=$("#twq");setTimeout(()=>{try{i.focus()}catch(e){}},60);i.oninput=()=>{w.ans=i.value};i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();document.querySelector('[data-act="twcheck"]').click()}}}
     else if(canPlay&&sndMode()!=="off"&&s.spoken!==c.k+"|w"){s.spoken=c.k+"|w";sayCard(c)}
     return}
