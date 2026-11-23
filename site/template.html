@@ -550,10 +550,24 @@ function answer(k,g,ms){
   const key=dstr(t),L=S.log[key]||(S.log[key]=[0,0,0,0]);L[0]++;if(g===1)L[1]++;L[2]+=Math.min(ms||0,60000);if(wasNew)L[3]++;
   save();return d===0;
 }
+const JOUR_MAX=2;
 function buildSession(cards,extra,recent){
   const due=shuffle(cards.filter(isDue)).map(c=>c.k);
   const quota=Math.max(0,S.cfg.nw-logToday()[3])+(extra||0);
-  let fr=cards.filter(isNew);if(recent){const ci={};COURSES.forEach((c,i)=>ci[c.id]=i);fr=fr.map((c,i)=>[c,i]).sort((a,b)=>(ci[b[0].c]-ci[a[0].c])||(a[1]-b[1])).map(x=>x[0])}
+  let fr=cards.filter(isNew);
+  if(recent){
+    // Priorité aux mots vus en cours : les derniers cours de Jihyeon et de Hyesoo en alternance (J19, C84, J18, C83…),
+    // puis ton journal. Les mots du jour (choisis au hasard) : 2 au plus par jour, et seulement après les mots de cours.
+    const series=id=>id==="moi"?"moi":id==="jour"?"jour":id[0],rank={},cnt={};
+    for(let i=COURSES.length-1;i>=0;i--){const s=series(COURSES[i].id);cnt[s]=(cnt[s]||0);rank[COURSES[i].id]=cnt[s]++}
+    const pos={},sk={C:1,J:0,moi:2};
+    const course=fr.filter(c=>c.c!=="jour").map(c=>{const p=pos[c.c]=(pos[c.c]||0)+1;return [c,rank[c.c],p,sk[series(c.c)]]})
+      .sort((a,b)=>(a[1]-b[1])||(a[2]-b[2])||(a[3]-b[3])).map(x=>x[0]);
+    const jourAll=fr.filter(c=>c.c==="jour").reverse(); // les plus récents d'abord
+    const jq=Math.min(Math.max(0,JOUR_MAX-(logToday()[4]||0)),quota),jour=jourAll.slice(0,jq);
+    fr=course.slice(0,quota-jour.length).concat(jour);
+    if(fr.length<quota)fr=fr.concat(jourAll.slice(jq,jq+quota-fr.length)); // plus de mots de cours à apprendre : on complète
+  }
   const fresh=fr.slice(0,quota).map(c=>c.k);
   const out=[],step=fresh.length?Math.max(1,Math.floor(due.length/fresh.length)):0;let qi=0;
   for(const k of fresh){for(let i=0;i<step&&qi<due.length;i++)out.push(due[qi++]);out.push(k)}
@@ -578,7 +592,7 @@ let syncMsg="";
 function mergeS(a,b){
   const o=Object.assign({},a,{c:{},log:{},read:{},heard:{}});
   for(const k of new Set([...Object.keys(a.c||{}),...Object.keys(b.c||{})])){const x=(a.c||{})[k],y=(b.c||{})[k];o.c[k]=!x?y:!y?x:(y[3]>x[3]||(y[3]===x[3]&&y[0]>x[0])?y:x)}
-  for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
+  for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3,4].map(i=>Math.max(x[i]||0,y[i]||0))}
   Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.exam=(a.exam||[]).length>=(b.exam||[]).length?a.exam:b.exam;o.rl=(a.rl||[]).length>=(b.rl||[]).length?a.rl:b.rl;o.mig=a.mig||b.mig;return o;
 }
 // Synchronisation quasi instantanée : envoi 3 s après un changement, vérification toutes les 8 s. La lecture ajoute ?t= pour passer outre le cache de l API GitHub (sinon jusqu à 1 min de retard).
@@ -1028,7 +1042,7 @@ document.addEventListener("click",e=>{
     if(act==="flip"){s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
     if((act==="twcheck"||act==="twskip")&&s.v==="study"&&s.tw){const i=$("#twq");if(act==="twskip"){s.tw.ans="";s.tw.ok=false;s.tw.sim=0}else{s.tw.ans=i?i.value:s.tw.ans;const q={c:CARDIDX[s.tw.k],ans:s.tw.ans};exCheck(q);s.tw.ok=q.ok;s.tw.sim=q.sim}s.rev=true;s.keepScroll=true;render();s.keepScroll=false;return}
     if(act==="intro-ok"&&s.v==="study"&&s.queue.length){const k=s.queue.shift(),t0=today(),dk=dstr(t0);s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk,again:true};
-      if(!S.c[k]){S.c[k]=[t0,0,2.5,0,0,0];const L=S.log[dk]||(S.log[dk]=[0,0,0,0]);L[3]++;L[2]+=Math.min(Date.now()-(s.t0||Date.now()),60000)}
+      if(!S.c[k]){S.c[k]=[t0,0,2.5,0,0,0];const L=S.log[dk]||(S.log[dk]=[0,0,0,0]);L[3]++;if(CARDIDX[k]&&CARDIDX[k].c==="jour")L[4]=(L[4]||0)+1;L[2]+=Math.min(Date.now()-(s.t0||Date.now()),60000)}
       save();s.t0=0;s.queue.splice(Math.min(s.queue.length,2+Math.floor(Math.random()*3)),0,k);render();return}
     if(act==="mcq-next"&&s.v==="study"&&s.mq&&s.mq.pick!=null&&s.queue[0]===s.mq.k){const k=s.queue.shift(),dk=dstr(today()),ok=s.mq.opts[s.mq.pick].k===k;s.last={k,card:S.c[k]?S.c[k].slice():null,log:S.log[dk]?S.log[dk].slice():null,dk};
       const again=answer(k,ok?3:1,Date.now()-(s.t0||Date.now()));if(ok&&S.c[k]){S.c[k][5]=Math.min(2,(S.c[k][5]||0)+1);save()}
