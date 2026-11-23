@@ -550,14 +550,14 @@ function answer(k,g,ms){
   const key=dstr(t),L=S.log[key]||(S.log[key]=[0,0,0,0]);L[0]++;if(g===1)L[1]++;L[2]+=Math.min(ms||0,60000);if(wasNew)L[3]++;
   save();return d===0;
 }
-const JOUR_MAX=2;
+const JOUR_MAX=3;
 function buildSession(cards,extra,recent){
   const due=shuffle(cards.filter(isDue)).map(c=>c.k);
   const quota=Math.max(0,S.cfg.nw-logToday()[3])+(extra||0);
   let fr=cards.filter(isNew);
   if(recent){
     // Priorité aux mots vus en cours : les derniers cours de Jihyeon et de Hyesoo en alternance (J19, C84, J18, C83…),
-    // puis ton journal. Les mots du jour (choisis au hasard) : 2 au plus par jour, et seulement après les mots de cours.
+    // puis ton journal. Les mots du jour (choisis au hasard) : 3 au plus par jour, et seulement après les mots de cours.
     const series=id=>id==="moi"?"moi":id==="jour"?"jour":id[0],rank={},cnt={};
     for(let i=COURSES.length-1;i>=0;i--){const s=series(COURSES[i].id);cnt[s]=(cnt[s]||0);rank[COURSES[i].id]=cnt[s]++}
     const pos={},sk={C:1,J:0,moi:2};
