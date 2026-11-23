@@ -563,7 +563,7 @@ function stats(cards){
 function streak(){let n=0,d=today();if(!S.log[dstr(d)]||!S.log[dstr(d)][0])d--;while(S.log[dstr(d)]&&S.log[dstr(d)][0]){n++;d--}return n}
 function fmtTime(ms){const m=Math.round(ms/6e4);return m<60?m+" min":Math.floor(m/60)+" h "+String(m%60).padStart(2,"0")}
 /* ---------- synchronisation entre appareils : un fichier dans un dépôt GitHub privé ---------- */
-let SY=null;try{SY=JSON.parse(localStorage.getItem("hgn-sync")||"null")}catch(e){}
+let syOpen=false;let SY=null;try{SY=JSON.parse(localStorage.getItem("hgn-sync")||"null")}catch(e){}
 if(SY&&SY.exp===undefined){SY.exp="2026-12-18";try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(e){}}
 function tokWarn(){if(!SY||!SY.exp)return "";const left=Math.round((Date.parse(SY.exp+"T00:00:00")-Date.now())/DAY);if(left>10)return "";
   return `<section class="panel tokwarn"><b>${left<0?"동기화 코드 만료 · Ton code de synchronisation a expiré":`동기화 코드 · Ton code de synchronisation expire ${left<=1?"demain":`dans ${left} jours`}`}</b>
@@ -610,7 +610,7 @@ async function syncOnce(){
 function doSync(quiet){
   if(!SY){if(!quiet){syncMsg="";const b=$("#syncbox");if(b)b.hidden=false}return}
   syncMsg="동기화 중… · Synchronisation en cours…";const el=$("#syncst");if(el)el.textContent=syncMsg;
-  syncNow().then(()=>{syncMsg="";const was=$("#syncbox")&&!$("#syncbox").hidden;if(cur().v==="accueil")render();if(was){const x=$("#syncst");if(x)x.textContent="동기화 완료 · Synchronisation réussie. "+syncLabel()}},e=>{syncMsg="Synchronisation impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg;sayErr(syncMsg+(/refusé/.test(e.message)?" Vérifie que le code est bien celui du dépôt hangugeo-sync, avec la permission Contents en lecture et écriture.":""))});
+  syncNow().then(()=>{syncMsg="";const was=$("#syncbox")&&!$("#syncbox").hidden;syOpen=false;if(cur().v==="accueil")render();if(was){const x=$("#syncst");if(x)x.textContent="동기화 완료 · Synchronisation réussie. "+syncLabel()}},e=>{syncMsg="Synchronisation impossible : "+e.message+".";const x=$("#syncst");if(x)x.textContent=syncMsg;sayErr(syncMsg+(/refusé/.test(e.message)?" Vérifie que le code est bien celui du dépôt hangugeo-sync, avec la permission Contents en lecture et écriture.":""))});
 }
 function sayErr(m){const e=$("#syncerr");if(e)e.textContent=m;const x=$("#syncst");if(x)x.textContent=m}
 const syncLabel=()=>syncMsg||(!SY?"Pas encore configurée sur cet appareil.":S.sync?"Dernière synchronisation : "+new Date(S.sync).toLocaleString("fr-FR",{day:"numeric",month:"long",hour:"2-digit",minute:"2-digit"})+".":"Jamais synchronisé sur cet appareil.");
@@ -713,8 +713,8 @@ function vHome(){
   </section>
   ${OFFLINE?tokWarn():""}
   ${pathHTML(st,L,nextS,nextP)}
-  ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>
-    <div class="panel" id="syncbox" hidden><p class="count">Pour relier ordinateur, tablette et téléphone, indique une fois sur chaque appareil ton dépôt GitHub privé et son code d'accès.</p><input class="fld" id="syrepo" placeholder="Nom/depot" value="${SY?esc(SY.repo):"Nyrec/hangugeo-sync"}" autocomplete="off" autocapitalize="off"><input class="fld" id="sytok" type="password" placeholder="Code d'accès GitHub (github_pat_…)" autocomplete="off"><p class="msg" id="syncerr"></p><div class="actions"><button class="btn" data-act="sync-save">저장 · Enregistrer</button>${SY?`<button class="btn ghost" data-act="sync-off">Déconnecter cet appareil</button>`:""}</div></div></section>`:""}
+  ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button>${SY?`<button class="mini" data-act="sync-cfg">코드 바꾸기 · Changer le code</button>`:""}<span class="count" id="syncst">${syncLabel()}</span>
+    <div class="panel" id="syncbox" ${syOpen?"":"hidden"}><p class="count">Pour relier ordinateur, tablette et téléphone, indique une fois sur chaque appareil ton dépôt GitHub privé et son code d'accès.</p><input class="fld" id="syrepo" placeholder="Nom/depot" value="${SY?esc(SY.repo):"Nyrec/hangugeo-sync"}" autocomplete="off" autocapitalize="off"><input class="fld" id="sytok" type="password" placeholder="Code d'accès GitHub (github_pat_…)" autocomplete="off"><p class="msg" id="syncerr"></p><div class="actions"><button class="btn" data-act="sync-save">저장 · Enregistrer</button>${SY?`<button class="btn ghost" data-act="sync-off">Déconnecter cet appareil</button>`:""}</div></div></section>`:""}
   <section class="kpis">
     <div class="kpi"><b>${sk}</b><span><i class="ko">연속 학습</i> jour${sk>1?"s":""} d'étude à la suite</span></div>
     <div class="kpi"><b>${ret==null?"–":ret+" %"}</b><span><i class="ko">정답률</i> taux de bonnes réponses (30 jours)</span></div>
@@ -1043,9 +1043,9 @@ document.addEventListener("click",e=>{
     if(act==="snd"){const o=["front","back","off"];S.cfg.snd=o[(o.indexOf(sndMode())+1)%3];if(S.cfg.snd==="off")stopAudio();save();s.keepScroll=true;if(s.v==="study")s.spoken=cur().queue&&cur().queue[0]?"x":null;render();s.keepScroll=false;return}
     if(act==="undo"&&s.v==="study"&&s.last){const L=s.last;if(L.card)S.c[L.k]=L.card;else delete S.c[L.k];if(L.log)S.log[L.dk]=L.log;else delete S.log[L.dk];const i=s.queue.indexOf(L.k);if(i>=0)s.queue.splice(i,1);if(!L.again)s.done=Math.max(0,s.done-1);s.queue.unshift(L.k);s.last=null;s.rev=false;s.mq=null;s.tw=null;s.spoken=null;save();render();return}
     if(act==="update"){a.textContent="업데이트 중…";(async()=>{try{const reg=await navigator.serviceWorker.getRegistration();if(reg)await reg.update();await fetch("index.html?v="+Date.now(),{cache:"reload"})}catch(err){}location.reload()})();return}
-    if(act==="sync"){if(!SY||e.detail===2||syncMsg&&!/en cours/.test(syncMsg)){const b=$("#syncbox");if(b)b.hidden=!b.hidden;return}if(SY)doSync();return}
+    if(act==="sync"){if(!SY||e.detail===2||syncMsg&&!/en cours/.test(syncMsg)){const b=$("#syncbox");if(b){b.hidden=!b.hidden;syOpen=!b.hidden}return}if(SY)doSync();return}
     if(act==="sync-save"){const repo=$("#syrepo").value.trim().replace(/^https:\/\/github\.com\//,"").replace(/\/$/,""),tokIn=$("#sytok").value.trim(),tok=tokIn||(SY&&SY.token)||"";if(!/^[^\/\s]+\/[^\/\s]+$/.test(repo)){sayErr("Écris le dépôt sous la forme Nyrec/hangugeo-sync.");return}if(!tok){sayErr("Colle ton code d'accès GitHub dans le second champ. Il commence par github_pat_.");return}sayErr(tokIn?"동기화 중… · Synchronisation en cours…":"Le champ du code est vide : l'ancien code est gardé. Pour le remplacer, colle le nouveau code puis Enregistrer.");const keepExp=!tokIn&&SY?SY.exp:null;SY={repo,token:tok,exp:keepExp};try{localStorage.setItem("hgn-sync",JSON.stringify(SY))}catch(err){}doSync();return}
-    if(act==="sync-cfg"){$("#main").scrollTop=0;const b=$("#syncbox");if(b)b.hidden=false;return}
+    if(act==="sync-cfg"){syOpen=true;const b=$("#syncbox");if(b){b.hidden=false;const i=$("#sytok");if(i){i.value="";i.focus()}}return}
     if(act==="sync-off"){SY=null;try{localStorage.removeItem("hgn-sync")}catch(err){}syncMsg="";render();return}
     if(act==="alltr"&&s.v==="pod"){s.all=!s.all;const pa=$("#podau"),tm=pa?pa.currentTime:0,pl=pa&&!pa.paused;s.keepScroll=true;render();s.keepScroll=false;const nb=$("#podau");if(nb&&tm){nb.currentTime=tm;if(pl)nb.play().catch(()=>{})}return}
     if(act==="alltr"){stopStory();s.all=!s.all;s.keepScroll=true;render();s.keepScroll=false;return}
