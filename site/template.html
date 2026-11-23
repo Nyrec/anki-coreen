@@ -545,7 +545,7 @@ function mergeS(a,b){
   const o=Object.assign({},a,{c:{},log:{},read:{},heard:{}});
   for(const k of new Set([...Object.keys(a.c||{}),...Object.keys(b.c||{})])){const x=(a.c||{})[k],y=(b.c||{})[k];o.c[k]=!x?y:!y?x:(y[3]>x[3]||(y[3]===x[3]&&y[0]>x[0])?y:x)}
   for(const d of new Set([...Object.keys(a.log||{}),...Object.keys(b.log||{})])){const x=(a.log||{})[d]||[0,0,0,0],y=(b.log||{})[d]||[0,0,0,0];o.log[d]=[0,1,2,3].map(i=>Math.max(x[i]||0,y[i]||0))}
-  Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.mig=a.mig||b.mig;return o;
+  Object.assign(o.read,b.read||{},a.read||{});for(const f of ["notes","jr","my"]){o[f]={};for(const k of new Set([...Object.keys(a[f]||{}),...Object.keys(b[f]||{})])){const x=(a[f]||{})[k],y=(b[f]||{})[k];o[f][k]=!x?y:!y?x:((y.u||0)>(x.u||0)?y:x)}}o.dict=a.dict&&b.dict?(a.dict.n>=b.dict.n?a.dict:b.dict):(a.dict||b.dict);Object.assign(o.heard,b.heard||{},a.heard||{});o.exam=(a.exam||[]).length>=(b.exam||[]).length?a.exam:b.exam;o.mig=a.mig||b.mig;return o;
 }
 // Synchronisation quasi instantanée : envoi 3 s après un changement, vérification toutes les 8 s. La lecture ajoute ?t= pour passer outre le cache de l API GitHub (sinon jusqu à 1 min de retard).
 // La vérification utilise l'ETag : une réponse « rien de neuf » (304) ne compte pas dans le quota GitHub.
@@ -634,7 +634,7 @@ function render(){
   const s=cur();const root=["accueil","themes","cours","pratique","histoires","ecoute","cerveau"].includes(s.v)?s.v:stack[0].v;
   document.querySelectorAll("#tabs button").forEach(b=>b.dataset.tab===root?b.setAttribute("aria-current","page"):b.removeAttribute("aria-current"));
   closeSheet();
-  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,ecoute:vPods,pod:vPod,cerveau:vCerveau,node:vNode,pratique:vPratique,journal:vJournal,dictee:vDictee,irreg:vIrreg,hanja:vHanja,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz})[s.v](s);
+  ({accueil:vHome,themes:vThemes,cours:vCours,fiches:vFiches,histoires:vStories,ecoute:vPods,pod:vPod,cerveau:vCerveau,node:vNode,pratique:vPratique,journal:vJournal,dictee:vDictee,irreg:vIrreg,hanja:vHanja,deck:vDeck,fiche:vFiche,story:vStory,study:vStudy,quiz:vQuiz,exam:vExam})[s.v](s);
   if(!s.keepScroll)$("#main").scrollTop=s.scroll||0;
 }
 $("#tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b)tab(b.dataset.tab)});
@@ -680,6 +680,7 @@ function vHome(){
     <div class="heroh"><span class="ko">${!todo&&L[0]?"오늘 목표 달성 ✓":"오늘의 목표"}</span><b>${todo?`Objectif du jour : encore ${todo} carte${todo>1?"s":""}`:(L[0]?"Objectif du jour atteint ✓":"Objectif du jour : rien pour l'instant")}</b><small class="count" style="display:block;margin:2px 0 6px">복습 전부 + 새 단어 ${S.cfg.nw}개 · Toutes les révisions dues + ${S.cfg.nw} nouveaux mots${L[0]+todo?` · ${L[0]} / ${L[0]+todo} faites`:""}</small><div class="week">${wk}</div></div></div>
     <div class="trio"><div><b>${st.newToday}</b><span><i class="ko">새 카드</i> nouvelles</span></div><div><b>${st.due}</b><span><i class="ko">복습</i> révisions</span></div><div><b>${L[0]}</b><span><i class="ko">완료</i> terminées</span></div></div>
     <button class="btn big" data-act="all-study">${todo?"복습하기 · Réviser":"새 카드 배우기 · Apprendre de nouvelles cartes"}</button>
+    <button class="btn ghost" data-pv="exam" style="width:100%;margin-top:8px">모의고사 · Test blanc sur 10 cartes apprises</button>
   </section>
   ${pathHTML(st,L,nextS,nextP)}
   ${OFFLINE?`<section class="syncrow"><button class="btn ghost" data-act="sync">동기화 · Synchroniser</button><span class="count" id="syncst">${syncLabel()}</span>

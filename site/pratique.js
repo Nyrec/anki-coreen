@@ -14,7 +14,9 @@ injectMy();
 /* ---------- hub ---------- */
 function vPratique(){
   const jr=Object.values(S.jr||{}).filter(e=>!e.del).length,my=CARDS.filter(c=>c.c==="moi").length;
+  const EH=S.exam||[],eavg=EH.length?Math.round(10*EH.slice(-5).reduce((x,y)=>x+y.n/y.of,0)/Math.min(5,EH.length)*10)/10:null;
   const tiles=[
+   ["exam","모의고사","Test blanc","10 cartes déjà apprises : écrire le mot, retrouver le sens, reconnaître à l'oreille. Les erreurs reviennent en révision.",EH.length?`Dernier : ${EH[EH.length-1].n}/${EH[EH.length-1].of} · moyenne ${String(eavg).replace(".",",")}/10`:"10 questions · ≈ 3 min","var(--a1)"],
    ["journal","일기","Journal de cours","Écris tes phrases avant le cours, reporte les corrections : elles deviennent des cartes.",jr?`${jr} jour${jr>1?"s":""} · ${my} carte${my>1?"s":""}`:"À commencer","var(--red)"],
    ["dictee","받아쓰기","Dictée","Écoute une phrase de tes cartes et écris-la en hangeul.",S.dict&&S.dict.n?`${S.dict.n} phrases · ${Math.round(S.dict.sum/S.dict.n)} % en moyenne`:"10 phrases par série","var(--blu)"],
    ["irreg","불규칙","Verbes irréguliers","ㅂ, ㄷ, ㄹ, 르, ㅎ, ㅅ, 으 : conjugue jusqu'à ce que ce soit automatique.",`${IRR.length} verbes`,"var(--chija)"],
@@ -204,3 +206,92 @@ document.addEventListener("click",e=>{const t=e.target,s=cur();
   if(a==="itable"){s.table=!s.table;render();return}
 },true);
 function alertMsg(m){const x=document.createElement("div");x.className="wtip";x.style.cssText="left:50%;top:40%";x.textContent=m;document.body.appendChild(x);setTimeout(()=>x.remove(),1800)}
+
+/* ---------- 모의고사 · test blanc sur 10 cartes déjà apprises ----------
+   Pourquoi ce format : se tester de mémoire (et pas relire) est ce qui ancre le plus, et varier la forme
+   (écrire le mot, retrouver le sens, reconnaître à l'oreille) vérifie que le mot est vraiment utilisable.
+   Choix des cartes : 5 parmi celles que FSRS juge les plus fragiles aujourd'hui, 5 au hasard parmi les autres.
+   Une erreur renvoie la carte en révision le jour même (étape QCM) ; une réussite ne change pas le planning. */
+const EXT={write:["쓰기","Écrire en coréen"],recall:["기억","Retrouver le sens"],ear:["듣기","Reconnaître à l'oreille"],mcq:["선택","Choisir le sens"]};
+function exLearned(){const t=today(),out=[];
+  for(const k in S.c){const c=CARDIDX[k],s=S.c[k];if(!c||!s)continue;const f=fState(s);
+    out.push({c,learned:s[1]>0&&stage(k)>=2,r:f?fR(Math.max(0,t-f[2]),f[0]):0})}
+  return out}
+const exAlts=c=>spoken(c.k).split(/\s*,\s*/).filter(Boolean);
+function exBuild(){
+  const all=exLearned();let pool=all.filter(x=>x.learned),note="";
+  if(pool.length<10){note=`Tu n'as que ${pool.length} carte${pool.length>1?"s":""} vraiment apprise${pool.length>1?"s":""} : le test est complété avec des cartes encore en apprentissage.`;pool=all}
+  if(pool.length<4)return {err:"Pas encore assez de cartes vues pour un test. Fais d'abord quelques révisions."};
+  const weak=pool.slice().sort((a,b)=>a.r-b.r).slice(0,5),rest=shuffle(pool.filter(x=>!weak.includes(x))).slice(0,10-weak.length);
+  const cards=shuffle(weak.concat(rest).map(x=>x.c));
+  const want=shuffle(["write","write","write","write","recall","recall","recall","ear","ear","ear"]);
+  const canW=c=>c.p!=="gram"&&!!spoken(c.k)&&!!(c.f||c.e),canE=c=>canPlay&&!!spoken(c.k)&&!!mcqOpts(c,CARDS);
+  const qs=cards.map((c,i)=>{let ty=want[i]||"recall";if(ty==="write"&&!canW(c))ty="recall";if(ty==="ear"&&!canE(c))ty=mcqOpts(c,CARDS)?"mcq":"recall";
+    return {c,ty,opts:ty==="ear"||ty==="mcq"?mcqOpts(c,CARDS):null,ok:null,ans:"",sim:null}});
+  return {qs,note}}
+function vExam(s){
+  const H=S.exam||[];
+  if(!s.qs){const last=H.slice(-5).reverse();
+    $("#view").innerHTML=`${backBtn()}<h1>모의고사 · Test blanc<small>10 cartes que tu as déjà apprises, sans aide : tu écris le mot en coréen, tu retrouves le sens de mémoire ou tu reconnais le mot à l'oreille.</small></h1>
+    <div class="panel"><p class="count" style="margin:0">Les cartes choisies : la moitié parmi celles que tu risques le plus d'oublier aujourd'hui, l'autre moitié au hasard. Chaque erreur renvoie la carte dans tes révisions du jour ; une bonne réponse ne change rien à ton planning.</p></div>
+    ${s.err?`<p class="msg">${esc(s.err)}</p>`:""}
+    <div class="actions"><button class="btn big" data-act="exstart">시작 · Commencer (10)</button></div>
+    ${last.length?`<section><h2><span class="ko">지난 시험</span> · Derniers tests</h2><div class="rows">${last.map(x=>`<div class="drow"><b class="${x.n>=8?"ok":x.n<6?"ko2":""}">${x.n} / ${x.of}</b><span>${new Date(x.d+"T12:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}</span></div>`).join("")}</div></section>`:""}`;return}
+  if(s.i>=s.qs.length){
+    const n=s.qs.filter(q=>q.ok).length;
+    if(!s.applied){s.applied=1;const t=today();for(const q of s.qs)if(!q.ok&&S.c[q.c.k]){answer(q.c.k,1,0);S.c[q.c.k][5]=1}
+      S.exam=(S.exam||[]).concat({d:dstr(t),n,of:s.qs.length}).slice(-30);save()}
+    const bad=s.qs.length-n;
+    $("#view").innerHTML=`${backBtn()}<h1 class="fin">${n} / ${s.qs.length}<small>${n>=9?"완벽해요! · Excellent, ces mots sont bien ancrés.":n>=7?"잘했어요 · Bien, quelques mots à consolider.":n>=5?"괜찮아요 · Correct, il y a des mots fragiles.":"다시 복습해요 · Plusieurs mots sont à reprendre."}</small></h1>
+    ${bad?`<p class="intro">${bad} carte${bad>1?"s reviennent":" revient"} dans tes révisions d'aujourd'hui, en QCM d'abord.</p>`:""}
+    <div class="rows">${s.qs.map(q=>`<div class="drow"><b class="${q.ok?"ok":"ko2"}">${q.ok?"✓":"✗"}</b><span><span class="ko">${esc(q.c.k)}</span> · ${biH(q.c)}</span><small>${EXT[q.ty][0]} · ${EXT[q.ty][1]}${q.ty==="write"&&q.ans&&!q.ok?` · tu as écrit « <span class="ko">${esc(q.ans)}</span> »`:""}</small></div>`).join("")}</div>
+    <div class="actions"><button class="btn" data-act="exagain">다시 · Nouveau test</button>${bad?`<button class="btn ghost" data-act="all-study">복습하기 · Réviser maintenant</button>`:""}</div>`;return}
+  const q=s.qs[s.i],c=q.c,done=q.ok!=null,[tko,tfr]=EXT[q.ty];
+  const top=`${backBtn()}<div class="study"><div class="meta"><span class="qc">${s.i+1} / ${s.qs.length} · ${s.qs.filter(x=>x.ok).length} juste${s.qs.filter(x=>x.ok).length>1?"s":""}</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">천천히 · Lent</button></div>
+  <div class="bar sess" style="--c:var(--a1)"><i style="width:${100*s.i/s.qs.length}%"></i></div>`;
+  const reveal=`<hr><div class="big ko small">${esc(c.k)}</div><div class="ans">${biH(c)}</div>${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}`;
+  const verdict=done?`<div class="hint" style="font-weight:600;color:${q.ok?"var(--a1)":"var(--red)"}">${q.ok?"맞아요 · Juste":q.sim!=null&&q.sim>=70?"거의 · Presque":"틀렸어요 · Faux"}</div>`:"";
+  const next=`<div class="actions"><button class="btn big" data-act="exnext">${s.i+1<s.qs.length?"다음 · Suivant":"결과 · Résultat"}</button></div>`;
+  let body="";
+  if(q.ty==="write"){
+    body=`<div class="flash" style="min-height:150px"><span class="tag">${tko} · ${tfr}</span><div class="big small">${biH(c)}</div>${done?verdict+(q.ok?"":`<div class="dres" style="margin-top:6px"><small>정답 · La bonne réponse</small><p class="ko big2">${markText(exAlts(c)[0],lcs(hang(exAlts(c)[0]),hang(q.ans)).ma)}</p><small>내 답 · Ta réponse</small><p class="ko">${q.ans.trim()?markText(q.ans,lcs(hang(exAlts(c)[0]),hang(q.ans)).mb):"—"}</p></div>`)+(c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""):`<div class="hint">Écris le mot en coréen</div>`}</div>
+    <input id="exq" class="ko dq" placeholder="한국어로 쓰세요" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(q.ans)}" ${done?"disabled":""}>
+    ${done?(q.ok?"":`<div class="actions center"><button class="mini" data-act="exfix">J'avais juste (faute de frappe, autre forme correcte)</button></div>`)+next:`<div class="actions"><button class="btn big" data-act="excheck">확인 · Vérifier</button><button class="btn ghost" data-act="exskip">모르겠어요 · Je ne sais pas</button></div><p class="count keys">Entrée pour vérifier. Clavier coréen : ajoute-le dans les réglages de ton téléphone ou de ton Mac.</p>`}`;
+  }else if(q.ty==="recall"){
+    body=`<div class="flash" style="min-height:150px"><span class="tag">${tko} · ${tfr}</span><div class="big ko${c.k.length>9?" small":""}">${esc(c.k)}</div>${s.rev||done?`<hr><div class="ans">${biH(c)}</div>${c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""}${verdict}`:`<div class="hint">Dis le sens à voix haute avant de regarder</div>`}</div>
+    ${done?next:s.rev?`<div class="grades two"><button class="grade g1" data-act="exno"><span class="ko">몰랐어요</span>Je ne savais pas</button><button class="grade g3" data-act="exyes"><span class="ko">알았어요</span>Je savais</button></div>`:`<button class="btn big" data-act="exflip">답 보기 · Voir la réponse</button>`}`;
+  }else{
+    const ear=q.ty==="ear";
+    body=`<div class="flash" style="min-height:150px"><span class="tag">${tko} · ${tfr}</span>${ear&&!done?`<button class="earbtn" data-act="explay" aria-label="Réécouter">🔊</button><div class="hint">Écoute et choisis le sens</div>`:`<div class="big ko${c.k.length>9?" small":""}">${esc(c.k)}</div>`}${done?verdict+(c.x?`<div class="ko exx">${esc(c.x)}</div><div class="hint">${esc(c.z||c.y||"")}</div>`:""):""}</div>
+    ${q.opts.map((o,j)=>`<button class="opt${done?(o.k===c.k?" good":j===q.pick?" bad":""):""}" data-exo="${j}" ${done?"disabled":""}>${biH(o)}</button>`).join("")}
+    ${done?next:""}`;
+  }
+  $("#view").innerHTML=top+body+`</div>`;
+  if(q.ty==="write"&&!done){const i=$("#exq");setTimeout(()=>{try{i.focus()}catch(e){}},60);i.oninput=()=>{q.ans=i.value};i.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();document.querySelector('[data-act="excheck"]').click()}}}
+  if(q.ty==="ear"&&!done&&s.played!==s.i){s.played=s.i;setTimeout(()=>speak(spoken(c.k)),250)}
+  if(done&&canPlay&&s.said!==s.i&&spoken(c.k)&&q.ty!=="ear"){s.said=s.i;speak(spoken(c.k))}
+}
+function exCheck(q){const A=hang(q.ans||"").join("");
+  const alts=exAlts(q.c).map(a=>hang(a).join(""));
+  q.ok=!!A&&alts.includes(A);
+  const best=Math.max(0,...alts.map(a=>{const L=lcs([...a],[...A]);return Math.round(100*2*L.len/((a.length+A.length)||1))}));q.sim=best}
+document.addEventListener("click",e=>{const s=cur();if(s.v!=="exam")return;const t=e.target;
+  const o=t.closest("[data-exo]");if(o&&!o.disabled){e.stopPropagation();const q=s.qs[s.i];q.pick=+o.dataset.exo;q.ok=q.opts[q.pick].k===q.c.k;s.keepScroll=true;render();s.keepScroll=false;const nx=document.querySelector('[data-act="exnext"]');if(nx)try{nx.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(x){}return}
+  const ac=t.closest("[data-act]");if(!ac)return;const a=ac.dataset.act;
+  if(!/^ex/.test(a))return;e.stopPropagation();
+  if(a==="exstart"||a==="exagain"){const b=exBuild();if(b.err){s.err=b.err;s.qs=null;render();return}s.err=null;s.qs=b.qs;s.note=b.note;s.i=0;s.rev=false;s.applied=0;s.played=null;s.said=null;render();if(b.note)alertMsg(b.note);return}
+  const q=s.qs&&s.qs[s.i];if(!q)return;
+  if(a==="excheck"){const i=$("#exq");q.ans=i?i.value:q.ans;exCheck(q);s.keepScroll=true;render();s.keepScroll=false;return}
+  if(a==="exskip"){q.ans="";q.ok=false;q.sim=0;render();return}
+  if(a==="exfix"){q.ok=true;render();return}
+  if(a==="exflip"){s.rev=true;render();return}
+  if(a==="exyes"||a==="exno"){q.ok=a==="exyes";render();return}
+  if(a==="explay"){speak(spoken(q.c.k));return}
+  if(a==="exnext"){s.i++;s.rev=false;render();return}
+},true);
+document.addEventListener("keydown",e=>{const s=cur();if(s.v!=="exam"||!s.qs||e.target.matches("input,textarea")||e.metaKey||e.ctrlKey)return;
+  const click=sel=>{const b=document.querySelector(sel);if(b){e.preventDefault();b.click();return true}};
+  if(/^[1-4]$/.test(e.key)){click(`[data-exo="${+e.key-1}"]:not([disabled])`);return}
+  if(e.key===" "||e.key==="Enter"){click('[data-act="exnext"]')||click('[data-act="exflip"]')||click('[data-act="exyes"]');return}
+  if(e.key==="ArrowLeft")click('[data-act="exno"]');else if(e.key==="ArrowRight")click('[data-act="exyes"]');else if(e.key==="r"||e.key==="R")click('[data-act="explay"]');
+});
