@@ -1,0 +1,9 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+변경하다	to change, to modify (plans, a booking)<br><i>modifier, changer (un plan, une réservation)</i>	회의 시간을 오후 세 시로 변경했어요.<br>I changed the meeting time to 3 p.m.<br><i>J'ai changé l'heure de la réunion à 15 h.</i>	[byeongyeonghada] Hanja 變更. More formal than 바꾸다; typical for schedules, reservations, settings (일정 변경, 비밀번호 변경). Passive: 변경되다.	quotidien::2026-11-23 동사 niveau::B1
+문의	inquiry, question (to a service)<br><i>demande de renseignements</i>	자세한 내용은 고객센터에 문의해 주세요.<br>For details, please contact customer service.<br><i>Pour plus de détails, veuillez contacter le service client.</i>	[munui] Hanja 問議. Verb: 문의하다, used with -에/에게 (고객센터에 문의하다). Common on signs and emails: 문의 사항 = questions/inquiries.	quotidien::2026-11-23 명사 niveau::B1
+저절로	by itself, automatically, on its own<br><i>tout seul, de lui-même, spontanément</i>	문이 저절로 닫혔어요.<br>The door closed by itself.<br><i>La porte s'est fermée toute seule.</i>	[jeojeollo] Used for things happening without effort or intention: 웃음이 저절로 나다 (can't help smiling). Compare 스스로 (by oneself, on purpose).	quotidien::2026-11-23 부사 niveau::B1
+그나저나	anyway, by the way<br><i>au fait, bref, quoi qu'il en soit</i>	그나저나 내일 몇 시에 만나요?<br>By the way, what time are we meeting tomorrow?<br><i>Au fait, on se voit à quelle heure demain ?</i>	[geunajeona] Spoken discourse marker to switch topic, contraction of 그러나저러나. Close to 그런데 / 아무튼 but more casual.	quotidien::2026-11-23 표현 niveau::B1
+막막하다	to feel lost, at a loss, overwhelmed<br><i>être désemparé, ne pas savoir par où commencer</i>	처음 한국에 왔을 때 정말 막막했어요.<br>When I first came to Korea, I felt completely lost.<br><i>Quand je suis arrivé en Corée, j'étais vraiment désemparé.</i>	[mangmakhada] Pronounced [망마카다] (nasal assimilation + aspiration). Often 앞이 막막하다 (the future looks bleak) or 어떻게 해야 할지 막막하다.	quotidien::2026-11-23 형용사 niveau::B1
