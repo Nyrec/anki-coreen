@@ -486,22 +486,38 @@ function mcqOpts(c,cards){
     if(pick.length>=3)break}
   return pick.length<3||!txt(c)?null:shuffle(pick.concat(c));
 }
-function nextIvl(s,g){
-  if(!s||s[1]===0)return g===1||g===2?0:g===3?1:4;
-  const ivl=s[1],ease=s[2],late=Math.max(0,today()-s[0]);
-  if(g===1)return 0;
-  let d=g===2?Math.max(ivl+1,Math.round(ivl*1.2)):g===3?Math.max(ivl+1,Math.round((ivl+late/2)*ease)):Math.max(ivl+2,Math.round((ivl+late)*ease*1.3));
-  return Math.min(d,730);
-}
+/* FSRS-5 (Free Spaced Repetition Scheduler, celui d'Anki) : pour chaque carte, stabilité (jours pour retomber à 90 %) et difficulté (1 à 10).
+   La carte revient quand la probabilité de s'en souvenir descend à la rétention voulue (S.cfg.ret, 90 % par défaut).
+   S.c[mot][6]=stabilité, [7]=difficulté, [8]=jour de la dernière révision. Les cartes d'avant FSRS sont reprises depuis leur intervalle. */
+const FW=[0.40255,1.18385,3.173,15.69105,7.1949,0.5345,1.4604,0.0046,1.54575,0.1192,1.01925,1.9395,0.11,0.29605,2.2698,0.2315,2.9898,0.51655,0.6621];
+const FDECAY=-0.5,FFACT=19/81;
+const fclampD=d=>Math.min(10,Math.max(1,d));
+const fD0=g=>fclampD(FW[4]-Math.exp(FW[5]*(g-1))+1);
+const fR=(el,st)=>Math.pow(1+FFACT*el/st,FDECAY);
+function fState(s){ // [stabilité, difficulté, dernier jour] ou null si la carte n'a jamais été notée
+  if(!s)return null;if(s[6]>0)return [s[6],s[7],s[8]];
+  if(s[1]>0)return [s[1],fclampD(5+(2.5-(s[2]||2.5))*5),s[0]-s[1]];
+  return null}
+function fsrsNext(s,g,t){
+  const f=fState(s);
+  if(!f)return {st:FW[g-1],df:fD0(g)};
+  let [st,df,last]=f;const el=Math.max(0,t-last);
+  if(el===0){st=st*Math.exp(FW[17]*(g-3+FW[18]))} // deuxième révision le même jour
+  else{const r=fR(el,st);
+    if(g===1)st=Math.min(st,FW[11]*Math.pow(df,-FW[12])*(Math.pow(st+1,FW[13])-1)*Math.exp(FW[14]*(1-r)));
+    else st=st*(1+Math.exp(FW[8])*(11-df)*Math.pow(st,-FW[9])*(Math.exp(FW[10]*(1-r))-1)*(g===2?FW[15]:1)*(g===4?FW[16]:1))}
+  const d1=df-FW[6]*(g-3);df=fclampD(FW[7]*fD0(4)+(1-FW[7])*(df+(d1-df)*(10-df)/9));
+  return {st:Math.max(0.1,st),df}}
+const fIvl=st=>{const r=S.cfg.ret||0.9;return Math.min(3650,Math.max(1,Math.round(st/FFACT*(Math.pow(r,1/FDECAY)-1))))};
+function nextIvl(s,g){return g===1?0:fIvl(fsrsNext(s,g,today()).st)}
 function fmtIvl(d){return d===0?"< 10 min":d<30?d+" j":d<365?(Math.round(d/3)/10+" mois").replace(".",","):(Math.round(d/36.5)/10+" an").replace(".",",")}
 function answer(k,g,ms){
-  const t=today(),wasNew=!S.c[k];let s=S.c[k];let d=nextIvl(s,g);
+  const t=today(),wasNew=!S.c[k];let s=S.c[k];const nx=fsrsNext(s,g,t);let d=g===1?0:fIvl(nx.st);
   if(d>7)d+=Math.round((Math.random()-.5)*d*.1);
   if(!s)s=S.c[k]=[t,0,2.5,0,0];
-  s[3]++;
-  if(g===1){if(s[1]>0){s[4]++;s[2]=Math.max(1.3,s[2]-.2)}s[1]=0;s[0]=t}
-  else if(d===0){s[0]=t}
-  else{if(g===2)s[2]=Math.max(1.3,s[2]-.15);if(g===4)s[2]=Math.min(3,s[2]+.15);s[1]=d;s[0]=t+d}
+  s[3]++;s[6]=+nx.st.toFixed(3);s[7]=+nx.df.toFixed(3);s[8]=t;
+  if(g===1){if(s[1]>0)s[4]++;s[1]=0;s[0]=t}
+  else{s[1]=d;s[0]=t+d}
   const key=dstr(t),L=S.log[key]||(S.log[key]=[0,0,0,0]);L[0]++;if(g===1)L[1]++;L[2]+=Math.min(ms||0,60000);if(wasNew)L[3]++;
   save();return d===0;
 }
@@ -691,6 +707,8 @@ function vHome(){
   <section><h2><span class="ko">최근 수업</span> · Cours récents</h2><div class="rows">${[lastC,lastJ,courseOf("jour")].filter(Boolean).map(courseRow).join("")}</div></section>
   <section><h2><span class="ko">설정</span> · Réglages</h2><div class="panel">
     <div class="setrow"><span>Nouvelles cartes par jour</span><span class="stepper"><button class="mini" data-act="nw-">−</button><b>${S.cfg.nw}</b><button class="mini" data-act="nw+">+</button></span></div>
+    <div class="setrow"><span>기억 목표 · Rétention visée (FSRS)</span><span class="stepper">${[0.85,0.9,0.95].map(r=>`<button class="chip" aria-pressed="${(S.cfg.ret||0.9)===r}" data-ret="${r}">${Math.round(r*100)} %</button>`).join("")}</span></div>
+    <p class="count">90 % est le bon équilibre. 85 % : moins de révisions, un peu plus d'oublis. 95 % : beaucoup plus de révisions.</p>
     <div class="setrow"><span>복습 중 소리 · Son pendant la révision</span><button class="mini snd ${sndMode()}" data-act="snd">${SND[sndMode()]}</button></div>
     <div class="setrow"><span>Voix au ralenti</span><button class="chip" aria-pressed="${!!S.cfg.slow}" data-act="slow">Lent</button></div>
     ${HAS_AUDIO&&OFFLINE?`<div class="setrow"><span>Garder tout l'audio sur cet appareil pour le hors-ligne</span><button class="mini" data-act="dl">Télécharger l'audio</button></div><p class="count" id="dlmsg">Sans ça, seul l'audio déjà écouté fonctionne hors ligne.</p>`:""}
@@ -925,6 +943,7 @@ document.addEventListener("click",e=>{
     // Rappel libre raté : la carte repasse une fois par le QCM. Carte sans QCM possible : elle avance quand même d'une étape.
     if(S.c[k]){if(g===1&&st0>=2)S.c[k][5]=1;else if(g===3&&st0<2)S.c[k][5]=st0+1;save()}
     s.last.again=again;if(again)s.queue.splice(Math.min(s.queue.length,3+Math.floor(Math.random()*4)),0,k);else s.done++;s.rev=false;render();return}
+  const rt=t.closest("[data-ret]");if(rt){S.cfg.ret=+rt.dataset.ret;save();s.keepScroll=true;render();s.keepScroll=false;return}
   const mo=t.closest("[data-mq]");if(mo&&s.v==="study"&&s.mq&&s.mq.pick==null&&!mo.disabled){s.mq.pick=+mo.dataset.mq;s.keepScroll=true;render();s.keepScroll=false;const nx=document.querySelector('[data-act="mcq-next"]');if(nx)try{nx.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(e){}return}
   const say=t.closest("[data-say]");if(say){stopStory();if(s.v==="story")sayStory(say.dataset.say,"hyunsu");else speak(say.dataset.say);return}
   const ln=t.closest("[data-line]");if(ln&&s.v==="story"){stopStory();const l=lineOf(STORIES.find(x=>x.id===s.id).lines[+ln.dataset.line]);sayStory(l[1],SPK[l[0]]||"hyunsu");return}
