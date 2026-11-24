@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+수정하다	to revise, to edit, to correct<br><i>modifier, corriger, réviser (un document)</i>	보고서를 조금 수정해서 다시 보낼게요.<br>I'll revise the report a bit and send it again.<br><i>Je vais modifier un peu le rapport et le renvoyer.</i>	[sujeonghada] Hanja 修正 (fix + correct). Very common at work for documents, code or plans: N을/를 수정하다; noun 수정 as in 수정 사항 (revisions). Compare 변경하다, which means changing a plan or setting.	quotidien::2026-11-24 동사 niveau::B1
+그때그때	as things come up, each time<br><i>au fur et à mesure, à chaque fois (selon la situation)</i>	모르는 게 있으면 그때그때 물어보세요.<br>If there's something you don't know, ask as it comes up.<br><i>Si tu ne comprends pas quelque chose, demande au fur et à mesure.</i>	[geuttaegeuttae] Doubling of 그때 (that time) gives the sense of 'each time, as needed'. Often used with 다르다: 그때그때 달라요 = it depends on the situation.	quotidien::2026-11-24 부사 niveau::B1
+자판기	vending machine<br><i>distributeur automatique</i>	지하철역 자판기에서 커피를 뽑았어요.<br>I got a coffee from the vending machine at the subway station.<br><i>J'ai pris un café au distributeur de la station de métro.</i>	[japangi] Short for 자동판매기 (自動販賣機). The verb for getting something out of a machine is 뽑다 (to pull out): 커피를 뽑다.	quotidien::2026-11-24 명사 niveau::A2
