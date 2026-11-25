@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+갚다	to pay back, to repay<br><i>rembourser, rendre (de l'argent, une faveur)</i>	지난번에 빌린 돈은 내일 갚을게요.<br>I'll pay you back tomorrow for the money I borrowed last time.<br><i>Je te rembourserai demain l'argent que je t'ai emprunté la dernière fois.</i>	[gapda] Takes 을/를: 돈을/빚을 갚다. Also figurative: 은혜를 갚다 (to repay a kindness). Pronounced [갑따]; 갚아요 = [가파요].	quotidien::2026-11-25 동사 niveau::A2
+후련하다	to feel relieved, to get it off one's chest<br><i>soulagé, libéré (après avoir vidé son sac)</i>	하고 싶은 말을 다 하니까 속이 후련해요.<br>I said everything I wanted to say, so I feel relieved.<br><i>J'ai dit tout ce que j'avais sur le cœur, ça me soulage.</i>	[huryeonhada] Usually with 속이 / 마음이: 속이 후련하다. Release of pent-up frustration or worry; compare 홀가분하다 (a burden or task is gone).	quotidien::2026-11-25 형용사 niveau::B1
+존댓말	polite speech, honorific language<br><i>langage poli / honorifique</i>	처음 만난 사람한테는 존댓말을 써요.<br>You use polite speech with people you meet for the first time.<br><i>On vouvoie les gens qu'on rencontre pour la première fois.</i>	[jondaenmal] 존대 (尊待, respectful treatment) + 말. Pronounced [존댄말]. Opposite: 반말. 존댓말을 쓰다; 말을 놓다 = to switch to 반말.	quotidien::2026-11-25 명사 niveau::A2
