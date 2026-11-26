@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+간편하다	convenient, simple, easy<br><i>pratique, simple, facile à utiliser</i>	모바일 결제가 현금보다 훨씬 간편해요.<br>Mobile payment is much more convenient than cash.<br><i>Le paiement mobile est bien plus pratique que le liquide.</i>	[ganpyeonhada] Hanja 簡便. Adverb form 간편하게 (e.g. 간편하게 먹다 'eat something quick'). Common in ads: 간편식 = ready meal.	quotidien::2026-11-26 형용사 niveau::B1
+생략하다	to omit, to skip, to leave out<br><i>omettre, sauter, passer (une étape)</i>	시간이 없으니까 자기소개는 생략할게요.<br>Since we're short on time, I'll skip the introductions.<br><i>Comme on n'a pas le temps, je vais sauter les présentations.</i>	[saengnyakada] Hanja 省略. Pronounced [생냐카다] (nasalization + aspiration). Passive: 생략되다. Noun use: 이하 생략 'the rest omitted'.	quotidien::2026-11-26 동사 niveau::B1
+기껏	after all the trouble; at most<br><i>(après s'être donné du mal) pour rien ; tout au plus</i>	기껏 요리했는데 아무도 안 먹었어요.<br>I went to the trouble of cooking, and nobody ate.<br><i>Je me suis donné la peine de cuisiner, et personne n'a mangé.</i>	[gikkeot] Typically 기껏 + V-았/었는데 to express frustration that effort was wasted. Also 기껏해야 = 'at best, at most' (기껏해야 만 원이에요).	quotidien::2026-11-26 부사 niveau::B2
