@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+꾸미다	to decorate; to dress up<br><i>décorer, aménager ; se faire beau / se préparer</i>	주말에 방을 새로 꾸몄어요.<br>I redecorated my room over the weekend.<br><i>Ce week-end, j'ai redécoré ma chambre.</i>	[kkumida] Regular verb (꾸며요, 꾸몄어요). Used for places (방을 꾸미다) and appearance (예쁘게 꾸미다). 꾸며낸 이야기 = a made-up story.	quotidien::2026-11-27 동사 niveau::B1
+한꺼번에	all at once, at the same time<br><i>tout d'un coup, en même temps, en une seule fois</i>	일이 한꺼번에 몰려서 정신이 없어요.<br>All the work came at once, so I'm swamped.<br><i>Tout le travail est tombé en même temps, je suis débordé.</i>	[hankkeobeone] Stresses many things happening together; often with 몰리다 (to pile up). Compare 한 번에 = in a single go/try.	quotidien::2026-11-27 부사 niveau::B1
+감동	being deeply moved, emotion<br><i>émotion (forte), être touché / ému</i>	그 영화를 보고 정말 감동을 받았어요.<br>I was really moved after watching that film.<br><i>J'ai été vraiment ému par ce film.</i>	[gamdong] Hanja 感動. Common patterns: 감동을 받다 / 감동하다 (to be moved), 감동적이다 (moving, touching).	quotidien::2026-11-27 명사 niveau::A2
