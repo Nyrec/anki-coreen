@@ -1,0 +1,7 @@
+#separator:tab
+#html:true
+#deck:Coréen::Du jour
+#tags column:5
+위로하다	to comfort, to console<br><i>consoler, réconforter</i>	시험에 떨어진 친구를 위로했어요.<br>I comforted a friend who failed the exam.<br><i>J'ai réconforté un ami qui a raté son examen.</i>	[wirohada] Takes an object with 을/를 (친구를 위로하다). Noun 위로 (慰勞) = comfort: 위로가 되다 'to be a comfort', 위로의 말 'words of comfort'.	quotidien::2026-11-28 동사 niveau::B1
+당장	right away, immediately; for the time being<br><i>tout de suite, sur-le-champ ; pour l'instant</i>	지금 당장 출발해야 돼요.<br>We have to leave right now.<br><i>Il faut partir tout de suite.</i>	[dangjang] Very common as 지금 당장 'right this minute'. 당장은 = 'for now' (당장은 괜찮아요 'it's fine for now'). Hanja 當場.	quotidien::2026-11-28 부사 niveau::B1
+동기	peer from the same cohort (school year or hiring class)<br><i>camarade de promo, collègue de la même promotion</i>	회사 동기들이랑 저녁을 먹었어요.<br>I had dinner with the colleagues who joined the company with me.<br><i>J'ai dîné avec mes collègues de la même promo d'embauche.</i>	[donggi] 동기 (同期) = same period: 입사 동기 (joined the company together), 대학 동기 (same university year). Homonym 동기 (動機) means 'motive'.	quotidien::2026-11-28 명사 niveau::B1
